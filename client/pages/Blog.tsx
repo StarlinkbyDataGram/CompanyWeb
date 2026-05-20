@@ -10,6 +10,7 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
+import { landingContainer, landingPageRoot } from "@/pages/landing/landing-classes";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -114,7 +115,7 @@ export default function Blog() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20">
+    <div className={`min-h-screen bg-gradient-to-br from-background to-secondary/20 ${landingPageRoot}`}>
       <Seo
         title="Starlink Nigeria Guides & Tips | DataGram Blog"
         description="Long-tail Starlink Nigeria guides: setup, WiFi extension, WISP tips, and power resilience—written by DataGram installers. Bookmark for updates."
@@ -224,10 +225,10 @@ export default function Blog() {
         </section>
       )}
 
-      <section className="py-8 border-t">
-        <div className="container">
-          <h2 className="text-2xl font-bold mb-6">Nigeria guides (2026)</h2>
-          <div className="grid gap-8 md:grid-cols-2">
+      <section className="border-t py-8 sm:py-10">
+        <div className={landingContainer}>
+          <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
             {seoArticles2026.map((post) => (
               <Card key={post.slug} className="group hover:shadow-lg transition-shadow">
                 <CardHeader>

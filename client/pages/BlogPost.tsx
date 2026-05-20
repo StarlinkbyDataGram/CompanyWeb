@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, User } from "lucide-react";
 import { BRAND_NAME, DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/site";
+import { landingContainer, landingPageRoot } from "@/pages/landing/landing-classes";
 
 function renderParagraphWithLinks(text: string) {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
@@ -67,7 +68,7 @@ export default function BlogPost() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20">
+    <div className={`min-h-screen bg-gradient-to-br from-background to-secondary/20 ${landingPageRoot}`}>
       <Seo
         title={`${article.title} | DataGram`}
         description={article.metaDescription}
@@ -77,11 +78,11 @@ export default function BlogPost() {
         publishedTime={article.date}
         schema={[articleSchema, breadcrumb]}
       />
-      <div className="container py-12 md:py-16">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+      <div className={`${landingContainer} py-12 md:py-16`}>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_min(100%,280px)]">
           <article className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{article.category}</p>
-            <h1 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">{article.title}</h1>
+            <h1 className="mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl">{article.title}</h1>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-foreground/60">
               <span className="flex items-center gap-1">
                 <User className="h-4 w-4" />
@@ -121,7 +122,7 @@ export default function BlogPost() {
           </article>
 
           <aside>
-            <Card className="sticky top-24">
+            <Card className="lg:sticky lg:top-24">
               <CardHeader>
                 <CardTitle className="text-lg">Need an installer?</CardTitle>
                 <CardDescription>{article.serviceCta.blurb}</CardDescription>
