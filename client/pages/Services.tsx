@@ -147,7 +147,7 @@ export default function Services() {
 function ServicesDeepContent() {
   return (
     <section className="mt-20 border-t pt-16 text-left" aria-labelledby="services-guide-heading">
-      <div className="mx-auto max-w-3xl space-y-5 text-base leading-relaxed text-foreground/85">
+      <div className="w-full space-y-5 text-base leading-relaxed text-foreground/85">
         <h2 id="services-guide-heading" className="text-3xl font-extrabold tracking-tight text-foreground">
           How DataGram delivers Starlink installation services Nigeria businesses actually use
         </h2>

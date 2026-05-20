@@ -65,7 +65,7 @@ export default function Gallery() {
         }}
       />
       <section className="border-b bg-muted/40 py-14 md:py-20">
-        <div className="container max-w-3xl">
+        <div className="container">
           <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
             Installation gallery: real Starlink field work across Nigeria
           </h1>

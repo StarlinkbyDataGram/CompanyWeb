@@ -79,7 +79,7 @@ export default function BlogPost() {
       />
       <div className="container py-12 md:py-16">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
-          <article className="max-w-3xl">
+          <article className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{article.category}</p>
             <h1 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">{article.title}</h1>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-foreground/60">

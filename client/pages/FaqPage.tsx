@@ -41,7 +41,7 @@ export default function FaqPage() {
         schema={[faqSchema, breadcrumb]}
       />
       <section className="border-b bg-muted/40 py-14 md:py-20">
-        <div className="container max-w-3xl">
+        <div className="container">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Answer-first help</p>
           <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">
             Starlink in Nigeria: clear answers for buyers and businesses
@@ -61,7 +61,7 @@ export default function FaqPage() {
       </section>
 
       <section className="py-12 md:py-16">
-        <div className="container max-w-3xl">
+        <div className="container">
           <h2 className="text-2xl font-bold tracking-tight">Frequently asked questions</h2>
           <p className="mt-2 text-sm text-foreground/70">
             Looking for city-specific context? Visit{" "}

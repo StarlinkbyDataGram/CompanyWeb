@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Terms() {
   return (
     <div className="min-h-[60vh] py-16">
-      <div className="container max-w-3xl">
+      <div className="container">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">Terms & Conditions</h1>
         <hr className="my-6" />
         <p className="text-foreground/70 mb-6">

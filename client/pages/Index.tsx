@@ -903,7 +903,7 @@ function FAQ() {
 
   return (
     <section className="relative py-20">
-      <div className="container max-w-4xl">
+      <div className="container">
         <div className="mx-auto mb-8 max-w-2xl text-center">
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border bg-primary/10 px-4 py-2 text-sm text-primary">
             <HelpCircle className="h-4 w-4" />

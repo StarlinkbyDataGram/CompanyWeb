@@ -127,7 +127,7 @@ export default function StarlinkGuideNigeria() {
         keywords={["how to set up Starlink in Nigeria", "Starlink monthly subscription Nigeria", "Starlink installation Nigeria", "Starlink installer Nigeria"]}
       />
       <section className="border-b bg-muted/40 py-14 md:py-20">
-        <div className="container max-w-3xl">
+        <div className="container">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">GEO + SEO long-form</p>
           <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">
             Complete guide to Starlink in Nigeria: installation, power, WiFi, and business use
@@ -147,7 +147,7 @@ export default function StarlinkGuideNigeria() {
       </section>
 
       <section className="py-12 md:py-16">
-        <div className="container max-w-3xl space-y-12">
+        <div className="container space-y-12">
           {SECTIONS.map((section) => (
             <article key={section.id} id={section.id}>
               <h2 className="text-3xl font-bold tracking-tight">{section.title}</h2>

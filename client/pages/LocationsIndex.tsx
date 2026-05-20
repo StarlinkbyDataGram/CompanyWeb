@@ -30,7 +30,7 @@ export default function LocationsIndex() {
         }}
       />
       <section className="border-b bg-muted/40 py-14 md:py-20">
-        <div className="container max-w-4xl">
+        <div className="container">
           <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
             Starlink installation across Nigerian cities we serve every week
           </h1>
