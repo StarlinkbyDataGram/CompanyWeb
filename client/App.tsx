@@ -2,7 +2,7 @@ import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
 import { useEffect, useState } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -37,6 +37,13 @@ import AdminTestimonials from "./pages/admin/AdminTestimonials";
 import AdminFAQ from "./pages/admin/AdminFAQ";
 import AdminBlog from "./pages/admin/AdminBlog";
 import ProtectedRoute from "./components/admin/ProtectedRoute";
+import {
+  IndustryLandingByPath,
+  RegionalLandingByPath,
+} from "./pages/landing/LandingRoutePages";
+import { industryLandingPages } from "@/data/landing/industry-pages";
+import { regionalLandingPages } from "@/data/landing/regional-pages";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -72,6 +79,21 @@ const AppContent = () => {
               <Route path="/products" element={<Products />} />
               <Route path="/products/:slug" element={<ProductDetail />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              {industryLandingPages.map((page) => (
+                <Route
+                  key={page.path}
+                  path={page.path}
+                  element={<IndustryLandingByPath path={page.path} />}
+                />
+              ))}
+              {regionalLandingPages.map((page) => (
+                <Route
+                  key={page.path}
+                  path={page.path}
+                  element={<RegionalLandingByPath path={page.path} />}
+                />
+              ))}
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
@@ -268,30 +290,25 @@ const App = () => (
   </QueryClientProvider>
 );
 
-// Avoid duplicate createRoot calls during HMR: reuse existing root if present
-const rootEl = document.getElementById("root")!;
-const globalAny = window as any;
-if (!globalAny.__APP_ROOT__) {
-  globalAny.__APP_ROOT__ = createRoot(rootEl);
-  try {
-    rootEl.setAttribute("data-app-root", "true");
-  } catch (e) {
-    /* ignore */
-  }
-}
+const rootElement = document.getElementById("root")!;
+const app = <App />;
 
-// On HMR dispose, unmount the root to avoid React warning about createRoot on same container
-if (import.meta.hot) {
-  import.meta.hot.dispose(() => {
-    try {
-      if (globalAny.__APP_ROOT__) {
-        globalAny.__APP_ROOT__.unmount();
-        globalAny.__APP_ROOT__ = undefined;
-      }
-    } catch (e) {
-      // ignore
+if (rootElement.hasChildNodes()) {
+  hydrateRoot(rootElement, app);
+} else {
+  const globalAny = window as Window & { __APP_ROOT__?: ReturnType<typeof createRoot> };
+  if (!globalAny.__APP_ROOT__) {
+    globalAny.__APP_ROOT__ = createRoot(rootElement);
+    if (import.meta.hot) {
+      import.meta.hot.dispose(() => {
+        try {
+          globalAny.__APP_ROOT__?.unmount();
+          globalAny.__APP_ROOT__ = undefined;
+        } catch {
+          /* ignore */
+        }
+      });
     }
-  });
+  }
+  globalAny.__APP_ROOT__!.render(app);
 }
-
-globalAny.__APP_ROOT__.render(<App />);

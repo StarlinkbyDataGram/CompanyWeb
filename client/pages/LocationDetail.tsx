@@ -91,7 +91,7 @@ export default function LocationDetail() {
       />
       <article>
         <section className="border-b bg-muted/30 py-14 md:py-20">
-          <div className="container max-w-3xl">
+          <div className="container">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{location.regionLabel}</p>
             <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">{location.headline}</h1>
             <p className="mt-4 text-lg leading-relaxed text-foreground/80">{location.intro}</p>
@@ -107,7 +107,7 @@ export default function LocationDetail() {
         </section>
 
         <section className="py-12 md:py-16">
-          <div className="container max-w-3xl space-y-10">
+          <div className="container space-y-10">
             {location.sections.map((section) => (
               <div key={section.heading}>
                 <h2 className="text-2xl font-bold tracking-tight">{section.heading}</h2>

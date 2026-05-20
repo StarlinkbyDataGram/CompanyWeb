@@ -2,6 +2,9 @@ import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { blogPosts } from "../client/data/blog";
+import { seoArticles2026 } from "../client/data/blog/articles-2026";
+import { industryLandingPages } from "../client/data/landing/industry-pages";
+import { regionalLandingPages } from "../client/data/landing/regional-pages";
 import { products } from "../client/data/products";
 import { services } from "../client/data/services";
 import { serviceLocations } from "../client/data/locations";
@@ -31,7 +34,7 @@ function buildUrlEntries(): RouteEntry[] {
     { path: "/about", priority: 0.9, changefreq: "monthly", lastmod: todayIso },
     { path: "/services", priority: 0.9, changefreq: "weekly", lastmod: todayIso },
     { path: "/products", priority: 0.9, changefreq: "weekly", lastmod: todayIso },
-    { path: "/blog", priority: 0.8, changefreq: "weekly", lastmod: todayIso },
+    { path: "/blog", priority: 0.7, changefreq: "weekly", lastmod: todayIso },
     { path: "/contact", priority: 0.7, changefreq: "monthly", lastmod: todayIso },
     { path: "/support", priority: 0.6, changefreq: "monthly", lastmod: todayIso },
     { path: "/faq", priority: 0.85, changefreq: "monthly", lastmod: todayIso },
@@ -70,7 +73,37 @@ function buildUrlEntries(): RouteEntry[] {
     lastmod: new Date(post.date ?? todayIso).toISOString(),
   }));
 
-  return [...staticRoutes, ...locationRoutes, ...serviceRoutes, ...productRoutes, ...blogRoutes];
+  const seoArticleRoutes: RouteEntry[] = seoArticles2026.map((post) => ({
+    path: `/blog/${post.slug}`,
+    priority: 0.7,
+    changefreq: "monthly",
+    lastmod: todayIso,
+  }));
+
+  const industryRoutes: RouteEntry[] = industryLandingPages.map((page) => ({
+    path: page.path,
+    priority: 0.8,
+    changefreq: "monthly",
+    lastmod: todayIso,
+  }));
+
+  const regionalRoutes: RouteEntry[] = regionalLandingPages.map((page) => ({
+    path: page.path,
+    priority: 0.8,
+    changefreq: "monthly",
+    lastmod: todayIso,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...industryRoutes,
+    ...regionalRoutes,
+    ...locationRoutes,
+    ...serviceRoutes,
+    ...productRoutes,
+    ...blogRoutes,
+    ...seoArticleRoutes,
+  ];
 }
 
 function toAbsoluteUrl(slug: string) {

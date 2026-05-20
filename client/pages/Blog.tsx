@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { blogPosts as initialBlogPosts, BlogPost } from "@/data/blog";
+import { seoArticles2026 } from "@/data/blog/articles-2026";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -221,6 +223,31 @@ export default function Blog() {
           </div>
         </section>
       )}
+
+      <section className="py-8 border-t">
+        <div className="container">
+          <h2 className="text-2xl font-bold mb-6">Nigeria guides (2026)</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            {seoArticles2026.map((post) => (
+              <Card key={post.slug} className="group hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <Badge variant="secondary">{post.category}</Badge>
+                  <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>
+                  <CardDescription>{post.excerpt}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="ghost" size="sm">
+                    <Link to={`/blog/${post.slug}`}>
+                      Read more
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="py-8">
         <div className="container">
