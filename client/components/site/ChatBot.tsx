@@ -155,9 +155,9 @@ const knowledgeBase: KBEntry[] = [
 
   // Location / Areas served
   {
-    patterns: ["where", "location", "city", "state", "abuja", "lagos", "port harcourt", "kano", "ibadan", "enugu", "kaduna", "benin", "owerri", "warri", "maiduguri", "nationwide", "near me", "cover", "coverage"],
+    patterns: ["where", "location", "city", "state", "abuja", "lagos", "port harcourt", "niger delta", "yenagoa", "warri", "ibadan", "enugu", "kaduna", "benin", "owerri", "bayelsa", "maiduguri", "nationwide", "near me", "cover", "coverage"],
     response:
-      "📍 **We Serve All of Nigeria!**\n\nOur installation and delivery teams operate across Nigeria, including:\n\n🏙 **Major Cities:** Abuja, Lagos, Port Harcourt, Kano, Ibadan, Enugu, Kaduna, Benin City, Owerri, Warri, Maiduguri\n\n🗺 **All 36 States + FCT** — Contact us to confirm availability and logistics for your specific location.\n\nStarlink satellite coverage is active across all of Nigeria.",
+      "📍 **We Serve All of Nigeria!**\n\nOur installation hub is in Port Harcourt with daily coverage across the **Niger Delta** (Rivers, Bayelsa, Delta) plus regular work in Abuja and Lagos.\n\n🏙 **Priority regions:** Abuja, Lagos, Port Harcourt, Warri, Yenagoa, Asaba\n\n🗺 **We do not have an install desk in Kano or northern Nigeria** — contact us to confirm logistics for your specific address.\n\nStarlink satellite coverage is active across all of Nigeria.",
     links: [{ label: "Contact Us", href: "/contact" }],
   },
 

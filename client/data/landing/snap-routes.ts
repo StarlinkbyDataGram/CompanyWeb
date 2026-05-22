@@ -21,6 +21,7 @@ export const SNAP_INCLUDE_ROUTES = [
   "/starlink-installation-abia-state",
   "/starlink-installation-enugu-state",
   "/starlink-installation-edo-state-benin",
+  "/starlink-installation-niger-delta",
   "/blog/how-much-does-starlink-installation-cost-nigeria-2026",
   "/blog/starlink-vs-fibre-internet-lagos",
   "/blog/starlink-offshore-niger-delta-specs",

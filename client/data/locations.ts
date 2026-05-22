@@ -87,24 +87,31 @@ export const serviceLocations: ServiceLocation[] = [
     relatedServiceSlugs: ["sales-installation", "whole-premises", "wisp-setup"],
   },
   {
-    slug: "kano",
-    name: "Kano",
-    regionLabel: "Kano State",
-    title: "Starlink Installation Kano | Northern Nigeria Coverage | DataGram",
+    slug: "niger-delta",
+    name: "Niger Delta",
+    regionLabel: "Rivers, Bayelsa & Delta State",
+    title: "Starlink Installation Niger Delta | PH, Yenagoa, Warri | DataGram",
     metaDescription:
-      "Book Starlink installation in Kano and northern Nigeria. DataGram handles surveys, mounts, mesh WiFi, and enterprise failover. Get a free site survey today.",
-    headline: "Starlink installation Kano and northern corridors with experienced field teams",
+      "Starlink installation in the Niger Delta: Port Harcourt, Yenagoa, Warri, Asaba, and creek communities. Marine-aware crews from DataGram HQ in PH.",
+    headline: "Starlink installation in the Niger Delta from our Port Harcourt operations base",
     intro:
-      "Northern Nigeria customers often ask whether satellite fits their dust-season environment and power patterns. We design mounts that handle wind loads, seal cable penetrations against dust, and recommend inverter or battery pairings that match your generator schedule.",
+      "DataGram is headquartered in Port Harcourt and serves the Niger Delta daily—Trans-Amadi plants, PH GRA estates, Yenagoa layouts, Warri–Effurun industrial roofs, Asaba capital installs, and shore-access creek compounds. We do not operate an install desk in Kano or northern Nigeria; our field strength is South-South logistics, humidity-rated outdoor cable, and marine-adjacent sites.",
     sections: [
       {
-        heading: "Serving Kano metro and surrounding towns",
+        heading: "Where we work in the Niger Delta",
         paragraphs: [
-          "We support urban Kano properties and outreach to nearby commercial hubs where fiber is limited. Voice queries like “Starlink installer near me” reward consistent business names, addresses, and phone numbers—exactly why we publish our NAP in the site footer and structured data.",
+          "We cover Port Harcourt and Rivers State corridors, Bayelsa including Yenagoa and Amassoma, and Delta State from Asaba through Warri, Effurun, and Sapele. Offshore and OSV work uses our maritime install team—see the dedicated Niger Delta installation page for scope and survey booking.",
+          "For estate and factory jobs we document handover for facility managers, size UPS for generator transfer, and route cable in UV conduit suited to coastal humidity.",
+        ],
+      },
+      {
+        heading: "Book a Niger Delta survey",
+        paragraphs: [
+          "WhatsApp your roof or deck photos, estate name, and map pin. We assign PH-based crews with local spares—no fly-in delay from Lagos unless you request a multi-city bundle.",
         ],
       },
     ],
-    relatedServiceSlugs: ["sales-installation", "backup-power", "global-roaming"],
+    relatedServiceSlugs: ["sales-installation", "whole-premises", "backup-power"],
   },
 ];
 

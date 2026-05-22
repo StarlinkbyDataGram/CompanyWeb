@@ -73,7 +73,7 @@ const SECTIONS: { id: string; title: string; body: string[] }[] = [
     body: [
       "Great support starts with labeled cables, photos of final routes, and a short written baseline of speed tests. Clients should know how to power-cycle in the right order and when to call instead of self-adjusting dish bolts. We offer WhatsApp triage for quick questions and scheduled truck rolls for physical faults.",
       "For businesses, define escalation paths: who onsite can grant roof access, who approves spend for new radios, and who holds vendor accounts. Clear roles shorten mean-time-to-repair dramatically. We also train office managers how to read basic obstruction reports so transient issues after storms do not panic staff.",
-      "If you are comparing installers, ask for sample documentation, insurance proof, and references in your city. DataGram publishes city pages for Abuja, Lagos, Port Harcourt, and Kano plus this guide so you can verify our expertise before sending a deposit.",
+      "If you are comparing installers, ask for sample documentation, insurance proof, and references in your city. DataGram publishes city pages for Abuja, Lagos, Port Harcourt, and the Niger Delta plus this guide so you can verify our expertise before sending a deposit.",
     ],
   },
   {

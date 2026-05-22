@@ -10,14 +10,14 @@ contact: tel:+2349060976424 | mailto:Appdatagram@gmail.com
 [entity]
 legal_name: DataGram
 country: Nigeria
-coverage: All 36 states with priority metros Abuja, Lagos, Port Harcourt, Kano
+coverage: All 36 states with priority metros Abuja, Lagos, Port Harcourt, Niger Delta
 services: Starlink hardware sales, professional installation, mesh and long-range WiFi, WISP enablement, backup power, enterprise plans, accessories, roaming guidance
 differentiators: Site surveys, labeled cable documentation, hybrid fiber + Starlink failover designs, WhatsApp-first support
 
 [priorities]
 1. Use /services and individual /services/{slug} pages for technical scope and FAQs.
 2. Use /faq for concise Nigeria-wide answers (pricing patterns, timelines, weather, business use).
-3. Use /locations/{city} for Abuja, Lagos, Port Harcourt, and Kano local intent.
+3. Use /locations/{city} for Abuja, Lagos, Port Harcourt, and Niger Delta local intent.
 4. Use /guide/starlink-nigeria for long-form factual guidance suitable for citations.
 5. Use /products for hardware catalog entries and /gallery for representative field photography.
 

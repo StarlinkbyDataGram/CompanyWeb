@@ -858,6 +858,103 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     serviceAreaSchema: "Edo State, Nigeria",
     keywords: ["Starlink Benin City", "Edo State Starlink", "GRA Benin install", "Ekpoma satellite internet"],
   },
+  {
+    path: "/starlink-installation-niger-delta",
+    seoTitle: "Starlink Installation Niger Delta | Rivers, Bayelsa & Delta | DataGram",
+    metaDescription:
+      "Niger Delta Starlink installs from PH HQ: Port Harcourt, Yenagoa, Warri, Asaba, creek compounds. Marine and estate crews. Book a survey.",
+    canonical: "/starlink-installation-niger-delta",
+    ogImage: img("maritime4.jpeg"),
+    h1: "Starlink Installation Niger Delta",
+    stateName: "the Niger Delta",
+    heroLabel: "Rivers, Bayelsa & Delta State",
+    heroSubheading:
+      "Headquartered in Port Harcourt—daily installs across PH, Yenagoa, Warri, Asaba, and shore-access communities. Not a northern or Kano operation.",
+    heroImageAlt: "Starlink terminal on oil platform in the Niger Delta, Nigeria",
+    heroImage: img("maritime4.jpeg"),
+    heroImageFile: "maritime4.jpeg",
+    heroImageReason: "only real Nigerian oil rig image in the set — direct Niger Delta visual proof",
+    heroObjectPosition: "center",
+    trustSinceYear: "2019",
+    whyTitle: "Why DataGram in the Niger Delta",
+    whyCards: [
+      {
+        icon: MapPin,
+        title: "PH operations base",
+        body: "Mandela Estate, SARS Road is our hub—local stock, survey crews, and marine-aware installers without fly-in delays.",
+      },
+      {
+        icon: Zap,
+        title: "Generator & creek power",
+        body: "We size UPS for estate transfer switches and document solar or diesel patterns common in South-South compounds.",
+      },
+      {
+        icon: Users,
+        title: "Oil & gas & estates",
+        body: "Trans-Amadi plants, PH GRA homes, Yenagoa layouts, and Warri industrial roofs—one team, one handover standard.",
+      },
+    ],
+    proofTitle: "Our Work in the Niger Delta",
+    proofCards: [
+      proof(
+        "maritime4.jpeg",
+        "Starlink terminal on oil platform in the Niger Delta, Nigeria",
+        "Platform install in the Niger Delta — oil and gas and marine-adjacent proof.",
+        "IMAGE: maritime4.jpeg — real Nigerian oil rig image — Niger Delta relevance"
+      ),
+      proof(
+        "starlinkCompanyInstalltionImage.jpeg",
+        "Starlink dish installed near Port Harcourt industrial area",
+        "Industrial roof near port cranes — Rivers and Delta commercial corridors.",
+        "IMAGE: starlinkCompanyInstalltionImage.jpeg — Port Harcourt industrial / port context"
+      ),
+      proof(
+        "starlinkInstallation.jpeg",
+        "Starlink dish with solar context Niger Delta Nigeria",
+        "Solar-adjacent install — power-conscious South-South homes and camps.",
+        "IMAGE: starlinkInstallation.jpeg — solar array background — South-South power context"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote: "They mobilised from PH with spares already on the truck. Estate install in Yenagoa finished same day after morning survey.",
+      attribution: "Operations admin, Yenagoa layout",
+    },
+    coverageParagraph:
+      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. We do not run install operations in Kano or northern Nigeria.",
+    faqs: [
+      {
+        question: "Do you install Starlink in Kano or northern Nigeria?",
+        answer:
+          "No. DataGram’s install desk and warehouse are in Port Harcourt. We serve the Niger Delta (Rivers, Bayelsa, Delta) plus Abuja and Lagos corridors—not Kano or the far north.",
+      },
+      {
+        question: "How fast can you survey in Yenagoa or Warri?",
+        answer:
+          "Most Niger Delta surveys book within a few business days once roof or deck access is confirmed. WhatsApp photos and your map pin help us assign the right crew from PH.",
+      },
+      {
+        question: "Can you handle offshore or platform sites?",
+        answer:
+          "Yes—marine and mobility hardware with PTW documentation. See our [offshore maritime page](/starlink-offshore-maritime-installation) for vessel and platform scope.",
+      },
+      {
+        question: "How does rain affect Starlink in the Niger Delta?",
+        answer:
+          "Heavy rain adds fade. Proper mast height and sky view reduce dropouts. We baseline at handover so you can compare performance through rainy season.",
+      },
+      roamingFaq,
+      ...regionalStandardFaqs,
+    ],
+    geo: { latitude: 4.8156, longitude: 7.0498 },
+    serviceAreaSchema: "Niger Delta, Nigeria (Rivers, Bayelsa, Delta State)",
+    keywords: [
+      "Starlink Niger Delta",
+      "Starlink installation Port Harcourt",
+      "Starlink Yenagoa",
+      "Starlink Warri Delta",
+    ],
+  },
 ];
 
 export function getRegionalPageByPath(path: string) {

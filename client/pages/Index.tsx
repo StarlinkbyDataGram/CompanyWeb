@@ -222,7 +222,7 @@ const INTRO_CITY_LINKS = [
   { to: "/locations/lagos", label: "Lagos" },
   { to: "/locations/abuja", label: "Abuja" },
   { to: "/locations/port-harcourt", label: "Port Harcourt" },
-  { to: "/locations/kano", label: "Kano" },
+  { to: "/locations/niger-delta", label: "Niger Delta" },
 ] as const;
 
 const INTRO_SERVICE_CARDS = [

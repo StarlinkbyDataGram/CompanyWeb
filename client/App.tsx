@@ -6,7 +6,7 @@ import { createRoot, hydrateRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Phone } from "lucide-react";
 import Header from "@/components/site/Header";
@@ -100,6 +100,7 @@ const AppContent = () => {
               <Route path="/support" element={<Support />} />
               <Route path="/faq" element={<FaqPage />} />
               <Route path="/locations" element={<LocationsIndex />} />
+              <Route path="/locations/kano" element={<Navigate to="/locations/niger-delta" replace />} />
               <Route path="/locations/:slug" element={<LocationDetail />} />
               <Route path="/guide/starlink-nigeria" element={<StarlinkGuideNigeria />} />
               <Route path="/gallery" element={<Gallery />} />

@@ -22,7 +22,7 @@ export const comprehensiveFaqs: ComprehensiveFaq[] = [
     id: "all-states",
     question: "Does Starlink work in all 36 states of Nigeria?",
     answer:
-      "Starlink is available across Nigeria where coverage and regulatory conditions allow service. Performance still depends on sky view, obstructions, and local power quality. We verify line-of-sight during the survey and recommend the right dish variant for your location, whether you are in Lagos, Abuja, Port Harcourt, Kano, or a rural community.",
+      "Starlink is available across Nigeria where coverage and regulatory conditions allow service. Performance still depends on sky view, obstructions, and local power quality. We verify line-of-sight during the survey and recommend the right dish variant for your location, whether you are in Lagos, Abuja, Port Harcourt, the Niger Delta, or a rural community.",
   },
   {
     id: "included",

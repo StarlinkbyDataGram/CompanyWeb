@@ -15,8 +15,8 @@ export default function LocationsIndex() {
   return (
     <div className="flex flex-col">
       <Seo
-        title="Starlink Installation Cities Nigeria | Abuja, Lagos, PH, Kano | DataGram"
-        description="City pages for Starlink installation Nigeria: Abuja, Lagos, Port Harcourt, Kano. Local surveys, mounting, mesh WiFi, and enterprise failover by DataGram."
+        title="Starlink Installation Cities Nigeria | Abuja, Lagos, PH, Niger Delta | DataGram"
+        description="City pages for Starlink installation Nigeria: Abuja, Lagos, Port Harcourt, Niger Delta. Local surveys, mounting, mesh WiFi, and enterprise failover by DataGram."
         canonical="/locations"
         schema={{
           "@context": "https://schema.org",
@@ -50,12 +50,22 @@ export default function LocationsIndex() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm leading-relaxed text-foreground/80">{loc.intro}</p>
-                <Link
-                  className="inline-flex text-sm font-semibold text-primary underline-offset-4 hover:underline"
-                  to={`/locations/${loc.slug}`}
-                >
-                  Read the {loc.name} guide →
-                </Link>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    className="inline-flex text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                    to={`/locations/${loc.slug}`}
+                  >
+                    Read the {loc.name} guide →
+                  </Link>
+                  {loc.slug === "niger-delta" && (
+                    <Link
+                      className="inline-flex text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                      to="/starlink-installation-niger-delta"
+                    >
+                      Full Niger Delta install page →
+                    </Link>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
