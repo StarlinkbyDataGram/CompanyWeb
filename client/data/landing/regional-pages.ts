@@ -1,7 +1,63 @@
 import { Clock, MapPin, Truck, Users, Wrench, Zap } from "lucide-react";
 import type { RegionalLandingConfig } from "./types";
 
-const PROOF_IMG = "/placeholder.svg";
+const img = (file: string) => `/images/${file}`;
+
+const proof = (
+  file: string,
+  alt: string,
+  caption: string,
+  comment: string,
+  objectPosition = "center"
+) => ({
+  src: img(file),
+  imageFile: file,
+  alt,
+  caption,
+  imageComment: comment,
+  objectPosition,
+});
+
+const SPEED = {
+  label: "Typical performance range",
+  down: "50–1,000 Mbps",
+  up: "10–100 Mbps",
+  latency: "20–33 ms",
+};
+
+const roamingFaq = {
+  question: "What is Starlink roaming and do I need it?",
+  answer:
+    "Roaming lets you use Starlink across different land regions globally, not only where you activated the service. It helps where local coverage is limited or not fully available yet. Roaming costs extra on top of your standard subscription.",
+};
+
+const regionalStandardFaqs = [
+  {
+    question: "How much is the monthly subscription fee?",
+    answer:
+      "₦57,000 – ₦3,000,000+ depending on location, service availability, subscription type, and plan eligibility.",
+  },
+  {
+    question: "Do I need a technician to install Starlink?",
+    answer:
+      "For simple residential setups, self-install is possible using the Starlink app. However, a certified installer is recommended if you need WiFi coverage across a large building, proper outdoor mounting, structural stability for the dish, or help avoiding signal obstructions.",
+  },
+  {
+    question: "Do you offer ongoing support after installation?",
+    answer:
+      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Speeds: 50–1,000 Mbps. Latency: 20–30 ms under normal conditions.",
+  },
+  {
+    question: "Is roof drilling required for Starlink installation?",
+    answer:
+      "Not always. We use wall mounts where the structure allows. Drilling is done when necessary for proper cable routing, and all penetrations are sealed to prevent water entry.",
+  },
+  {
+    question: "Can businesses request after-hours installation?",
+    answer:
+      "No, we do not offer after-hours installation. All installations are scheduled during standard business hours.",
+  },
+];
 
 export const regionalLandingPages: RegionalLandingConfig[] = [
   {
@@ -10,12 +66,18 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     metaDescription:
       "Starlink installer in Abuja FCT: Maitama, Gwarinpa, Kubwa, and industrial layouts. Surveys, mounts, and estate-approved routing.",
     canonical: "/starlink-installation-abuja",
+    ogImage: img("StarlinkCompanyInstallation.jpeg"),
     h1: "Starlink Installation Abuja",
     stateName: "Abuja FCT",
     heroLabel: "Federal Capital Territory",
     heroSubheading:
       "From diplomatic zones to Gwarinpa estates and Jabi warehouse roofs—field teams that understand FCT power and facility rules.",
-    heroImageAlt: "Starlink dish mounted on Abuja Maitama residential rooftop",
+    heroImageAlt: "Starlink installation at conference facility in Abuja, DataGram",
+    heroImage: img("StarlinkCompanyInstallation.jpeg"),
+    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageReason:
+      "NCDMB Conference Centre has Abuja institutional architecture feel — most credible fit for the FCT page",
+    heroObjectPosition: "center",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Abuja",
     whyCards: [
@@ -37,26 +99,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Abuja FCT",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink install Gwarinpa Abuja estate rooftop", caption: "Gwarinpa estate — gallery photo pending." },
-      { src: PROOF_IMG, alt: "Starlink cable tray Abuja office block Wuse", caption: "Wuse office tray — replace with signed job." },
-      { src: PROOF_IMG, alt: "Starlink mount Kubwa Abuja residential", caption: "Kubwa residential — speed baseline archived." },
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink residential rooftop install Abuja FCT",
+        "Residential roof mount with clean cable routing in the FCT.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Abuja FCT"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink pole mount in Abuja estate",
+        "Estate pole install — security-friendly scope and conduit finish.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Abuja"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink wall mount residential Abuja",
+        "Wall-bracket install where roof access was limited.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Abuja"
+      ),
     ],
-    speedStat: { label: "Gwarinpa handover sample", down: "198 Mbps", up: "24 Mbps", latency: "36 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Facility wanted minimal facade drilling. Crew used a parapet mount and ran conduit through the ceiling void.",
       attribution: "Hassan M., Jabi district",
     },
-    serviceAreasTitle: "Service areas in Abuja FCT",
-    serviceAreas: [
-      "Maitama & Asokoro",
-      "Wuse II & Central Area",
-      "Garki & Area 11",
-      "Gwarinpa & Dawaki",
-      "Kubwa & Dutse",
-      "Lugbe & Airport Road corridor",
-      "Jahi & Kado estate",
-      "Nyanya & Mararaba (FCT edge)",
-    ],
+    coverageParagraph:
+      "We install across Abuja FCT including Maitama, Asokoro, Wuse, Garki, Gwarinpa, Kubwa, Lugbe, Jabi, Kado, and the Nyanya–Mararaba corridor. Government layouts, diplomatic zones, and new estates along Airport Road are covered with survey-first scheduling.",
     faqs: [
       {
         question: "Do you install Starlink in Abuja estates with strict drilling rules?",
@@ -78,6 +146,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Handover packs include photos, speed baselines, and cable paths—formatted for programme officers who need evidence of connectivity spend.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 9.0579, longitude: 7.4951 },
     serviceAreaSchema: "Abuja Federal Capital Territory, Nigeria",
@@ -87,14 +157,20 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-lagos",
     seoTitle: "Starlink Installation Lagos | Island, Mainland & Suburbs | DataGram",
     metaDescription:
-      "Lagos Starlink installs: Lekki, Ikeja, VI, Ikoyi, Festac, and Epe corridors. Estate mounts, high-rise routing, and mesh for multi-floor homes.",
+      "Lagos Starlink installs: Lekki, Ikeja, VI, Ikoyi, Festac, and Epe. Estate mounts, high-rise routing, and mesh WiFi by DataGram.",
     canonical: "/starlink-installation-lagos",
+    ogImage: img("starlinkSetup.jpeg"),
     h1: "Starlink Installation Lagos",
     stateName: "Lagos State",
     heroLabel: "Island, mainland & suburbs",
     heroSubheading:
       "High-rise cable routing, estate security workflows, and humidity-rated outdoor runs for Africa’s busiest connectivity market.",
-    heroImageAlt: "Starlink dish on Lekki Phase 1 Lagos rooftop installation",
+    heroImageAlt: "Starlink dish on commercial building in Lagos, DataGram installation",
+    heroImage: img("starlinkSetup.jpeg"),
+    heroImageFile: "starlinkSetup.jpeg",
+    heroImageReason:
+      "commercial building with active construction in background reads as Lagos urban environment",
+    heroObjectPosition: "center",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Lagos",
     whyCards: [
@@ -116,31 +192,31 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Lagos State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink installation Lekki Lagos estate rooftop", caption: "Lekki Phase 1 — swap with customer-approved image." },
-      { src: PROOF_IMG, alt: "Starlink mount Ikeja GRA Lagos office", caption: "Ikeja GRA office — failover handover on file." },
-      { src: PROOF_IMG, alt: "Victoria Island Lagos Starlink cable tray", caption: "VI tower tray — placeholder gallery." },
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "DataGram Starlink installation at Lagos institutional facility",
+        "Institutional facility install — documented handover for Lagos enterprise clients.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — DataGram Starlink installation at Lagos institutional facility"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink dish installed in Lagos residential estate",
+        "Estate pole mount — Lekki and mainland gated communities.",
+        "IMAGE: starlinkEstateInstallation.jpeg — Starlink dish installed in Lagos residential estate"
+      ),
     ],
-    speedStat: { label: "Lekki sample", down: "184 Mbps", up: "21 Mbps", latency: "39 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Estate security wanted all outdoor cable in white conduit. Team finished before the weekend curfew.",
       attribution: "Chidi O., Chevron Drive, Lekki",
     },
-    serviceAreasTitle: "Service areas in Lagos State",
-    serviceAreas: [
-      "Ikeja & Computer Village corridor",
-      "Victoria Island & Ikoyi",
-      "Lekki Phase 1 & Chevron Drive",
-      "Ajah & Sangotedo",
-      "Festac & Amuwo-Odofin",
-      "Surulere & Yaba",
-      "Epe & coastal weekend homes",
-      "Badagry & western corridor",
-    ],
+    coverageParagraph:
+      "We cover Lagos Island, Victoria Island, Ikoyi, Lekki, Ajah, Ikeja, Surulere, Yaba, Festac, Amuwo-Odofin, Epe, Badagry, and surrounding corridors. High-rises, estates, and mainland studios get the same survey-first process.",
     faqs: [
       {
         question: "Can you install on Lagos Island high-rises?",
         answer:
-          "Yes, when building management grants roof or riser access. We bring method statements for facility managers and schedule lifts outside tenant peak hours where possible.",
+          "Yes, when building management grants roof or riser access. We bring method statements for facility managers and schedule lifts during standard business hours.",
       },
       {
         question: "How do you handle Lekki estate security?",
@@ -157,6 +233,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Yes—Yaba, Surulere, and Mushin installs for creative studios and assembly halls are common. Upload-heavy users should disclose concurrent stream counts during survey.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 6.5244, longitude: 3.3792 },
     serviceAreaSchema: "Lagos State, Nigeria",
@@ -168,12 +246,17 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     metaDescription:
       "Port Harcourt Starlink: Trans-Amadi, GRA, Woji, and industrial estates. Marine-aware crews, humidity-rated installs, HQ support.",
     canonical: "/starlink-installation-rivers-state-port-harcourt",
+    ogImage: img("starlinkCompanyInstalltionImage.jpeg"),
     h1: "Starlink Installation Rivers State & Port Harcourt",
     stateName: "Rivers State",
     heroLabel: "Port Harcourt & environs",
     heroSubheading:
       "Headquartered in PH with daily runs across Trans-Amadi industrial layouts, GRA compounds, and waterfront communities.",
     heroImageAlt: "Starlink dish on Port Harcourt GRA Phase 2 rooftop",
+    heroImage: img("starlinkCompanyInstalltionImage.jpeg"),
+    heroImageFile: "starlinkCompanyInstalltionImage.jpeg",
+    heroImageReason: "industrial roof with port cranes — strongest Port Harcourt geographic match in the image set",
+    heroObjectPosition: "center",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Rivers State",
     whyCards: [
@@ -195,26 +278,26 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Rivers State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink install Port Harcourt GRA Phase 2", caption: "GRA Phase 2 — field photo replacement queued." },
-      { src: PROOF_IMG, alt: "Trans-Amadi Port Harcourt Starlink industrial roof", caption: "Trans-Amadi industrial — speed test archived." },
-      { src: PROOF_IMG, alt: "Woji estate Port Harcourt Starlink mount", caption: "Woji estate — customer testimonial on file." },
+      proof(
+        "starlinkCompanyInstalltionImage.jpeg",
+        "Starlink dish installed near Port Harcourt industrial area",
+        "Industrial roof near port cranes — Trans-Amadi and waterfront commercial layouts.",
+        "IMAGE: starlinkCompanyInstalltionImage.jpeg — blue industrial roof + port cranes — Port Harcourt port area"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink installation in GRA residential estate, Port Harcourt",
+        "GRA estate pole mount — palms and compound layouts typical of PH residential zones.",
+        "IMAGE: starlinkEstateInstallation.jpeg — GRA-style residential estate, Port Harcourt"
+      ),
     ],
-    speedStat: { label: "GRA Phase 2 sample", down: "165 Mbps", up: "20 Mbps", latency: "37 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Palms blocked the first spot. Engineers moved the mast two metres and latency dropped on the second alignment.",
       attribution: "Chidi O., GRA Phase 2, PH",
     },
-    serviceAreasTitle: "Service areas in Rivers State",
-    serviceAreas: [
-      "Port Harcourt GRA & Old GRA",
-      "Trans-Amadi Industrial Layout",
-      "Woji & Rumuokoro",
-      "Elelenwo & Akpajo",
-      "Bonny Island (shore jobs)",
-      "Oyigbo & Eleme corridor",
-      "Buguma & waterfront communities",
-      "Mile 1 & Diobu",
-    ],
+    coverageParagraph:
+      "We serve Port Harcourt GRA, Old GRA, Trans-Amadi, Woji, Rumuokoro, Elelenwo, Akpajo, Oyigbo, Eleme, Mile 1, Diobu, and Bonny Island shore jobs when logistics are confirmed.",
     faqs: [
       {
         question: "Are you based in Port Harcourt?",
@@ -236,6 +319,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Shore jobs with logistics lead time are booked after jetty access is confirmed. Marine motion installs use different hardware—declare vessel vs building early.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 4.8156, longitude: 7.0498 },
     serviceAreaSchema: "Rivers State, Nigeria",
@@ -247,12 +332,17 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     metaDescription:
       "Delta State Starlink: Asaba capital, Warri industrial corridor, Effurun, Sapele. Estate installs and riverine compound surveys.",
     canonical: "/starlink-installation-delta-state",
+    ogImage: img("starlinkInstallation.jpeg"),
     h1: "Starlink Installation Delta State",
     stateName: "Delta State",
     heroLabel: "Asaba, Warri & beyond",
     heroSubheading:
       "Capital installs in Asaba plus Warri–Effurun industrial roofs and riverine homes where terrestrial options thin out.",
     heroImageAlt: "Starlink installation Asaba Okpanam Road Delta State rooftop",
+    heroImage: img("starlinkInstallation.jpeg"),
+    heroImageFile: "starlinkInstallation.jpeg",
+    heroImageReason: "solar array background suits power-conscious South-South installs",
+    heroObjectPosition: "center",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Delta State",
     whyCards: [
@@ -274,26 +364,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Delta State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink mount Asaba capital territory rooftop", caption: "Asaba capital — gallery pending." },
-      { src: PROOF_IMG, alt: "Warri Effurun Starlink industrial installation", caption: "Effurun industrial — placeholder." },
-      { src: PROOF_IMG, alt: "Sapele Delta Starlink residential install", caption: "Sapele residential — speed log on file." },
+      proof(
+        "starlinkInstallation.jpeg",
+        "Starlink dish with solar context Delta State Nigeria",
+        "Solar-adjacent install — common for power-aware South-South homes and offices.",
+        "IMAGE: starlinkInstallation.jpeg — solar array background — suits power-conscious Delta State"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink wall mount residential Delta State",
+        "Multi-mount residential setup — practical for compounds upgrading from legacy antennas.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Delta State"
+      ),
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink clean rooftop install Delta State",
+        "Clean roof mount with documented speed baseline at handover.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Delta State"
+      ),
     ],
-    speedStat: { label: "Asaba sample", down: "142 Mbps", up: "18 Mbps", latency: "42 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Warri office needed VLAN separation for accounts and warehouse scanners. Handover included IP map and labelled photos.",
       attribution: "Blessing A., Effurun",
     },
-    serviceAreasTitle: "Service areas in Delta State",
-    serviceAreas: [
-      "Asaba & Okpanam Road estates",
-      "Warri & Effurun",
-      "DSC Township",
-      "Sapele & Amukpe",
-      "Agbor & Ika corridor",
-      "Ughelli & Otujeremi",
-      "Ozoro & Isoko axis",
-      "Patani & riverine waterfront",
-    ],
+    coverageParagraph:
+      "We cover Asaba, Okpanam Road estates, Warri, Effurun, DSC Township, Sapele, Agbor, Ughelli, Ozoro, and Patani riverine waterfront where sky view allows a mast solution.",
     faqs: [
       {
         question: "Do you cover both Asaba and Warri in one trip?",
@@ -315,6 +411,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "WhatsApp roof photos, estate name, and map pin. We confirm Asaba vs Warri crew assignment within one business day typically.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 6.198, longitude: 6.729 },
     serviceAreaSchema: "Delta State, Nigeria",
@@ -332,6 +430,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroSubheading:
       "Capital city estates, NDDC layouts, and creek-adjacent compounds—installers who plan logistics from Port Harcourt hub stock.",
     heroImageAlt: "Starlink dish Yenagoa Bayelsa residential rooftop installation",
+    heroImageMissing: true,
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Bayelsa",
     whyCards: [
@@ -353,26 +452,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Bayelsa State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink Yenagoa Kpansia estate install", caption: "Kpansia — photo swap pending." },
-      { src: PROOF_IMG, alt: "Amassoma Bayelsa Starlink campus mount", caption: "Amassoma — placeholder deployment." },
-      { src: PROOF_IMG, alt: "Ogbia Bayelsa Starlink compound", caption: "Ogbia compound — speed sample logged." },
+      proof(
+        "starlinkInstallation.jpeg",
+        "Starlink install with solar backup context Bayelsa",
+        "Solar-adjacent mount — suited to creek communities with generator and solar mix.",
+        "IMAGE: starlinkInstallation.jpeg — solar array background — suits power-conscious Bayelsa"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink residential wall mount Bayelsa State",
+        "Wall-bracket residential install in humid coastal conditions.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Bayelsa"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink estate pole mount Bayelsa",
+        "Estate pole mount with sealed outdoor cable runs.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Bayelsa"
+      ),
     ],
-    speedStat: { label: "Yenagoa sample", down: "128 Mbps", up: "16 Mbps", latency: "44 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Creek humidity killed our last router. New install uses sealed tray and grounding—speed held through March rains.",
       attribution: "Timi J., Ekeki layout",
     },
-    serviceAreasTitle: "Service areas in Bayelsa State",
-    serviceAreas: [
-      "Yenagoa & Kpansia",
-      "Ekeki & Isaac Boro estate",
-      "Amassoma & Niger Delta University axis",
-      "Ogbia & Emeyal",
-      "Nembe & waterfront (shore)",
-      "Brass & coastal camps",
-      "Sagbama & university road",
-      "Opolo & Kolo Creek adjacency",
-    ],
+    coverageParagraph:
+      "We install in Yenagoa, Kpansia, Ekeki, Isaac Boro estate, Amassoma, Ogbia, Nembe waterfront shore sites, Brass coastal camps, Sagbama, and Opolo near Kolo Creek when access is confirmed.",
     faqs: [
       {
         question: "Do you travel from Port Harcourt to Yenagoa?",
@@ -394,6 +499,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Single-home installs often finish same day after survey. Estates with curfew rules may split survey and drill across two approved days.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 4.9267, longitude: 6.2646 },
     serviceAreaSchema: "Bayelsa State, Nigeria",
@@ -411,6 +518,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroSubheading:
       "Capital estates, Orlu industrial shops, and Okigwe hillside homes—survey-first installs across Imo’s mixed terrain.",
     heroImageAlt: "Starlink installation Owerri Aladinma Imo State rooftop",
+    heroImageMissing: true,
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Imo State",
     whyCards: [
@@ -432,26 +540,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Imo State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink Owerri Aladinma estate install", caption: "Aladinma — replace with live gallery." },
-      { src: PROOF_IMG, alt: "Orlu Imo Starlink shop installation", caption: "Orlu commercial — placeholder." },
-      { src: PROOF_IMG, alt: "Okigwe Imo hillside Starlink mount", caption: "Okigwe hillside — baseline on file." },
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink residential multi-mount Imo State",
+        "Residential wall and bracket install in Owerri corridor.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Imo State"
+      ),
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink rooftop install Imo State Nigeria",
+        "Rooftop mount with clean cable entry and handover photos.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Imo State"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink estate pole mount Owerri Imo",
+        "Estate pole mount — Aladinma and New Owerri layouts.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Imo State"
+      ),
     ],
-    speedStat: { label: "New Owerri sample", down: "155 Mbps", up: "19 Mbps", latency: "40 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Church hall streams now stay up when the grid drops. UPS on router only was enough after they balanced loads.",
       attribution: "Pastor G., World Bank Road",
     },
-    serviceAreasTitle: "Service areas in Imo State",
-    serviceAreas: [
-      "Owerri Municipal & New Owerri",
-      "Aladinma & Ikenegbu",
-      "Orlu & Mgbidi",
-      "Okigwe & Umulolo",
-      "Mbaise & Aboh Mbaise",
-      "Oguta & lakefront homes",
-      "Nekede & FUTO corridor",
-      "Ehime Mbano & rural compounds",
-    ],
+    coverageParagraph:
+      "We cover Owerri Municipal, New Owerri, Aladinma, Ikenegbu, Orlu, Mgbidi, Okigwe, Mbaise, Oguta lakefront homes, Nekede, FUTO corridor, and Ehime Mbano rural compounds.",
     faqs: [
       {
         question: "Do you cover Orlu and Okigwe outside Owerri?",
@@ -473,6 +587,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Scope letter and installer ID. Some estates require conduit colour matching—we note that at survey.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 5.4839, longitude: 7.0333 },
     serviceAreaSchema: "Imo State, Nigeria",
@@ -490,6 +606,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroSubheading:
       "From Aba’s commercial density to Umuahia government layouts—installers who respect market power noise and estate drilling rules.",
     heroImageAlt: "Starlink installation Aba Abia State commercial building rooftop",
+    heroImageMissing: true,
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Abia State",
     whyCards: [
@@ -511,26 +628,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Abia State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink Aba commercial rooftop Abia", caption: "Aba commercial — gallery pending." },
-      { src: PROOF_IMG, alt: "Umuahia GRA Starlink install Abia", caption: "Umuahia GRA — placeholder." },
-      { src: PROOF_IMG, alt: "Osisioma industrial Starlink Abia", caption: "Osisioma — speed test archived." },
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink residential rooftop Abia State",
+        "Umuahia GRA residential roof — clean mount and cable routing.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Abia State"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink estate install Abia State",
+        "Estate pole mount for gated compounds in Umuahia and Ohiya.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Abia State"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink wall bracket Aba commercial axis",
+        "Wall-bracket install where rooftop access was restricted.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Abia State"
+      ),
     ],
-    speedStat: { label: "Aba handover sample", down: "149 Mbps", up: "17 Mbps", latency: "43 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Market generator noise used to reboot our old LTE router. Starlink router on UPS stayed up through last Easter rush.",
       attribution: "Ike N., Cemetery Market axis",
     },
-    serviceAreasTitle: "Service areas in Abia State",
-    serviceAreas: [
-      "Umuahia & GRA",
-      "Aba & Ariaria",
-      "Osisioma & Obingwa industrial",
-      "Ohiya & Isingwu",
-      "Umahia estate corridors",
-      "Arochukwu & border towns",
-      "Ukwa & Ogwe",
-      "Bende & Umuahia North",
-    ],
+    coverageParagraph:
+      "We serve Umuahia, GRA layouts, Aba, Ariaria market axis, Osisioma, Obingwa industrial zones, Ohiya, Isingwu, Arochukwu border towns, and Ukwa corridors.",
     faqs: [
       {
         question: "Can shops in Aba share one Starlink?",
@@ -552,6 +675,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Handoff to your firewall or managed router with VLANs is available. List SCADA isolation needs during survey.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 5.5244, longitude: 7.4946 },
     serviceAreaSchema: "Abia State, Nigeria",
@@ -569,6 +694,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroSubheading:
       "Independence Layout duplexes, Trans-Ekulu hills, and Nsukka campus corridors—survey-first work across Enugu’s varied rooflines.",
     heroImageAlt: "Starlink dish Independence Layout Enugu Coal City rooftop",
+    heroImageMissing: true,
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Enugu State",
     whyCards: [
@@ -590,26 +716,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Enugu State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink Independence Layout Enugu install", caption: "Independence Layout — swap photo." },
-      { src: PROOF_IMG, alt: "Trans-Ekulu Enugu Starlink mount", caption: "Trans-Ekulu — placeholder." },
-      { src: PROOF_IMG, alt: "Nsukka Enugu State Starlink compound", caption: "Nsukka — speed baseline stored." },
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink estate mount Enugu Coal City",
+        "Estate pole mount — Independence Layout and GRA compounds.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Enugu State"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink residential wall mount Enugu",
+        "Wall-bracket install on duplex and terrace homes.",
+        "IMAGE: residentalSetup.jpeg — practical residential multi-mount Enugu State"
+      ),
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink rooftop install Enugu State",
+        "Rooftop mount with storm-season grounding documented at handover.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Enugu State"
+      ),
     ],
-    speedStat: { label: "GRA Enugu sample", down: "161 Mbps", up: "20 Mbps", latency: "38 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Duplex tenant wanted separate SSIDs. VLAN setup took an extra hour but handover diagram made sense to our IT guy.",
       attribution: "Ngozi K., New Haven",
     },
-    serviceAreasTitle: "Service areas in Enugu State",
-    serviceAreas: [
-      "Enugu GRA & Independence Layout",
-      "New Haven & Ogui Road",
-      "Trans-Ekulu & Abakpa",
-      "Nsukka & UNN corridor",
-      "Agbani & coal campus road",
-      "Emene industrial layout",
-      "Uwani & Achara Layout",
-      "Ngwo & hillside compounds",
-    ],
+    coverageParagraph:
+      "We install across Enugu GRA, Independence Layout, New Haven, Ogui Road, Trans-Ekulu, Abakpa, Nsukka and the UNN corridor, Agbani, Emene industrial layout, Uwani, Achara Layout, and Ngwo hillside compounds.",
     faqs: [
       {
         question: "Do you cover Nsukka separately from Enugu city?",
@@ -631,6 +763,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Standard homes finish in a day after survey. Estates with drilling curfews may split work across two approved windows.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 6.5244, longitude: 7.5086 },
     serviceAreaSchema: "Enugu State, Nigeria",
@@ -648,6 +782,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroSubheading:
       "GRA mansions, Sapele Road commercial roofs, and Ekpoma university corridor—installers who know Benin’s estate security rhythm.",
     heroImageAlt: "Starlink installation Benin City GRA Edo State rooftop",
+    heroImageMissing: true,
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Edo State",
     whyCards: [
@@ -669,26 +804,32 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     proofTitle: "Our Work in Edo State",
     proofCards: [
-      { src: PROOF_IMG, alt: "Starlink Benin City GRA Edo rooftop", caption: "Benin GRA — gallery replacement." },
-      { src: PROOF_IMG, alt: "Sapele Road Benin commercial Starlink", caption: "Sapele Road — placeholder." },
-      { src: PROOF_IMG, alt: "Ekpoma Edo Starlink university road home", caption: "Ekpoma — speed log archived." },
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink Benin City GRA rooftop install",
+        "GRA residential roof — mast height planned around mature tree lines.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean roof install Edo State"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink estate install Benin City Edo",
+        "Royal City and Airport Road estate pole mounts.",
+        "IMAGE: starlinkEstateInstallation.jpeg — estate context Edo State"
+      ),
+      proof(
+        "starlinkInstallation.jpeg",
+        "Starlink install with solar context Edo State",
+        "Solar-adjacent residential install — power-resilient handover notes included.",
+        "IMAGE: starlinkInstallation.jpeg — solar array background Edo State"
+      ),
     ],
-    speedStat: { label: "Benin GRA sample", down: "152 Mbps", up: "18 Mbps", latency: "41 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote: "Royal City estate asked for white conduit only. Crew matched paint and left a labeled patch panel in the study.",
       attribution: "Osas E., Airport Road estate",
     },
-    serviceAreasTitle: "Service areas in Edo State",
-    serviceAreas: [
-      "Benin City GRA & Ring Road",
-      "Sapele Road & commercial axis",
-      "Airport Road & Royal estates",
-      "Ekpoma & AAU corridor",
-      "Ugbowo & UNIBEN adjacency",
-      "Ikpoba Hill & Government Reservation",
-      "Auchi & polytechnic axis",
-      "Uromi & Esan heartland",
-    ],
+    coverageParagraph:
+      "We cover Benin City GRA, Ring Road, Sapele Road commercial axis, Airport Road and Royal estates, Ekpoma, AAU corridor, Ugbowo, Ikpoba Hill, Auchi polytechnic axis, and Uromi in the Esan heartland.",
     faqs: [
       {
         question: "Do you install in Benin GRA with large trees?",
@@ -710,6 +851,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Send WhatsApp photos of roof and estate name. We confirm GRA vs suburban crew and propose dates within one to two business days typically.",
       },
+      roamingFaq,
+      ...regionalStandardFaqs,
     ],
     geo: { latitude: 6.335, longitude: 5.6037 },
     serviceAreaSchema: "Edo State, Nigeria",

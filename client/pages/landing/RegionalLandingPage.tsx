@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Award, Clock, Headphones, MapPin, ShieldCheck } from "lucide-react";
+import { Award, Clock, Headphones, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -50,12 +50,54 @@ export default function RegionalLandingPage({ config }: Props) {
 
       <section className={landingHeroSection}>
         <div className={landingHeroOverlay}>
-          <img
-            src="/placeholder.svg"
-            alt=""
-            aria-hidden
-            className="h-full min-h-[280px] w-full object-cover sm:min-h-[320px]"
-          />
+          <div className="aspect-[16/9] h-full min-h-[280px] w-full overflow-hidden sm:min-h-[320px]">
+            {config.path === "/starlink-installation-abuja" && (
+              <>
+                {/* IMAGE: StarlinkCompanyInstallation.jpeg — conference facility Abuja institutional */}
+              </>
+            )}
+            {config.path === "/starlink-installation-lagos" && (
+              <>
+                {/* IMAGE: starlinkSetup.jpeg — commercial building Lagos urban environment */}
+              </>
+            )}
+            {config.path === "/starlink-installation-rivers-state-port-harcourt" && (
+              <>
+                {/* IMAGE: starlinkCompanyInstalltionImage.jpeg — industrial roof near Port Harcourt port */}
+              </>
+            )}
+            {config.path === "/starlink-installation-delta-state" && (
+              <>
+                {/* IMAGE: starlinkInstallation.jpeg — solar array background Delta State */}
+              </>
+            )}
+            {config.heroImageMissing ? (
+              <>
+                {/* MISSING HERO: needs a photo showing Starlink installation in this state.
+                    Suggested: rooftop dish with identifiable local landmark or landscape. */}
+                <div
+                  className="h-full w-full bg-gradient-to-br from-[#001a66] to-[#0040ff]/40"
+                  aria-hidden
+                />
+              </>
+            ) : (
+              config.heroImage &&
+              config.heroImageFile && (
+                <img
+                  src={config.heroImage}
+                  alt={config.heroImageAlt}
+                  data-dg-image={config.heroImageFile}
+                  data-dg-placement={config.heroImageReason}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: config.heroObjectPosition ?? "center",
+                  }}
+                />
+              )
+            )}
+          </div>
         </div>
         <div className={landingContainer}>
           <div className={landingHeroInner}>
@@ -125,7 +167,22 @@ export default function RegionalLandingPage({ config }: Props) {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {config.proofCards.map((card) => (
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
-                <img src={card.src} alt={card.alt} className="aspect-video w-full object-cover" loading="lazy" />
+                <div className="aspect-[4/3] w-full overflow-hidden">
+                  {/* deployment proof — IMAGE filename and reason on img data-dg-placement */}
+                  <img
+                    src={card.src}
+                    alt={card.alt}
+                    loading="lazy"
+                    data-dg-image={card.imageFile}
+                    data-dg-placement={card.imageComment}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: card.objectPosition ?? "center",
+                    }}
+                  />
+                </div>
                 <figcaption className="p-4 text-sm text-foreground/75">{card.caption}</figcaption>
               </figure>
             ))}
@@ -160,15 +217,8 @@ export default function RegionalLandingPage({ config }: Props) {
 
       <section className={landingSection}>
         <div className={landingContainer}>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.serviceAreasTitle}</h2>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {config.serviceAreas.map((area) => (
-              <li key={area} className="flex items-start gap-2 text-sm text-foreground/80 sm:text-base">
-                <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <span>{area}</span>
-              </li>
-            ))}
-          </ul>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Coverage in {config.stateName}</h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-foreground/80">{config.coverageParagraph}</p>
         </div>
       </section>
 

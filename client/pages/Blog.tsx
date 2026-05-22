@@ -230,7 +230,17 @@ export default function Blog() {
           <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {seoArticles2026.map((post) => (
-              <Card key={post.slug} className="group hover:shadow-lg transition-shadow">
+              <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="aspect-[16/9] w-full overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt}
+                    loading="lazy"
+                    data-dg-image={post.imageFile}
+                    className="h-full w-full transition-transform duration-300 group-hover:scale-105"
+                    style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%" }}
+                  />
+                </div>
                 <CardHeader>
                   <Badge variant="secondary">{post.category}</Badge>
                   <CardTitle className="group-hover:text-primary transition-colors">{post.title}</CardTitle>

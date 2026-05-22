@@ -1,7 +1,58 @@
 import { Anchor, Building2, Home, Ship, Waves, Wifi, Zap, Shield } from "lucide-react";
 import type { IndustryLandingConfig } from "./types";
 
-const PROOF_IMG = "/placeholder.svg";
+const img = (file: string) => `/images/${file}`;
+
+const proof = (
+  file: string,
+  alt: string,
+  caption: string,
+  comment: string,
+  objectPosition = "center"
+) => ({
+  src: img(file),
+  imageFile: file,
+  alt,
+  caption,
+  imageComment: comment,
+  objectPosition,
+});
+
+const SPEED = {
+  label: "Typical performance range",
+  down: "50–1,000 Mbps",
+  up: "10–100 Mbps",
+  latency: "20–33 ms",
+};
+
+const roamingFaq = {
+  question: "What is Starlink roaming and do I need it?",
+  answer:
+    "Roaming lets you use Starlink across different land regions globally, not only where you activated the service. It helps where local coverage is limited or not fully available yet. Roaming costs extra on top of your standard subscription.",
+};
+
+const standardFaqs = [
+  {
+    question: "How much is the monthly subscription fee?",
+    answer:
+      "₦57,000 – ₦3,000,000+ depending on location, service availability, subscription type, and plan eligibility.",
+  },
+  {
+    question: "Do I need a technician to install Starlink?",
+    answer:
+      "For simple residential setups, self-install is possible using the Starlink app. However, a certified installer is recommended if you need WiFi coverage across a large building, proper outdoor mounting, structural stability for the dish, or help avoiding signal obstructions.",
+  },
+  {
+    question: "Do you offer ongoing support after installation?",
+    answer:
+      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Speeds: 50–1,000 Mbps. Latency: 20–30 ms under normal conditions.",
+  },
+  {
+    question: "Is roof drilling required for Starlink installation?",
+    answer:
+      "Not always. We use wall mounts where the structure allows. Drilling is done when necessary for proper cable routing, and all penetrations are sealed to prevent water entry.",
+  },
+];
 
 export const industryLandingPages: IndustryLandingConfig[] = [
   {
@@ -11,20 +62,27 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Maritime Starlink installs for rigs, OSVs, and coastal bases in Nigeria. Low-latency LEO, marine mounts, and field support from DataGram.",
     canonical: "/starlink-offshore-maritime-installation",
+    ogImage: img("maritime2.jpeg"),
     h1: "Starlink Offshore & Maritime Installation Nigeria",
     heroLabel: "Oil, gas & deep-sea operations",
     heroSubheading:
       "Certified marine mounting, motion-rated hardware, and shore-to-vessel handover for Niger Delta fleets and offshore camps.",
-    heroImageAlt: "Starlink maritime dish on offshore supply vessel deck Nigeria",
-    overviewTitle: "Satellite backhaul where microwave and fibre stop",
+    heroImageAlt: "Starlink dish installed on tanker deck in the open ocean, Nigeria offshore",
+    heroImage: img("maritime2.jpeg"),
+    heroImageFile: "maritime2.jpeg",
+    heroImageReason:
+      "wide cinematic shot of tanker deck with Starlink dish, open ocean horizon — strongest visual for the hero, communicates deep-sea scale",
+    heroObjectPosition: "center top",
+    overviewTitle: "How maritime Starlink stays connected at sea",
     overviewParagraphs: [
-      "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. Starlink’s low-Earth-orbit constellation delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
+      "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. Starlink’s low-Earth-orbit network delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
+      "Maritime Starlink uses a phased-array antenna that tracks several low-Earth-orbit satellites at once. A fixed home dish locks to one satellite pass; maritime terminals hand off continuously between satellites as the vessel moves. That handoff is what keeps the link alive in open water where there is no land infrastructure.",
       "DataGram engineers survey deck space, cable glands, and power feeds before any hole is drilled. We document obstruction maps at berth and at typical heading, then specify marine-rated cabling, surge protection, and router placement that keeps bridge networks separate from crew WiFi.",
     ],
     stats: [
-      { label: "Typical latency (LEO)", value: "25–60 ms", note: "Starlink published range; weather and beam load vary." },
-      { label: "Mobility plan uptime target", value: "99%+", note: "Depends on sky view, mast height, and regional beam capacity." },
-      { label: "Coverage", value: "Coastal & offshore", note: "Confirm maritime service class on starlink.com before procurement." },
+      { label: "Typical latency (LEO)", value: "20–33 ms", note: "Varies with sea state, plan class, and beam load." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Hardware tier, weather, and subscription affect results." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Confirm plan class before procurement." },
       { label: "Install window", value: "1–3 days", note: "After marine survey and PTW approval." },
     ],
     whyTitle: "Why Starlink for offshore & maritime",
@@ -50,25 +108,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         body: "Bridge telemetry, CCTV backhaul, and crew internet can sit on separate SSIDs with firewall rules you can audit.",
       },
     ],
-    proofTitle: "Proven Track Record",
+    proofTitle: "Deployment proof",
     proofCards: [
-      {
-        src: PROOF_IMG,
-        alt: "Starlink dish mounted on OSV mast Port Harcourt offshore corridor",
-        caption: "OSV mast mount — placeholder until client sign-off gallery ships.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Marine-grade cable gland on platform deck Niger Delta",
-        caption: "Deck gland and tray — swap with signed offshore deployment photo.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Starlink router rack in offshore communications room",
-        caption: "Comms room termination — verified speeds logged post-handover.",
-      },
+      proof(
+        "maritime.jpeg",
+        "Starlink dish mounted on vessel bow at sea",
+        "Bow mount on a large vessel at open sea — offshore capability verified in the field.",
+        "IMAGE: maritime.jpeg — large vessel at open sea, clear proof of offshore capability"
+      ),
+      proof(
+        "maritime4.jpeg",
+        "Starlink dish installed on oil platform in the Niger Delta",
+        "Platform install in the Niger Delta — direct proof for oil and gas operators.",
+        "IMAGE: maritime4.jpeg — real Nigerian gas flare rig — direct visual proof for oil and gas clients"
+      ),
+      proof(
+        "maritime5.jpeg",
+        "Starlink dish on vessel railing at sea, DataGram offshore installation",
+        "Deck railing mount in open water — reliable offshore connectivity.",
+        "IMAGE: maritime5.jpeg — clean offshore deck shot, open grey sea — reinforces offshore reliability"
+      ),
     ],
-    speedStat: { label: "Field sample (placeholder)", down: "148 Mbps", up: "22 Mbps", latency: "38 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote:
         "We needed video calls with shore engineering without booking satellite time slots. After the marine survey, install finished between crew changeovers.",
@@ -104,23 +165,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "What do marine surveys include?",
         answer:
-          "Survey covers mast or pedestal location, crane sweep clearance, cable route to the comms room, power circuit, and grounding. You receive photos, a risk note for PTW, and a bill of materials sized for spray exposure.",
-      },
-      {
-        question: "Can we keep our VSAT as backup?",
-        answer:
-          "Yes. Many operators run Starlink as primary for crew welfare and collaboration tools while VSAT handles legacy traffic during transition. We document failover order and who owns routing policy changes.",
-      },
-      {
-        question: "How do you handle Nigerian Content and safety paperwork?",
-        answer:
-          "Clients supply vessel PTW and marine superintendent contacts. Our crews carry PPE, follow tool control on deck, and log torque on structural mounts. Insurance certificates are available on request for procurement teams.",
+          "A marine survey covers mast and pedestal placement, crane sweep clearance so the dish is not blocked, cable routing from the dish to the comms room, power circuit capacity, grounding continuity, Permit to Work (PTW) risk notes, a spray-exposure bill of materials for hardware selection, and WiFi planning across the bridge, crew cabins, and engine room.",
       },
       {
         question: "What speeds should offshore teams expect?",
         answer:
-          "Download and upload vary with beam load, rain fade, and antenna view. Starlink publishes typical ranges; we baseline at handover so you can compare against SLA expectations rather than marketing peaks.",
+          "Download: 50 Mbps – 1,000 Mbps. Upload: 10 Mbps – 100 Mbps. Latency: 20–33 ms. Actual performance varies based on the hardware tier, sea state, and subscription plan.",
       },
+      {
+        question: "Do you support maritime or mobility Starlink plans?",
+        answer:
+          "Yes. The right plan depends on your vessel type, how far it travels in nautical miles, and the regions it operates in. DataGram will assess your vessel profile and recommend the appropriate subscription before activation.",
+      },
+      {
+        question: "Do you have BOSIET or maritime certification?",
+        answer: "Yes, we do.",
+      },
+      {
+        question: "Do you handle maritime activation and subscription?",
+        answer: "Yes, we do.",
+      },
+      roamingFaq,
+      ...standardFaqs,
     ],
     serviceAreaSchema: "Nigerian offshore and coastal waters",
     keywords: [
@@ -136,20 +202,26 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Enterprise Starlink: VLANs, failover with fibre, generator-safe power, and documented handover for Nigerian offices, NGOs, and plants.",
     canonical: "/starlink-enterprise-nigeria",
+    ogImage: img("StarlinkCompanyInstallation.jpeg"),
     h1: "Starlink for Enterprise Nigeria",
     heroLabel: "NGOs, offices & industrial sites",
     heroSubheading:
       "Dual-WAN failover, static IP planning, and install documentation your IT team can audit—not a consumer router dropped in a rack.",
-    heroImageAlt: "Starlink enterprise installation on Lagos office rooftop with cable tray",
+    heroImageAlt: "Starlink installation at NCDMB Conference Centre Nigeria, DataGram enterprise",
+    heroImage: img("StarlinkCompanyInstallation.jpeg"),
+    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageReason:
+      "NCDMB Conference Centre clearly visible in background — named Nigerian government/institutional building gives immediate credibility to enterprise clients",
+    heroObjectPosition: "center",
     overviewTitle: "Business-grade satellite when terrestrial SLAs slip",
     overviewParagraphs: [
       "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
-      "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and after-hours access are non-negotiable.",
+      "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance.",
     ],
     stats: [
-      { label: "Typical business latency", value: "25–50 ms", note: "LEO architecture; local routing still matters." },
-      { label: "Failover cutover", value: "< 30 s", note: "With properly configured dual-WAN router and tested scripts." },
-      { label: "Concurrent users", value: "50–200+", note: "Depends on plan class, WiFi design, and traffic shaping." },
+      { label: "Typical latency", value: "20–33 ms", note: "LEO architecture; local routing still matters." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Plan class and user load affect peaks." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Size for CCTV and cloud sync honestly." },
       { label: "Survey to live", value: "3–7 days", note: "After estate approval and hardware on site." },
     ],
     whyTitle: "Why Starlink for enterprise",
@@ -175,25 +247,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         body: "Photos, IP plans, speed baselines, and escalation contacts—formatted for IT and procurement, not a single-page receipt.",
       },
     ],
-    proofTitle: "Proven Track Record",
+    proofTitle: "Deployment proof",
     proofCards: [
-      {
-        src: PROOF_IMG,
-        alt: "Starlink dish on Lagos Island office rooftop installation",
-        caption: "Lagos Island HQ — placeholder for signed enterprise case study.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Dual WAN router rack Abuja enterprise Starlink failover",
-        caption: "Abuja failover rack — replace with live deployment gallery.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Industrial estate Starlink mount Port Harcourt",
-        caption: "PH industrial estate — post-install speed test on file.",
-      },
+      proof(
+        "starlinkSetup.jpeg",
+        "Starlink dish on commercial building railing bracket, Nigeria",
+        "Commercial building mount with active construction nearby — urban enterprise context.",
+        "IMAGE: starlinkSetup.jpeg — commercial building with construction cranes — urban enterprise context"
+      ),
+      proof(
+        "starlinkCompanyInstalltionImage.jpeg",
+        "Starlink dish installed on industrial rooftop near Nigerian port",
+        "Industrial rooftop near port cranes — commercial and plant deployments.",
+        "IMAGE: starlinkCompanyInstalltionImage.jpeg — blue industrial roof with port cranes in background — industrial/commercial proof"
+      ),
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "DataGram Starlink setup at institutional facility in Nigeria",
+        "Institutional facility install — enterprise handover and documentation on file.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — same as hero, tighter crop — institutional facility proof"
+      ),
     ],
-    speedStat: { label: "Campus handover sample", down: "210 Mbps", up: "28 Mbps", latency: "32 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote:
         "Finance needed fibre for bulk sync but wanted Starlink when the street link failed twice in one month. Failover was tested in front of our IT lead.",
@@ -229,23 +304,25 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Do you integrate with our existing firewall?",
         answer:
-          "Yes. We provide Ethernet handoff, document VLAN tags, and test failover with your team. Static IP requirements are confirmed against your Starlink plan class before cutover weekend.",
+          "Yes. We provide Ethernet handoff, document VLAN tags, and test failover with your team. Static IP requirements are confirmed against your Starlink plan class before cutover.",
       },
       {
         question: "How do you handle estate drilling rules?",
         answer:
-          "We prepare scope letters for facility managers listing hole count, tray path, and restoration. Night or weekend slots are available when towers restrict weekday noise.",
+          "We prepare scope letters for facility managers listing hole count, tray path, and restoration. All work is scheduled during standard business hours.",
       },
       {
         question: "What documentation do you leave after install?",
         answer:
-          "Handover includes labeled photos, IP table, UPS runtime estimate, speed tests per floor, and support contacts. NGOs often attach this pack to donor reporting—format available on request.",
+          "Handover includes labelled photos, IP table, UPS runtime estimate, speed tests per floor, and support contacts. NGOs often attach this pack to donor reporting.",
       },
       {
         question: "Is enterprise hardware different from residential kits?",
         answer:
           "High-throughput and business plan classes exist for heavier loads. We match dish generation and router platform to your user count and upload profile instead of overspecifying consumer kits.",
       },
+      roamingFaq,
+      ...standardFaqs,
     ],
     serviceAreaSchema: "Nigeria — enterprise and NGO sites",
     keywords: [
@@ -262,20 +339,26 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Home Starlink installs for estates and remote compounds: clean roof mounts, mesh WiFi, UPS for NEPA cuts, and honest sky-view surveys.",
     canonical: "/starlink-home-installation",
+    ogImage: img("StarlinkRoofMount.jpeg"),
     h1: "Starlink Home Installation Nigeria",
     heroLabel: "Remote workers & residential",
     heroSubheading:
       "Estate-friendly mounting, whole-home WiFi, and power backup sized for real Nigerian outage patterns—not a cable tossed through a window.",
-    heroImageAlt: "Starlink dish on residential rooftop Lekki Lagos home installation",
+    heroImageAlt: "DataGram technician installing Starlink dish on residential rooftop in Nigeria",
+    heroImage: img("StarlinkRoofMount.jpeg"),
+    heroImageFile: "StarlinkRoofMount.jpeg",
+    heroImageReason:
+      "Nigerian technician actively mounting dish on residential roof — human, authentic, and specific to Nigeria. Best trust-builder for home clients",
+    heroObjectPosition: "center",
     overviewTitle: "Residential satellite that respects your roof and your schedule",
     overviewParagraphs: [
       "Home buyers want video calls that survive rain fade, kids’ classes that do not drop when the grid flickers, and installers who understand estate security desks and landlord drilling rules. Starlink delivers when the dish sees enough sky and the in-home network is not bottlenecked by a single hallway router.",
       "DataGram surveys tree lines, recommends mast height, and runs interior cable through conduits where owners want tidy finishes. We size modest UPS for routers during NEPA gaps and add mesh nodes when concrete walls divide flats across two floors.",
     ],
     stats: [
-      { label: "Residential latency", value: "25–50 ms", note: "Suitable for video calls and cloud apps." },
-      { label: "Typical download", value: "50–250 Mbps", note: "Varies by plan, obstruction score, and peak hours." },
-      { label: "Power draw (dish)", value: "~50–75 W", note: "Size UPS for router + dish if you want ride-through." },
+      { label: "Typical latency", value: "20–33 ms", note: "Suitable for video calls and cloud apps." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Varies by plan, obstruction score, and peak hours." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Disclose upload needs during survey." },
       { label: "Install duration", value: "4–8 hours", note: "Single-family home, standard roof access." },
     ],
     whyTitle: "Why Starlink for home installation",
@@ -301,25 +384,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         body: "Nigeria’s storm season demands proper earth bonds and surge arrestors on outdoor runs—cheap insurance against fried routers.",
       },
     ],
-    proofTitle: "Proven Track Record",
+    proofTitle: "Deployment proof",
     proofCards: [
-      {
-        src: PROOF_IMG,
-        alt: "Starlink residential mount on bungalow roof Enugu",
-        caption: "Enugu bungalow — swap with customer-approved photo.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Concealed cable entry Starlink home install Abuja estate",
-        caption: "Abuja estate entry — conduit finish before paint touch-up.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Mesh WiFi node home office Starlink Nigeria",
-        caption: "Mesh overlay — speed test at desk, not only at router.",
-      },
+      proof(
+        "StarlinkInstallationresidential.jpeg",
+        "Starlink dish mounted on residential roof with solar panels, Nigeria",
+        "Residential roof install with solar nearby — relatable for power-aware home clients.",
+        "IMAGE: StarlinkInstallationresidential.jpeg — clean rooftop install on a Nigerian home, solar panels suggest power-aware client"
+      ),
+      proof(
+        "starlinkEstateInstallation.jpeg",
+        "Starlink dish on pole in Nigerian residential estate",
+        "Estate pole mount — GRA-style compounds and gated communities.",
+        "IMAGE: starlinkEstateInstallation.jpeg — lush trees, white buildings, estate environment — aspirational for home clients"
+      ),
+      proof(
+        "residentalSetup.jpeg",
+        "Starlink and legacy antenna mounted on wall brackets, residential Nigeria",
+        "Wall brackets alongside legacy antennas — practical upgrade path for existing setups.",
+        "IMAGE: residentalSetup.jpeg — shows coexistence with existing antennas — practical proof for clients upgrading"
+      ),
     ],
-    speedStat: { label: "Estate install sample", down: "176 Mbps", up: "19 Mbps", latency: "41 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote:
         "Our estate banned surface cables along the facade. DataGram routed through the ceiling void and left a labeled patch panel in the study.",
@@ -372,6 +458,8 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         answer:
           "DIY works on simple roofs. Pros document grounding, torque mounts for wind, route cable away from sun-damaged facades, and test where you work—not only beside the dish.",
       },
+      roamingFaq,
+      ...standardFaqs,
     ],
     serviceAreaSchema: "Nigeria — residential estates and remote homes",
     keywords: [
@@ -386,22 +474,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     path: "/starlink-boat-installation",
     seoTitle: "Starlink for Boats Nigeria | Leisure Craft & Coastal Operations | DataGram",
     metaDescription:
-      "Starlink for boats: leisure craft, fishing fleets, and coastal patrol. Marine mounts, compact power, and motion-suitable plans across Nigeria.",
+      "Starlink for boats in Nigeria: leisure craft, fishing fleets, and coastal patrol. Marine mounts and DC power integration by DataGram.",
     canonical: "/starlink-boat-installation",
+    ogImage: img("maritime3.jpeg"),
     h1: "Starlink for Boats Nigeria",
     heroLabel: "Leisure craft & coastal operations",
     heroSubheading:
       "Deck mounts, DC power integration, and coastal coverage planning for ferries, fishing trawlers, and private yachts operating Nigerian waters.",
-    heroImageAlt: "Starlink flat mount on leisure boat deck Lagos marina",
+    heroImageAlt: "Starlink dish on boat mast in Nigerian waterway",
+    heroImage: img("maritime3.jpeg"),
+    heroImageFile: "maritime3.jpeg",
+    heroImageReason:
+      "dish mounted on patrol boat mast with Nigerian waterway/bridge behind — boat-specific context, identifiable Nigerian port environment",
+    heroObjectPosition: "center bottom",
     overviewTitle: "Connectivity that moves with your hull",
     overviewParagraphs: [
       "Coastal ferries, fishing fleets, and private yachts need internet that is not tied to marina WiFi passwords. Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
       "DataGram installs DC-fed power where inverters are noisy, routes cable away from winches and bait tanks, and tests at cruise RPM so vibration does not loosen glands mid-season.",
     ],
     stats: [
-      { label: "Coastal latency", value: "30–70 ms", note: "Higher at beam edges; check plan map before offshore legs." },
-      { label: "Typical throughput", value: "40–180 Mbps", note: "Motion, rain, and user count affect results." },
-      { label: "DC draw planning", value: "12/24 V", note: "We fuse feeds close to batteries, away from anchor windlass loads." },
+      { label: "Typical latency", value: "20–33 ms", note: "Higher at beam edges; check plan map before offshore legs." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Motion, rain, and user count affect results." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Confirm mobility plan before hardware buy." },
       { label: "Season turnaround", value: "1–2 days", note: "Marina slip with shore power for alignment." },
     ],
     whyTitle: "Why Starlink for boats",
@@ -427,25 +521,30 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         body: "Captains get a simple power sequence card: dish, router, failover to marina LAN when berthed if you want both.",
       },
     ],
-    proofTitle: "Proven Track Record",
+    proofTitle: "Deployment proof",
     proofCards: [
-      {
-        src: PROOF_IMG,
-        alt: "Starlink flat high-performance mount on fishing trawler Niger Delta",
-        caption: "Trawler deck — replace with signed coastal fleet photo.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "Starlink boat installation Lagos marina leisure craft",
-        caption: "Lagos marina leisure craft — handover speeds logged.",
-      },
-      {
-        src: PROOF_IMG,
-        alt: "DC power distribution Starlink boat Nigeria",
-        caption: "DC distribution — labeled fuse panel photo pending.",
-      },
+      proof(
+        "maritime5.jpeg",
+        "Starlink terminal mounted on vessel railing offshore",
+        "Railing mount offshore — coastal and patrol craft deployments.",
+        "IMAGE: maritime5.jpeg — Starlink terminal mounted on vessel railing offshore"
+      ),
+      proof(
+        "maritime3.jpeg",
+        "Close-up of Starlink mount bracket on patrol boat",
+        "Patrol boat mast mount in Nigerian waterway — boat-specific hardware placement.",
+        "IMAGE: maritime3.jpeg — close-up of Starlink mount bracket on patrol boat",
+        "center top"
+      ),
+      proof(
+        "maritime3.jpeg",
+        "Starlink dish on boat mast in Nigerian waterway",
+        "Waterway context with bridge and port infrastructure visible.",
+        "IMAGE: maritime3.jpeg — dish on boat mast with Nigerian waterway/bridge behind — boat-specific context",
+        "center bottom"
+      ),
     ],
-    speedStat: { label: "Coastal trial (placeholder)", down: "92 Mbps", up: "14 Mbps", latency: "48 ms" },
+    speedStat: SPEED,
     testimonial: {
       quote:
         "Marina WiFi failed every weekend. After the flat mount went on the hardtop, we stream weather fax and voice over LTE backup only when needed.",
@@ -498,6 +597,8 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         answer:
           "Each active vessel needs its own plan and hardware set. Fleet pricing covers repeated surveys and seasonal checks—not sharing one dish across multiple hulls.",
       },
+      roamingFaq,
+      ...standardFaqs,
     ],
     serviceAreaSchema: "Nigerian coastal and inland waterways",
     keywords: [

@@ -9,8 +9,12 @@ export type IconCard = { title: string; body: string; icon: LucideIcon };
 export type ProofCard = {
   alt: string;
   caption: string;
-  /** REPLACE: swap placeholder src with real deployment photo */
   src: string;
+  /** Filename for JSX comment, e.g. maritime.jpeg */
+  imageFile: string;
+  /** Full placement note: IMAGE: filename — reason */
+  imageComment: string;
+  objectPosition?: string;
 };
 
 export type PackageTier = {
@@ -30,6 +34,11 @@ export type IndustryLandingConfig = {
   heroLabel: string;
   heroSubheading: string;
   heroImageAlt: string;
+  /** /images/... path; omit when heroImageMissing is true */
+  heroImage?: string;
+  heroImageFile?: string;
+  heroImageReason?: string;
+  heroObjectPosition?: string;
   overviewTitle: string;
   overviewParagraphs: string[];
   stats: StatItem[];
@@ -58,6 +67,13 @@ export type RegionalLandingConfig = {
   heroLabel: string;
   heroSubheading: string;
   heroImageAlt: string;
+  heroImage?: string;
+  heroImageFile?: string;
+  heroImageReason?: string;
+  heroObjectPosition?: string;
+  /** When true, hero shows gradient + missing-hero comment instead of a photo */
+  heroImageMissing?: boolean;
+  coverageParagraph: string;
   trustSinceYear: string;
   whyTitle: string;
   whyCards: IconCard[];
@@ -65,8 +81,6 @@ export type RegionalLandingConfig = {
   proofCards: ProofCard[];
   speedStat: { label: string; down: string; up: string; latency: string };
   testimonial: { quote: string; attribution: string };
-  serviceAreasTitle: string;
-  serviceAreas: string[];
   faqs: FaqItem[];
   geo: { latitude: number; longitude: number };
   serviceAreaSchema: string;

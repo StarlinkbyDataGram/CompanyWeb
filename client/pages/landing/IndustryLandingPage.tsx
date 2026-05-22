@@ -55,13 +55,42 @@ export default function IndustryLandingPage({ config }: Props) {
 
       <section className={landingHeroSection}>
         <div className={landingHeroOverlay}>
-          {/* REPLACE: real deployment photo */}
-          <img
-            src="/placeholder.svg"
-            alt=""
-            aria-hidden
-            className="h-full min-h-[280px] w-full object-cover sm:min-h-[320px]"
-          />
+          <div className="aspect-[16/9] h-full min-h-[280px] w-full overflow-hidden sm:min-h-[320px]">
+            {config.path === "/starlink-offshore-maritime-installation" && (
+              <>
+                {/* IMAGE: maritime2.jpeg — wide cinematic tanker deck hero, open ocean horizon */}
+              </>
+            )}
+            {config.path === "/starlink-enterprise-nigeria" && (
+              <>
+                {/* IMAGE: StarlinkCompanyInstallation.jpeg — NCDMB Conference Centre institutional credibility */}
+              </>
+            )}
+            {config.path === "/starlink-home-installation" && (
+              <>
+                {/* IMAGE: StarlinkRoofMount.jpeg — Nigerian technician mounting dish on residential roof */}
+              </>
+            )}
+            {config.path === "/starlink-boat-installation" && (
+              <>
+                {/* IMAGE: maritime3.jpeg — patrol boat mast with Nigerian waterway and bridge */}
+              </>
+            )}
+            {config.heroImage && config.heroImageFile && (
+              <img
+                src={config.heroImage}
+                alt={config.heroImageAlt}
+                data-dg-image={config.heroImageFile}
+                data-dg-placement={config.heroImageReason}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: config.heroObjectPosition ?? "center",
+                }}
+              />
+            )}
+          </div>
         </div>
         <div className={landingContainer}>
           <div className={landingHeroInner}>
@@ -136,12 +165,27 @@ export default function IndustryLandingPage({ config }: Props) {
         <div className={landingContainer}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.proofTitle}</h2>
           <p className="mt-2 text-sm text-foreground/70 sm:text-base">
-            Proven Track Record — verified speed samples from field tests (replace with live data).
+            Field deployments across Nigeria — offshore, enterprise, and residential.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {config.proofCards.map((card) => (
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
-                <img src={card.src} alt={card.alt} className="aspect-video w-full object-cover" loading="lazy" />
+                <div className="aspect-[4/3] w-full overflow-hidden">
+                  {/* deployment proof — IMAGE filename and reason on img data-dg-placement */}
+                  <img
+                    src={card.src}
+                    alt={card.alt}
+                    loading="lazy"
+                    data-dg-image={card.imageFile}
+                    data-dg-placement={card.imageComment}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: card.objectPosition ?? "center",
+                    }}
+                  />
+                </div>
                 <figcaption className="p-4 text-sm text-foreground/75">{card.caption}</figcaption>
               </figure>
             ))}
@@ -175,12 +219,6 @@ export default function IndustryLandingPage({ config }: Props) {
                 {config.testimonial.attribution}
               </footer>
             </blockquote>
-          </div>
-          <div className="relative mt-10 aspect-video w-full overflow-hidden rounded-2xl border bg-muted">
-            {/* REPLACE: embed YouTube video ID here */}
-            <div className="absolute inset-0 flex items-center justify-center px-4 text-center text-sm text-foreground/60">
-              Video walkthrough placeholder — swap iframe src when field footage is ready
-            </div>
           </div>
         </div>
       </section>

@@ -101,12 +101,21 @@ export default function BlogPost() {
                 {article.readTime}
               </span>
             </div>
-            {/* REPLACE: hero image for article */}
-            <img
-              src={article.image}
-              alt={article.title}
-              className="mt-8 aspect-video w-full rounded-2xl border object-cover"
-            />
+            <div className="mt-8 aspect-[16/9] w-full overflow-hidden rounded-2xl border">
+              {/* IMAGE: featured article hero — see imageFile on img data-dg-image */}
+              <img
+                src={article.image}
+                alt={article.imageAlt}
+                data-dg-image={article.imageFile}
+                data-dg-placement={`IMAGE: ${article.imageFile} — ${article.imageAlt}`}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
+            </div>
             <div className="prose prose-lg mt-10 max-w-none text-foreground/85">
               {article.paragraphs.map((p, i) => (
                 <p key={i} className="mb-5 leading-relaxed">

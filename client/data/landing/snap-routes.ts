@@ -25,4 +25,5 @@ export const SNAP_INCLUDE_ROUTES = [
   "/blog/starlink-vs-fibre-internet-lagos",
   "/blog/starlink-offshore-niger-delta-specs",
   "/blog/power-backup-starlink-nigeria",
+  "/blog/how-to-activate-starlink-nigeria",
 ] as const;
