@@ -138,22 +138,29 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     packagesTitle: "Maritime packages",
     packages: [
       {
-        name: "Berth survey",
-        priceLabel: "From ₦180,000",
-        features: ["Deck photos & obstruction map", "Power and gland plan", "Written scope for marine PTW"],
-        cta: "Request survey",
+        name: "Unlimited Roaming plan",
+        priceLabel: "From ₦247,500",
+        features: [
+          "Land and coastal water bodies coverage",
+          "50 Mbps to 400 Mbps speed",
+          "Boat vessel and on-the-move usage",
+          "Maximum 12 nautical miles from land to sea coverage",
+          "Up to 200 users connection",
+          "Priority WhatsApp support after installation",
+        ],
+        cta: "Request roaming quote",
       },
       {
-        name: "Offshore install",
-        priceLabel: "From ₦650,000",
-        features: ["Marine mount & cable tray", "Dish alignment & speed baseline", "Handover PDF for master & IT"],
-        cta: "Get install quote",
-      },
-      {
-        name: "Fleet support",
-        priceLabel: "Monthly retainer",
-        features: ["Remote obstruction checks", "Spare RF path advisory", "Priority truck-roll in PH corridor"],
-        cta: "Talk to support",
+        name: "Ocean mode / Deep sea plan",
+        priceLabel: "Starlink from ₦5,000",
+        features: [
+          "Offshore rig and moving vessels operational",
+          "Global coverage on land and sea/ocean",
+          "50 Mbps to 1,000 Mbps speed",
+          "Up to 500 users connection",
+          "Priority support after installation",
+        ],
+        cta: "Get deep sea quote",
       },
     ],
     faqs: [
