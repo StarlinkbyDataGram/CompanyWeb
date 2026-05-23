@@ -1,18 +1,20 @@
 /**
  * Vite-compatible static prerender (replaces react-snap when Puppeteer is too old for modern bundles).
  * Serves dist/spa, visits each route, writes HTML snapshots for crawlers.
+ *
+ * Skipped on Vercel: Puppeteer/Chrome cannot launch in the build image (missing libs).
+ * Run `pnpm prerender` locally after `pnpm build:client` to generate static HTML snapshots.
  */
 import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
-import puppeteer from "puppeteer";
-import handler from "serve-handler";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SPA_ROOT = path.resolve(__dirname, "../dist/spa");
 const PORT = 45678;
 
+/** Keep in sync with client/data/landing/snap-routes.ts */
 const ROUTES = [
   "/",
   "/about",
@@ -35,11 +37,19 @@ const ROUTES = [
   "/starlink-installation-abia-state",
   "/starlink-installation-enugu-state",
   "/starlink-installation-edo-state-benin",
+  "/starlink-installation-niger-delta",
   "/blog/how-much-does-starlink-installation-cost-nigeria-2026",
   "/blog/starlink-vs-fibre-internet-lagos",
   "/blog/starlink-offshore-niger-delta-specs",
   "/blog/power-backup-starlink-nigeria",
+  "/blog/how-to-activate-starlink-nigeria",
 ];
+
+function shouldSkipPrerender() {
+  if (process.env.SKIP_PRERENDER === "1" || process.env.SKIP_PRERENDER === "true") return true;
+  if (process.env.VERCEL === "1" || process.env.VERCEL === "true") return true;
+  return false;
+}
 
 function routeToFile(route) {
   if (route === "/") return path.join(SPA_ROOT, "index.html");
@@ -47,7 +57,7 @@ function routeToFile(route) {
   return path.join(SPA_ROOT, clean, "index.html");
 }
 
-function startServer() {
+function startServer(handler) {
   return new Promise((resolve) => {
     const server = http.createServer((req, res) =>
       handler(req, res, {
@@ -60,6 +70,16 @@ function startServer() {
 }
 
 async function prerender() {
+  if (shouldSkipPrerender()) {
+    console.log(
+      "⏭️  Skipping Puppeteer prerender (Vercel/CI or SKIP_PRERENDER). SPA deploys as client-rendered; run `pnpm prerender` locally for static HTML snapshots."
+    );
+    return;
+  }
+
+  const { default: puppeteer } = await import("puppeteer");
+  const { default: handler } = await import("serve-handler");
+
   try {
     await fs.access(path.join(SPA_ROOT, "index.html"));
   } catch {
@@ -67,7 +87,7 @@ async function prerender() {
     process.exit(1);
   }
 
-  const server = await startServer();
+  const server = await startServer(handler);
   const browser = await puppeteer.launch({
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
