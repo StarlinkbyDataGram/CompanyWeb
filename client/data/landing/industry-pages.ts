@@ -1,4 +1,5 @@
 import { Anchor, Building2, Home, Ship, Waves, Wifi, Zap, Shield } from "lucide-react";
+import { cropForFile } from "@/lib/image-crop";
 import type { IndustryLandingConfig } from "./types";
 
 const img = (file: string) => `/images/${file}`;
@@ -8,14 +9,14 @@ const proof = (
   alt: string,
   caption: string,
   comment: string,
-  objectPosition = "center"
+  objectPosition?: string
 ) => ({
   src: img(file),
   imageFile: file,
   alt,
   caption,
   imageComment: comment,
-  objectPosition,
+  objectPosition: cropForFile(file, objectPosition),
 });
 
 const SPEED = {
@@ -72,7 +73,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroImageFile: "maritime2.jpeg",
     heroImageReason:
       "wide cinematic shot of tanker deck with Starlink dish, open ocean horizon — strongest visual for the hero, communicates deep-sea scale",
-    heroObjectPosition: "center top",
+    heroObjectPosition: "center",
     overviewTitle: "How maritime Starlink stays connected at sea",
     overviewParagraphs: [
       "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. Starlink’s low-Earth-orbit network delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
@@ -219,7 +220,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroImageFile: "StarlinkCompanyInstallation.jpeg",
     heroImageReason:
       "NCDMB Conference Centre clearly visible in background — named Nigerian government/institutional building gives immediate credibility to enterprise clients",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     overviewTitle: "Business-grade satellite when terrestrial SLAs slip",
     overviewParagraphs: [
       "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
@@ -361,7 +362,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroImageFile: "StarlinkRoofMount.jpeg",
     heroImageReason:
       "Nigerian technician actively mounting dish on residential roof — human, authentic, and specific to Nigeria. Best trust-builder for home clients",
-    heroObjectPosition: "center",
+    heroObjectPosition: "top center",
     overviewTitle: "Residential satellite that respects your roof and your schedule",
     overviewParagraphs: [
       "Home buyers want video calls that survive rain fade, kids’ classes that do not drop when the grid flickers, and installers who understand estate security desks and landlord drilling rules. Starlink delivers when the dish sees enough sky and the in-home network is not bottlenecked by a single hallway router.",
@@ -498,7 +499,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroImageFile: "maritime3.jpeg",
     heroImageReason:
       "dish mounted on patrol boat mast with Nigerian waterway/bridge behind — boat-specific context, identifiable Nigerian port environment",
-    heroObjectPosition: "center bottom",
+    heroObjectPosition: "center top",
     overviewTitle: "Connectivity that moves with your hull",
     overviewParagraphs: [
       "Coastal ferries, fishing fleets, and private yachts need internet that is not tied to marina WiFi passwords. Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
@@ -545,15 +546,13 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         "maritime3.jpeg",
         "Close-up of Starlink mount bracket on patrol boat",
         "Patrol boat mast mount in Nigerian waterway — boat-specific hardware placement.",
-        "IMAGE: maritime3.jpeg — close-up of Starlink mount bracket on patrol boat",
-        "center top"
+        "IMAGE: maritime3.jpeg — close-up of Starlink mount bracket on patrol boat"
       ),
       proof(
         "maritime3.jpeg",
         "Starlink dish on boat mast in Nigerian waterway",
         "Waterway context with bridge and port infrastructure visible.",
-        "IMAGE: maritime3.jpeg — dish on boat mast with Nigerian waterway/bridge behind — boat-specific context",
-        "center bottom"
+        "IMAGE: maritime3.jpeg — dish on boat mast with Nigerian waterway/bridge behind — boat-specific context"
       ),
     ],
     speedStat: SPEED,

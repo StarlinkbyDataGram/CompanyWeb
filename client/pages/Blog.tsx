@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { cropForFile, cropFromSrc } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 import { landingContainer, landingPageRoot } from "@/pages/landing/landing-classes";
 
@@ -181,7 +182,8 @@ export default function Blog() {
                     <img
                       src={featuredPost.image}
                       alt={featuredPost.title}
-                      className="w-full h-64 md:h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:min-h-[280px] md:h-full"
+                      style={{ objectPosition: cropFromSrc(featuredPost.image) }}
                     />
                     <div className="absolute top-4 left-4">
                       <Badge className="bg-primary text-primary-foreground">Featured</Badge>
@@ -238,7 +240,12 @@ export default function Blog() {
                     loading="lazy"
                     data-dg-image={post.imageFile}
                     className="h-full w-full transition-transform duration-300 group-hover:scale-105"
-                    style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%" }}
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: cropForFile(post.imageFile),
+                      width: "100%",
+                      height: "100%",
+                    }}
                   />
                 </div>
                 <CardHeader>
@@ -271,7 +278,8 @@ export default function Blog() {
                       <img
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="h-[280px] min-h-[240px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        style={{ objectPosition: cropFromSrc(post.image) }}
                       />
                       <div className="absolute top-4 left-4">
                         <Badge variant="secondary">{post.category}</Badge>

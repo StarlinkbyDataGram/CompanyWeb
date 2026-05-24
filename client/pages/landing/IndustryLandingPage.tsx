@@ -4,6 +4,7 @@ import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { cropForFile } from "@/lib/image-crop";
 import type { IndustryLandingConfig } from "@/data/landing/types";
 import {
   buildBreadcrumb,
@@ -55,7 +56,7 @@ export default function IndustryLandingPage({ config }: Props) {
 
       <section className={landingHeroSection}>
         <div className={landingHeroOverlay}>
-          <div className="aspect-[16/9] h-full min-h-[280px] w-full overflow-hidden sm:min-h-[320px]">
+          <div className="aspect-[16/9] h-full min-h-[320px] w-full overflow-hidden sm:min-h-[400px]">
             {config.path === "/starlink-offshore-maritime-installation" && (
               <>
                 {/* IMAGE: maritime2.jpeg — wide cinematic tanker deck hero, open ocean horizon */}
@@ -86,7 +87,8 @@ export default function IndustryLandingPage({ config }: Props) {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  objectPosition: config.heroObjectPosition ?? "center",
+                  objectPosition:
+                    config.heroObjectPosition ?? cropForFile(config.heroImageFile ?? ""),
                 }}
               />
             )}
@@ -170,11 +172,13 @@ export default function IndustryLandingPage({ config }: Props) {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {config.proofCards.map((card) => (
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
-                <div className="aspect-[4/3] w-full overflow-hidden">
+                <div className="h-[280px] min-h-[240px] w-full overflow-hidden">
                   {/* deployment proof — IMAGE filename and reason on img data-dg-placement */}
                   <img
                     src={card.src}
                     alt={card.alt}
+                    width={800}
+                    height={280}
                     loading="lazy"
                     data-dg-image={card.imageFile}
                     data-dg-placement={card.imageComment}
@@ -182,7 +186,7 @@ export default function IndustryLandingPage({ config }: Props) {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
-                      objectPosition: card.objectPosition ?? "center",
+                      objectPosition: card.objectPosition ?? cropForFile(card.imageFile),
                     }}
                   />
                 </div>

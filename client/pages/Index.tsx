@@ -29,6 +29,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import useInView from "@/hooks/use-inview";
 import Seo from "@/components/Seo";
 import { faqs } from "@/data/faq";
+import { CARD_IMAGE_HEIGHT_CLASS, cropForFile } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 import { testimonials as initialTestimonials } from "@/data/testimonials";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -235,7 +236,7 @@ const WHAT_WE_INSTALL_CARDS = [
       "Starlink installation for vessels, rigs, barges, and waterfront facilities. We handle mast surveys, cable routing, and maritime activation.",
     image: "/images/datagram2.png",
     imageAlt: "DataGram technician routing Starlink cables on a waterfront industrial structure in Nigeria",
-    objectPosition: "center top",
+    imageFile: "datagram2.png",
   },
   {
     to: "/starlink-enterprise-nigeria",
@@ -244,7 +245,7 @@ const WHAT_WE_INSTALL_CARDS = [
       "Starlink for offices, warehouses, NGOs, and industrial facilities. Includes site survey, cable tray routing, dual-WAN config, and speed baseline.",
     image: "/images/install.png",
     imageAlt: "Technician drilling a Starlink mount bracket on an industrial rooftop in Nigeria",
-    objectPosition: "center",
+    imageFile: "install.png",
   },
   {
     to: "/starlink-home-installation",
@@ -253,7 +254,7 @@ const WHAT_WE_INSTALL_CARDS = [
       "Residential Starlink installation with proper mounting, cable management, and WiFi distribution. Serving homes, compounds, and estates.",
     image: "/images/install3.png",
     imageAlt: "DataGram installer delivering a Starlink kit at a gated residential estate in Nigeria",
-    objectPosition: "center",
+    imageFile: "install3.png",
   },
   {
     to: "/starlink-boat-installation",
@@ -262,7 +263,7 @@ const WHAT_WE_INSTALL_CARDS = [
       "Starlink for leisure craft, patrol boats, and coastal vessels. Bracket mounting, waterproofing, and marine activation handled end to end.",
     image: "/images/install2.png",
     imageAlt: "DataGram technician on an industrial rooftop with port cranes and shipping containers behind him",
-    objectPosition: "center top",
+    imageFile: "install2.png",
   },
 ] as const;
 
@@ -311,16 +312,16 @@ function WhatWeInstallSection() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {WHAT_WE_INSTALL_CARDS.map((card) => (
             <Card key={card.to} className="h-full overflow-hidden border bg-card/80 shadow-sm">
-              <div className="h-[200px] w-full overflow-hidden">
-                {/* IMAGE ASSIGNED: homepage card — matched to service environment (see card.image path) */}
+              <div className={CARD_IMAGE_HEIGHT_CLASS}>
+                {/* IMAGE ASSIGNED: homepage card — focal crop via image-crop.ts */}
                 <img
                   src={card.image}
                   alt={card.imageAlt}
                   width={800}
-                  height={200}
+                  height={280}
                   loading="lazy"
                   className="h-full w-full object-cover"
-                  style={{ objectPosition: card.objectPosition }}
+                  style={{ objectPosition: cropForFile(card.imageFile) }}
                 />
               </div>
               <CardHeader>

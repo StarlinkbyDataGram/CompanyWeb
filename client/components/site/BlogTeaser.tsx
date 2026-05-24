@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { blogPosts as initialBlogPosts } from "@/data/blog";
+import { cropFromSrc } from "@/lib/image-crop";
 import { getStored } from "@/lib/storage";
 
 export default function BlogTeaser() {
@@ -65,10 +66,11 @@ export default function BlogTeaser() {
                   <img
                     src={post.image}
                     alt={`${post.title} - Starlink Installation Nigeria Blog`}
-                    className="w-full h-44 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="h-[280px] min-h-[240px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                     width="400"
-                    height="176"
+                    height={280}
+                    style={{ objectPosition: cropFromSrc(post.image) }}
                   />
                   <div className="absolute top-3 left-3">
                     <Badge variant="secondary">{post.category}</Badge>

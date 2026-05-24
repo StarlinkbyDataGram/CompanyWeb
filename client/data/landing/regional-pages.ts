@@ -1,4 +1,5 @@
 import { Clock, MapPin, Truck, Users, Wrench, Zap } from "lucide-react";
+import { cropForFile } from "@/lib/image-crop";
 import type { RegionalLandingConfig } from "./types";
 import { southEastRegionalPages } from "./south-east-regional-pages";
 
@@ -9,14 +10,14 @@ const proof = (
   alt: string,
   caption: string,
   comment: string,
-  objectPosition = "center"
+  objectPosition?: string
 ) => ({
   src: img(file),
   imageFile: file,
   alt,
   caption,
   imageComment: comment,
-  objectPosition,
+  objectPosition: cropForFile(file, objectPosition),
 });
 
 const SPEED = {
@@ -78,7 +79,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImageFile: "StarlinkCompanyInstallation.jpeg",
     heroImageReason:
       "NCDMB Conference Centre has Abuja institutional architecture feel — most credible fit for the FCT page",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Abuja",
     whyCards: [
@@ -171,7 +172,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImageFile: "starlinkSetup.jpeg",
     heroImageReason:
       "commercial building with active construction in background reads as Lagos urban environment",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Lagos",
     whyCards: [
@@ -257,7 +258,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImage: img("starlinkCompanyInstalltionImage.jpeg"),
     heroImageFile: "starlinkCompanyInstalltionImage.jpeg",
     heroImageReason: "industrial roof with port cranes — strongest Port Harcourt geographic match in the image set",
-    heroObjectPosition: "center",
+    heroObjectPosition: "top center",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Rivers State",
     whyCards: [
@@ -343,7 +344,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImage: img("starlinkInstallation.jpeg"),
     heroImageFile: "starlinkInstallation.jpeg",
     heroImageReason: "solar array background suits power-conscious South-South installs",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Delta State",
     whyCards: [
@@ -435,7 +436,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImageFile: "starlinkSetup.jpeg",
     heroImageReason:
       "NCDMB Conference Centre signage in Yenagoa — geographic match for Bayelsa capital enterprise and government installs",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Bayelsa",
     whyCards: [
@@ -528,7 +529,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImageFile: "residentalSetup.jpeg",
     heroImageReason:
       "Residential compound wall install — plausible Benin GRA and Ring Road home without port or maritime background",
-    heroObjectPosition: "center",
+    heroObjectPosition: "center top",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Edo State",
     whyCards: [

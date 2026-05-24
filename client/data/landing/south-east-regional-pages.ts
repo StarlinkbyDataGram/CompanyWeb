@@ -1,4 +1,5 @@
 import { Clock, MapPin, Truck } from "lucide-react";
+import { cropForFile } from "@/lib/image-crop";
 import type { RegionalLandingConfig } from "./types";
 
 const image = (file: string) => `/images/${file}`;
@@ -8,14 +9,14 @@ const deploymentProof = (
   alt: string,
   caption: string,
   reason: string,
-  objectPosition = "center"
+  objectPosition?: string
 ) => ({
   src: image(file),
   imageFile: file,
   alt,
   caption,
   imageComment: `IMAGE ASSIGNED: ${reason}`,
-  objectPosition,
+  objectPosition: cropForFile(file, objectPosition),
 });
 
 const SPEED = {
@@ -73,7 +74,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroImageFile: "install4.png",
     heroImageReason:
       "Urban residential rooftop install with Nigerian neighbourhood backdrop — fits Abia compound and estate context without port or maritime cues",
-    heroObjectPosition: "center top",
+    heroObjectPosition: "top center",
     trustSinceYear: "2022",
     whyTitle: "Why DataGram in Abia State",
     whyCards: [
@@ -151,7 +152,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroImageFile: "residentalSetup.jpeg",
     heroImageReason:
       "Residential compound wall install with Nigerian security grilles — plausible Anambra urban home without Lagos port background",
-    heroObjectPosition: "center",
+    heroObjectPosition: "top center",
     trustSinceYear: "2022",
     whyTitle: "Why DataGram in Anambra State",
     whyCards: [
@@ -229,7 +230,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroImageFile: "starlinkEstateInstallation.jpeg",
     heroImageReason:
       "Estate balcony mount with tropical residential blocks — matches Owerri GRA and compound layouts",
-    heroObjectPosition: "center top",
+    heroObjectPosition: "top center",
     trustSinceYear: "2022",
     whyTitle: "Why DataGram in Imo State",
     whyCards: [
@@ -307,7 +308,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroImageFile: "starlinkInstallation.jpeg",
     heroImageReason:
       "Rooftop install with solar array — suits Ebonyi semi-urban sites where generator and solar backup are common",
-    heroObjectPosition: "center",
+    heroObjectPosition: "top center",
     trustSinceYear: "2022",
     whyTitle: "Why DataGram in Ebonyi State",
     whyCards: [
@@ -385,7 +386,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroImageFile: "StarlinkInstallationresidential.jpeg",
     heroImageReason:
       "Residential rooftop install with solar panels — fits Coal City duplex and terrace homes in Independence Layout and Trans-Ekulu",
-    heroObjectPosition: "center",
+    heroObjectPosition: "top center",
     trustSinceYear: "2022",
     whyTitle: "Why DataGram in Enugu State",
     whyCards: [

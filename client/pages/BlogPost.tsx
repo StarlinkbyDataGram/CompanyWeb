@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "@/components/Seo";
+import { cropForFile } from "@/lib/image-crop";
 import { getSeoArticleBySlug } from "@/data/blog/articles-2026";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -112,7 +113,7 @@ export default function BlogPost() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  objectPosition: "center",
+                  objectPosition: cropForFile(article.imageFile),
                 }}
               />
             </div>
