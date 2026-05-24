@@ -11,7 +11,7 @@ export const IMAGE_CROP_BY_FILE: Record<string, ImageCropPreset> = {
   "install.png": { desktop: "top center", mobile: "top center" },
   "install2.png": { desktop: "top center", mobile: "top center" },
   "install3.png": { desktop: "top center", mobile: "top center" },
-  "install4.png": { desktop: "top center", mobile: "top center" },
+  "install4.jpg": { desktop: "top center", mobile: "top center" },
   "datagram2.png": { desktop: "50% 35%", mobile: "50% 30%" },
   "maritime.jpeg": { desktop: "center", mobile: "center" },
   "maritime2.jpeg": { desktop: "center", mobile: "center" },

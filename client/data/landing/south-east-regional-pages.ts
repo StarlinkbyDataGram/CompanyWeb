@@ -70,8 +70,8 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     heroSubheading:
       "From Umuahia GRA to Aba industrial estates, DataGram handles Starlink installation, cable routing, and activation across Abia State.",
     heroImageAlt: "Starlink pole mount on a residential rooftop in Abia State, Nigeria",
-    heroImage: image("install4.png"),
-    heroImageFile: "install4.png",
+    heroImage: image("install4.jpg"),
+    heroImageFile: "install4.jpg",
     heroImageReason:
       "Urban residential rooftop install with Nigerian neighbourhood backdrop — fits Abia compound and estate context without port or maritime cues",
     heroObjectPosition: "top center",
@@ -178,7 +178,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     proofTitle: "Our Work in Anambra State",
     proofCards: [
       deploymentProof(
-        "install4.png",
+        "install4.jpg",
         "Starlink pole mount overlooking residential rooftops in Anambra State",
         "Elevated pole mount with urban residential skyline.",
         "urban residential rooftop context suitable for Awka and Onitsha metro installs"
@@ -256,7 +256,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     proofTitle: "Our Work in Imo State",
     proofCards: [
       deploymentProof(
-        "install4.png",
+        "install4.jpg",
         "Starlink pole mount on a residential rooftop in Imo State",
         "Urban pole mount with Nigerian neighbourhood backdrop.",
         "residential rooftop context for Owerri metropolis installs"
@@ -334,7 +334,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     proofTitle: "Our Work in Ebonyi State",
     proofCards: [
       deploymentProof(
-        "install4.png",
+        "install4.jpg",
         "Starlink pole mount overlooking residential rooftops in Ebonyi State",
         "Elevated pole mount in a dense residential neighbourhood.",
         "urban and semi-urban rooftop context for Abakaliki installs"
@@ -418,7 +418,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
         "rooftop with solar backup common in Enugu residential and small commercial sites"
       ),
       deploymentProof(
-        "install4.png",
+        "install4.jpg",
         "Starlink pole mount overlooking Enugu residential rooftops",
         "Urban pole mount with neighbourhood skyline.",
         "dense residential rooftop context for Enugu metropolis and GRA installs"
