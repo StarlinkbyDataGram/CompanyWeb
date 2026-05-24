@@ -205,7 +205,9 @@ export default function Index() {
       </section>
       
       <HomeIntroSection />
-      
+
+      <WhatWeInstallSection />
+
       <section aria-label="Highlights band" className="relative mt-6 md:mt-6" style={{ backgroundColor: "whitesmoke" }}>
         <FinalCTA />
         <Stats />
@@ -223,6 +225,45 @@ const INTRO_CITY_LINKS = [
   { to: "/locations/abuja", label: "Abuja" },
   { to: "/locations/port-harcourt", label: "Port Harcourt" },
   { to: "/locations/niger-delta", label: "Niger Delta" },
+] as const;
+
+const WHAT_WE_INSTALL_CARDS = [
+  {
+    to: "/starlink-offshore-maritime-installation",
+    title: "Offshore & Maritime",
+    description:
+      "Starlink installation for vessels, rigs, barges, and waterfront facilities. We handle mast surveys, cable routing, and maritime activation.",
+    image: "/images/datagram2.png",
+    imageAlt: "DataGram technician routing Starlink cables on a waterfront industrial structure in Nigeria",
+    objectPosition: "center top",
+  },
+  {
+    to: "/starlink-enterprise-nigeria",
+    title: "Enterprise",
+    description:
+      "Starlink for offices, warehouses, NGOs, and industrial facilities. Includes site survey, cable tray routing, dual-WAN config, and speed baseline.",
+    image: "/images/install.png",
+    imageAlt: "Technician drilling a Starlink mount bracket on an industrial rooftop in Nigeria",
+    objectPosition: "center",
+  },
+  {
+    to: "/starlink-home-installation",
+    title: "Home Installation",
+    description:
+      "Residential Starlink installation with proper mounting, cable management, and WiFi distribution. Serving homes, compounds, and estates.",
+    image: "/images/install3.png",
+    imageAlt: "DataGram installer delivering a Starlink kit at a gated residential estate in Nigeria",
+    objectPosition: "center",
+  },
+  {
+    to: "/starlink-boat-installation",
+    title: "Boat Installation",
+    description:
+      "Starlink for leisure craft, patrol boats, and coastal vessels. Bracket mounting, waterproofing, and marine activation handled end to end.",
+    image: "/images/install2.png",
+    imageAlt: "DataGram technician on an industrial rooftop with port cranes and shipping containers behind him",
+    objectPosition: "center top",
+  },
 ] as const;
 
 const INTRO_SERVICE_CARDS = [
@@ -251,6 +292,64 @@ const INTRO_SERVICE_CARDS = [
     icon: BatteryCharging,
   },
 ] as const;
+
+function WhatWeInstallSection() {
+  return (
+    <section
+      className="border-t bg-muted/30 py-16 md:py-24"
+      aria-labelledby="what-we-install-heading"
+    >
+      <div className="container max-w-6xl">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 id="what-we-install-heading" className="text-3xl font-extrabold tracking-tight md:text-4xl">
+            What We Install
+          </h2>
+          <p className="mt-3 text-base text-foreground/75 md:text-lg">
+            Starlink for every environment — residential, commercial, and offshore.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {WHAT_WE_INSTALL_CARDS.map((card) => (
+            <Card key={card.to} className="h-full overflow-hidden border bg-card/80 shadow-sm">
+              <div className="h-[200px] w-full overflow-hidden">
+                {/* IMAGE ASSIGNED: homepage card — matched to service environment (see card.image path) */}
+                <img
+                  src={card.image}
+                  alt={card.imageAlt}
+                  width={800}
+                  height={200}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                  style={{ objectPosition: card.objectPosition }}
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">{card.title}</CardTitle>
+                <CardDescription className="text-sm leading-relaxed text-foreground/80">
+                  {card.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <Link
+                  to={card.to}
+                  className="inline-flex text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <div className="mt-10 flex flex-col items-center gap-4 text-center">
+          <p className="text-sm text-foreground/75 md:text-base">Not sure which option fits your situation?</p>
+          <Button asChild variant="outline" size="lg">
+            <Link to="/contact">Talk to Us</Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function HomeIntroSection() {
   return (

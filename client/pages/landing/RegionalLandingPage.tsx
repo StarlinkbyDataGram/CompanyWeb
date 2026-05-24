@@ -83,18 +83,23 @@ export default function RegionalLandingPage({ config }: Props) {
             ) : (
               config.heroImage &&
               config.heroImageFile && (
-                <img
-                  src={config.heroImage}
-                  alt={config.heroImageAlt}
-                  data-dg-image={config.heroImageFile}
-                  data-dg-placement={config.heroImageReason}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    objectPosition: config.heroObjectPosition ?? "center",
-                  }}
-                />
+                <>
+                  {/* IMAGE ASSIGNED: hero — see data-dg-placement for context */}
+                  <img
+                    src={config.heroImage}
+                    alt={config.heroImageAlt}
+                    width={1920}
+                    height={1080}
+                    data-dg-image={config.heroImageFile}
+                    data-dg-placement={config.heroImageReason}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: config.heroObjectPosition ?? "center",
+                    }}
+                  />
+                </>
               )
             )}
           </div>
@@ -168,10 +173,12 @@ export default function RegionalLandingPage({ config }: Props) {
             {config.proofCards.map((card) => (
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
                 <div className="aspect-[4/3] w-full overflow-hidden">
-                  {/* deployment proof — IMAGE filename and reason on img data-dg-placement */}
+                  {/* IMAGE ASSIGNED: deployment proof — see data-dg-placement */}
                   <img
                     src={card.src}
                     alt={card.alt}
+                    width={800}
+                    height={600}
                     loading="lazy"
                     data-dg-image={card.imageFile}
                     data-dg-placement={card.imageComment}

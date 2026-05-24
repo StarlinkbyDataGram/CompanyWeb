@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import {
   BRAND_NAME,
-  BUSINESS_ADDRESS,
+  BUSINESS_ADDRESS_COUNTRY,
   BUSINESS_EMAIL,
-  BUSINESS_GEO,
   BUSINESS_PHONE_E164,
   DEFAULT_DESCRIPTION,
   DEFAULT_OG_IMAGE,
@@ -241,11 +240,7 @@ function buildStructuredData({
     telephone: BUSINESS_PHONE_E164,
     address: {
       "@type": "PostalAddress",
-      streetAddress: BUSINESS_ADDRESS.streetAddress,
-      addressLocality: BUSINESS_ADDRESS.addressLocality,
-      addressRegion: BUSINESS_ADDRESS.addressRegion,
-      postalCode: BUSINESS_ADDRESS.postalCode,
-      addressCountry: BUSINESS_ADDRESS.addressCountry,
+      addressCountry: BUSINESS_ADDRESS_COUNTRY,
     },
     sameAs: [...SAME_AS],
     areaServed: { "@type": "Country", name: "Nigeria" },
@@ -293,16 +288,7 @@ function buildStructuredData({
         "Professional Starlink installation and internet services across Nigeria. Hardware sales, certified installers, enterprise WiFi, and ongoing support.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: BUSINESS_ADDRESS.streetAddress,
-        addressLocality: BUSINESS_ADDRESS.addressLocality,
-        addressRegion: BUSINESS_ADDRESS.addressRegion,
-        postalCode: BUSINESS_ADDRESS.postalCode,
-        addressCountry: BUSINESS_ADDRESS.addressCountry,
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: BUSINESS_GEO.latitude,
-        longitude: BUSINESS_GEO.longitude,
+        addressCountry: BUSINESS_ADDRESS_COUNTRY,
       },
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",

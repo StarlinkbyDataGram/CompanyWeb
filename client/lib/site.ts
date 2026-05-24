@@ -13,18 +13,8 @@ export const BUSINESS_PHONE_DISPLAY = "+234 906 097 6424";
 export const BUSINESS_EMAIL = "Appdatagram@gmail.com";
 export const WHATSAPP_URL = "https://wa.me/2349060976424";
 
-export const BUSINESS_ADDRESS = {
-  streetAddress: "House 7, Trunk H, Mandela Estate, SARS Road",
-  addressLocality: "Port Harcourt",
-  addressRegion: "Rivers State",
-  postalCode: "500102",
-  addressCountry: "NG",
-} as const;
-
-export const BUSINESS_GEO = {
-  latitude: 4.8156,
-  longitude: 7.0498,
-} as const;
+/** Country-only for schema — no published street address */
+export const BUSINESS_ADDRESS_COUNTRY = "NG" as const;
 
 export const SAME_AS = [
   "https://www.facebook.com/datagramnetwork",

@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   BRAND_NAME,
-  BUSINESS_ADDRESS,
   BUSINESS_EMAIL,
   BUSINESS_PHONE_DISPLAY,
   BUSINESS_PHONE_E164,
@@ -149,13 +148,7 @@ export default function Footer() {
             <h3 className="mb-3 font-semibold">Contact Us</h3>
             <address className="not-italic space-y-2 text-sm text-foreground/80">
               <p className="font-semibold text-foreground">{LEGAL_BUSINESS_NAME}</p>
-              <p>
-                {BUSINESS_ADDRESS.streetAddress}
-                <br />
-                {BUSINESS_ADDRESS.addressLocality}, {BUSINESS_ADDRESS.addressRegion} {BUSINESS_ADDRESS.postalCode}
-                <br />
-                {BUSINESS_ADDRESS.addressCountry === "NG" ? "Nigeria" : BUSINESS_ADDRESS.addressCountry}
-              </p>
+              <p className="text-foreground/70">Nigeria — South-South &amp; South-East field operations</p>
               <p>
                 Phone:{" "}
                 <a className="hover:text-foreground transition-colors" href={`tel:${BUSINESS_PHONE_E164}`}>

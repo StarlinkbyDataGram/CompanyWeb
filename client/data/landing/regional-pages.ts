@@ -303,7 +303,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "Are you based in Port Harcourt?",
         answer:
-          "Yes—Mandela Estate, SARS Road is our operations base. Local stock and survey crews reduce wait times across Rivers compared to fly-in installers.",
+          "Yes—our Rivers crews mobilise from the Port Harcourt corridor. Local stock and survey teams reduce wait times across Rivers compared to fly-in installers.",
       },
       {
         question: "Do you install in Trans-Amadi factories?",
@@ -430,8 +430,12 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroLabel: "Yenagoa & surrounding areas",
     heroSubheading:
       "Capital city estates, NDDC layouts, and creek-adjacent compounds—installers who plan logistics from Port Harcourt hub stock.",
-    heroImageAlt: "Starlink dish Yenagoa Bayelsa residential rooftop installation",
-    heroImageMissing: true,
+    heroImageAlt: "Starlink enterprise install at NCDMB Conference Centre Yenagoa Bayelsa State",
+    heroImage: img("starlinkSetup.jpeg"),
+    heroImageFile: "starlinkSetup.jpeg",
+    heroImageReason:
+      "NCDMB Conference Centre signage in Yenagoa — geographic match for Bayelsa capital enterprise and government installs",
+    heroObjectPosition: "center",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Bayelsa",
     whyCards: [
@@ -519,8 +523,12 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroLabel: "Benin City & surroundings",
     heroSubheading:
       "GRA mansions, Sapele Road commercial roofs, and Ekpoma university corridor—installers who know Benin’s estate security rhythm.",
-    heroImageAlt: "Starlink installation Benin City GRA Edo State rooftop",
-    heroImageMissing: true,
+    heroImageAlt: "Starlink wall and pole mounts on a residential building in Edo State, Nigeria",
+    heroImage: img("residentalSetup.jpeg"),
+    heroImageFile: "residentalSetup.jpeg",
+    heroImageReason:
+      "Residential compound wall install — plausible Benin GRA and Ring Road home without port or maritime background",
+    heroObjectPosition: "center",
     trustSinceYear: "2020",
     whyTitle: "Why DataGram in Edo State",
     whyCards: [
@@ -618,8 +626,8 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     whyCards: [
       {
         icon: MapPin,
-        title: "PH operations base",
-        body: "Mandela Estate, SARS Road is our hub—local stock, survey crews, and marine-aware installers without fly-in delays.",
+        title: "South-South logistics",
+        body: "Port Harcourt–based crews keep local stock, survey teams, and marine-aware installers on the road without fly-in delays.",
       },
       {
         icon: Zap,

@@ -7,6 +7,13 @@ import { services } from "@/data/services";
 import { products } from "@/data/products";
 import { AnimatePresence, motion } from "framer-motion";
 
+const INDUSTRY_NAV_LINKS = [
+  { to: "/starlink-offshore-maritime-installation", label: "Offshore & Maritime" },
+  { to: "/starlink-enterprise-nigeria", label: "Enterprise" },
+  { to: "/starlink-home-installation", label: "Home Installation" },
+  { to: "/starlink-boat-installation", label: "Boat Installation" },
+] as const;
+
 const nav = [
   { to: "/", label: "Home", scrollTo: "home" },
   { to: "/about", label: "About" },
@@ -135,29 +142,14 @@ export default function Header() {
           <div className="container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 px-4 sm:px-6 md:px-10 py-2 sm:py-3 text-base font-semibold relative">
             {/* Left: Address then Phone (responsive, more polished) */}
             <div className="text-left leading-tight">
-              <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3">
-                <a
-                  href="https://maps.google.com/?q=House%207%2C%20Trunk%20H%2C%20Mandela%20Estate%2C%20SARS%20Road%2C%20Port%20Harcourt%2C%20Rivers%20State%2C%20Nigeria"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-xs md:text-sm text-foreground/70 hover:text-foreground/90"
-                  aria-label="Open address in Google Maps"
-                >
-                  <MapPin className="h-4 w-4 text-primary" />
-                  <span className="underline-offset-2 hover:underline">House 7, Trunk H, Mandela Estate, SARS Road, Port Harcourt</span>
-                </a>
-                <span className="hidden md:inline text-foreground/30">•</span>
-                <div className="flex items-center gap-2">
-                  <a
-                    href="tel:+2349060976424"
-                    className="inline-flex items-center gap-2 text-sm md:text-base text-foreground/80 hover:text-foreground"
-                    aria-label="Call 0906 097 6424"
-                  >
-                    <Phone className="h-4 w-4" />
-                    <span>0906 097 6424</span>
-                  </a>
-                </div>
-              </div>
+              <a
+                href="tel:+2349060976424"
+                className="inline-flex items-center gap-2 text-sm md:text-base text-foreground/80 hover:text-foreground"
+                aria-label="Call 0906 097 6424"
+              >
+                <Phone className="h-4 w-4" />
+                <span>0906 097 6424</span>
+              </a>
             </div>
 
             {/* Right: Actions (stack under contact on small screens) */}
@@ -278,6 +270,19 @@ export default function Header() {
                             ))}
                           </div>
                         </div>
+                        <div className="my-2 h-px bg-border" />
+                        <p className="px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                          Starlink by environment
+                        </p>
+                        {INDUSTRY_NAV_LINKS.map((item) => (
+                          <Link
+                            key={item.to}
+                            to={item.to}
+                            className="block rounded-sm px-3 py-2 text-sm hover:bg-[#000080] hover:text-white"
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
                         <div className="my-2 h-px bg-border" />
                         <Link
                           to="/services"
@@ -752,6 +757,24 @@ export default function Header() {
                                   className={cn("block rounded px-2 py-1 text-sm hover:bg-[#000080] hover:text-white", location.pathname === `/services/${s.slug}` ? "text-white bg-[#000080] font-medium" : "text-foreground/80 hover:bg-[#000080] hover:text-white")}
                                 >
                                   {s.title}
+                                </Link>
+                              ))}
+                              <p className="px-2 pt-2 pb-0.5 text-xs font-semibold uppercase tracking-wide text-foreground/50">
+                                Starlink by environment
+                              </p>
+                              {INDUSTRY_NAV_LINKS.map((item) => (
+                                <Link
+                                  key={item.to}
+                                  to={item.to}
+                                  onClick={() => setOpen(false)}
+                                  className={cn(
+                                    "block rounded px-2 py-1 text-sm hover:bg-[#000080] hover:text-white",
+                                    location.pathname === item.to
+                                      ? "text-white bg-[#000080] font-medium"
+                                      : "text-foreground/80"
+                                  )}
+                                >
+                                  {item.label}
                                 </Link>
                               ))}
                               <Link 
