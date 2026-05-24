@@ -27,6 +27,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FaqPage from "./pages/FaqPage";
 import LocationsIndex from "./pages/LocationsIndex";
+import LocationsAll from "./pages/LocationsAll";
 import LocationDetail from "./pages/LocationDetail";
 import StarlinkGuideNigeria from "./pages/StarlinkGuideNigeria";
 import Gallery from "./pages/Gallery";
@@ -100,6 +101,7 @@ const AppContent = () => {
               <Route path="/support" element={<Support />} />
               <Route path="/faq" element={<FaqPage />} />
               <Route path="/locations" element={<LocationsIndex />} />
+              <Route path="/locations/all" element={<LocationsAll />} />
               <Route path="/locations/kano" element={<Navigate to="/locations/niger-delta" replace />} />
               <Route path="/locations/:slug" element={<LocationDetail />} />
               <Route path="/guide/starlink-nigeria" element={<StarlinkGuideNigeria />} />

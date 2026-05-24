@@ -49,6 +49,12 @@
     <lastmod>2026-05-20</lastmod>
   </url>
   <url>
+    <loc>https://www.datagram.ng/locations/all</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+  <url>
     <loc>https://www.datagram.ng/locations</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -136,19 +142,31 @@
     <loc>https://www.datagram.ng/starlink-installation-imo-state-owerri</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.datagram.ng/starlink-installation-abia-state</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.datagram.ng/starlink-installation-anambra-state</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.datagram.ng/starlink-installation-ebonyi-state</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.datagram.ng/starlink-installation-enugu-state</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.datagram.ng/starlink-installation-edo-state-benin</loc>

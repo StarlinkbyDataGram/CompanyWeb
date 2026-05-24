@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import { serviceLocations } from "@/data/locations";
+import { NORTHERN_STATES_NOTICE } from "@/data/locations-all";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SITE_URL } from "@/lib/site";
 
@@ -69,6 +71,20 @@ export default function LocationsIndex() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t py-10">
+        <div className="container flex flex-col items-center gap-6 text-center">
+          <Button asChild variant="outline" size="lg">
+            <Link to="/locations/all">See all locations</Link>
+          </Button>
+        </div>
+      </section>
+
+      <section className="border-t bg-muted/30 py-10">
+        <div className="container max-w-3xl">
+          <p className="text-sm leading-relaxed text-foreground/80">{NORTHERN_STATES_NOTICE}</p>
         </div>
       </section>
     </div>

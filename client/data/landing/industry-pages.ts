@@ -223,7 +223,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     overviewTitle: "Business-grade satellite when terrestrial SLAs slip",
     overviewParagraphs: [
       "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
-      "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance.",
+      "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance. DataGram's standard coverage is South-South and South-East Nigeria. Enterprise installations in northern states are handled on special request.",
     ],
     stats: [
       { label: "Typical latency", value: "20–33 ms", note: "LEO architecture; local routing still matters." },
@@ -296,9 +296,14 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         cta: "Request proposal",
       },
       {
-        name: "Ongoing NOC",
+        name: "Ongoing Priority Support",
         priceLabel: "Custom SLA",
-        features: ["Monitoring hooks", "Quarterly obstruction review", "Named escalation engineer"],
+        features: [
+          "Monthly network flow check for potential bottlenecks",
+          "Network cable maintenance",
+          "Monthly / bulk subscription renewal management",
+          "Replacement of non-performing hardware or software",
+        ],
         cta: "Discuss SLA",
       },
     ],

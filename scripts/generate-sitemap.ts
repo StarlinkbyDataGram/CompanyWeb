@@ -39,6 +39,7 @@ function buildUrlEntries(): RouteEntry[] {
     { path: "/support", priority: 0.6, changefreq: "monthly", lastmod: todayIso },
     { path: "/faq", priority: 0.85, changefreq: "monthly", lastmod: todayIso },
     { path: "/locations", priority: 0.85, changefreq: "monthly", lastmod: todayIso },
+    { path: "/locations/all", priority: 0.7, changefreq: "monthly", lastmod: todayIso },
     { path: "/guide/starlink-nigeria", priority: 0.9, changefreq: "monthly", lastmod: todayIso },
     { path: "/gallery", priority: 0.65, changefreq: "monthly", lastmod: todayIso },
     { path: "/privacy", priority: 0.5, changefreq: "yearly", lastmod: todayIso },

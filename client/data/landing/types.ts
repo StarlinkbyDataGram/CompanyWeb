@@ -80,7 +80,9 @@ export type RegionalLandingConfig = {
   proofTitle: string;
   proofCards: ProofCard[];
   speedStat: { label: string; down: string; up: string; latency: string };
+  speedStatNote?: string;
   testimonial: { quote: string; attribution: string };
+  relatedLinks?: { label: string; href: string }[];
   faqs: FaqItem[];
   geo: { latitude: number; longitude: number };
   serviceAreaSchema: string;

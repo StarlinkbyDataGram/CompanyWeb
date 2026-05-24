@@ -108,7 +108,7 @@ export default function RegionalLandingPage({ config }: Props) {
             <p className={landingHeroSub}>{config.heroSubheading}</p>
             <div className={landingHeroCtas}>
               <Button asChild size="lg" className={landingBtnPrimary}>
-                <Link to="/contact">Book a Free Site Survey</Link>
+                <Link to="/contact">Get a Free Site Survey</Link>
               </Button>
               <Button asChild size="lg" className={landingBtnWhatsApp}>
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
@@ -205,9 +205,13 @@ export default function RegionalLandingPage({ config }: Props) {
                   <p className="text-xl font-bold text-primary sm:text-2xl">{config.speedStat.latency}</p>
                   <p className="text-foreground/60">Latency</p>
                 </div>
+                {config.speedStatNote && (
+                  <p className="col-span-full text-center text-xs text-foreground/65 sm:text-sm">{config.speedStatNote}</p>
+                )}
               </CardContent>
             </Card>
             <blockquote className="rounded-2xl border bg-card p-5 italic leading-relaxed text-foreground/80 sm:p-6">
+              {/* PLACEHOLDER TESTIMONIAL — replace with real client quote */}
               “{config.testimonial.quote}”
               <footer className="mt-4 text-sm font-semibold not-italic">{config.testimonial.attribution}</footer>
             </blockquote>
@@ -219,6 +223,17 @@ export default function RegionalLandingPage({ config }: Props) {
         <div className={landingContainer}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Coverage in {config.stateName}</h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-foreground/80">{config.coverageParagraph}</p>
+          {config.relatedLinks && config.relatedLinks.length > 0 && (
+            <ul className="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+              {config.relatedLinks.map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-primary underline-offset-4 hover:underline">
+                    {link.label} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </section>
 
@@ -246,7 +261,7 @@ export default function RegionalLandingPage({ config }: Props) {
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
             <Button asChild size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#1da851] sm:w-auto">
               <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-                WhatsApp us
+                Chat on WhatsApp
               </a>
             </Button>
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
