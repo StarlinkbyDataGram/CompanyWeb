@@ -258,7 +258,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     heroImage: img("starlinkCompanyInstalltionImage.jpeg"),
     heroImageFile: "starlinkCompanyInstalltionImage.jpeg",
     heroImageReason: "industrial roof with port cranes — strongest Port Harcourt geographic match in the image set",
-    heroObjectPosition: "top center",
+    heroObjectPosition: "50% 32%",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in Rivers State",
     whyCards: [

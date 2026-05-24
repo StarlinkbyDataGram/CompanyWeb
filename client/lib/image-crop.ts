@@ -10,7 +10,7 @@ export type ImageCropPreset = {
 export const IMAGE_CROP_BY_FILE: Record<string, ImageCropPreset> = {
   "install.png": { desktop: "top center", mobile: "top center" },
   "install2.png": { desktop: "top center", mobile: "top center" },
-  "install3.png": { desktop: "top center", mobile: "top center" },
+  "install3.png": { desktop: "50% 18%", mobile: "50% 15%" },
   "install4.jpg": { desktop: "top center", mobile: "top center" },
   "datagram2.jpg": { desktop: "50% 35%", mobile: "50% 30%" },
   "maritime.jpeg": { desktop: "center", mobile: "center" },
@@ -21,7 +21,10 @@ export const IMAGE_CROP_BY_FILE: Record<string, ImageCropPreset> = {
   "starlinkInstallation.jpeg": { desktop: "center top", mobile: "center top" },
   "starlinkSetup.jpeg": { desktop: "center top", mobile: "center top" },
   "StarlinkCompanyInstallation.jpeg": { desktop: "center top", mobile: "center top" },
-  "starlinkCompanyInstalltionImage.jpeg": { desktop: "top center", mobile: "top center" },
+  "starlinkCompanyInstalltionImage.jpeg": {
+    desktop: "50% 32%",
+    mobile: "50% 28%",
+  },
   "starlinkEstateInstallation.jpeg": { desktop: "top center", mobile: "top center" },
   "residentalSetup.jpeg": { desktop: "center top", mobile: "center top" },
   "StarlinkInstallationresidential.jpeg": { desktop: "center top", mobile: "center top" },
