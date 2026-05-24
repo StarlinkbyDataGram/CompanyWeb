@@ -234,9 +234,9 @@ const WHAT_WE_INSTALL_CARDS = [
     title: "Offshore & Maritime",
     description:
       "Starlink installation for vessels, rigs, barges, and waterfront facilities. We handle mast surveys, cable routing, and maritime activation.",
-    image: "/images/datagram2.png",
+    image: "/images/datagram2.jpg",
     imageAlt: "DataGram technician routing Starlink cables on a waterfront industrial structure in Nigeria",
-    imageFile: "datagram2.png",
+    imageFile: "datagram2.jpg",
   },
   {
     to: "/starlink-enterprise-nigeria",
