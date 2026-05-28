@@ -32,6 +32,12 @@ import { faqs } from "@/data/faq";
 import { CARD_IMAGE_HEIGHT_CLASS, cropForFile } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 import { testimonials as initialTestimonials } from "@/data/testimonials";
+import {
+  useGoogleReviews,
+  getReviewText,
+  getReviewerInitials,
+  type GoogleReview,
+} from "@/hooks/useGoogleReviews";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 type StatItem = {
@@ -818,48 +824,165 @@ function Stats() {
 }
 
 
+function GoogleGLogo({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="#4285F4"
+        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+      />
+      <path
+        fill="#34A853"
+        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+      />
+      <path
+        fill="#FBBC05"
+        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+      />
+      <path
+        fill="#EA4335"
+        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+      />
+    </svg>
+  );
+}
+
+function TestimonialStars({ rating }: { rating: number }) {
+  return (
+    <div className="mb-4 flex items-center gap-1">
+      {[...Array(5)].map((_, i) => (
+        <svg
+          key={i}
+          className={`h-4 w-4 ${i < rating ? "fill-yellow-400" : "fill-muted/30"}`}
+          viewBox="0 0 20 20"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  );
+}
+
+function TestimonialCardSkeleton({ index }: { index: number }) {
+  return (
+    <div data-slide className="min-w-full snap-center md:min-w-0 md:w-[300px]">
+      <figure
+        className="rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm animate-pulse"
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        <div className="mb-4 flex gap-1">
+          {[...Array(5)].map((_, i) => (
+            <div key={i} className="h-4 w-4 rounded-sm bg-muted/40" />
+          ))}
+        </div>
+        <div className="space-y-2">
+          <div className="h-4 w-full rounded bg-muted/40" />
+          <div className="h-4 w-5/6 rounded bg-muted/40" />
+          <div className="h-4 w-4/6 rounded bg-muted/40" />
+        </div>
+        <div className="mt-6 flex items-center gap-3">
+          <div className="h-10 w-10 rounded-full bg-muted/40" />
+          <div className="flex-1 space-y-2">
+            <div className="h-4 w-28 rounded bg-muted/40" />
+            <div className="h-3 w-20 rounded bg-muted/30" />
+            <div className="h-3 w-24 rounded bg-muted/30" />
+          </div>
+        </div>
+      </figure>
+    </div>
+  );
+}
+
+function StaticTestimonialCard({
+  t,
+  index,
+}: {
+  t: (typeof initialTestimonials)[number];
+  index: number;
+}) {
+  return (
+    <div key={t.id} data-slide className="min-w-full snap-center md:min-w-0 md:w-[300px]">
+      <figure
+        className="group rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-lg"
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        <TestimonialStars rating={t.rating ?? 5} />
+        <blockquote className="text-foreground/80 text-base leading-relaxed">"{t.quote}"</blockquote>
+        <figcaption className="mt-6 flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
+            {t.name
+              .split(" ")
+              .map((n) => n[0])
+              .join("")}
+          </div>
+          <div>
+            <div className="font-semibold text-foreground">{t.name}</div>
+            <div className="text-xs text-foreground/70">{t.role}</div>
+            <div className="text-xs text-primary">{t.company}</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  );
+}
+
+function GoogleTestimonialCard({ review, index }: { review: GoogleReview; index: number }) {
+  const displayName = review.authorAttribution?.displayName?.trim() || "Google User";
+  const cardKey = `${review.publishTime ?? "review"}-${displayName}`;
+
+  return (
+    <div key={cardKey} data-slide className="min-w-full snap-center md:min-w-0 md:w-[300px]">
+      <figure
+        className="group rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-lg"
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        <TestimonialStars rating={review.rating} />
+        <blockquote className="text-foreground/80 text-base leading-relaxed">
+          "{getReviewText(review)}"
+        </blockquote>
+        <figcaption className="mt-6 flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
+            {getReviewerInitials(displayName)}
+          </div>
+          <div>
+            <div className="font-semibold text-foreground">{displayName}</div>
+            <div className="mt-0.5 flex items-center gap-1.5 text-xs text-foreground/60">
+              <GoogleGLogo className="h-3.5 w-3.5 shrink-0" />
+              <span>Google Review</span>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  );
+}
+
 function Testimonials() {
-  const [testimonials, setTestimonials] = useState< { quote: string; name: string; role?: string; company?: string; rating?: number }[] | null>(null);
+  const { reviews: googleReviews, isLoading, error } = useGoogleReviews();
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await fetch("/api/testimonials");
-        if (!res.ok) {
-          setTestimonials(initialTestimonials);
-          return;
-        }
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
-          setTestimonials(data);
-        } else {
-          setTestimonials(initialTestimonials);
-        }
-      } catch {
-        setTestimonials(initialTestimonials);
-      }
-    };
-
-    load();
-  }, []);
+  const useGoogle = !isLoading && !error && googleReviews.length > 0;
+  const slideCount = isLoading ? 3 : useGoogle ? googleReviews.length : initialTestimonials.length;
 
   useEffect(() => {
     const el = scrollerRef.current;
-    if (!el || !testimonials) return;
+    if (!el || isLoading) return;
     const onScroll = () => {
-      const first = el.querySelector('[data-slide]') as HTMLElement | null;
+      const first = el.querySelector("[data-slide]") as HTMLElement | null;
       const cardW = first?.offsetWidth ?? el.clientWidth;
       const gap = 16;
       const idx = Math.round(el.scrollLeft / (cardW + gap));
-      setActive(Math.max(0, Math.min(testimonials.length - 1, idx)));
+      setActive(Math.max(0, Math.min(slideCount - 1, idx)));
     };
-    el.addEventListener('scroll', onScroll, { passive: true });
-    return () => el.removeEventListener('scroll', onScroll);
-  }, [testimonials]);
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [isLoading, slideCount]);
 
-  if (!testimonials) return null;
+  useEffect(() => {
+    setActive(0);
+    scrollerRef.current?.scrollTo({ left: 0 });
+  }, [useGoogle, isLoading]);
 
   return (
     <section className="py-20">
@@ -876,92 +999,88 @@ function Testimonials() {
             Technical excellence and reliable delivery across regions. See what our clients say about our services.
           </p>
         </div>
-        <div
-          ref={scrollerRef}
-          className="mx-auto max-w-[1100px] flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:justify-center md:gap-[20px] md:overflow-visible"
-        >
-          {testimonials.map((t, index) => (
-            <div key={t.name} data-slide className="min-w-full snap-center md:min-w-0 md:w-[300px]">
-              <figure
-                className="group rounded-2xl border bg-card/50 p-6 shadow-sm backdrop-blur-sm transition-all hover:shadow-lg"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="mb-4 flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className={`h-4 w-4 ${i < (t.rating ?? 5) ? 'fill-yellow-400' : 'fill-muted/30'}`} viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-                <blockquote className="text-foreground/80 text-base leading-relaxed">"{t.quote}"</blockquote>
-                <figcaption className="mt-6 flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
-                    {t.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-foreground">{t.name}</div>
-                    <div className="text-xs text-foreground/70">{t.role}</div>
-                    <div className="text-xs text-primary">{t.company}</div>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-          ))}
-          {/* Mobile overlay arrows */}
-          <button
-            aria-label="Previous"
-            onClick={() => {
-              const target = Math.max(0, active - 1);
-              const el = scrollerRef.current;
-              if (!el) return;
-              const first = el.querySelector('[data-slide]') as HTMLElement | null;
-              const cardW = first?.offsetWidth ?? el.clientWidth;
-              const gap = 16;
-              el.scrollTo({ left: target * (cardW + gap), behavior: 'smooth' });
-              setActive(target);
-            }}
-            className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm"
+        <div className="relative">
+          <div
+            ref={scrollerRef}
+            className="mx-auto max-w-[1100px] flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-wrap md:justify-center md:gap-[20px] md:overflow-visible"
           >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            aria-label="Next"
-            onClick={() => {
-              if (!testimonials) return;
-              const target = Math.min(testimonials.length - 1, active + 1);
-              const el = scrollerRef.current;
-              if (!el) return;
-              const first = el.querySelector('[data-slide]') as HTMLElement | null;
-              const cardW = first?.offsetWidth ?? el.clientWidth;
-              const gap = 16;
-              el.scrollTo({ left: target * (cardW + gap), behavior: 'smooth' });
-              setActive(target);
-            }}
-            className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
+            {isLoading &&
+              [...Array(3)].map((_, index) => <TestimonialCardSkeleton key={`skeleton-${index}`} index={index} />)}
+            {!isLoading &&
+              useGoogle &&
+              googleReviews.map((review, index) => (
+                <GoogleTestimonialCard key={`${review.publishTime}-${index}`} review={review} index={index} />
+              ))}
+            {!isLoading &&
+              !useGoogle &&
+              initialTestimonials.map((t, index) => (
+                <StaticTestimonialCard key={t.id} t={t} index={index} />
+              ))}
+            {!isLoading && slideCount > 1 && (
+              <>
+                <button
+                  aria-label="Previous"
+                  onClick={() => {
+                    const target = Math.max(0, active - 1);
+                    const el = scrollerRef.current;
+                    if (!el) return;
+                    const first = el.querySelector("[data-slide]") as HTMLElement | null;
+                    const cardW = first?.offsetWidth ?? el.clientWidth;
+                    const gap = 16;
+                    el.scrollTo({ left: target * (cardW + gap), behavior: "smooth" });
+                    setActive(target);
+                  }}
+                  className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  aria-label="Next"
+                  onClick={() => {
+                    const target = Math.min(slideCount - 1, active + 1);
+                    const el = scrollerRef.current;
+                    if (!el) return;
+                    const first = el.querySelector("[data-slide]") as HTMLElement | null;
+                    const cardW = first?.offsetWidth ?? el.clientWidth;
+                    const gap = 16;
+                    el.scrollTo({ left: target * (cardW + gap), behavior: "smooth" });
+                    setActive(target);
+                  }}
+                  className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur-sm"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </>
+            )}
+          </div>
         </div>
-        {/* Mobile dots */}
-        <div className="mt-3 flex items-center justify-center gap-2 md:hidden" aria-label="Testimonials pagination">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              aria-label={`Go to testimonial ${i + 1}`}
-              onClick={() => {
-                const el = scrollerRef.current;
-                if (!el) return;
-                const first = el.querySelector('[data-slide]') as HTMLElement | null;
-                const cardW = first?.offsetWidth ?? el.clientWidth;
-                const gap = 16;
-                el.scrollTo({ left: i * (cardW + gap), behavior: 'smooth' });
-                setActive(i);
-              }}
-              className={`h-2 w-2 min-h-0 min-w-0 p-0 rounded-full transition-all ${i === active ? 'bg-primary' : 'bg-foreground/30'}`}
-            />
-          ))}
-        </div>
-        
+        {!isLoading && slideCount > 1 && (
+          <div className="mt-3 flex items-center justify-center gap-2 md:hidden" aria-label="Testimonials pagination">
+            {Array.from({ length: slideCount }).map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to testimonial ${i + 1}`}
+                onClick={() => {
+                  const el = scrollerRef.current;
+                  if (!el) return;
+                  const first = el.querySelector("[data-slide]") as HTMLElement | null;
+                  const cardW = first?.offsetWidth ?? el.clientWidth;
+                  const gap = 16;
+                  el.scrollTo({ left: i * (cardW + gap), behavior: "smooth" });
+                  setActive(i);
+                }}
+                className={`h-2 w-2 min-h-0 min-w-0 p-0 rounded-full transition-all ${i === active ? "bg-primary" : "bg-foreground/30"}`}
+              />
+            ))}
+          </div>
+        )}
+        {useGoogle && (
+          <p className="mt-6 flex items-center justify-center gap-1.5 text-center text-xs text-foreground/50">
+            <span>Powered by</span>
+            <GoogleGLogo className="h-3.5 w-3.5" />
+            <span className="font-medium text-foreground/60">Google</span>
+          </p>
+        )}
       </div>
     </section>
   );

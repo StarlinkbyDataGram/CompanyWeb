@@ -14,6 +14,7 @@ import { getProducts, getAdminProducts, saveAdminProducts } from "./routes/produ
 import { getBlog, getAdminBlog, saveAdminBlog } from "./routes/blog";
 import { getFaqs, getAdminFaqs, saveAdminFaqs } from "./routes/faqs";
 import { getTestimonials, getAdminTestimonials, saveAdminTestimonials } from "./routes/testimonials";
+import { getGoogleReviews, googleReviewsOptions } from "./routes/google-reviews";
 
 export function createServer() {
   const app = express();
@@ -38,6 +39,8 @@ export function createServer() {
   app.get("/api/blog", getBlog);
   app.get("/api/faqs", getFaqs);
   app.get("/api/testimonials", getTestimonials);
+  app.options("/api/google-reviews", googleReviewsOptions);
+  app.get("/api/google-reviews", getGoogleReviews);
 
   // Admin products API (protected)
   app.get("/api/admin/products", requireAdmin, getAdminProducts);
