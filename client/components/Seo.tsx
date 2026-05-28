@@ -28,6 +28,7 @@ const KEYWORD_BASE = [
   "professional Starlink installation",
   "satellite internet Nigeria",
 ];
+const SEARCH_SITE_NAME = "Starlink by DataGram Limited";
 
 type StructuredData = Record<string, unknown>;
 
@@ -82,7 +83,7 @@ export default function Seo({
     upsertMeta(head, { name: "robots", content: robotsContent });
     upsertMeta(head, { name: "author", content: BRAND_NAME });
     upsertMeta(head, { property: "og:locale", content: "en_NG" });
-    upsertMeta(head, { property: "og:site_name", content: BRAND_NAME });
+    upsertMeta(head, { property: "og:site_name", content: SEARCH_SITE_NAME });
     upsertMeta(head, { property: "og:type", content: type });
     upsertMeta(head, { property: "og:title", content: title });
     upsertMeta(head, { property: "og:description", content: desc });
@@ -249,7 +250,7 @@ function buildStructuredData({
   const webSiteSchema: StructuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: BRAND_NAME,
+    name: SEARCH_SITE_NAME,
     url: SITE_URL,
     description,
     inLanguage: "en-NG",
@@ -277,7 +278,7 @@ function buildStructuredData({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": `${SITE_URL}/#localbusiness`,
-      name: LEGAL_BUSINESS_NAME,
+      name: SEARCH_SITE_NAME,
       url: SITE_URL,
       telephone: BUSINESS_PHONE_E164,
       email: BUSINESS_EMAIL,
