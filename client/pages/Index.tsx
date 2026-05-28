@@ -172,7 +172,7 @@ export default function Index() {
   return (
     <div className="flex min-h-screen flex-col">
       <Seo
-        title="Starlink Installation Nigeria | Professional Services Across All 36 States | DataGram"
+        title="Starlink by DataGram: Professional Starlink Installation Across Lagos, Abuja, Port Harcourt, Delta State, South-South & South-East Nigeria"
         description="Starlink installation Nigeria & Starlink installer Nigeria: DataGram covers all 36 states with surveys, mounting, mesh WiFi, and enterprise support. Get a free site survey today."
         canonical="/"
         schema={faqSchema}
@@ -234,18 +234,18 @@ const WHAT_WE_INSTALL_CARDS = [
     title: "Offshore & Maritime",
     description:
       "Starlink installation for vessels, rigs, barges, and waterfront facilities. We handle mast surveys, cable routing, and maritime activation.",
-    image: "/images/datagram2.jpg",
-    imageAlt: "DataGram technician routing Starlink cables on a waterfront industrial structure in Nigeria",
-    imageFile: "datagram2.jpg",
+    image: "/images/maritime2.jpeg",
+    imageAlt: "Starlink maritime installation on an offshore platform with flare stack and open sea",
+    imageFile: "maritime2.jpeg",
   },
   {
     to: "/starlink-enterprise-nigeria",
     title: "Enterprise",
     description:
       "Starlink for offices, warehouses, NGOs, and industrial facilities. Includes site survey, cable tray routing, dual-WAN config, and speed baseline.",
-    image: "/images/install.png",
-    imageAlt: "Technician drilling a Starlink mount bracket on an industrial rooftop in Nigeria",
-    imageFile: "install.png",
+    image: "/images/datagram2.jpg",
+    imageAlt: "DataGram technician performing Starlink installation work on a waterfront industrial structure",
+    imageFile: "datagram2.jpg",
   },
   {
     to: "/starlink-home-installation",
@@ -261,9 +261,9 @@ const WHAT_WE_INSTALL_CARDS = [
     title: "Boat Installation",
     description:
       "Starlink for leisure craft, patrol boats, and coastal vessels. Bracket mounting, waterproofing, and marine activation handled end to end.",
-    image: "/images/install2.png",
-    imageAlt: "DataGram technician on an industrial rooftop with port cranes and shipping containers behind him",
-    imageFile: "install2.png",
+    image: "/images/maritime4.jpeg",
+    imageAlt: "Starlink dish mounted on vessel deck in open water for boat installation",
+    imageFile: "maritime4.jpeg",
   },
 ] as const;
 
