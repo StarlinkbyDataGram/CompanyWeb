@@ -1,4 +1,7 @@
-import type { RequestHandler } from "express";
+/**
+ * Standalone Vercel serverless handler for Google Reviews.
+ * Kept separate from api/serverless.ts so this route works even if the Express bundle fails.
+ */
 
 const ALLOWED_ORIGINS = new Set([
   "https://www.datagram.ng",
@@ -7,12 +10,24 @@ const ALLOWED_ORIGINS = new Set([
   "http://127.0.0.1:8080",
 ]);
 
-/** Required when the API key is restricted to HTTP referrers (browser-only keys). */
 const SITE_REFERER = "https://www.datagram.ng/";
 
-function setCorsHeaders(req: { headers: { origin?: string } }, res: { setHeader: (k: string, v: string) => void }) {
+type Req = {
+  method?: string;
+  headers: Record<string, string | string[] | undefined>;
+};
+
+type Res = {
+  setHeader(name: string, value: string): void;
+  status(code: number): {
+    json(body: unknown): void;
+    end(): void;
+  };
+};
+
+function setCorsHeaders(req: Req, res: Res) {
   const origin = req.headers.origin;
-  if (origin && ALLOWED_ORIGINS.has(origin)) {
+  if (typeof origin === "string" && ALLOWED_ORIGINS.has(origin)) {
     res.setHeader("Access-Control-Allow-Origin", origin);
     res.setHeader("Vary", "Origin");
   }
@@ -24,13 +39,16 @@ function normalizePlaceId(placeId: string): string {
   return placeId.replace(/^places\//, "").trim();
 }
 
-export const googleReviewsOptions: RequestHandler = (req, res) => {
+export default async function handler(req: Req, res: Res) {
   setCorsHeaders(req, res);
-  res.status(204).end();
-};
 
-export const getGoogleReviews: RequestHandler = async (req, res) => {
-  setCorsHeaders(req, res);
+  if (req.method === "OPTIONS") {
+    return res.status(204).end();
+  }
+
+  if (req.method !== "GET") {
+    return res.status(405).json({ error: "Method not allowed", code: "METHOD_NOT_ALLOWED" });
+  }
 
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   const placeId = process.env.GOOGLE_PLACE_ID;
@@ -69,7 +87,7 @@ export const getGoogleReviews: RequestHandler = async (req, res) => {
       userRatingCount?: number;
     };
 
-    return res.json({
+    return res.status(200).json({
       reviews: data.reviews ?? [],
       rating: data.rating ?? null,
       totalReviews: data.userRatingCount ?? null,
@@ -80,4 +98,4 @@ export const getGoogleReviews: RequestHandler = async (req, res) => {
       code: "INTERNAL_ERROR",
     });
   }
-};
+}

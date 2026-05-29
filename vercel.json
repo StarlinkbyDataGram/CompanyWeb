@@ -13,6 +13,10 @@
   ],
   "routes": [
     {
+      "src": "/api/google-reviews",
+      "dest": "/api/google-reviews.ts"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/serverless.ts"
     },
