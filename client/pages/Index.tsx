@@ -545,7 +545,7 @@ function Hero() {
     {
       src: "/images/products/starlink-gen3v4/StandardDish1.jpeg",
       title: "Professional installation",
-      text: "Site survey, precision mounting, weatherproof cabling, and commissioning by certified engineers.",
+      text: "Site survey, precision mounting, weatherproof cabling, and commissioning by experienced engineers.",
       object: "center top",
     },
     {
