@@ -1,24 +1,21 @@
-/** Long-form SEO articles (600+ words each) with slug routes. */
-export type SeoArticle = {
-  slug: string;
-  title: string;
-  excerpt: string;
-  metaDescription: string;
-  author: string;
-  date: string;
-  readTime: string;
-  category: string;
-  image: string;
-  imageAlt: string;
-  imageFile: string;
-  featured: boolean;
-  paragraphs: string[];
-  serviceCta: { label: string; href: string; blurb: string };
-};
+/** Long-form SEO articles with slug routes — aggregated from phase modules. */
+export type { SeoArticle, ArticleBlock, ArticleFaq } from "./article-types";
+export { img, blocks, p, h2, h3, faqs } from "./article-types";
 
-const img = (file: string) => `/images/${file}`;
+import type { SeoArticle } from "./article-types";
+import { img } from "./article-types";
+import { phase1Articles } from "./articles/phase1";
+import { evergreenAArticles } from "./articles/evergreen-a";
+import { evergreenBArticles } from "./articles/evergreen-b";
+import { trendingAArticles } from "./articles/trending-a";
+import { trendingBArticles } from "./articles/trending-b";
+import { geoAArticles } from "./articles/geo-a";
+import { geoBArticles } from "./articles/geo-b";
+import { futureAArticles } from "./articles/future-a";
+import { futureBArticles } from "./articles/future-b";
 
-export const seoArticles2026: SeoArticle[] = [
+/** Legacy articles (pre-FAQ/block format) — migrated in place */
+const legacyArticles: SeoArticle[] = [
   {
     slug: "how-much-does-starlink-installation-cost-nigeria-2026",
     title: "How much does Starlink installation cost in Nigeria in 2026?",
@@ -26,7 +23,7 @@ export const seoArticles2026: SeoArticle[] = [
       "What Starlink installation really costs in Nigeria in 2026—labour, hardware, and full project totals explained in plain naira.",
     metaDescription:
       "2026 Starlink installation cost Nigeria: ₦10k–₦150k labour, ₦450k–₦1.06M full setup. Clear ranges from DataGram installers.",
-    author: "DataGram",
+    author: "DataGram Nigeria",
     date: "2026-05-20",
     readTime: "9 min read",
     category: "Pricing",
@@ -48,7 +45,7 @@ export const seoArticles2026: SeoArticle[] = [
       "Enterprise and NGO sites need a technical conversation, not a residential menu price. Dual-WAN failover, VLAN handoff to your firewall, rack mounting, and generator-aware UPS are quoted after survey. That is still cheaper than fixing a DIY roof leak or a cable run left in direct sun.",
       "Maritime and mobility hardware use different plan classes and mounts than a home rooftop kit. If you are on the water or on an OSV, budget for a marine survey and the correct mobility-rated components.",
       "Power is the line item Nigerians feel every week. A modest UPS on router and dish handles brief grid flickers; it does not replace hours without NEPA or fuel. Solar supplementation and larger UPS banks are separate engineering tasks with honest runtime targets.",
-      "Monthly subscription pricing is set on Starlink’s checkout and changes over time. Your installer should advise on plan class—residential versus business throughput, upload needs for CCTV, and whether [roaming](/faq) is worth the extra fee for your travel pattern. Roaming lets you use Starlink across different land regions globally, not only where you activated. It helps where local coverage is limited. It costs extra on top of your standard subscription.",
+      "Monthly subscription pricing is set on Starlink's checkout and changes over time. Your installer should advise on plan class—residential versus business throughput, upload needs for CCTV, and whether [roaming](/faq) is worth the extra fee for your travel pattern. Roaming lets you use Starlink across different land regions globally, not only where you activated. It helps where local coverage is limited. It costs extra on top of your standard subscription.",
       "Compare quotes by deliverables: grounding photos, labelled patch panels, speed tests at your desk—not only beside the dish—and a written support path when rain fade spikes latency. Those documents matter for IT handover and donor reporting.",
       "DIY can work on a simple bungalow with a short cable run and safe ladder access. DIY fails when cables sit in sun on the facade, mounts miss torque for wind, or estates reject retrofits. Rework often costs more than a professional install would have from the start.",
       "When you request a 2026 quote, send roof photos, estate name, map pin, and whether you need VLANs or failover. Check our [home installation page](/starlink-home-installation), [Lagos coverage](/starlink-installation-lagos), and [FAQ](/faq) before you pay a deposit.",
@@ -62,7 +59,7 @@ export const seoArticles2026: SeoArticle[] = [
       "Latency, install lead times, estate rules, and when dual-WAN beats choosing one link for Island and mainland sites.",
     metaDescription:
       "Starlink vs fibre in Lagos: compare latency, uptime, estate installs, and hybrid failover for VI, Lekki, and mainland offices.",
-    author: "DataGram",
+    author: "DataGram Nigeria",
     date: "2026-05-18",
     readTime: "10 min read",
     category: "Comparison",
@@ -77,12 +74,12 @@ export const seoArticles2026: SeoArticle[] = [
     },
     paragraphs: [
       "Lagos buyers ask Starlink or fibre because both show up as fast internet. In practice you are choosing lead time, independence from street cuts, upload profile, and whether your building allows an open trench. Fibre wins on stable per-megabit pricing in served MDUs. Starlink wins on rapid deployment and a second path that does not share the same duct as your primary link.",
-      "Latency is often misunderstood. Fibre backhaul inside Lagos can deliver very low milliseconds to local caches. Starlink’s LEO network commonly lands around 20–33 ms for everyday apps when your WiFi is not the bottleneck. Gamers and traders should still test their actual path.",
+      "Latency is often misunderstood. Fibre backhaul inside Lagos can deliver very low milliseconds to local caches. Starlink's LEO network commonly lands around 20–33 ms for everyday apps when your WiFi is not the bottleneck. Gamers and traders should still test their actual path.",
       "Download peaks differ by neighbourhood and time of day. Fibre plans may advertise high tiers on paper, but last-mile WiFi, old routers, or oversubscribed estates still choke laptops. Starlink throughput varies with rain fade, beam load, and obstruction score—professional installs exist to lower obstruction, not to promise one speed forever. Expect download roughly 50–1,000 Mbps and upload 10–100 Mbps in typical field conditions.",
       "Upload is where Lagos offices feel pain. CCTV backhaul, design uploads, and multi-site sync chew upstream. If your team lives on large uploads, say so during survey. Many sites run fibre for bulk sync and Starlink for resilient outbound voice—hybrid is normal.",
       "Install lead times separate the technologies today. Fibre in a new MDU may wait on landlord backhaul and riser work. Starlink can be live after hardware arrives and a roof or parapet mount passes survey—often days, not quarters—when estate security approves access during standard business hours.",
       "Estate rules on the Island and in Lekki increasingly mandate conduit colour, curfew drilling, and escorts. Both fibre contractors and Starlink installers must comply. Starlink still needs a clean outdoor sky view—parapet placement matters on high-rises.",
-      "Power behaviour is Lagos-specific. Generators, shared neutrals, and voltage sag when estates transfer loads will reboot cheap routers. Starlink’s dish draws modest wattage, but your router and switches need conditioning if you care about call stability through changeovers.",
+      "Power behaviour is Lagos-specific. Generators, shared neutrals, and voltage sag when estates transfer loads will reboot cheap routers. Starlink's dish draws modest wattage, but your router and switches need conditioning if you care about call stability through changeovers.",
       "Cost comparisons should include downtime, not only monthly naira. A cheaper fibre plan that shares one trench with the street leaves you dark when construction cuts the bundle. Starlink as secondary WAN pays off when you can count revenue or operations lost per hour offline.",
       "Technical integration is simpler than myths suggest. Dual-WAN routers with policy routing send general traffic one way and latency-sensitive apps another. Document IP plans and test failover during handover—weekend drills beat learning failover live on Monday morning.",
       "When is fibre alone enough? If your MDU has diverse building backhaul, tested risers, and you do not need rapid branch expansion, fibre may cover you. When is Starlink alone enough? Remote compounds, temporary sites, and homes where fibre never reached your street.",
@@ -98,7 +95,7 @@ export const seoArticles2026: SeoArticle[] = [
       "Motion plans, marine hardware, obstruction at berth versus at heading, and realistic expectations for OSVs and creek camps.",
     metaDescription:
       "Starlink offshore Niger Delta: maritime vs mobility specs, deck mounts, rain fade, and survey checklist before you buy marine hardware.",
-    author: "DataGram",
+    author: "DataGram Nigeria",
     date: "2026-05-15",
     readTime: "12 min read",
     category: "Maritime",
@@ -134,7 +131,7 @@ export const seoArticles2026: SeoArticle[] = [
       "Sizing UPS for NEPA flickers, generator transfer quirks, and when solar pays off versus keeping the dish alive on a modest battery.",
     metaDescription:
       "Starlink power backup Nigeria: UPS sizing, generator transfers, solar vs lithium, and what to protect on router and dish.",
-    author: "DataGram",
+    author: "DataGram Nigeria",
     date: "2026-05-12",
     readTime: "11 min read",
     category: "Infrastructure",
@@ -170,7 +167,7 @@ export const seoArticles2026: SeoArticle[] = [
       "Just got your Starlink kit? This guide walks you through the app, availability check, and getting online in Nigeria.",
     metaDescription:
       "Activate Starlink in Nigeria: app setup, availability check, and going online in Lagos, Abuja, Port Harcourt. Step-by-step DataGram guide.",
-    author: "DataGram",
+    author: "DataGram Nigeria",
     date: "2026-05-22",
     readTime: "8 min read",
     category: "Setup",
@@ -200,6 +197,19 @@ export const seoArticles2026: SeoArticle[] = [
       "Need help activating or setting up your Starlink? Contact DataGram.",
     ],
   },
+];
+
+export const seoArticles2026: SeoArticle[] = [
+  ...legacyArticles,
+  ...phase1Articles,
+  ...evergreenAArticles,
+  ...evergreenBArticles,
+  ...trendingAArticles,
+  ...trendingBArticles,
+  ...geoAArticles,
+  ...geoBArticles,
+  ...futureAArticles,
+  ...futureBArticles,
 ];
 
 export function getSeoArticleBySlug(slug: string) {

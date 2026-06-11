@@ -1,0 +1,830 @@
+import type { SeoArticle } from "../article-types";
+import { blocks, faqs, h2, h3, img, p } from "../article-types";
+
+export const evergreenBArticles: SeoArticle[] = [
+  {
+    slug: "starlink-gaming-nigeria-ping-packet-loss-stability",
+    title: "Starlink for Gaming in Nigeria: Ping, Packet Loss, and Stability",
+    excerpt:
+      "What Nigerian gamers should expect from Starlink — latency ranges, jitter, packet loss during rain fade, and how Wi-Fi and power quality ruin scores before the satellite link does.",
+    metaDescription:
+      "Starlink gaming Nigeria: ping, packet loss, stability, rain fade, and setup tips for Lagos, Abuja, and remote compounds.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "12 min read",
+    category: "Evergreen",
+    image: img("blog/starlink-gaming-nigeria-ping-packet-loss-stability.jpg"),
+    imageAlt: "Low-latency Starlink setup for gaming in a Nigerian home office",
+    imageFile: "blog/starlink-gaming-nigeria-ping-packet-loss-stability.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Home installation",
+      href: "/starlink-home-installation",
+      blurb: "Mounts, cable routing, and mesh Wi-Fi tuned for stable latency — not just speedtest bragging rights.",
+    },
+    blocks: blocks(
+      p("Nigerian gamers ask whether Starlink is good enough for Valorant, FIFA online, Call of Duty, or competitive mobile titles on MTN or Airtel backup. The honest answer: LEO satellite latency is often better than many fixed wireless links in Nigeria, but gaming stability depends on obstruction score, rain fade, Wi-Fi quality, and whether your estate generator reboots the router mid-match. Ping on paper is not the same as playable consistency through a Lagos rainy season evening."),
+      p("We've benchmarked Starlink at homes in Lekki, Abuja estates, and remote compounds in Delta. When the dish has a clean sky view and the network path is wired where it matters, latency commonly lands in the 25–45 ms range to European game servers — competitive for many titles. When Wi-Fi is the bottleneck, or harmattan dust raised your obstruction score, you'll see spikes that feel like packet loss even when the satellite link is fine."),
+      h2("Baseline ping: what Nigerian gamers should expect"),
+      p("Starlink routes traffic through LEO satellites and ground stations — not through a single fibre path to Europe. That means ping varies by beam load, time of day, and which ground station your session hits. In good conditions across Nigeria, expect roughly 20–40 ms to well-peered regions when you test with Ethernet to the router. Wi-Fi through concrete walls in Nigerian flats often adds 5–15 ms and jitter on top."),
+      p("Compare that to congested 4G in dense Lagos neighbourhoods, where bufferbloat can push effective latency past 80 ms even when the speed test looks fine. Starlink's advantage is not always raw ping — it's consistency when your primary ISP shares oversubscribed backhaul. For gamers in [Port Harcourt](/starlink-installation-rivers-state-port-harcourt) compounds without fibre, that consistency matters more than winning a single speedtest screenshot."),
+      h2("Packet loss: satellite, rain, and misdiagnosed Wi-Fi"),
+      p("Packet loss on Starlink in Nigeria usually comes from three places: brief rain fade, obstruction-induced handoffs between satellites, and local network issues you can fix. Heavy squalls — common in the south from April through October — can cause short bursts of loss lasting seconds to a minute. That's physics on Ka-band LEO, not a faulty dish. Professional installs lower obstruction so handoffs happen less often during clear sky."),
+      p("Local packet loss masquerades as satellite problems constantly. A mesh node placed behind a POP ceiling, a power strip shared with a fridge compressor, or a cheap Ethernet cable run through a hot attic in [Abuja](/starlink-installation-abuja) estates will drop packets before traffic leaves Nigeria. Rule of thumb: if loss appears on Wi-Fi but disappears on Ethernet to the Starlink router, fix LAN first."),
+      h3("How to test fairly"),
+      p("Use wired Ethernet for baseline tests. Run ping plots to your game's region and to 1.1.1.1 — compare both. If only game servers spike, routing or game server location is the story. If everything spikes together during rain, note weather and obstruction score from the Starlink app. Document before blaming hardware."),
+      h2("Jitter and stability for competitive play"),
+      p("Jitter — variation in ping — hurts FPS and fighting games more than a steady 50 ms. Nigerian power quality makes jitter worse. Estates that transfer from grid to generator often reboot routers; modified sine inverters cause odd Wi-Fi behaviour. A line-interactive UPS on router and dish buys clean changeover through brief NEPA flickers. See our [power backup guide](/blog/power-backup-starlink-nigeria) for sizing honest runtime expectations."),
+      p("For serious competitive sessions, wire the gaming PC or console to the router. Enable bypass mode with a quality third-party router if you need SQM or fq_codel shaping — Starlink's stock Wi-Fi is fine for households but not tuned for bufferbloat elimination. VLAN separation helps when family Netflix competes with ranked matches."),
+      h2("Rain fade and Nigerian weather patterns"),
+      p("Rain fade attenuates satellite signals. Lagos afternoon storms and Port Harcourt squalls can interrupt matches briefly. Harmattan haze rarely causes fade like rain, but dust on the dish face and raised obstruction from seasonal haze patterns can nudge performance. Keep the dish face clean; don't spray solvents on the radome."),
+      p("If you game daily, plan expectations: Starlink is excellent for casual and many competitive sessions, but tournament-grade SLA uptime still favours dual-WAN with fibre or 5G failover for critical events. Hybrid setups are normal in Nigerian SME offices — same logic applies at home if you stream or compete for money."),
+      h2("Plan class and congestion"),
+      p("Residential plans share beam capacity. Peak evening hours in dense neighbourhoods can add latency compared to quiet mornings. Business priority tiers exist for sites that need more consistent throughput — overkill for one teenager's console, reasonable for a household with four remote workers and simultaneous gaming. Confirm plan options on [Starlink's checkout](https://www.starlink.com/) for your service address."),
+      h2("Optimizing your setup for gaming"),
+      p("Mount matters: low obstruction score beats hiding the dish behind a parapet for aesthetics. [Professional installation](/starlink-home-installation) documents obstruction before you drill. Cable integrity matters — pinched Gen 3/4 integrated cables cause intermittent faults that look like random lag spikes. Mesh Wi-Fi should use wired backhaul where possible in multi-storey Nigerian homes."),
+      p("Choose game server regions honestly. Playing EU West from Nigeria is standard; forcing US West servers adds distance Starlink cannot erase. Mobile gaming on Wi-Fi benefits from 5 GHz near the router; 2.4 GHz through walls is where Clash and COD Mobile feel 'unplayable' despite good satellite metrics."),
+      h2("When Starlink is the wrong primary for gaming"),
+      p("If you're in a fibre-served Lagos MDU with diverse backhaul and low local latency, fibre may still win for pure ping to local caches. If you're in a creek camp or new estate where trenching will take years, Starlink is often the best available path. Evaluate your actual game server routes, not forum posts from other countries."),
+    ),
+    cta: "Want obstruction mapped and Ethernet pulled to your gaming desk before rainy season? [Book a home survey](/starlink-home-installation) or [contact DataGram](/contact) with your estate name and roof photos — we'll tell you if lag is fixable with mount and LAN work.",
+    faqs: faqs(
+      {
+        question: "Is Starlink good enough for online gaming in Nigeria?",
+        answer:
+          "Yes for most casual and many competitive titles when obstruction is low and you use wired Ethernet. Rain fade causes brief interruptions. Tournament-grade uptime may need dual-WAN failover.",
+      },
+      {
+        question: "What ping should I expect on Starlink in Lagos?",
+        answer:
+          "Often 25–45 ms to European servers on Ethernet in good conditions. Wi-Fi through concrete adds jitter. Peak evening beam load can raise latency slightly.",
+      },
+      {
+        question: "Why does my ping spike only when it rains?",
+        answer:
+          "Rain fade attenuates Ka-band satellite signals. Short spikes during squalls are normal. Persistent rain issues plus high obstruction score suggest mount or sky-view problems worth surveying.",
+      },
+      {
+        question: "Does a UPS help gaming on Starlink?",
+        answer:
+          "Yes — it prevents router reboots during NEPA flickers and generator changeovers, reducing disconnects that feel like packet loss mid-match.",
+      },
+      {
+        question: "Should gamers use mesh Wi-Fi with Starlink?",
+        answer:
+          "Mesh is fine for coverage if backhaul is wired. Wireless mesh hops add latency. Wire the gaming device or use a dedicated access point near the play area.",
+      },
+    ),
+  },
+  {
+    slug: "connect-cctv-cameras-starlink-network",
+    title: "How to Connect CCTV Cameras to Your Starlink Network",
+    excerpt:
+      "NVR placement, upload budgeting, VLAN separation, port forwarding cautions, and realistic CCTV performance over Starlink for Nigerian homes, estates, and remote sites.",
+    metaDescription:
+      "Connect CCTV to Starlink Nigeria: NVR setup, upload limits, remote viewing, VLANs, and rain-fade expectations for estate and compound security.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "11 min read",
+    category: "Evergreen",
+    image: img("blog/connect-cctv-cameras-starlink-network.jpg"),
+    imageAlt: "CCTV NVR connected to Starlink network in Nigerian residential estate",
+    imageFile: "blog/connect-cctv-cameras-starlink-network.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Enterprise installation",
+      href: "/starlink-enterprise-nigeria",
+      blurb: "CCTV backhaul, VLAN handoff, and upload-aware plan sizing for estates and remote compounds.",
+    },
+    blocks: blocks(
+      p("Connecting CCTV cameras to your Starlink network is straightforward on paper — plug the NVR into the router and open the app. In Nigerian compounds, the real work is upload budgeting, keeping security cameras off guest Wi-Fi, surviving rain fade without false 'camera offline' alerts, and not exposing your NVR to the entire internet because a cousin forwarded port 80 on the Starlink router."),
+      p("Starlink delivers strong download for most households but upload is the constraint for multi-camera cloud backup and remote viewing. Field ranges in Nigeria often land around 10–100 Mbps upload depending on plan and weather. Four 4 MP cameras streaming continuously to a cloud VMS can saturate that faster than owners expect. Size the design before you mount cameras on every gate pillar."),
+      h2("Local NVR vs cloud-only CCTV on Starlink"),
+      p("A local NVR recording to disk on LAN is the right primary for most Nigerian homes and estates. Cameras talk to the NVR over PoE switch; remote viewing uses modest upload only when you stream a channel, not 24/7. Cloud-only systems that upload every camera continuously fight Starlink's upload profile and rain fade — you'll get gaps in footage during squalls exactly when break-ins are more likely."),
+      p("Hybrid is common: local recording 24/7, cloud clips on motion events only. Configure bitrate caps per camera — H.265 encoding, reasonable FPS, and motion zones reduce waste. Your installer should document expected Mbps per camera before purchase."),
+      h2("Physical network layout"),
+      p("Place the PoE switch and NVR on wired Ethernet to the Starlink router or enterprise firewall — not on Wi-Fi. Nigerian concrete walls and long cable runs encourage owners to 'just use mesh' for the gatehouse NVR; that fails when rain fade coincides with weak mesh backhaul. Trench conduit or surface tray for outdoor Cat6 with proper glands beats rework after rodents chew a cable on the compound wall."),
+      p("For [Lagos estates](/starlink-installation-lagos) with multiple buildings, VLAN the CCTV network away from family Wi-Fi and staff devices. Gate guards don't need the same SSID as the main house. [Enterprise handoff](/starlink-enterprise-nigeria) documents VLAN IDs, DHCP scopes, and which ports may reach the internet."),
+      h3("Starlink router vs bypass mode"),
+      p("The stock Starlink router works for simple single-NVR homes. Bypass mode with a managed firewall — Ubiquiti, MikroTik, FortiGate — is standard when you have more than a dozen cameras, site-to-site VPN, or compliance requirements. Enable bypass only after documenting default routes and failover if you add 5G later."),
+      h2("Remote viewing without reckless port forwarding"),
+      p("Do not port-forward NVR admin interfaces to the public internet. Nigerian scans hit open ports within hours. Use the NVR vendor's cloud relay with 2FA, or VPN into the site — WireGuard on a small router at the gatehouse is a pattern we deploy on remote [Delta State](/starlink-installation-delta-state) compounds. If you must expose a service, IP allowlisting and non-default ports are minimum hygiene — still inferior to VPN."),
+      h2("Upload budgeting and plan class"),
+      p("Count cameras × bitrate × hours of remote viewing. A typical 4 MP H.265 stream might run 2–4 Mbps each. Six cameras at 3 Mbps is 18 Mbps continuous — fine on a healthy upload headroom day, tight during rain fade or peak beam load. Business priority plans exist where CCTV is operational, not decorative."),
+      p("Motion-only cloud upload keeps remote apps responsive without treating Starlink like unmetered fibre. Align expectations with guards and estate managers: 'camera offline' during a three-minute rain fade is different from 'NVR dead because PoE switch lost power during generator changeover.'"),
+      h2("Power and uptime for gatehouse kit"),
+      p("NEPA and generator transfers reboot cheap switches. A modest UPS on NVR, PoE switch, and router buys clean recording through flickers. Gatehouses in [Abuja](/starlink-installation-abuja) often share a circuit with floodlights — segregate loads so lighting surges don't reset the NVR."),
+      h2("Rain fade and alert tuning"),
+      p("Configure monitoring to distinguish Starlink uplink blips from camera hardware failure. Use local recording so a cloud disconnect doesn't mean lost evidence. Test playback from the NVR on LAN during a storm before you rely on remote apps for incident response."),
+      h2("Camera placement and bandwidth at Nigerian gates"),
+      p("Gate pillars, perimeter walls, and car park entrances need wide dynamic range — harsh sun at noon and sodium floodlights at night. Enable WDR on cameras; cap shutter-driven bitrate spikes in NVR settings. PTZ cameras panning continuously burn upload when cloud streaming is enabled — lock presets for guard posts instead of endless sweep. In [Port Harcourt](/starlink-installation-rivers-state-port-harcourt) compounds with long driveways, place cameras where licence plates are readable at 15 fps H.265 rather than chasing 4K you'll never stream smoothly over rain-faded uplink."),
+      p("Audio channels add negligible bandwidth but privacy policy matters for staff quarters — mute or disable where labour law and donor ethics require. Signage at gates stating recording is active reduces disputes when footage is pulled after incidents."),
+      h2("Storage retention and legal hold"),
+      p("Size NVR disks for retention targets donors or insurers specify — 30 days at six cameras differs from 90 days at sixteen. RAID on NVR is not backup; export critical clips to offline storage when investigations start. Starlink outage during an incident doesn't erase local disk evidence if PoE stayed up — another reason local NVR beats cloud-only."),
+      h2("Professional integration checklist"),
+      p("Survey upload needs and plan class. Wire NVR and switches; VLAN CCTV. Cap bitrates; prefer local record with selective cloud. VPN for remote admin. UPS on critical gear. Document IP plan and handover photos for estate security. For multi-building sites, book [enterprise installation](/starlink-enterprise-nigeria) scope rather than stacking consumer routers."),
+      p("Handover should include labelled switch ports, default passwords changed, firmware versions noted, and a one-page runbook for guards: which breaker feeds PoE, how to check disk health LED, who to call when app shows offline during rain. Estate managers in VI reject 'the installer left' without docs — give them something to file."),
+    ),
+    cta: "Running CCTV on Starlink at an estate or remote compound? [Contact DataGram](/contact) for upload-aware design, VLAN handoff, and [enterprise installation](/starlink-enterprise-nigeria) — we size plans from camera counts, not guesses.",
+    faqs: faqs(
+      {
+        question: "Can I use Starlink for CCTV in Nigeria?",
+        answer:
+          "Yes. Local NVR recording works well. Continuous multi-camera cloud upload needs upload budgeting and realistic rain-fade expectations. Business plans help operational sites.",
+      },
+      {
+        question: "How many CCTV cameras can Starlink support?",
+        answer:
+          "There's no fixed count — bitrate and upload headroom decide. Six to twelve 4 MP cameras on local NVR with H.265 is common on residential upload. Continuous cloud streaming of many cameras needs higher-tier plans.",
+      },
+      {
+        question: "Should I port-forward my NVR for remote viewing?",
+        answer:
+          "No. Use vendor cloud with 2FA or VPN into the site. Open NVR ports attract scans and breaches within hours on Nigerian IPs.",
+      },
+      {
+        question: "Why do cameras go offline when it rains?",
+        answer:
+          "Often Starlink uplink fade or power flicker during storms — not camera failure. Local recording continues if NVR and PoE stay powered. Tune alerts to avoid false positives.",
+      },
+      {
+        question: "Does CCTV need a separate VLAN on Starlink?",
+        answer:
+          "Recommended for estates and offices. Separates camera traffic from guest Wi-Fi, contains broadcast noise, and simplifies firewall rules for remote access.",
+      },
+    ),
+  },
+  {
+    slug: "why-starlink-keeps-rebooting-nigeria-solutions",
+    title: "Why Your Starlink Keeps Rebooting (and the Solutions)",
+    excerpt:
+      "NEPA flickers, generator changeovers, inverter harmonics, overheating routers, and cable faults — why Starlink reboots in Nigerian homes and what actually fixes it.",
+    metaDescription:
+      "Starlink keeps rebooting Nigeria: NEPA power, generator transfer, UPS fixes, cable faults, and overheating solutions for estates and compounds.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "11 min read",
+    category: "Evergreen",
+    image: img("blog/why-starlink-keeps-rebooting-nigeria-solutions.jpg"),
+    imageAlt: "Starlink router and UPS setup for stable power in Nigerian home",
+    imageFile: "blog/why-starlink-keeps-rebooting-nigeria-solutions.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Home installation",
+      href: "/starlink-home-installation",
+      blurb: "Power conditioning, cable inspection, and mount checks — stop blaming firmware when the compound grid is the culprit.",
+    },
+    blocks: blocks(
+      p("When your Starlink keeps rebooting in Nigeria, the app often blames 'connecting' or 'searching' while your household blames the installer. In our field logs across Lagos, Abuja, and Port Harcourt estates, the majority of reboot loops trace to power quality, overheating enclosures, damaged cables, or obstruction hunts — not mysterious satellite gremlins. Nigerian grid context matters: NEPA flickers, estate generator changeovers, and shared neutral issues reboot consumer routers multiple times per day if you skip conditioning."),
+      p("This guide walks through the failure modes we see weekly and the fixes that stick. Work the list in order — power first, thermal second, cable third, sky view fourth — before factory reset or RMA chatter online wastes your week."),
+      h2("NEPA flickers and voltage sag"),
+      p("Brief grid drops cause hard reboots. Starlink dish and router draw modest wattage but surge during satellite search after power returns. If your estate shares a thin feeder cable or long extension cord from a neighbour's generator tap, sag during motor starts drops voltage below what the router tolerates. Symptoms: reboot at the exact moment neighbours start AC units or the borehole pump."),
+      p("Fix: dedicated socket on a known-good circuit, shorten extension paths, and add a line-interactive UPS sized for router plus dish inrush. A 600–1,000 VA UPS is common for home kits — minutes of runtime, not hours, but enough to ride through flickers. For longer outages, pair with inverter or generator — but see generator section below."),
+      h3("UPS sizing honesty"),
+      p("UPS marketing promises hours; physics delivers minutes at combined dish+router load. Document expected runtime. Our [power backup article](/blog/power-backup-starlink-nigeria) covers Nigerian estate scenarios without pretending a ₦40,000 UPS replaces fuel planning."),
+      h2("Generator changeover reboots"),
+      p("Estates that switch from AEDC or EKEDC to diesel often blackout networking gear for 10–30 seconds during transfer. Every device reboots; Starlink searches satellites again; WhatsApp calls drop. Fix: UPS on networking gear, coordinate with estate engineers for faster transfer switches, or segregate a dedicated circuit for ICT loads that stays up during changeover where wiring allows."),
+      p("Modified sine inverters — common in Nigerian home setups — cause odd router behaviour even when voltage looks fine on a cheap meter. Pure sine output matters for sensitive electronics. If reboots correlate with inverter mode, test router on grid-only power for a day."),
+      h2("Overheating router and dish placement"),
+      p("Starlink routers in closed TV consoles, metal boxes, or direct afternoon sun through Nigerian windows thermal-throttle or reboot. Dish electronics tolerate outdoor heat better than indoor routers stuffed behind curtains. Ensure ventilation, shade indoor gear, and don't stack router on top of a hot AV receiver."),
+      p("Roof-mounted networking boxes without airflow are a Lagos special — sun-baked enclosures hit 50 °C by 2 p.m. Use ventilated outdoor-rated cabinets or bring termination indoors with proper glands."),
+      h2("Cable faults and intermittent PoE"),
+      p("The integrated dish cable on Gen 3/4 kits is not field-serviceable cheaply. Pinches from door frames, sharp bends through wall glands, or rodent damage cause reboot loops that look random. Inspect the full run: gentle bend radius, no kinks, glands intact. Intermittent contact at the router port triggers power cycles during wind vibration on long exterior runs."),
+      p("[Professional installs](/starlink-home-installation) route cable away from generator exhaust and rat paths. Rework after DIY pinches costs more than conduit planned on day one."),
+      h2("Obstruction hunts and firmware updates"),
+      p("After reboot, the dish motors search satellites. High obstruction scores prolong 'searching' — users perceive endless reboots. Run the app's obstruction tool at the mount location; trim trees or raise the mast if score rose after new construction. Firmware updates occasionally require power cycle — do one clean reboot, not ten angry ones."),
+      h2("Double NAT, mesh conflicts, and bypass mode"),
+      p("Adding a third-party router without understanding bypass mode can cause DHCP fights — less often a true reboot, more often 'offline' cycling. Document topology: Starlink router in bypass, single DHCP server, mesh controller on wired backhaul. Estate IT in [Lekki](/starlink-installation-lagos) sometimes stacks two consumer routers from different vendors; pick one firewall."),
+      h2("When to contact support vs your installer"),
+      p("If power is clean on a meter, cable inspects fine, obstruction is low, and reboots persist across swapped router power supplies, log app errors and contact Starlink support. If reboots correlate with generator hour or rain only, fix environment first. DataGram handover packages include baseline obstruction screenshots and power notes so support calls aren't guessing."),
+      h2("Estate-wide patterns — not just your flat"),
+      p("If every flat on the same generator feeder reboots together at 7 p.m., the fix is estate engineering, not twelve individual Starlink tickets. Document timestamps, compare with neighbours, escalate to facility management with meter readings. We've seen [Lekki](/starlink-installation-lagos) blocks where neutral issues caused weekly evening reboots until the estate upgraded transfer switch timing — Starlink was innocent."),
+      p("Harmattan dust season adds another layer: static discharge and dirty earth bonds cause mysterious gremlins on outdoor mounts. Inspect glands and earth connections in February before March rains — preventive maintenance beats emergency ladder calls."),
+      h2("Logging for intermittent faults"),
+      p("Enable router syslog to a local NAS if you run bypass mode with capable gear. Note exact times of reboots against generator logs, rain radar, and who started the borehole pump. Intermittent faults without logs waste everyone's time — including Starlink support reading 'it just stops sometimes' without timestamps."),
+    ),
+    cta: "Reboot loops driving your estate crazy? [Book a troubleshooting visit](/starlink-home-installation) or [contact DataGram](/contact) — we meter power, inspect cable, and document obstruction before you RMA good hardware.",
+    faqs: faqs(
+      {
+        question: "Why does Starlink reboot when NEPA takes light?",
+        answer:
+          "Power loss forces a cold boot. Brief flickers reboot router and dish. A UPS on networking gear rides through sag and short outages common on Nigerian feeders.",
+      },
+      {
+        question: "Will a generator fix Starlink reboots?",
+        answer:
+          "Only if changeover is fast and voltage is stable. Slow transfer still drops power. UPS bridges the gap; pure sine output helps sensitive routers.",
+      },
+      {
+        question: "Can a damaged cable cause rebooting?",
+        answer:
+          "Yes. Pinches and rodent chew on integrated dish cable cause intermittent PoE loss that looks like random reboots. Inspect bends and glands before blaming firmware.",
+      },
+      {
+        question: "Does overheating cause Starlink router reboots?",
+        answer:
+          "Common in Nigeria. Enclosed cabinets and afternoon sun on indoor routers trigger thermal protection. Improve ventilation and shade.",
+      },
+      {
+        question: "Should I factory reset if Starlink keeps rebooting?",
+        answer:
+          "Only after ruling out power, heat, and cable faults. Factory reset on a site with voltage sag just repeats the loop. Fix environment first.",
+      },
+    ),
+  },
+  {
+    slug: "starlink-data-usage-data-cap-nigeria",
+    title: "Managing Starlink Data Usage: Does Starlink Have a Data Cap?",
+    excerpt:
+      "Priority data, deprioritization, roaming charges, and practical usage management for Nigerian households, developers, and field offices on Starlink.",
+    metaDescription:
+      "Starlink data cap Nigeria: priority limits, fair use, roaming costs, and how to manage heavy upload/download on residential and business plans.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "10 min read",
+    category: "Evergreen",
+    image: img("blog/starlink-data-usage-data-cap-nigeria.jpg"),
+    imageAlt: "Starlink dish on Nigerian rooftop for high-usage home and office connectivity",
+    imageFile: "blog/starlink-data-usage-data-cap-nigeria.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Enterprise plans",
+      href: "/starlink-enterprise-nigeria",
+      blurb: "Plan class guidance for CCTV, cloud sync, and multi-site teams — sized from usage, not social media rumours.",
+    },
+    blocks: blocks(
+      p("Managing Starlink data usage starts with a question Nigerians hear conflicting answers to: does Starlink have a data cap? Policy evolves by plan class and region — residential plans in Nigeria have moved through unlimited phases, priority tiers, and fair-use style deprioritization elsewhere. The only authoritative answer is your current plan card in the Starlink app and checkout for your service address. Installers who quote 2024 forum posts are guessing; verify at purchase and each renewal."),
+      p("What stays true in the field: heavy users — 4K streaming households, developers syncing large repos, NGOs uploading field media — feel policy through speed changes after priority thresholds, not always hard disconnects. Roaming adds separate charges. CCTV and backup jobs chew upload. This guide explains how to read usage, manage load, and pick plan class before surprise throttling hits your [Lagos](/starlink-installation-lagos) home office during deadline week."),
+      h2("Residential vs business priority data"),
+      p("Residential self-service plans target typical household mix — video, social, schooling, remote work. Business and priority tiers advertise higher throughput floors and different usage policies for sites that need operational consistency. If three adults run video calls while uploading design files and a teenager streams 4K, residential may feel tight during peak hours even before formal caps matter."),
+      p("[Enterprise scopes](/starlink-enterprise-nigeria) document plan class against workload: camera count, nightly backup windows, and whether failover shares the same beam. Procurement should align hardware and plan in one conversation."),
+      h2("What counts toward usage"),
+      p("Everything through the Starlink terminal counts — Wi-Fi downloads, Ethernet NVR uploads, guest network binge watching. VLANs organize traffic; they don't exempt bytes. Cloud backup tools (Backblaze, iCloud, Google Photos) running 24/7 on unlimited settings are the silent killers on upload-constrained links."),
+      h3("Roaming is separate"),
+      p("Roaming lets you use Starlink outside your home region on supported plans — extra fees apply. Nigerian teams travelling to poorly covered areas enable it deliberately; families who leave it on accidentally learn on the invoice. Toggle roaming in the app with intent; see our [FAQ on roaming](/faq) for when it makes sense."),
+      h2("Monitoring usage in the Starlink app"),
+      p("The app shows data consumption trends — use them weekly if you run heavy workloads. Correlate spikes with Windows Update, CCTV cloud settings, or a new Netflix profile. Set router-level alerts where third-party gear allows; Starlink's stock router is basic for per-device accounting."),
+      h2("Practical management tactics"),
+      p("Schedule large downloads overnight when beam load is lighter — not a guarantee, but helpful. Cap CCTV cloud bitrate and use local NVR primary recording. Developers: use shallow git clones, partial sync, and avoid re-cloning multi-GB repos daily over satellite if a local mirror is possible. Educate household on 4K defaults — one TV streaming 4K HDR adds up faster than four phones on YouTube."),
+      p("Dual-WAN with fibre or 5G lets you policy-route heavy bulk sync off Starlink while keeping video calls on the resilient path. Common in [Abuja](/starlink-installation-abuja) offices where fibre exists but fails monthly."),
+      h2("Deprioritization vs hard cap"),
+      p("Many plans deprioritize speed after priority data exhaustion rather than cutting service entirely. Symptoms: speed tests drop from hundreds of Mbps to tens — still usable for email, painful for 4K and large uploads. Know your plan's priority allowance before you assume 'unlimited' means unmetered priority forever."),
+      h2("When to upgrade plan class"),
+      p("Upgrade signals: recurring deprioritization before month end, operational CCTV requirements, multi-user video production, or donor reporting that demands uptime SLAs. Downgrade signals: light browsing household that never hits thresholds. Re-evaluate quarterly — Starlink adjusts product tiers over time."),
+      h2("Household education without family wars"),
+      p("Teenagers downloading 80 GB game updates on unlimited assumptions affect everyone on the link. Set expectations: large downloads overnight, Steam throttling enabled, iCloud Photos paused until Wi-Fi backup on fibre returns. Parental controls on third-party routers can cap per-device usage — Starlink's stock router is limited here, another reason bypass mode appears in dev and family-heavy homes."),
+      h2("Business and NGO reporting"),
+      p("Grant budgets should line-item connectivity with honest priority data assumptions — donors prefer disclosed caps over surprise throttling mid-quarter. Export app usage screenshots monthly for finance. Pair with [enterprise planning](/starlink-enterprise-nigeria) when clinic sync and HQ VPN share one terminal."),
+      h2("Myths Nigerians should ignore"),
+      p("Forum posts claiming 'Starlink is unlimited forever everywhere' age badly. Product terms change. VPN does not hide usage from your terminal. VLANs don't bypass accounting. Multiple dishes on one residential account without approval is a terms problem, not a hack. Verify on official checkout at purchase and renewal."),
+      h2("Seasonal usage spikes in Nigerian households"),
+      p("December holidays bring cousins, four simultaneous Netflix profiles, and game console updates. Ramadan evenings shift usage patterns when everyone is home after iftar. School holidays triple tablet traffic. Budget priority data for your heaviest month, not your quietest — finance teams in [Port Harcourt](/starlink-installation-rivers-state-port-harcourt) SMEs learn this when Q4 reporting coincides with Harmattan stay-at-home weeks."),
+      h2("Tools beyond the Starlink app"),
+      p("Third-party routers in bypass mode — MikroTik, UniFi, pfSense — expose per-device traffic graphs that help you find the laptop syncing 200 GB to Google Drive. Enable notifications when daily upload crosses a threshold you set. Starlink's app shows aggregate trends; your firewall shows who — essential in shared offices where 'someone' always runs backups at noon."),
+    ),
+    cta: "Not sure which plan class matches your cameras, backups, and remote team? [Talk to DataGram](/contact) about [enterprise plan guidance](/starlink-enterprise-nigeria) — we map usage to plan before you buy hardware.",
+    faqs: faqs(
+      {
+        question: "Does Starlink have a data cap in Nigeria?",
+        answer:
+          "Policy depends on plan class and current Starlink product terms for your address. Check the app and checkout — residential may include priority data with deprioritization after thresholds rather than hard cutoffs.",
+      },
+      {
+        question: "How do I check Starlink data usage?",
+        answer:
+          "Open the Starlink app data section for trend graphs. For per-device detail, add a router with traffic monitoring in bypass mode.",
+      },
+      {
+        question: "Does CCTV use a lot of Starlink data?",
+        answer:
+          "Local NVR uses LAN only. Continuous cloud streaming uses upload heavily — budget Mbps per camera and plan for rain fade gaps.",
+      },
+      {
+        question: "What is Starlink roaming and does it affect data bills?",
+        answer:
+          "Roaming enables use outside your home region on supported plans with additional fees. Enable deliberately for travel; see our FAQ for details.",
+      },
+      {
+        question: "Can I add more priority data?",
+        answer:
+          "Starlink occasionally sells top-up priority data or higher tiers depending on region and plan. Options appear in the app when available for your account.",
+      },
+    ),
+  },
+  {
+    slug: "run-starlink-cable-through-walls-safely",
+    title: "How to Run Starlink Cable Through Walls Safely Without Damage",
+    excerpt:
+      "Wall glands, bend radius, drill angles, conduit, and Gen 3/4 integrated cable cautions — routing Starlink indoors in Nigerian block and frame construction.",
+    metaDescription:
+      "Run Starlink cable through walls Nigeria: safe drilling, glands, bend radius, conduit, and avoiding damage to integrated dish cable.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "8 min read",
+    category: "Evergreen",
+    image: img("blog/run-starlink-cable-through-walls-safely.jpg"),
+    imageAlt: "Starlink cable routed through wall gland on Nigerian residential building",
+    imageFile: "blog/run-starlink-cable-through-walls-safely.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Book installation",
+      href: "/starlink-home-installation",
+      blurb: "Estate-compliant conduit, sealed glands, and cable paths that survive rainy season — no pinches behind POP.",
+    },
+    blocks: blocks(
+      p("Running Starlink cable through walls safely matters because the integrated cable on Gen 3 and Gen 4 dishes is expensive to replace — you don't crimp a new RJ45 and move on. Nigerian block walls, POP ceilings, and estate rules about facade drilling make routing a planning job, not a hammer-and-nail afternoon. One sharp 90-degree bend behind a wardrobe or a wall hole drilled level instead of slightly downward invites water ingress and intermittent faults six months later."),
+      p("This is the practical guide for homeowners and facility teams who need the dish outside and the router inside without estate fines or a dead cable. If your roof path is complex, [professional installation](/starlink-home-installation) still costs less than a second kit."),
+      h2("Plan the path before drilling"),
+      p("Walk the route: dish mount location → shortest exterior run → single wall entry → router desk. Avoid crossing hot roofs unnecessarily. Mark interior termination away from inverters and generator switchgear. Estates in [Lekki](/starlink-installation-lagos) often mandate surface conduit colour — plan tray routing before security sees raw cable on cream paint."),
+      h2("Drill technique for block and frame walls"),
+      p("Use a core bit or masonry bit sized for your gland — not oversized holes that caulk can't seal. Drill from inside to outside with a slight downward slope so rain doesn't track along the cable into the room. Nigerian driving rain tests sloppy holes every August. On framed partitions, locate studs and avoid crushing cable in tight staple channels."),
+      h3("Glands and sealant"),
+      p("Use proper IP-rated wall glands with compression on the sheath — not bathroom silicone alone. UV-stable sealant on exterior; interior neat bushings so paint lines stay clean for landlord handback. Harmattan sun degrades cheap sealant within a year."),
+      h2("Bend radius — the rule everyone breaks"),
+      p("Treat integrated cable like fibre: generous curves, no kinks, no door jamb pinches. If a door must cross the path, protect in conduit or reroute. A kink you can't see still raises resistance and causes reboot loops."),
+      h2("Conduit and rodent protection"),
+      p("Surface PVC or metal conduit on exterior walls protects from sun and rats — real failure mode in compound living. Buried short yard runs need warning tape and depth appropriate for gardener spades. Route away from lightning down conductors where possible; bond per earthing rules if your estate requires compliance docs."),
+      h2("Interior finish and landlord relations"),
+      p("POP ceilings tempt installers to pinch cable above tiles. Leave service loop slack in an accessible ceiling hatch or conduit riser — future moves shouldn't require cutting new holes. Photograph the path for estate files; managers in [Abuja](/starlink-installation-abuja) increasingly ask for as-built sketches."),
+      h2("When to stop DIY"),
+      p("Multi-floor drops, long estate conduit runs, and lightning-prone coastal sites belong on a survey scope. [DataGram](/contact) documents gland torque and restoration for deposit returns."),
+      h2("Multi-floor and split-level homes"),
+      p("Duplexes in [Enugu](/starlink-installation-enugu-state) hillside properties often need one exterior entry per floor or a vertical conduit riser in a service duct — dragging cable around exterior stairwells invites pedestrian snag and security questions. Plan interior termination near a central rack if you're adding access points later."),
+      h2("Lightning and bonding at wall entry"),
+      p("Wall penetration is where lightning protection narratives start. Bond cable shield to building earth where estate rules require — especially on coastal and Niger Delta sites. A pretty hole without earth continuity fries indoor switches during nearby strikes. [Professional installs](/starlink-home-installation) include earth notes photos for facility files."),
+      h2("Testing after routing"),
+      p("Before sealing glands permanently, power the dish and run obstruction and speed tests. Discovering a pinch after sealant cures means cutting and re-gland — landlords love that. Leave service loop slack coiled in a labelled box, not stuffed into a hot ceiling void above the kitchen."),
+      h2("Common mistakes we rework"),
+      p("Cable tied to razor wire — sheath abrades in harmattan wind. Hole drilled level so rain tracks indoors. Door closed on cable with no guard. Grey conduit on estate-mandated white facade — security makes you redo it. Budget time for compliance, not only drilling."),
+      h2("Tools and materials checklist"),
+      p("Core drill or masonry bit matched to gland size, IP-rated wall gland kit, UV-stable exterior sealant, interior face plate, UV-rated conduit and clips, fish tape for long interior runs, vacuum for dust in occupied rooms, and harness plus proper ladder footing. Nigerian compound walls punish rushed work — measure twice, drill once, photograph the path for estate files."),
+      h2("Coordinating with painters and POP crews"),
+      p("Schedule wall entry after structural work but before final paint. Painters who skim over an ungrommeted hole create hidden pinch points. If POP ceiling is already closed, use approved surface trunking in estate colours rather than hacking tiles — facility teams in [Lekki](/starlink-installation-lagos) notice and bill you for restoration."),
+      h2("Landlord handback and deposit protection"),
+      p("Landlords in [Abuja](/starlink-installation-abuja) flats increasingly inspect cable entries at lease end. Neat glands, matched paint, and documented restoration beat arguments about 'mystery holes' when your deposit is on the line. Provide the landlord a one-page as-built: entry room, conduit colour, sealant type, and installer contact."),
+      h2("After the cable is inside"),
+      p("Leave labelled service loop slack at both dish and router ends — future router moves shouldn't require remounting the dish. Test app connection and obstruction score before closing walls or painting conduit. Mark the interior entry point so the next TV mount installer doesn't drive a screw through your only Starlink path. [Professional routing](/starlink-home-installation) includes photos guards and facility teams can file."),
+    ),
+    cta: "Need estate-approved conduit and a cable path that won't pinch behind POP? [Book a home installation survey](/starlink-home-installation) — we route before we drill.",
+    faqs: faqs(
+      {
+        question: "Can I drill through any wall for Starlink cable?",
+        answer:
+          "Only where structure and estate rules allow. Avoid structural columns without engineer approval. Drill downward-sloping holes with proper glands to prevent water ingress.",
+      },
+      {
+        question: "What bend radius does Starlink cable need?",
+        answer:
+          "Keep generous curves — no tight 90-degree corners or door pinches. Integrated Gen 3/4 cable is not easily field-replaced if damaged.",
+      },
+      {
+        question: "Should I use conduit for exterior cable runs?",
+        answer:
+          "Yes in Nigerian sun and rodent environments. UV-rated conduit protects sheath and reduces chew damage on compound walls.",
+      },
+      {
+        question: "Can I extend Starlink cable with Ethernet?",
+        answer:
+          "The dish uses integrated cable to the router. Indoor extension to other rooms uses the official Ethernet adapter or mesh — don't splice the outdoor integrated run.",
+      },
+      {
+        question: "Do estates require approval for wall drilling?",
+        answer:
+          "Most Lagos and Abuja gated estates require written scope and conduit colour matching. Install without approval at deposit risk.",
+      },
+    ),
+  },
+  {
+    slug: "starlink-setup-remote-software-developers-nigeria",
+    title: "The Ideal Starlink Setup for Remote Software Developers in Nigeria",
+    excerpt:
+      "Low-jitter Ethernet, VPN stability, git and CI workflows, dual-WAN failover, and power conditioning for devs working from Lagos flats to Delta compounds.",
+    metaDescription:
+      "Starlink setup for remote developers Nigeria: latency, VPN, GitHub, UPS, dual-WAN, and home office design for Nigerian software engineers.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "12 min read",
+    category: "Evergreen",
+    image: img("blog/starlink-setup-remote-software-developers-nigeria.jpg"),
+    imageAlt: "Software developer home office with wired Starlink Ethernet in Nigeria",
+    imageFile: "blog/starlink-setup-remote-software-developers-nigeria.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Home installation",
+      href: "/starlink-home-installation",
+      blurb: "Ethernet to desk, mesh backhaul, and UPS sizing for calls that survive NEPA — built for deploy Fridays.",
+    },
+    blocks: blocks(
+      p("The ideal Starlink setup for remote software developers in Nigeria is not maximum Mbps on a speedtest — it's stable latency for video standups, clean VPN sessions to London or US East, git pushes that don't timeout, and power that survives AEDC drama during a production deploy. Developers in Lekki flats, Enugu hillside homes, and creek-side camps share the same needs with different roof and estate constraints."),
+      p("We've handed over dev-focused installs from solo founders to ten-person distributed teams. The pattern: wired desk, conditioned power, honest plan class, optional 5G failover, and obstruction low enough that rain fade is brief not career-defining. This guide is the stack we'd spec before you expense another mesh node that doesn't fix VPN drops."),
+      h2("Wire the desk — Wi-Fi is for guests"),
+      p("Git, Docker pulls, and SSH sessions tolerate bandwidth but hate jitter on Wi-Fi through Nigerian concrete. Run Cat6 from Starlink router or switch to your desk. If the router sits in a living room and office is two rooms away, surface conduit or ceiling tray beats hidden pinches. Enable 5 GHz only for phones; dev machines on Ethernet."),
+      p("Bypass mode with a router running fq_codel or cake SQM helps bufferbloat when family streaming competes with your deploy. Stock Starlink Wi-Fi is fine for households; developers benefit from controlled shaping."),
+      h2("VPN and corporate security tools"),
+      p("GlobalProtect, Cisco AnyConnect, Tailscale, and WireGuard work on Starlink when MTU and double-NAT are handled. If VPN connects but RDP is glacial, try lowering MTU on the client — satellite paths sometimes need 1420 or similar. Document split tunnel policy with your employer; routing all Netflix through corporate VPN over Starlink wastes headroom."),
+      h2("Git, CI, and large artifact workflows"),
+      p("Clone once; fetch often. Use shallow clones and partial sync for monorepos. Schedule large artifact downloads overnight. Local npm/pip caches and Docker registry mirrors on a NAS cut repeat satellite transfers. CI runners on laptop should not rebuild entire worlds on every commit — remote CI in AWS/GCP may be cheaper than saturating upload during Lagos peak hours."),
+      h3("Video calls and pair programming"),
+      p("Zoom, Meet, and Teams need 3–5 Mbps stable more than 500 Mbps burst. UPS on router prevents reboot mid-sprint review. Wired headset and Ethernet eliminate the 'your audio is robotic' blame game aimed at Starlink when Wi-Fi was guilty."),
+      h2("Power conditioning for deploy windows"),
+      p("NEPA flicker during Friday deploy is a Nigerian cliché. Line-interactive UPS on router, switch, and desk switch — not the entire inverter load. Pure sine inverter output if you're on solar/battery home system. Read [power backup guidance](/blog/power-backup-starlink-nigeria) for runtime honesty."),
+      h2("Dual-WAN with fibre or 5G"),
+      p("Developers who bill hourly can't afford hour-long outages. Dual-WAN router sends Starlink primary and MTN or Spectranet 5G failover — or fibre where [Lagos](/starlink-installation-lagos) MDUs have it. Policy route: VPN and SSH on preferred path; bulk sync on whichever link is idle. Document failover tests monthly."),
+      h2("Plan class and upload for dev workloads"),
+      p("Daily pushes, screen-share 4K, and cloud IDE tabs add up. Business priority may pay for itself if deprioritization hits before month-end. Roaming only when you actually travel to regions without coverage — see [FAQ](/faq)."),
+      h2("Physical install matters for devs too"),
+      p("Obstruction hunts look like VPN drops. Low score from [professional mount work](/starlink-home-installation) beats chasing software bugs. Cable integrity equals uptime — same as any datacenter last mile, except the last mile is your parapet."),
+      h2("Noise, ergonomics, and the compound reality"),
+      p("Developers in shared compounds battle generator noise during calls — satellite can't fix acoustics. Headset with boom mic and a door that closes beats Krisp alone. If your desk sits under a metal roof that rattles in rain, clients hear it — acoustic panels are cheaper than another router."),
+      h2("Local dev environments and offline tolerance"),
+      p("Cache Docker layers, use local LLM models for experiments when upload is saturated, and keep a offline copy of critical docs — Nigerian power still dies longer than any UPS promises. Git worktrees let you switch branches without re-fetching everything over satellite."),
+      h2("Security hygiene for remote devs"),
+      p("Don't expose RDP or Jupyter to the internet because Starlink gave you a public IP path. VPN or Tailscale only. Estate shared Wi-Fi for guests stays off your dev VLAN. 2FA on GitHub and cloud consoles — Nigerian IPs see constant credential stuffing."),
+      h2("When to escalate plan or path"),
+      p("If deprioritization hits every month before payroll week, upgrade plan or add 5G failover. If latency spikes only on Wi-Fi, fix LAN. If spikes on Ethernet during rain only, document and schedule calls around weather when possible — hybrid humanity still matters."),
+      h2("Home lab and container workflows"),
+      p("Developers running local Kubernetes or multiple VMs should segregate lab traffic from household streaming with VLANs or separate SSIDs. Cache Docker layers aggressively — pulling `node:20` fresh every morning over satellite wastes priority data. A local registry on a NAS pays for itself within one sprint."),
+      h2("Benchmarking honestly for standups"),
+      p("Run `mtr` or pingplotter to your employer's VPN endpoint weekly at different hours. Log rain events against latency spikes so you know whether to escalate to install survey or accept weather. Share baselines with your team lead — 'internet bad' without data wastes everyone's standup in [Lagos](/starlink-installation-lagos) distributed teams."),
+      h2("Collaboration tools beyond video calls"),
+      p("Figma, Miro, and shared IDE sessions need steady upload, not peak download. Screen-share at 1080p instead of 4K unless design review demands pixels. Async-first culture — Loom recordings uploaded overnight — reduces synchronous load during NEPA-sensitive hours when generator changeover is likely."),
+    ),
+    cta: "Building a dev home office on Starlink? [Contact DataGram](/contact) for Ethernet pulls, UPS scope, and [home installation](/starlink-home-installation) that survives deploy night — not just app activation.",
+    faqs: faqs(
+      {
+        question: "Is Starlink good for remote software developers in Nigeria?",
+        answer:
+          "Yes with wired Ethernet, power conditioning, and realistic rain-fade expectations. VPN and video calls work well; size upload for git and CI habits.",
+      },
+      {
+        question: "Do I need business Starlink as a developer?",
+        answer:
+          "Not always. Heavy daily upload, deprioritization before month-end, or SLA needs push teams to business priority tiers.",
+      },
+      {
+        question: "Why does VPN drop on Starlink?",
+        answer:
+          "Often Wi-Fi jitter, power reboots, or MTU issues — not satellite alone. Test Ethernet, add UPS, tune MTU, fix obstruction score.",
+      },
+      {
+        question: "Should developers use mesh Wi-Fi?",
+        answer:
+          "Mesh for coverage; Ethernet for dev machines. Wireless mesh backhaul adds latency unsuitable for SSH and pair programming.",
+      },
+      {
+        question: "Can I use Starlink for video calls all day?",
+        answer:
+          "Yes — typical call bandwidth is modest. Stability depends on power and wired LAN more than peak Mbps.",
+      },
+    ),
+  },
+  {
+    slug: "starlink-ngos-rural-field-operations-nigeria",
+    title: "Starlink for NGOs: Reliable Connectivity for Rural Field Operations",
+    excerpt:
+      "Clinic links, M&E uploads, donor reporting, shared bandwidth, and rugged installs for Nigerian NGO compounds beyond fibre reach.",
+    metaDescription:
+      "Starlink for NGOs Nigeria: rural field connectivity, clinic Wi-Fi, donor reporting, VLAN design, and enterprise install for humanitarian sites.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "12 min read",
+    category: "Evergreen",
+    image: img("blog/starlink-ngos-rural-field-operations-nigeria.jpg"),
+    imageAlt: "Starlink enterprise installation at rural Nigerian NGO field office",
+    imageFile: "blog/starlink-ngos-rural-field-operations-nigeria.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Enterprise NGO installs",
+      href: "/starlink-enterprise-nigeria",
+      blurb: "Survey-to-handover for clinics, camps, and field HQs — documentation donors and security teams accept.",
+    },
+    blocks: blocks(
+      p("Starlink for NGOs operating in rural Nigeria closes the gap where microwave backhaul never arrived and 4G maps lie about real throughput. Field offices in Borno outreach posts, Niger Delta health clinics, and plateau agricultural programs need reliable connectivity for telemedicine consults, M&E surveys uploading to KoboToolbox, donor financial reporting, and staff safety check-ins — not a consumer router dangling from a nail in a tin roof."),
+      p("Humanitarian and development sites share constraints: generator or solar power, mud-block walls, shared community bandwidth, strict data handling, and procurement cycles that buy hardware before anyone surveys sky view. This guide outlines the ideal NGO Starlink architecture — plan class, VLANs, power, documentation — and when to engage [enterprise installation](/starlink-enterprise-nigeria) instead of expat DIY."),
+      h2("Why NGOs choose Starlink over cellular"),
+      p("Cellular in rural Nigeria is uneven — one bar on the map can mean unusable upload for a 200 MB PDF to HQ. Starlink depends on clear sky, not tower backhaul someone forgot to upgrade. LEO latency suits video calls to technical advisors in Geneva or Atlanta better than geostationary satellite when VSAT isn't in budget. Rain fade still happens — honest baseline during squalls belongs in donor risk registers."),
+      h2("Site survey before procurement"),
+      p("Buy hardware after obstruction analysis, not before grant approval pressure. Survey lists mount type for corrugated clinic roofs, lightning exposure, cable route to locked server cupboard, and community foot traffic near cables. [Bayelsa creek camps](/starlink-installation-bayelsa-yenagoa) and [Delta riverine sites](/starlink-installation-delta-state) need rodent and flood-aware routing — elevated mounts and sealed glands."),
+      h2("Network design for mixed users"),
+      p("Separate staff operations, guest/community Wi-Fi, and CCTV on VLANs. Captive portal with fair usage prevents one downloaded movie from blocking vaccine cold-chain alerts sync. Firewall policies restrict admin access to known VPN IPs — NGO sites are scanned constantly. Handoff diagrams help when rotating volunteers change passwords monthly."),
+      h3("Upload and M&E workloads"),
+      p("Field teams upload photos, GPS-tagged surveys, and video testimonials. Budget upload Mbps and schedule bulk sync windows. Local NAS staging lets teams queue uploads overnight when beam load is lighter. Business priority plans reduce deprioritization risk before grant reporting deadlines."),
+      h2("Power: solar, generator, and clinic uptime"),
+      p("Document who powers the dish down during fuel shortages. UPS on router and switch for call continuity; solar sizing must include dish steady draw plus inrush after cloud cover. Modified sine inverters in rural compounds cause router faults — specify pure sine where ICT loads matter."),
+      h2("Security and data protection"),
+      p("Encrypt donor and beneficiary data in transit — VPN to HQ, HTTPS everywhere, no open admin ports. Physical security: lock server cupboards; don't leave Ethernet jacks in public waiting areas unpatched. Train staff on phishing — satellite doesn't stop credential theft."),
+      h2("Documentation donors expect"),
+      p("Handover package: mount photos, obstruction score, speed tests at desk locations, IP plan, VLAN map, UPS runtime note, support contact. Matches audit questions from institutional funders. DataGram [enterprise NGO scopes](/starlink-enterprise-nigeria) deliver this by default — not as an upsell."),
+      h2("Logistics and spare strategy"),
+      p("Rural sites need spare Ethernet cables, a spare router if budget allows, and written reboot runbooks guards can follow. Maintenance windows before rainy season — tighten mounts, inspect glands, test failover if dual-WAN with 4G backup exists."),
+      h2("Training local staff and volunteers"),
+      p("ICT shouldn't live in one expat laptop. Train two local staff on reboot order: UPS first, then router, then dish power-cycle from app. Laminated runbooks in English and local language reduce WhatsApp panic to HQ at 2 a.m. Include photos of normal LED states."),
+      h2("Grant procurement alignment"),
+      p("Buy hardware in the same fiscal window as installation budget — dishes in customs while grant year closes helps nobody. DataGram quotes survey, mount, power, and [enterprise handoff](/starlink-enterprise-nigeria) as one scope donors can audit."),
+      h2("Community access ethics"),
+      p("Community Wi-Fi from NGO Starlink is powerful and sensitive — fair usage, content filtering policies, and clear signage avoid abuse that gets accounts flagged. Separate SSIDs; never share admin passwords with community leaders on sticky notes."),
+      h2("Monitoring for field ops"),
+      p("Simple uptime monitoring to HQ — ping or HTTPS checks — proves link health for donor KPIs without expensive NOC contracts. Alert on sustained outage, not every three-minute rain fade, or on-call fatigue wins."),
+      h2("Telemedicine and voice redundancy"),
+      p("Video consults to specialists in [Lagos](/starlink-installation-lagos) or abroad need wired links in the consultation room, not Wi-Fi through two mud walls. UPS on router and switch for the 20-minute window when NEPA drops mid-consult. Keep GSM voice as backup for true emergencies when rain fade hits — honest redundancy, not satellite evangelism."),
+      h2("Offline-first M&E tools"),
+      p("KoboToolbox, ODK, and similar apps queue submissions when uplink blips — configure for offline-first before trainers hit the field. HQ dashboards should distinguish 'field offline' from 'server down'. Local NAS staging lets teams batch photo uploads overnight when beam load is lighter and clinic staff aren't on telemedicine calls."),
+      h2("Donor audit questions we see repeatedly"),
+      p("Funders ask: who owns the subscription, what happens when grant ends, is beneficiary data encrypted, and what is rain-season uptime expectation. Answer in writing at handover — not improvised on a Zoom when audit season starts. [Enterprise NGO installs](/starlink-enterprise-nigeria) include template language donors accept."),
+      h2("End-of-grant and kit transition"),
+      p("Plan subscription continuity before the grant closes — dishes without active plans become expensive paperweights. Document transfer of account ownership to local partner or successor NGO. Spare router and labelled cables in locked cupboard reduce downtime when expat staff rotate and nobody remembers which breaker feeds the PoE switch."),
+    ),
+    cta: "Planning connectivity for a clinic, camp, or field HQ? [Contact DataGram](/contact) for [enterprise NGO installation](/starlink-enterprise-nigeria) — survey, VLAN handoff, and donor-ready documentation before hardware ships.",
+    faqs: faqs(
+      {
+        question: "Is Starlink suitable for NGO field offices in rural Nigeria?",
+        answer:
+          "Yes where sky view is clear and power is stable enough for ICT loads. Survey before procurement; document rain-fade expectations for donors.",
+      },
+      {
+        question: "What plan class should NGOs use?",
+        answer:
+          "Often business priority for upload consistency and operational traffic. Match plan to M&E upload, telemedicine, and user count — verify on Starlink checkout.",
+      },
+      {
+        question: "How do NGOs share Wi-Fi safely with communities?",
+        answer:
+          "Separate VLANs and captive portals with fair usage. Keep admin and donor systems on restricted networks with VPN access.",
+      },
+      {
+        question: "Does Starlink work in Niger Delta creek clinics?",
+        answer:
+          "Coverage extends over creeks; mount height and obstruction from trees matter. Shore-fixed clinics differ from boats — survey each site.",
+      },
+      {
+        question: "What handover docs do donors require?",
+        answer:
+          "Photos, obstruction score, speed tests, network diagrams, power notes, and support path. Enterprise install packages include these for audit readiness.",
+      },
+    ),
+  },
+  {
+    slug: "combine-starlink-5g-failover-multi-wan",
+    title: "Combining Starlink with 5G as a Failover Multi-WAN Setup",
+    excerpt:
+      "Policy routing, health checks, MTN and Airtel 5G CPE placement, and Nigerian estate power quirks for resilient home and office internet.",
+    metaDescription:
+      "Starlink plus 5G failover Nigeria: multi-WAN router setup, policy routing, health checks, and dual-path design for Lagos and Abuja offices.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "11 min read",
+    category: "Evergreen",
+    image: img("blog/combine-starlink-5g-failover-multi-wan.jpg"),
+    imageAlt: "Multi-WAN router combining Starlink and 5G failover in Nigerian office",
+    imageFile: "blog/combine-starlink-5g-failover-multi-wan.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Enterprise dual-WAN",
+      href: "/starlink-enterprise-nigeria",
+      blurb: "Policy routing, VLAN handoff, and tested failover — not two routers fighting for DHCP.",
+    },
+    blocks: blocks(
+      p("Combining Starlink with 5G as a failover multi-WAN setup is the resilience pattern Nigerian offices adopt after the third Monday when fibre was cut on the Lekki axis and Starlink faded in an afternoon squall at the same time. Single links lie; dual paths with automatic failover and policy routing keep payroll uploads and client calls alive when any one carrier fails."),
+      p("This guide covers architecture — not product fanboyism. Starlink primary with MTN or Airtel 5G secondary is common in [Lagos](/starlink-installation-lagos) SMEs; reverse primary makes sense where 5G is excellent indoors but rain knocks satellite. Document priorities, test monthly, and fix power before you buy a third router."),
+      h2("Why multi-WAN in Nigeria specifically"),
+      p("Fibre street cuts, oversubscribed LTE, rain fade on LEO, and generator changeovers create correlated failures if all gear shares one UPS and one careless electrician. Multi-WAN spreads risk across independent carriers. It doesn't eliminate outages — misconfigured failover still drops VPN sessions — but recovery time drops from hours to seconds when health checks work."),
+      h2("Hardware: one firewall, two WAN ports"),
+      p("Use a router or firewall with dual WAN and configurable health checks — MikroTik, Ubiquiti UDM-Pro, FortiGate, Peplink, depending on budget and IT skill. Avoid two consumer Starlink-style setups with double NAT and manual cable swapping. Starlink in bypass mode presents one clean WAN; 5G CPE in bridge or IP passthrough presents the second."),
+      h3("5G CPE placement"),
+      p("5G routers need indoor placement near windows or external antennas on roofs — different optimal spot than Starlink dish. Don't hide CPE in a metal cabinet. Spectranet, MTN, and Airtel performance varies by estate; survey with speed tests at desk locations, not only at the shop where you bought the SIM."),
+      h2("Failover vs load balancing"),
+      p("Failover: Starlink carries everything until health check fails — latency spike, packet loss, or interface down — then 5G takes over. Load balancing: split flows across both — useful when neither link alone covers upload needs. Most Nigerian SMEs want failover primary with optional policy routing for heavy bulk on the cheaper path."),
+      h2("Policy routing examples"),
+      p("Send Zoom and VPN via Starlink; send Windows Update and NAS offsite backup via 5G if cheaper/unmetered. Tag traffic by VLAN — finance subnet strict failover, guest Wi-Fi 5G only to protect priority quota. Document rules so the next IT volunteer doesn't undo them."),
+      h2("Health checks and sticky sessions"),
+      p("Ping 1.1.1.1 alone is lazy — test multiple targets or use interface group checks. VPN users may still drop on failover — accept brief reconnect or use SD-WAN features if budget allows. Session stickiness matters for banking portals; banking users should know failover isn't invisible magic."),
+      h2("Power and UPS on both paths"),
+      p("Failover fails if 5G CPE reboots on generator transfer while Starlink on UPS stays up — both need conditioning or shared clean circuit. Read [power backup for Starlink](/blog/power-backup-starlink-nigeria) and apply the same logic to CPE."),
+      h2("Enterprise handoff"),
+      p("[Enterprise installation](/starlink-enterprise-nigeria) includes failover test logs, IP plans, and labelled rack paths. Estate IT in [Abuja](/starlink-installation-abuja) should sign handover before go-live payroll."),
+      h2("SIM and data plan management"),
+      p("5G failover fails when the SIM data wallet is empty — automate top-ups or use postpaid corporate SIMs. Store SIM ICCID and APN settings in runbooks. MTN and Airtel performance varies by mast load; test at your desk, not highway speedtests."),
+      h2("Cost justification for SMEs"),
+      p("Dual subscriptions cost more than one link — compare against one hour of trading desk downtime or missed client deliverable. Hybrid is insurance, not duplication for speed unless you load-balance intentionally."),
+      h2("Testing failover without drama"),
+      p("Monthly drill: unplug Starlink WAN cable during a standup window, confirm 5G takes over in under 60 seconds, document VPN reconnect time. Quarterly drill during rain if you're brave — that's when you'll actually need it."),
+      h2("Common multi-WAN mistakes"),
+      p("Two DHCP servers on LAN. Forgetting to UPS the 5G CPE. Health check only pings one dead target. Guest Wi-Fi leaking onto failover path without quota. Fix topology on paper before buying another gadget."),
+      h2("Step-by-step rollout for SMEs"),
+      p("Week one: install Starlink with low obstruction and baseline speed tests at desks. Week two: add 5G CPE, connect second WAN on firewall, configure health checks without enabling failover yet. Week three: deliberately unplug Starlink WAN during business hours, verify 5G picks up within seconds, document VPN reconnect time. Week four: enable policy routes and train staff what to expect during switchover."),
+      h2("Starlink bypass before dual-WAN"),
+      p("Enable bypass on Starlink router before dual-WAN on third-party firewall — double NAT breaks health checks and VPN passthrough. Ethernet from dish to firewall WAN; disable Starlink Wi-Fi if your firewall owns wireless. Mesh access points hang off LAN, not a second router on WAN fighting for DHCP."),
+      h2("When fibre enters the picture"),
+      p("Some [Lagos](/starlink-installation-lagos) offices run fibre primary, Starlink secondary, 5G tertiary — policy routing sends bulk backup to whichever path is healthy. Document three-WAN priority in runbooks; guards and junior IT should know which LED pattern is normal on each CPE."),
+      h2("Flapping failover troubleshooting"),
+      p("If WAN bounces every few minutes, health check thresholds are too aggressive for satellite jitter — widen latency or loss tolerances. If failover never triggers when Starlink is dead, checks may ping only one blocked host. If both WANs show active but traffic stalls, check asymmetric routing or DNS pinned to one provider. [Enterprise handoff](/starlink-enterprise-nigeria) includes tuned thresholds from field tests, not factory defaults."),
+    ),
+    cta: "Designing Starlink plus 5G failover for your office? [Contact DataGram](/contact) for [enterprise dual-WAN scope](/starlink-enterprise-nigeria) with documented test results — not guesswork.",
+    faqs: faqs(
+      {
+        question: "Can I use Starlink and 5G together in Nigeria?",
+        answer:
+          "Yes with a dual-WAN router, health checks, and policy routing. Starlink bypass mode plus 5G CPE in bridge is a common pattern.",
+      },
+      {
+        question: "Which should be primary — Starlink or 5G?",
+        answer:
+          "Depends on site. Starlink primary suits rain-tolerant download-heavy offices with good sky view. 5G primary suits excellent indoor cellular and Starlink as rain backup.",
+      },
+      {
+        question: "Will VPN survive failover?",
+        answer:
+          "Often brief disconnect on path switch. SD-WAN or patient reconnect policies help. Test before production deploys.",
+      },
+      {
+        question: "Do I need enterprise install for dual-WAN?",
+        answer:
+          "Skilled in-house IT can DIY. Estates, NGOs, and regulated offices benefit from documented handover and tested failover logs.",
+      },
+      {
+        question: "Does failover double my monthly cost?",
+        answer:
+          "You pay both subscriptions — Starlink plan plus 5G data plan. Resilience is insurance against downtime cost, not a discount.",
+      },
+    ),
+  },
+  {
+    slug: "starlink-account-suspended-what-to-do",
+    title: "What to Do When Your Starlink Account is Suspended",
+    excerpt:
+      "Common suspension triggers in Nigeria — wrong service address, plan misuse, payment failures, roaming abuse — and step-by-step recovery without panic posts.",
+    metaDescription:
+      "Starlink account suspended Nigeria: causes, payment fixes, plan class errors, roaming issues, and how to restore service.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "10 min read",
+    category: "Evergreen",
+    image: img("blog/starlink-account-suspended-what-to-do.jpg"),
+    imageAlt: "Starlink app account status troubleshooting on phone in Nigeria",
+    imageFile: "blog/starlink-account-suspended-what-to-do.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Activation support",
+      href: "/starlink-home-installation",
+      blurb: "Correct plan class and service address at activation — prevention beats suspension appeals.",
+    },
+    blocks: blocks(
+      p("A suspended Starlink account in Nigeria triggers panic — especially when payroll remote staff, clinic telemedicine, or estate security CCTV depends on the link. Suspensions usually trace to billing, terms violations, or address/plan mismatches — not random punishment. Work through payment, app messages, and usage patterns methodically before buying new hardware under a cousin's name."),
+      p("DataGram activation support aligns plan class and service address at install because prevention beats appeals. If you're already suspended, this guide lists common Nigerian-context triggers and recovery steps. Starlink policy is set by Starlink — we don't override their billing system — but we help clients document site facts for support tickets."),
+      h2("Check the app message first"),
+      p("Open the Starlink app or account portal. Suspension reasons often appear as banners — payment declined, terms violation, relocation without plan update, mobility misuse. Screenshot the exact text before calling support. Vague 'offline' status differs from hard suspension."),
+      h2("Payment and card failures"),
+      p("International card declines, expired virtual cards, and bank fraud blocks are common on Nigerian-issued cards paying USD subscriptions. Update payment method, confirm 3DS approval with your bank, retry charge. Some users maintain a dedicated dollar card for subscriptions — document renewal dates to avoid accidental lapse during travel."),
+      h2("Service address and plan class mismatch"),
+      p("Fixed residential plans registered at a Lagos address but continuously used in another state without roaming or plan change can trigger review. Maritime hardware on land plans, or mobility misuse, creates account flags. Align address in app with physical dish location; enable [roaming](/faq) only when policy allows your travel pattern."),
+      p("If you relocated from [Abuja](/starlink-installation-abuja) to [Port Harcourt](/starlink-installation-rivers-state-port-harcourt), update service address per Starlink rules — don't assume satellite coverage makes address irrelevant."),
+      h2("Terms of service and resale"),
+      p("Unauthorized reselling of bandwidth, open commercial hotspot without appropriate business plan, or modifying hardware against terms risks suspension. NGOs running community Wi-Fi should use VLAN fairness and correct plan tier — donor visibility doesn't exempt terms."),
+      h2("Contacting Starlink support"),
+      p("Use in-app support with account email, kit serial, clear timeline, and screenshots. Escalate with facts — payment receipts, relocation docs — not forum rumours. Response times vary; parallel fix payment issues while waiting."),
+      h2("While suspended — interim connectivity"),
+      p("5G backup, secondary fibre, or neighbour loaned link keeps ops alive. Dual-WAN design exists for this reason — see our [multi-WAN guide](/blog/combine-starlink-5g-failover-multi-wan). Don't activate a new kit fraudulently; that compounds account problems."),
+      h2("Prevention at activation"),
+      p("[Professional activation](/blog/how-to-activate-starlink-nigeria) on correct plan class, documented address, and roaming toggled deliberately reduces suspension risk. Estate installs should activate after mount approval, not weeks before security allows dish placement."),
+      h2("Hardware and kit mismatch suspicions"),
+      p("Using mobility hardware on fixed residential plans — or moving kits between countries without account updates — triggers reviews. Serial numbers tie to accounts; buying grey-market kits without transfer paperwork leaves you stuck at activation, not only suspension."),
+      h2("Commercial use on residential plans"),
+      p("Running a cybercafe, co-working space, or paid Wi-Fi hotspot on residential service violates typical terms. Business or enterprise plans exist for a reason — donor-funded clinics and schools still count as operational traffic when usage is heavy and public."),
+      h2("Document trail for appeals"),
+      p("Keep payment receipts, bank SMS confirmations, relocation letters, and estate permission emails. Support tickets without evidence get slower answers. Polite factual appeals beat rage posts on Twitter — Starlink support doesn't monitor your mentions."),
+      h2("Reactivation timeline expectations"),
+      p("Payment fixes can restore service in minutes; terms investigations take days. Plan interim connectivity — see [5G failover](/blog/combine-starlink-5g-failover-multi-wan) — if SLA matters to payroll or patient care."),
+      h2("Nigerian payment and card hygiene"),
+      p("Dollar subscriptions on naira salaries need calendar discipline. Set renewal reminders three days before charge date. Banks that block international merchants without SMS OTP cause silent failures — whitelist Starlink after first successful payment. Maintain two payment methods in the app where possible. Screenshot receipts — support tickets move faster with proof."),
+      h2("Used kits and account inheritance"),
+      p("Dishes from informal markets may carry unpaid balance or lock from prior owner. Verify kit is disassociated before purchase. Grey-market hardware without transfer paperwork leaves you stuck at activation — suspension risk before you ever go online. Buy from reputable sources with serial documentation."),
+      h2("Estate and commercial context"),
+      p("Co-working operators, schools charging connectivity fees, and estate-wide resale on residential plans trigger terms enforcement. Size business or [enterprise plans](/starlink-enterprise-nigeria) honestly. Donor-funded clinics with public waiting-area Wi-Fi still count as heavy operational traffic when usage is continuous and shared."),
+      h2("What not to do while suspended"),
+      p("Don't factory reset repeatedly hoping billing clears. Don't buy a second kit under a relative's name to evade review — that compounds bans. Don't post account numbers publicly asking for help — scammers target suspended users. Fix root cause, document, escalate politely."),
+      h2("Relocation without triggering review"),
+      p("Moving dish from family house in [Delta](/starlink-installation-delta-state) to your new flat requires service address update in app before or immediately after physical move. Starlink sees terminal location shifts; mismatched registered address triggers review. Temporary travel beyond policy needs roaming per [FAQ](/faq) — not silent hope."),
+      h2("Corporate account hygiene"),
+      p("One legitimate account per service location — sharing logins across unrelated businesses creates liability when one party violates terms. Enterprise accounts with multiple terminals should document which kit maps to which site for cleaner support calls and faster unsuspension when finance fixes payment."),
+      h2("Keeping staff online during appeals"),
+      p("Notify remote teams immediately when suspension hits — share interim connectivity plan and expected resolution window. HR and clinic admins should not learn from a failed payroll upload. Document who owns the Starlink account login and backup payment method so one traveller doesn't block renewal for the whole organisation."),
+    ),
+    cta: "Setting up Starlink fresh or reactivating after a move? [Contact DataGram](/contact) for [home installation](/starlink-home-installation) with correct plan class and activation checklist — fewer billing surprises later.",
+    faqs: faqs(
+      {
+        question: "Why was my Starlink account suspended in Nigeria?",
+        answer:
+          "Common causes: payment failure, plan or address mismatch, terms violation, or mobility/roaming misuse. Check the app for the specific reason.",
+      },
+      {
+        question: "How do I unsuspend my Starlink account?",
+        answer:
+          "Fix the stated cause — update payment, correct service address, contact support with documentation. Resolution time varies by case.",
+      },
+      {
+        question: "Can I open a new Starlink account if suspended?",
+        answer:
+          "Creating new accounts to evade suspension violates terms and risks further bans. Resolve the original account where possible.",
+      },
+      {
+        question: "Does moving cities cause Starlink suspension?",
+        answer:
+          "Using a fixed plan at a new location without updating address or enabling appropriate roaming/plan change can trigger review. Update service details when you relocate.",
+      },
+      {
+        question: "Will DataGram fix a suspended account?",
+        answer:
+          "We guide documentation and prevention; Starlink controls billing and suspension decisions. We help with correct activation on new sites.",
+      },
+    ),
+  },
+  {
+    slug: "factory-reset-starlink-router-guide",
+    title: "How to Factory Reset Your Starlink Router",
+    excerpt:
+      "Reset steps for Gen 2 and Gen 3 routers, what you lose, when not to reset, and post-reset setup for Nigerian homes and estate networks.",
+    metaDescription:
+      "Factory reset Starlink router Nigeria: steps, Wi-Fi password loss, bypass mode recovery, and when reset fixes vs hides power problems.",
+    author: "DataGram Nigeria",
+    date: "2026-06-11",
+    readTime: "9 min read",
+    category: "Evergreen",
+    image: img("blog/factory-reset-starlink-router-guide.jpg"),
+    imageAlt: "Starlink Gen 3 router factory reset and reconfiguration in Nigeria",
+    imageFile: "blog/factory-reset-starlink-router-guide.jpg",
+    featured: false,
+    serviceCta: {
+      label: "Installation support",
+      href: "/starlink-home-installation",
+      blurb: "Post-reset mesh, bypass mode, and VLAN reconfiguration — faster than guessing Wi-Fi passwords.",
+    },
+    blocks: blocks(
+      p("Factory reset on your Starlink router wipes Wi-Fi settings, guest networks, and local admin passwords — it does not cancel your subscription or de-register your dish. Nigerian users often reset in frustration when NEPA reboot loops or mesh conflicts cause outages, then discover the real problem was voltage sag, not firmware. Use reset as a deliberate troubleshooting step, not the first button you press when Netflix buffers."),
+      p("This guide covers when reset helps, hardware steps by generation, what to document before wiping, and post-reset setup for homes with mesh, bypass mode, and estate VLANs. If obstruction and power are healthy, reset can clear corrupted Wi-Fi configs — if reboots correlate with generator hour, fix power instead."),
+      h2("Before you reset — document"),
+      p("Screenshot Wi-Fi SSIDs and passwords, bypass mode status, mesh node names, and any port forwarding rules — even though we discourage forwarding. Note whether a third-party firewall sits in bypass. Estate IT in [Lagos](/starlink-installation-lagos) should save VLAN diagrams stored only on the router you're about to wipe."),
+      h2("When factory reset actually helps"),
+      p("Corrupted Wi-Fi settings after failed firmware update. Forgotten admin password on stock router. Duplicate DHCP from accidental double-router setup. Reset does not fix: damaged dish cable, high obstruction, unpaid subscription, suspended account, or chronic undervoltage from extension cords."),
+      h3("When not to reset"),
+      p("If dish status shows searching forever after storms, survey obstruction before reset. If account suspended, reset wastes time — fix billing. Read [reboot troubleshooting](/blog/why-starlink-keeps-rebooting-nigeria-solutions) first."),
+      h2("Gen 3 router reset steps"),
+      p("Power on router. Press and hold reset button on back — use pin tool — until LED pattern indicates factory reset per kit manual (typically 10+ seconds until light changes). Release; wait several minutes for reboot. Default Wi-Fi credentials appear on router label or app pairing flow."),
+      h2("Gen 2 and earlier"),
+      p("Older kits vary — some reset via app, some via physical button on power supply units. Follow label on your hardware; don't hold buttons blindly while guests assume you killed the link for the weekend."),
+      h2("Post-reset setup in Nigerian homes"),
+      p("Re-run Starlink app setup; confirm dish online. Set new Wi-Fi SSID and strong password — estates leak default passwords fast. Re-add mesh nodes on factory defaults. If using bypass mode, re-enable bypass and confirm third-party router pulls DHCP on WAN. Test Ethernet desk locations before declaring victory."),
+      h2("Bypass and enterprise reconfiguration"),
+      p("[Enterprise sites](/starlink-enterprise-nigeria) with FortiGate or MikroTik rules need rule backup off-device — reset on Starlink side still requires WAN rediscovery. Schedule reset in maintenance window; notify remote staff VPN will drop."),
+      h2("If reset doesn't restore service"),
+      p("Power-cycle dish from app, check cable glands, verify subscription active, run obstruction test. Escalate to Starlink support with serial numbers. DataGram clients send us app screenshots — we distinguish LAN issues from dish faults remotely when photos are clear."),
+      h2("Wi-Fi naming and estate SSID clutter"),
+      p("After reset, don't reuse SSID names that half the estate also uses — 'FamilyWiFi' collisions cause phantom connection issues. Pick distinct SSIDs; hide guest network password rotation in a password manager the household actually shares."),
+      h2("Mesh re-pairing order"),
+      p("Factory reset router means mesh nodes also need re-adoption — power nodes near router first, adopt in app order outer to inner. Nigerian concrete homes need wired backhaul for at least one node if you learned that lesson before reset."),
+      h2("Firmware after reset"),
+      p("Router may pull firmware update immediately after reset — don't power off during update LED patterns. Harmattan power flicker during update is rare but nasty; UPS helps."),
+      h2("When to call DataGram instead of another reset"),
+      p("Second reset in a week without fixing root cause is a signal. If [reboot loops](/blog/why-starlink-keeps-rebooting-nigeria-solutions) persist on Ethernet with clean power, book cable and mount inspection — not reset roulette."),
+      h2("Re-adding devices after reset"),
+      p("Phones and laptops: forget old SSID, join new network. Smart TVs, printers, CCTV NVR, and inverter Wi-Fi modules need manual re-entry — budget an hour in the utility room. Estate security desk: notify before reset if their DVR shared your Wi-Fi. Kids' tablets: update parental controls if you use them."),
+      h2("Bypass mode reconfiguration sequence"),
+      p("After reset, Starlink returns to routing mode with its own DHCP. Sequence: confirm dish online in app → enable bypass → connect firewall WAN → verify single DHCP server on LAN → test VPN. Double NAT symptoms: devices get 192.168.1.x from Starlink while firewall expects 192.168.50.x — pick one router to own DHCP."),
+      h2("Alternatives before full factory reset"),
+      p("App Wi-Fi settings change SSID without wiping everything when only password rotation is needed. Firmware update via app fixes some corruption. One clean 60-second power-cycle clears transient glitches — not ten rapid toggles. Ethernet speed test isolates Wi-Fi from satellite before you wipe all config."),
+      h2("Estate handover after reset"),
+      p("If landlord or HOA holds Wi-Fi credentials for security CCTV, update facility log after reset. Label new password in sealed envelope for estate office if policy requires. [Lagos estates](/starlink-installation-lagos) sometimes mandate IT notification before network changes affecting shared systems — check rules before Friday afternoon reset experiments."),
+      h2("Gen 3 LED patterns during reset"),
+      p("LED behaviour varies by firmware — solid white, pulsing, then reboot sequence. Don't power off during the middle pattern thinking it failed. Read the label on your kit or in-app help for your hardware generation. Pulling power mid-reset extends downtime and can corrupt config worse than the problem you started with."),
+      h2("When reset makes things worse"),
+      p("Reset during voltage sag loops repeats boot forever — fix UPS first. Reset on suspended account leaves you offline with no Wi-Fi and still no billing fix. Reset without exporting bypass rules loses VPN port forwards your IT consultant configured — export configs off-device before any wipe."),
+    ),
+    cta: "Reset didn't fix it — or you need bypass and mesh rebuilt properly? [Contact DataGram](/contact) or book [home installation support](/starlink-home-installation) for structured handover.",
+    faqs: faqs(
+      {
+        question: "Will factory reset cancel my Starlink subscription?",
+        answer:
+          "No. Reset clears local router Wi-Fi and settings. Subscription remains tied to your account and dish.",
+      },
+      {
+        question: "How do I factory reset a Gen 3 Starlink router?",
+        answer:
+          "Hold the reset pinhole on the router rear until LED indicates factory reset, then wait for reboot. Follow current kit manual for exact timing.",
+      },
+      {
+        question: "Do I lose mesh Wi-Fi settings on reset?",
+        answer:
+          "Yes. Re-add mesh nodes and configure SSIDs after reset. Document settings before wiping.",
+      },
+      {
+        question: "Should I factory reset for slow speeds?",
+        answer:
+          "Try obstruction test, Ethernet speed test, and power check first. Reset helps corrupted Wi-Fi config, not rain fade or cable damage.",
+      },
+      {
+        question: "What happens to bypass mode after reset?",
+        answer:
+          "Bypass may disable. Re-enable in app and confirm third-party router WAN settings after reset.",
+      },
+    ),
+  },
+];
