@@ -153,7 +153,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       {
         name: "Ocean mode / Deep sea plan",
-        priceLabel: "Starlink from ₦5,000",
+        priceLabel: "Starting from ₦5,000",
         features: [
           "Offshore rig and moving vessels operational",
           "Global coverage on land and sea/ocean",
