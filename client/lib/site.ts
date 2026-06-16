@@ -10,7 +10,7 @@ export const DEFAULT_DESCRIPTION =
 
 export const BUSINESS_PHONE_E164 = "+2349060976424";
 export const BUSINESS_PHONE_DISPLAY = "+234 906 097 6424";
-export const BUSINESS_EMAIL = "Appdatagram@gmail.com";
+export const BUSINESS_EMAIL = "info@datagram.ng";
 export const WHATSAPP_URL = "https://wa.me/2349060976424";
 
 /** Country-only for schema — no published street address */

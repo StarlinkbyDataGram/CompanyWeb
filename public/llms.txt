@@ -5,7 +5,7 @@
 primary_domain: https://www.datagram.ng
 sitemap: https://www.datagram.ng/sitemap.xml
 preferred_language: en-NG
-contact: tel:+2349060976424 | mailto:Appdatagram@gmail.com
+contact: tel:+2349060976424 | mailto:info@datagram.ng
 
 [entity]
 legal_name: DataGram
