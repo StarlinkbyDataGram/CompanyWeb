@@ -13,6 +13,7 @@ import { geoAArticles } from "./articles/geo-a";
 import { geoBArticles } from "./articles/geo-b";
 import { futureAArticles } from "./articles/future-a";
 import { futureBArticles } from "./articles/future-b";
+import { roamingPriorityArticles } from "./articles/roaming-priority";
 
 /** Legacy articles (pre-FAQ/block format) — migrated in place */
 const legacyArticles: SeoArticle[] = [
@@ -210,6 +211,7 @@ export const seoArticles2026: SeoArticle[] = [
   ...geoBArticles,
   ...futureAArticles,
   ...futureBArticles,
+  ...roamingPriorityArticles,
 ];
 
 export function getSeoArticleBySlug(slug: string) {
