@@ -607,20 +607,23 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
   },
   {
     path: "/starlink-installation-niger-delta",
-    seoTitle: "Starlink Installation Niger Delta | Rivers, Bayelsa & Delta | DataGram",
+    seoTitle: "Starlink Satellite Internet Niger Delta | SpaceX Installation | DataGram",
     metaDescription:
-      "Niger Delta Starlink installs from PH HQ: Port Harcourt, Yenagoa, Warri, Asaba, creek compounds. Marine and estate crews. Book a survey.",
+      "DataGram installs SpaceX Starlink satellite internet across the Niger Delta — oil camps, creek communities, and remote operations in Rivers, Delta, and Bayelsa State. Not affiliated with any local energy company.",
     canonical: "/starlink-installation-niger-delta",
-    ogImage: img("maritime4.jpeg"),
-    h1: "Starlink Installation Niger Delta",
+    ogImage: img("datagram-technician-dish-port.jpg"),
+    h1: "SpaceX Starlink Satellite Internet Installation — Niger Delta, Nigeria",
+    entityBadge:
+      "SpaceX Starlink authorised installations — satellite internet service for remote and offshore locations across the Niger Delta",
     stateName: "the Niger Delta",
     heroLabel: "Rivers, Bayelsa & Delta State",
     heroSubheading:
-      "Headquartered in Port Harcourt—daily installs across PH, Yenagoa, Warri, Asaba, and shore-access communities. Not a northern or Kano operation.",
-    heroImageAlt: "Starlink terminal on oil platform in the Niger Delta, Nigeria",
-    heroImage: img("maritime4.jpeg"),
-    heroImageFile: "maritime4.jpeg",
-    heroImageReason: "only real Nigerian oil rig image in the set — direct Niger Delta visual proof",
+      "Headquartered in Port Harcourt—daily installs across PH, Yenagoa, Warri, Asaba, and shore-access communities. SpaceX Starlink satellite internet for remote and offshore sites — not a local energy company.",
+    heroImageAlt: "DataGram Starlink technician at Nigerian port holding Starlink dish ready for installation",
+    heroImage: img("datagram-technician-dish-port.jpg"),
+    heroImageFile: "datagram-technician-dish-port.jpg",
+    heroImageReason:
+      "DataGram technician in branded hoodie holding Starlink dish at port — real field photo, Niger Delta logistics context",
     heroObjectPosition: "center",
     trustSinceYear: "2019",
     whyTitle: "Why DataGram in the Niger Delta",
@@ -638,11 +641,17 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         icon: Users,
         title: "Oil & gas & estates",
-        body: "Trans-Amadi plants, PH GRA homes, Yenagoa layouts, and Warri industrial roofs—one team, one handover standard.",
+        body: "Trans-Amadi plants, PH GRA homes, Yenagoa layouts, and Warri industrial roofs—one team, one handover standard for Starlink satellite internet.",
       },
     ],
     proofTitle: "Our Work in the Niger Delta",
     proofCards: [
+      proof(
+        "datagram-technician-dish-port.jpg",
+        "DataGram Starlink technician at Nigerian port holding Starlink dish ready for installation",
+        "DataGram field team at a Nigerian port with Starlink hardware — real deployment, not stock imagery.",
+        "IMAGE: datagram-technician-dish-port.jpg — branded technician holding dish, port logistics context"
+      ),
       proof(
         "maritime4.jpeg",
         "Starlink terminal on oil platform in the Niger Delta, Nigeria",
@@ -650,16 +659,10 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         "IMAGE: maritime4.jpeg — real Nigerian oil rig image — Niger Delta relevance"
       ),
       proof(
-        "starlinkCompanyInstalltionImage.jpeg",
-        "Starlink dish installed near Port Harcourt industrial area",
-        "Industrial roof near port cranes — Rivers and Delta commercial corridors.",
-        "IMAGE: starlinkCompanyInstalltionImage.jpeg — Port Harcourt industrial / port context"
-      ),
-      proof(
-        "starlinkInstallation.jpeg",
-        "Starlink dish with solar context Niger Delta Nigeria",
-        "Solar-adjacent install — power-conscious South-South homes and camps.",
-        "IMAGE: starlinkInstallation.jpeg — solar array background — South-South power context"
+        "datagram-starlink-boxes-stock.jpg",
+        "Multiple Starlink units in stock at DataGram Nigeria ready for offshore and maritime deployment",
+        "Hardware in stock at DataGram Port Harcourt — rapid mobilisation to creek and shore sites.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — stacked Starlink units ready for deployment"
       ),
     ],
     speedStat: SPEED,
@@ -668,10 +671,31 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       attribution: "Operations admin, Yenagoa layout",
     },
     coverageParagraph:
-      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. We do not run install operations in Kano or northern Nigeria.",
+      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. SpaceX Starlink satellite internet is deployed for oil camps, creek communities, and remote compounds — DataGram is a satellite installer, not affiliated with any local energy or pipeline company. We do not run install operations in Kano or northern Nigeria.",
+    safetyStandards: {
+      title: "Our Field Safety Standards",
+      items: [
+        {
+          title: "Site assessment before mobilisation",
+          body: "Before any crew travels to a creek or remote camp location, DataGram conducts a remote assessment of the site — sky view, power source, canopy obstruction level, and access route — to ensure the installation can be completed safely and successfully in a single visit.",
+        },
+        {
+          title: "Two-man installation rule",
+          body: "All installations in remote or creek locations are conducted by a minimum two-person team. We do not send solo technicians to isolated sites.",
+        },
+        {
+          title: "Canopy and obstruction management",
+          body: "Heavy tree canopy is one of the biggest challenges for satellite internet in the Niger Delta. DataGram uses extended mast mounting where necessary to clear obstructions and achieve a clean sky view — this is assessed during the pre-visit site check.",
+        },
+        {
+          title: "Verified connectivity before sign-off",
+          body: "The installation is not considered complete until the client has confirmed they can see the network and we have recorded live speed test results on site.",
+        },
+      ],
+    },
     faqs: [
       {
-        question: "Do you install Starlink in Kano or northern Nigeria?",
+        question: "Do you install SpaceX Starlink satellite internet in Kano or northern Nigeria?",
         answer:
           "No. DataGram’s install desk and warehouse are in Port Harcourt. We serve the Niger Delta (Rivers, Bayelsa, Delta) plus Abuja and Lagos corridors—not Kano or the far north.",
       },
@@ -690,9 +714,15 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         answer:
           "Heavy rain adds fade. Proper mast height and sky view reduce dropouts. We baseline at handover so you can compare performance through rainy season.",
       },
+      {
+        question: "Is DataGram the same as Starlinks Global Energy Services?",
+        answer:
+          "No. DataGram installs SpaceX Starlink satellite internet for homes, businesses, and offshore sites. We are not affiliated with Starlinks Global Energy Services or any local oil and pipeline company in Port Harcourt.",
+      },
       roamingFaq,
       ...regionalStandardFaqs,
     ],
+    packagePriceDisclaimer: true,
     geo: { latitude: 4.8156, longitude: 7.0498 },
     serviceAreaSchema: "Niger Delta, Nigeria (Rivers, Bayelsa, Delta State)",
     keywords: [

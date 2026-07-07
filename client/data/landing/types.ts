@@ -24,6 +24,15 @@ export type PackageTier = {
   cta: string;
 };
 
+export type SafetyStandardItem = { title: string; body: string };
+
+export type EquipmentSection = {
+  title: string;
+  paragraphs: string[];
+  image: ProofCard;
+  secondaryImage?: ProofCard;
+};
+
 export type IndustryLandingConfig = {
   path: string;
   seoTitle: string;
@@ -51,6 +60,12 @@ export type IndustryLandingConfig = {
   packagesTitle: string;
   packages: PackageTier[];
   faqs: FaqItem[];
+  /** When set, used for FAQPage JSON-LD instead of `faqs` */
+  schemaFaqs?: FaqItem[];
+  extraSchemas?: Record<string, unknown>[];
+  safetyStandards?: { title: string; items: SafetyStandardItem[] };
+  equipmentSection?: EquipmentSection;
+  packagePriceDisclaimer?: boolean;
   serviceAreaSchema: string;
   keywords: string[];
   includeHowTo?: boolean;
@@ -84,6 +99,9 @@ export type RegionalLandingConfig = {
   testimonial: { quote: string; attribution: string };
   relatedLinks?: { label: string; href: string }[];
   faqs: FaqItem[];
+  entityBadge?: string;
+  safetyStandards?: { title: string; items: SafetyStandardItem[] };
+  packagePriceDisclaimer?: boolean;
   geo: { latitude: number; longitude: number };
   serviceAreaSchema: string;
   keywords: string[];

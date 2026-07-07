@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Gauge, Signal, Zap } from "lucide-react";
+import { CheckCircle2, Gauge, Signal, Zap } from "lucide-react";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,10 +36,12 @@ type Props = { config: IndustryLandingConfig };
 
 export default function IndustryLandingPage({ config }: Props) {
   const ogImage = config.ogImage ?? DEFAULT_OG_IMAGE;
+  const faqSchemaSource = config.schemaFaqs ?? config.faqs;
   const schemas = [
     buildLocalBusinessSchema(config.serviceAreaSchema),
     buildBreadcrumb(config.path, config.h1),
-    buildFaqSchema(config.faqs),
+    buildFaqSchema(faqSchemaSource),
+    ...(config.extraSchemas ?? []),
   ];
   if (config.includeHowTo) schemas.push(buildHowToSchema());
 
@@ -227,6 +229,94 @@ export default function IndustryLandingPage({ config }: Props) {
         </div>
       </section>
 
+      {config.equipmentSection && (
+        <section className={`${landingSection} border-b bg-muted/20`}>
+          <div className={`${landingContainer} grid gap-8 lg:grid-cols-2 lg:items-start`}>
+            <div className="min-w-0">
+              <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.equipmentSection.title}</h2>
+              <div className="mt-4 space-y-4 text-base leading-relaxed text-foreground/80">
+                {config.equipmentSection.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </div>
+            <div className="grid min-w-0 gap-4">
+              <figure className="overflow-hidden rounded-2xl border bg-card">
+                <div className="aspect-[4/3] w-full overflow-hidden">
+                  <img
+                    src={config.equipmentSection.image.src}
+                    alt={config.equipmentSection.image.alt}
+                    width={800}
+                    height={600}
+                    loading="lazy"
+                    data-dg-image={config.equipmentSection.image.imageFile}
+                    data-dg-placement={config.equipmentSection.image.imageComment}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition:
+                        config.equipmentSection.image.objectPosition ??
+                        cropForFile(config.equipmentSection.image.imageFile),
+                    }}
+                  />
+                </div>
+                <figcaption className="p-4 text-sm text-foreground/75">
+                  {config.equipmentSection.image.caption}
+                </figcaption>
+              </figure>
+              {config.equipmentSection.secondaryImage && (
+                <figure className="overflow-hidden rounded-2xl border bg-card">
+                  <div className="aspect-[4/3] w-full overflow-hidden">
+                    <img
+                      src={config.equipmentSection.secondaryImage.src}
+                      alt={config.equipmentSection.secondaryImage.alt}
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      data-dg-image={config.equipmentSection.secondaryImage.imageFile}
+                      data-dg-placement={config.equipmentSection.secondaryImage.imageComment}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition:
+                          config.equipmentSection.secondaryImage.objectPosition ??
+                          cropForFile(config.equipmentSection.secondaryImage.imageFile),
+                      }}
+                    />
+                  </div>
+                  <figcaption className="p-4 text-sm text-foreground/75">
+                    {config.equipmentSection.secondaryImage.caption}
+                  </figcaption>
+                </figure>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {config.safetyStandards && (
+        <section className={landingSection}>
+          <div className={landingContainer}>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.safetyStandards.title}</h2>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {config.safetyStandards.items.map((item) => (
+                <Card key={item.title} className="h-full">
+                  <CardHeader>
+                    <CardTitle className="flex items-start gap-3 text-lg">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>{item.title}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm leading-relaxed text-foreground/75">{item.body}</CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className={landingSection}>
         <div className={landingContainer}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.packagesTitle}</h2>
@@ -253,6 +343,12 @@ export default function IndustryLandingPage({ config }: Props) {
               </Card>
             ))}
           </div>
+          {config.packagePriceDisclaimer && (
+            <p className="mt-6 text-sm text-foreground/65">
+              Prices shown are indicative and subject to change based on current USD/NGN exchange rates. Contact us for
+              today&apos;s pricing.
+            </p>
+          )}
         </div>
       </section>
 

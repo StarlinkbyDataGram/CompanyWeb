@@ -55,6 +55,82 @@ const standardFaqs = [
   },
 ];
 
+const offshoreMaritimeSchemaFaqs = [
+  {
+    question: "Does Starlink work on offshore oil rigs and FPSOs in Nigeria?",
+    answer:
+      "Yes. DataGram has deployed Starlink on offshore vessels and industrial platforms operating in Nigerian waters, including locations in the Niger Delta and Gulf of Guinea. The Starlink Flat High Performance dish is rated for marine environments and supports VLAN configuration for segregated crew and operations networks.",
+  },
+  {
+    question: "Can Starlink replace VSAT on our offshore platform?",
+    answer:
+      "Starlink can fully replace legacy VSAT systems on most offshore platforms. It offers significantly lower latency (20-40ms vs 600ms+ for geostationary VSAT), no per-MB billing, and faster speeds. DataGram handles the full migration including dish swap, network reconfiguration, and crew training.",
+  },
+  {
+    question: "What paperwork does DataGram handle for offshore Starlink installation?",
+    answer:
+      "DataGram manages the Permit to Work (PTW) process, conducts a pre-installation site survey, and coordinates with your vessel or platform safety officer before any work begins. We document all installation steps and provide post-installation test reports on download/upload speeds and latency.",
+  },
+  {
+    question: "Does Starlink support SD-WAN or failover configuration on offshore vessels?",
+    answer:
+      "Yes. Starlink can be integrated into multi-WAN setups using compatible routers such as Peplink or MikroTik, allowing it to serve as primary internet with 4G/LTE or legacy VSAT as failover. DataGram configures these setups as part of enterprise offshore deployments.",
+  },
+  {
+    question: "What is the power requirement for Starlink Flat High Performance offshore?",
+    answer:
+      "The Starlink Flat High Performance dish draws approximately 75-100W under normal operating conditions with peak draw around 150W during extreme cold or motor calibration. Most offshore platforms can accommodate this on a standard 110V or 220V AC circuit. DataGram assesses power availability during the site survey.",
+  },
+  {
+    question: "Can DataGram install Starlink on a vessel currently at sea or only when docked?",
+    answer:
+      "Installation requires the vessel to be docked or anchored in a stable position. DataGram does not conduct installations on vessels underway. We coordinate with your operations schedule to minimise downtime and can mobilise to port locations across Rivers State, Delta State, Bayelsa, and Lagos.",
+  },
+];
+
+const offshoreMaritimeServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Starlink Offshore Maritime Installation Nigeria",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "DataGram Nigeria",
+    url: "https://www.datagram.ng",
+  },
+  areaServed: {
+    "@type": "GeoShape",
+    name: "Gulf of Guinea and Nigerian Offshore Waters",
+    description:
+      "Offshore waters of the Niger Delta including the Gulf of Guinea, covering operational areas in Rivers State, Delta State, Bayelsa State, and Akwa Ibom State coastal and offshore zones",
+    box: "3.3 2.7 5.5 9.0",
+  },
+  serviceType: "Satellite Internet Installation",
+  description:
+    "Professional SpaceX Starlink satellite internet installation for offshore oil platforms, FPSOs, OSVs, jack-up rigs, and maritime vessels operating in Nigerian waters and the Gulf of Guinea",
+};
+
+const offshoreSafetyStandards = {
+  title: "Our Field Safety Standards",
+  items: [
+    {
+      title: "Pre-installation site survey",
+      body: "Every offshore or vessel installation begins with a documented site survey — we assess power availability, sky view obstruction, cable routing paths, and mounting surface integrity before any equipment is brought on board.",
+    },
+    {
+      title: "Permit to Work coordination",
+      body: "DataGram works within the PTW framework of your platform or vessel operator. We liaise directly with your safety officer and do not commence work until all required approvals are in place.",
+    },
+    {
+      title: "Trained installation team",
+      body: "Our technicians are experienced in working at height, on marine vessels, and in industrial environments. All installations are carried out in pairs — no solo working at elevation or on vessel decks.",
+    },
+    {
+      title: "Post-installation verification",
+      body: "Every installation is tested and signed off before the team leaves site. We provide a written post-installation report including confirmed download/upload speeds and latency readings.",
+    },
+  ],
+};
+
 export const industryLandingPages: IndustryLandingConfig[] = [
   {
     path: "/starlink-offshore-maritime-installation",
@@ -63,7 +139,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Maritime Starlink installs for rigs, OSVs, and coastal bases in Nigeria. Low-latency LEO, marine mounts, and field support from DataGram.",
     canonical: "/starlink-offshore-maritime-installation",
-    ogImage: img("maritime2.jpeg"),
+    ogImage: img("datagram-technician-rooftop-mount.jpg"),
     h1: "Starlink Offshore & Maritime Installation Nigeria",
     heroLabel: "Oil, gas & deep-sea operations",
     heroSubheading:
@@ -76,7 +152,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroObjectPosition: "center",
     overviewTitle: "How maritime Starlink stays connected at sea",
     overviewParagraphs: [
-      "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. Starlink’s low-Earth-orbit network delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
+      "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. SpaceX Starlink satellite internet delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
       "Maritime Starlink uses a phased-array antenna that tracks several low-Earth-orbit satellites at once. A fixed home dish locks to one satellite pass; maritime terminals hand off continuously between satellites as the vessel moves. That handoff is what keeps the link alive in open water where there is no land infrastructure.",
       "DataGram engineers survey deck space, cable glands, and power feeds before any hole is drilled. We document obstruction maps at berth and at typical heading, then specify marine-rated cabling, surge protection, and router placement that keeps bridge networks separate from crew WiFi.",
     ],
@@ -112,22 +188,22 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     proofTitle: "Deployment proof",
     proofCards: [
       proof(
-        "maritime.jpeg",
-        "Starlink dish mounted on vessel bow at sea",
-        "Bow mount on a large vessel at open sea — offshore capability verified in the field.",
-        "IMAGE: maritime.jpeg — large vessel at open sea, clear proof of offshore capability"
+        "datagram-technician-rooftop-mount.jpg",
+        "DataGram technician mounting Starlink dish on rooftop in Nigeria with telecom towers in background",
+        "DataGram field team mounting a Starlink dish on a Nigerian rooftop — real installation, not stock photography.",
+        "IMAGE: datagram-technician-rooftop-mount.jpg — DataGram technician in branded vest, rooftop mount with telecom towers"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Multiple Starlink units in stock at DataGram Nigeria ready for offshore and maritime deployment",
+        "Starlink hardware in stock at DataGram — ready for rapid offshore and maritime mobilisation.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — stacked Starlink boxes showing procurement and stock capability"
       ),
       proof(
         "maritime4.jpeg",
         "Starlink dish installed on oil platform in the Niger Delta",
         "Platform install in the Niger Delta — direct proof for oil and gas operators.",
         "IMAGE: maritime4.jpeg — real Nigerian gas flare rig — direct visual proof for oil and gas clients"
-      ),
-      proof(
-        "maritime5.jpeg",
-        "Starlink dish on vessel railing at sea, DataGram offshore installation",
-        "Deck railing mount in open water — reliable offshore connectivity.",
-        "IMAGE: maritime5.jpeg — clean offshore deck shot, open grey sea — reinforces offshore reliability"
       ),
     ],
     speedStat: SPEED,
@@ -186,16 +262,16 @@ export const industryLandingPages: IndustryLandingConfig[] = [
           "Yes. The right plan depends on your vessel type, how far it travels in nautical miles, and the regions it operates in. DataGram will assess your vessel profile and recommend the appropriate subscription before activation.",
       },
       {
-        question: "Do you have BOSIET or maritime certification?",
-        answer: "Yes, we do.",
-      },
-      {
         question: "Do you handle maritime activation and subscription?",
         answer: "Yes, we do.",
       },
       roamingFaq,
       ...standardFaqs,
     ],
+    schemaFaqs: offshoreMaritimeSchemaFaqs,
+    extraSchemas: [offshoreMaritimeServiceSchema],
+    safetyStandards: offshoreSafetyStandards,
+    packagePriceDisclaimer: true,
     serviceAreaSchema: "Nigerian offshore and coastal waters",
     keywords: [
       "Starlink maritime Nigeria",
@@ -502,7 +578,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroObjectPosition: "center top",
     overviewTitle: "Connectivity that moves with your hull",
     overviewParagraphs: [
-      "Coastal ferries, fishing fleets, and private yachts need internet that is not tied to marina WiFi passwords. Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
+      "Coastal ferries, fishing fleets, and private yachts need internet that is not tied to marina WiFi passwords. SpaceX Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
       "DataGram installs DC-fed power where inverters are noisy, routes cable away from winches and bait tanks, and tests at cruise RPM so vibration does not loosen glands mid-season.",
     ],
     stats: [
@@ -549,12 +625,31 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         "IMAGE: maritime3.jpeg — close-up of Starlink mount bracket on patrol boat"
       ),
       proof(
-        "maritime3.jpeg",
-        "Starlink dish on boat mast in Nigerian waterway",
-        "Waterway context with bridge and port infrastructure visible.",
-        "IMAGE: maritime3.jpeg — dish on boat mast with Nigerian waterway/bridge behind — boat-specific context"
+        "datagram-starlink-unboxing-mount-bracket.jpg",
+        "Starlink mount bracket and hardware from open kit for marine installation",
+        "Marine mount hardware from a live Starlink kit — what we spec before deck drilling.",
+        "IMAGE: datagram-starlink-unboxing-mount-bracket.jpg — mount bracket from DataGram field kit"
       ),
     ],
+    equipmentSection: {
+      title: "What's included in your marine kit",
+      paragraphs: [
+        "Every boat install starts with the correct Starlink hardware for your route and plan class — typically Flat High Performance or mobility-rated equipment for coastal Nigerian waters. We verify plan eligibility before you buy, then mount, seal, and power the kit for your vessel's DC or AC setup.",
+        "The photo below shows a genuine Starlink kit as delivered: dish, mount hardware, integrated cable, router, and power supply arranged for marine deployment. DataGram handles unboxing, mount selection, deck sealing, and sea-trial speed verification as part of every coastal install.",
+      ],
+      image: proof(
+        "datagram-starlink-unboxing-hardware.jpg",
+        "Starlink hardware unboxing showing dish, mount, router and cables for marine installation",
+        "Open Starlink kit with dish, mount, router, and cables — ready for marine install.",
+        "IMAGE: datagram-starlink-unboxing-hardware.jpg — overhead unboxing shot, full kit contents"
+      ),
+      secondaryImage: proof(
+        "datagram-starlink-unboxing-kit-contents.jpg",
+        "Starlink High Performance power supply, router, and cables in kit packaging",
+        "High Performance router, power supply, and cabling as shipped from Starlink.",
+        "IMAGE: datagram-starlink-unboxing-kit-contents.jpg — router and power supply in foam tray"
+      ),
+    },
     speedStat: SPEED,
     testimonial: {
       quote:
@@ -611,6 +706,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       roamingFaq,
       ...standardFaqs,
     ],
+    packagePriceDisclaimer: true,
     serviceAreaSchema: "Nigerian coastal and inland waterways",
     keywords: [
       "Starlink boat Nigeria",

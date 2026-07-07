@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Award, Clock, Headphones, MapPin } from "lucide-react";
+import { Award, CheckCircle2, Clock, Headphones, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -112,6 +112,11 @@ export default function RegionalLandingPage({ config }: Props) {
               {config.heroLabel}
             </p>
             <h1 className={landingH1}>{config.h1}</h1>
+            {config.entityBadge && (
+              <p className="mt-4 inline-flex max-w-3xl rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-sm font-medium leading-snug text-[#6ea8ff]">
+                {config.entityBadge}
+              </p>
+            )}
             <p className={landingHeroSub}>{config.heroSubheading}</p>
             <div className={landingHeroCtas}>
               <Button asChild size="lg" className={landingBtnPrimary}>
@@ -228,6 +233,27 @@ export default function RegionalLandingPage({ config }: Props) {
         </div>
       </section>
 
+      {config.safetyStandards && (
+        <section className={landingSection}>
+          <div className={landingContainer}>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.safetyStandards.title}</h2>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {config.safetyStandards.items.map((item) => (
+                <Card key={item.title} className="h-full">
+                  <CardHeader>
+                    <CardTitle className="flex items-start gap-3 text-lg">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>{item.title}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm leading-relaxed text-foreground/75">{item.body}</CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className={landingSection}>
         <div className={landingContainer}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Coverage in {config.stateName}</h2>
@@ -261,6 +287,12 @@ export default function RegionalLandingPage({ config }: Props) {
               </AccordionItem>
             ))}
           </Accordion>
+          {config.packagePriceDisclaimer && (
+            <p className="mt-6 text-sm text-foreground/65">
+              Prices shown are indicative and subject to change based on current USD/NGN exchange rates. Contact us for
+              today&apos;s pricing.
+            </p>
+          )}
         </div>
       </section>
 

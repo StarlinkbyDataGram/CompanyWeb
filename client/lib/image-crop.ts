@@ -29,6 +29,12 @@ export const IMAGE_CROP_BY_FILE: Record<string, ImageCropPreset> = {
   "residentalSetup.jpeg": { desktop: "center top", mobile: "center top" },
   "StarlinkInstallationresidential.jpeg": { desktop: "center top", mobile: "center top" },
   "StarlinkRoofMount.jpeg": { desktop: "top center", mobile: "top center" },
+  "datagram-technician-rooftop-mount.jpg": { desktop: "center top", mobile: "center top" },
+  "datagram-technician-dish-port.jpg": { desktop: "center", mobile: "center" },
+  "datagram-starlink-unboxing-hardware.jpg": { desktop: "center", mobile: "center" },
+  "datagram-starlink-boxes-stock.jpg": { desktop: "center", mobile: "center" },
+  "datagram-starlink-unboxing-mount-bracket.jpg": { desktop: "center", mobile: "center" },
+  "datagram-starlink-unboxing-kit-contents.jpg": { desktop: "center top", mobile: "center top" },
 };
 
 export function cropForFile(file: string, override?: string): string {
