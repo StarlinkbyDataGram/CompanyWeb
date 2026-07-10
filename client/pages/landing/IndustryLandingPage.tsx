@@ -79,6 +79,21 @@ export default function IndustryLandingPage({ config }: Props) {
                 {/* IMAGE: maritime3.jpeg — patrol boat mast with Nigerian waterway and bridge */}
               </>
             )}
+            {config.path === "/starlink-enterprise-marine-hub" && (
+              <>
+                {/* IMAGE: StarlinkCompanyInstallation.jpeg — institutional enterprise install for hub landing */}
+              </>
+            )}
+            {config.path === "/starlink-offshore-hse-compliance" && (
+              <>
+                {/* IMAGE: maritime4.jpeg — Niger Delta platform install supporting HSE/offshore safety page */}
+              </>
+            )}
+            {config.path === "/starlink-marine-sdwan-integration" && (
+              <>
+                {/* IMAGE: maritime2.jpeg — vessel deck connectivity context for marine SD-WAN bonding */}
+              </>
+            )}
             {config.heroImage && config.heroImageFile && (
               <img
                 src={config.heroImage}
@@ -105,7 +120,9 @@ export default function IndustryLandingPage({ config }: Props) {
             <p className={landingHeroSub}>{config.heroSubheading}</p>
             <div className={landingHeroCtas}>
               <Button asChild size="lg" className={landingBtnPrimary}>
-                <Link to="/contact">Get a Free Site Survey</Link>
+                <Link to={config.heroPrimaryCta?.href ?? "/contact"}>
+                  {config.heroPrimaryCta?.label ?? "Get a Free Site Survey"}
+                </Link>
               </Button>
               <Button asChild size="lg" className={landingBtnWhatsApp}>
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
@@ -180,7 +197,17 @@ export default function IndustryLandingPage({ config }: Props) {
                     </div>
                     <CardTitle className="text-lg">{card.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="text-sm leading-relaxed text-foreground/75">{card.body}</CardContent>
+                  <CardContent className="space-y-3 text-sm leading-relaxed text-foreground/75">
+                    <p>{card.body}</p>
+                    {card.href && (
+                      <Link
+                        to={card.href}
+                        className="inline-flex font-semibold text-primary underline-offset-4 hover:underline"
+                      >
+                        {card.linkLabel ?? "Learn more"}
+                      </Link>
+                    )}
+                  </CardContent>
                 </Card>
               );
             })}
@@ -358,7 +385,17 @@ export default function IndustryLandingPage({ config }: Props) {
                     <CardHeader>
                       <CardTitle className="text-lg">{card.title}</CardTitle>
                     </CardHeader>
-                    <CardContent className="text-sm leading-relaxed text-foreground/75">{card.body}</CardContent>
+                    <CardContent className="space-y-3 text-sm leading-relaxed text-foreground/75">
+                      <p>{card.body}</p>
+                      {card.href && (
+                        <Link
+                          to={card.href}
+                          className="inline-flex font-semibold text-primary underline-offset-4 hover:underline"
+                        >
+                          {card.linkLabel ?? "Learn more"}
+                        </Link>
+                      )}
+                    </CardContent>
                   </Card>
                 ))}
               </div>
@@ -397,6 +434,26 @@ export default function IndustryLandingPage({ config }: Props) {
           </div>
         </section>
       ))}
+
+      {config.relatedLinks && config.relatedLinks.length > 0 && (
+        <section className={`${landingSection} border-b`}>
+          <div className={landingContainer}>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Related services</h2>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              {config.relatedLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-base font-semibold text-primary underline-offset-4 hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className={landingSection}>
         <div className={landingContainer}>
@@ -454,17 +511,27 @@ export default function IndustryLandingPage({ config }: Props) {
       <section className={landingCtaSection}>
         <div className={`${landingContainer} flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between`}>
           <div className="min-w-0">
-            <h2 className="text-xl font-bold sm:text-2xl">Ready to deploy? Contact us today</h2>
+            <h2 className="text-xl font-bold sm:text-2xl">
+              {config.ctaBanner?.title ?? "Ready to deploy? Contact us today"}
+            </h2>
             <p className="mt-2 text-sm text-white/90 sm:text-base">
-              Book a free site survey or message our install desk on WhatsApp.
+              {config.ctaBanner?.body ??
+                "Book a free site survey or message our install desk on WhatsApp."}
             </p>
           </div>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
-              <Link to="/contact">Book survey</Link>
+              <Link to={config.ctaBanner?.href ?? "/contact"}>
+                {config.ctaBanner?.buttonLabel ?? "Book survey"}
+              </Link>
             </Button>
             <Button asChild size="lg" className={landingCtaBtnOutline}>
               <a href="tel:+2349060976424">Call +234 906 097 6424</a>
+            </Button>
+            <Button asChild size="lg" className={landingCtaBtnOutline}>
+              <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>

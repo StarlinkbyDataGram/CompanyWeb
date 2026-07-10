@@ -4,7 +4,13 @@ export type FaqItem = { question: string; answer: string };
 
 export type StatItem = { label: string; value: string; note?: string };
 
-export type IconCard = { title: string; body: string; icon: LucideIcon };
+export type IconCard = {
+  title: string;
+  body: string;
+  icon: LucideIcon;
+  href?: string;
+  linkLabel?: string;
+};
 
 export type ProofCard = {
   alt: string;
@@ -45,8 +51,8 @@ export type DownloadCta = {
 export type ExtraContentSection = {
   title: string;
   paragraphs?: string[];
-  /** 2–4 cards with title + body */
-  cards?: { title: string; body: string }[];
+  /** 2–4 cards with title + body; optional href for internal navigation */
+  cards?: { title: string; body: string; href?: string; linkLabel?: string }[];
   /** Checklist lines (rendered with CheckCircle2) */
   checklist?: string[];
   /** Small detail cards (2-col grid) */
@@ -89,6 +95,9 @@ export type IndustryLandingConfig = {
   equipmentSection?: EquipmentSection;
   downloadCta?: DownloadCta;
   extraSections?: ExtraContentSection[];
+  relatedLinks?: { label: string; href: string }[];
+  heroPrimaryCta?: { label: string; href?: string };
+  ctaBanner?: { title: string; body: string; buttonLabel: string; href: string };
   packagePriceDisclaimer?: boolean;
   serviceAreaSchema: string;
   keywords: string[];

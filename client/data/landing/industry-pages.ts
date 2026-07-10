@@ -1,4 +1,4 @@
-import { Anchor, Building2, Home, Ship, Waves, Wifi, Zap, Shield } from "lucide-react";
+import { Anchor, Building2, Factory, HeartHandshake, Home, Network, Ship, Waves, Wifi, Zap, Shield } from "lucide-react";
 import { cropForFile } from "@/lib/image-crop";
 import type { IndustryLandingConfig } from "./types";
 
@@ -782,6 +782,741 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "marine Starlink leisure craft",
       "yacht satellite internet Lagos",
       "fishing vessel connectivity",
+    ],
+  },
+  {
+    path: "/starlink-enterprise-marine-hub",
+    seoTitle:
+      "Enterprise & Marine Starlink Connectivity Nigeria | Turnkey Network Integration | DataGram",
+    metaDescription:
+      "Turnkey Starlink network integration for Nigerian enterprises, NGOs, offshore vessels, and industrial sites — from survey to managed support.",
+    canonical: "/starlink-enterprise-marine-hub",
+    ogImage: img("StarlinkCompanyInstallation.jpeg"),
+    h1: "Turnkey Starlink Network Integration for Enterprise and Maritime Operations in Nigeria",
+    heroLabel: "Enterprise & marine connectivity hub",
+    heroSubheading:
+      "DataGram designs, installs, and documents Starlink networks for offices, NGOs, vessels, and industrial sites — from sky-view survey through VLAN handoff and managed support.",
+    heroImageAlt:
+      "DataGram Starlink enterprise installation at an institutional facility in Nigeria",
+    heroImage: img("StarlinkCompanyInstallation.jpeg"),
+    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageReason:
+      "Institutional facility install — signals turnkey enterprise and marine network integration, not a consumer kit drop",
+    heroObjectPosition: "center top",
+    heroPrimaryCta: { label: "Request an Enterprise Survey", href: "/contact" },
+    overviewTitle: "One desk for land and sea Starlink projects",
+    overviewParagraphs: [
+      "Nigerian operators rarely need a dish alone. They need a network that survives generator transfers, estate drilling rules, PTW on vessels, and IT handover that procurement can audit. This hub is the starting point for turnkey Starlink work across corporate campuses, NGO programmes, offshore fleets, and oil-field camps.",
+      "DataGram covers South-South and South-East Nigeria as standard, with special-request mobilisation elsewhere. We match plan class and hardware to the site — Fixed High Performance or mobility-rated gear offshore, structured LAN integration on land — then leave speed baselines, cable photos, and escalation contacts with your team.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "LEO path; WiFi and WAN design still matter." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Plan class, obstruction, and load affect peaks." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Size honestly for CCTV, ERP, and crew welfare." },
+      { label: "Survey to live", value: "3–14 days", note: "Depends on access windows, PTW, and hardware lead time." },
+    ],
+    whyTitle: "Who this is for",
+    whyCards: [
+      {
+        icon: Building2,
+        title: "Corporate offices and multi-site businesses",
+        body: "Independent backup WAN, VLAN handoff to your firewall, and documented failover for Lagos, Abuja, and industrial campuses.",
+        href: "/starlink-enterprise-nigeria",
+        linkLabel: "Enterprise Starlink Nigeria",
+      },
+      {
+        icon: HeartHandshake,
+        title: "NGOs and humanitarian organisations",
+        body: "Field sites and programme offices that need donor-ready install packs, generator-aware UPS, and connectivity where fibre never arrived.",
+        href: "/starlink-enterprise-nigeria",
+        linkLabel: "Enterprise & NGO Starlink",
+      },
+      {
+        icon: Ship,
+        title: "Offshore vessels and maritime operations",
+        body: "OSVs, platforms, and coastal fleets that need motion-rated mounts, salt-spray cabling, and crew-vs-ops network separation.",
+        href: "/starlink-offshore-maritime-installation",
+        linkLabel: "Offshore maritime installation",
+      },
+      {
+        icon: Factory,
+        title: "Industrial sites and oil field camps",
+        body: "Creek camps, plant yards, and Niger Delta industrial corridors where canopy, power quality, and access logistics drive the install plan.",
+        href: "/starlink-installation-niger-delta",
+        linkLabel: "Niger Delta installation coverage",
+      },
+    ],
+    extraSections: [
+      {
+        title: "What we deliver — standard install vs DataGram enterprise service",
+        paragraphs: [
+          "A kit on a roof is not the same as a network your IT or HSE desk can accept. The table below shows where a basic install stops and where our enterprise service continues.",
+        ],
+        details: [
+          {
+            title: "Site survey depth",
+            body: "Standard: quick sky-view check. DataGram: obstruction map, power circuit notes, cable route sketch, estate or PTW constraints, and a written materials list before mobilisation.",
+          },
+          {
+            title: "Cable management",
+            body: "Standard: shortest path to the router. DataGram: conduit or tray where required, drip loops, labelled runs, and routes that survive salt spray or estate facade rules.",
+          },
+          {
+            title: "Network configuration",
+            body: "Standard: default Starlink WiFi. DataGram: Ethernet handoff, VLANs for guest vs ops, dual-WAN or SD-WAN options, and firewall integration when your team provides requirements.",
+          },
+          {
+            title: "Post-installation support",
+            body: "Standard: self-serve app tickets. DataGram: managed support paths for enterprise, roaming, and maritime clients on active subscriptions — plus clear escalation when hardware faults need a truck roll.",
+          },
+          {
+            title: "Documentation",
+            body: "Standard: receipt and app login. DataGram: photos, IP plan, speed baselines at the desk (not only beside the dish), UPS runtime notes, and contacts for your facilities or safety officer.",
+          },
+          {
+            title: "Compliance",
+            body: "Standard: none beyond kit terms. DataGram: works inside your PTW and two-man field rules offshore; estate scope letters on land. See our offshore HSE page for vessel and platform practice.",
+          },
+        ],
+      },
+      {
+        title: "Choose your dedicated service path",
+        paragraphs: [
+          "Use this hub to pick the right deep-dive page. Each link below is a live DataGram route — not a placeholder.",
+        ],
+        cards: [
+          {
+            title: "Enterprise & NGO sites",
+            body: "Offices, campuses, and programme sites: dual-WAN, VLANs, generator-safe power, and audit-friendly handover.",
+            href: "/starlink-enterprise-nigeria",
+            linkLabel: "Open enterprise Starlink Nigeria",
+          },
+          {
+            title: "Offshore & maritime",
+            body: "Rigs, OSVs, FPSOs, and coastal bases: marine mounts, FHP hardware, and deck-safe cable routing.",
+            href: "/starlink-offshore-maritime-installation",
+            linkLabel: "Open offshore maritime installation",
+          },
+          {
+            title: "Boats & coastal craft",
+            body: "Leisure and workboats needing mobility-rated kits, DC power planning, and marina-friendly installs.",
+            href: "/starlink-boat-installation",
+            linkLabel: "Open boat installation",
+          },
+          {
+            title: "Offshore HSE practice",
+            body: "PTW coordination, two-man rule, pre-mobilisation survey, and post-install test reports for Niger Delta work.",
+            href: "/starlink-offshore-hse-compliance",
+            linkLabel: "Open offshore HSE compliance",
+          },
+        ],
+      },
+    ],
+    proofTitle: "Deployment proof",
+    proofCards: [
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "DataGram Starlink setup at institutional facility in Nigeria",
+        "Institutional and enterprise installs with documented handover.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — enterprise hub proof for corporate and NGO buyers"
+      ),
+      proof(
+        "maritime4.jpeg",
+        "Starlink dish installed on oil platform in the Niger Delta",
+        "Platform and industrial corridor work across the Niger Delta.",
+        "IMAGE: maritime4.jpeg — offshore and industrial proof for marine hub audience"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware stocked at DataGram Nigeria for rapid mobilisation",
+        "Hardware in stock for faster enterprise and maritime mobilisation.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — procurement readiness for turnkey projects"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "We needed one contractor who could talk to IT on land and the safety officer on the vessel. Survey, install, and VLAN notes arrived in one pack.",
+      attribution: "Facilities lead, multi-site operator (name withheld)",
+    },
+    packagesTitle: "Engagement options",
+    packages: [
+      {
+        name: "Enterprise survey",
+        priceLabel: "From ₦150,000",
+        features: [
+          "Sky view and mount recommendation",
+          "Power and UPS notes",
+          "Network handoff sketch (VLAN / dual-WAN)",
+        ],
+        cta: "Request an Enterprise Survey",
+      },
+      {
+        name: "Turnkey install",
+        priceLabel: "Quoted after survey",
+        features: [
+          "Mount, cable, grounding",
+          "Router / firewall integration",
+          "Baseline speed and photo handover",
+        ],
+        cta: "Request proposal",
+      },
+      {
+        name: "Managed support",
+        priceLabel: "Custom SLA",
+        features: [
+          "Priority support for active subscriptions",
+          "Subscription renewal coordination",
+          "Hardware swap planning when faults persist",
+        ],
+        cta: "Speak to our enterprise team",
+      },
+    ],
+    relatedLinks: [
+      { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
+      { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
+      { label: "Boat Installation", href: "/starlink-boat-installation" },
+      { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
+      { label: "Niger Delta Installation Coverage", href: "/starlink-installation-niger-delta" },
+    ],
+    ctaBanner: {
+      title: "Speak to our enterprise team",
+      body: "Tell us whether the site is an office, NGO field base, vessel, or industrial camp — we route you to the right survey pack.",
+      buttonLabel: "Contact DataGram",
+      href: "/contact",
+    },
+    faqs: [
+      {
+        question: "Is this hub a separate product from your enterprise and maritime pages?",
+        answer:
+          "No. This page is the turnkey overview. Dedicated scope, packages, and field detail live on the enterprise, offshore maritime, boat, HSE, and Niger Delta pages linked above.",
+      },
+      {
+        question: "Can DataGram handle both office and vessel installs for one company?",
+        answer:
+          "Yes. Many operators need shore offices and fleet connectivity under one vendor. We coordinate surveys separately for land and marine assets, then align VLAN and support contacts across both.",
+      },
+      {
+        question: "Do you invent certification numbers for offshore work?",
+        answer:
+          "No. We work inside your Permit to Work framework, use a two-man rule on vessel decks, and issue post-installation test reports. Formal third-party cert claims are only stated when held — see our offshore HSE page for current field practice.",
+      },
+      {
+        question: "What does a turnkey project usually include?",
+        answer:
+          "Survey, correct hardware and plan class, professional mount and cable route, network configuration to your requirements, speed baseline, and written handover. Managed support is optional for clients on active subscriptions.",
+      },
+      roamingFaq,
+      ...standardFaqs,
+    ],
+    extraSchemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Enterprise and Marine Starlink Network Integration Nigeria",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "DataGram Nigeria",
+          url: "https://www.datagram.ng",
+        },
+        areaServed: { "@type": "Country", name: "Nigeria" },
+        serviceType: "Satellite Internet Network Integration",
+        description:
+          "Turnkey Starlink network integration for Nigerian enterprises, NGOs, offshore vessels, and industrial sites — from site survey to managed support.",
+        url: "https://www.datagram.ng/starlink-enterprise-marine-hub",
+      },
+    ],
+    packagePriceDisclaimer: true,
+    serviceAreaSchema: "Nigeria — enterprise, NGO, maritime, and industrial sites",
+    keywords: [
+      "enterprise Starlink Nigeria",
+      "marine Starlink network integration",
+      "turnkey Starlink installation Nigeria",
+      "offshore Starlink Nigeria",
+      "NGO Starlink connectivity",
+    ],
+    includeHowTo: true,
+  },
+  {
+    path: "/starlink-offshore-hse-compliance",
+    seoTitle:
+      "Offshore Starlink Installation Nigeria | HSE Compliance & Safety Standards | DataGram",
+    metaDescription:
+      "DataGram offshore Starlink installs under PTW on Niger Delta sites — pre-mobilisation survey, two-man rule, and documented post-install test reports.",
+    canonical: "/starlink-offshore-hse-compliance",
+    ogImage: img("maritime4.jpeg"),
+    h1: "Offshore Starlink Installation in Nigeria: HSE-Aware, Field-Ready, and Fully Documented",
+    heroLabel: "Offshore HSE & field practice",
+    heroSubheading:
+      "DataGram's offshore team operates under Permit to Work (PTW) frameworks and documented field safety standards across all Niger Delta and Gulf of Guinea deployments.",
+    heroImageAlt: "Starlink dish installed on an oil platform in the Niger Delta, Nigeria",
+    heroImage: img("maritime4.jpeg"),
+    heroImageFile: "maritime4.jpeg",
+    heroImageReason:
+      "Niger Delta platform install — visual proof for HSE and offshore procurement audiences",
+    heroObjectPosition: "center",
+    heroPrimaryCta: { label: "Request an Offshore Survey", href: "/contact" },
+    overviewTitle: "Safety practice before the first hole is drilled",
+    overviewParagraphs: [
+      "Offshore Starlink work fails when installers treat a vessel like a bungalow roof. Deck access, crane sweep, hot work rules, and your platform safety officer decide the schedule — not a WhatsApp photo of a clear sky. DataGram mobilises only after a pre-installation survey and PTW coordination with your operator.",
+      "Our confirmed field practices are the same standards published on the offshore maritime page: documented site survey, PTW liaison, two-man working at height and on decks, and a written post-installation speed report before the crew leaves site. Formal third-party maritime safety certifications (including BOSIET and NIMASA-issued credentials) are required for all offshore team members and are in progress — we do not list cert numbers we do not currently hold.",
+      "For full marine hardware scope, mounts, and plan classes, use the dedicated offshore maritime installation page. This page focuses on how we work safely and what documentation you receive.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "After install baseline recorded on site." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Logged in the post-install test report." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Plan class confirmed before mobilisation." },
+      { label: "Install window", value: "1–3 days", note: "After survey and PTW approval." },
+    ],
+    whyTitle: "Safety standards and field practice",
+    whyCards: [
+      {
+        icon: Shield,
+        title: "PTW compliance on all offshore sites",
+        body: "We work inside your platform or vessel Permit to Work framework and do not start until your safety officer has approved the job.",
+      },
+      {
+        icon: Anchor,
+        title: "Pre-mobilisation site survey",
+        body: "Power, sky view, cable paths, and mounting surface integrity are documented before equipment is brought on board.",
+      },
+      {
+        icon: Ship,
+        title: "Two-man minimum rule",
+        body: "No solo working at elevation or on vessel decks. Installations are carried out in pairs as a standing field rule.",
+      },
+      {
+        icon: Waves,
+        title: "Marine-rated hardware selection",
+        body: "Flat High Performance and corrosion-aware mounts, glands, and fixings matched to spray and vibration — not residential kits on a railing.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "Additional field controls on every vessel install",
+        checklist: [
+          "Grounding and lightning protection planned into the cable and power path",
+          "Post-installation test report issued on every job (download, upload, latency)",
+          "Crane sweep and walkway clearance checked before final mount position",
+          "Bridge / ops networks kept separate from crew WiFi when IT provides VLAN requirements",
+        ],
+        note: "Source of truth for the four core field safety standards: Our Field Safety Standards on the offshore maritime installation page — linked under Related services below.",
+        footerNote: "We summarise practice here; we do not duplicate that section word-for-word.",
+      },
+      {
+        title: "Our offshore process",
+        details: [
+          {
+            title: "Step 1 — Pre-mobilisation remote survey",
+            body: "Remote assessment of sky view, power source, canopy or structure obstruction, and access route so the visit can complete safely in one mobilisation where possible.",
+          },
+          {
+            title: "Step 2 — PTW and safety briefing",
+            body: "PTW application and briefing with the vessel or platform safety officer. Work does not start without required approvals.",
+          },
+          {
+            title: "Step 3 — Installation",
+            body: "Mast or pedestal, crane sweep check, cable route, router placement, power circuit, and grounding — executed under two-man rules.",
+          },
+          {
+            title: "Step 4 — Activation and speed baseline",
+            body: "Service activation and on-site download/upload/latency readings recorded for the handover pack.",
+          },
+          {
+            title: "Step 5 — Handover documentation",
+            body: "Written report issued to the client: photos, test results, cable notes, and support contacts for your operations desk.",
+          },
+        ],
+      },
+      {
+        title: "Proof of work",
+        paragraphs: [
+          "DataGram has completed Starlink installations across the Niger Delta and Gulf of Guinea for vessels and industrial platforms. Named client logos and vessel references are added here when release permission is available.",
+        ],
+        note: "PROOF: add client logos or named deployment references when available — offshore clients, vessel names, oil camp names. DataGram has completed installations across the Niger Delta and Gulf of Guinea.",
+      },
+    ],
+    proofTitle: "Field deployments",
+    proofCards: [
+      proof(
+        "maritime4.jpeg",
+        "Starlink dish on oil platform in the Niger Delta",
+        "Platform install context for oil and gas HSE reviewers.",
+        "IMAGE: maritime4.jpeg — Niger Delta platform proof for HSE landing"
+      ),
+      proof(
+        "maritime2.jpeg",
+        "Starlink dish on tanker deck in open ocean",
+        "Deep-sea deck environment where PTW and spray-rated hardware matter.",
+        "IMAGE: maritime2.jpeg — open-ocean deck context for offshore HSE page"
+      ),
+      proof(
+        "datagram-technician-rooftop-mount.jpg",
+        "DataGram technician mounting Starlink hardware in Nigeria",
+        "Field crew practice — paired working and documented mounts.",
+        "IMAGE: datagram-technician-rooftop-mount.jpg — technician proof for process credibility"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "They waited for our PTW sign-off and left a speed report the OIM could file. No solo deck work, no surprises for the safety officer.",
+      attribution: "Marine superintendent, OSV operator (name withheld)",
+    },
+    packagesTitle: "Offshore engagement",
+    packages: [
+      {
+        name: "Offshore survey",
+        priceLabel: "Quoted by mobilisation",
+        features: [
+          "Remote pre-mobilisation assessment",
+          "PTW coordination notes",
+          "Mount and power recommendations",
+        ],
+        cta: "Request an Offshore Survey",
+      },
+      {
+        name: "Vessel / platform install",
+        priceLabel: "Quoted after survey",
+        features: [
+          "Two-man install under PTW",
+          "Marine-rated mount and cable route",
+          "On-site speed baseline report",
+        ],
+        cta: "Book an Offshore Survey",
+      },
+    ],
+    relatedLinks: [
+      { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
+      { label: "Boat Installation", href: "/starlink-boat-installation" },
+      { label: "Niger Delta Installation Coverage", href: "/starlink-installation-niger-delta" },
+      { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
+      { label: "Marine SD-WAN Integration", href: "/starlink-marine-sdwan-integration" },
+    ],
+    ctaBanner: {
+      title: "Book an Offshore Survey",
+      body: "Message us on WhatsApp with vessel type, berth or yard location, and your safety officer contact — we reply with survey next steps.",
+      buttonLabel: "Book an Offshore Survey",
+      href: "/contact",
+    },
+    faqs: [
+      {
+        question: "Does DataGram hold BOSIET or NIMASA HSE certificates today?",
+        answer:
+          "DataGram does not currently claim formal BOSIET or NIMASA certification numbers on this site. Those credentials are required for all offshore team members and are in progress. What we do confirm today is PTW coordination, two-man field rules, pre-mobilisation surveys, and post-installation test reports.",
+      },
+      {
+        question: "What is a Permit to Work (PTW) in this context?",
+        answer:
+          "PTW is your operator's controlled work permit. We liaise with your safety officer, follow site rules for hot work, height, and deck access, and do not commence until approvals are in place.",
+      },
+      {
+        question: "Where can I read your full Field Safety Standards copy?",
+        answer:
+          "On the offshore maritime installation page under Our Field Safety Standards. This HSE page summarises practice and process; that page is the source of truth for the four core standards.",
+      },
+      {
+        question: "Can you install while the vessel is underway?",
+        answer:
+          "No. Installation requires the vessel docked or anchored in a stable position. We coordinate with your operations schedule to minimise downtime.",
+      },
+      {
+        question: "What is in the post-installation test report?",
+        answer:
+          "Confirmed download and upload speeds, latency readings, and notes on mount and cable completion so your operations or IT desk has a filed baseline.",
+      },
+      roamingFaq,
+    ],
+    schemaFaqs: [
+      {
+        question: "Does DataGram follow PTW on offshore Starlink installs in Nigeria?",
+        answer:
+          "Yes. DataGram works within the Permit to Work framework of the platform or vessel operator, liaises with the safety officer, and does not commence until required approvals are in place.",
+      },
+      {
+        question: "What field safety practices does DataGram confirm for offshore work?",
+        answer:
+          "Pre-mobilisation site survey, PTW coordination, two-man minimum rule for deck and height work, marine-rated hardware selection, grounding planning, and a written post-installation speed report on every job.",
+      },
+      {
+        question: "Does DataGram claim BOSIET or NIMASA certification on this page?",
+        answer:
+          "No. Formal BOSIET and NIMASA credentials are required for offshore team members and are in progress. DataGram does not publish cert numbers it does not currently hold.",
+      },
+    ],
+    extraSchemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        name: "Offshore Starlink Installation HSE Practice Nigeria",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "DataGram Nigeria",
+          url: "https://www.datagram.ng",
+        },
+        areaServed: {
+          "@type": "Place",
+          name: "Niger Delta and Gulf of Guinea offshore waters",
+        },
+        serviceType: "Offshore Satellite Internet Installation",
+        description:
+          "HSE-aware Starlink installation for Nigerian offshore vessels and platforms under Permit to Work frameworks, with pre-mobilisation survey, two-man field rules, and documented post-installation test reports.",
+        url: "https://www.datagram.ng/starlink-offshore-hse-compliance",
+      },
+    ],
+    packagePriceDisclaimer: true,
+    serviceAreaSchema: "Nigerian offshore waters — Niger Delta and Gulf of Guinea",
+    keywords: [
+      "offshore Starlink HSE Nigeria",
+      "Starlink PTW installation",
+      "Niger Delta Starlink safety",
+      "offshore Starlink survey Nigeria",
+    ],
+  },
+  {
+    path: "/starlink-marine-sdwan-integration",
+    seoTitle:
+      "Marine SD-WAN & Network Bonding Nigeria | Starlink + 4G Failover for Vessels | DataGram",
+    metaDescription:
+      "DataGram configures Starlink SD-WAN for Nigerian vessels and offshore sites — Starlink with 4G or VSAT failover for resilient maritime connectivity.",
+    canonical: "/starlink-marine-sdwan-integration",
+    ogImage: img("maritime2.jpeg"),
+    h1: "Marine SD-WAN Integration: Starlink + 4G/VSAT Failover for Nigerian Vessels and Offshore Sites",
+    heroLabel: "Marine SD-WAN & multi-WAN bonding",
+    heroSubheading:
+      "No single connection is enough for commercial maritime operations. DataGram configures multi-WAN bonding for zero-downtime connectivity at sea.",
+    heroImageAlt: "Starlink terminal on a vessel deck for multi-WAN maritime connectivity in Nigeria",
+    heroImage: img("maritime2.jpeg"),
+    heroImageFile: "maritime2.jpeg",
+    heroImageReason:
+      "Vessel deck with open water — frames multi-path connectivity for commercial maritime buyers",
+    heroObjectPosition: "center",
+    heroPrimaryCta: { label: "Get a Network Integration Proposal", href: "/contact" },
+    overviewTitle: "What SD-WAN means for vessels — without the jargon fog",
+    overviewParagraphs: [
+      "A WAN is a wide-area link to the internet — Starlink, 4G LTE, or legacy VSAT. SD-WAN (software-defined WAN) and dual-WAN routers decide which link carries traffic and what happens when one path fails. Bonding or failover is the practical outcome: if Starlink drops in heavy rain or a beam handoff, crew and bridge traffic move to the backup path instead of going dark.",
+      "A single Starlink dish is still a single point of failure. Commercial OSVs, FPSOs, and NGO vessels in remote waterways need a written failover order, not hope. DataGram selects and configures dual-WAN routers, sets VLANs for crew WiFi versus bridge operations versus CCTV, and applies QoS so critical traffic keeps priority during a switch.",
+      "Hardware install and HSE practice live on our offshore maritime and HSE pages. This page covers the network integration layer on top of a working Starlink path.",
+    ],
+    stats: [
+      { label: "Typical Starlink latency", value: "20–33 ms", note: "Failover path latency depends on 4G or VSAT." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Primary Starlink path under normal conditions." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Shape CCTV and sync so backups are not saturated." },
+      { label: "Design window", value: "Survey + config", note: "Quoted after vessel network and coverage review." },
+    ],
+    whyTitle: "Integration options",
+    whyCards: [
+      {
+        icon: Wifi,
+        title: "Starlink + 4G LTE failover",
+        body: "Best for coastal vessels and near-shore ops where LTE coverage is usable. Starlink stays primary; 4G carries traffic when the satellite path degrades.",
+      },
+      {
+        icon: Anchor,
+        title: "Starlink + VSAT backup",
+        body: "For deep offshore where cellular is gone. Keep legacy VSAT as the safety net while Starlink handles day-to-day low-latency traffic.",
+      },
+      {
+        icon: Network,
+        title: "Starlink + Starlink dual-dish",
+        body: "Ultra-high availability for critical platforms: two terminals, separate mounts where sky view allows, policy routing across both paths.",
+      },
+      {
+        icon: Shield,
+        title: "VLAN and QoS discipline",
+        body: "Crew welfare, bridge ops, and CCTV should not share one flat network. We separate traffic classes so a Netflix spike does not starve ops tablets.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "Technical scope of our service",
+        details: [
+          {
+            title: "Dual-WAN router selection and setup",
+            body: "Compatible platforms such as Peplink or MikroTik sized for your port count, power budget, and whether you need true bonding versus simple failover.",
+          },
+          {
+            title: "VLAN configuration",
+            body: "Crew WiFi, bridge operations, and CCTV on separate segments with firewall rules your IT or vendor can audit.",
+          },
+          {
+            title: "QoS for critical traffic",
+            body: "Priority rules for voice, ops apps, and monitoring so failover bandwidth is spent where it matters.",
+          },
+          {
+            title: "Monitoring and alerting",
+            body: "Basic path health checks and alerting so night crews know when the primary link dropped — not after the morning call fails.",
+          },
+        ],
+      },
+      {
+        title: "Who this is for",
+        cards: [
+          {
+            title: "OSV operators",
+            body: "Supply vessels that need crew welfare online without risking bridge connectivity when rain fade hits.",
+            href: "/starlink-offshore-maritime-installation",
+            linkLabel: "Offshore maritime installation",
+          },
+          {
+            title: "FPSOs and drilling rigs",
+            body: "Static or semi-static platforms that want Starlink primary with VSAT or dual-dish resilience for campaigns.",
+            href: "/starlink-offshore-hse-compliance",
+            linkLabel: "Offshore HSE & survey process",
+          },
+          {
+            title: "NGO vessels in remote waterways",
+            body: "Creek and coastal humanitarian craft that cannot rely on marina WiFi or a single SIM.",
+            href: "/starlink-boat-installation",
+            linkLabel: "Boat installation",
+          },
+        ],
+        paragraphs: [
+          "Expect a brief reconnect on some sessions when paths switch — banking portals and sticky VPNs may need a refresh. We test failover during handover so your crew sees the behaviour before the first storm.",
+        ],
+      },
+    ],
+    proofTitle: "Deployment context",
+    proofCards: [
+      proof(
+        "maritime2.jpeg",
+        "Starlink on tanker deck for maritime multi-WAN design",
+        "Deck installs where primary Starlink and backup paths must be planned together.",
+        "IMAGE: maritime2.jpeg — marine SD-WAN hero context"
+      ),
+      proof(
+        "maritime4.jpeg",
+        "Starlink on Niger Delta oil platform",
+        "Platform environments that often keep VSAT during Starlink transition.",
+        "IMAGE: maritime4.jpeg — deep offshore dual-path relevance"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware ready for vessel network integration projects",
+        "Hardware readiness for survey-led multi-WAN projects.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — mobilisation readiness"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "Starlink became primary; VSAT stayed as the documented backup. Failover was tested on the dock before we sailed — that was the requirement from IT.",
+      attribution: "IT lead, offshore support company (name withheld)",
+    },
+    packagesTitle: "Network integration engagements",
+    packages: [
+      {
+        name: "Integration survey",
+        priceLabel: "Quoted after scope call",
+        features: [
+          "Existing WAN inventory (Starlink / 4G / VSAT)",
+          "Router platform recommendation",
+          "VLAN and failover sketch",
+        ],
+        cta: "Get a Network Integration Proposal",
+      },
+      {
+        name: "Dual-WAN configuration",
+        priceLabel: "Quoted after survey",
+        features: [
+          "Router install and policy routing",
+          "QoS and VLAN handoff",
+          "Documented failover test",
+        ],
+        cta: "Request a Network Integration Proposal",
+      },
+      {
+        name: "Full marine turnkey",
+        priceLabel: "Custom",
+        features: [
+          "Dish install + multi-WAN config",
+          "HSE-aware mobilisation",
+          "Handover pack for ops and IT",
+        ],
+        cta: "Speak to maritime engineering",
+      },
+    ],
+    relatedLinks: [
+      { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
+      { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
+      { label: "Boat Installation", href: "/starlink-boat-installation" },
+      { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
+    ],
+    ctaBanner: {
+      title: "Request a Network Integration Proposal",
+      body: "Send vessel type, current links (Starlink / 4G / VSAT), and whether you need bonding or simple failover — we reply with a scoped proposal.",
+      buttonLabel: "Request a Network Integration Proposal",
+      href: "/contact",
+    },
+    faqs: [
+      {
+        question: "What is the difference between failover and bonding?",
+        answer:
+          "Failover switches traffic to a backup link when the primary fails. Bonding can combine capacity or session distribution across links depending on the router platform. We recommend the simpler model that matches your risk and budget — not every vessel needs full bonding.",
+      },
+      {
+        question: "Will calls drop when Starlink fails over to 4G?",
+        answer:
+          "Often there is a brief disconnect on path switch. Session stickiness for banking or some VPNs may need a reconnect. We test this during handover so expectations are clear.",
+      },
+      {
+        question: "Can you configure Starlink with our existing Peplink or MikroTik?",
+        answer:
+          "Yes, when the appliance supports dual-WAN and your firmware is current. We confirm model and port layout during survey before promising a config-only job.",
+      },
+      {
+        question: "Do we still need the correct Starlink maritime plan?",
+        answer:
+          "Yes. SD-WAN does not fix the wrong plan class or a residential dish at sea. Hardware and subscription must match mobility or maritime use before we design failover.",
+      },
+      {
+        question: "Where does HSE fit into a network integration project?",
+        answer:
+          "Any new deck mount or cable gland still follows PTW and two-man rules. See our offshore HSE compliance page for field practice; this page covers the router and policy layer.",
+      },
+      roamingFaq,
+    ],
+    schemaFaqs: [
+      {
+        question: "Does DataGram configure Starlink SD-WAN or failover on Nigerian vessels?",
+        answer:
+          "Yes. DataGram configures multi-WAN setups using compatible routers such as Peplink or MikroTik, with Starlink as primary and 4G LTE or legacy VSAT as failover for maritime and offshore sites.",
+      },
+      {
+        question: "What integration options are available?",
+        answer:
+          "Starlink with 4G LTE failover for coastal vessels, Starlink with VSAT backup for deep offshore, and dual Starlink dish designs for ultra-high availability where sky view and budget allow.",
+      },
+      {
+        question: "What is included in DataGram marine SD-WAN scope?",
+        answer:
+          "Dual-WAN router selection and setup, VLAN separation for crew, bridge, and CCTV traffic, QoS for critical apps, and monitoring or alerting for path health.",
+      },
+    ],
+    extraSchemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Marine SD-WAN and Starlink Network Bonding Nigeria",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "DataGram Nigeria",
+          url: "https://www.datagram.ng",
+        },
+        areaServed: { "@type": "Country", name: "Nigeria" },
+        serviceType: "Marine Network Integration",
+        description:
+          "Starlink SD-WAN and multi-WAN bonding for Nigerian vessels and offshore sites — Starlink with 4G or VSAT failover for resilient maritime connectivity.",
+        url: "https://www.datagram.ng/starlink-marine-sdwan-integration",
+      },
+    ],
+    packagePriceDisclaimer: true,
+    serviceAreaSchema: "Nigerian coastal and offshore maritime operations",
+    keywords: [
+      "marine SD-WAN Nigeria",
+      "Starlink failover vessel",
+      "Starlink VSAT bonding",
+      "offshore multi-WAN Nigeria",
     ],
   },
 ];
