@@ -152,10 +152,18 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroObjectPosition: "center",
     overviewTitle: "How maritime Starlink stays connected at sea",
     overviewParagraphs: [
-      "Offshore platforms, OSVs, and remote marine bases cannot wait months for subsea fibre builds. SpaceX Starlink satellite internet delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration.",
-      "Maritime Starlink uses a phased-array antenna that tracks several low-Earth-orbit satellites at once. A fixed home dish locks to one satellite pass; maritime terminals hand off continuously between satellites as the vessel moves. That handoff is what keeps the link alive in open water where there is no land infrastructure.",
-      "DataGram engineers survey deck space, cable glands, and power feeds before any hole is drilled. We document obstruction maps at berth and at typical heading, then specify marine-rated cabling, surge protection, and router placement that keeps bridge networks separate from crew WiFi.",
+      "Offshore platforms, OSVs, FPSOs, and remote marine bases cannot wait months for subsea fibre builds. SpaceX Starlink satellite internet delivers usable throughput at sea when you pair the correct mobility or maritime hardware with a mount that survives Gulf of Guinea spray and vibration — including satellite internet FPSO Nigeria deployments where crew and operations networks must stay segregated.",
+      "Maritime Starlink uses a phased-array antenna that tracks several low-Earth-orbit satellites at once. A fixed home dish locks to one satellite pass; maritime terminals hand off continuously between satellites as the vessel moves. That handoff is what keeps the link alive in open water where there is no land infrastructure. For operators planning a VSAT to Starlink migration offshore Nigeria, DataGram handles dish swap, network reconfiguration, and crew handover so you are not left mid-campaign without a working link.",
+      "DataGram engineers survey deck space, cable glands, and power feeds before any hole is drilled. We specialise in Starlink Flat High Performance installation Nigeria for marine environments, and we document obstruction maps at berth and at typical heading, then specify marine-rated cabling, surge protection, and router placement that keeps bridge networks separate from crew WiFi. Starlink OSV installation Rivers State and wider Gulf of Guinea mobilisation is coordinated from our Port Harcourt desk.",
     ],
+    downloadCta: {
+      title: "Download Our Offshore Integration Spec Sheet",
+      description:
+        "A technical reference for procurement managers and vessel operators — covering hardware specs, deployment process, network configuration options, and service coverage.",
+      href: "/downloads/datagram-starlink-offshore-spec-sheet.pdf",
+      buttonLabel: "Download Spec Sheet (PDF)",
+      note: "No sign-up required. Free to download.",
+    },
     stats: [
       { label: "Typical latency (LEO)", value: "20–33 ms", note: "Varies with sea state, plan class, and beam load." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Hardware tier, weather, and subscription affect results." },
@@ -569,7 +577,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     h1: "Starlink for Boats Nigeria",
     heroLabel: "Leisure craft & coastal operations",
     heroSubheading:
-      "Deck mounts, DC power integration, and coastal coverage planning for ferries, fishing trawlers, and private yachts operating Nigerian waters.",
+      "Deck mounts, DC power integration, and coastal coverage planning for ferries, fishing trawlers, and Starlink for yachts Lagos — lagoon and private craft operating Nigerian waters.",
     heroImageAlt: "Starlink dish on boat mast in Nigerian waterway",
     heroImage: img("maritime3.jpeg"),
     heroImageFile: "maritime3.jpeg",
@@ -650,6 +658,67 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         "IMAGE: datagram-starlink-unboxing-kit-contents.jpg — router and power supply in foam tray"
       ),
     },
+    extraSections: [
+      {
+        title: "Power Setup for Smaller Vessels",
+        paragraphs: [
+          "Smaller boats — speedboats, lagoon houseboats, and leisure craft — typically run on 12V or 24V DC systems rather than the 240V AC supply found on larger vessels and offshore platforms. Starlink's standard router and dish require 100–240V AC input, which means a power inverter is required for most boat installations. DataGram recommends and installs the following power setup for smaller vessels, including marine internet for speedboats Nigeria that need reliable DC-to-AC conversion underway.",
+        ],
+        cards: [
+          {
+            title: "Pure Sine Wave Inverter",
+            body: "A pure sine wave inverter (minimum 300W, recommended 500W) converts your boat's 12V/24V DC battery bank to the AC supply Starlink needs. Modified sine wave inverters are not recommended — they can cause router instability and reduce hardware lifespan.",
+          },
+          {
+            title: "Battery Sizing",
+            body: "For continuous Starlink operation, your battery bank should support at minimum 100–150Wh of draw per hour. On a 12V system this is roughly 8–12Ah per hour. We assess your existing battery capacity during the site survey and advise on whether an additional battery is required.",
+          },
+          {
+            title: "Shore Power Alternative",
+            body: "If your vessel has shore power access when moored, Starlink can run directly from the marina's AC supply without an inverter. DataGram installs weatherproof cable runs from your shore power inlet to the router placement point.",
+          },
+        ],
+      },
+      {
+        title: "Marine Cable Routing — Built to Last",
+        paragraphs: [
+          "Running Starlink cable on a boat is different from a rooftop installation. Salt air, UV exposure, hull vibration, and the risk of water ingress mean every cable run must be properly protected. That discipline applies to every satellite internet coastal vessel Nigeria install we complete — leisure craft, patrol boats, and fishing fleets alike.",
+        ],
+        checklist: [
+          "All cable runs protected in UV-resistant conduit or armoured sleeving where exposed to weather",
+          "Gland fittings used at every hull penetration point — no bare holes drilled without sealing",
+          "Cable secured at regular intervals to prevent chafing against metal edges during vessel movement",
+          "Connector ends protected with self-amalgamating tape or weatherproof enclosures where exposed on deck",
+          "Fibre-reinforced conduit used for runs through engine bays or high-heat areas",
+        ],
+        note: "DataGram does not cut corners on marine cable work. A poorly sealed hull penetration causes more damage than a lost internet connection.",
+      },
+      {
+        title: "Securing Your Dish on Lagos Waterways",
+        paragraphs: [
+          "Dish theft is a real risk on vessels moored on the Lagos lagoon, at Tarkwa Bay, and in marina berths. A standard Starlink mount can be removed in under two minutes without the right security measures in place. DataGram installs anti-theft measures as standard on all Lagos lagoon and coastal installations, including Starlink installation Tarkwa Bay berths where high-value electronics are a known target.",
+        ],
+        details: [
+          {
+            title: "Security bolt kit",
+            body: "Starlink's mounting bolts replaced with tamper-resistant fasteners requiring a specialist bit to remove.",
+          },
+          {
+            title: "Welded bracket option",
+            body: "For permanent vessel installations, the mount bracket can be welded directly to a deck fitting — removal requires cutting equipment.",
+          },
+          {
+            title: "Discrete cable routing",
+            body: "Cables routed internally where possible to remove the visual cue that valuable equipment is mounted above.",
+          },
+          {
+            title: "Mooring location advice",
+            body: "We advise on which Lagos marina and lagoon mooring locations have lower reported theft risk for high-value electronics.",
+          },
+        ],
+        footerNote: "Ask about our anti-theft installation package when requesting your quote.",
+      },
+    ],
     speedStat: SPEED,
     testimonial: {
       quote:

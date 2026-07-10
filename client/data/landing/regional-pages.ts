@@ -618,7 +618,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     stateName: "the Niger Delta",
     heroLabel: "Rivers, Bayelsa & Delta State",
     heroSubheading:
-      "Headquartered in Port Harcourt—daily installs across PH, Yenagoa, Warri, Asaba, and shore-access communities. SpaceX Starlink satellite internet for remote and offshore sites — not a local energy company.",
+      "Headquartered in Port Harcourt—daily installs across PH, Yenagoa, Warri, Asaba, and shore-access communities. SpaceX Starlink satellite internet for remote and offshore sites — including Starlink for remote oil camps Niger Delta — not a local energy company.",
     heroImageAlt: "DataGram Starlink technician at Nigerian port holding Starlink dish ready for installation",
     heroImage: img("datagram-technician-dish-port.jpg"),
     heroImageFile: "datagram-technician-dish-port.jpg",
@@ -671,13 +671,13 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       attribution: "Operations admin, Yenagoa layout",
     },
     coverageParagraph:
-      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. SpaceX Starlink satellite internet is deployed for oil camps, creek communities, and remote compounds — DataGram is a satellite installer, not affiliated with any local energy or pipeline company. We do not run install operations in Kano or northern Nigeria.",
+      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. SpaceX Starlink creek access installation Niger Delta work is scheduled around tide and jetty windows so crews reach remote compounds in a single mobilisation. SpaceX Starlink satellite internet is deployed for oil camps, creek communities, and remote compounds — DataGram is a satellite installer, not affiliated with any local energy or pipeline company. We do not run install operations in Kano or northern Nigeria.",
     safetyStandards: {
       title: "Our Field Safety Standards",
       items: [
         {
           title: "Site assessment before mobilisation",
-          body: "Before any crew travels to a creek or remote camp location, DataGram conducts a remote assessment of the site — sky view, power source, canopy obstruction level, and access route — to ensure the installation can be completed safely and successfully in a single visit.",
+          body: "Before any crew travels to a creek or remote camp location, DataGram conducts a remote assessment of the site — sky view, power source, canopy obstruction level, and access route — to ensure the installation can be completed safely and successfully in a single visit. Starlink HSE compliant installers Rivers State means our crews work inside your site PTW and two-man rules before mobilisation — we do not claim third-party cert numbers we do not hold.",
         },
         {
           title: "Two-man installation rule",
@@ -712,7 +712,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "How does rain affect Starlink in the Niger Delta?",
         answer:
-          "Heavy rain adds fade. Proper mast height and sky view reduce dropouts. We baseline at handover so you can compare performance through rainy season.",
+          "Heavy rain can cause satellite internet Port Harcourt rain fade — temporary signal attenuation when water absorbs Ku/Ka-band energy. Starlink handles rain fade well in most South-South conditions; proper mast height and sky view further reduce dropouts. We baseline at handover so you can compare performance through rainy season.",
       },
       {
         question: "Is DataGram the same as Starlinks Global Energy Services?",

@@ -143,6 +143,29 @@ export default function IndustryLandingPage({ config }: Props) {
         </div>
       </section>
 
+      {config.downloadCta && (
+        <section className={`${landingSection} border-b`}>
+          <div className={landingContainer}>
+            <Card className="border-primary/30 bg-primary/5">
+              <CardHeader>
+                <CardTitle className="text-xl sm:text-2xl">{config.downloadCta.title}</CardTitle>
+                <CardDescription className="text-base text-foreground/75">
+                  {config.downloadCta.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild size="lg" className={landingBtnPrimary}>
+                  <a href={config.downloadCta.href} download>
+                    {config.downloadCta.buttonLabel}
+                  </a>
+                </Button>
+                <p className="mt-3 text-sm text-foreground/65">{config.downloadCta.note}</p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      )}
+
       <section className={landingSection}>
         <div className={landingContainer}>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{config.whyTitle}</h2>
@@ -316,6 +339,64 @@ export default function IndustryLandingPage({ config }: Props) {
           </div>
         </section>
       )}
+
+      {config.extraSections?.map((section) => (
+        <section key={section.title} className={`${landingSection} border-b bg-muted/20`}>
+          <div className={landingContainer}>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{section.title}</h2>
+            {section.paragraphs && section.paragraphs.length > 0 && (
+              <div className="mt-4 max-w-3xl space-y-4 text-base leading-relaxed text-foreground/80">
+                {section.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            )}
+            {section.cards && section.cards.length > 0 && (
+              <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {section.cards.map((card) => (
+                  <Card key={card.title} className="h-full">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{card.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="text-sm leading-relaxed text-foreground/75">{card.body}</CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
+            {section.checklist && section.checklist.length > 0 && (
+              <ul className="mt-8 space-y-3">
+                {section.checklist.map((item) => (
+                  <li key={item} className="flex gap-3 text-sm leading-relaxed text-foreground/80 sm:text-base">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {section.details && section.details.length > 0 && (
+              <div className="mt-8 grid gap-6 sm:grid-cols-2">
+                {section.details.map((item) => (
+                  <Card key={item.title} className="h-full">
+                    <CardHeader>
+                      <CardTitle className="flex items-start gap-3 text-lg">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                        <span>{item.title}</span>
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="text-sm leading-relaxed text-foreground/75">{item.body}</CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
+            {section.note && (
+              <p className="mt-6 text-sm font-medium text-foreground/70">{section.note}</p>
+            )}
+            {section.footerNote && (
+              <p className="mt-4 text-sm text-primary">{section.footerNote}</p>
+            )}
+          </div>
+        </section>
+      ))}
 
       <section className={landingSection}>
         <div className={landingContainer}>

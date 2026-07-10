@@ -33,6 +33,28 @@ export type EquipmentSection = {
   secondaryImage?: ProofCard;
 };
 
+export type DownloadCta = {
+  title: string;
+  description: string;
+  href: string;
+  buttonLabel: string;
+  note: string;
+};
+
+/** Extra body sections (cards, checklist, or detail grid) — reuses Card / CheckCircle2 patterns */
+export type ExtraContentSection = {
+  title: string;
+  paragraphs?: string[];
+  /** 2–4 cards with title + body */
+  cards?: { title: string; body: string }[];
+  /** Checklist lines (rendered with CheckCircle2) */
+  checklist?: string[];
+  /** Small detail cards (2-col grid) */
+  details?: { title: string; body: string }[];
+  note?: string;
+  footerNote?: string;
+};
+
 export type IndustryLandingConfig = {
   path: string;
   seoTitle: string;
@@ -65,6 +87,8 @@ export type IndustryLandingConfig = {
   extraSchemas?: Record<string, unknown>[];
   safetyStandards?: { title: string; items: SafetyStandardItem[] };
   equipmentSection?: EquipmentSection;
+  downloadCta?: DownloadCta;
+  extraSections?: ExtraContentSection[];
   packagePriceDisclaimer?: boolean;
   serviceAreaSchema: string;
   keywords: string[];
