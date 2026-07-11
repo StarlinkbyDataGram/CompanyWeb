@@ -68,39 +68,6 @@ const standardFaqs = [
   },
 ];
 
-const offshoreMaritimeSchemaFaqs = [
-  {
-    question: "Does Starlink work on offshore oil rigs and FPSOs in Nigeria?",
-    answer:
-      "Yes. DataGram has deployed Starlink on offshore vessels and industrial platforms operating in Nigerian waters, including locations in the Niger Delta and Gulf of Guinea. The Starlink Flat High Performance dish is rated for marine environments and supports VLAN configuration for segregated crew and operations networks.",
-  },
-  {
-    question: "Can Starlink replace VSAT on our offshore platform?",
-    answer:
-      "Starlink can fully replace legacy VSAT systems on most offshore platforms. It offers significantly lower latency (20-40ms vs 600ms+ for geostationary VSAT), no per-MB billing, and faster speeds. DataGram handles the full migration including dish swap, network reconfiguration, and crew training.",
-  },
-  {
-    question: "What paperwork does DataGram handle for offshore Starlink installation?",
-    answer:
-      "DataGram manages the Permit to Work (PTW) process, conducts a pre-installation site survey, and coordinates with your vessel or platform safety officer before any work begins. We document all installation steps and provide post-installation test reports on download/upload speeds and latency.",
-  },
-  {
-    question: "Does Starlink support SD-WAN or failover configuration on offshore vessels?",
-    answer:
-      "Yes. Starlink can be integrated into multi-WAN setups using compatible routers such as Peplink or MikroTik, allowing it to serve as primary internet with 4G/LTE or legacy VSAT as failover. DataGram configures these setups as part of enterprise offshore deployments.",
-  },
-  {
-    question: "What is the power requirement for Starlink Flat High Performance offshore?",
-    answer:
-      "The Starlink Flat High Performance dish draws approximately 75-100W under normal operating conditions with peak draw around 150W during extreme cold or motor calibration. Most offshore platforms can accommodate this on a standard 110V or 220V AC circuit. DataGram assesses power availability during the site survey.",
-  },
-  {
-    question: "Can DataGram install Starlink on a vessel currently at sea or only when docked?",
-    answer:
-      "Installation requires the vessel to be docked or anchored in a stable position. DataGram does not conduct installations on vessels underway. We coordinate with your operations schedule to minimise downtime and can mobilise to port locations across Rivers State, Delta State, Bayelsa, and Lagos.",
-  },
-];
-
 const offshoreMaritimeServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -147,10 +114,9 @@ const offshoreSafetyStandards = {
 export const industryLandingPages: IndustryLandingConfig[] = [
   {
     path: "/starlink-offshore-maritime-installation",
-    seoTitle:
-      "Starlink Offshore & Maritime Installation Nigeria | Oil, Gas & Deep Sea | DataGram",
+    seoTitle: "Starlink Offshore Installation Nigeria | At Sea | DataGram",
     metaDescription:
-      "Maritime Starlink installs for rigs, OSVs, and coastal bases in Nigeria. Low-latency LEO, marine mounts, and field support from DataGram.",
+      "DataGram installs Starlink for vessels and deep sea operations in the Niger Delta and Gulf of Guinea — at-sea and offshore internet.",
     canonical: "/starlink-offshore-maritime-installation",
     ogImage: img("datagram-technician-rooftop-mount.jpg"),
     h1: "Starlink Offshore & Maritime Installation Nigeria",
@@ -263,7 +229,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     ],
     relatedLinks: [
       {
-        label: "Starlink Roaming and Global Priority activation",
+        label: "Starlink Roaming and Global Priority activation for vessels",
         href: "/starlink-roaming-global-priority-nigeria",
       },
     ],
@@ -286,7 +252,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Do you support maritime or mobility Starlink plans?",
         answer:
-          "Yes. The right plan depends on your vessel type, how far it travels in nautical miles, and the regions it operates in. DataGram will assess your vessel profile and recommend the appropriate subscription before activation.",
+          "Yes. The right plan depends on your vessel type, how far it travels in nautical miles, and the regions it operates in. DataGram will assess your vessel profile and recommend the appropriate subscription before activation. Related: Starlink Roaming and Global Priority activation for vessels (/starlink-roaming-global-priority-nigeria).",
       },
       {
         question: "Do you handle maritime activation and subscription?",
@@ -295,8 +261,22 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       roamingFaq,
       ...standardFaqs,
+      {
+        question: "Does Starlink work for deep sea operations in the Gulf of Guinea?",
+        answer:
+          "Yes. Starlink's maritime mobility plans, specifically the Global Priority plan with Ocean Mode, are designed for open ocean use including deep sea operations in the Gulf of Guinea. The Flat High Performance dish is required for vessels operating beyond coastal waters. DataGram assesses vessel type and route before recommending the correct plan and hardware.",
+      },
+      {
+        question: "What is offshore internet, and how does Starlink provide it?",
+        answer:
+          "Offshore internet refers to satellite-based broadband connectivity delivered to vessels, platforms, and facilities operating at sea where terrestrial networks do not reach. Starlink provides this via its low-earth orbit satellite constellation, which delivers lower latency and higher speeds than traditional VSAT systems used offshore. DataGram installs and activates Starlink offshore internet across the Niger Delta and Gulf of Guinea.",
+      },
+      {
+        question: "Is Starlink suitable for vessels and moving boats at sea?",
+        answer:
+          "Yes, with the correct plan and hardware. Starlink's standard dish works for docked vessels and slow-moving craft in protected waters. The Flat High Performance dish and a maritime mobility or Global Priority plan are required for vessels actively underway in open water. DataGram advises on hardware selection and plan type based on your vessel's route and speed.",
+      },
     ],
-    schemaFaqs: offshoreMaritimeSchemaFaqs,
     extraSchemas: [offshoreMaritimeServiceSchema],
     safetyStandards: offshoreSafetyStandards,
     packagePriceDisclaimer: true,
@@ -310,9 +290,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
   },
   {
     path: "/starlink-enterprise-nigeria",
-    seoTitle: "Starlink for Enterprise Nigeria | NGOs, Offices & Industrial Sites | DataGram",
+    seoTitle: "Starlink for Enterprise Nigeria | Business Starlink | DataGram",
     metaDescription:
-      "Enterprise Starlink: VLANs, failover with fibre, generator-safe power, and documented handover for Nigerian offices, NGOs, and plants.",
+      "DataGram delivers enterprise Starlink and business Starlink deployment across Nigeria — offices, NGOs, industrial sites, and multi-branch operations.",
     canonical: "/starlink-enterprise-nigeria",
     ogImage: img("StarlinkCompanyInstallation.jpeg"),
     h1: "Starlink for Enterprise Nigeria",
@@ -327,7 +307,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroObjectPosition: "center top",
     overviewTitle: "Business-grade satellite when terrestrial SLAs slip",
     overviewParagraphs: [
-      "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
+      "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job for business Starlink deployment: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
       "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance. DataGram's standard coverage is South-South and South-East Nigeria. Enterprise installations in northern states are handled on special request.",
     ],
     stats: [
@@ -440,6 +420,22 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       roamingFaq,
       ...standardFaqs,
+      {
+        question: "What does enterprise Starlink include that a standard residential plan does not?",
+        answer:
+          "Enterprise Starlink covers a Priority Business plan with guaranteed throughput allocation, meaning your speeds are protected during peak hours rather than subject to deprioritisation. It also includes a professional site survey, structured cable management, network configuration for business use (VLANs, guest WiFi, wired connections for workstations), a baseline speed test report, and access to DataGram's ongoing managed support for renewed subscribers.",
+      },
+      {
+        question: "Can DataGram handle business Starlink deployment across multiple offices in Nigeria?",
+        answer:
+          "Yes. DataGram manages multi-site business Starlink deployments — from scoping and hardware procurement to installation, activation, and account management across all locations. For companies with 5 or more sites or vessels, our fleet management service handles subscription administration centrally. See our fleet management service (/starlink-fleet-management-nigeria) for details.",
+      },
+    ],
+    relatedLinks: [
+      {
+        label: "fleet management service",
+        href: "/starlink-fleet-management-nigeria",
+      },
     ],
     serviceAreaSchema: "Nigeria — enterprise and NGO sites",
     keywords: [
@@ -589,9 +585,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
   },
   {
     path: "/starlink-boat-installation",
-    seoTitle: "Starlink for Boats Nigeria | Leisure Craft & Coastal Operations | DataGram",
+    seoTitle: "Starlink for Boats Nigeria | Moving Boats | DataGram",
     metaDescription:
-      "Starlink for boats in Nigeria: leisure craft, fishing fleets, and coastal patrol. Marine mounts and DC power integration by DataGram.",
+      "DataGram installs Starlink on boats, leisure craft, and moving vessels across Nigeria. Marine connectivity from the coast to offshore waters.",
     canonical: "/starlink-boat-installation",
     ogImage: img("maritime3.jpeg"),
     h1: "Starlink for Boats Nigeria",
@@ -606,7 +602,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroObjectPosition: "center top",
     overviewTitle: "Connectivity that moves with your hull",
     overviewParagraphs: [
-      "Coastal ferries, fishing fleets, and private yachts need internet that is not tied to marina WiFi passwords. SpaceX Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
+      "Coastal ferries, fishing fleets, and private yachts need marine connectivity that is not tied to marina WiFi passwords. SpaceX Starlink mobility classes—when matched to the right flat-mount hardware—keep crews connected across Nigerian coastal routes if the sky view clears the wheelhouse and radar arch.",
       "DataGram installs DC-fed power where inverters are noisy, routes cable away from winches and bait tanks, and tests at cruise RPM so vibration does not loosen glands mid-season.",
     ],
     stats: [
@@ -768,7 +764,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     ],
     relatedLinks: [
       {
-        label: "Global Priority or Roaming plan",
+        label: "Global Priority or Roaming plan for marine connectivity",
         href: "/starlink-roaming-global-priority-nigeria",
       },
     ],
@@ -776,7 +772,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Which Starlink plan works on leisure boats in Nigeria?",
         answer:
-          "Mobility or regional maritime classes apply depending on route and official coverage. We confirm on starlink.com before you buy hardware—using a fixed residential dish at sea violates terms and performs poorly. Need a Global Priority or Roaming plan activated? DataGram handles assessment and account activation for coastal craft.",
+          "Mobility or regional maritime classes apply depending on route and official coverage. We confirm on starlink.com before you buy hardware—using a fixed residential dish at sea violates terms and performs poorly. Need a Global Priority or Roaming plan for marine connectivity? DataGram handles assessment and account activation for coastal craft (/starlink-roaming-global-priority-nigeria).",
       },
       {
         question: "Can you install at Lagos marinas?",
@@ -800,6 +796,16 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       roamingFaq,
       ...standardFaqs,
+      {
+        question: "Does Starlink work on a moving boat at sea?",
+        answer:
+          "Yes, with the right plan and hardware. The standard Starlink dish works for slow-moving craft in protected coastal waters. For boats actively underway in open water, the Flat High Performance dish with a maritime mobility plan is needed for stable connectivity while the vessel is moving. DataGram advises on the correct setup based on your boat type and typical route.",
+      },
+      {
+        question: "What is the difference between marine connectivity on a boat versus a fixed land installation?",
+        answer:
+          "A fixed land installation points to a consistent patch of sky and stays there. A moving vessel constantly changes its angle relative to the satellite constellation, which is why the dish needs a wider field of view and a plan that supports mobility. The Flat High Performance dish handles this automatically. DataGram assesses each vessel individually before recommending hardware and plan.",
+      },
     ],
     packagePriceDisclaimer: true,
     serviceAreaSchema: "Nigerian coastal and inland waterways",
@@ -812,10 +818,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
   },
   {
     path: "/starlink-enterprise-marine-hub",
-    seoTitle:
-      "Enterprise & Marine Starlink Connectivity Nigeria | Turnkey Network Integration | DataGram",
+    seoTitle: "Enterprise & Marine Connectivity Nigeria | DataGram",
     metaDescription:
-      "Turnkey Starlink network integration for Nigerian enterprises, NGOs, offshore vessels, and industrial sites — from survey to managed support.",
+      "DataGram's marine connectivity hub for Nigerian businesses, NGOs, and offshore operators — maritime internet solutions and business Starlink deployment.",
     canonical: "/starlink-enterprise-marine-hub",
     ogImage: img("hero-enterprise-marine-hub.jpg"),
     h1: "Turnkey Starlink Network Integration for Enterprise and Maritime Operations in Nigeria",
@@ -1040,6 +1045,16 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       roamingFaq,
       ...standardFaqs,
+      {
+        question: "What is maritime internet solutions and how does DataGram provide it?",
+        answer:
+          "Maritime internet solutions refer to connectivity services specifically designed for vessels, offshore platforms, and marine environments where standard broadband does not reach. DataGram provides end-to-end maritime internet through Starlink installation, plan selection, activation, and ongoing managed support for vessels operating in Nigerian waters and the Gulf of Guinea.",
+      },
+      {
+        question: "What does business Starlink deployment cover for Nigerian companies?",
+        answer:
+          "Business Starlink deployment covers the full process of equipping a Nigerian company with Starlink connectivity — from site survey and hardware installation to account setup, staff WiFi configuration, and post-installation managed support. For multi-site businesses, DataGram manages the full rollout across locations and handles ongoing subscription and account administration.",
+      },
     ],
     extraSchemas: [
       {
@@ -1553,9 +1568,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
   },
   {
     path: "/starlink-fleet-management-nigeria",
-    seoTitle: "Starlink Fleet Management Nigeria | Multi-Site | DataGram",
+    seoTitle: "Starlink Fleet Nigeria | Vessels & Enterprise Starlink | DataGram",
     metaDescription:
-      "DataGram manages Starlink across multiple Nigerian sites and vessels — one contact, centralized billing options, and fleet-wide visibility.",
+      "DataGram manages Starlink fleets for Nigerian enterprise and vessel operators — subscriptions, accounts, and network monitoring across multiple sites.",
     canonical: "/starlink-fleet-management-nigeria",
     ogImage: img("hero-fleet-management-nigeria.jpg"),
     h1: "Starlink Fleet Management for Nigerian Enterprises and Maritime Operators",
@@ -1571,7 +1586,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     heroPrimaryCta: { label: "Request a Fleet Proposal", href: "/contact" },
     overviewTitle: "One relationship for every dish in your fleet",
     overviewParagraphs: [
-      "A single Starlink install is a project. Ten installs across states — or five OSVs with different captains and berths — is an operations problem. SpaceX still bills and supports per terminal. Without a local fleet manager, your IT desk ends up juggling separate apps, separate invoices, and separate fault tickets.",
+      "A single Starlink install is a project. Ten enterprise Starlink installs across states — or five OSVs and other vessels with different captains and berths — is an operations problem. SpaceX still bills and supports per terminal. Without a local fleet manager, your IT desk ends up juggling separate apps, separate invoices, and separate fault tickets.",
       "DataGram fleet management puts procurement, coordinated installation, account administration, plan upgrades, and escalations under one Nigerian point of contact. You get VAT-compliant invoicing options, quarterly per-site performance notes, and a path that scales from branch networks to maritime fleets.",
     ],
     stats: [
@@ -1722,7 +1737,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
       { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
       { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
-      { label: "Roaming and Global Priority plans", href: "/starlink-roaming-global-priority-nigeria" },
+      {
+        label: "Global Priority and maritime mobility plans",
+        href: "/starlink-roaming-global-priority-nigeria",
+      },
       { label: "Enterprise Plans", href: "/services/enterprise-plans" },
     ],
     ctaBanner: {
@@ -1753,6 +1771,16 @@ export const industryLandingPages: IndustryLandingConfig[] = [
           "Yes. When vessels need Global Priority to stay compliant outside Nigeria or for ocean use, we coordinate upgrades across the fleet instead of leaving each captain to guess through the app.",
       },
       roamingFaq,
+      {
+        question: "Can DataGram manage Starlink across a fleet of vessels in Nigerian waters?",
+        answer:
+          "Yes. DataGram handles Starlink fleet management for vessel operators — covering subscription administration, plan selection (including Global Priority and maritime mobility plans), hardware procurement, and activation across multiple vessels simultaneously. We provide centralised account oversight so your operations team does not have to manage individual dish accounts. Related: Global Priority and maritime mobility plans (/starlink-roaming-global-priority-nigeria).",
+      },
+      {
+        question: "What is the difference between fleet management and a standard enterprise Starlink deployment?",
+        answer:
+          "A standard enterprise deployment covers one site or location — survey, install, and activate. Fleet management covers multiple assets (vessels, offices, or remote sites) under centralised account oversight, with DataGram handling ongoing subscription renewals, plan changes, and troubleshooting across all of them. For businesses with 5 or more Starlink connections, fleet management reduces the administrative burden significantly.",
+      },
     ],
     extraSchemas: [
       {
