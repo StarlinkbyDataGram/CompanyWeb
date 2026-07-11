@@ -221,7 +221,10 @@ export default function BlogPost() {
                 <CardDescription>{article.serviceCta.blurb}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
-                <Button asChild className="w-full">
+                <Button
+                  asChild
+                  className="h-auto min-h-10 w-full whitespace-normal px-3 py-2.5 text-center text-sm leading-snug"
+                >
                   <Link to={article.serviceCta.href}>{article.serviceCta.label}</Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full">

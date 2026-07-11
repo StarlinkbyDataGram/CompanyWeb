@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState } from "react";
 import { getStored } from "@/lib/storage";
 import Seo from "@/components/Seo";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
+import { cropFromSrc } from "@/lib/image-crop";
 
 export default function ProductDetail() {
   const { slug } = useParams();
@@ -135,6 +136,11 @@ export default function ProductDetail() {
                 src={product.images?.[currentImageIdx] || product.image}
                 alt={product.name}
                 className="mb-2 w-full rounded-md object-cover"
+                style={{
+                  objectPosition: cropFromSrc(
+                    product.images?.[currentImageIdx] || product.image || ""
+                  ),
+                }}
               />
               {product.images && product.images.length > 1 && (
                 <div className="grid grid-cols-5 gap-2">
@@ -145,7 +151,12 @@ export default function ProductDetail() {
                       onClick={() => setCurrentImageIdx(i)}
                       className={`rounded border overflow-hidden ${i === currentImageIdx ? "ring-2 ring-primary" : ""}`}
                     >
-                      <img src={url} alt={`thumb-${i}`} className="h-16 w-full object-cover" />
+                      <img
+                        src={url}
+                        alt={`thumb-${i}`}
+                        className="h-16 w-full object-cover"
+                        style={{ objectPosition: cropFromSrc(url) }}
+                      />
                     </button>
                   ))}
                 </div>

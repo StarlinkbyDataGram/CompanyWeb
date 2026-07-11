@@ -4,9 +4,11 @@ import type { Product } from "@/data/products";
 import { Phone, MessageCircle, Info } from "lucide-react";
 
 import useInView from "@/hooks/use-inview";
+import { cropFromSrc } from "@/lib/image-crop";
 
 export default function ProductCard({ product, iconActions }: { product: Product; iconActions?: boolean }) {
   const { ref, inView } = useInView<HTMLDivElement>();
+  const imageSrc = product.image || product.images?.[0] || "";
 
   return (
     <article
@@ -17,9 +19,10 @@ export default function ProductCard({ product, iconActions }: { product: Product
     >
       <div className="overflow-hidden">
         <img
-          src={product.image || product.images?.[0]}
+          src={imageSrc}
           alt={product.name}
           className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110 md:h-56"
+          style={{ objectPosition: cropFromSrc(imageSrc) }}
         />
       </div>
       <div className="flex flex-1 flex-col bg-[#0b1f6b] p-5 text-white">

@@ -102,5 +102,105 @@
       "/images/products/starlink-mini/StarlinkMini11.jpeg",
       "/images/products/starlink-mini/StarlinkMini111.jpeg"
     ]
+  },
+  {
+    "id": "starlink-pivot-mount",
+    "slug": "starlink-pivot-mount",
+    "name": "Starlink Pivot Mounting Accessories",
+    "price": "N150,000",
+    "short": "Heavy-duty pivot mount for precise Starlink dish tilt and angle — Gen 3 (V4) compatible.",
+    "description": "A heavy-duty pivot mount that lets you tilt and angle your Starlink dish precisely for maximum sky view clearance. Suitable for corrugated iron, concrete flat roofs, and parapet walls. Compatible with Starlink Gen 3 (V4) standard and Flat High Performance dishes. Includes all hardware required for a secure, weather-resistant installation.",
+    "specs": {
+      "Compatibility": "Starlink Gen 3 (V4) standard and Flat High Performance dishes",
+      "Mount": "Heavy-duty pivot / tilt mount",
+      "Surfaces": "Corrugated iron, concrete flat roofs, parapet walls",
+      "Hardware": "Full installation hardware included",
+      "Use": "Precise dish angle for maximum sky view clearance"
+    },
+    "whatsInBox": [
+      "Pivot mount base",
+      "Mounting hardware kit",
+      "Fasteners for common roof types"
+    ],
+    "installationAvailable": "Installation Services, Pivot mount & Wi-Fi distribution services Available",
+    "image": "/images/products/starlink-pivot-mount/StarlinkPivotMountingAccessories.jpeg",
+    "images": [
+      "/images/products/starlink-pivot-mount/StarlinkPivotMountingAccessories.jpeg"
+    ]
+  },
+  {
+    "id": "starlink-mesh-router",
+    "slug": "starlink-mesh-router",
+    "name": "Starlink Mesh Router",
+    "price": "N250,000",
+    "short": "Official Starlink Mesh Router to extend Wi‑Fi across larger homes, compounds and multi-room offices.",
+    "description": "The official Starlink Mesh Router extends your Starlink WiFi coverage across larger homes, compounds, and multi-room offices. Designed specifically for Starlink systems — no third-party configuration required — and works with Gen 3 (V4) Starlink hardware. Connects wirelessly to your existing Starlink router without additional cabling. Each unit adds coverage and maintains a single network name across the whole property. Ideal for homes above 200 sqm, duplexes, and estate compounds.",
+    "specs": {
+      "Compatibility": "Starlink Gen 3 (V4) hardware",
+      "Connection": "Wireless mesh to existing Starlink router",
+      "Network": "Single network name across the property",
+      "IdealFor": "Homes above 200 sqm, duplexes, estate compounds",
+      "Setup": "Starlink-native — no third-party configuration required"
+    },
+    "whatsInBox": [
+      "Starlink Mesh Router",
+      "Power supply",
+      "Quick start guide"
+    ],
+    "installationAvailable": "Installation Services and Wi‑Fi distribution services available",
+    "image": "/images/products/starlink-mesh-router/StarlinkMeshRouter.jpeg",
+    "images": [
+      "/images/products/starlink-mesh-router/StarlinkMeshRouter.jpeg"
+    ]
+  },
+  {
+    "id": "starlink-gen3-45m-cable",
+    "slug": "starlink-gen3-45m-cable",
+    "name": "45-Metre Starlink Gen 3 Cable",
+    "price": "N250,000",
+    "short": "Official 45 m Starlink Gen 3 flat cable for long dish-to-router runs on Gen 3 (V4) kits.",
+    "description": "The official 45-metre Starlink Gen 3 flat cable extends the distance between your dish and router, solving installation challenges where the standard cable length is insufficient. Compatible with Starlink Gen 3 (V4) hardware only — not backwards compatible with Gen 2. Flat profile cable designed for discreet wall and floor routing, and includes the proprietary Starlink connector — no adapters required. Suitable for large buildings, multi-floor routing, or installations where the dish must be mounted far from the living or office space.",
+    "specs": {
+      "Length": "45 metres",
+      "Compatibility": "Starlink Gen 3 (V4) only — not compatible with Gen 2",
+      "Profile": "Flat cable for discreet wall and floor routing",
+      "Connector": "Proprietary Starlink connector — no adapters required",
+      "Use": "Long dish-to-router runs on large or multi-floor sites"
+    },
+    "whatsInBox": [
+      "45 m Starlink Gen 3 flat cable",
+      "Integrated proprietary Starlink connectors"
+    ],
+    "installationAvailable": "Installation Services and cable routing available",
+    "image": "/images/products/starlink-gen3-45m-cable/StarlinkGen3Cable45m.jpeg",
+    "images": [
+      "/images/products/starlink-gen3-45m-cable/StarlinkGen3Cable45m.jpeg"
+    ]
+  },
+  {
+    "id": "long-range-wifi-mesh",
+    "slug": "long-range-wifi-mesh",
+    "name": "Long Range WiFi Mesh & Repeater Router",
+    "price": "N150,000",
+    "short": "Dual-mode long-range WiFi repeater and wired access point to extend Starlink coverage.",
+    "description": "A dual-mode WiFi extender that works as both a wireless repeater and a wired access point, depending on how your building is cabled. Extends Starlink WiFi coverage across large homes, offices, and compounds where the Starlink router alone does not reach. Works in wireless repeater mode (no cabling needed) or wired access point mode (via Ethernet for strongest signal). Compatible with Starlink and any other internet source. Supports long-range signal projection across open spaces and through thick concrete walls common in Nigerian construction. Suitable for homes, SME offices, schools, and estate common areas.",
+    "specs": {
+      "Modes": "Wireless repeater or wired access point (Ethernet)",
+      "Compatibility": "Starlink and any other internet source",
+      "Range": "Long-range projection; suited to thick concrete walls",
+      "IdealFor": "Homes, SME offices, schools, estate common areas",
+      "Use": "Extend WiFi where the Starlink router alone does not reach"
+    },
+    "whatsInBox": [
+      "Long range WiFi mesh / repeater router",
+      "Power adapter",
+      "Ethernet cable"
+    ],
+    "installationAvailable": "Installation Services and Wi‑Fi distribution services available",
+    "image": "/images/products/long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
+    "images": [
+      "/images/products/long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
+      "/images/products/long-range-wifi-mesh/WiredLongRangeWifiMeshRepeaterRouter.jpeg"
+    ]
   }
 ]
