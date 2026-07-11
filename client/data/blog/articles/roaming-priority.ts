@@ -19,7 +19,7 @@ export const roamingPriorityArticles: SeoArticle[] = [
     featured: false,
     serviceCta: {
       label: "Talk to an activation expert",
-      href: "/contact",
+      href: "/starlink-roaming-global-priority-nigeria",
       blurb: "We match plan class to how you actually use Starlink — fixed, travelling, or offshore — before you pay for the wrong tier.",
     },
     blocks: blocks(
@@ -52,7 +52,7 @@ export const roamingPriorityArticles: SeoArticle[] = [
       p("If your dish lives on one roof and never moves, you need neither — Residential or fixed business is enough. If you travel within Nigeria or across borders with your kit, Roaming is the right call. If you operate on water, on the move, or run mission-critical work that cannot slow down during congestion, Global Priority is the one that earns its cost. The expensive mistakes happen when people buy up out of fear or buy down to save money and then lose service when it counts."),
       p("Power and placement still decide whether any of this works. A priority plan does not survive a generator changeover that reboots an unprotected router, and Roaming does nothing if the dish has no sky view at the new site. Plan class is one layer; the install underneath it is what keeps you online."),
     ),
-    cta: "Not sure whether you need Roaming, fixed Priority, or full Global Priority? Tell us how and where you use Starlink and we'll match the plan to your reality before you spend a naira on the wrong tier — [contact DataGram](/contact) or explore our [enterprise and maritime setups](/starlink-enterprise-nigeria).",
+    cta: "Not sure whether you need Roaming, fixed Priority, or full Global Priority? Tell us how and where you use Starlink and we'll match the plan to your reality before you spend a naira on the wrong tier — start with [DataGram's Roaming and Global Priority activation service](/starlink-roaming-global-priority-nigeria) or [contact DataGram](/contact).",
     faqs: faqs(
       {
         question: "Is Starlink Roaming the same as Global Priority?",

@@ -5,6 +5,7 @@ import {
   HeartHandshake,
   Home,
   Network,
+  Plane,
   Ship,
   Waves,
   Wifi,
@@ -260,6 +261,12 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         cta: "Get deep sea quote",
       },
     ],
+    relatedLinks: [
+      {
+        label: "Starlink Roaming and Global Priority activation",
+        href: "/starlink-roaming-global-priority-nigeria",
+      },
+    ],
     faqs: [
       {
         question: "Does Starlink work on moving vessels in Nigeria waters?",
@@ -283,7 +290,8 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
       {
         question: "Do you handle maritime activation and subscription?",
-        answer: "Yes, we do.",
+        answer:
+          "Yes. For Starlink Roaming and Global Priority activation on Nigerian accounts — including offshore vessels — DataGram handles plan assessment, account changes, and handover documentation.",
       },
       roamingFaq,
       ...standardFaqs,
@@ -758,11 +766,17 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         cta: "Fleet pricing",
       },
     ],
+    relatedLinks: [
+      {
+        label: "Global Priority or Roaming plan",
+        href: "/starlink-roaming-global-priority-nigeria",
+      },
+    ],
     faqs: [
       {
         question: "Which Starlink plan works on leisure boats in Nigeria?",
         answer:
-          "Mobility or regional maritime classes apply depending on route and official coverage. We confirm on starlink.com before you buy hardware—using a fixed residential dish at sea violates terms and performs poorly.",
+          "Mobility or regional maritime classes apply depending on route and official coverage. We confirm on starlink.com before you buy hardware—using a fixed residential dish at sea violates terms and performs poorly. Need a Global Priority or Roaming plan activated? DataGram handles assessment and account activation for coastal craft.",
       },
       {
         question: "Can you install at Lagos marinas?",
@@ -920,6 +934,12 @@ export const industryLandingPages: IndustryLandingConfig[] = [
             href: "/starlink-offshore-hse-compliance",
             linkLabel: "Open offshore HSE compliance",
           },
+          {
+            title: "Starlink Roaming and Global Priority",
+            body: "Plan assessment and account activation for Roaming add-ons and Global Priority upgrades across land and sea.",
+            href: "/starlink-roaming-global-priority-nigeria",
+            linkLabel: "Open Roaming & Global Priority activation",
+          },
         ],
       },
     ],
@@ -988,6 +1008,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
       { label: "Boat Installation", href: "/starlink-boat-installation" },
       { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
+      { label: "Starlink Roaming and Global Priority", href: "/starlink-roaming-global-priority-nigeria" },
       { label: "Niger Delta Installation Coverage", href: "/starlink-installation-niger-delta" },
     ],
     ctaBanner: {
@@ -1631,7 +1652,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
           },
           {
             title: "Plan changes",
-            body: "Standard: client handles plan changes site by site. Fleet: DataGram activates upgrades — including Global Priority where needed — across all sites in scope.",
+            body: "Standard: client handles plan changes site by site. Fleet: DataGram activates upgrades — including Roaming and Global Priority plans — across all sites in scope.",
           },
         ],
       },
@@ -1701,6 +1722,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
       { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
       { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
+      { label: "Roaming and Global Priority plans", href: "/starlink-roaming-global-priority-nigeria" },
       { label: "Enterprise Plans", href: "/services/enterprise-plans" },
     ],
     ctaBanner: {
@@ -1758,6 +1780,266 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "maritime Starlink fleet",
     ],
     includeHowTo: true,
+  },
+  {
+    path: "/starlink-roaming-global-priority-nigeria",
+    seoTitle: "Starlink Roaming & Global Priority Activation Nigeria | DataGram",
+    metaDescription:
+      "DataGram activates Starlink Roaming and Global Priority plans across Nigeria — offshore, maritime, and enterprise clients. Get activated today.",
+    canonical: "/starlink-roaming-global-priority-nigeria",
+    ogImage: img("maritime2.jpeg"),
+    h1: "Starlink Roaming and Global Priority Activation in Nigeria",
+    heroLabel: "Starlink Roaming & Global Priority",
+    heroSubheading:
+      "DataGram activates and manages Starlink Roaming and Global Priority plans for Nigerian clients operating across land regions, offshore waters, and international routes. If your standard residential or business plan is not enough for where you work, we find and activate the right plan for you.",
+    heroImageAlt:
+      "Starlink dish installed on tanker deck in open ocean — Roaming and Global Priority for Nigerian offshore clients",
+    heroImage: img("maritime2.jpeg"),
+    heroImageFile: "maritime2.jpeg",
+    heroImageReason:
+      "wide cinematic tanker deck with Starlink dish and open ocean — primary audience is offshore and travelling clients",
+    heroObjectPosition: "center",
+    heroPrimaryCta: { label: "Get Activated", href: "/contact" },
+    overviewTitle: "Activation service — not another plan explainer",
+    overviewParagraphs: [
+      "This page is for Nigerian operators who need Roaming or Global Priority activated correctly — account changes, hardware eligibility, and a working link — not a long product essay. For the full informational breakdown of limits, pricing logic, and DIY steps, read our guide on Starlink Roaming and Global Priority activation.",
+      "DataGram assesses your current dish and subscription, confirms whether Roaming or Global Priority fits the route, activates the plan on your account, and documents the change for procurement or the vessel ops desk. Offshore, maritime, NGO field teams, and multi-site fleets are the usual buyers.",
+    ],
+    stats: [
+      { label: "Roaming activation", value: "24–48 hrs", note: "Typical once account access is confirmed." },
+      { label: "Global Priority", value: "Quoted", note: "Depends on hardware eligibility and bucket size." },
+      { label: "Service area", value: "Nigeria+", note: "Land regions, coastal waters, and ocean where coverage allows." },
+      { label: "Hardware check", value: "Required", note: "FHP needed for most maritime mobility use." },
+    ],
+    whyTitle: "Who Needs Roaming or Global Priority?",
+    whyCards: [
+      {
+        icon: Ship,
+        title: "Offshore & Maritime Operators",
+        body: "Vessels operating in the Gulf of Guinea, Niger Delta waterways, and open Atlantic waters need connectivity that follows the ship — not a service tied to a land address. Roaming and Global Priority plans keep your crew and operations connected regardless of how far offshore you are.",
+      },
+      {
+        icon: Plane,
+        title: "Nigerians Working Internationally",
+        body: "If you registered your Starlink in Nigeria but regularly work in other countries, the standard plan restricts use outside Nigeria to 14 days before service is paused. Roaming helps short cross-border travel; Global Priority is the plan that removes the country lock for indefinite international or offshore use.",
+      },
+      {
+        icon: HeartHandshake,
+        title: "NGOs & Field Operations",
+        body: "Humanitarian and development organisations operating across multiple African countries need internet that moves with their teams. Global Priority provides high-throughput connectivity with no regional lock.",
+      },
+      {
+        icon: Building2,
+        title: "Enterprise & Fleet Managers",
+        body: "Companies managing Starlink connections across multiple sites, vehicles, or vessels often need a mix of standard, roaming, and priority plans across their fleet. DataGram advises on and activates the right plan for each asset.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "Roaming vs Global Priority: What Is the Difference?",
+        paragraphs: [
+          "Both sound like premium upgrades. They solve different problems. Match the plan to how you actually move — not to whichever name sounds stronger.",
+        ],
+        cards: [
+          {
+            title: "Starlink Roaming",
+            body: "Available on: Residential and some business plans. How it works: Lets you use the dish away from the registered service address; out-of-country use is still subject to SpaceX’s 14-day pause limit. Best for: Occasional travel, short cross-border assignments, vessels in coastal and near-shore waters. Data: Standard allocation — same as your base plan. Cost: Added to your existing plan at additional monthly cost (USD-denominated — DataGram can advise on current pricing). Limitation: 14-day international use limit; not designed for permanent offshore or international use.",
+          },
+          {
+            title: "Global Priority",
+            body: "Available on: Dedicated Global Priority plan (separate from residential). How it works: No regional country lock — operates globally including open ocean under maritime mobility coverage. Best for: Offshore vessels, FPSOs, OSVs, international operators, deep sea operations. Data: Priority data allocation (Ocean Mode priority buckets apply — see FAQ). Cost: Higher monthly subscription (USD-denominated — contact DataGram for current naira equivalent). Limitation: Higher cost than Roaming; hardware eligibility applies (Flat High Performance dish required for maritime mobility).",
+          },
+        ],
+        footerNote:
+          "Pricing is USD-denominated and subject to exchange rate at time of activation. DataGram provides naira cost estimates and can advise on the most cost-effective plan for your specific use case.",
+      },
+      {
+        title: "What DataGram Manages for You",
+        details: [
+          {
+            title: "Plan Assessment",
+            body: "We review your current hardware, location, and usage requirements and confirm which plan — Roaming or Global Priority — is the right fit before you pay for anything.",
+          },
+          {
+            title: "Account Configuration",
+            body: "We handle the account-level changes required to activate Roaming or upgrade to Global Priority on your existing or new Starlink account.",
+          },
+          {
+            title: "Hardware Eligibility Check",
+            body: "Not all Starlink hardware supports all plans. We confirm whether your current dish is eligible or whether an upgrade to the Flat High Performance terminal is required.",
+          },
+          {
+            title: "Activation and Testing",
+            body: "Once the plan is activated, we test connectivity and confirm the service is running correctly before handing over.",
+          },
+          {
+            title: "Ongoing Subscription Management",
+            body: "For enterprise and maritime clients on active subscriptions, DataGram can manage renewal, plan changes, and troubleshooting as part of a managed service arrangement.",
+          },
+          {
+            title: "Documentation",
+            body: "We provide written confirmation of plan activation, hardware configuration, and account details — essential for corporate procurement and vessel operators who need an audit trail.",
+          },
+        ],
+      },
+      {
+        title: "Related Services",
+        cards: [
+          {
+            title: "Offshore & Maritime Installation",
+            body: "Full Starlink installation for vessels, rigs, and waterfront facilities — from mast survey to activation.",
+            href: "/starlink-offshore-maritime-installation",
+            linkLabel: "Learn more →",
+          },
+          {
+            title: "Fleet Management",
+            body: "Managing Starlink across multiple vessels or sites — subscriptions, accounts, and network monitoring at scale.",
+            href: "/starlink-fleet-management-nigeria",
+            linkLabel: "Learn more →",
+          },
+          {
+            title: "Enterprise & Marine Hub",
+            body: "Turnkey Starlink network integration for Nigerian enterprises, NGOs, and industrial operations.",
+            href: "/starlink-enterprise-marine-hub",
+            linkLabel: "Learn more →",
+          },
+        ],
+      },
+    ],
+    proofTitle: "Deployment proof",
+    proofCards: [
+      proof(
+        "maritime2.jpeg",
+        "Starlink on tanker deck in open ocean for roaming and Global Priority clients",
+        "Offshore and deep-water routes where Global Priority and the right hardware matter.",
+        "IMAGE: maritime2.jpeg — tanker deck hero context for roaming / Global Priority buyers"
+      ),
+      proof(
+        "maritime4.jpeg",
+        "Starlink on Niger Delta oil platform — plan class must match offshore use",
+        "Platform and industrial corridor work where plan upgrades are part of the install.",
+        "IMAGE: maritime4.jpeg — oil/gas proof for Global Priority activation audience"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware stocked at DataGram Nigeria for rapid plan and kit mobilisation",
+        "Hardware on hand when a plan change also needs an FHP upgrade.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — stock readiness for activation projects"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "We thought Roaming would keep the OSV online indefinitely. DataGram checked the account, explained the 14-day limit, and moved us to Global Priority before the pause hit mid-campaign.",
+      attribution: "Fleet IT lead, offshore support operator (name withheld)",
+    },
+    packagesTitle: "Activation options",
+    packages: [
+      {
+        name: "Roaming activation",
+        priceLabel: "Quoted after assessment",
+        features: [
+          "Hardware and plan eligibility check",
+          "Account-level Roaming configuration",
+          "Written confirmation of the change",
+        ],
+        cta: "Get Activated",
+      },
+      {
+        name: "Global Priority upgrade",
+        priceLabel: "Quoted after assessment",
+        features: [
+          "FHP / mobility hardware review",
+          "Priority data bucket recommendation",
+          "Activation, test, and handover notes",
+        ],
+        cta: "Get Activated",
+      },
+      {
+        name: "Managed plan admin",
+        priceLabel: "Custom",
+        features: [
+          "Renewals and plan changes",
+          "Fleet-wide Global Priority coordination",
+          "Escalation path for active subscriptions",
+        ],
+        cta: "Get a Plan Assessment",
+      },
+    ],
+    relatedLinks: [
+      {
+        label: "Deep guide: Roaming & Global Priority activation",
+        href: "/blog/starlink-roaming-global-priority-activation-nigeria",
+      },
+      {
+        label: "Ocean Mode 50GB priority limit explained",
+        href: "/blog/starlink-ocean-mode-50gb-priority-limit-explained",
+      },
+      { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
+      { label: "Fleet Management Nigeria", href: "/starlink-fleet-management-nigeria" },
+      { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
+      { label: "Global Roaming service overview", href: "/services/global-roaming" },
+    ],
+    ctaBanner: {
+      title: "Not sure which plan fits your operation?",
+      body: "DataGram assesses your hardware, location, and usage before recommending anything. No guesswork.",
+      buttonLabel: "Get a Plan Assessment",
+      href: "/contact",
+    },
+    faqs: [
+      {
+        question: "What is the difference between Starlink Roaming and Global Priority?",
+        answer:
+          "Roaming allows you to use your existing Starlink plan outside Nigeria for up to 14 days per month. Global Priority is a separate plan with no regional restrictions, designed for offshore and international operators who need continuous connectivity wherever they are. Roaming is an add-on; Global Priority is a plan upgrade with different hardware requirements and a higher monthly cost.",
+      },
+      {
+        question: "Can I use my standard Starlink residential plan on a vessel in the Niger Delta?",
+        answer:
+          "A standard residential plan will work if the vessel stays within Nigerian territorial waters and your registered service address is in Nigeria. For vessels that move beyond coastal waters or require continuous at-sea connectivity, the Global Priority or Maritime Mobility plan is required. DataGram can assess your route and vessel type and recommend the correct plan.",
+      },
+      {
+        question: "Does Global Priority require different hardware?",
+        answer:
+          "For offshore and maritime use, the Flat High Performance (FHP) dish is required — the standard dish is not rated for open-ocean mounting or the movement of a vessel underway. For land-based international roaming, your existing standard or Gen 3 dish is compatible with the Roaming add-on. DataGram will confirm hardware eligibility before advising on a plan change.",
+      },
+      {
+        question: "What is the 50GB Ocean Mode priority limit?",
+        answer:
+          "Global Priority maritime plans include a priority data allocation — currently 50GB per month at full priority speeds. Once that allocation is used, data continues at standard speeds rather than being cut off. For high-usage vessel operations, DataGram can advise on additional priority data top-ups. See our detailed breakdown at /blog/starlink-ocean-mode-50gb-priority-limit-explained.",
+      },
+      {
+        question: "How long does activation take?",
+        answer:
+          "For Roaming add-ons on an existing account, activation is typically completed within 24–48 hours once DataGram has the account access required. Global Priority plan upgrades may take slightly longer depending on hardware eligibility confirmation. DataGram handles the full process and keeps you updated throughout.",
+      },
+    ],
+    extraSchemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Starlink Roaming and Global Priority Activation Nigeria",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "DataGram",
+          url: "https://www.datagram.ng",
+          telephone: "+2349060976424",
+        },
+        areaServed: { "@type": "Country", name: "Nigeria" },
+        serviceType: "Satellite Internet Plan Activation",
+        description:
+          "DataGram activates and manages Starlink Roaming and Global Priority plans for Nigerian offshore, maritime, NGO, and enterprise clients.",
+        url: "https://www.datagram.ng/starlink-roaming-global-priority-nigeria",
+      },
+    ],
+    packagePriceDisclaimer: true,
+    serviceAreaSchema: "Nigeria",
+    keywords: [
+      "Starlink Roaming Nigeria",
+      "Starlink Global Priority activation",
+      "Starlink Roaming activation Nigeria",
+      "Global Priority maritime Nigeria",
+      "Starlink offshore plan upgrade",
+    ],
   },
 ];
 

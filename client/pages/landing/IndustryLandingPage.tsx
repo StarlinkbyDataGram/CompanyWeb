@@ -99,6 +99,11 @@ export default function IndustryLandingPage({ config }: Props) {
                 {/* IMAGE: hero-fleet-management-nigeria.jpg — aerial multi-vessel fleet for fleet management */}
               </>
             )}
+            {config.path === "/starlink-roaming-global-priority-nigeria" && (
+              <>
+                {/* IMAGE: maritime2.jpeg — tanker deck open ocean — Roaming & Global Priority activation hero */}
+              </>
+            )}
             {config.heroImage && config.heroImageFile && (
               <img
                 src={config.heroImage}
