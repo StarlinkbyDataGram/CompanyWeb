@@ -81,22 +81,22 @@ export default function IndustryLandingPage({ config }: Props) {
             )}
             {config.path === "/starlink-enterprise-marine-hub" && (
               <>
-                {/* IMAGE: StarlinkCompanyInstallation.jpeg — institutional enterprise install for hub landing */}
+                {/* IMAGE: hero-enterprise-marine-hub.jpg — dark network rack / ops infrastructure for enterprise-marine hub */}
               </>
             )}
             {config.path === "/starlink-offshore-hse-compliance" && (
               <>
-                {/* IMAGE: maritime4.jpeg — Niger Delta platform install supporting HSE/offshore safety page */}
+                {/* IMAGE: hero-offshore-hse-compliance.jpg — aerial offshore oil platform complex for HSE page */}
               </>
             )}
             {config.path === "/starlink-marine-sdwan-integration" && (
               <>
-                {/* IMAGE: maritime2.jpeg — vessel deck connectivity context for marine SD-WAN bonding */}
+                {/* IMAGE: hero-marine-sdwan-integration.jpg — ship bridge navigation console for marine SD-WAN */}
               </>
             )}
             {config.path === "/starlink-fleet-management-nigeria" && (
               <>
-                {/* IMAGE: StarlinkCompanyInstallation.jpeg — enterprise multi-site / fleet operations hero */}
+                {/* IMAGE: hero-fleet-management-nigeria.jpg — aerial multi-vessel fleet for fleet management */}
               </>
             )}
             {config.heroImage && config.heroImageFile && (

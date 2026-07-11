@@ -803,18 +803,17 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Turnkey Starlink network integration for Nigerian enterprises, NGOs, offshore vessels, and industrial sites — from survey to managed support.",
     canonical: "/starlink-enterprise-marine-hub",
-    ogImage: img("StarlinkCompanyInstallation.jpeg"),
+    ogImage: img("hero-enterprise-marine-hub.jpg"),
     h1: "Turnkey Starlink Network Integration for Enterprise and Maritime Operations in Nigeria",
     heroLabel: "Enterprise & marine connectivity hub",
     heroSubheading:
       "DataGram designs, installs, and documents Starlink networks for offices, NGOs, vessels, and industrial sites — from sky-view survey through VLAN handoff and managed support.",
-    heroImageAlt:
-      "DataGram Starlink enterprise installation at an institutional facility in Nigeria",
-    heroImage: img("StarlinkCompanyInstallation.jpeg"),
-    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageAlt: "Enterprise and marine network operations hub",
+    heroImage: img("hero-enterprise-marine-hub.jpg"),
+    heroImageFile: "hero-enterprise-marine-hub.jpg",
     heroImageReason:
-      "Institutional facility install — signals turnkey enterprise and marine network integration, not a consumer kit drop",
-    heroObjectPosition: "center top",
+      "Pexels network rack with blue illumination — dark technical infrastructure for enterprise/marine hub hero",
+    heroObjectPosition: "center center",
     heroPrimaryCta: { label: "Request an Enterprise Survey", href: "/contact" },
     overviewTitle: "One desk for land and sea Starlink projects",
     overviewParagraphs: [
@@ -1056,17 +1055,17 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "DataGram offshore Starlink installs under PTW on Niger Delta sites — pre-mobilisation survey, two-man rule, and documented post-install test reports.",
     canonical: "/starlink-offshore-hse-compliance",
-    ogImage: img("maritime4.jpeg"),
+    ogImage: img("hero-offshore-hse-compliance.jpg"),
     h1: "Offshore Starlink Installation in Nigeria: HSE-Aware, Field-Ready, and Fully Documented",
     heroLabel: "Offshore HSE & field practice",
     heroSubheading:
       "DataGram's offshore team operates under Permit to Work (PTW) frameworks and documented field safety standards across all Niger Delta and Gulf of Guinea deployments.",
-    heroImageAlt: "Starlink dish installed on an oil platform in the Niger Delta, Nigeria",
-    heroImage: img("maritime4.jpeg"),
-    heroImageFile: "maritime4.jpeg",
+    heroImageAlt: "Offshore oil platform installation environment",
+    heroImage: img("hero-offshore-hse-compliance.jpg"),
+    heroImageFile: "hero-offshore-hse-compliance.jpg",
     heroImageReason:
-      "Niger Delta platform install — visual proof for HSE and offshore procurement audiences",
-    heroObjectPosition: "center",
+      "Pexels aerial offshore oil platform complex — industrial, safety-serious, clearly platform/rig focused rather than cargo tanker",
+    heroObjectPosition: "center top",
     heroPrimaryCta: { label: "Request an Offshore Survey", href: "/contact" },
     overviewTitle: "Safety practice before the first hole is drilled",
     overviewParagraphs: [
@@ -1292,17 +1291,17 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "DataGram configures Starlink SD-WAN for Nigerian vessels and offshore sites — Starlink with 4G or VSAT failover for resilient maritime connectivity.",
     canonical: "/starlink-marine-sdwan-integration",
-    ogImage: img("maritime2.jpeg"),
+    ogImage: img("hero-marine-sdwan-integration.jpg"),
     h1: "Marine SD-WAN Integration: Starlink + 4G/VSAT Failover for Nigerian Vessels and Offshore Sites",
     heroLabel: "Marine SD-WAN & multi-WAN bonding",
     heroSubheading:
       "No single connection is enough for commercial maritime operations. DataGram configures multi-WAN bonding for zero-downtime connectivity at sea.",
-    heroImageAlt: "Starlink terminal on a vessel deck for multi-WAN maritime connectivity in Nigeria",
-    heroImage: img("maritime2.jpeg"),
-    heroImageFile: "maritime2.jpeg",
+    heroImageAlt: "Commercial vessel marine SD-WAN connectivity",
+    heroImage: img("hero-marine-sdwan-integration.jpg"),
+    heroImageFile: "hero-marine-sdwan-integration.jpg",
     heroImageReason:
-      "Vessel deck with open water — frames multi-path connectivity for commercial maritime buyers",
-    heroObjectPosition: "center",
+      "Pexels ship bridge navigation console — commercial maritime tech controls, dark enough for overlay, not leisure/cruise",
+    heroObjectPosition: "center center",
     heroPrimaryCta: { label: "Get a Network Integration Proposal", href: "/contact" },
     overviewTitle: "What SD-WAN means for vessels — without the jargon fog",
     overviewParagraphs: [
@@ -1537,17 +1536,16 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "DataGram manages Starlink across multiple Nigerian sites and vessels — one contact, centralized billing options, and fleet-wide visibility.",
     canonical: "/starlink-fleet-management-nigeria",
-    ogImage: img("StarlinkCompanyInstallation.jpeg"),
+    ogImage: img("hero-fleet-management-nigeria.jpg"),
     h1: "Starlink Fleet Management for Nigerian Enterprises and Maritime Operators",
     heroLabel: "Multi-site & fleet operations",
     heroSubheading:
       "Managing Starlink across 10 sites or 10 vessels is a different problem from a single installation. DataGram handles procurement, deployment, account management, and ongoing support across your entire fleet.",
-    heroImageAlt:
-      "DataGram enterprise Starlink installation representing multi-site fleet management in Nigeria",
-    heroImage: img("StarlinkCompanyInstallation.jpeg"),
-    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageAlt: "Fleet of vessels in port — Starlink fleet management Nigeria",
+    heroImage: img("hero-fleet-management-nigeria.jpg"),
+    heroImageFile: "hero-fleet-management-nigeria.jpg",
     heroImageReason:
-      "IMAGE: StarlinkCompanyInstallation.jpeg — closest existing enterprise/industrial hero for multi-site fleet operations context",
+      "Pexels aerial multi-vessel anchorage — conveys fleet scale and coordination, not a single-ship portrait",
     heroObjectPosition: "center top",
     heroPrimaryCta: { label: "Request a Fleet Proposal", href: "/contact" },
     overviewTitle: "One relationship for every dish in your fleet",
