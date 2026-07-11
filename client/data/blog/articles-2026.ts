@@ -14,6 +14,9 @@ import { geoBArticles } from "./articles/geo-b";
 import { futureAArticles } from "./articles/future-a";
 import { futureBArticles } from "./articles/future-b";
 import { roamingPriorityArticles } from "./articles/roaming-priority";
+import { enterpriseMaritimeB2bArticles } from "./articles/enterprise-maritime-b2b";
+import { enterpriseMaritimeB2bMoreArticles } from "./articles/enterprise-maritime-b2b-more";
+import { enterpriseMaritimeB2bFinalArticles } from "./articles/enterprise-maritime-b2b-final";
 
 /** Legacy articles (pre-FAQ/block format) — migrated in place */
 const legacyArticles: SeoArticle[] = [
@@ -212,6 +215,9 @@ export const seoArticles2026: SeoArticle[] = [
   ...futureAArticles,
   ...futureBArticles,
   ...roamingPriorityArticles,
+  ...enterpriseMaritimeB2bArticles,
+  ...enterpriseMaritimeB2bMoreArticles,
+  ...enterpriseMaritimeB2bFinalArticles,
 ];
 
 export function getSeoArticleBySlug(slug: string) {

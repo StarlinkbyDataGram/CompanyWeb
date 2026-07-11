@@ -94,6 +94,11 @@ export default function IndustryLandingPage({ config }: Props) {
                 {/* IMAGE: maritime2.jpeg — vessel deck connectivity context for marine SD-WAN bonding */}
               </>
             )}
+            {config.path === "/starlink-fleet-management-nigeria" && (
+              <>
+                {/* IMAGE: StarlinkCompanyInstallation.jpeg — enterprise multi-site / fleet operations hero */}
+              </>
+            )}
             {config.heroImage && config.heroImageFile && (
               <img
                 src={config.heroImage}

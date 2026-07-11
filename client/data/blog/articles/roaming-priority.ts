@@ -8,7 +8,7 @@ export const roamingPriorityArticles: SeoArticle[] = [
     excerpt:
       "What Starlink Roaming and Global Priority actually mean for Nigerian users, how to activate each, the costs, and when you genuinely need them.",
     metaDescription:
-      "Starlink Roaming and Global Priority activation in Nigeria: what each plan does, how to enable it, costs, and which one your setup needs.",
+      "Starlink's 14-day roaming limit affects Nigerian accounts used offshore or abroad. How Global Priority works — and how DataGram manages the upgrade.",
     author: "DataGram Nigeria",
     date: "2026-06-23",
     readTime: "11 min read",
@@ -27,6 +27,8 @@ export const roamingPriorityArticles: SeoArticle[] = [
       p("This guide breaks down what each plan does, how to activate them on a Nigerian account, what they realistically cost, and which one fits your situation. We set these up for homes, travelling professionals, and offshore operators every week, so the advice here is what we tell paying customers — not marketing copy."),
       h2("What Starlink Roaming means for Nigerian users"),
       p("Starlink Roaming (the feature formerly marketed as the mobile or travel option) lets you use your dish away from the fixed service address you registered. With a standard Residential plan, Starlink expects the dish to live at one location. Roaming removes that geographic lock so you can power up in Lagos this week and a compound in Asaba the next without the system flagging you for being off-address."),
+      h3("Important: SpaceX 14-Day Roaming Limit (2026)"),
+      p("As of 2026, SpaceX enforces a strict 14-day limit for using a Starlink account outside its registered country. After 14 days, the service is paused until the dish returns to its home country — or the account is upgraded to a Global Priority plan. This affects Nigerian-registered accounts used on offshore vessels, across borders, or while travelling. The Roam add-on does not bypass this limit. Only Global Priority resolves it permanently."),
       p("For most Nigerians the practical use cases are simple: you move between a city flat and a village home, you run a mobile business that shifts sites, or you take the kit to a temporary camp where no other internet reaches. Roaming also lets you use Starlink across different land regions globally, not only where you activated — which helps when local coverage is limited or you travel across borders."),
       h3("Roaming is not magic — it has limits"),
       p("Roaming is designed for travel, not as a permanent fixed connection in a different country indefinitely. Performance can be deprioritised compared with a properly registered fixed plan in busy cells, and it costs extra on top of your base subscription. If your dish never moves, you usually do not need it. If it moves often, it is the difference between a working link and an account that locks you out."),
@@ -76,6 +78,26 @@ export const roamingPriorityArticles: SeoArticle[] = [
         question: "How much extra do these plans cost in Nigeria?",
         answer:
           "Roaming is a modest monthly add-on for most users, while Global Priority costs significantly more because it is sold in priority data buckets with mobility and ocean coverage. Prices shift with the naira and Starlink's own changes, so confirm the live figure in the app before subscribing.",
+      },
+      {
+        question: "What happens to my Starlink service after 14 days outside Nigeria?",
+        answer:
+          "SpaceX will pause your service automatically. You will see a 'paused' status in the Starlink app. The dish will not reconnect until you either return to Nigeria or upgrade your account to a Global Priority plan, which removes the country restriction entirely.",
+      },
+      {
+        question: "Does the Starlink Roam add-on let me use Starlink offshore indefinitely?",
+        answer:
+          "No. The Roam add-on allows travel across countries but is still subject to the 14-day out-of-country limit enforced since 2025. For indefinite offshore use — on vessels, oil platforms, or international travel — the Global Priority plan is the only compliant option.",
+      },
+      {
+        question: "How much does the Global Priority plan cost for a Nigerian Starlink account?",
+        answer:
+          "Global Priority pricing varies and is billed in USD, which means the naira cost fluctuates with the exchange rate. Contact DataGram for current pricing — we assist with plan upgrades and can consolidate billing for enterprise and fleet clients.",
+      },
+      {
+        question: "Can DataGram upgrade my existing Starlink account to Global Priority?",
+        answer:
+          "Yes. DataGram manages plan upgrades for individual accounts and enterprise fleets. We handle the account change, confirm activation, and provide documentation for your records. Contact us via WhatsApp or the quote form.",
       },
     ),
   },

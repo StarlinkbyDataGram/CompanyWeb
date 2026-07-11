@@ -15,6 +15,7 @@ export const SNAP_INCLUDE_ROUTES = [
   "/starlink-enterprise-marine-hub",
   "/starlink-offshore-hse-compliance",
   "/starlink-marine-sdwan-integration",
+  "/starlink-fleet-management-nigeria",
   "/starlink-installation-abuja",
   "/starlink-installation-lagos",
   "/starlink-installation-rivers-state-port-harcourt",

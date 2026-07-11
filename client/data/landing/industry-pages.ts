@@ -1,4 +1,16 @@
-import { Anchor, Building2, Factory, HeartHandshake, Home, Network, Ship, Waves, Wifi, Zap, Shield } from "lucide-react";
+import {
+  Anchor,
+  Building2,
+  Factory,
+  HeartHandshake,
+  Home,
+  Network,
+  Ship,
+  Waves,
+  Wifi,
+  Zap,
+  Shield,
+} from "lucide-react";
 import { cropForFile } from "@/lib/image-crop";
 import type { IndustryLandingConfig } from "./types";
 
@@ -1518,6 +1530,236 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "Starlink VSAT bonding",
       "offshore multi-WAN Nigeria",
     ],
+  },
+  {
+    path: "/starlink-fleet-management-nigeria",
+    seoTitle: "Starlink Fleet Management Nigeria | Multi-Site | DataGram",
+    metaDescription:
+      "DataGram manages Starlink across multiple Nigerian sites and vessels — one contact, centralized billing options, and fleet-wide visibility.",
+    canonical: "/starlink-fleet-management-nigeria",
+    ogImage: img("StarlinkCompanyInstallation.jpeg"),
+    h1: "Starlink Fleet Management for Nigerian Enterprises and Maritime Operators",
+    heroLabel: "Multi-site & fleet operations",
+    heroSubheading:
+      "Managing Starlink across 10 sites or 10 vessels is a different problem from a single installation. DataGram handles procurement, deployment, account management, and ongoing support across your entire fleet.",
+    heroImageAlt:
+      "DataGram enterprise Starlink installation representing multi-site fleet management in Nigeria",
+    heroImage: img("StarlinkCompanyInstallation.jpeg"),
+    heroImageFile: "StarlinkCompanyInstallation.jpeg",
+    heroImageReason:
+      "IMAGE: StarlinkCompanyInstallation.jpeg — closest existing enterprise/industrial hero for multi-site fleet operations context",
+    heroObjectPosition: "center top",
+    heroPrimaryCta: { label: "Request a Fleet Proposal", href: "/contact" },
+    overviewTitle: "One relationship for every dish in your fleet",
+    overviewParagraphs: [
+      "A single Starlink install is a project. Ten installs across states — or five OSVs with different captains and berths — is an operations problem. SpaceX still bills and supports per terminal. Without a local fleet manager, your IT desk ends up juggling separate apps, separate invoices, and separate fault tickets.",
+      "DataGram fleet management puts procurement, coordinated installation, account administration, plan upgrades, and escalations under one Nigerian point of contact. You get VAT-compliant invoicing options, quarterly per-site performance notes, and a path that scales from branch networks to maritime fleets.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "Per-site baselines recorded after install." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Varies by plan class and obstruction." },
+      { label: "Upload range", value: "10–100 Mbps", note: "Sized honestly for CCTV and branch sync." },
+      { label: "Fleet scope", value: "5+ sites", note: "Meaningful when you stop managing accounts one by one." },
+    ],
+    whyTitle: "Who this is for",
+    whyCards: [
+      {
+        icon: Building2,
+        title: "Multi-site businesses",
+        body: "Companies with offices, warehouses, or retail locations spread across Nigerian states where fibre is unavailable or unreliable. DataGram coordinates simultaneous deployments and a single billing relationship.",
+        href: "/starlink-enterprise-nigeria",
+        linkLabel: "Enterprise Starlink Nigeria",
+      },
+      {
+        icon: Ship,
+        title: "Maritime fleet operators",
+        body: "OSV and vessel operators running 5 or more boats need consistent hardware standards, centralized subscription management, and a single engineer contact for any fault across the fleet.",
+        href: "/starlink-offshore-maritime-installation",
+        linkLabel: "Offshore maritime installation",
+      },
+      {
+        icon: HeartHandshake,
+        title: "NGO and field networks",
+        body: "NGOs running parallel field operations across multiple states need each location active at the same time, not rolled out one site at a time. DataGram manages staged multi-site deployment to a project timeline.",
+        href: "/starlink-enterprise-nigeria",
+        linkLabel: "Enterprise & NGO Starlink",
+      },
+      {
+        icon: Factory,
+        title: "Oil camp and remote industrial sites",
+        body: "Operators with Starlink dishes spread across camp locations in the Niger Delta need subscription tracking, plan upgrades, and fault response without having to manage multiple Starlink accounts independently.",
+        href: "/starlink-installation-niger-delta",
+        linkLabel: "Niger Delta installation coverage",
+      },
+    ],
+    extraSections: [
+      {
+        title: "What fleet management covers",
+        checklist: [
+          "Bulk hardware procurement and importation",
+          "Coordinated multi-site installation scheduling",
+          "Centralized Starlink account and subscription management",
+          "Plan upgrades and Global Priority activation across all sites",
+          "VAT-compliant invoicing per site or consolidated billing",
+          "Single point of contact for faults, replacements, and escalations",
+          "Quarterly performance reports per site (speeds, uptime, plan usage)",
+        ],
+      },
+      {
+        title: "Fleet vs standard installation",
+        paragraphs: [
+          "A standard install ends when one dish is online. Fleet management continues after go-live — accounts, billing, upgrades, and fault response across every site or vessel in scope.",
+        ],
+        details: [
+          {
+            title: "Accounts",
+            body: "Standard installation: one dish, one account. DataGram fleet management: multiple dishes, one relationship — we administer the fleet instead of leaving you with ten separate Starlink logins.",
+          },
+          {
+            title: "Day-to-day management",
+            body: "Standard: client manages the Starlink app per site. Fleet: DataGram manages accounts across the portfolio so IT is not chasing passwords and billing cycles.",
+          },
+          {
+            title: "Support escalations",
+            body: "Standard: client contacts Starlink support directly. Fleet: DataGram handles escalations, replacements, and truck rolls against a single contact path.",
+          },
+          {
+            title: "Billing",
+            body: "Standard: per-unit invoicing only. Fleet: consolidated or per-site billing available, with VAT-compliant naira invoices where DataGram supplies hardware and installation.",
+          },
+          {
+            title: "Performance reporting",
+            body: "Standard: no structured performance reporting. Fleet: quarterly per-site notes on speeds, uptime signals, and plan usage so procurement and ops can see the fleet, not just one kit.",
+          },
+          {
+            title: "Plan changes",
+            body: "Standard: client handles plan changes site by site. Fleet: DataGram activates upgrades — including Global Priority where needed — across all sites in scope.",
+          },
+        ],
+      },
+    ],
+    proofTitle: "Deployment proof",
+    proofCards: [
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "Enterprise Starlink install supporting multi-site fleet programmes",
+        "Enterprise sites that need documented handover and repeatable standards.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — fleet management enterprise proof"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware stocked for bulk fleet procurement",
+        "Bulk hardware readiness for coordinated multi-site mobilisation.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — fleet procurement stock proof"
+      ),
+      proof(
+        "maritime4.jpeg",
+        "Starlink on Niger Delta platform for maritime fleet programmes",
+        "Maritime and industrial sites that share the same fleet management need.",
+        "IMAGE: maritime4.jpeg — vessel/platform fleet context"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "We stopped treating each branch as a separate Starlink problem. One contact, one billing conversation, and faults no longer disappear into five different WhatsApp threads.",
+      attribution: "IT operations lead, multi-state retailer (name withheld)",
+    },
+    packagesTitle: "Fleet engagement options",
+    packages: [
+      {
+        name: "Fleet survey",
+        priceLabel: "Quoted by site count",
+        features: [
+          "Inventory of existing dishes and plans",
+          "Gap list for hardware and plan class",
+          "Rollout schedule sketch",
+        ],
+        cta: "Request a Fleet Proposal",
+      },
+      {
+        name: "Managed fleet",
+        priceLabel: "Custom",
+        features: [
+          "Procurement and coordinated installs",
+          "Account and subscription administration",
+          "Quarterly per-site performance notes",
+        ],
+        cta: "Request a Fleet Proposal",
+      },
+      {
+        name: "Maritime fleet",
+        priceLabel: "Custom",
+        features: [
+          "Consistent FHP / mobility standards",
+          "Global Priority activation where required",
+          "Single engineer escalation path",
+        ],
+        cta: "Request a Fleet Proposal",
+      },
+    ],
+    relatedLinks: [
+      { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
+      { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
+      { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
+      { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
+      { label: "Enterprise Plans", href: "/services/enterprise-plans" },
+    ],
+    ctaBanner: {
+      title: "Ready to centralize your Starlink operations?",
+      body: "Tell us how many sites or vessels you run, where they sit, and whether you need consolidated billing — we reply with a scoped fleet proposal.",
+      buttonLabel: "Request a Fleet Proposal",
+      href: "/contact",
+    },
+    faqs: [
+      {
+        question: "How many sites make fleet management worth it?",
+        answer:
+          "Usually five or more dishes — or fewer if they sit in hard-to-reach camps or vessels where a single missed renewal is expensive. Below that, a standard enterprise install with clear documentation is often enough.",
+      },
+      {
+        question: "Does SpaceX give one portal for all our Starlink accounts?",
+        answer:
+          "Not in the way most Nigerian IT teams expect for multi-site estates. Each terminal still has its own account relationship. Fleet management is how DataGram sits on top of that reality with one local contact and consolidated administration.",
+      },
+      {
+        question: "Can you consolidate billing in naira with VAT?",
+        answer:
+          "Where DataGram supplies hardware, installation, and managed services, we issue VAT-compliant naira invoices. Starlink's own subscription line items still follow SpaceX checkout rules — we explain the split clearly so finance knows what is claimable.",
+      },
+      {
+        question: "Do you manage Global Priority upgrades across a maritime fleet?",
+        answer:
+          "Yes. When vessels need Global Priority to stay compliant outside Nigeria or for ocean use, we coordinate upgrades across the fleet instead of leaving each captain to guess through the app.",
+      },
+      roamingFaq,
+    ],
+    extraSchemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Starlink Fleet Management Nigeria",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "DataGram Nigeria",
+          url: "https://www.datagram.ng",
+        },
+        serviceType: "Satellite Internet Fleet Management",
+        areaServed: { "@type": "Country", name: "Nigeria" },
+        description:
+          "Centralized Starlink procurement, deployment, account management and support for enterprises and maritime operators managing multiple sites or vessels in Nigeria",
+        url: "https://www.datagram.ng/starlink-fleet-management-nigeria",
+      },
+    ],
+    packagePriceDisclaimer: true,
+    serviceAreaSchema: "Nigeria — multi-site enterprise and maritime fleets",
+    keywords: [
+      "Starlink fleet management Nigeria",
+      "multi-site Starlink enterprise",
+      "Starlink account management Nigeria",
+      "maritime Starlink fleet",
+    ],
+    includeHowTo: true,
   },
 ];
 
