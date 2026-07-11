@@ -178,29 +178,52 @@
     ]
   },
   {
-    "id": "long-range-wifi-mesh",
-    "slug": "long-range-wifi-mesh",
-    "name": "Long Range WiFi Mesh & Repeater Router",
+    "id": "wireless-long-range-wifi-mesh",
+    "slug": "wireless-long-range-wifi-mesh",
+    "name": "Wireless Long Range WiFi Mesh / Repeater Router",
     "price": "N150,000",
-    "short": "Dual-mode long-range WiFi repeater and wired access point to extend Starlink coverage.",
-    "description": "A dual-mode WiFi extender that works as both a wireless repeater and a wired access point, depending on how your building is cabled. Extends Starlink WiFi coverage across large homes, offices, and compounds where the Starlink router alone does not reach. Works in wireless repeater mode (no cabling needed) or wired access point mode (via Ethernet for strongest signal). Compatible with Starlink and any other internet source. Supports long-range signal projection across open spaces and through thick concrete walls common in Nigerian construction. Suitable for homes, SME offices, schools, and estate common areas.",
+    "short": "Wireless long-range WiFi repeater to extend Starlink coverage without extra cabling.",
+    "description": "A wireless long-range WiFi mesh and repeater router that extends Starlink WiFi coverage across large homes, offices, and compounds where the Starlink router alone does not reach. Works in wireless repeater mode with no cabling needed, projecting signal across open spaces and through thick concrete walls common in Nigerian construction. Compatible with Starlink and any other internet source. Suitable for homes, SME offices, schools, and estate common areas.",
     "specs": {
-      "Modes": "Wireless repeater or wired access point (Ethernet)",
+      "Mode": "Wireless repeater / mesh",
       "Compatibility": "Starlink and any other internet source",
       "Range": "Long-range projection; suited to thick concrete walls",
-      "IdealFor": "Homes, SME offices, schools, estate common areas",
-      "Use": "Extend WiFi where the Starlink router alone does not reach"
+      "Cabling": "No Ethernet required — wireless extension",
+      "IdealFor": "Homes, SME offices, schools, estate common areas"
     },
     "whatsInBox": [
-      "Long range WiFi mesh / repeater router",
+      "Wireless long range WiFi mesh / repeater router",
+      "Power adapter"
+    ],
+    "installationAvailable": "Installation Services and Wi‑Fi distribution services available",
+    "image": "/images/products/wireless-long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
+    "images": [
+      "/images/products/wireless-long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg"
+    ]
+  },
+  {
+    "id": "wired-long-range-wifi-mesh",
+    "slug": "wired-long-range-wifi-mesh",
+    "name": "Wired Long Range WiFi Mesh / Repeater Router",
+    "price": "N150,000",
+    "short": "Wired long-range WiFi access point for strongest Starlink coverage over Ethernet.",
+    "description": "A wired long-range WiFi mesh and repeater router that works as a wired access point via Ethernet for the strongest, most stable signal. Extends Starlink WiFi coverage across large homes, offices, and compounds where the Starlink router alone does not reach. Ideal when your building is already cabled — Ethernet backhaul delivers reliable coverage through thick concrete walls common in Nigerian construction. Compatible with Starlink and any other internet source. Suitable for homes, SME offices, schools, and estate common areas.",
+    "specs": {
+      "Mode": "Wired access point (Ethernet)",
+      "Compatibility": "Starlink and any other internet source",
+      "Range": "Long-range projection; suited to thick concrete walls",
+      "Cabling": "Ethernet backhaul for strongest signal",
+      "IdealFor": "Homes, SME offices, schools, estate common areas"
+    },
+    "whatsInBox": [
+      "Wired long range WiFi mesh / repeater router",
       "Power adapter",
       "Ethernet cable"
     ],
     "installationAvailable": "Installation Services and Wi‑Fi distribution services available",
-    "image": "/images/products/long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
+    "image": "/images/products/wired-long-range-wifi-mesh/WiredLongRangeWifiMeshRepeaterRouter.jpeg",
     "images": [
-      "/images/products/long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
-      "/images/products/long-range-wifi-mesh/WiredLongRangeWifiMeshRepeaterRouter.jpeg"
+      "/images/products/wired-long-range-wifi-mesh/WiredLongRangeWifiMeshRepeaterRouter.jpeg"
     ]
   }
 ]
