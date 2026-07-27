@@ -189,7 +189,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
         "Estate railing mount with palm trees and white residential blocks.",
         "estate environment matching Awka and Nnewi residential estates"
       ),
-      {/* IMAGE NEEDED: DataGram technician holding Starlink box at residential compound entrance, branded vest visible, estate/compound background */}
+      // IMAGE NEEDED: DataGram technician holding Starlink box at residential compound entrance, branded vest visible, estate/compound background
       deploymentProof(
         "install3.png",
         "DataGram installer delivering a Starlink kit in Anambra State",
