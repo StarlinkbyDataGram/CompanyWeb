@@ -231,6 +231,16 @@ export default function IndustryLandingPage({ config }: Props) {
           <p className="mt-2 text-sm text-foreground/70 sm:text-base">
             Field deployments across Nigeria — offshore, enterprise, and residential.
           </p>
+          {config.proofLink && (
+            <div className="mt-6">
+              <Link
+                to={config.proofLink.href}
+                className="inline-flex items-center gap-2 font-semibold text-primary underline-offset-4 hover:underline"
+              >
+                {config.proofLink.label}
+              </Link>
+            </div>
+          )}
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {config.proofCards.map((card) => (
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">

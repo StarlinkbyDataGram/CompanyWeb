@@ -82,6 +82,7 @@ export type IndustryLandingConfig = {
   whyTitle: string;
   whyCards: IconCard[];
   proofTitle: string;
+  proofLink?: { label: string; href: string };
   proofCards: ProofCard[];
   speedStat: { label: string; down: string; up: string; latency: string };
   testimonial: { quote: string; attribution: string };

@@ -22,6 +22,7 @@ const nav = [
   { to: "/blog", label: "Blog" },
   { to: "/faq", label: "FAQ" },
   { to: "/guide/starlink-nigeria", label: "Nigeria Guide" },
+  { to: "/our-work", label: "Our Work" },
   { to: "/locations", label: "Cities" },
   { to: "/contact", label: "Contact" },
 ];

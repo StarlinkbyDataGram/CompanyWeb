@@ -173,6 +173,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
     ],
     proofTitle: "Deployment proof",
+    proofLink: { label: "See our maritime installation work →", href: "/our-work" },
     proofCards: [
       proof(
         "datagram-technician-rooftop-mount.jpg",
@@ -340,6 +341,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
     ],
     proofTitle: "Deployment proof",
+    proofLink: { label: "See our enterprise installation work →", href: "/our-work" },
     proofCards: [
       proof(
         "starlinkSetup.jpeg",
@@ -498,6 +500,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
     ],
     proofTitle: "Deployment proof",
+    proofLink: { label: "See our residential installation work →", href: "/our-work" },
     proofCards: [
       proof(
         "StarlinkInstallationresidential.jpeg",
@@ -635,6 +638,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
     ],
     proofTitle: "Deployment proof",
+    proofLink: { label: "See our boat and vessel installations →", href: "/our-work" },
     proofCards: [
       proof(
         "maritime5.jpeg",

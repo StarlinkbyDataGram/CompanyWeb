@@ -31,6 +31,7 @@ import LocationsAll from "./pages/LocationsAll";
 import LocationDetail from "./pages/LocationDetail";
 import StarlinkGuideNigeria from "./pages/StarlinkGuideNigeria";
 import Gallery from "./pages/Gallery";
+import OurWork from "./pages/OurWork";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminProducts from "./pages/admin/AdminProducts";
@@ -106,6 +107,7 @@ const AppContent = () => {
               <Route path="/locations/:slug" element={<LocationDetail />} />
               <Route path="/guide/starlink-nigeria" element={<StarlinkGuideNigeria />} />
               <Route path="/gallery" element={<Gallery />} />
+              <Route path="/our-work" element={<OurWork />} />
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin/dashboard" element={
