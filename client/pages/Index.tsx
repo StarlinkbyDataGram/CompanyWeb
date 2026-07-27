@@ -243,18 +243,18 @@ const WHAT_WE_INSTALL_CARDS = [
     title: "Enterprise",
     description:
       "Starlink for offices, warehouses, NGOs, and industrial facilities. Includes site survey, cable tray routing, dual-WAN config, and speed baseline.",
-    image: "/images/datagram2.jpg",
-    imageAlt: "DataGram technician performing Starlink installation work on a waterfront industrial structure",
-    imageFile: "datagram2.jpg",
+    image: "/images/StarlinkCompanyInstallation.jpeg",
+    imageAlt: "Starlink installation on a commercial building rooftop at an enterprise facility",
+    imageFile: "StarlinkCompanyInstallation.jpeg",
   },
   {
     to: "/starlink-home-installation",
     title: "Home Installation",
     description:
       "Residential Starlink installation with proper mounting, cable management, and WiFi distribution. Serving homes, compounds, and estates.",
-    image: "/images/install3.png",
-    imageAlt: "DataGram installer delivering a Starlink kit at a gated residential estate in Nigeria",
-    imageFile: "install3.png",
+    image: "/images/starlinkInstallationresidential.jpeg",
+    imageAlt: "Residential Starlink dish mounted on a rooftop in Nigeria",
+    imageFile: "starlinkInstallationresidential.jpeg",
   },
   {
     to: "/starlink-boat-installation",

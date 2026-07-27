@@ -13,10 +13,9 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
 
   const photoSlots = useMemo(() => {
     if (!project) return [];
-    const slots = Array.from({ length: project.photoCount }, (_, index) => index + 1);
-    return slots.map((slot) => ({
-      slot,
-      file: project.imageFiles[slot - 1] ?? null,
+    return project.imageFiles.map((file, index) => ({
+      slot: index + 1,
+      file,
     }));
   }, [project]);
 
@@ -48,65 +47,76 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
   const hasImage = !!current?.file && !imageFailed[activeIndex];
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 px-4 py-6">
-      <div className="relative w-full max-w-5xl rounded-2xl bg-[#0A0A1A] p-3 shadow-2xl sm:p-4">
+    <div
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/85 px-4 py-6"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-[860px] max-h-[90vh] overflow-y-auto rounded-[12px] bg-white p-6 shadow-2xl sm:p-6"
+        onClick={(event) => event.stopPropagation()}
+      >
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-3 top-3 z-10 rounded-full bg-white/10 p-3 text-white transition hover:bg-white/20"
+          className="absolute right-4 top-4 z-20 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-lg transition hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white"
           aria-label="Close project gallery"
         >
           <X className="h-5 w-5" />
         </button>
 
-        <div className="rounded-xl border border-white/10 bg-white/5 p-3 sm:p-4">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-slate-900">
+        <div className="rounded-3xl border border-slate-200 bg-slate-950 p-0 shadow-lg">
+          <div className="relative overflow-hidden rounded-t-3xl bg-slate-900">
             {hasImage ? (
               <img
-                src={`/images/installations/${project.folder}/${current.file}`}
+                src={encodeURI(`/images/installations/${project.folder}/${current.file}`)}
                 alt={project.displayName}
-                className="h-full w-full object-cover"
+                className="w-full max-h-[55vh] object-contain"
                 onError={() => setImageFailed((prev) => ({ ...prev, [activeIndex]: true }))}
               />
             ) : (
-              <div className="flex h-full w-full flex-col items-center justify-center bg-[#0040FF] px-6 text-center text-white">
+              <div className="flex h-[55vh] w-full flex-col items-center justify-center bg-[#0040FF] px-6 text-center text-white">
                 <Camera className="mb-3 h-12 w-12" />
                 <p className="text-lg font-semibold">Photo coming soon</p>
               </div>
             )}
-          </div>
 
-          <div className="mt-4 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
+            <div className="absolute inset-y-0 left-3 flex items-center">
               <button
                 type="button"
-                onClick={() => setActiveIndex((current) => (current - 1 + photoSlots.length) % photoSlots.length)}
-                className="rounded-full border border-white/20 bg-white/10 p-2 text-white transition hover:bg-white/20"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveIndex((current) => (current - 1 + photoSlots.length) % photoSlots.length);
+                }}
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-black/70 sm:h-10 sm:w-10"
                 aria-label="Previous photo"
               >
-                <ArrowLeft className="h-4 w-4" />
-              </button>
-              <button
-                type="button"
-                onClick={() => setActiveIndex((current) => (current + 1) % photoSlots.length)}
-                className="rounded-full border border-white/20 bg-white/10 p-2 text-white transition hover:bg-white/20"
-                aria-label="Next photo"
-              >
-                <ArrowRight className="h-4 w-4" />
+                <ArrowLeft className="h-5 w-5" />
               </button>
             </div>
-            <div className="text-sm font-medium text-white/80">
-              {activeIndex + 1} / {photoSlots.length}
+            <div className="absolute inset-y-0 right-3 flex items-center">
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setActiveIndex((current) => (current + 1) % photoSlots.length);
+                }}
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-black/70 sm:h-10 sm:w-10"
+                aria-label="Next photo"
+              >
+                <ArrowRight className="h-5 w-5" />
+              </button>
             </div>
           </div>
 
-          <div className="mt-6 text-white">
+          <div className="space-y-5 p-6 text-slate-900">
             <div className="flex flex-wrap items-center gap-3">
               <h2 className="text-2xl font-semibold">{project.displayName}</h2>
-              <span className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">{project.location} · {project.state}</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
+                {project.location} · {project.state}
+              </span>
             </div>
-            <p className="mt-4 max-w-3xl text-sm leading-7 text-white/80 sm:text-base">{project.description}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <p className="max-w-3xl text-sm leading-7 text-slate-700 sm:text-base">{project.description}</p>
+            <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span key={tag} className="rounded-full bg-[#E8EEFF] px-3 py-1 text-sm font-medium text-[#0040FF]">
                   {tag}
@@ -115,10 +125,11 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
             </div>
             <a
               href={project.internalLink.href}
-              className="mt-6 inline-flex text-sm font-semibold text-[#6ea8ff] transition hover:text-white"
+              className="inline-flex text-sm font-semibold text-[#0040FF] transition hover:text-[#002bb0]"
             >
               {project.internalLink.label} →
             </a>
+            <div className="text-sm text-slate-500">{activeIndex + 1} / {photoSlots.length}</div>
           </div>
         </div>
       </div>

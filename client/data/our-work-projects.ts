@@ -21,9 +21,9 @@ const imageFilesFor = (folder: string): string[] => {
     'hp-kit--enterprise--enval': ['photo-1.jpeg', 'photo-2.jpeg'],
     'standard--government-office--rivers': ['photo-1.jpeg'],
     'hp-kit--enterprise-houseboat--mixed': ['photo-1.jpeg'],
-    'mini--outdoor-business': [],
-    'standard--residential--arochukwu': [],
-    'standard--residential--duplex-4bed': [],
+    'mini--outdoor-business--unknown': ['photo-1.jpeg', 'photo-2.jpeg'],
+    'standard--residential-duplex--aruchukwu': ['WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05.jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (1).jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (2).jpeg'],
+    'standard--residential-duplex--unknown': ['photo-1.jpeg', 'photo-2.jpeg'],
   };
 
   return filesByFolder[folder] ?? [];
@@ -154,7 +154,7 @@ export const ourWorkProjects: Project[] = [
     id: 'mini--outdoor-business',
     displayName: 'Starlink Mini Outdoor Business Setup',
     folder: 'mini--outdoor-business',
-    photoCount: 2,
+    photoCount: 0,
     location: 'Nigeria',
     state: 'Outdoor',
     category: 'enterprise',
@@ -173,7 +173,7 @@ export const ourWorkProjects: Project[] = [
   {
     id: 'standard--residential--arochukwu',
     displayName: '5-Bedroom Duplex — Arochukwu, Abia State',
-    folder: 'standard--residential--arochukwu',
+    folder: 'standard--residential-duplex--aruchukwu',
     photoCount: 3,
     location: 'Arochukwu',
     state: 'Abia State',
@@ -194,7 +194,7 @@ export const ourWorkProjects: Project[] = [
   {
     id: 'standard--residential--duplex-4bed',
     displayName: '4-Bedroom Duplex — WiFi Distribution',
-    folder: 'standard--residential--duplex-4bed',
+    folder: 'standard--residential-duplex--unknown',
     photoCount: 2,
     location: 'Nigeria',
     state: 'Residential',

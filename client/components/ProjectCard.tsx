@@ -32,7 +32,7 @@ export default function ProjectCard({ project, onView }: ProjectCardProps) {
     if (imageSrc && !imageFailed && hasImages) {
       return (
         <img
-          src={imageSrc}
+          src={encodeURI(imageSrc)}
           alt={project.displayName}
           className="h-full w-full object-cover"
           loading="lazy"

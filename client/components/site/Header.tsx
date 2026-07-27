@@ -238,7 +238,7 @@ export default function Header() {
                     </div>
                     <div
                       className={cn(
-                        "pointer-events-none absolute right-0 top-full z-50 mt-2 hidden min-w-[720px] rounded-md border bg-popover p-3 text-popover-foreground shadow-md group-hover/dropdown:block group-hover/dropdown:pointer-events-auto",
+                        "pointer-events-none absolute left-0 top-full z-50 mt-2 hidden min-w-[720px] rounded-md border bg-popover p-3 text-popover-foreground shadow-md group-hover/dropdown:block group-hover/dropdown:pointer-events-auto",
                         clickedDropdown === "services" && "block pointer-events-auto"
                       )}
                     >
@@ -266,7 +266,7 @@ export default function Header() {
                                 onFocus={() => setHoveredService(s.id)}
                                 className="block rounded-sm px-3 py-2 text-sm hover:bg-[#000080] hover:text-white"
                               >
-                                {s.title.split(" ").slice(0, 4).join(" ")}
+                                {s.title}
                               </Link>
                             ))}
                           </div>
