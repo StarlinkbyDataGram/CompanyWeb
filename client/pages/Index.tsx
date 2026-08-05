@@ -252,9 +252,9 @@ const WHAT_WE_INSTALL_CARDS = [
     title: "Home Installation",
     description:
       "Residential Starlink installation with proper mounting, cable management, and WiFi distribution. Serving homes, compounds, and estates.",
-    image: "/images/starlinkInstallationresidential.jpeg",
+    image: "/images/StarlinkInstallationresidential.jpeg",
     imageAlt: "Residential Starlink dish mounted on a rooftop in Nigeria",
-    imageFile: "starlinkInstallationresidential.jpeg",
+    imageFile: "StarlinkInstallationresidential.jpeg",
   },
   {
     to: "/starlink-boat-installation",
