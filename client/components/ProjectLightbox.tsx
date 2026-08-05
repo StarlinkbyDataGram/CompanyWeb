@@ -48,31 +48,31 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/85 px-4 py-6"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/85 p-3"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="relative w-full max-w-[860px] max-h-[92vh] overflow-y-auto rounded-[12px] bg-[#0A0A1A] p-6 shadow-2xl sm:p-5"
+        className="relative w-[95vw] max-w-[95vw] max-h-[90vh] overflow-y-auto rounded-t-xl bg-[#0A0A1A] p-3 shadow-2xl sm:w-full sm:max-w-[860px] sm:max-h-[92vh] sm:rounded-xl sm:p-6"
         onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 z-30 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-lg transition hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white"
+          className="absolute right-3 top-3 z-30 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#0040FF] shadow-lg transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white sm:right-4 sm:top-4 sm:h-11 sm:w-11"
           aria-label="Close project gallery"
         >
           <X className="h-5 w-5" />
         </button>
 
-        <div className="rounded-[12px] border border-white/10 bg-white/5 p-4 sm:p-5">
-          <div className="relative overflow-hidden rounded-[12px] bg-slate-900">
+        <div className="rounded-[12px] border border-white/10 bg-white/5 p-3 sm:p-5">
+          <div className="relative flex items-center justify-center overflow-hidden rounded-md bg-black/50">
             {hasImage ? (
               <img
                 src={encodeURI(`/images/installations/${project.folder}/${current.file}`)}
                 alt={project.displayName}
-                className="w-full max-h-[55vh] object-contain"
+                className="w-full max-h-[60vh] object-contain"
                 onError={() => setImageFailed((prev) => ({ ...prev, [activeIndex]: true }))}
               />
             ) : (
@@ -89,7 +89,7 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
                   event.stopPropagation();
                   setActiveIndex((current) => (current - 1 + photoSlots.length) % photoSlots.length);
                 }}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white sm:h-11 sm:w-11"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-white transition hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="Previous photo"
               >
                 <ArrowLeft className="h-5 w-5" />
@@ -102,7 +102,7 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
                   event.stopPropagation();
                   setActiveIndex((current) => (current + 1) % photoSlots.length);
                 }}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white sm:h-11 sm:w-11"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-white transition hover:bg-black/80 focus:outline-none focus:ring-2 focus:ring-white"
                 aria-label="Next photo"
               >
                 <ArrowRight className="h-5 w-5" />
@@ -112,7 +112,7 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
 
           <div className="mt-5 space-y-5 text-slate-100">
             <div className="flex flex-wrap items-center gap-3">
-              <h2 className="text-2xl font-semibold">{project.displayName}</h2>
+              <h2 className="text-lg font-bold leading-tight sm:text-2xl">{project.displayName}</h2>
               <span className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">
                 {project.location} · {project.state}
               </span>
