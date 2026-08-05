@@ -190,7 +190,11 @@ export const ourWorkProjects: Project[] = [
       label: 'See our Home Installation page',
       href: '/starlink-home-installation',
     },
-    imageFiles: imageFilesFor('standard--residential--arochukwu'),
+    imageFiles: [
+      'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05.jpeg',
+      'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (1).jpeg',
+      'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (2).jpeg',
+    ],
   },
   {
     id: 'starlink--high-performance-houseboat',
