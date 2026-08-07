@@ -139,6 +139,24 @@
     <lastmod>2026-08-07</lastmod>
   </url>
   <url>
+    <loc>https://www.datagram.ng/starlink-priority-plan-nigeria</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.datagram.ng/starlink-repair-relocation-nigeria</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.datagram.ng/starlink-estate-wifi-nigeria</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-08-07</lastmod>
+  </url>
+  <url>
     <loc>https://www.datagram.ng/starlink-roaming-global-priority-nigeria</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1020,24 +1038,4 @@
     <priority>0.7</priority>
     <lastmod>2026-08-07</lastmod>
   </url>
-</url>
-  <url>
-    <loc>https://www.datagram.ng/starlink-priority-plan-nigeria</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://www.datagram.ng/starlink-repair-relocation-nigeria</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://www.datagram.ng/starlink-estate-wifi-nigeria</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-</urlset>
 </urlset>
