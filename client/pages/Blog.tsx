@@ -12,6 +12,8 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import { cropForFile, cropFromSrc } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 import { landingContainer, landingPageRoot } from "@/pages/landing/landing-classes";
+import BlogSearchBar from "@/components/BlogSearchBar";
+import useBlogSearch from "@/hooks/useBlogSearch";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -49,6 +51,9 @@ export default function Blog() {
 
   const featuredPost = useMemo(() => posts.find((p) => p.featured), [posts]);
   const regularPosts = useMemo(() => filteredPosts.filter((p) => !p.featured), [filteredPosts]);
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const { filteredArticles, resultCount, totalCount } = useBlogSearch(seoArticles2026, searchQuery);
 
   const isExpanded = (id: number) => expandedId === id;
   const toggleExpanded = (id: number) => setExpandedId((prev) => (prev === id ? null : id));
@@ -231,7 +236,14 @@ export default function Blog() {
         <div className={landingContainer}>
           <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
           <div className="grid gap-6 sm:grid-cols-2">
-            {seoArticles2026.map((post) => (
+            <BlogSearchBar
+              value={searchQuery}
+              onChange={setSearchQuery}
+              resultCount={resultCount}
+              totalCount={totalCount}
+              isFiltering={searchQuery.length >= 2}
+            />
+            {filteredArticles.map((post) => (
               <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/9] w-full overflow-hidden">
                   <img
