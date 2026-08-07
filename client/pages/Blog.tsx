@@ -153,6 +153,18 @@ export default function Blog() {
         </div>
       </section>
 
+      <section className="py-4">
+        <div className="container">
+          <BlogSearchBar
+            value={searchQuery}
+            onChange={setSearchQuery}
+            resultCount={resultCount}
+            totalCount={totalCount}
+            isFiltering={searchQuery.length >= 2}
+          />
+        </div>
+      </section>
+
       <section className="py-8">
         <div className="container">
           <ScrollReveal className="flex flex-wrap justify-center gap-3" delay={0.1}>
@@ -170,6 +182,18 @@ export default function Blog() {
               </Button>
             ))}
           </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="container">
+          <BlogSearchBar
+            value={searchQuery}
+            onChange={setSearchQuery}
+            resultCount={resultCount}
+            totalCount={totalCount}
+            isFiltering={searchQuery.length >= 2}
+          />
         </div>
       </section>
 
@@ -236,13 +260,6 @@ export default function Blog() {
         <div className={landingContainer}>
           <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
           <div className="grid gap-6 sm:grid-cols-2">
-            <BlogSearchBar
-              value={searchQuery}
-              onChange={setSearchQuery}
-              resultCount={resultCount}
-              totalCount={totalCount}
-              isFiltering={searchQuery.length >= 2}
-            />
             {filteredArticles.map((post) => (
               <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/9] w-full overflow-hidden">

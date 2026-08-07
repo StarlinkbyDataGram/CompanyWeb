@@ -89,6 +89,53 @@ const offshoreMaritimeServiceSchema = {
     "Professional SpaceX Starlink satellite internet installation for offshore oil platforms, FPSOs, OSVs, jack-up rigs, and maritime vessels operating in Nigerian waters and the Gulf of Guinea",
 };
 
+const priorityPlanServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Starlink Priority Plan Activation Nigeria",
+  serviceType: "Satellite Internet Activation",
+  areaServed: { "@type": "Country", name: "Nigeria" },
+  provider: {
+    "@type": "LocalBusiness",
+    name: "DataGram Nigeria",
+    url: "https://www.datagram.ng",
+  },
+  description:
+    "DataGram activates and manages Starlink Priority Plans for Nigerian customers in Lagos, Abuja, Port Harcourt, and nationwide.",
+};
+
+const repairRelocationServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Starlink Repair, Relocation & Re-Installation Nigeria",
+  serviceType: "Satellite Internet Repair & Relocation",
+  areaServed: { "@type": "Country", name: "Nigeria" },
+  provider: {
+    "@type": "LocalBusiness",
+    name: "DataGram Nigeria",
+    url: "https://www.datagram.ng",
+  },
+  description:
+    "DataGram diagnoses, repairs, relocates, and reinstalls Starlink terminals across Nigeria — covering survey, cable routing, replacement parts, and professional reinstallation.",
+  url: "https://www.datagram.ng/starlink-repair-relocation-nigeria",
+};
+
+const estateWifiServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Starlink Estate WiFi Distribution Nigeria",
+  serviceType: "Network Design and WiFi Distribution",
+  areaServed: { "@type": "Country", name: "Nigeria" },
+  provider: {
+    "@type": "LocalBusiness",
+    name: "DataGram Nigeria",
+    url: "https://www.datagram.ng",
+  },
+  description:
+    "Design and installation of Starlink-based WiFi distribution for residential estates, compounds, and multi-unit buildings across Nigeria, including mesh and VLAN configurations.",
+  url: "https://www.datagram.ng/starlink-estate-wifi-nigeria",
+};
+
 const offshoreSafetyStandards = {
   title: "Our Field Safety Standards",
   items: [
@@ -1812,6 +1859,554 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "maritime Starlink fleet",
     ],
     includeHowTo: true,
+  },
+  {
+    path: "/starlink-priority-plan-nigeria",
+    seoTitle: "Starlink Priority Plan Nigeria | DataGram",
+    metaDescription:
+      "Starlink residential plans are sold out in Lagos, Abuja and PH. DataGram activates Priority Plans and manages your account — from survey to live connection.",
+    canonical: "/starlink-priority-plan-nigeria",
+    ogImage: img("starlink-residential-vs-priority-business-nigerian-smes.jpg"),
+    h1: "Starlink Sold Out in Your Area? The Priority Plan Is Your Route In",
+    heroLabel: "Priority Plan activation",
+    heroSubheading:
+      "In Lagos, Abuja, and Port Harcourt, Starlink residential plans are currently unavailable for new subscribers. The Priority Plan is the only active option — and DataGram handles the full activation process for you.",
+    heroImageAlt: "Starlink Priority Plan activation in Nigeria",
+    heroImage: img("starlink-residential-vs-priority-business-nigerian-smes.jpg"),
+    heroImageFile: "starlink-residential-vs-priority-business-nigerian-smes.jpg",
+    heroImageReason:
+      "Priority Plan activation in Nigeria with commercial and residential context — signals premium Starlink availability when residential is sold out.",
+    heroObjectPosition: "center top",
+    overviewTitle: "Priority Plan activation when residential is sold out",
+    overviewParagraphs: [
+      "Starlink residential availability in Lagos, Abuja, and Port Harcourt has reached capacity for new activations. DataGram moves customers to the Priority Plan so they do not wait indefinitely on the residential list.",
+      "The Priority Plan is a higher-tier subscription that provides better throughput, stronger support, and fewer availability restrictions than residential service. We assess the right kit, manage the account, and deliver the installation end to end.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "Priority plan performance is still subject to local obstructions and plan load." },
+      { label: "Download range", value: "100–350 Mbps", note: "Higher-tier priority throughput compared to residential activation." },
+      { label: "Upload range", value: "10–50 Mbps", note: "Suitable for remote work, video calls, and business traffic." },
+      { label: "Activation window", value: "3–7 days", note: "After survey and account confirmation." },
+    ],
+    whyTitle: "Why the Priority Plan matters now",
+    whyCards: [
+      {
+        icon: Wifi,
+        title: "Bypasses residential waitlists",
+        body: "The Priority Plan is the only active option for new installations in many congested Lagos, Abuja, and Port Harcourt areas.",
+      },
+      {
+        icon: Zap,
+        title: "Faster and more reliable",
+        body: "Priority throughput is not deprioritised during peak hours like residential plans, making it better for offices and high-use homes.",
+      },
+      {
+        icon: Shield,
+        title: "24/7 priority support",
+        body: "Starlink Priority Plan subscribers get premium support and a higher service priority than standard residential users.",
+      },
+      {
+        icon: Home,
+        title: "Standard Starlink hardware in most cases",
+        body: "The common Gen 3 dish is compatible with Priority Plan activation unless your site requires a Flat High Performance upgrade.",
+      },
+    ],
+    proofTitle: "Priority Plan deployment proof",
+    proofLink: { label: "Explore enterprise and fleet activation →", href: "/starlink-enterprise-nigeria" },
+    proofCards: [
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware stocked at DataGram Nigeria for rapid activation",
+        "Starlink inventory ready for fast Priority Plan activation projects.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — hardware stock for priority plan activation"
+      ),
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "Starlink dish installed on a commercial site in Nigeria",
+        "Priority Plan activation supports business-class installations as well as home sites.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — enterprise grade Starlink install proof"
+      ),
+      proof(
+        "StarlinkRoofMount.jpeg",
+        "Starlink dish mounted on a rooftop in Nigeria",
+        "Residential and mixed-use rooftop installations that may require Priority Plan activation.",
+        "IMAGE: StarlinkRoofMount.jpeg — rooftop installation proof for priority plan clients"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "When the Starlink website said residential was sold out, DataGram moved us to the Priority Plan and managed the account, hardware, and install with no delay.",
+      attribution: "Nigerian business and residential connectivity buyer",
+    },
+    packagesTitle: "Priority Plan activation options",
+    packages: [
+      {
+        name: "Priority Plan survey",
+        priceLabel: "From ₦75,000",
+        features: [
+          "Address availability check",
+          "Eligibility review for the Priority Plan",
+          "Hardware recommendation and cost estimate",
+        ],
+        cta: "Book a Survey",
+      },
+      {
+        name: "End-to-end activation",
+        priceLabel: "Quoted",
+        features: [
+          "Account setup and payment facilitation",
+          "Plan selection and activation",
+          "Professional installation and handover",
+        ],
+        cta: "Book a Survey",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is the Priority Plan available where residential is sold out in Lagos?",
+        answer:
+          "Yes. The Priority Plan is currently the only active tier for new subscribers in Lagos, Abuja, and Port Harcourt. It bypasses the residential waitlist and can be activated immediately through DataGram.",
+      },
+      {
+        question: "How much does the Starlink Priority Plan cost in Nigeria?",
+        answer:
+          "The Priority Plan is billed in USD at approximately $99/month, which at current exchange rates translates to around ₦159,000 per month. Hardware costs are separate — contact DataGram for current hardware pricing as this changes with the exchange rate.",
+      },
+      {
+        question: "Will residential Starlink become available in Lagos again?",
+        answer:
+          "SpaceX has not given a firm timeline. They have indicated that residential availability will expand as their satellite constellation grows. We recommend Priority Plan activation now rather than waiting indefinitely on the residential waitlist.",
+      },
+      {
+        question: "Can DataGram manage my Priority Plan account on an ongoing basis?",
+        answer:
+          "Yes. DataGram offers ongoing account management — covering plan upgrades, billing support, and fault escalation — as part of our fleet management service. Contact us to discuss ongoing support options.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "What the Priority Plan includes",
+        checklist: [
+          "Download speeds of 100–350 Mbps",
+          "Guaranteed priority throughput — not deprioritised during peak hours like residential plans",
+          "24/7 priority support from Starlink",
+          "Compatible with the standard Starlink Gen 3 dish — no separate hardware required in most cases",
+          "Suitable for offices, remote workers, and homes in congested areas where residential is blocked",
+        ],
+        note:
+          "DataGram can assess whether the Flat High Performance dish is recommended for your specific address. In some Priority Plan deployments, the FHP dish provides better throughput stability.",
+      },
+      {
+        title: "How DataGram handles your Priority Plan activation",
+        cards: [
+          {
+            title: "Step 1: Free site survey",
+            body:
+              "We assess your address, confirm Priority Plan availability, and advise on the right hardware.",
+          },
+          {
+            title: "Step 2: Hardware sourcing",
+            body: "DataGram supplies the correct Starlink kit.",
+          },
+          {
+            title: "Step 3: Account setup and plan activation",
+            body: "We handle the Starlink account creation, plan selection, and payment facilitation.",
+          },
+          {
+            title: "Step 4: Professional installation",
+            body: "Dish, cable routing, router placement, and network configuration.",
+          },
+          {
+            title: "Step 5: Handover",
+            body: "You receive a working connection plus all account credentials and documentation.",
+          },
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
+      { label: "Starlink Fleet Management Nigeria", href: "/starlink-fleet-management-nigeria" },
+      { label: "Starlink Roaming and Global Priority", href: "/starlink-roaming-global-priority-nigeria" },
+    ],
+    ctaBanner: {
+      title: "Ready to Get Connected?",
+      body:
+        "DataGram activates Priority Plans across Lagos, Abuja, Port Harcourt, and nationwide.",
+      buttonLabel: "Book a Free Survey",
+      href: "/contact",
+    },
+    extraSchemas: [priorityPlanServiceSchema],
+    serviceAreaSchema: "Nigeria — Priority Plan activation",
+    keywords: [
+      "Starlink Priority Plan Nigeria",
+      "Priority Plan activation Nigeria",
+      "Starlink sold out Lagos",
+      "Starlink priority business plan Nigeria",
+    ],
+  },
+  {
+    path: "/starlink-repair-relocation-nigeria",
+    seoTitle: "Starlink Repair, Relocation & Re-Installation Nigeria | DataGram",
+    metaDescription:
+      "Moving house? Dish damaged? DataGram handles Starlink relocation surveys, re-installation, cable re-routing, and hardware fault diagnosis across Nigeria.",
+    canonical: "/starlink-repair-relocation-nigeria",
+    ogImage: img("StarlinkRoofMount.jpeg"),
+    h1: "Starlink Repair, Relocation and Re-Installation Across Nigeria",
+    heroLabel: "Repair & relocation services",
+    heroSubheading:
+      "Whether you are moving to a new address, dealing with a damaged dish, or need your existing installation re-assessed, DataGram's field team handles it.",
+    heroImageAlt: "Starlink repair and relocation in Nigeria",
+    heroImage: img("StarlinkRoofMount.jpeg"),
+    heroImageFile: "StarlinkRoofMount.jpeg",
+    heroImageReason:
+      "Roof installation and field service image for repair, relocation, and reinstallation work in Nigeria.",
+    heroObjectPosition: "top center",
+    overviewTitle: "Repair, relocation, and reinstallation made simple",
+    overviewParagraphs: [
+      "Starlink hardware can move with you, recover from damage, and be reinstalled at a new address — but only if the job is scoped by a technician who understands Nigerian roofs, cable routes, and service address rules.",
+      "DataGram handles the survey, diagnosis, quote, and on-site work so your service moves with your Starlink dish instead of leaving it offline or misconfigured.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "After repair or relocation and final alignment." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Dependent on subscription class and local obstructions." },
+      { label: "Repair window", value: "2–4 hours", note: "Residential relocations typically complete in a single visit." },
+      { label: "Relocation survey", value: "Quoted on contact", note: "We assess the new address and mounting options before work begins." },
+    ],
+    whyTitle: "What we handle",
+    whyCards: [
+      {
+        icon: Target,
+        title: "Moving to a New Address",
+        body:
+          "We conduct a site survey at your new location, assess sky view and mounting options, then reinstall your existing dish, route cables cleanly, and reconfigure the network. Your account and subscription move with the hardware.",
+      },
+      {
+        icon: Shield,
+        title: "Damaged Dish or Cable",
+        body:
+          "Rain damage, lightning strikes, rodent cable damage, or a dish knocked out of alignment — DataGram diagnoses the fault on site and repairs or replaces hardware as needed. We bring replacement cables and mounting hardware on every job.",
+      },
+      {
+        icon: Building2,
+        title: "Poor Signal or Obstruction",
+        body:
+          "If your dish was self-installed or mounted in a suboptimal position, we conduct a professional sky view assessment, identify obstructions, and remount the dish correctly. Most signal issues are mounting problems, not hardware faults.",
+      },
+    ],
+    proofTitle: "Repair and relocation proof",
+    proofLink: { label: "See our installation work →", href: "/our-work" },
+    proofCards: [
+      proof(
+        "StarlinkRoofMount.jpeg",
+        "Starlink rooftop installation and repair work in Nigeria",
+        "Professional rooftop work for repair, relocation, and reinstallation projects.",
+        "IMAGE: StarlinkRoofMount.jpeg — rooftop service proof for repair and relocation"
+      ),
+      proof(
+        "stow-starlink-dish-relocation-maintenance.jpg",
+        "Starlink dish relocation and maintenance in Nigeria",
+        "Field service and dish relocation proof for customers moving address.",
+        "IMAGE: stow-starlink-dish-relocation-maintenance.jpg — relocation and maintenance proof"
+      ),
+      proof(
+        "datagram-starlink-boxes-stock.jpg",
+        "Starlink hardware and replacement components stocked by DataGram",
+        "Replacement parts and cables available on every repair and relocation job.",
+        "IMAGE: datagram-starlink-boxes-stock.jpg — ready stock for repair and relocation"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "DataGram moved our existing Starlink dish to a new address, repaired a damaged cable, and handed over a working connection in one visit.",
+      attribution: "Residential relocation customer, Abuja",
+    },
+    packagesTitle: "Repair and relocation services",
+    packages: [
+      {
+        name: "Site survey & quote",
+        priceLabel: "From ₦55,000",
+        features: [
+          "New address sky-view and mount assessment",
+          "Fault diagnosis for damaged dishes or cables",
+          "Written recommendation and cost estimate",
+        ],
+        cta: "Book a Survey",
+      },
+      {
+        name: "Repair or relocation job",
+        priceLabel: "Quoted",
+        features: [
+          "Professional dish repair or reinstallation",
+          "Cable routing and network reconfiguration",
+          "Final alignment and handover",
+        ],
+        cta: "Book a Repair",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can DataGram relocate a Starlink dish that was installed by someone else?",
+        answer:
+          "Yes. We regularly take over installations from other providers or self-installs. We will conduct a full assessment of the existing setup before any work begins and advise on what needs to change.",
+      },
+      {
+        question: "How long does a relocation installation take?",
+        answer:
+          "Most residential relocations take 2–4 hours depending on cable routing complexity and roof type. Enterprise relocations with network reconfiguration typically take a full day. We confirm the expected duration when quoting.",
+      },
+      {
+        question: "Does my Starlink subscription change when I move to a new address?",
+        answer:
+          "Your subscription continues unchanged. You will need to update your service address in the Starlink app after relocation. DataGram can assist with this during the installation.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "How a Relocation or Repair Works",
+        cards: [
+          {
+            title: "Step 1: Contact DataGram via WhatsApp or the contact form",
+            body: "Describe the issue or new address.",
+          },
+          {
+            title: "Step 2: We schedule a site visit",
+            body: "We conduct a diagnostic or survey.",
+          },
+          {
+            title: "Step 3: We provide a written quote",
+            body: "You receive a clear price before any work begins.",
+          },
+          {
+            title: "Step 4: Work is carried out by a trained DataGram technician",
+            body: "Typically completed in a single visit.",
+          },
+          {
+            title: "Step 5: You confirm the connection is working",
+            body: "We ensure the service is live before the team leaves site.",
+          },
+        ],
+      },
+      {
+        title: "Common Reasons Customers Call Us",
+        checklist: [
+          "I am moving from Lagos Island to Lekki — can my Starlink come with me?",
+          "My cable was chewed through by rats and the dish shows 'Cable Disconnected'",
+          "The installer who set this up is no longer responding — can DataGram take it over?",
+          "My dish fell off the roof during a storm and I need it re-mounted properly",
+          "I am relocating my office from Victoria Island to Ikeja — I need the network rebuilt at the new site",
+          "My self-installed dish has poor signal and I want a professional to assess it",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "Starlink Home Installation", href: "/starlink-home-installation" },
+      { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
+      { label: "Our Work", href: "/our-work" },
+    ],
+    ctaBanner: {
+      title: "Need a Repair or Moving Address?",
+      body:
+        "DataGram's field team covers Lagos, Abuja, Port Harcourt, Delta State, and all South-South and South-East states.",
+      buttonLabel: "Book a Survey",
+      href: "/contact",
+    },
+    extraSchemas: [repairRelocationServiceSchema],
+    serviceAreaSchema: "Nigeria — repair, relocation and reinstallation",
+    keywords: [
+      "Starlink repair Nigeria",
+      "Starlink relocation Nigeria",
+      "Starlink reinstallation Nigeria",
+      "Starlink cable repair Nigeria",
+    ],
+  },
+  {
+    path: "/starlink-estate-wifi-nigeria",
+    seoTitle: "Starlink WiFi Distribution for Nigerian Estates & Multi-Unit Buildings | DataGram",
+    metaDescription:
+      "One Starlink connection. Whole estate coverage. DataGram designs and installs mesh WiFi distribution for estates, compounds, and multi-unit buildings across Nigeria.",
+    canonical: "/starlink-estate-wifi-nigeria",
+    ogImage: img("starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
+    h1: "Starlink Internet Distribution for Nigerian Estates, Compounds, and Multi-Unit Buildings",
+    heroLabel: "Estate WiFi distribution",
+    heroSubheading:
+      "One Starlink dish, properly configured, can serve an entire residential estate or office complex. DataGram designs and installs the network — not just the dish.",
+    heroImageAlt: "Starlink estate WiFi distribution in Nigeria",
+    heroImage: img("starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
+    heroImageFile: "starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
+    heroImageReason:
+      "Starlink estate deployment image showing multiple units and shared connectivity infrastructure.",
+    heroObjectPosition: "center top",
+    overviewTitle: "Starlink distribution for estates and compounds",
+    overviewParagraphs: [
+      "A single Starlink connection can serve a whole estate when the WiFi distribution is designed correctly. DataGram plans the dish placement, router and switch locations, and access point positions so every unit gets reliable coverage.",
+      "This is more than a dish install. It is a network design job for compounds, multi-unit buildings, estates, and commercial complexes that need usable WiFi everywhere.",
+    ],
+    stats: [
+      { label: "Typical latency", value: "20–33 ms", note: "Site design and WiFi distribution affect the end-user experience." },
+      { label: "Download range", value: "50–1,000 Mbps", note: "Shared estate connectivity depends on the plan class and mesh design." },
+      { label: "Access point count", value: "3–15+", note: "Depends on estate size, building count, and wall materials." },
+      { label: "Design window", value: "2–5 days", note: "After survey and network planning approval." },
+    ],
+    whyTitle: "Built for",
+    whyCards: [
+      {
+        icon: Anchor,
+        title: "Estate Developers",
+        body:
+          "Building a new residential estate? DataGram designs Starlink-based connectivity into the development from the ground up — dish placement, fibre backbone, access point positions, and per-unit router provision.",
+      },
+      {
+        icon: Building2,
+        title: "Estate Managers & Facility Teams",
+        body:
+          "Managing an existing estate where internet is unreliable or overpriced? DataGram installs a centralised Starlink connection with WiFi distribution to all units or communal areas.",
+      },
+      {
+        icon: Home,
+        title: "Compound Landlords",
+        body:
+          "Own a compound with multiple flats? A single Starlink Priority Plan dish with proper mesh distribution can serve every unit with separate network access — no dish-sharing workarounds needed.",
+      },
+      {
+        icon: Factory,
+        title: "Commercial Complexes",
+        body:
+          "Office parks, shopping plazas, and commercial buildings can centralise connectivity on Starlink with VLAN separation between tenants and management networks.",
+      },
+    ],
+    proofTitle: "Estate WiFi deployment proof",
+    proofLink: { label: "See our estate and installation work →", href: "/our-work" },
+    proofCards: [
+      proof(
+        "starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
+        "Starlink coverage design for a Nigerian multi-unit property",
+        "Multi-unit estate WiFi distribution and shared connectivity planning.",
+        "IMAGE: starlink-estates-built-in-satellite-nigeria-real-estate.jpg — estate coverage proof"
+      ),
+      proof(
+        "StarlinkRoofMount.jpeg",
+        "Starlink dish on a rooftop feeding estate WiFi distribution",
+        "A single dish powering shared network distribution for multiple units.",
+        "IMAGE: StarlinkRoofMount.jpeg — estate dish placement proof"
+      ),
+      proof(
+        "StarlinkCompanyInstallation.jpeg",
+        "Starlink installation on a commercial building with shared connectivity potential",
+        "Complex deployments that serve multiple users from one Starlink connection.",
+        "IMAGE: StarlinkCompanyInstallation.jpeg — commercial estate deployment proof"
+      ),
+    ],
+    speedStat: SPEED,
+    testimonial: {
+      quote:
+        "We designed the estate distribution so one Starlink dish could feed all the villas without each unit having its own terminal.",
+      attribution: "Estate manager, Lagos compound",
+    },
+    packagesTitle: "Estate WiFi engagement options",
+    packages: [
+      {
+        name: "Estate survey",
+        priceLabel: "From ₦120,000",
+        features: [
+          "Layout, unit count, and wall material assessment",
+          "WiFi distribution plan and access point placement",
+          "Starlink hardware and router recommendation",
+        ],
+        cta: "Book an Estate Survey",
+      },
+      {
+        name: "Network installation",
+        priceLabel: "Quoted",
+        features: [
+          "Dish installation and cable routing",
+          "Router, switch, and access point deployment",
+          "WiFi handover and configuration per unit",
+        ],
+        cta: "Book an Estate Survey",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can one Starlink dish really cover an entire estate?",
+        answer:
+          "Yes, with the right distribution hardware. The dish provides the internet connection; a properly designed mesh network distributes that connection across the estate. DataGram has deployed compound and multi-unit setups in Lagos, Port Harcourt, and Delta State.",
+      },
+      {
+        question: "Which Starlink plan is recommended for an estate?",
+        answer:
+          "The Priority Plan is strongly recommended for multi-unit deployments. Residential plans are deprioritised during peak hours and are currently unavailable for new activations in Lagos and Abuja. Priority ensures consistent speeds regardless of how many people are connected.",
+      },
+      {
+        question: "Can tenants have separate WiFi networks from each other?",
+        answer:
+          "Yes. DataGram configures VLAN separation on request, giving each tenant or unit their own private network. Alternatively, a single shared SSID can be set up with bandwidth management rules if the estate prefers a communal approach.",
+      },
+    ],
+    extraSections: [
+      {
+        title: "The Technical Approach",
+        cards: [
+          {
+            title: "Step 1: Site survey",
+            body:
+              "DataGram assesses the estate layout, building count, wall materials, and floor plans to design the network correctly.",
+          },
+          {
+            title: "Step 2: Starlink dish installation",
+            body:
+              "Priority Plan recommended for multi-unit deployments to avoid residential deprioritisation.",
+          },
+          {
+            title: "Step 3: Central router and switch placement",
+            body:
+              "Positioned for maximum signal distribution across the estate.",
+          },
+          {
+            title: "Step 4: Access point installation",
+            body:
+              "DataGram installs mesh nodes or ceiling-mounted access points at calculated positions across the estate.",
+          },
+          {
+            title: "Step 5: Per-unit or communal WiFi",
+            body:
+              "Each flat, office, or unit receives its own SSID or is connected to a shared SSID, depending on the estate's preference.",
+          },
+          {
+            title: "Step 6: Network handover and documentation",
+            body:
+              "We deliver the network with credentials, coverage notes, and support guidance.",
+          },
+        ],
+      },
+      {
+        title: "Note on Lagos & Abuja congestion",
+        paragraphs: [
+          "In Lagos and Abuja, Starlink residential plans are currently unavailable for new activations in most areas. Estate and multi-unit deployments require the Priority Plan, which DataGram can activate and manage. Contact us for current pricing.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "Priority Plan Activation", href: "/starlink-priority-plan-nigeria" },
+      { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
+      { label: "Starlink Fleet Management Nigeria", href: "/starlink-fleet-management-nigeria" },
+    ],
+    ctaBanner: {
+      title: "Ready to Connect Your Estate?",
+      body:
+        "DataGram surveys and installs estate-wide Starlink networks across Lagos, Abuja, Port Harcourt, and nationwide.",
+      buttonLabel: "Book an Estate Survey",
+      href: "/contact",
+    },
+    extraSchemas: [estateWifiServiceSchema],
+    serviceAreaSchema: "Nigeria — estate WiFi distribution",
+    keywords: [
+      "Starlink estate WiFi Nigeria",
+      "Starlink estate distribution Nigeria",
+      "multi-unit Starlink Nigeria",
+      "Starlink compound WiFi Nigeria",
+    ],
   },
   {
     path: "/starlink-roaming-global-priority-nigeria",
