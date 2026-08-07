@@ -2228,14 +2228,14 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "One Starlink connection. Whole estate coverage. DataGram designs and installs mesh WiFi distribution for estates, compounds, and multi-unit buildings across Nigeria.",
     canonical: "/starlink-estate-wifi-nigeria",
-    ogImage: img("starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
+    ogImage: img("blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
     h1: "Starlink Internet Distribution for Nigerian Estates, Compounds, and Multi-Unit Buildings",
     heroLabel: "Estate WiFi distribution",
     heroSubheading:
       "One Starlink dish, properly configured, can serve an entire residential estate or office complex. DataGram designs and installs the network — not just the dish.",
     heroImageAlt: "Starlink estate WiFi distribution in Nigeria",
-    heroImage: img("starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
-    heroImageFile: "starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
+    heroImage: img("blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
+    heroImageFile: "blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
     heroImageReason:
       "Starlink estate deployment image showing multiple units and shared connectivity infrastructure.",
     heroObjectPosition: "center top",
@@ -2281,10 +2281,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     proofLink: { label: "See our estate and installation work →", href: "/our-work" },
     proofCards: [
       proof(
-        "starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
+        "blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
         "Starlink coverage design for a Nigerian multi-unit property",
         "Multi-unit estate WiFi distribution and shared connectivity planning.",
-        "IMAGE: starlink-estates-built-in-satellite-nigeria-real-estate.jpg — estate coverage proof"
+        "IMAGE: blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg — estate coverage proof"
       ),
       proof(
         "StarlinkRoofMount.jpeg",
