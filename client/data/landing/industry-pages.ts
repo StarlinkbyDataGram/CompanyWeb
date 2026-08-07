@@ -11,6 +11,7 @@ import {
   Wifi,
   Zap,
   Shield,
+  Target,
 } from "lucide-react";
 import { cropForFile } from "@/lib/image-crop";
 import type { IndustryLandingConfig } from "./types";

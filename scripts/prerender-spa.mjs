@@ -112,18 +112,23 @@ async function prerender() {
 
     for (const route of ROUTES) {
       const url = `http://127.0.0.1:${PORT}${route}`;
-      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-      await page.waitForFunction(
-        () => (document.querySelector("#root")?.innerHTML?.length ?? 0) > 200,
-        { timeout: 45000 }
-      );
-      await new Promise((r) => setTimeout(r, 800));
+      console.log(`→ Visiting ${route}`);
+      try {
+        await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
+        await page.waitForFunction(
+          () => (document.querySelector("#root")?.innerHTML?.length ?? 0) > 200,
+          { timeout: 45000 }
+        );
+        await new Promise((r) => setTimeout(r, 800));
 
-      const html = await page.content();
-      const out = routeToFile(route);
-      await fs.mkdir(path.dirname(out), { recursive: true });
-      await fs.writeFile(out, html, "utf8");
-      console.log(`✅ prerendered ${route} → ${path.relative(SPA_ROOT, out)}`);
+        const html = await page.content();
+        const out = routeToFile(route);
+        await fs.mkdir(path.dirname(out), { recursive: true });
+        await fs.writeFile(out, html, "utf8");
+        console.log(`✅ prerendered ${route} → ${path.relative(SPA_ROOT, out)}`);
+      } catch (err) {
+        console.error(`❌ prerender failed for ${route}:`, err.message || err);
+      }
     }
   } finally {
     await browser.close();
