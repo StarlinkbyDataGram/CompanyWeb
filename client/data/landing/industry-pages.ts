@@ -2105,10 +2105,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         "IMAGE: StarlinkRoofMount.jpeg — rooftop service proof for repair and relocation"
       ),
       proof(
-        "stow-starlink-dish-relocation-maintenance.jpg",
-        "Starlink dish relocation and maintenance in Nigeria",
+        "starlink-installation-anambra-onitsha-businesses.jpg",
+        "Starlink relocation and installation work for business customers in Anambra",
         "Field service and dish relocation proof for customers moving address.",
-        "IMAGE: stow-starlink-dish-relocation-maintenance.jpg — relocation and maintenance proof"
+        "IMAGE: starlink-installation-anambra-onitsha-businesses.jpg — relocation and business install proof"
       ),
       proof(
         "datagram-starlink-boxes-stock.jpg",

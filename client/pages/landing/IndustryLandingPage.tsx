@@ -58,6 +58,7 @@ export default function IndustryLandingPage({ config }: Props) {
 
       <section className={landingHeroSection}>
         <div className={landingHeroOverlay}>
+          <div className="absolute inset-0 bg-black/40" />
           <div className="aspect-[16/9] h-full min-h-[320px] w-full overflow-hidden sm:min-h-[400px]">
             {config.path === "/starlink-offshore-maritime-installation" && (
               <>

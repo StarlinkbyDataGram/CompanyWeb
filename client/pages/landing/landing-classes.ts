@@ -8,7 +8,7 @@ export const landingContainer =
 
 export const landingHeroSection = "relative overflow-hidden border-b bg-[#0a1628] text-white";
 
-export const landingHeroOverlay = "absolute inset-0 opacity-40";
+export const landingHeroOverlay = "absolute inset-0";
 
 export const landingHeroInner =
   "relative z-10 py-12 sm:py-16 md:py-20 lg:py-24 pr-4 sm:pr-8 max-w-5xl";
