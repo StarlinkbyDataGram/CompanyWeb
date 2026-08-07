@@ -185,18 +185,6 @@ export default function Blog() {
         </div>
       </section>
 
-      <section className="py-8">
-        <div className="container">
-          <BlogSearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-            resultCount={resultCount}
-            totalCount={totalCount}
-            isFiltering={searchQuery.length >= 2}
-          />
-        </div>
-      </section>
-
       {featuredPost && selectedCategory === "All" && expandedId === null && (
         <section className="py-8">
           <div className="container">

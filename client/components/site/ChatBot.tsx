@@ -201,7 +201,7 @@ const knowledgeBase: KBEntry[] = [
   {
     patterns: ["blog", "article", "read", "guide", "news", "tips", "learn"],
     response:
-      "📚 **Datagram Blog**\n\nExplore our guides and articles:\n\n• Getting Started with Starlink in Africa\n• Building a WISP Business: Complete Guide\n• Extending WiFi Up to 10km\n• Enterprise WiFi Design Best Practices\n• Starlink vs Traditional ISPs: Cost Analysis\n• Backup Power for Critical Connectivity\n\nNew articles published regularly!",
+      "📚 **Datagram Blog**\n\nExplore our guides and articles:\n\n• Starlink installation tips and troubleshooting\n• WiFi distribution for estates and offices\n• Offshore and maritime satellite internet\n• Global roaming and Priority Plan activation\n\nNew articles published regularly!",
     links: [{ label: "Visit Our Blog", href: "/blog" }],
   },
 
