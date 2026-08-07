@@ -1867,14 +1867,14 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     metaDescription:
       "Starlink residential plans are sold out in Lagos, Abuja and PH. DataGram activates Priority Plans and manages your account — from survey to live connection.",
     canonical: "/starlink-priority-plan-nigeria",
-    ogImage: img("starlink-residential-vs-priority-business-nigerian-smes.jpg"),
+    ogImage: img("blog/starlink-residential-vs-priority-business-nigerian-smes.jpg"),
     h1: "Starlink Sold Out in Your Area? The Priority Plan Is Your Route In",
     heroLabel: "Priority Plan activation",
     heroSubheading:
       "In Lagos, Abuja, and Port Harcourt, Starlink residential plans are currently unavailable for new subscribers. The Priority Plan is the only active option — and DataGram handles the full activation process for you.",
     heroImageAlt: "Starlink Priority Plan activation in Nigeria",
-    heroImage: img("starlink-residential-vs-priority-business-nigerian-smes.jpg"),
-    heroImageFile: "starlink-residential-vs-priority-business-nigerian-smes.jpg",
+    heroImage: img("blog/starlink-residential-vs-priority-business-nigerian-smes.jpg"),
+    heroImageFile: "blog/starlink-residential-vs-priority-business-nigerian-smes.jpg",
     heroImageReason:
       "Priority Plan activation in Nigeria with commercial and residential context — signals premium Starlink availability when residential is sold out.",
     heroObjectPosition: "center top",
@@ -2105,10 +2105,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         "IMAGE: StarlinkRoofMount.jpeg — rooftop service proof for repair and relocation"
       ),
       proof(
-        "starlink-installation-anambra-onitsha-businesses.jpg",
+        "blog/starlink-installation-anambra-onitsha-businesses.jpg",
         "Starlink relocation and installation work for business customers in Anambra",
         "Field service and dish relocation proof for customers moving address.",
-        "IMAGE: starlink-installation-anambra-onitsha-businesses.jpg — relocation and business install proof"
+        "IMAGE: blog/starlink-installation-anambra-onitsha-businesses.jpg — relocation and business install proof"
       ),
       proof(
         "datagram-starlink-boxes-stock.jpg",
