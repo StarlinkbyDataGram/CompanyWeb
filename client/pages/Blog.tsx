@@ -38,9 +38,23 @@ export default function Blog() {
   }, []);
 
   const categories = useMemo(() => {
-    const set = new Set<string>(["All"]);
-    for (const p of posts) set.add(p.category);
-    return Array.from(set);
+    const counts = new Map<string, number>();
+    const items = [...seoArticles2026, ...posts];
+
+    for (const item of items) {
+      if (!item?.category) continue;
+      counts.set(item.category, (counts.get(item.category) ?? 0) + 1);
+    }
+
+    const topCategories = Array.from(counts.entries())
+      .sort(([aCategory, aCount], [bCategory, bCount]) => {
+        if (bCount !== aCount) return bCount - aCount;
+        return aCategory.localeCompare(bCategory);
+      })
+      .slice(0, 5)
+      .map(([category]) => category);
+
+    return ["All", ...topCategories];
   }, [posts]);
 
   const filteredPosts = useMemo(() => {
@@ -54,6 +68,12 @@ export default function Blog() {
 
   const [searchQuery, setSearchQuery] = useState("");
   const { filteredArticles, resultCount, totalCount } = useBlogSearch(seoArticles2026, searchQuery);
+
+  const visibleArticles = useMemo(() => {
+    return selectedCategory === "All"
+      ? filteredArticles
+      : filteredArticles.filter((article) => article.category === selectedCategory);
+  }, [selectedCategory, filteredArticles]);
 
   const isExpanded = (id: number) => expandedId === id;
   const toggleExpanded = (id: number) => setExpandedId((prev) => (prev === id ? null : id));
@@ -248,7 +268,7 @@ export default function Blog() {
         <div className={landingContainer}>
           <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
           <div className="grid gap-6 sm:grid-cols-2">
-            {filteredArticles.map((post) => (
+            {visibleArticles.map((post) => (
               <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/9] w-full overflow-hidden">
                   <img
