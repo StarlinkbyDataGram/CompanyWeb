@@ -12,6 +12,9 @@ const INDUSTRY_NAV_LINKS = [
   { to: "/starlink-enterprise-nigeria", label: "Enterprise" },
   { to: "/starlink-home-installation", label: "Home Installation" },
   { to: "/starlink-boat-installation", label: "Boat Installation" },
+  { to: "/starlink-priority-plan-nigeria", label: "Priority Plan" },
+  { to: "/starlink-repair-relocation-nigeria", label: "Repair & Relocation" },
+  { to: "/starlink-estate-wifi-nigeria", label: "Estate WiFi" },
 ] as const;
 
 const nav = [
