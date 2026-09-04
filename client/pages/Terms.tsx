@@ -558,7 +558,7 @@ export default function Terms() {
             For DataGram.ng
           </p>
           <p className="mt-5 text-base font-medium text-foreground/70 md:text-lg">
-            Effective Date: 4 September 2026
+            Effective Date: January 5, 2025
           </p>
           <div className="mt-6 max-w-4xl space-y-4 text-base leading-relaxed text-foreground/75 md:text-lg">
             <p>
