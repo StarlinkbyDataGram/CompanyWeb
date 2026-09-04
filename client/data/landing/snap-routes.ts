@@ -7,6 +7,8 @@ export const SNAP_INCLUDE_ROUTES = [
   "/faq",
   "/blog",
   "/locations",
+  "/privacy",
+  "/terms",
   "/guide/starlink-nigeria",
   "/our-work",
   "/starlink-offshore-maritime-installation",

@@ -26,8 +26,7 @@
     "noFallthroughCasesInSwitch": false,
     "strictNullChecks": false,
 
-    /* Path mapping */
-    "baseUrl": ".",
+    /* Path mapping (no baseUrl — deprecated in TS 6, removed in TS 7) */
     "paths": {
       "@/*": ["./client/*"],
       "@shared/*": ["./shared/*"]
