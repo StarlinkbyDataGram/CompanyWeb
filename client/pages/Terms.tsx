@@ -92,7 +92,7 @@ export default function Terms() {
       />
 
       <section className="border-b bg-muted/40 py-16 md:py-24">
-        <div className="container max-w-4xl">
+        <div className="container">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Legal</p>
           <h1 className="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">
             Terms & Conditions
@@ -116,7 +116,7 @@ export default function Terms() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container max-w-4xl space-y-8 md:space-y-10">
+        <div className="container space-y-8 md:space-y-10">
           {clauses.map((clause, index) => (
             <Card key={clause.title} className="border-border/80 shadow-sm">
               <CardHeader className="flex flex-row items-start gap-5 space-y-0 p-6 pb-4 md:p-8 md:pb-5">
@@ -141,7 +141,7 @@ export default function Terms() {
       </section>
 
       <section className="border-t bg-muted/30 py-16 md:py-20">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="rounded-2xl border bg-card p-8 md:p-10">
             <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
               Questions about these terms?

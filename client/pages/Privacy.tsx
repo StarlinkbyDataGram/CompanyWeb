@@ -69,7 +69,7 @@ export default function Privacy() {
       />
 
       <section className="border-b bg-muted/40 py-16 md:py-24">
-        <div className="container max-w-4xl">
+        <div className="container">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Legal</p>
           <h1 className="mt-4 text-4xl font-extrabold tracking-tight md:text-5xl">Privacy Policy</h1>
           <p className="mt-5 text-base font-medium text-foreground/70 md:text-lg">
@@ -91,7 +91,7 @@ export default function Privacy() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container max-w-4xl space-y-8 md:space-y-10">
+        <div className="container space-y-8 md:space-y-10">
           {sections.map((section, index) => (
             <Card key={section.title} className="border-border/80 shadow-sm">
               <CardHeader className="flex flex-row items-start gap-5 space-y-0 p-6 pb-4 md:p-8 md:pb-5">
@@ -116,7 +116,7 @@ export default function Privacy() {
       </section>
 
       <section className="border-t bg-muted/30 py-16 md:py-20">
-        <div className="container max-w-4xl">
+        <div className="container">
           <div className="rounded-2xl border bg-card p-8 md:p-10">
             <h2 className="text-2xl font-bold tracking-tight md:text-3xl">Need a privacy request?</h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/75 md:text-lg">
