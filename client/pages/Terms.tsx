@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const clauses: { title: string; body: string }[] = [
   {
@@ -82,38 +84,79 @@ const clauses: { title: string; body: string }[] = [
 
 export default function Terms() {
   return (
-    <div className="min-h-[60vh] py-16">
+    <div className="flex flex-col">
       <Seo
         title="Terms & Conditions | DataGram Nigeria"
         description="Official service agreement, installation policies, payment terms, and warranty disclaimers for DataGram Starlink installation and managed services."
         canonical="/terms"
       />
-      <div className="container max-w-3xl">
-        <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl">Terms & Conditions</h1>
-        <p className="mt-3 text-sm text-foreground/60">Effective Date: 4th January 2025</p>
-        <hr className="my-6" />
 
-        <div className="space-y-8">
-          {clauses.map((clause) => (
-            <section key={clause.title}>
-              <h2 className="text-lg font-bold tracking-tight text-foreground md:text-xl">{clause.title}</h2>
-              <p className="mt-2 text-base leading-relaxed text-foreground/70">{clause.body}</p>
-            </section>
+      <section className="border-b bg-muted/40 py-14 md:py-20">
+        <div className="container max-w-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Legal</p>
+          <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">
+            Terms & Conditions
+          </h1>
+          <p className="mt-4 text-base font-medium text-foreground/70 md:text-lg">
+            Effective Date: 4th January 2025
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/75 md:text-lg">
+            These terms govern your use of DataGram&apos;s website and services, including Starlink
+            installation, hardware sales, subscription management, and related support in Nigeria.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button asChild size="lg">
+              <Link to="/contact">Contact DataGram</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link to="/privacy">Privacy Policy</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-16">
+        <div className="container max-w-4xl space-y-5 md:space-y-6">
+          {clauses.map((clause, index) => (
+            <Card key={clause.title} className="border-border/80 shadow-sm">
+              <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-3">
+                <span
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary"
+                  aria-hidden
+                >
+                  {index + 1}
+                </span>
+                <CardTitle className="text-lg font-bold tracking-tight md:text-xl">
+                  {clause.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pl-[3.75rem] pt-0 md:pl-16">
+                <p className="text-base leading-relaxed text-foreground/80">{clause.body}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
+      </section>
 
-        <p className="mt-10 text-sm text-foreground/60">
-          For questions, contact us via the{" "}
-          <Link className="text-primary hover:underline" to="/contact">
-            Contact
-          </Link>{" "}
-          page. See also our{" "}
-          <Link className="text-primary hover:underline" to="/privacy">
-            Privacy Policy
-          </Link>
-          .
-        </p>
-      </div>
+      <section className="border-t bg-muted/30 py-12 md:py-16">
+        <div className="container max-w-4xl">
+          <div className="rounded-2xl border bg-card p-6 md:p-8">
+            <h2 className="text-2xl font-bold tracking-tight">Questions about these terms?</h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
+              Message our team before you sign or renew. We will clarify payment, warranty, and
+              support scope for your install.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button asChild>
+                <Link to="/contact">Go to Contact</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/privacy">Read Privacy Policy</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

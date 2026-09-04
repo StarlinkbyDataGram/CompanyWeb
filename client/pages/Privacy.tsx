@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BUSINESS_EMAIL, BUSINESS_PHONE_DISPLAY, BRAND_NAME } from "@/lib/site";
 
 const sections: { title: string; body: string }[] = [
@@ -59,43 +61,77 @@ const sections: { title: string; body: string }[] = [
 
 export default function Privacy() {
   return (
-    <div className="min-h-[60vh] py-16">
+    <div className="flex flex-col">
       <Seo
         title="Privacy Policy | DataGram Nigeria"
         description="How DataGram collects, uses, and protects personal information for Starlink installation, sales, and managed services in Nigeria."
         canonical="/privacy"
       />
-      <div className="container max-w-3xl">
-        <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl">Privacy Policy</h1>
-        <p className="mt-3 text-sm text-foreground/60">Effective Date: 4th September 2026</p>
-        <hr className="my-6" />
 
-        <p className="mb-8 text-base leading-relaxed text-foreground/70">
-          We value your privacy. This page outlines how we collect, use, and protect your information when you use
-          datagram.ng or engage DataGram for Starlink and related services in Nigeria.
-        </p>
+      <section className="border-b bg-muted/40 py-14 md:py-20">
+        <div className="container max-w-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Legal</p>
+          <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">Privacy Policy</h1>
+          <p className="mt-4 text-base font-medium text-foreground/70 md:text-lg">
+            Effective Date: 4th September 2026
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/75 md:text-lg">
+            How DataGram collects, uses, and protects your information when you use datagram.ng or
+            engage us for Starlink and related services in Nigeria.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button asChild size="lg">
+              <Link to="/contact">Contact DataGram</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link to="/terms">Terms & Conditions</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-        <div className="space-y-8">
-          {sections.map((section) => (
-            <section key={section.title}>
-              <h2 className="text-lg font-bold tracking-tight text-foreground md:text-xl">{section.title}</h2>
-              <p className="mt-2 text-base leading-relaxed text-foreground/70">{section.body}</p>
-            </section>
+      <section className="py-12 md:py-16">
+        <div className="container max-w-4xl space-y-5 md:space-y-6">
+          {sections.map((section, index) => (
+            <Card key={section.title} className="border-border/80 shadow-sm">
+              <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-3">
+                <span
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary"
+                  aria-hidden
+                >
+                  {index + 1}
+                </span>
+                <CardTitle className="text-lg font-bold tracking-tight md:text-xl">
+                  {section.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pl-[3.75rem] pt-0 md:pl-16">
+                <p className="text-base leading-relaxed text-foreground/80">{section.body}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
+      </section>
 
-        <p className="mt-10 text-sm text-foreground/60">
-          For questions, contact us via the{" "}
-          <Link className="text-primary hover:underline" to="/contact">
-            Contact
-          </Link>{" "}
-          page. See also our{" "}
-          <Link className="text-primary hover:underline" to="/terms">
-            Terms & Conditions
-          </Link>
-          .
-        </p>
-      </div>
+      <section className="border-t bg-muted/30 py-12 md:py-16">
+        <div className="container max-w-4xl">
+          <div className="rounded-2xl border bg-card p-6 md:p-8">
+            <h2 className="text-2xl font-bold tracking-tight">Need a privacy request?</h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
+              Reach us by email or phone, or use the contact form. See our Terms for service rules
+              that sit alongside this policy.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button asChild>
+                <Link to="/contact">Go to Contact</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/terms">Read Terms & Conditions</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
