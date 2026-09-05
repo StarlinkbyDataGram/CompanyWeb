@@ -9,6 +9,8 @@ export type ArticleFaq = { question: string; answer: string };
 export type SeoArticle = {
   slug: string;
   title: string;
+  /** Optional document title tag. When set, used as-is (include brand suffix). Falls back to `${title} | DataGram Nigeria`. */
+  seoTitle?: string;
   excerpt: string;
   metaDescription: string;
   author: string;

@@ -41,4 +41,10 @@ export const SNAP_INCLUDE_ROUTES = [
   "/blog/starlink-offshore-niger-delta-specs",
   "/blog/power-backup-starlink-nigeria",
   "/blog/how-to-activate-starlink-nigeria",
+  "/blog/cant-activate-starlink-nigeria-enterprise-maritime-solution",
+  "/blog/airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+  "/blog/starlink-residential-sold-out-lagos-abuja-2026-options",
+  "/blog/is-starlink-worth-669000-nigeria-2026-honest-review",
+  "/blog/starlink-11000-satellites-nigeria-speeds-august-2026",
+  "/blog/starlink-vs-mtn-5g-nigeria-remote-work-business-2026",
 ] as const;

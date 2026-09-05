@@ -97,6 +97,7 @@ export default function BlogPost() {
   }
 
   const canonical = `/blog/${article.slug}`;
+  const documentTitle = article.seoTitle ?? `${article.title} | DataGram Nigeria`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -133,7 +134,7 @@ export default function BlogPost() {
   return (
     <div className={`min-h-screen bg-gradient-to-br from-background to-secondary/20 ${landingPageRoot}`}>
       <Seo
-        title={`${article.title} | DataGram Nigeria`}
+        title={documentTitle}
         description={article.metaDescription}
         canonical={canonical}
         image={article.image.startsWith("/") ? article.image : DEFAULT_OG_IMAGE}

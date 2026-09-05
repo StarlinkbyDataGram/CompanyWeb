@@ -8,7 +8,7 @@ export const trendingAArticles: SeoArticle[] = [
     excerpt:
       "Hardware, monthly subscription, and installation cost ranges in naira — with live pricing on Starlink checkout and why USD/NGN swings change your total.",
     metaDescription:
-      "Starlink price Nigeria 2026: hardware, monthly plan, and install ranges in naira. Check starlink.com for live rates — USD/NGN affects totals.",
+      "Starlink hardware costs ₦669,000 in Nigeria, monthly plans from ₦57,000. Residential is sold out in Lagos and Abuja — here's what to do in August 2026.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
     readTime: "11 min read",
@@ -23,6 +23,7 @@ export const trendingAArticles: SeoArticle[] = [
       blurb: "Hardware from Starlink, labour from your installer — we quote install scope after survey so totals are honest.",
     },
     blocks: blocks(
+      p("Last updated: August 2026"),
       p("How much is Starlink in Nigeria today? The honest answer has three moving parts: the kit price Starlink charges at checkout, the monthly subscription for your plan class, and what it costs to mount, cable, ground, and hand over the link on your property. Social media screenshots go stale within weeks because Starlink adjusts USD list prices and the naira equivalent shifts with the exchange rate. Before you transfer dollars or naira, open [Starlink's official site](https://www.starlink.com/) and walk through checkout for your service address — that is the only live price table that matters on the day you buy."),
       p("This guide frames realistic naira ranges for Nigerian buyers in 2026 without inventing exact figures that will be wrong tomorrow. We install nationwide through our [home installation service](/starlink-home-installation) and regional teams in [Lagos](/starlink-installation-lagos), [Abuja](/starlink-installation-abuja), and [Port Harcourt](/starlink-installation-rivers-state-port-harcourt). Use the ranges below for budgeting; confirm hardware and plan totals on Starlink before you commit."),
       h2("Starlink price table for Nigeria (2026) — read as ranges, not promises"),
@@ -37,6 +38,14 @@ export const trendingAArticles: SeoArticle[] = [
       p("Mini buyers optimizing for inverter power should also budget backup power — our [power bank and inverter sizing guide](/blog/best-power-bank-inverter-starlink-mini-nigeria) walks through watt-hours for Mini runtime during outages."),
       h2("Plan class affects monthly price more than gossip suggests"),
       p("Residential fixed service at a registered address is the default mental model. Business priority, higher throughput tiers, and mobility classes change both monthly fee and performance expectations. If you run CCTV upload, a small office, or an NGO field site, confirm plan class during survey — not after the kit arrives. [Enterprise Nigeria](/starlink-enterprise-nigeria) deployments often pair plan selection with VLAN handoff and failover design."),
+      h3("Lagos, Abuja & Port Harcourt: residential activation currently paused"),
+      p("New Starlink residential subscribers in Lagos, Abuja, and Port Harcourt will see \"only Priority Plans available in your area\" on the Starlink website. The Priority Plan at ₦159,000/month is the only active option for these cities. DataGram activates Priority Plans and handles the full installation process. [Learn about the Priority Plan →](/starlink-priority-plan-nigeria)"),
+      h2("Current August 2026 price snapshot"),
+      p("The ranges above are how to think about budgeting. Here are the figures we are quoting against as of August 2026, so you have concrete numbers to work with — still confirm them at [Starlink checkout](https://www.starlink.com/) for your own service address on the day you pay, because FX movement and SpaceX pricing changes are outside anyone's control."),
+      p("Hardware, one-time: the Standard Kit is ₦669,000. The Starlink Mini is ₦318,000. Mini is the cheaper entry point and draws less power, but it carries lower throughput and suits portable, single-user, or backup roles rather than a full household on video calls. High Performance hardware sits well above both and is specified for offices, high-user sites, and maritime work rather than homes."),
+      p("Subscription, monthly: residential runs ₦57,000–₦75,000 depending on plan tier and location. The Priority (Business) plan starts at ₦159,000 and includes priority throughput, meaning your connection is not deprioritised during the evening peak the way residential is. For anyone in Lagos, Abuja or Port Harcourt signing up now, ₦159,000 is the realistic monthly figure because residential is not available to new subscribers there."),
+      p("Installation, one-time: quoted per job after survey. The variables are travel distance from our nearest deployment hub, roof or parapet complexity, cable run length, estate conduit requirements, and whether the site needs a mast raise to clear obstructions. A short run on an accessible bungalow and a fourth-floor parapet mount with estate-mandated conduit are not the same job and should not carry the same price."),
+      p("Worked example for a residential household outside the sold-out cities: ₦669,000 hardware plus twelve months at ₦57,000 comes to ₦1,353,000 in year one, before installation. Spread across 24 months the same commitment is roughly ₦85,000 per month, and from month 25 you are paying subscription only because the hardware is yours. That 24-month figure is the honest comparison against a monthly fibre or 5G bill, not the year-one total on its own."),
       h2("Hidden costs Nigerians forget until month two"),
       p("Estate security deposits and conduit colour matching in Lekki or Maitama. Generator fuel if you reboot every changeover without UPS. Mesh nodes when concrete walls kill Wi-Fi — the satellite link is fine while laptops in the back bedroom show one bar. Annual hardware warranty considerations if you buy through grey importers instead of official checkout. Roaming fees if you travel without reading plan rules."),
       p("Installation rework is the expensive surprise: a dish mounted too low behind a parapet, a cable pinched in a POP ceiling, or skipped grounding before lightning season. A paid survey before purchase is cheaper than moving a welded bracket."),
