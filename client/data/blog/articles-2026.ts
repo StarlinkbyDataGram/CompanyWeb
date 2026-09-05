@@ -18,6 +18,7 @@ import { enterpriseMaritimeB2bArticles } from "./articles/enterprise-maritime-b2
 import { enterpriseMaritimeB2bMoreArticles } from "./articles/enterprise-maritime-b2b-more";
 import { enterpriseMaritimeB2bFinalArticles } from "./articles/enterprise-maritime-b2b-final";
 import { august2026SprintArticles } from "./articles/august-2026-sprint";
+import { september2026SprintArticles } from "./articles/september-2026-sprint";
 
 /** Legacy articles (pre-FAQ/block format) — migrated in place */
 const legacyArticles: SeoArticle[] = [
@@ -220,6 +221,7 @@ export const seoArticles2026: SeoArticle[] = [
   ...enterpriseMaritimeB2bMoreArticles,
   ...enterpriseMaritimeB2bFinalArticles,
   ...august2026SprintArticles,
+  ...september2026SprintArticles,
 ];
 
 export function getSeoArticleBySlug(slug: string) {

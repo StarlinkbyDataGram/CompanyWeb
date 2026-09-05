@@ -20,6 +20,8 @@ export type SeoArticle = {
   image: string;
   imageAlt: string;
   imageFile: string;
+  /** Placement note for hero — format: IMAGE: filename — reason. Renders as JSX comment + data-dg-placement. */
+  imageComment?: string;
   featured: boolean;
   /** @deprecated Use blocks — kept for legacy entries */
   paragraphs?: string[];

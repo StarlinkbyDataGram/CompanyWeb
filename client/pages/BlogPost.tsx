@@ -130,6 +130,8 @@ export default function BlogPost() {
   const bodyBlocks: ArticleBlock[] =
     article.blocks ??
     (article.paragraphs?.map((text) => ({ type: "p" as const, text })) ?? []);
+  const heroImageComment =
+    article.imageComment ?? `IMAGE: ${article.imageFile} — ${article.imageAlt}`;
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-background to-secondary/20 ${landingPageRoot}`}>
@@ -166,12 +168,12 @@ export default function BlogPost() {
               </span>
             </div>
             <div className="mt-8 aspect-[16/9] w-full overflow-hidden rounded-2xl border">
-              {/* REPLACE: hero image — {article.imageAlt} */}
+              {/* IMAGE: hero — see data-dg-placement for filename and reason */}
               <img
                 src={article.image}
                 alt={article.imageAlt}
                 data-dg-image={article.imageFile}
-                data-dg-placement={`IMAGE: ${article.imageFile} — ${article.imageAlt}`}
+                data-dg-placement={heroImageComment}
                 style={{
                   width: "100%",
                   height: "100%",
