@@ -25,8 +25,8 @@ describe('ourWorkProjects', () => {
     expect(home?.category).toBe('home');
     expect(home?.location).toBe('Port Harcourt');
     expect(home?.state).toBe('Rivers State');
-    expect(home?.photoCount).toBe(5);
-    expect(home?.imageFiles).toHaveLength(5);
+    expect(home?.photoCount).toBe(2);
+    expect(home?.imageFiles).toHaveLength(2);
 
     const estate = ourWorkProjects.find((project) => project.id === 'estate--multi-unit--abuja-fct');
     expect(estate?.folder).toBe('ESTATE-INSTALLATION');

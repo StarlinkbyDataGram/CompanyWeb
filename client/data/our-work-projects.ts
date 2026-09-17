@@ -26,10 +26,7 @@ const imageFilesFor = (folder: string): string[] => {
     'standard--residential-duplex--aruchukwu': ['WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05.jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (1).jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (2).jpeg'],
     'standard--residential-duplex--unknown': ['photo-1.jpeg', 'photo-2.jpeg'],
     'HOME-INSTALLATION': [
-      'WhatsApp Image 2026-09-17 at 11.08.04.jpeg',
       'WhatsApp Image 2026-09-17 at 11.08.04 (1).jpeg',
-      'WhatsApp Image 2026-09-17 at 11.09.01 (1).jpeg',
-      'WhatsApp Image 2026-09-17 at 11.09.02 (2).jpeg',
       'WhatsApp Image 2026-09-17 at 11.09.03.jpeg',
     ],
     'ESTATE-INSTALLATION': [
@@ -242,10 +239,7 @@ export const ourWorkProjects: Project[] = [
     description:
       'Standard Starlink kit installed at a residential property in Port Harcourt, Rivers State, with mesh WiFi distribution for whole-home coverage.',
     altTexts: [
-      'Starlink Standard Kit residential installation in Port Harcourt Rivers State by DataGram',
       'Starlink dish mounted on Port Harcourt home rooftop by DataGram',
-      'Mesh WiFi access point installation inside Port Harcourt home by DataGram',
-      'DataGram technician completing Starlink home install in Port Harcourt',
       'Finished Starlink residential network handover Port Harcourt Rivers State',
     ],
     internalLink: {
