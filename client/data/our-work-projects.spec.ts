@@ -14,17 +14,19 @@ describe('ourWorkProjects', () => {
       'mini--outdoor-business',
       'standard--residential--arochukwu',
       'starlink--high-performance-houseboat',
-      'standard--home--lekki-lagos',
+      'standard--home--port-harcourt-rivers',
       'estate--multi-unit--abuja-fct',
     ]);
   });
 
   it('maps home and estate folders to their installation images', () => {
-    const home = ourWorkProjects.find((project) => project.id === 'standard--home--lekki-lagos');
+    const home = ourWorkProjects.find((project) => project.id === 'standard--home--port-harcourt-rivers');
     expect(home?.folder).toBe('HOME-INSTALLATION');
     expect(home?.category).toBe('home');
-    expect(home?.photoCount).toBe(8);
-    expect(home?.imageFiles).toHaveLength(8);
+    expect(home?.location).toBe('Port Harcourt');
+    expect(home?.state).toBe('Rivers State');
+    expect(home?.photoCount).toBe(5);
+    expect(home?.imageFiles).toHaveLength(5);
 
     const estate = ourWorkProjects.find((project) => project.id === 'estate--multi-unit--abuja-fct');
     expect(estate?.folder).toBe('ESTATE-INSTALLATION');
