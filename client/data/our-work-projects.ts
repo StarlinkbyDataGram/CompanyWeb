@@ -36,11 +36,11 @@ const imageFilesFor = (folder: string): string[] => {
       'WhatsApp Image 2026-09-17 at 11.09.03.jpeg',
     ],
     'ESTATE-INSTALLATION': [
-      'WhatsApp Image 2026-09-17 at 11.08.58.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.03 (1).jpeg',
       'WhatsApp Image 2026-09-17 at 11.09.02.jpeg',
       'WhatsApp Image 2026-09-17 at 11.09.02 (1).jpeg',
-      'WhatsApp Image 2026-09-17 at 11.09.03 (1).jpeg',
       'WhatsApp Image 2026-09-17 at 11.09.04.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.08.58.jpeg',
     ],
   };
 
@@ -272,11 +272,11 @@ export const ourWorkProjects: Project[] = [
     description:
       'Estate-wide Starlink deployment in Abuja with Priority Plan activation and mesh WiFi distribution across multiple units.',
     altTexts: [
-      'Starlink estate installation with Priority Plan in Abuja FCT by DataGram',
+      'Starlink dish mounted for Abuja estate broadband distribution',
       'Estate WiFi distribution network rack and cabling Abuja FCT DataGram',
       'Mesh access points covering multi-unit estate Abuja by DataGram',
-      'Starlink dish mounted for Abuja estate broadband distribution',
       'Completed multi-unit estate Starlink WiFi handover Abuja FCT',
+      'Starlink estate installation detail photo Abuja FCT by DataGram',
     ],
     internalLink: {
       label: 'See our Estate WiFi page',
