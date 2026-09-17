@@ -17,6 +17,10 @@ const categoryLabel = (category: Project['category']) => {
       return 'Government';
     case 'residential':
       return 'Residential';
+    case 'home':
+      return 'Home';
+    case 'estate':
+      return 'Estate';
     default:
       return 'Project';
   }

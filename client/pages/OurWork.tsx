@@ -7,7 +7,7 @@ import ProjectLightbox from '@/components/ProjectLightbox';
 import { ourWorkProjects, type Project } from '@/data/our-work-projects';
 import { WHATSAPP_URL } from '@/lib/site';
 
-const filters = ['All', 'Maritime & Offshore', 'Enterprise & Government', 'Residential'] as const;
+const filters = ['All', 'Maritime & Offshore', 'Enterprise & Government', 'Residential', 'Home', 'Estate'] as const;
 
 type FilterValue = (typeof filters)[number];
 
@@ -19,6 +19,10 @@ const getCategoryMatches = (project: Project, filter: FilterValue) => {
       return project.category === 'enterprise' || project.category === 'government';
     case 'Residential':
       return project.category === 'residential';
+    case 'Home':
+      return project.category === 'home';
+    case 'Estate':
+      return project.category === 'estate';
     default:
       return true;
   }
@@ -60,7 +64,7 @@ export default function OurWork() {
               Real installations across Nigeria — residential, enterprise, government, and maritime. Every project here was completed by the DataGram team.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="rounded-full border border-[#0040FF]/60 bg-[#0040FF]/20 px-4 py-2 text-sm font-semibold text-[#dce7ff]">9 Featured Projects</span>
+              <span className="rounded-full border border-[#0040FF]/60 bg-[#0040FF]/20 px-4 py-2 text-sm font-semibold text-[#dce7ff]">11 Featured Projects</span>
               <span className="rounded-full border border-[#0040FF]/60 bg-[#0040FF]/20 px-4 py-2 text-sm font-semibold text-[#dce7ff]">5 States</span>
               <span className="rounded-full border border-[#0040FF]/60 bg-[#0040FF]/20 px-4 py-2 text-sm font-semibold text-[#dce7ff]">3 Sectors</span>
             </div>

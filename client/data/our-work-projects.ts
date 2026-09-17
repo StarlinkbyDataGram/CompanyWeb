@@ -5,7 +5,7 @@ export interface Project {
   photoCount: number;
   location: string;
   state: string;
-  category: 'maritime' | 'enterprise' | 'government' | 'residential';
+  category: 'maritime' | 'enterprise' | 'government' | 'residential' | 'home' | 'estate';
   tags: string[];
   description: string;
   altTexts: string[];
@@ -25,6 +25,23 @@ const imageFilesFor = (folder: string): string[] => {
     'Starlink-Performance': ['Starlink Performance Boat img 1.jpeg', 'Starlink Performance Boat img 2.jpeg'],
     'standard--residential-duplex--aruchukwu': ['WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05.jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (1).jpeg', 'WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (2).jpeg'],
     'standard--residential-duplex--unknown': ['photo-1.jpeg', 'photo-2.jpeg'],
+    'HOME-INSTALLATION': [
+      'WhatsApp Image 2026-09-17 at 11.08.04.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.08.04 (1).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.08.04 (2).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.00.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.01.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.01 (1).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.02 (2).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.03.jpeg',
+    ],
+    'ESTATE-INSTALLATION': [
+      'WhatsApp Image 2026-09-17 at 11.08.58.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.02.jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.02 (1).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.03 (1).jpeg',
+      'WhatsApp Image 2026-09-17 at 11.09.04.jpeg',
+    ],
   };
 
   return filesByFolder[folder] ?? [];
@@ -215,5 +232,56 @@ export const ourWorkProjects: Project[] = [
       href: '/starlink-boat-installation',
     },
     imageFiles: imageFilesFor('Starlink-Performance'),
+  },
+  {
+    id: 'standard--home--lekki-lagos',
+    displayName: 'Standard Residential Deployment — Lagos',
+    folder: 'HOME-INSTALLATION',
+    photoCount: imageFilesFor('HOME-INSTALLATION').length,
+    location: 'Lekki',
+    state: 'Lagos State',
+    category: 'home',
+    tags: ['Standard Kit', 'Mesh WiFi'],
+    description:
+      'Standard Starlink kit installed at a residential property in Lekki, Lagos State, with mesh WiFi distribution for whole-home coverage.',
+    altTexts: [
+      'Starlink Standard Kit residential installation in Lekki Lagos State by DataGram',
+      'Starlink dish mounted on Lekki Lagos home rooftop by DataGram',
+      'Residential Starlink cable and router setup Lekki Lagos DataGram',
+      'Mesh WiFi access point installation inside Lekki Lagos home by DataGram',
+      'DataGram technician completing Starlink home install in Lekki Lagos',
+      'Finished Starlink residential network handover Lekki Lagos State',
+      'Starlink Standard Kit outdoor mount detail Lekki Lagos installation',
+      'Whole-home Starlink mesh WiFi coverage setup Lekki Lagos by DataGram',
+    ],
+    internalLink: {
+      label: 'See our Home Installation page',
+      href: '/starlink-home-installation',
+    },
+    imageFiles: imageFilesFor('HOME-INSTALLATION'),
+  },
+  {
+    id: 'estate--multi-unit--abuja-fct',
+    displayName: 'Multi-Unit Estate WiFi Distribution — Abuja',
+    folder: 'ESTATE-INSTALLATION',
+    photoCount: imageFilesFor('ESTATE-INSTALLATION').length,
+    location: 'Abuja',
+    state: 'FCT',
+    category: 'estate',
+    tags: ['Priority Plan', 'Mesh WiFi', 'Network Distribution'],
+    description:
+      'Estate-wide Starlink deployment in Abuja with Priority Plan activation and mesh WiFi distribution across multiple units.',
+    altTexts: [
+      'Starlink estate installation with Priority Plan in Abuja FCT by DataGram',
+      'Estate WiFi distribution network rack and cabling Abuja FCT DataGram',
+      'Mesh access points covering multi-unit estate Abuja by DataGram',
+      'Starlink dish mounted for Abuja estate broadband distribution',
+      'Completed multi-unit estate Starlink WiFi handover Abuja FCT',
+    ],
+    internalLink: {
+      label: 'See our Estate WiFi page',
+      href: '/starlink-estate-wifi-nigeria',
+    },
+    imageFiles: imageFilesFor('ESTATE-INSTALLATION'),
   },
 ];
