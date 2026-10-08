@@ -34,7 +34,7 @@ const proof = (
 });
 
 const SPEED = {
-  label: "Typical performance range",
+  label: "Indicative field range, not a guarantee",
   down: "50–1,000 Mbps",
   up: "10–100 Mbps",
   latency: "20–33 ms",
@@ -60,7 +60,7 @@ const standardFaqs = [
   {
     question: "Do you offer ongoing support after installation?",
     answer:
-      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Speeds: 50–1,000 Mbps. Latency: 20–30 ms under normal conditions.",
+      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Indicative field ranges, not guarantees: speeds 50–1,000 Mbps, latency often discussed around 20–30 ms under normal conditions.",
   },
   {
     question: "Is roof drilling required for Starlink installation?",
@@ -192,7 +192,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       note: "No sign-up required. Free to download.",
     },
     stats: [
-      { label: "Typical latency (LEO)", value: "20–33 ms", note: "Varies with sea state, plan class, and beam load." },
+      { label: "Indicative latency (LEO)", value: "20–33 ms", note: "Varies with sea state, plan class, and beam load." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Hardware tier, weather, and subscription affect results." },
       { label: "Upload range", value: "10–100 Mbps", note: "Confirm plan class before procurement." },
       { label: "Install window", value: "1–3 days", note: "After marine survey and PTW approval." },
@@ -296,7 +296,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "What speeds should offshore teams expect?",
         answer:
-          "Download: 50 Mbps – 1,000 Mbps. Upload: 10 Mbps – 100 Mbps. Latency: 20–33 ms. Actual performance varies based on the hardware tier, sea state, and subscription plan.",
+          "Indicative field ranges, not a DataGram guarantee: download 50 Mbps – 1,000 Mbps, upload 10 Mbps – 100 Mbps, latency often discussed around 20–33 ms. Actual performance varies with hardware tier, sea state, and subscription plan.",
       },
       {
         question: "Do you support maritime or mobility Starlink plans?",
@@ -313,7 +313,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Does Starlink work for deep sea operations in the Gulf of Guinea?",
         answer:
-          "Yes. Starlink's maritime mobility plans, specifically the Global Priority plan with Ocean Mode, are designed for open ocean use including deep sea operations in the Gulf of Guinea. The Flat High Performance dish is required for vessels operating beyond coastal waters. DataGram assesses vessel type and route before recommending the correct plan and hardware.",
+          "Yes, on the correct plan class. Global Priority is the ocean-capable priority plan. Ocean Mode is a separate metered add-on for roam-class service past coastal waters, not a substitute for Global Priority on a working vessel. The Flat High Performance dish is required for vessels operating beyond coastal waters. DataGram assesses vessel type and route before recommending the plan and hardware.",
       },
       {
         question: "What is offshore internet, and how does Starlink provide it?",
@@ -360,7 +360,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance. DataGram's standard coverage is South-South and South-East Nigeria. Enterprise installations in northern states are handled on special request.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "LEO architecture; local routing still matters." },
+      { label: "Indicative latency", value: "20–33 ms", note: "LEO architecture; local routing still matters." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Plan class and user load affect peaks." },
       { label: "Upload range", value: "10–100 Mbps", note: "Size for CCTV and cloud sync honestly." },
       { label: "Survey to live", value: "3–7 days", note: "After estate approval and hardware on site." },
@@ -519,7 +519,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram surveys tree lines, recommends mast height, and runs interior cable through conduits where owners want tidy finishes. We size modest UPS for routers during NEPA gaps and add mesh nodes when concrete walls divide flats across two floors.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "Suitable for video calls and cloud apps." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Suitable for video calls and cloud apps." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Varies by plan, obstruction score, and peak hours." },
       { label: "Upload range", value: "10–100 Mbps", note: "Disclose upload needs during survey." },
       { label: "Install duration", value: "4–8 hours", note: "Single-family home, standard roof access." },
@@ -657,7 +657,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram installs DC-fed power where inverters are noisy, routes cable away from winches and bait tanks, and tests at cruise RPM so vibration does not loosen glands mid-season.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "Higher at beam edges; check plan map before offshore legs." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Higher at beam edges; check plan map before offshore legs." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Motion, rain, and user count affect results." },
       { label: "Upload range", value: "10–100 Mbps", note: "Confirm mobility plan before hardware buy." },
       { label: "Season turnaround", value: "1–2 days", note: "Marina slip with shore power for alignment." },
@@ -892,7 +892,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram covers South-South and South-East Nigeria as standard, with special-request mobilisation elsewhere. We match plan class and hardware to the site — Fixed High Performance or mobility-rated gear offshore, structured LAN integration on land — then leave speed baselines, cable photos, and escalation contacts with your team.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "LEO path; WiFi and WAN design still matter." },
+      { label: "Indicative latency", value: "20–33 ms", note: "LEO path; WiFi and WAN design still matter." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Plan class, obstruction, and load affect peaks." },
       { label: "Upload range", value: "10–100 Mbps", note: "Size honestly for CCTV, ERP, and crew welfare." },
       { label: "Survey to live", value: "3–14 days", note: "Depends on access windows, PTW, and hardware lead time." },
@@ -1162,7 +1162,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "For full marine hardware scope, mounts, and plan classes, use the dedicated offshore maritime installation page. This page focuses on how we work safely and what documentation you receive.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "After install baseline recorded on site." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Indicative band only, not a site result. A separate baseline is recorded after install." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Logged in the post-install test report." },
       { label: "Upload range", value: "10–100 Mbps", note: "Plan class confirmed before mobilisation." },
       { label: "Install window", value: "1–3 days", note: "After survey and PTW approval." },
@@ -1398,7 +1398,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "Hardware install and HSE practice live on our offshore maritime and HSE pages. This page covers the network integration layer on top of a working Starlink path.",
     ],
     stats: [
-      { label: "Typical Starlink latency", value: "20–33 ms", note: "Failover path latency depends on 4G or VSAT." },
+      { label: "Indicative Starlink latency", value: "20–33 ms", note: "Indicative band only, not a failover guarantee. The 4G or VSAT path is separate." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Primary Starlink path under normal conditions." },
       { label: "Upload range", value: "10–100 Mbps", note: "Shape CCTV and sync so backups are not saturated." },
       { label: "Design window", value: "Survey + config", note: "Quoted after vessel network and coverage review." },
@@ -1642,7 +1642,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram fleet management puts procurement, coordinated installation, account administration, plan upgrades, and escalations under one Nigerian point of contact. You get VAT-compliant invoicing options, quarterly per-site performance notes, and a path that scales from branch networks to maritime fleets.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "Per-site baselines recorded after install." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Indicative band only. The number recorded after install is the site baseline, and it may differ." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Varies by plan class and obstruction." },
       { label: "Upload range", value: "10–100 Mbps", note: "Sized honestly for CCTV and branch sync." },
       { label: "Fleet scope", value: "5+ sites", note: "Meaningful when you stop managing accounts one by one." },
@@ -1865,27 +1865,27 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     path: "/starlink-priority-plan-nigeria",
     seoTitle: "Starlink Priority Plan Nigeria | DataGram",
     metaDescription:
-      "Starlink residential plans are sold out in Lagos, Abuja and PH. DataGram activates Priority Plans and manages your account — from survey to live connection.",
+      "Where a Lagos, Abuja, or Port Harcourt address shows Priority only, DataGram can activate that plan. Availability is per address — check before you buy.",
     canonical: "/starlink-priority-plan-nigeria",
     ogImage: img("blog/starlink-residential-vs-priority-business-nigerian-smes.jpg"),
-    h1: "Starlink Sold Out in Your Area? The Priority Plan Is Your Route In",
+    h1: "Address Showing Priority Only? The Priority Plan Is the Route on That Screen",
     heroLabel: "Priority Plan activation",
     heroSubheading:
-      "In Lagos, Abuja, and Port Harcourt, Starlink residential plans are currently unavailable for new subscribers. The Priority Plan is the only active option — and DataGram handles the full activation process for you.",
+      "Some Lagos and Abuja addresses, and some Port Harcourt addresses, are offered Priority rather than new residential signup. That is not a standing rule for every street in those cities. Check the exact service address. Where Priority is what the screen shows, DataGram handles activation.",
     heroImageAlt: "Starlink Priority Plan activation in Nigeria",
     heroImage: img("blog/starlink-residential-vs-priority-business-nigerian-smes.jpg"),
     heroImageFile: "blog/starlink-residential-vs-priority-business-nigerian-smes.jpg",
     heroImageReason:
-      "Priority Plan activation in Nigeria with commercial and residential context — signals premium Starlink availability when residential is sold out.",
+      "Priority Plan activation in Nigeria with commercial and residential context — used where an address is offered Priority rather than new residential signup.",
     heroObjectPosition: "center top",
-    overviewTitle: "Priority Plan activation when residential is sold out",
+    overviewTitle: "Priority Plan activation when an address is not offered residential",
     overviewParagraphs: [
-      "Starlink residential availability in Lagos, Abuja, and Port Harcourt has reached capacity for new activations. DataGram moves customers to the Priority Plan so they do not wait indefinitely on the residential list.",
+      "Residential signup is address-specific. Reporting in 2026 described Priority-only signup on many Lagos and Abuja addresses. Port Harcourt and Benin were later described as mixed, and some addresses see a deposit or wait step rather than an immediate plan. DataGram checks the service address, then activates Priority only where that is the route the account shows.",
       "The Priority Plan is a higher-tier subscription that provides better throughput, stronger support, and fewer availability restrictions than residential service. We assess the right kit, manage the account, and deliver the installation end to end.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "Priority plan performance is still subject to local obstructions and plan load." },
-      { label: "Download range", value: "100–350 Mbps", note: "Higher-tier priority throughput compared to residential activation." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Indicative band only, not a DataGram guarantee. Obstructions and plan load still apply." },
+      { label: "Indicative download range", value: "100–350 Mbps", note: "Often discussed for a clean install. Not a guaranteed result." },
       { label: "Upload range", value: "10–50 Mbps", note: "Suitable for remote work, video calls, and business traffic." },
       { label: "Activation window", value: "3–7 days", note: "After survey and account confirmation." },
     ],
@@ -1894,7 +1894,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         icon: Wifi,
         title: "Bypasses residential waitlists",
-        body: "The Priority Plan is the only active option for new installations in many congested Lagos, Abuja, and Port Harcourt areas.",
+        body: "Where an address in Lagos, Abuja, or Port Harcourt is offered Priority rather than residential, that plan is the route still showing. It is not a city-wide rule.",
       },
       {
         icon: Zap,
@@ -1965,9 +1965,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     ],
     faqs: [
       {
-        question: "Is the Priority Plan available where residential is sold out in Lagos?",
+        question: "Is the Priority Plan available where my Lagos address is not offered residential?",
         answer:
-          "Yes. The Priority Plan is currently the only active tier for new subscribers in Lagos, Abuja, and Port Harcourt. It bypasses the residential waitlist and can be activated immediately through DataGram.",
+          "Where the Starlink site offers Priority for that address, DataGram can activate it. That is not a standing rule for every address in Lagos, Abuja, or Port Harcourt. Some addresses still show residential, and some show a deposit or wait step. Check the exact service address first.",
       },
       {
         question: "How much does the Starlink Priority Plan cost in Nigeria?",
@@ -1977,7 +1977,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Will residential Starlink become available in Lagos again?",
         answer:
-          "SpaceX has not given a firm timeline. They have indicated that residential availability will expand as their satellite constellation grows. We recommend Priority Plan activation now rather than waiting indefinitely on the residential waitlist.",
+          "SpaceX has not given a firm timeline for any Nigerian address. Where the screen still offers Priority only, that is the route showing today. Where it offers residential, or a deposit or wait step, follow what that address shows.",
       },
       {
         question: "Can DataGram manage my Priority Plan account on an ongoing basis?",
@@ -1989,8 +1989,8 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         title: "What the Priority Plan includes",
         checklist: [
-          "Download speeds of 100–350 Mbps",
-          "Guaranteed priority throughput — not deprioritised during peak hours like residential plans",
+          "Indicative download range often discussed around 100–350 Mbps — not a guaranteed result",
+          "Priority allocation during peak hours, unlike residential deprioritisation — not a speed guarantee",
           "24/7 priority support from Starlink",
           "Compatible with the standard Starlink Gen 3 dish — no separate hardware required in most cases",
           "Suitable for offices, remote workers, and homes in congested areas where residential is blocked",
@@ -2069,7 +2069,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "DataGram handles the survey, diagnosis, quote, and on-site work so your service moves with your Starlink dish instead of leaving it offline or misconfigured.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "After repair or relocation and final alignment." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Indicative band only. Alignment after repair is checked separately and may differ." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Dependent on subscription class and local obstructions." },
       { label: "Repair window", value: "2–4 hours", note: "Residential relocations typically complete in a single visit." },
       { label: "Relocation survey", value: "Quoted on contact", note: "We assess the new address and mounting options before work begins." },
@@ -2245,7 +2245,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "This is more than a dish install. It is a network design job for compounds, multi-unit buildings, estates, and commercial complexes that need usable WiFi everywhere.",
     ],
     stats: [
-      { label: "Typical latency", value: "20–33 ms", note: "Site design and WiFi distribution affect the end-user experience." },
+      { label: "Indicative latency", value: "20–33 ms", note: "Site design and WiFi distribution affect the end-user experience." },
       { label: "Download range", value: "50–1,000 Mbps", note: "Shared estate connectivity depends on the plan class and mesh design." },
       { label: "Access point count", value: "3–15+", note: "Depends on estate size, building count, and wall materials." },
       { label: "Design window", value: "2–5 days", note: "After survey and network planning approval." },
@@ -2449,7 +2449,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         icon: Plane,
         title: "Nigerians Working Internationally",
-        body: "If you registered your Starlink in Nigeria but regularly work in other countries, the standard plan restricts use outside Nigeria to 14 days before service is paused. Roaming helps short cross-border travel; Global Priority is the plan that removes the country lock for indefinite international or offshore use.",
+        body: "If you registered your Starlink in Nigeria and work in other countries, out-of-country time depends on the plan, not a flat 14-day rule. Roam Unlimited is up to 30 days at a time outside the home country. Other Roam plans stay in the home country or a grouped region. Local Priority allows up to 60 days of international use in total. Global Priority has no time cap and is the class used for continuous offshore work. Check the allowance in the account before you travel.",
       },
       {
         icon: HeartHandshake,
@@ -2471,11 +2471,11 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         cards: [
           {
             title: "Starlink Roaming",
-            body: "Available on: Residential and some business plans. How it works: Lets you use the dish away from the registered service address; out-of-country use is still subject to SpaceX’s 14-day pause limit. Best for: Occasional travel, short cross-border assignments, vessels in coastal and near-shore waters. Data: Standard allocation — same as your base plan. Cost: Added to your existing plan at additional monthly cost (USD-denominated — DataGram can advise on current pricing). Limitation: 14-day international use limit; not designed for permanent offshore or international use.",
+            body: "Available on: Residential and some business plans, depending on the Roam product your account offers. How it works: Lets you use the dish away from the registered service address. Out-of-country time is plan-specific: Roam Unlimited is up to 30 days at a time; other Roam plans are for the home country or a grouped region. Best for: Occasional travel and short cross-border assignments. Data: Standard allocation — same as your base plan. Cost: Added to your existing plan at additional monthly cost (USD-denominated — DataGram can advise on current pricing). Limitation: Not designed for permanent offshore use. Confirm the limit in the account. A withdrawn 14-day cap is not the rule to plan around.",
           },
           {
             title: "Global Priority",
-            body: "Available on: Dedicated Global Priority plan (separate from residential). How it works: No regional country lock — operates globally including open ocean under maritime mobility coverage. Best for: Offshore vessels, FPSOs, OSVs, international operators, deep sea operations. Data: Priority data allocation (Ocean Mode priority buckets apply — see FAQ). Cost: Higher monthly subscription (USD-denominated — contact DataGram for current naira equivalent). Limitation: Higher cost than Roaming; hardware eligibility applies (Flat High Performance dish required for maritime mobility).",
+            body: "Available on: Dedicated Global Priority plan (separate from residential). How it works: No time cap on international use, and it is the class that covers ocean use. Best for: Offshore vessels, FPSOs, OSVs, international operators, deep sea operations. Data: Priority data blocks — a 50GB block is a Global Priority tier, not Ocean Mode. Ocean Mode is a separate metered option for roam-class plans beyond coastal waters. Cost: Higher monthly subscription (USD-denominated — contact DataGram for current naira equivalent). Limitation: Higher cost than Roaming; hardware eligibility applies (Flat High Performance dish required for maritime mobility).",
           },
         ],
         footerNote:
@@ -2558,7 +2558,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     speedStat: SPEED,
     testimonial: {
       quote:
-        "We thought Roaming would keep the OSV online indefinitely. DataGram checked the account, explained the 14-day limit, and moved us to Global Priority before the pause hit mid-campaign.",
+        "We thought Roaming would keep the OSV online indefinitely. DataGram checked the account, showed that Roam is time-limited, and moved us to Global Priority before the pause hit mid-campaign.",
       attribution: "Fleet IT lead, offshore support operator (name withheld)",
     },
     packagesTitle: "Activation options",
@@ -2600,7 +2600,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         href: "/blog/starlink-roaming-global-priority-activation-nigeria",
       },
       {
-        label: "Ocean Mode 50GB priority limit explained",
+        label: "Ocean Mode vs the 50GB Global Priority block",
         href: "/blog/starlink-ocean-mode-50gb-priority-limit-explained",
       },
       { label: "Offshore & Maritime Installation", href: "/starlink-offshore-maritime-installation" },
@@ -2618,7 +2618,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "What is the difference between Starlink Roaming and Global Priority?",
         answer:
-          "Roaming allows you to use your existing Starlink plan outside Nigeria for up to 14 days per month. Global Priority is a separate plan with no regional restrictions, designed for offshore and international operators who need continuous connectivity wherever they are. Roaming is an add-on; Global Priority is a plan upgrade with different hardware requirements and a higher monthly cost.",
+          "Roaming lets you use the dish away from its registered address. Out-of-country time is not a flat 14 days: Roam Unlimited is up to 30 days at a time, other Roam plans are for the home country or a grouped region, and Local Priority is up to 60 days in total. Global Priority has no time cap and is the plan used for continuous offshore work. It is a plan upgrade, with different hardware requirements and a higher monthly cost.",
       },
       {
         question: "Can I use my standard Starlink residential plan on a vessel in the Niger Delta?",
@@ -2631,9 +2631,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
           "For offshore and maritime use, the Flat High Performance (FHP) dish is required — the standard dish is not rated for open-ocean mounting or the movement of a vessel underway. For land-based international roaming, your existing standard or Gen 3 dish is compatible with the Roaming add-on. DataGram will confirm hardware eligibility before advising on a plan change.",
       },
       {
-        question: "What is the 50GB Ocean Mode priority limit?",
+        question: "Is the 50GB allowance the same thing as Ocean Mode?",
         answer:
-          "Global Priority maritime plans include a priority data allocation — currently 50GB per month at full priority speeds. Once that allocation is used, data continues at standard speeds rather than being cut off. For high-usage vessel operations, DataGram can advise on additional priority data top-ups. See our detailed breakdown at /blog/starlink-ocean-mode-50gb-priority-limit-explained.",
+          "No. A 50GB block is a Global Priority data tier: priority speeds for that allowance, then continued service at a lower priority rather than a hard cutoff. Ocean Mode is a separate metered option that extends roam-class service beyond coastal waters. Confirm which one your account actually shows. See /blog/starlink-ocean-mode-50gb-priority-limit-explained.",
       },
       {
         question: "How long does activation take?",

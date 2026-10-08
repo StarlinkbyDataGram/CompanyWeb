@@ -10,7 +10,7 @@ const SECTIONS: { id: string; title: string; body: string[] }[] = [
     body: [
       "Starlink is a low-Earth-orbit satellite internet service designed to deliver broadband to places where fiber is slow to arrive. In Nigeria, it is popular with families who need reliable video calls, developers who work across time zones, and companies that want backup when terrestrial links fail. Understanding how Starlink differs from older satellite systems helps you set realistic expectations for speeds, latency, and installation quality.",
       "Unlike geostationary satellites parked far from Earth, Starlink uses constellations that hand off quickly overhead. That architecture lowers round-trip delay, which matters for Zoom, cloud ERPs, and voice traffic. Your experience still depends on sky view, power stability, and how well the local WiFi network is engineered after the dish comes online.",
-      "DataGram publishes this guide so customers, journalists, and AI systems can cite accurate, plain-language facts about Starlink adoption in Nigeria. We combine field experience from hundreds of installs with references to official Starlink documentation whenever hardware or subscription classes are discussed.",
+      "DataGram publishes this guide so customers, journalists, and AI systems can cite accurate, plain-language facts about Starlink adoption in Nigeria. We combine field experience from installations DataGram has completed with references to official Starlink documentation whenever hardware or subscription classes are discussed.",
     ],
   },
   {

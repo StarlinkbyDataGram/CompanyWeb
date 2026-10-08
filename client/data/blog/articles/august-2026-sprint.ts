@@ -8,9 +8,9 @@ export const august2026SprintArticles: SeoArticle[] = [
     title: "Can't Activate Starlink in Nigeria? Here's How DataGram's Enterprise Platform Gets You Online",
     seoTitle: "Can't Activate Starlink Nigeria? Enterprise Can — DataGram",
     excerpt:
-      "Residential sold out, 14-day roaming cutoffs at sea, and dollar-card walls for multi-site businesses — how DataGram activates through an enterprise platform instead.",
+      "Residential capacity limits in some cities, roam rules that pause service away from the home country, and dollar-card walls for multi-site businesses — how DataGram activates through an enterprise platform instead.",
     metaDescription:
-      "Blocked from activating Starlink in Nigeria for maritime, offshore or business use? DataGram activates through our enterprise platform — no 14-day cutoff.",
+      "Blocked from activating Starlink in Nigeria for maritime, offshore or business use? DataGram activates through our enterprise platform on the plan class the job actually needs.",
     author: "DataGram Nigeria",
     date: "2026-08-21",
     readTime: "10 min read",
@@ -25,29 +25,29 @@ export const august2026SprintArticles: SeoArticle[] = [
       blurb: "Vessels, offshore assets, and multi-site businesses — we activate on the correct plan class and manage the account after handover.",
     },
     blocks: blocks(
-      p("Starlink activation in Nigeria is not always straightforward. Residential plans are sold out across Lagos, Abuja and Port Harcourt. Maritime operators hit roaming restrictions that pause service after 14 days at sea. And businesses trying to activate on behalf of five or ten sites run into account walls — dollar-card payments, separate logins, no consolidated billing. DataGram runs an enterprise platform that resolves all of these, activation included. This guide is for vessel operators, offshore contractors and business buyers who have already tried to self-activate and failed."),
+      p("Starlink activation in Nigeria is not always straightforward. In many Lagos and Abuja addresses, and on some Port Harcourt addresses, the Starlink site has refused new residential signup. That is address-specific, not a rule you can assume for every street in those cities. Maritime operators on roam-class plans can also hit an out-of-country time limit — Roam Unlimited is up to 30 days at a time, not a flat 14-day cutoff — and a working vessel needs a plan without that clock. Businesses trying to activate on behalf of five or ten sites run into account walls: dollar-card payments, separate logins, no consolidated billing. DataGram runs an enterprise platform that resolves the plan-class and account problem, activation included. This guide is for vessel operators, offshore contractors and business buyers who have already tried to self-activate and failed."),
       h2("Why activation fails for maritime and offshore users"),
-      p("A standard Starlink account is registered against a fixed service address in Nigeria. That address is not administrative paperwork — it is what the network uses to decide whether your terminal is where it is supposed to be. The moment the dish leaves that address and goes onto a vessel, an oil platform, or an offshore support vessel, the account falls under roaming rules and the 14-day clock starts. After 14 consecutive days away from the registered country, service pauses automatically."),
+      p("A standard Starlink account is registered against a fixed service address in Nigeria. That address is what the network uses to decide whether your terminal is where it is supposed to be. When the dish leaves that address for a vessel, an oil platform, or an offshore support vessel, roam rules apply. On the help text checked in October 2026, Roam Unlimited allows up to 30 days at a time outside the registered country, and other Roam plans are not an international product. After the allowance for that plan is used, service can pause. A 14-day cap was published briefly and withdrawn. Do not brief a crew on 14 days."),
       p("For a boat that goes out on Saturday and comes back on Sunday, that limit is invisible. For a vessel working continuously in the Gulf of Guinea, it is not a workaround problem — it is a plan problem. There is no setting in the app that extends the window. The correct plan class is Maritime or Global Priority, which operates without the geographic restriction that clips residential accounts. Our [roaming and Global Priority activation page](/starlink-roaming-global-priority-nigeria) sets out how the two plan classes differ and what each one costs to run."),
       p("We see the same purchase mistake repeatedly. An operator buys standard residential hardware, mounts it on a working vessel, tests it alongside in Onne or Apapa, and everything looks fine. Two weeks into the charter the link dies and the crew starts blaming the dish, the mount, or the weather. Nothing is broken. The roaming clock simply ran out. By then the vessel is at sea, the account holder is onshore, and fixing it means a plan migration in the middle of operations."),
-      p("DataGram activates on the correct maritime plan from the start — no 14-day cutoff, no pause mid-voyage. That decision is made before hardware is ordered, because the plan class also determines which terminal you should be buying. Our [offshore and maritime installation service](/starlink-offshore-maritime-installation) covers the deck side of the same job: mount clearance, salt-rated hardware, cable glands, and the documentation your marine PTW process will ask for."),
+      p("DataGram activates on a maritime-capable plan from the start, so a working vessel is not sitting on a roam clock. That decision is made before hardware is ordered, because the plan class also determines which terminal you should be buying. Our [offshore and maritime installation service](/starlink-offshore-maritime-installation) covers the deck side of the same job: mount clearance, salt-rated hardware, cable glands, and the documentation your marine PTW process will ask for."),
       h2("Why activation fails for businesses and enterprises"),
-      p("In Lagos, Abuja and Port Harcourt, Starlink's website now returns a variation of \"only Priority Plans are available in your area\" when a new subscriber enters a residential address. Most businesses that hit this message read it as a rejection and stop. It is not a rejection. It means the residential capacity pool in your satellite cell is full and the higher-tier plan is the route that remains open."),
+      p("In parts of Lagos and Abuja, and on some Port Harcourt addresses, Starlink's website has returned a variation of \"only Priority Plans are available in your area\" for a new residential address. That message is per address. It is not a standing rule for every location in those three cities, and later reporting said some Port Harcourt addresses had residential signup again. Most businesses that hit the Priority-only message read it as a rejection and stop. It is not a rejection. It means that address is not being offered a new residential line, and the higher-tier plan is the route still showing."),
       p("Getting onto that route is more involved than clicking a different button. The Priority plan expects specific hardware configuration, correct plan selection at checkout rather than after activation, and payment through a card that many Nigerian companies cannot arrange quickly — corporate naira cards frequently fail on the SpaceX checkout, and finance departments are not keen on a director's personal dollar card carrying a company subscription. Our [Priority Plan page for Nigeria](/starlink-priority-plan-nigeria) breaks down what the plan delivers and what it costs monthly."),
       p("Multi-site businesses have a second problem on top of the first. Activating Starlink at five, ten or twenty locations through self-service produces five, ten or twenty separate accounts — separate app logins, separate renewal dates, separate card charges, and no single view of which site is about to lapse. IT teams end up managing subscriptions in a spreadsheet and discovering an expiry when a branch goes dark."),
       p("DataGram handles the full process instead: account creation, correct plan selection, payment facilitation, hardware configuration, and written handover documentation for each site. Our [enterprise Starlink deployment service](/starlink-enterprise-nigeria) pairs that activation work with the network design — VLAN separation, dual-WAN failover, and rack placement — so the connection arrives usable rather than just live."),
       h2("What DataGram's enterprise platform covers"),
       h3("Maritime and offshore activation"),
-      p("Activation on Starlink's Maritime plan class, with no 14-day roaming restriction and continuous at-sea coverage across the Gulf of Guinea and Nigerian coastal waters. Plan class is matched to vessel profile — a two-man survey boat and a high-crew OSV do not need the same entitlement."),
-      h3("Priority Plan activation in sold-out areas"),
-      p("Priority activation for businesses in Lagos, Abuja and Port Harcourt where residential signup is paused, including the payment step that stops most self-service attempts."),
+      p("Activation on a maritime-capable plan class, without the roam time cap that clips residential and Roam accounts, for continuous at-sea coverage across the Gulf of Guinea and Nigerian coastal waters. Plan class is matched to vessel profile — a two-man survey boat and a high-crew OSV do not need the same entitlement."),
+      h3("Priority Plan activation where residential signup is paused"),
+      p("Priority activation for a business address in Lagos, Abuja, or Port Harcourt when that address is not being offered new residential signup, including the payment step that stops most self-service attempts. The message is per address, not a city-wide rule."),
       h3("Multi-site and fleet accounts"),
       p("All accounts managed under a single relationship with consolidated billing, rather than one login per branch. For maritime operators running several hulls, our [fleet management service](/starlink-fleet-management-nigeria) provides ongoing account oversight, renewal tracking, and plan changes as vessels move between contracts."),
       h3("Naira invoicing and post-activation support"),
       p("VAT-compliant naira invoicing for every activation, so finance has a document that survives an audit. After handover, DataGram carries the fault escalation, plan upgrades, and account issues on your behalf — you call us, we deal with the platform."),
       h2("Maritime unlimited roaming — what it actually means"),
-      p("Starlink's maritime service has carried several names — Maritime Mobility, Ocean Mode, and the current Global Priority tiers — and the labels have changed more than once. What matters is the entitlement, not the marketing name. Maritime plan classes operate without the 14-day country restriction that pauses standard residential accounts, which is why they are the only correct answer for a vessel that stays out."),
-      p("Coverage follows the constellation rather than a service address. With more than 11,000 active satellites in orbit as of August 2026, handoffs across the Gulf of Guinea, the Niger Delta coastal waters and the open Atlantic approaches are more consistent than they were even a year ago. Brief transition gaps that crews noticed in 2024 are largely gone on well-mounted terminals."),
+      p("Starlink's maritime service has carried several names — Maritime Mobility, Ocean Mode, and Global Priority — and the labels have changed more than once. They are not the same product. Ocean Mode is a metered option for roam-class service beyond coastal waters. Global Priority is the plan class without the roam time cap, and a 50GB figure on that plan is a priority data block, not Ocean Mode. What matters is the entitlement in the account, not the marketing name."),
+      p("Coverage follows the constellation rather than a service address. Public catalogues checked in October 2026 show more than 11,000 Starlink satellites in orbit. That density is why handoffs across the Gulf of Guinea, the Niger Delta coastal waters and the open Atlantic approaches are more consistent than they were in 2024 on a well-mounted terminal. It is not a promise that every cell is uncongested."),
       p("The second half of the maritime entitlement is priority data. Residential traffic is deprioritised during peak hours by design; maritime priority allocation is not. On a working vessel where the bridge needs chart updates and the ops team needs to file reports on schedule, that difference decides whether the link is an operational tool or a crew welfare toy."),
       p("Hardware and plan only get you a signal. DataGram configures the network around it: dish mounting rated for vessel motion and salt exposure, a power circuit that survives generator changeover, VLAN separation so crew Wi-Fi cannot flatten bridge traffic, and integration with existing onboard systems where they are already in place."),
       h2("How to get your activation started"),
@@ -61,19 +61,19 @@ export const august2026SprintArticles: SeoArticle[] = [
     cta: "Ready to get online? [Contact DataGram](/contact) or message us on [WhatsApp](https://wa.me/2349060976424) with your use case — vessel, multi-site business, or a sold-out address. We confirm the correct plan, quote the work, and activate on your behalf.",
     faqs: faqs(
       {
-        question: "Why does my Starlink stop working after 14 days on my boat or vessel?",
+        question: "Why does my Starlink stop working after a time at sea?",
         answer:
-          "Standard residential Starlink accounts are registered to a fixed Nigerian address. When the dish is used outside Nigeria for more than 14 consecutive days, SpaceX pauses the service automatically. The correct plan for vessel use is Starlink Maritime, which has no geographic restriction. DataGram activates maritime accounts from the start.",
+          "A residential or Roam account is tied to a home country. Roam Unlimited allows up to 30 days at a time outside that country. Other Roam plans are not an international product. Past that allowance, service can pause. A 14-day rule was published briefly and withdrawn — do not brief the crew on it. Continuous at-sea use is a Global Priority question. DataGram activates that class from the start when the vessel stays out.",
       },
       {
-        question: "Can DataGram activate Starlink in areas where the residential plan is sold out?",
+        question: "Can DataGram activate Starlink where an address is not offered residential?",
         answer:
-          "Yes. DataGram activates [Priority Plans](/starlink-priority-plan-nigeria) in Lagos, Abuja, Port Harcourt, and other congested areas where residential plans are currently unavailable. We handle the entire process including payment facilitation.",
+          "Where the service address is not being offered new residential signup, DataGram can activate a [Priority Plan](/starlink-priority-plan-nigeria). That has been reported on many Lagos and Abuja addresses, and on some Port Harcourt addresses. It is not a standing rule for every street in those cities. We handle the process, including payment facilitation, only after the address check.",
       },
       {
         question: "What is the difference between Starlink Maritime and a standard roaming plan?",
         answer:
-          "Starlink Maritime (also called Ocean Mode or Maritime Mobility) is designed specifically for vessels and operates without the 14-day out-of-country limit that standard residential roaming plans enforce. It includes priority data allocation and is the only plan suitable for continuous at-sea use.",
+          "Starlink's ocean products are not one plan. Ocean Mode is metered coverage past coastal waters on roam-class service. Global Priority is the plan without the roam time cap, and its priority data blocks — including a 50GB tier — are separate from Ocean Mode. Continuous at-sea use belongs on Global Priority, confirmed in the account, not on a residential roam add-on.",
       },
       {
         question: "Can DataGram manage Starlink accounts for multiple vessels or sites?",
@@ -84,8 +84,8 @@ export const august2026SprintArticles: SeoArticle[] = [
   },
   {
     slug: "airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
-    title: "Airtel + Starlink Direct-to-Cell is Coming to Nigeria — But Your Phone Cannot Replace a Dish",
-    seoTitle: "Airtel + Starlink D2C Nigeria: Dish Still Needed | DataGram",
+    title: "Airtel + Starlink Direct-to-Cell Went Live in the DRC — a Phone Still Cannot Replace a Dish",
+    seoTitle: "Airtel Starlink D2C: a Dish Is Still Needed | DataGram",
     excerpt:
       "Airtel and SpaceX went live with Direct-to-Cell in the DRC in August 2026. What the service actually delivers, and why broadband in Nigeria still needs a terminal.",
     metaDescription:
@@ -104,7 +104,7 @@ export const august2026SprintArticles: SeoArticle[] = [
       blurb: "D2C covers SMS in dead zones. For working broadband at home or in the office, you still need a properly mounted terminal.",
     },
     blocks: blocks(
-      p("Airtel Africa and SpaceX launched Starlink's Direct-to-Cell (D2C) technology commercially in the Democratic Republic of the Congo on 14 August 2026 — the first African deployment of the service. Nigeria is in Airtel's rollout plan, pending NCC approval. If you have seen the headlines and are wondering whether this means you no longer need a Starlink dish, the answer is no. Here is what D2C actually does, and what it does not."),
+      p("Airtel Africa and SpaceX launched Starlink's Direct-to-Cell (D2C) technology commercially in the Democratic Republic of the Congo on 14 August 2026 — the first African deployment of the service. Airtel has said it intends to extend D2C across its African markets, Nigeria included, subject to approval in each country. No Nigerian commercial date and no NCC approval for that launch have been confirmed. If you have seen the headlines and are wondering whether this means you no longer need a Starlink dish, the answer is no. Here is what D2C actually does, and what it does not."),
       h2("What happened — the DRC launch explained"),
       p("On 14 August 2026, Airtel Africa and SpaceX activated Direct-to-Cell commercially in the DRC, making it the first African market to go live with the service. It was a commercial launch rather than a pilot, which is what made it notable."),
       p("The technology lets a standard LTE Android smartphone connect directly to a Starlink satellite — no dish, no router, no additional hardware, no accessory clipped to the phone. The satellite behaves like a cell tower in orbit, and the handset treats it as one."),
@@ -115,13 +115,13 @@ export const august2026SprintArticles: SeoArticle[] = [
       p("Speeds are low by design. Think of it as a connectivity lifeline — being able to tell someone where you are, or confirm a delivery, from a place where your phone previously showed no bars at all. It is not a productivity or entertainment service."),
       p("The switching is automatic. Your phone connects to the satellite when there is no ground-based signal, and hands back to the terrestrial network once you return to an area with tower coverage. There is nothing to enable or configure on a compatible device."),
       h2("What D2C does not replace"),
-      p("D2C does not replace home broadband. A Starlink dish delivers 100–350 Mbps to a household in Nigeria — enough for several people on video calls, streaming, and cloud work at the same time. D2C delivers emergency SMS capability. Those are not competing products, and if you were planning a [home Starlink installation](/starlink-home-installation), nothing about this announcement changes that plan."),
+      p("D2C does not replace home broadband. A Starlink dish, when the sky view is clean, is in an indicative field range often discussed around 100–350 Mbps. That is not a speed DataGram guarantees. D2C delivers emergency SMS capability. Those are not competing products, and if you were planning a [home Starlink installation](/starlink-home-installation), nothing about this announcement changes that plan."),
       p("It does not replace office connectivity either. A business running video conferencing, cloud accounting, VoIP phones, POS terminals or CCTV upload needs sustained bandwidth and stable latency. That still means a dish and proper network configuration — which is what our [enterprise Starlink deployment service](/starlink-enterprise-nigeria) exists to do."),
       p("It does not replace maritime Starlink. A vessel working in the Gulf of Guinea needs the Starlink Maritime plan with a Flat High Performance terminal to carry bridge traffic, ops reporting and crew welfare. D2C cannot support any of that load. If you are outfitting a boat, [marine installation](/starlink-boat-installation) is still the conversation."),
       p("And installation demand for Starlink in Nigeria is unaffected by D2C. The two services address entirely different needs — one keeps a phone reachable in a dead zone, the other runs a home, an office or a vessel."),
       h2("When will D2C come to Nigeria?"),
-      p("There is no confirmed date from Airtel or the NCC for Nigeria's activation. Based on the DRC rollout timeline and the Airtel–SpaceX partnership announced in December 2025, Nigeria is expected to be among the earlier markets — it is Airtel's largest subscriber base on the continent. Regulatory approval timelines, though, are not predictable, and anyone offering you a launch date is guessing."),
-      p("When it does arrive, it will not require a purchase. D2C becomes available automatically to Airtel subscribers holding compatible Android LTE handsets, with no extra hardware and no separate subscription to activate. Apple device support is expected to follow."),
+      p("There is no confirmed date from Airtel or the NCC for a Nigerian commercial launch, and no NCC approval for that launch has been confirmed. Airtel has said expansion across its markets depends on approval in each country. Anyone offering you a Nigerian launch date is guessing."),
+      p("If the service is later activated for Airtel subscribers in Nigeria, the description from other markets is that it does not require a dish purchase. D2C is described as becoming available to compatible Android LTE handsets, with no extra hardware and no separate subscription to activate. Apple device support is expected to follow. None of that is a Nigerian launch date."),
       h2("What this means for Starlink installation in Nigeria"),
       p("If you were holding off on a dish to see what D2C would mean, you do not need to wait. The service serves a different purpose and will not reduce what you pay for broadband or change which terminal you need."),
       p("If you need internet for your home, office, estate, vessel or a remote site, a professionally installed Starlink terminal remains the only option that delivers it. Mounting position, obstruction score and cable routing still determine what you actually get out of the hardware."),
@@ -137,12 +137,12 @@ export const august2026SprintArticles: SeoArticle[] = [
       {
         question: "When will Airtel Starlink D2C launch in Nigeria?",
         answer:
-          "No confirmed date has been announced. Airtel Africa plans to roll out D2C across all 14 of its African markets including Nigeria, subject to NCC regulatory approval. The DRC was the first African market, launched 14 August 2026.",
+          "No confirmed date has been announced, and no NCC approval for a Nigerian commercial launch has been confirmed. Airtel Africa has said it plans to extend D2C across its African markets, including Nigeria, subject to approval in each country. The DRC was the first African market, launched 14 August 2026.",
       },
       {
         question: "Does Direct-to-Cell work on any phone in Nigeria?",
         answer:
-          "When it launches in Nigeria, D2C will work on compatible LTE Android smartphones. Apple device support is expected to follow. No satellite dish or additional hardware is required — the phone connects automatically in areas without mobile coverage.",
+          "If it is later activated in Nigeria, the description from the DRC launch is that D2C works on compatible LTE Android smartphones, with Apple support expected to follow. No satellite dish or additional hardware is required for that messaging path. That is not a confirmed Nigerian service.",
       },
       {
         question: "Can I use Airtel D2C Starlink on my boat or vessel at sea?",
@@ -153,37 +153,37 @@ export const august2026SprintArticles: SeoArticle[] = [
   },
   {
     slug: "starlink-residential-sold-out-lagos-abuja-2026-options",
-    title: "Starlink Residential Sold Out in Lagos, Abuja and Port Harcourt — Here's What to Do in 2026",
-    seoTitle: "Starlink Sold Out Lagos & Abuja 2026: Options | DataGram",
+    title: "Starlink Showing Priority Only in Lagos or Abuja? What to Do in 2026",
+    seoTitle: "Starlink Priority Only in Lagos or Abuja | DataGram",
     excerpt:
-      "Why Starlink shows \"only Priority Plans available\" at Lagos and Abuja addresses, what the capacity limit actually is, and the route that still works for new subscribers.",
+      "Why some Lagos and Abuja addresses see \"only Priority Plans available\", why that is not a city-wide rule, and what to check before you buy.",
     metaDescription:
-      "Starlink residential plans are unavailable to new subscribers in Lagos, Abuja and Port Harcourt. Here's what that means and how to get connected.",
+      "A Priority-only message is per address. It has been reported across many Lagos and Abuja addresses. Port Harcourt should be checked separately.",
     author: "DataGram Nigeria",
     date: "2026-08-21",
     readTime: "9 min read",
     category: "Trending / Informational",
     image: img("blog/starlink-residential-vs-priority-business-nigerian-smes.jpg"),
-    imageAlt: "Starlink dish on a Lagos rooftop where residential plans are sold out",
+    imageAlt: "Starlink dish on a Lagos rooftop where an address may be offered Priority only",
     imageFile: "blog/starlink-residential-vs-priority-business-nigerian-smes.jpg",
     featured: true,
     serviceCta: {
       label: "Activate the Priority Plan",
       href: "/starlink-priority-plan-nigeria",
-      blurb: "Residential paused at your address? We activate Priority Plans in Lagos, Abuja and Port Harcourt and install the same week.",
+      blurb: "Address showing Priority only? We check the service address, then activate Priority where that is the route on screen.",
     },
     blocks: blocks(
-      p("If you entered your address on the Starlink website and saw \"due to high demand in your area, only Priority Plans are available\", your location sits in a congested cell. Residential Starlink activations are currently paused across most of Lagos, Abuja and Port Harcourt. This is not a website glitch and refreshing will not fix it. Here is what is actually happening, and the route that still works if you need to get connected this month."),
-      h2("What \"sold out\" actually means"),
+      p("If you entered your address on the Starlink website and saw \"due to high demand in your area, only Priority Plans are available\", that address is in a cell that is not offering new residential signup. The message has been reported across many Lagos and Abuja addresses. It is not a standing fact for every street in those cities, and it should not be assumed for every Port Harcourt address — later reporting said some Rivers addresses had residential signup again. This is not a website glitch. Enter the exact service address before you decide what to buy."),
+      h2("What the Priority-only message means"),
       p("Starlink does not sell service to a country as one pool. The network is divided into geographic cells, and each cell is allocated a finite number of residential subscriber slots based on the satellite capacity passing overhead. It is a capacity number, not a stock number — there is no warehouse of dishes waiting to be replenished."),
       p("When a cell fills up, SpaceX pauses new residential activations there. Existing subscribers in that cell are completely unaffected; your neighbour who signed up in 2024 keeps their service and their plan. Only new residential signups are blocked."),
-      p("In practice the affected areas are the ones with the highest demand density. Lagos Island, Victoria Island, Ikoyi, Lekki and Ikeja are in congested cells. So is central Abuja, including Wuse and Maitama. Much of Port Harcourt GRA is in the same position. The pattern follows population and buying power, which is exactly why it hit these three cities first."),
+      p("In practice the message follows demand. Lagos Island, Victoria Island, Ikoyi, Lekki and Ikeja have been reported in congested cells, and so has central Abuja, including Wuse and Maitama. Port Harcourt should not be grouped with them as a current fact — later reporting said some Port Harcourt addresses, and some Benin addresses, had residential signup again. Enter the exact address. Some addresses also see a deposit or wait step rather than an immediate plan."),
       p("SpaceX has not published a timeline for when residential slots will reopen in these areas, and has never committed to one publicly for any market. Slots return as constellation capacity over a region grows, which is a gradual process rather than a scheduled event. Waiting is not a strategy with a known end date."),
       h2("The Priority Plan — your active route in"),
       p("The Priority Plan — previously marketed as Business or Priority Business — is a higher-tier subscription that is not subject to the residential cell limit. It draws on a different capacity allocation on the satellite network, which is precisely why it stays available at addresses where residential is paused. Our [Priority Plan page for Nigeria](/starlink-priority-plan-nigeria) covers the plan tiers and what each one includes."),
-      p("Speeds run 100–350 Mbps, consistently above what residential delivers in the same area. The reason is not a bigger dish; it is the priority allocation. Residential traffic is deprioritised during peak hours by design, which is why a residential connection that tests 200 Mbps at 11am can feel sluggish at 9pm when the whole estate is streaming."),
+      p("Where the address is being offered Priority rather than residential, speeds are discussed in an indicative field range around 100–350 Mbps, often above what a deprioritised residential line does in the same area at peak. That range is not a guarantee and it is not a DataGram measurement programme. The reason for the difference, when it shows up, is priority allocation. Residential traffic is deprioritised during peak hours by design, which is why a residential connection that tests well at 11am can feel slower at 9pm when the estate is streaming."),
       p("Priority throughput is the practical difference for anyone working from home or running a business. Your connection does not degrade during the evening peak the way residential does. For video calls with clients in other timezones, cloud file sync, or a POS terminal that has to authorise a payment while the office is busy, that consistency is the product you are paying for."),
-      p("It costs more than residential — ₦159,000 per month against ₦57,000–₦75,000 — and that is a real difference, not a rounding error. What you get for it is a measurably better service and, in Lagos and Abuja right now, the only service available to a new subscriber. For businesses, the calculation is usually straightforward once you price an hour of downtime."),
+      p("It costs more than residential — ₦159,000 per month against ₦57,000–₦75,000 — and that is a real difference, not a rounding error. Where the address is being offered Priority rather than residential, that higher tier is the route on the screen. It is not a standing rule for every new subscriber in Lagos or Abuja. For businesses, the calculation is usually straightforward once you price an hour of downtime."),
       h2("What DataGram does for you"),
       p("Activating a Priority Plan yourself is possible but has more failure points than residential signup, and the payment step defeats most people. We run the whole thing end to end."),
       h3("Site survey and plan confirmation"),
@@ -193,33 +193,33 @@ export const august2026SprintArticles: SeoArticle[] = [
       h3("Installation and handover"),
       p("Dish mounting, cable routing through estate-approved conduit, router placement, Wi-Fi and VLAN configuration, then testing at the desks where people actually work rather than beside the router. You receive written handover documentation: plan name, IP plan, obstruction reading, speed test results and the support escalation path."),
       p("In Lagos our teams cover the Island and mainland — see [Lagos installation coverage](/starlink-installation-lagos) for neighbourhood notes and estate requirements. In the FCT, [Abuja installation](/starlink-installation-abuja) covers the city centre, Wuse, Maitama and the suburbs. Multi-site businesses and offices with network requirements beyond a single router should start at [enterprise Starlink deployment](/starlink-enterprise-nigeria)."),
-      h2("What people ask about the sold-out situation"),
-      p("Can I join a waitlist for residential? There is no formal waitlist to join, and nobody can move you up a queue. SpaceX simply removes the restriction when capacity in your cell allows it, and the option reappears on the website for everyone at once. Anyone offering to reserve a residential slot for you in Lagos is selling something that does not exist."),
-      p("Are other Nigerian cities also sold out? This is primarily a Lagos, Abuja and Port Harcourt problem. Most of the South-South and South-East still have residential availability — Warri, Asaba, Uyo, Owerri, Enugu, Aba and Benin City have generally continued to accept new residential subscribers, as have most rural areas. If your address is outside the big three cities, check the Starlink site before assuming you need Priority. If it shows residential as available, take it."),
+      h2("What people ask when residential is not on the screen"),
+      p("Can I join a waitlist for residential? Do not assume there is no wait path. Some addresses are offered a deposit or a wait step instead of an immediate residential plan, and some are offered Priority only. Nobody can reserve a residential slot for you off-platform. Enter the exact service address and follow what that screen shows."),
+      p("Are other Nigerian cities also restricted? The Priority-only message has been a Lagos and Abuja story more than a national one. Port Harcourt should be checked per address rather than grouped with them. Most of the South-South and South-East have continued to show residential availability in reporting — Warri, Asaba, Uyo, Owerri, Enugu, Aba and Benin City among them — but the only check that matters is your own address on the Starlink site."),
       h2("Get connected where residential is paused"),
-      p("DataGram activates Priority Plans in Lagos, Abuja, Port Harcourt and every other area where residential Starlink is currently paused. We handle everything from survey to live connection, invoice in naira with VAT applied, and stay on the account afterwards for renewals and faults."),
+      p("DataGram activates Priority Plans where the service address is not being offered new residential signup, including addresses in Lagos, Abuja and Port Harcourt that show that message. We do not treat the three cities as one sold-out zone. We handle the path from survey to live connection, invoice in naira with VAT applied, and stay on the account afterwards for renewals and faults."),
     ),
     cta: "Residential paused at your address? [Activate the Priority Plan](/starlink-priority-plan-nigeria) with DataGram — we handle the account, payment, hardware and installation. [Contact us](/contact) or message [WhatsApp](https://wa.me/2349060976424) to book your site survey.",
     faqs: faqs(
       {
         question: "Why does Starlink say 'only Priority Plans available' at my Lagos address?",
         answer:
-          "Your location is in a satellite cell that has reached residential capacity. SpaceX pauses new residential activations in congested areas — Lagos, Abuja, and Port Harcourt are currently affected. The Priority Plan bypasses this restriction and can be activated immediately.",
+          "That address is in a satellite cell that is not offering new residential signup. The same message has been reported on many Lagos and Abuja addresses, and on some Port Harcourt addresses. It is not a standing rule for every street in those cities. Where Priority is what the screen shows, that plan can be activated. Check the exact address first.",
       },
       {
-        question: "Is the Priority Plan available where residential is sold out?",
+        question: "Is the Priority Plan available where my address is not offered residential?",
         answer:
-          "Yes. The Priority Plan uses a separate capacity allocation and is currently active for new subscribers in all areas where residential is paused — including central Lagos and Abuja.",
+          "Where the address is offered Priority, that plan uses a separate capacity allocation and can be activated. Central Lagos and Abuja have produced this message often. It is not proof that every address in those cities, or in Port Harcourt, is in the same state.",
       },
       {
         question: "When will residential Starlink come back to Lagos?",
         answer:
-          "SpaceX has not announced a timeline. Residential availability will return as they expand satellite coverage over Nigeria, but no date has been given. The Priority Plan is the only active option for new subscribers in congested areas right now.",
+          "SpaceX has not announced a timeline for any Nigerian address. Where the screen offers Priority only, that is the route showing today. Where it offers residential, or a deposit or wait step, follow that instead.",
       },
       {
-        question: "Can DataGram help me activate Starlink in Lagos or Abuja even though residential is sold out?",
+        question: "Can DataGram help me activate Starlink in Lagos or Abuja if my address is not offered residential?",
         answer:
-          "Yes. DataGram activates [Priority Plans](/starlink-priority-plan-nigeria) in sold-out areas across Nigeria. We handle the account setup, hardware, and full installation — contact us to book your site survey.",
+          "Yes, where that address is not being offered new residential signup. DataGram activates [Priority Plans](/starlink-priority-plan-nigeria) after the address check. We handle the account setup, hardware, and installation — contact us to book a site survey.",
       },
     ),
   },
@@ -248,9 +248,9 @@ export const august2026SprintArticles: SeoArticle[] = [
       p("The Starlink Standard Kit costs ₦669,000 in Nigeria, plus a monthly subscription from ₦57,000. That is not a small commitment for a household or a small business. Whether it is worth it depends entirely on who you are, where you are, and what you need the connection to do. This is a direct breakdown rather than a sales pitch — including the cases where we tell people not to buy."),
       h2("What you are actually paying for"),
       p("Hardware is a one-time cost of ₦669,000 for the Standard Kit. That covers the dish, router, cables and the mounting bracket in the box. The Starlink Mini is ₦318,000 — lighter, lower power draw, lower throughput, and best treated as a portable or backup terminal rather than the primary link for a full household."),
-      p("The subscription is the recurring number that matters more over time: ₦57,000–₦75,000 per month on residential, or ₦159,000 per month on the Priority Plan. In Lagos, Abuja and Port Harcourt, residential is currently unavailable to new subscribers, so the Priority figure is the realistic one for anyone signing up in those cities — see our [Priority Plan page](/starlink-priority-plan-nigeria) for what that tier includes."),
+      p("The subscription is the recurring number that matters more over time: ₦57,000–₦75,000 per month on residential, or ₦159,000 per month on the Priority Plan. Where a Lagos, Abuja, or Port Harcourt address is offered Priority rather than residential, the Priority figure is the one on that screen. It is not a standing monthly price for every new subscriber in those cities — see our [Priority Plan page](/starlink-priority-plan-nigeria) for what that tier includes."),
       p("Professional installation is a third line item and varies by location and complexity — a bungalow with a short cable run is not the same job as a fourth-floor parapet mount with estate conduit requirements. DataGram quotes a fixed price per job after survey rather than publishing one number that would be wrong for most sites."),
-      p("Put year one together for a residential household outside the sold-out cities: ₦669,000 hardware plus twelve months at ₦57,000 comes to ₦1,353,000, before installation. That is the number people react to. The more useful figure is the 24-month view — ₦669,000 plus ₦1,368,000 in subscription works out to roughly ₦85,000 per month across two years. From month 25 onward, you are paying subscription only, because the hardware is already yours."),
+      p("Put year one together for a residential household on the residential plan: ₦669,000 hardware plus twelve months at ₦57,000 comes to ₦1,353,000, before installation. That is the number people react to. The more useful figure is the 24-month view — ₦669,000 plus ₦1,368,000 in subscription works out to roughly ₦85,000 per month across two years. From month 25 onward, you are paying subscription only, because the hardware is already yours."),
       h2("Who it is clearly worth it for"),
       h3("Remote workers and freelancers"),
       p("If your income depends on a stable connection for client calls, file uploads or cloud tools, the arithmetic is not really about ₦57,000. One missed deadline or one call dropped mid-pitch costs more than a month of subscription. Freelancers billing in dollars usually reach this conclusion within a week of their first outage on a cheaper connection."),
@@ -264,9 +264,9 @@ export const august2026SprintArticles: SeoArticle[] = [
       p("Urban residents with reliable fibre already in place. If IPNX or a similar provider is delivering good speeds at around ₦30,000 a month and your street rarely gets cut, Starlink's premium is hard to justify for home use alone. Keep it in mind as a second WAN path rather than a replacement."),
       p("Light internet users. If your usage is mostly WhatsApp, social media and occasional YouTube, mobile data bundles are cheaper and genuinely sufficient. Buying a ₦669,000 terminal to browse Instagram is spending capital to solve a problem you do not have."),
       p("Anyone who cannot absorb the hardware cost as a capital expense. The monthly savings against your current internet spend rarely justify financing the kit on credit. If the ₦669,000 has to go on a loan, the interest usually eats the benefit — wait and buy it outright."),
-      h2("The 11,000 satellite effect — network quality is at its best right now"),
-      p("SpaceX crossed 11,000 active satellites on 19 August 2026. Nigeria now sits under a denser coverage grid than at any point in Starlink's history, which is a genuine change rather than a marketing milestone."),
-      p("Latency in Nigerian urban areas measures consistently 20–33ms. Rural and South-South coverage has improved noticeably from 2024 figures, particularly in creek and heavy-canopy areas where satellite tracking used to be less consistent."),
+      h2("The constellation is above 11,000 satellites"),
+      p("Public satellite catalogues checked in October 2026 show more than 11,000 Starlink satellites in orbit. Tracker totals differ slightly, and they are not a SpaceX press release for a named launch. Nigeria sits under a denser grid than in earlier years. That is a coverage fact about the constellation, not a promise that a particular address has residential capacity again."),
+      p("Latency in Nigerian urban areas is often discussed in an indicative band around 20–33 ms when the sky view is clean and Wi-Fi is not the bottleneck. That is not a measured guarantee from DataGram, and it is not a result you can book. Rural and South-South links vary with obstruction, weather, and plan class."),
       p("Buying now means entering the network at a strong quality point. It also means entering before subscriber density in your cell creates the kind of congestion that has already paused residential signups in Lagos and Abuja."),
       h2("The DataGram difference — installation matters"),
       p("A poorly installed dish loses a large share of its potential throughput — commonly 30–40% — through a suboptimal sky view, an incorrect mounting angle, or cable runs left in direct sun to degrade. The hardware is not underperforming in those cases; the installation is."),
@@ -283,7 +283,7 @@ export const august2026SprintArticles: SeoArticle[] = [
       {
         question: "Is Starlink faster than fibre in Nigeria?",
         answer:
-          "Starlink delivers 100–350 Mbps in most Nigerian locations. Where fibre is available and performing well, speeds are comparable. Starlink's advantage is availability — it works where no fibre reaches and continues operating during ground-level infrastructure failures.",
+          "Starlink delivers an indicative field range often discussed around 100–350 Mbps where the install is clean. That is not a guaranteed result. Where fibre is available and performing well, speeds are comparable. Starlink's advantage is availability — it works where no fibre reaches and continues operating during ground-level infrastructure failures.",
       },
       {
         question: "Does Starlink work during rain in Nigeria?",
@@ -299,12 +299,12 @@ export const august2026SprintArticles: SeoArticle[] = [
   },
   {
     slug: "starlink-11000-satellites-nigeria-speeds-august-2026",
-    title: "Starlink Crosses 11,000 Satellites — What the Milestone Means for Your Connection in Nigeria",
-    seoTitle: "Starlink Hits 11,000 Satellites: Nigeria Impact | DataGram",
+    title: "Starlink Above 11,000 Satellites — What That Density Means in Nigeria",
+    seoTitle: "Starlink Above 11,000 Satellites: Nigeria | DataGram",
     excerpt:
-      "SpaceX passed 11,000 active satellites on 19 August 2026. What denser constellation coverage changes for latency, peak-hour speeds and regional coverage in Nigeria.",
+      "Public catalogues show the Starlink constellation above 11,000 satellites. What that density can and cannot change for speeds, latency, and coverage in Nigeria.",
     metaDescription:
-      "SpaceX passed 11,000 active Starlink satellites on 19 August 2026. What the milestone means for speeds, latency and coverage across Nigeria.",
+      "Public catalogues show Starlink above 11,000 satellites. What that means for speeds, latency and coverage in Nigeria — and what it does not guarantee.",
     author: "DataGram Nigeria",
     date: "2026-08-21",
     readTime: "8 min read",
@@ -319,15 +319,15 @@ export const august2026SprintArticles: SeoArticle[] = [
       blurb: "Network quality is strong right now. We survey obstruction, mount properly, and test at the desks that matter.",
     },
     blocks: blocks(
-      p("On 19 August 2026, SpaceX launched 24 satellites from Vandenberg Space Force Base, pushing the Starlink constellation past 11,000 active satellites in orbit. It was SpaceX's 100th orbital mission of the year. For Nigerians already using Starlink or still deciding, the practical question is simple: does having more satellites up there actually mean better internet down here? The answer is yes, and here is specifically how it works."),
+      p("Public satellite catalogues checked in October 2026 put the Starlink constellation above 11,000 objects in orbit. Counts differ slightly between trackers, and this is not a claim about a named launch, a launch site, or a mission number. For Nigerians already using Starlink or still deciding, the practical question is simple: does a denser constellation mean better internet on your address? More satellites can mean fewer users sharing a beam. It does not reopen a restricted address by itself, and it does not guarantee a speed."),
       h2("What 11,000 satellites actually changes"),
       p("More satellites mean smaller ground cells. Each satellite serves a smaller geographic area, which reduces the number of subscribers sharing that satellite's capacity at any moment. This is the mechanism behind almost every improvement below — less contention per beam rather than a faster dish."),
-      p("Latency improves because handoffs between satellites become more efficient. A denser constellation means the next satellite is already well positioned when the current one moves out of view, so there is less of the brief transition wobble that older users used to notice on voice calls. Nigerian urban areas now see 20–33ms consistently, which puts Starlink in the same conversation as wired broadband for interactive use."),
+      p("Latency can improve because handoffs between satellites become more frequent. Nigerian urban links are often discussed in an indicative band around 20–33 ms when obstruction is low. That band is not a DataGram test result and it is not a service level."),
       p("Coverage gaps shrink. Rural Nigeria, South-South creek communities and offshore areas that previously had thinner satellite availability at certain hours now sit under a fuller grid. Coverage becomes less dependent on when you happen to be online."),
       p("For context on the scale: Starlink now accounts for roughly two-thirds of all active satellites in orbit. That density is the entire basis of its performance advantage over the geostationary satellite systems that Nigerian businesses used before — a single distant satellite at 35,786km cannot be made to behave like thousands at 550km."),
       h2("What this means for Nigeria specifically"),
       h3("Lagos and Abuja"),
-      p("Congestion in urban satellite cells is precisely what caused residential activations to pause in these cities. As the constellation grows, capacity over each cell increases and some of those cells will reopen for residential signups. The 11,000 milestone moves that timeline closer, though SpaceX has not committed to a date — for now, the Priority Plan remains the active route for new subscribers there."),
+      p("Congestion in some urban satellite cells is what has caused residential activations to pause on particular addresses, especially in Lagos and Abuja. As the constellation grows, capacity over a cell can increase. SpaceX has not committed to a date for any Nigerian address. Where an address still shows Priority only, that is the route on the screen, not a national rule."),
       h3("South-South and the Niger Delta"),
       p("The denser constellation helps most in exactly the places that were hardest. Heavy tree canopy and creek geography meant satellite tracking was less consistent — a terminal with a partially obstructed sky view had fewer alternative satellites to hand off to. With more spacecraft overhead, there are more usable options at any moment. See our [Niger Delta installation coverage](/starlink-installation-niger-delta) for the regional picture on mast height and canopy clearance."),
       h3("Offshore and maritime"),
@@ -349,7 +349,7 @@ export const august2026SprintArticles: SeoArticle[] = [
       {
         question: "Does more Starlink satellites mean faster internet in Nigeria?",
         answer:
-          "Yes. More satellites reduce the number of users sharing each satellite's capacity. This improves speeds during peak hours and reduces latency. The 11,000 satellite milestone represents meaningful improvement for Nigerian subscribers.",
+          "More satellites can reduce how many users share a beam, which can help peak-hour speeds and latency. A constellation above 11,000, as public catalogues showed in October 2026, is a real density change. It is not a guaranteed speed for a Nigerian address.",
       },
       {
         question: "Will Starlink residential plans become available again in Lagos after the 11,000 satellite milestone?",
@@ -364,7 +364,7 @@ export const august2026SprintArticles: SeoArticle[] = [
       {
         question: "What is Starlink's latency in Nigeria in 2026?",
         answer:
-          "Latency in Nigerian urban areas consistently measures 20–33ms under normal conditions. Rural and coastal areas see similar figures. This is significantly lower than geostationary VSAT systems, which average 600ms or more.",
+          "Latency in Nigerian urban areas is often discussed around 20–33 ms when the sky is clear and the Wi-Fi is not the bottleneck. Treat that as an indicative field band, not a measurement DataGram guarantees. Rural and coastal results vary. Geostationary VSAT is typically far higher, often discussed around 600 ms.",
       },
     ),
   },
@@ -397,11 +397,11 @@ export const august2026SprintArticles: SeoArticle[] = [
       p("This is the first filter, and for a lot of people it ends the comparison immediately. If MTN 5G does not reach your address, the rest of this article is academic."),
       h2("Speed — what both deliver in practice"),
       p("MTN 5G has theoretical peak speeds of 300–1,000 Mbps. Real-world Nigerian measurements typically average 50–150 Mbps in good conditions, and drop meaningfully during peak hours or in dense areas where many users share the same tower. The figure you see in a speed test at 6am is not the figure you get at 8pm."),
-      p("Starlink delivers 100–350 Mbps in most Nigerian locations. Speeds hold up better through the evening peak than 5G does, largely because Starlink capacity has been expanding with the constellation — 11,000 active satellites as of August 2026. Rural and South-South users see speeds broadly similar to Lagos, which is unusual and is the strongest argument for satellite outside the cities."),
+      p("Starlink is often discussed in an indicative field range around 100–350 Mbps where the install is clean. That is not a national guarantee, and it is not a figure from a DataGram speed-test programme. Speeds can hold up through the evening better than a congested tower because capacity has been expanding with the constellation — public catalogues in October 2026 show more than 11,000 satellites in orbit. Rural and South-South results still depend on sky view. They are not automatically the same as Lagos."),
       p("For most work, both are fast enough on paper. The question that separates them is whether the speed is there when you need it, not what it peaks at."),
       h2("Latency — the number that matters for work"),
       p("Speed determines how fast a file transfers. Latency determines whether a video call feels natural or like a bad radio interview. For most work use cases, latency is the more important number and the one people ignore when comparing packages."),
-      p("Starlink measures 20–33ms consistently in Nigeria. That is comfortably good enough for video calls, VoIP, VPN sessions and cloud applications. MTN 5G measures 10–30ms in ideal conditions and can genuinely beat Starlink when the tower is close and uncongested."),
+      p("Starlink latency is often discussed around 20–33 ms in Nigeria when conditions are good. That is an indicative band, not a constant we measure for you. It is usually good enough for video calls, VoIP, VPN sessions and cloud applications. MTN 5G can measure 10–30 ms in ideal conditions and can beat Starlink when the tower is close and uncongested."),
       p("In practice both are fast enough for remote work. The difference is consistency: Starlink's latency does not spike the way 5G does when a tower gets busy. If you have ever had a call degrade at exactly 8pm every evening, you have met tower congestion. Detailed field numbers are in our [MTN 5G router speed test notes](/blog/starlink-vs-mtn-5g-router-speed-test-nigeria) if you want the measurements rather than the summary."),
       h2("Reliability during power and network events"),
       p("This is where the Nigerian context changes the answer, and where most comparisons written elsewhere are useless."),
@@ -423,7 +423,7 @@ export const august2026SprintArticles: SeoArticle[] = [
       {
         question: "Is Starlink faster than MTN 5G in Nigeria?",
         answer:
-          "Both deliver competitive speeds. MTN 5G peaks higher in ideal conditions but varies more with tower congestion and distance. Starlink delivers more consistent 100–350 Mbps nationally. For remote work reliability, Starlink's consistency is the practical advantage.",
+          "Both deliver competitive speeds. MTN 5G peaks higher in ideal conditions but varies more with tower congestion and distance. Starlink is often discussed in an indicative range around 100–350 Mbps where the install is clean. That is not a guaranteed national speed. For remote work, consistency matters more than a peak number.",
       },
       {
         question: "Can I use MTN 5G as a backup to Starlink in Nigeria?",

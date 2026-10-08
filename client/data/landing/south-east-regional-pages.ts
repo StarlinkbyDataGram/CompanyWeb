@@ -20,7 +20,7 @@ const deploymentProof = (
 });
 
 const SPEED = {
-  label: "Typical performance range",
+  label: "Indicative field range, not a guarantee",
   down: "50 – 1,000 Mbps",
   up: "10 – 100 Mbps",
   latency: "20 – 33 ms",

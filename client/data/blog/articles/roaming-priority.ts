@@ -8,7 +8,7 @@ export const roamingPriorityArticles: SeoArticle[] = [
     excerpt:
       "What Starlink Roaming and Global Priority actually mean for Nigerian users, how to activate each, the costs, and when you genuinely need them.",
     metaDescription:
-      "Starlink's 14-day roaming limit affects Nigerian accounts used offshore or abroad. How Global Priority works — and how DataGram manages the upgrade.",
+      "Starlink roam limits depend on the plan: 30 days on Roam Unlimited, not a flat 14-day rule. How Global Priority differs for offshore use.",
     author: "DataGram Nigeria",
     date: "2026-06-23",
     readTime: "11 min read",
@@ -27,8 +27,8 @@ export const roamingPriorityArticles: SeoArticle[] = [
       p("This guide breaks down what each plan does, how to activate them on a Nigerian account, what they realistically cost, and which one fits your situation. We set these up for homes, travelling professionals, and offshore operators every week, so the advice here is what we tell paying customers — not marketing copy."),
       h2("What Starlink Roaming means for Nigerian users"),
       p("Starlink Roaming (the feature formerly marketed as the mobile or travel option) lets you use your dish away from the fixed service address you registered. With a standard Residential plan, Starlink expects the dish to live at one location. Roaming removes that geographic lock so you can power up in Lagos this week and a compound in Asaba the next without the system flagging you for being off-address."),
-      h3("Important: SpaceX 14-Day Roaming Limit (2026)"),
-      p("As of 2026, SpaceX enforces a strict 14-day limit for using a Starlink account outside its registered country. After 14 days, the service is paused until the dish returns to its home country — or the account is upgraded to a Global Priority plan. This affects Nigerian-registered accounts used on offshore vessels, across borders, or while travelling. The Roam add-on does not bypass this limit. Only Global Priority resolves it permanently."),
+      h3("Out-of-country limits depend on the plan"),
+      p("Do not plan a vessel or a long trip around a flat 14-day cutoff. Starlink's roam help text, checked in October 2026, is plan-specific. Roam Unlimited allows up to 30 days at a time outside the registered home country. Other Roam plans are for the registered home country or a grouped region, not open-ended international use. Local Priority allows up to 60 days of international use in total. Global Priority has no time restriction and is the class that covers ocean use. A 14-day international cap appeared briefly in 2026 and was withdrawn. The account screen on the day you travel is the rule that applies to your line."),
       p("For most Nigerians the practical use cases are simple: you move between a city flat and a village home, you run a mobile business that shifts sites, or you take the kit to a temporary camp where no other internet reaches. Roaming also lets you use Starlink across different land regions globally, not only where you activated — which helps when local coverage is limited or you travel across borders."),
       h3("Roaming is not magic — it has limits"),
       p("Roaming is designed for travel, not as a permanent fixed connection in a different country indefinitely. Performance can be deprioritised compared with a properly registered fixed plan in busy cells, and it costs extra on top of your base subscription. If your dish never moves, you usually do not need it. If it moves often, it is the difference between a working link and an account that locks you out."),
@@ -80,14 +80,14 @@ export const roamingPriorityArticles: SeoArticle[] = [
           "Roaming is a modest monthly add-on for most users, while Global Priority costs significantly more because it is sold in priority data buckets with mobility and ocean coverage. Prices shift with the naira and Starlink's own changes, so confirm the live figure in the app before subscribing.",
       },
       {
-        question: "What happens to my Starlink service after 14 days outside Nigeria?",
+        question: "What happens if I stay outside Nigeria longer than my Starlink plan allows?",
         answer:
-          "SpaceX will pause your service automatically. You will see a 'paused' status in the Starlink app. The dish will not reconnect until you either return to Nigeria or upgrade your account to a Global Priority plan, which removes the country restriction entirely.",
+          "Service can pause once you pass the allowance on that plan. On the roam help text checked in October 2026, Roam Unlimited is up to 30 days at a time outside the home country, other Roam plans are not an international product, Local Priority is up to 60 days in total, and Global Priority has no time cap. Return to the home country or change plan class. Read the limit in your own account before you leave.",
       },
       {
         question: "Does the Starlink Roam add-on let me use Starlink offshore indefinitely?",
         answer:
-          "No. The Roam add-on allows travel across countries but is still subject to the 14-day out-of-country limit enforced since 2025. For indefinite offshore use — on vessels, oil platforms, or international travel — the Global Priority plan is the only compliant option.",
+          "No. Roam Unlimited is capped at 30 days at a time outside the registered country, and other Roam plans are for home-country or grouped-region use. Open-ocean work without a time cap is a Global Priority question, not a Roam add-on. Confirm ocean entitlement on the account before a vessel leaves port.",
       },
       {
         question: "How much does the Global Priority plan cost for a Nigerian Starlink account?",

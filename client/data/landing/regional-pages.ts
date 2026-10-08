@@ -21,7 +21,7 @@ const proof = (
 });
 
 const SPEED = {
-  label: "Typical performance range",
+  label: "Indicative field range, not a guarantee",
   down: "50–1,000 Mbps",
   up: "10–100 Mbps",
   latency: "20–33 ms",
@@ -47,7 +47,7 @@ const regionalStandardFaqs = [
   {
     question: "Do you offer ongoing support after installation?",
     answer:
-      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Speeds: 50–1,000 Mbps. Latency: 20–30 ms under normal conditions.",
+      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Indicative field ranges, not guarantees: speeds 50–1,000 Mbps, latency often discussed around 20–30 ms under normal conditions.",
   },
   {
     question: "Is roof drilling required for Starlink installation?",
