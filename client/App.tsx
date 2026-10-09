@@ -49,8 +49,49 @@ import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
+function useDeferredWidget() {
+  const [ready, setReady] = useState(() => {
+    if (typeof navigator !== "undefined" && navigator.userAgent.includes("ReactSnap")) return true;
+    if (typeof document !== "undefined" && (document.getElementById("root")?.childElementCount ?? 0) > 0) {
+      return true;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (ready) return;
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      setReady(true);
+    };
+    const onPointer = () => finish();
+    const onKey = () => finish();
+    window.addEventListener("pointerdown", onPointer, { once: true, passive: true });
+    window.addEventListener("keydown", onKey, { once: true });
+    const armIdle = () => {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(() => finish(), { timeout: 2000 });
+      } else {
+        window.setTimeout(finish, 200);
+      }
+    };
+    if (document.readyState === "complete") armIdle();
+    else window.addEventListener("load", armIdle, { once: true });
+    return () => {
+      window.removeEventListener("pointerdown", onPointer);
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("load", armIdle);
+    };
+  }, [ready]);
+
+  return ready;
+}
+
 const AppContent = () => {
   const location = useLocation();
+  const widgetsReady = useDeferredWidget();
 
   useEffect(() => {
     try {
@@ -149,11 +190,8 @@ const AppContent = () => {
         • Mobile: both on the RIGHT — WhatsApp/call at bottom-20, ChatBot FAB at bottom-5
       */}
 
-      {/* WhatsApp & Call floating button */}
-      <FloatingContact />
-
-      {/* AI Chatbot — always on the right */}
-      <ChatBot />
+      {widgetsReady ? <FloatingContact /> : null}
+      {widgetsReady ? <ChatBot /> : null}
     </>
   );
 };

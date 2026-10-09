@@ -54,21 +54,36 @@ export default function ElfsightGoogleReviews() {
   useEffect(() => {
     if (!widgetId || !containerRef.current) return;
 
+    const target = containerRef.current;
     let cancelled = false;
+    let observer: IntersectionObserver | undefined;
 
-    loadElfsightPlatform()
-      .then(() => {
-        if (cancelled) return;
-        // Re-scan the DOM so the widget mounts after client-side navigation.
-        const eapps = (window as Window & { eapps?: { init?: () => void } }).eapps;
-        eapps?.init?.();
-      })
-      .catch(() => {
-        // Elfsight also auto-inits via platform.js; fail silently in production.
-      });
+    const start = () => {
+      if (cancelled) return;
+      loadElfsightPlatform()
+        .then(() => {
+          if (cancelled) return;
+          const eapps = (window as Window & { eapps?: { init?: () => void } }).eapps;
+          eapps?.init?.();
+        })
+        .catch(() => {
+          // The reviews block stays reserved; the page still works without the widget.
+        });
+    };
+
+    observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer?.disconnect();
+        start();
+      },
+      { rootMargin: "200px" },
+    );
+    observer.observe(target);
 
     return () => {
       cancelled = true;
+      observer?.disconnect();
       document.getElementById(ELFSIGHT_SCRIPT_ID)?.remove();
     };
   }, [widgetId]);

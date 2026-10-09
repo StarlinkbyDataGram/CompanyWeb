@@ -185,6 +185,16 @@ export default function Footer() {
                 Terms
               </Link>
             </div>
+            <p className="pt-1 text-[11px] tracking-wide text-foreground/45">
+              <a
+                href="https://wa.me/2349038899400"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-foreground/70"
+              >
+                Need a website like this? Contact the designer.
+              </a>
+            </p>
           </div>
         </div>
       </footer>
