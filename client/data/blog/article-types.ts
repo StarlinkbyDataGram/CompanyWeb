@@ -14,7 +14,10 @@ export type SeoArticle = {
   excerpt: string;
   metaDescription: string;
   author: string;
+  /** Original publication date. Shown on the page and used as datePublished. */
   date: string;
+  /** Set only when the article was materially updated after publication. */
+  updated?: string;
   readTime: string;
   category: string;
   image: string;

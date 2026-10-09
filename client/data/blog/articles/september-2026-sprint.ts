@@ -14,6 +14,7 @@ export const september2026SprintArticles: SeoArticle[] = [
       "Starlink Direct-to-Cell is rolling toward Nigeria. What it will and won't do — and why a dish remains essential for real broadband.",
     author: "DataGram Nigeria",
     date: "2026-09-01",
+    updated: "2026-10-08",
     readTime: "10 min read",
     category: "Forward-Looking / Informational",
     image: img("blog/starlink-direct-to-cell-nigeria-telecoms-replacement.jpg"),

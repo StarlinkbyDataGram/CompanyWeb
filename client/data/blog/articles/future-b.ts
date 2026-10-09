@@ -134,11 +134,12 @@ export const futureBArticles: SeoArticle[] = [
     slug: "starlink-community-gateways-nigeria-rural-villages",
     title: "Starlink Community Gateways: A Solution for Nigerian Rural Villages?",
     excerpt:
-      "Shared backhaul hubs versus per-home dishes — when community gateways beat individual kits for village connectivity and what Starlink officially supports.",
+      "A practical shared hub for a village, school, or campus: one terminal, local distribution, power, and someone who maintains it. This is not Starlink for Communities.",
     metaDescription:
-      "Starlink community gateways Nigeria: rural village connectivity model, shared backhaul, and realistic deployment checklist.",
+      "Community internet hub in a Nigerian village: one Starlink terminal, local Wi-Fi, power, and upkeep. Not a substitute for Starlink for Communities.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "9 min read",
     category: "Future Trend",
     image: img("blog/starlink-community-gateways-nigeria-rural-villages.jpg"),
@@ -151,16 +152,19 @@ export const futureBArticles: SeoArticle[] = [
       blurb: "Hub placement, power, and local distribution design for village and campus-scale projects.",
     },
     blocks: blocks(
-      p("Starlink community gateways — centralized satellite terminals feeding local Wi-Fi or fibre distribution to a village — sound like the perfect rural Nigeria story. One dish on the chief's community hall, WhatsApp for everyone. Reality requires Starlink service terms that match shared distribution, power that outlasts NEPA, fair-use policies villagers accept, and maintenance money after NGO cameras leave."),
-      p("Easy evaluation: when gateways beat individual dishes, and when they become politics with cable trays."),
+      p("A village or campus hub is something you can design now. One terminal on a building you can lock, a local network that reaches the people who will actually use it, power that outlasts a short outage, and a person who can reboot it after the launch photo. That is a community gateway in the practical sense."),
+      p("It is not Starlink for Communities. That is Starlink's own shared-access programme, and [the communities article](/blog/starlink-for-communities-nigeria) is where its status belongs. This page does not treat a local hub as a substitute for that product, and it does not announce a Nigerian launch."),
+      h2("What you are building, and what you are not"),
+      p("You are building a site: sky view, a mount, a cable path, a router, and distribution to nearby rooms or compounds. An estate that already needs one dish and fair Wi-Fi is the same class of job as [estate Wi-Fi distribution](/starlink-estate-wifi-nigeria). A town that wants passes sold inside Starlink's own host programme is a different question, and it is not answered here."),
+      p("Who may use the link, and on which plan, is a checkout and terms question. Confirm the service address and the plan name before anyone fundraises around a shared dish. A residential plan aimed at one household is a weak foundation for a public hub."),
       h2("What a community gateway looks like"),
-      p("High-performance or business-class terminal on a secure mast with battery backup. Indoor router or outdoor cabinet feeding sector antennas or buried fibre to clusters. Local ISP or cooperative managing vouchers — not twelve unofficial PPPoE hacks on one residential plan."),
+      p("Use the terminal the plan allows at that address, on a secure mast, with battery backup. An indoor router or an outdoor cabinet then feeds sector antennas or a short cable run to nearby buildings. A cooperative or a named operator should manage access. A pile of unofficial logins on a household plan is not a design."),
       h2("Official vs informal sharing"),
-      p("Residential plans target household addresses — community scale typically needs business or dedicated products per Starlink policies. Confirm with official channels before fundraising; donor grants hate clawback when terms violate acceptable use."),
+      p("Starlink for Communities, if it is offered at an address, is Starlink's product. A gateway you commission is your site and your responsibility. Confirm the plan on checkout before fundraising. A grant that assumes unlimited resale of a household subscription is how projects get switched off."),
       h2("Economics vs per-home dishes"),
       p("Gateway wins when homes are clustered within 500 m with line-of-sight wireless backhaul or micro-trench feasible. Individual dishes win when compounds spread across hills with no central building — [Delta](/starlink-installation-delta-state) topography decides."),
       h2("Governance and sustainability"),
-      p("Village committees set fees before install — ₦200/month x 200 homes beats one donor capex with zero opex. Train two locals on reboot and cable checks. Lock cabinets — monkeys and theft are real failure modes."),
+      p("Village committees should set a local access fee before install. The naira amount is their decision, not a Starlink tariff. An illustration only: a small monthly contribution from many homes can fund the subscription after a donor has paid for hardware and left. Train two locals on reboot and cable checks. Lock the cabinet. Theft and weather are ordinary failure modes."),
       h2("Health and school tie-ins"),
       p("PHCs and schools as anchor tenants stabilize revenue — see [rural healthcare impact](/blog/starlink-rural-nigerian-healthcare-impact-2028) for clinic-specific design. Gateway uplink plus classroom LAN beats one router in the headmaster's office with twenty kids crowding."),
     ),
@@ -169,7 +173,7 @@ export const futureBArticles: SeoArticle[] = [
       {
         question: "Can one Starlink dish serve a whole village?",
         answer:
-          "Technically possible with distribution gear — legally and commercially depends on Starlink plan class and local telecom rules. Confirm before building community business models.",
+          "One terminal can be the backhaul for a cluster if the plan allows that use and the local network is designed for it. That is not Starlink for Communities, and it is not a promise that every house gets the same speed. Confirm the plan before you build a business model on the dish.",
       },
       {
         question: "Who pays monthly subscription in village models?",

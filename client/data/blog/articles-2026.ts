@@ -3,7 +3,7 @@ export type { SeoArticle, ArticleBlock, ArticleFaq } from "./article-types";
 export { img, blocks, p, h2, h3, faqs } from "./article-types";
 
 import type { SeoArticle } from "./article-types";
-import { img } from "./article-types";
+import { blocks, faqs, h2, img, p } from "./article-types";
 import { phase1Articles } from "./articles/phase1";
 import { evergreenAArticles } from "./articles/evergreen-a";
 import { evergreenBArticles } from "./articles/evergreen-b";
@@ -19,6 +19,7 @@ import { enterpriseMaritimeB2bMoreArticles } from "./articles/enterprise-maritim
 import { enterpriseMaritimeB2bFinalArticles } from "./articles/enterprise-maritime-b2b-final";
 import { august2026SprintArticles } from "./articles/august-2026-sprint";
 import { september2026SprintArticles } from "./articles/september-2026-sprint";
+import { stage3Batch1Articles } from "./articles/stage3-batch1";
 
 /** Legacy articles (pre-FAQ/block format) — migrated in place */
 const legacyArticles: SeoArticle[] = [
@@ -62,11 +63,12 @@ const legacyArticles: SeoArticle[] = [
     slug: "starlink-vs-fibre-internet-lagos",
     title: "Starlink vs fibre internet in Lagos: what you actually need to know",
     excerpt:
-      "Latency, install lead times, estate rules, and when dual-WAN beats choosing one link for Island and mainland sites.",
+      "Starlink does not replace fibre in Nigeria. Use fibre where it is stable, Starlink where it has not arrived, or both. Lagos is the worked example.",
     metaDescription:
-      "Starlink vs fibre in Lagos: compare latency, uptime, estate installs, and hybrid failover for VI, Lekki, and mainland offices.",
+      "Will Starlink replace fibre in Nigeria? No. Where fibre fits, where Starlink fits, and how Lagos offices use both.",
     author: "DataGram Nigeria",
     date: "2026-05-18",
+    updated: "2026-10-09",
     readTime: "10 min read",
     category: "Comparison",
     image: img("starlinkEstateInstallation.jpeg"),
@@ -78,21 +80,47 @@ const legacyArticles: SeoArticle[] = [
       href: "/starlink-installation-lagos",
       blurb: "Island, mainland, and Lekki estate installs with conduit discipline and mesh options.",
     },
-    paragraphs: [
-      "Lagos buyers ask Starlink or fibre because both show up as fast internet. In practice you are choosing lead time, independence from street cuts, upload profile, and whether your building allows an open trench. Fibre wins on stable per-megabit pricing in served MDUs. Starlink wins on rapid deployment and a second path that does not share the same duct as your primary link.",
-      "Latency is often misunderstood. Fibre backhaul inside Lagos can deliver very low milliseconds to local caches. Starlink's LEO network commonly lands around 20–33 ms for everyday apps when your WiFi is not the bottleneck. Gamers and traders should still test their actual path.",
-      "Download peaks differ by neighbourhood and time of day. Fibre plans may advertise high tiers on paper, but last-mile WiFi, old routers, or oversubscribed estates still choke laptops. Starlink throughput varies with rain fade, beam load, and obstruction score—professional installs exist to lower obstruction, not to promise one speed forever. Expect download roughly 50–1,000 Mbps and upload 10–100 Mbps in typical field conditions.",
-      "Upload is where Lagos offices feel pain. CCTV backhaul, design uploads, and multi-site sync chew upstream. If your team lives on large uploads, say so during survey. Many sites run fibre for bulk sync and Starlink for resilient outbound voice—hybrid is normal.",
-      "Install lead times separate the technologies today. Fibre in a new MDU may wait on landlord backhaul and riser work. Starlink can be live after hardware arrives and a roof or parapet mount passes survey—often days, not quarters—when estate security approves access during standard business hours.",
-      "Estate rules on the Island and in Lekki increasingly mandate conduit colour, curfew drilling, and escorts. Both fibre contractors and Starlink installers must comply. Starlink still needs a clean outdoor sky view—parapet placement matters on high-rises.",
-      "Power behaviour is Lagos-specific. Generators, shared neutrals, and voltage sag when estates transfer loads will reboot cheap routers. Starlink's dish draws modest wattage, but your router and switches need conditioning if you care about call stability through changeovers.",
-      "Cost comparisons should include downtime, not only monthly naira. A cheaper fibre plan that shares one trench with the street leaves you dark when construction cuts the bundle. Starlink as secondary WAN pays off when you can count revenue or operations lost per hour offline.",
-      "Technical integration is simpler than myths suggest. Dual-WAN routers with policy routing send general traffic one way and latency-sensitive apps another. Document IP plans and test failover during handover—weekend drills beat learning failover live on Monday morning.",
-      "When is fibre alone enough? If your MDU has diverse building backhaul, tested risers, and you do not need rapid branch expansion, fibre may cover you. When is Starlink alone enough? Remote compounds, temporary sites, and homes where fibre never reached your street.",
-      "When is hybrid right? Most Lagos enterprises we see: fibre or microwave primary, Starlink secondary, explicit runbooks. Read our [enterprise Nigeria page](/starlink-enterprise-nigeria) and [Lagos installation page](/starlink-installation-lagos) for VLAN and neighbourhood coverage detail.",
-      "If you travel between regions, [roaming](/faq) lets you use Starlink across different land regions globally, not only where you activated. It helps where local coverage is limited. It costs extra on top of your standard subscription—factor that before you rely on it for staff travel.",
-      "Pick based on measurements: obstruction score, upload demand, estate rules, and downtime cost—not billboard slogans.",
-    ],
+    blocks: blocks(
+      p("Starlink does not replace fibre in Nigeria. Use fibre where the building already has a stable line. Use Starlink where fibre has not reached the address, where the wait for a new line is longer than the work can bear, or as the second path when the first line is cut. The honest answer is where, not always."),
+      p("Lagos is the worked example on this page: the Island, Lekki, and the mainland. Other comparisons stay on their own URLs. [Owerri](/blog/starlink-vs-fibre-owerri-imo-state), [IPNX on estates](/blog/ipnx-fibre-vs-starlink-nigerian-estates), and [Spectranet](/blog/spectranet-vs-starlink-remote-work-nigeria-2026) are not folded in here. How to run both links is the [failover guide](/blog/combine-starlink-5g-failover-multi-wan)."),
+      h2("What you are actually choosing"),
+      p("Lagos buyers ask Starlink or fibre because both show up as fast internet. In practice you are choosing lead time, independence from street cuts, upload profile, and whether your building allows an open trench. Fibre fits a served building with stable pricing. Starlink fits a fast install and a second path that does not share the same duct as the first link."),
+      h2("Latency"),
+      p("Latency is often misunderstood. Fibre backhaul inside Lagos can deliver very low milliseconds to local caches. Starlink's LEO network is often discussed around 20–33 ms for everyday apps when Wi-Fi is not the bottleneck. That figure is indicative, not a guarantee. Gamers and traders should still test their actual path."),
+      h2("Download, upload, and rain"),
+      p("Download peaks differ by neighbourhood and time of day. Fibre plans may advertise high tiers on paper, but last-mile Wi-Fi, old routers, or oversubscribed estates still choke laptops. Starlink throughput varies with rain fade, beam load, and obstruction. A professional install lowers obstruction. It does not promise one speed forever. A field range around 50–1,000 Mbps down and 10–100 Mbps up is indicative, not a guarantee for your address."),
+      p("Upload is where Lagos offices feel pain. CCTV backhaul, design uploads, and multi-site sync chew upstream. If your team lives on large uploads, say so during survey. Many sites run fibre for bulk sync and Starlink for voice. That hybrid is normal, not a failure to choose."),
+      h2("Lead time and estate rules"),
+      p("Fibre in a new building may wait on landlord backhaul and riser work. Starlink can be live after hardware arrives and a roof or parapet mount passes survey, often days rather than quarters, when estate security approves access. Estate rules on the Island and in Lekki still mandate conduit colour, drilling windows, and escorts. Both fibre contractors and Starlink installers must comply. Starlink still needs a clean outdoor sky view."),
+      h2("Power and downtime"),
+      p("Generators and voltage sag when an estate transfers load will reboot a cheap router. The dish is not the whole power design. Router and switches need conditioning if calls must survive the changeover. Cost comparisons should include downtime, not only the monthly bill. A cheaper fibre plan that shares one trench with the street leaves you dark when construction cuts the bundle. Starlink as the second WAN pays off when you can count what an hour offline costs. No new naira figures are added on this page."),
+      h2("When one link is enough, and when both are right"),
+      p("Fibre alone can be enough when the building has diverse backhaul, tested risers, and you do not need a rapid second site. Starlink alone can be enough at a remote compound, a temporary site, or a home where fibre has never reached the street. Hybrid is fibre or microwave as primary and Starlink as secondary, with a written failover order. The design is the [failover guide](/blog/combine-starlink-5g-failover-multi-wan). Neighbourhood install notes are on the [Lagos installation page](/starlink-installation-lagos) and the [enterprise page](/starlink-enterprise-nigeria)."),
+      p("Pick from obstruction, upload demand, estate rules, and downtime cost. Not from a billboard."),
+    ),
+    cta: "Need both links, or a survey before you drop fibre? [Contact DataGram](/contact) or start with [Lagos installation](/starlink-installation-lagos).",
+    faqs: faqs(
+      {
+        question: "Will Starlink replace fibre in Nigeria?",
+        answer:
+          "No. Use fibre where it is already stable. Use Starlink where fibre has not arrived, where the wait is too long, or as the second path. Lagos on this page is the worked example, not a national exception.",
+      },
+      {
+        question: "Should a Lagos office run fibre and Starlink together?",
+        answer:
+          "When an hour offline costs more than the second subscription. Fibre or microwave can stay primary. Starlink is the path that does not share the street duct. The failover guide covers the router design.",
+      },
+      {
+        question: "Are the speed figures on this page guaranteed?",
+        answer:
+          "No. Ranges such as 20–33 ms, or 50–1,000 Mbps down and 10–100 Mbps up, are indicative field observations. Test the address.",
+      },
+      {
+        question: "Does this article replace the Owerri, IPNX, or Spectranet pages?",
+        answer:
+          "No. Those comparisons stay on their own URLs. This page answers the national question and uses Lagos as the example.",
+      },
+    ),
   },
   {
     slug: "starlink-offshore-niger-delta-specs",
@@ -134,11 +162,12 @@ const legacyArticles: SeoArticle[] = [
     slug: "power-backup-starlink-nigeria",
     title: "Power backup for Starlink in Nigeria: solar, generator, or UPS?",
     excerpt:
-      "Sizing UPS for NEPA flickers, generator transfer quirks, and when solar pays off versus keeping the dish alive on a modest battery.",
+      "Size backup for the dish, router, and switches. A 600–1,000 VA UPS is a planning band for brief cuts. Mini, solar, and marine 24 V stay on their own pages.",
     metaDescription:
-      "Starlink power backup Nigeria: UPS sizing, generator transfers, solar vs lithium, and what to protect on router and dish.",
+      "What size inverter or UPS for Starlink in Nigeria? Planning bands already on this page, plus where Mini, solar, and boat power are covered.",
     author: "DataGram Nigeria",
     date: "2026-05-12",
+    updated: "2026-10-09",
     readTime: "11 min read",
     category: "Infrastructure",
     image: img("StarlinkInstallationresidential.jpeg"),
@@ -150,21 +179,42 @@ const legacyArticles: SeoArticle[] = [
       href: "/starlink-enterprise-nigeria",
       blurb: "Generator-aware UPS and handover docs for offices, plants, and mission-critical sites.",
     },
-    paragraphs: [
-      "Starlink does not remove Nigerian power problems. The dish and router want stable voltage; estates and factories run generators with transfer quirks that reboot gear if you skip conditioning. Backup strategy starts by listing loads: dish, router, switches, and what can safely drop during outages.",
-      "For many homes, a line-interactive UPS around 600–1000 VA on the router—and sometimes the dish—covers brief NEPA flickers. Runtime targets of 15–40 minutes are realistic at that size; hours need fuel or solar, not a bigger sticker on the same box.",
-      "Generator transfers cause most mystery outages. Voltage sag and neutral drift during changeover reboot consumer routers before the dish notices. Online UPS segments on networking gear, or a short delay before reload, help. Document the sequence: dish, router, then switches.",
-      "Whole-home solar is attractive but easy to oversell. Panels must recharge batteries faster than your outage pattern discharges them. Rainy season weeks in the south stress undersized banks. If solar is only for Starlink, right-size a modest LiFePO4 bank with MPPT and honest sun hours.",
-      "Factories with heavy motors should segregate networking circuits. Surge and proper earthing matter when lightning season hits roof cables. Outdoor runs need grounded shields; indoor routers need bonded earth according to site rules.",
-      "Office campuses sometimes ask for centralised versus distributed UPS. Centralised is easier to monitor; distributed keeps remote blocks alive when only one wing loses power. Match architecture to how estates actually shed loads.",
-      "Inverter noise from cheap modified sine units can upset gear. Pure sine or online UPS for networking closets is worth the naira when uptime has a price. Clinics and trading floors fit that bucket.",
-      "Dish draw is modest compared with old assumptions—still plan for startup inrush when everything returns at once. Staggered power-up beats simultaneous inrush trips.",
-      "Monitoring helps: a logged smart plug shows reboot patterns correlated with generator hours. Handover should state expected runtime, not backup included without numbers.",
-      "Solar integration with existing diesel should be hybrid thinking: solar extends quiet hours; diesel covers extended storms. Label who refuels and who resets breakers.",
-      "Residential users on strict budgets can prioritise router UPS first if calls matter more than dish uptime during seconds-long cuts. Long outages need generator planning or acceptance that satellite is offline until power returns.",
-      "Enterprise readers should pair power scope with network scope on the same quote. DataGram documents both on [enterprise installs](/starlink-enterprise-nigeria). [Home installs](/starlink-home-installation) can add mesh and UPS when estates allow conduit.",
-      "Test quarterly: kill grid, run generator, measure if Starlink returns without manual steps. Drills expose automation gaps cheaper than emergency truck rolls.",
-    ],
+    blocks: blocks(
+      p("Size the backup for the Starlink dish, the router, and the switches you still need during an outage. A whole-house inverter is a different design. This page is the national planning note. It does not replace the Mini, solar, or marine articles."),
+      p("The only sizing figures used here are the ones already on this page, and they are planning bands, not a measurement of your kit. A line-interactive UPS around 600–1,000 VA, sometimes covering the router and sometimes the dish as well, is the band for brief NEPA flickers. A runtime of about 15–40 minutes is the realistic target at that size. Hours need fuel or a battery bank, not a larger label on the same box."),
+      p("Mini watt draw is in the [Mini power guide](/blog/best-power-bank-inverter-starlink-mini-nigeria). A solar bank is in [solar and the router](/blog/power-starlink-router-solar-nigeria). A vessel DC system is in [24 V on a boat](/blog/power-starlink-flat-hp-24v-boat-system-nigeria). Do not copy those pages' numbers onto a Standard home kit."),
+      h2("What to put on the backup"),
+      p("List the loads before you buy anything: dish, router, switches, and what can safely go dark. The dish and router want stable voltage. A generator transfer that sags or drifts the neutral reboots a consumer router before the dish notices. An online UPS on the network gear, or a short delay before reload, helps. Power them back up as dish, then router, then switches."),
+      h2("Generator, inverter, and solar"),
+      p("Cheap modified-sine inverters upset networking gear. Pure sine, or an online UPS in the closet, is the closet design when uptime has a price. Whole-home solar is easy to oversell. Panels have to recharge faster than your outage pattern discharges the bank. Rainy weeks in the south expose an undersized bank. If solar is only for Starlink, size a modest battery for honest sun hours. Solar beside diesel is hybrid thinking: solar for the quiet hours, diesel for a long storm. Say who refuels and who resets the breaker."),
+      p("Dish draw is modest next to old assumptions. Still plan for inrush when everything returns at once. Stagger the restart. A logged plug will show reboots that line up with generator hours. Handover should state the expected runtime."),
+      h2("Sites that are not a bungalow"),
+      p("A factory with heavy motors should keep the network on its own circuit, with surge protection and a real earth, especially in lightning season. A campus can use one monitored UPS or a UPS per wing, matching how the estate actually sheds load. A home on a tight budget can put the UPS on the router first if calls matter more than a few seconds of dish uptime. A long outage still needs a generator, or an acceptance that the link is off until power returns."),
+      p("Enterprise quotes should put power and network on the same scope. That is [enterprise installation](/starlink-enterprise-nigeria). A home can add the UPS with [home installation](/starlink-home-installation) when the estate allows the conduit. Test it: kill the grid, start the generator, and see whether Starlink returns without anyone touching it."),
+    ),
+    cta: "Need the UPS and the generator changeover written into the install? [Contact DataGram](/contact) or start with [home installation](/starlink-home-installation).",
+    faqs: faqs(
+      {
+        question: "What size UPS or inverter does Starlink need in Nigeria?",
+        answer:
+          "On this page the planning band is a line-interactive UPS around 600–1,000 VA, with about 15–40 minutes of runtime. That is a planning band, not a measurement of your kit. Hours of runtime need fuel or a battery bank.",
+      },
+      {
+        question: "Does this page give Mini, solar, or boat watt figures?",
+        answer:
+          "No. Mini draw is on the Mini power guide. Solar is on the solar article. A vessel DC system is on the 24 V boat article. Do not copy those figures onto a Standard home kit.",
+      },
+      {
+        question: "Will a bigger UPS replace a generator?",
+        answer:
+          "Not for a long outage. The 600–1,000 VA band covers brief grid flickers and the moment a generator takes over. Extended hours need fuel, a battery bank, or an acceptance that the link is off.",
+      },
+      {
+        question: "What should stay powered during an outage?",
+        answer:
+          "The dish, the router, and the switches people still need. A whole-house inverter is a separate design. List what can safely go dark before you buy.",
+      },
+    ),
   },
   {
     slug: "how-to-activate-starlink-nigeria",
@@ -222,6 +272,7 @@ export const seoArticles2026: SeoArticle[] = [
   ...enterpriseMaritimeB2bFinalArticles,
   ...august2026SprintArticles,
   ...september2026SprintArticles,
+  ...stage3Batch1Articles,
 ];
 
 export function getSeoArticleBySlug(slug: string) {

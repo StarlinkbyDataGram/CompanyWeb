@@ -4,7 +4,28 @@ import path from "path";
 import { createServer } from "./server";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(async ({ mode }) => {
+  const plugins: Plugin[] = [react(), expressPlugin()];
+  // Dev-only bundle report. Does not change emitted JS. Set ANALYZE=1.
+  if (process.env.ANALYZE === "1") {
+    const { visualizer } = await import("rollup-plugin-visualizer");
+    plugins.push(
+      visualizer({
+        filename: "perf/bundle-stats.json",
+        template: "raw-data",
+        gzipSize: true,
+        brotliSize: true,
+      }) as Plugin,
+      visualizer({
+        filename: "perf/bundle-treemap.html",
+        template: "treemap",
+        gzipSize: true,
+        brotliSize: true,
+      }) as Plugin,
+    );
+  }
+
+  return {
   server: {
     host: "::",
     port: 8080,
@@ -22,7 +43,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [react(), expressPlugin()],
+  plugins,
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
@@ -32,7 +53,8 @@ export default defineConfig(({ mode }) => ({
       "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
     },
   },
-}));
+  };
+});
 
 function expressPlugin(): Plugin {
   return {

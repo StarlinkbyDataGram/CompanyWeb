@@ -28,19 +28,28 @@ const categoryLabel = (category: Project['category']) => {
 
 export default function ProjectCard({ project, onView }: ProjectCardProps) {
   const [imageFailed, setImageFailed] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const thumbnailFile = project.imageFiles[0];
   const imageSrc = thumbnailFile ? `/images/installations/${project.folder}/${thumbnailFile}` : null;
   const hasImages = project.imageFiles.length > 0;
 
   const previewContent = useMemo(() => {
-    if (imageSrc && !imageFailed && hasImages) {
+    if (imageSrc && hasImages && !imageFailed) {
+      const src = loadAttempt > 0 ? `${encodeURI(imageSrc)}?retry=${loadAttempt}` : encodeURI(imageSrc);
       return (
         <img
-          src={encodeURI(imageSrc)}
+          key={loadAttempt}
+          src={src}
           alt={project.displayName}
           className="h-full w-full object-cover"
-          loading="lazy"
-          onError={() => setImageFailed(true)}
+          loading={loadAttempt > 0 ? 'eager' : 'lazy'}
+          onError={() => {
+            if (loadAttempt < 1) {
+              setLoadAttempt((current) => current + 1);
+              return;
+            }
+            setImageFailed(true);
+          }}
         />
       );
     }
@@ -51,7 +60,7 @@ export default function ProjectCard({ project, onView }: ProjectCardProps) {
         <p className="text-sm font-semibold">Photo coming soon</p>
       </div>
     );
-  }, [imageFailed, imageSrc, hasImages, project.displayName]);
+  }, [imageFailed, imageSrc, hasImages, loadAttempt, project.displayName]);
 
   return (
     <article className="group overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">

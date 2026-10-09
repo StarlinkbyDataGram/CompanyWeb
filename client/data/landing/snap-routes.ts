@@ -48,4 +48,6 @@ export const SNAP_INCLUDE_ROUTES = [
   "/blog/starlink-11000-satellites-nigeria-speeds-august-2026",
   "/blog/starlink-vs-mtn-5g-nigeria-remote-work-business-2026",
   "/blog/direct-to-cell-nigeria-dish-still-essential-september-2026",
+  "/blog/starlink-for-communities-nigeria",
+  "/blog/starlink-business-vs-enterprise-nigeria",
 ] as const;

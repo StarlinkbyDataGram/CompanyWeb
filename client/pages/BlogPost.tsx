@@ -98,13 +98,20 @@ export default function BlogPost() {
 
   const canonical = `/blog/${article.slug}`;
   const documentTitle = article.seoTitle ?? `${article.title} | DataGram Nigeria`;
+  const dateModified = article.updated ?? article.date;
+  const formatArticleDate = (iso: string) =>
+    new Date(iso).toLocaleDateString("en-NG", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.date,
-    dateModified: article.date,
+    dateModified,
     author: { "@type": "Organization", name: "DataGram Nigeria" },
     publisher: {
       "@type": "Organization",
@@ -142,6 +149,7 @@ export default function BlogPost() {
         image={article.image.startsWith("/") ? article.image : DEFAULT_OG_IMAGE}
         type="article"
         publishedTime={article.date}
+        updatedTime={article.updated}
         schema={schema}
       />
       <div className={`${landingContainer} py-12 md:py-16`}>
@@ -156,12 +164,14 @@ export default function BlogPost() {
               </span>
               <span className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
-                {new Date(article.date).toLocaleDateString("en-NG", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
+                {formatArticleDate(article.date)}
               </span>
+              {article.updated ? (
+                <span className="flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  Last updated {formatArticleDate(article.updated)}
+                </span>
+              ) : null}
               <span className="flex items-center gap-1">
                 <Clock className="h-4 w-4" />
                 {article.readTime}

@@ -1,12 +1,64 @@
-# DataGram facts ledger — Stage 1
+# DataGram facts ledger
 
 Status: INTERNAL ONLY. Not linked from the site. Not in `public/`.
-Date checked: 8 October 2026
-Non-price corrections from sections B were applied on 8 October 2026. Prices in section A were not edited. Site identity in F8 was not edited. No URL, redirect, deletion, or new article.
+
+## Scope hold — 9 October 2026
+
+`/our-work` is out of the remaining content programme. No Our Work task is in `content-registry.json` or the Stage 2 topic list. None is to be added.
+
+Do not add installation photographs, project entries, case studies, or rewrites on that page. Do not treat a library image as proof of a named customer installation unless that connection is separately verified and approved. The 100-topic registry stays the content tracker. Our Work is not on it.
+
+## Stage 3 Batch 1 — 9 October 2026
+
+Client-supplied equipment references, received 9 October 2026 from DataGram's Starlink client. Not independently verified on Starlink checkout. Not a licence to change any other price.
+
+| Item | Client-supplied figure | Applied? | Where |
+| --- | --- | --- | --- |
+| Standard Kit, as Starlink's own equipment price | ₦690,000 | Yes, only in sentences that presented ₦669,000 as Starlink's current kit price | Price guide, worth-it review, MTN comparison hardware clause |
+| Starlink Mini, on the same basis | ₦400,000 | Yes, replacing ₦318,000 in those same Starlink-reference sentences | Price guide and worth-it review |
+| Performance Kit | ₦3,500,000 | No | Mapping is not clear. See P8 |
+
+P8 — Performance Kit mapping, flagged, not applied. The site's product is "Starlink Flat High Performance Dish" at the DataGram selling price N4,000,000 in `client/data/products.ts`, and ₦4,000,000 in the chatbot. The chatbot also lists Gen3 Standard at ₦650,000 and Mini at ₦450,000. Those are DataGram selling prices and were not changed. Official "Performance Kit" material describes a newer rugged kit and is not a 1:1 label for the Flat High Performance product already on the site. ₦3,500,000 was not written onto any product, chatbot reply, or article.
+
+Worked totals preserved, not recalculated, and now labelled as the previous illustration: ₦669,000 + 12 × ₦57,000 = ₦1,353,000; ₦669,000 + ₦1,368,000 subscription ≈ ₦85,000 per month over 24 months. They appear in the price guide and the worth-it review. They are inconsistent with ₦690,000 if someone redoes the arithmetic. Left unchanged on purpose.
+
+Unchanged on purpose: residential ₦57,000 and ₦57,000–₦75,000, Priority ₦159,000, labour ₦10,000–₦150,000, survey from ₦85,000, project ₦450,000–₦1,060,000, MTN router ₦80,000–₦150,000, MTN data ₦30,000–₦50,000, activation ceiling, DataGram selling prices above, site identity in `Seo.tsx`.
+
+Ocean Mode: secondary reports of a coastal boundary and a dollar-per-gigabyte rate were not confirmed for Nigeria. Neither figure was published. No naira equivalent was added.
+
+Communities: `starlink.com/community-host` did not return body text on 9 October 2026. Pass lengths (hour, day, week for one device; month for up to four) are taken from Broadband Breakfast, 6 October 2026, and Telecompetitor, 2 October 2026. No pass price, host payout, Nigerian availability, NCC approval, or launch date.
+
+Business vs Enterprise: the help article "Business vs. Enterprise Accounts" did not return body text. The getting-started guide did, including a 99.9% network-availability SLA for Priority service plans. No statement that Enterprise self-subscription is ending in Nigeria.
+
+Section A below is the Stage 1 log as it stood on 8 October 2026, before this batch. P1 and P2 were later updated only as described above.
+
+## Stage 3 Batch 4 — 9 October 2026
+
+Existing URLs only. No new prices. Labour ₦10,000–₦150,000, survey from about ₦85,000, and project ₦450,000–₦1,060,000 stay on the install guide. Power page keeps 600–1,000 VA and 15–40 minutes as planning bands. No Mini watt figure was copied onto that page.
+
+- Fibre: `/blog/starlink-vs-fibre-internet-lagos` answers nationally. Lagos stays the example. Owerri, IPNX, and Spectranet URLs were not merged. Speed ranges labelled indicative.
+- Another address: `/blog/fixing-starlink-roaming-restrictions-nigeria`. A second Nigerian site is a service-address question. International day counts were not applied inside Nigeria.
+- Install guide, large-home Wi-Fi, and power backup updated in place. Home installation, estate Wi-Fi, Mini power, solar, and marine 24 V pages stay separate.
+
+## Stage 3 Batch 3 — 9 October 2026
+
+Existing URLs only. No new landings, no redirects, no price changes, no Our Work edits.
+
+- Village gateway: `/blog/starlink-community-gateways-nigeria-rural-villages` now states it is a local hub design, not Starlink for Communities. The ₦200 illustration was removed so it cannot be read as a tariff.
+- Failover: `/blog/combine-starlink-5g-failover-multi-wan` opens with primary, backup, or both. Marine SD-WAN stays the vessel version.
+- VSAT: `/blog/vsat-vs-starlink-roi-nigerian-offshore-operations-2026` recommends hybrid. Existing $1,500–$4,000 and 600 ms / 20–40 ms ranges kept and labelled indicative. No new naira or dollar price.
+- Crew VLAN: `/blog/configure-vlan-starlink-crew-wifi-bridge-operations` opens with one terminal as uplink, not as a fair network. Fifty-plus is a LAN planning size, not a terminal rating. No per-crew megabit figure.
+- Rain and harmattan: national rain article stays the winner; Port Harcourt stays local. Percentage and Mbps figures kept and labelled indicative.
+
+---
+
+# Stage 1 log (8 October 2026)
+
+Non-price corrections from sections B were applied on 8 October 2026. Prices in section A were not edited on that date. Site identity in F8 was not edited.
 
 Verification limits:
 - `https://starlink.com/ng/service-plans` and the Starlink roam help article did not return plan text to a non-JavaScript fetch. Price and policy notes below use search snippets of those pages plus named secondary reports. They are not a substitute for a live Nigerian checkout.
-- Nothing in this file authorises a price edit.
+- The Stage 1 line "nothing in this file authorises a price edit" applied until the 9 October 2026 client equipment approval recorded above. That approval covers only the two applied kit references.
 
 ---
 

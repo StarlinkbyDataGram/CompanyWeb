@@ -47,6 +47,8 @@ const ROUTES = [
   "/blog/starlink-offshore-niger-delta-specs",
   "/blog/power-backup-starlink-nigeria",
   "/blog/how-to-activate-starlink-nigeria",
+  "/blog/starlink-for-communities-nigeria",
+  "/blog/starlink-business-vs-enterprise-nigeria",
 ];
 
 function shouldSkipPrerender() {

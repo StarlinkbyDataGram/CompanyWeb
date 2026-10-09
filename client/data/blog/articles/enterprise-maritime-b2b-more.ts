@@ -81,11 +81,12 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
     slug: "configure-vlan-starlink-crew-wifi-bridge-operations",
     title: "Configuring VLANs on Starlink for Crew WiFi vs Bridge Operations",
     excerpt:
-      "How vessel IT separates crew browsing from bridge, SCADA, and CCTV on Starlink using Ethernet bypass, managed routers, and QoS.",
+      "One Starlink terminal can feed a crew. It cannot share that link fairly. VLANs, quotas, and a welfare network are the design, including for 50 or more people.",
     metaDescription:
-      "Separate crew WiFi from bridge and ops networks on a Starlink vessel — VLAN design, bypass routers, and QoS for Nigerian maritime IT teams.",
+      "Can one Starlink terminal serve a vessel crew? Yes as the uplink. Fair crew Wi-Fi needs VLANs, rate limits, and a separate bridge network.",
     author: "DataGram Nigeria",
     date: "2026-07-11",
+    updated: "2026-10-09",
     readTime: "14 min read",
     category: "Maritime",
     image: img("blog/configure-vlan-starlink-crew-wifi-bridge-operations.jpg"),
@@ -98,8 +99,10 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
       blurb: "VLAN design, QoS, and dual-WAN options scoped to your OSV or platform — not a flat consumer WiFi dump.",
     },
     blocks: blocks(
-      p("Configuring VLANs on Starlink for crew WiFi versus bridge operations is mandatory once a vessel treats the satellite link as production infrastructure. A flat network where tablets on the mess deck share a broadcast domain with navigation aids is a bandwidth and security problem waiting for a night watch."),
-      p("This write-up is for vessel IT officers and network engineers. It assumes you already have — or are installing — a mobility-rated terminal via [offshore maritime installation](/starlink-offshore-maritime-installation). DataGram can configure the first architecture; your IT team usually owns day-to-day user adds."),
+      p("One Starlink terminal can feed a crew. It cannot, on its own, share that link fairly. The terminal is an uplink. It does not know a bridge laptop from a phone in the mess, and it will not stop one cabin from taking the pipe. The design that does is on your router: VLANs, a rate limit or a quota, and a rule for which traffic wins."),
+      p("A small crew can live on two networks, operations and everyone else. A crew of 50 or more uses the same design with stricter welfare rules, not a different satellite. Fifty is a planning size for the LAN, not a rating printed on the dish. This page does not promise a speed per person."),
+      h2("What one terminal can and cannot do"),
+      p("It can be the WAN for the ship, on the plan and hardware a survey confirms. It cannot create a captive portal, a voucher, or a separate crew password by itself. Those live on a managed router after the Ethernet handoff. If the ship already has VSAT or LTE, the order of those paths is a [marine SD-WAN](/starlink-marine-sdwan-integration) decision. This article is the LAN that sits on whichever WAN is up. The physical terminal is [offshore maritime installation](/starlink-offshore-maritime-installation)."),
       h2("Why segregation matters on a vessel"),
       p("Crew streaming and app updates will consume any open pipe. Bridge and navigation traffic needs predictable latency. Operations and SCADA-adjacent tools should not be reachable from guest phones. CCTV upload should not stall VOIP. Without VLANs and QoS, the loudest app wins."),
       p("Security is not theoretical. Phishing on a crew phone should not land an attacker in the same Layer-2 neighbourhood as an ops tablet. Isolation limits blast radius even when users share one satellite uplink."),
@@ -113,6 +116,9 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
       p("VLAN 10 — Bridge and navigation: highest QoS, restricted device list, no casual BYOD. VLAN 20 — Operations and SCADA: isolated from crew, medium QoS. VLAN 30 — Crew WiFi: standard QoS with per-user or SSID rate limits. VLAN 40 — CCTV and IP cameras: isolated, lower priority so camera bursts do not drown voice."),
       p("Tag trunks between router and switch correctly. Access ports to end devices stay untagged on the correct VLAN. Document the map in the handover pack so the next vendor does not flatten everything \"to make WiFi work.\""),
       p("On smaller boats you may collapse to two VLANs — ops and crew — but keep the principle. One SSID for everyone is how chart updates lose to football streams."),
+      h2("A crew of 50 or more"),
+      p("At that size, one open SSID is a welfare problem and an operations problem. Give the crew a network they can actually use: a captive portal or a voucher if you need to know who is online, a per-user or per-device rate limit, and a quota if the plan has a data block you must not burn in a weekend. Leave navigation and bridge devices on their own VLAN with priority, so a film in the mess cannot sit in front of them."),
+      p("Welfare traffic is allowed to be slow. Bridge traffic is not. Write that down in the handover. Do not invent a megabit allowance per crew member here. Size it from the plan you bought and from a test on the dock."),
       h2("QoS and traffic shaping"),
       p("Prioritise VOIP and navigation flows. Rate-limit crew entertainment SSIDs. If the account shows a priority data block — a 50GB figure is a Global Priority tier, not Ocean Mode — QoS is how you stretch that allowance. Ocean Mode is a separate metered option for roam-class service past coastal waters. Pair either path with [marine SD-WAN](/starlink-marine-sdwan-integration) when a second WAN exists."),
       p("Failover behaviour matters: when Starlink drops to 4G or VSAT, the backup pipe is usually thinner. QoS rules should still prefer bridge traffic on the skinny path. Test that on the dock, not during a pilotage."),
@@ -133,9 +139,9 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
     cta: "Need a vessel network architecture proposal? [Contact DataGram](/contact) — start from [marine SD-WAN](/starlink-marine-sdwan-integration) or [offshore installation](/starlink-offshore-maritime-installation).",
     faqs: faqs(
       {
-        question: "Can Starlink support VLANs on a vessel?",
+        question: "Can one Starlink terminal serve a large crew?",
         answer:
-          "Starlink's stock router does not provide vessel-grade VLAN segmentation. Use Ethernet handoff into a managed router or firewall that creates VLANs downstream.",
+          "Yes as the uplink, if the plan and hardware fit the vessel. Fair use for a large crew is a LAN design: separate VLANs, a rate limit or quota, and priority for the bridge. The stock Starlink router does not do that segmentation.",
       },
       {
         question: "How do I separate crew WiFi from bridge operations on Starlink?",

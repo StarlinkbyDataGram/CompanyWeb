@@ -22,13 +22,13 @@
       "bank signal (not a Nigeria volume): 5/5 | Breaking: official Community Host pages launched Oct 2026",
       "bank priority letter: A"
     ],
-    "verificationStatus": "needs-source-check",
-    "imageStatus": "not-started",
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-rooftop",
     "relatedSlugs": [],
     "CTA": "/contact",
-    "currentStatus": "proposed",
-    "lastReviewed": "2026-10-08",
-    "notes": "Genuinely missing. Official Community Host pages are a bank signal, not a fact already checked in the ledger. One living article. Do not invent pass prices. Do not create a DataGram Communities sales page. Bank angle: Explain the host/pass model, who it is for, what is known, what is not known, and why Nigeria should watch it."
+    "currentStatus": "published-stage3-batch1",
+    "lastReviewed": "2026-10-09",
+    "notes": "Published at /blog/starlink-for-communities-nigeria on 9 Oct 2026. Official host page did not return body text. Pass structure is from Broadband Breakfast (6 Oct 2026) and Telecompetitor (2 Oct 2026). No pass price, revenue share, Nigeria approval, or launch date. Bank angle: Explain the host/pass model, who it is for, what is known, what is not known, and why Nigeria should watch it."
   },
   {
     "id": 2,
@@ -149,17 +149,17 @@
       "bank signal (not a Nigeria volume): 4/5 | Official product distinction",
       "bank priority letter: A"
     ],
-    "verificationStatus": "needs-source-check",
-    "imageStatus": "not-started",
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-commercial-rooftop",
     "relatedSlugs": [
       "starlink-enterprise-nigeria",
       "starlink-residential-vs-priority-business-nigerian-smes",
       "starlink-enterprise-activation-as-a-service-nigeria"
     ],
     "CTA": "/starlink-enterprise-nigeria",
-    "currentStatus": "proposed",
-    "lastReviewed": "2026-10-08",
-    "notes": "Residential-vs-Priority and the enterprise landing do not answer Business vs Enterprise as product classes. New explainer, not a second enterprise landing. Confirm current Starlink labels before publish. Bank angle: Clarify self-service Business accounts vs large-scale Enterprise accounts and avoid outdated terminology."
+    "currentStatus": "published-stage3-batch1",
+    "lastReviewed": "2026-10-09",
+    "notes": "Published at /blog/starlink-business-vs-enterprise-nigeria on 9 Oct 2026. Business vs Enterprise Accounts help article did not return body text. Getting-started guide was readable and is the cited frame, including the Priority 99.9% SLA. Self-subscription ending is a labelled watch only. Performance Kit ₦3,500,000 was not applied. Bank angle: Clarify self-service Business accounts vs large-scale Enterprise accounts and avoid outdated terminology."
   },
   {
     "id": 6,
@@ -311,16 +311,16 @@
       "bank signal (not a Nigeria volume): 5/5 | High-intent commercial query + NCC tariff benchmark",
       "bank priority letter: A"
     ],
-    "verificationStatus": "prices-frozen",
-    "imageStatus": "not-started",
+    "verificationStatus": "client-supplied-equipment-only",
+    "imageStatus": "datagram-unboxing-kit",
     "relatedSlugs": [
       "how-much-does-starlink-installation-cost-nigeria-2026",
       "is-starlink-worth-669000-nigeria-2026-honest-review"
     ],
     "CTA": "/starlink-home-installation",
-    "currentStatus": "existing",
-    "lastReviewed": "2026-10-08",
-    "notes": "This is the living price URL. October 2026 in the bank is a review date, not a reason for a new URL. Do not change any published figure until a separate price approval. Bank angle: Maintain a dated price page that separates Starlink tariff, hardware, installation and reseller/service costs."
+    "currentStatus": "updated-stage3-batch1",
+    "lastReviewed": "2026-10-09",
+    "notes": "Living price URL updated 9 Oct 2026. Standard Kit reference ₦690,000 and Mini ₦400,000 where stated as Starlink's own prices. Performance Kit ₦3,500,000 not applied. Subscriptions, labour, project bands, and the old ₦1,353,000 / ₦85,000 illustration were not recalculated. Bank angle: Maintain a dated price page that separates Starlink tariff, hardware, installation and reseller/service costs."
   },
   {
     "id": 11,
@@ -409,16 +409,16 @@
       "bank signal (not a Nigeria volume): 5/5 | Nigeria-specific telecom trend",
       "bank priority letter: A"
     ],
-    "verificationStatus": "stage1-corrected",
-    "imageStatus": "not-started",
+    "verificationStatus": "stage3-batch1-updated",
+    "imageStatus": "existing-kept",
     "relatedSlugs": [
       "direct-to-cell-nigeria-dish-still-essential-september-2026",
       "starlink-direct-to-cell-nigeria-telecoms-replacement"
     ],
     "CTA": "/starlink-home-installation",
-    "currentStatus": "existing",
-    "lastReviewed": "2026-10-08",
-    "notes": "Three D2C URLs share one intent. Winner is the August article already corrected in Stage 1: DRC launch 14 Aug 2026, no Nigerian date, no NCC approval. Losers need Search Console before any redirect. Do not redirect in Stage 2. Bank angle: Track Airtel Africa’s rollout, regulatory approvals and the difference between satellite broadband and phone-to-satellite service."
+    "currentStatus": "updated-stage3-batch1",
+    "lastReviewed": "2026-10-09",
+    "notes": "Updated in place on 9 Oct 2026. DRC launch 14 Aug 2026 kept as a reported launch. No Nigerian date and no NCC approval added. Other D2C URLs were not redirected. Bank angle: Track Airtel Africa’s rollout, regulatory approvals and the difference between satellite broadband and phone-to-satellite service."
   },
   {
     "id": 14,
@@ -672,16 +672,16 @@
       "bank signal (not a Nigeria volume): 5/5 | Current maritime change",
       "bank priority letter: A"
     ],
-    "verificationStatus": "stage1-corrected",
-    "imageStatus": "not-started",
+    "verificationStatus": "stage3-batch1-updated",
+    "imageStatus": "datagram-vessel-mount",
     "relatedSlugs": [
       "starlink-roaming-global-priority-activation-nigeria",
       "starlink-offshore-maritime-installation"
     ],
     "CTA": "/starlink-offshore-maritime-installation",
-    "currentStatus": "existing",
-    "lastReviewed": "2026-10-08",
-    "notes": "Stage 1 separated Ocean Mode from the 50GB Global Priority block. This URL stays the explainer. Slug stays. Add the 12-nautical-mile rule only after it is verified. Do not add $6/GB or a naira rate in the same edit unless that rate is separately approved. Bank angle: Explain 12-nautical-mile boundary, per-GB billing and when to turn it on/off."
+    "currentStatus": "updated-stage3-batch1",
+    "lastReviewed": "2026-10-09",
+    "notes": "Updated 9 Oct 2026. Stage 1 distinction kept. 12 nautical miles and $6/GB were not published as confirmed facts. No naira rate added. Slug unchanged. Bank angle: Explain 12-nautical-mile boundary, per-GB billing and when to turn it on/off."
   },
   {
     "id": 22,
@@ -812,7 +812,7 @@
     "CTA": "/starlink-repair-relocation-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Service-address and in-country moves belong on the existing roaming-restrictions article. Relocation landing is the commercial CTA. Bank angle: Explain service-address rules, Roam vs fixed use and what not to assume."
+    "notes": "Stage 3 Batch 4, 9 October 2026: existing URL updated. Opening separates a second Nigerian address from international roaming. Relocation landing stays the commercial page."
   },
   {
     "id": 26,
@@ -1006,7 +1006,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "The install guide and the home landing already split education and conversion. Refresh the guide. Do not add another national install URL. Bank angle: Cover site survey, dish placement, mounting, cable routing, power and Wi-Fi."
+    "notes": "Stage 3 Batch 4, 9 October 2026: existing install guide updated. Home installation page stays the booking page. Labour and project bands unchanged."
   },
   {
     "id": 32,
@@ -1232,7 +1232,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "National rain article is the winner. Port Harcourt rain article stays local. Review each rainy season. Bank angle: Explain rain fade, ground-station weather and practical steps to reduce interruptions."
+    "notes": "Stage 3 Batch 3, 9 October 2026: national rain URL updated. Port Harcourt rain article stays local. Speed figures labelled indicative."
   },
   {
     "id": 39,
@@ -1264,7 +1264,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right seasonal URL. Review before the next harmattan, not a new article. Bank angle: Address dust, cleaning, mounts, connectors and safe maintenance before harmattan peaks."
+    "notes": "Stage 3 Batch 3, 9 October 2026: existing harmattan URL updated. Dust, cleaning, mounts, and connectors. No new article."
   },
   {
     "id": 40,
@@ -1330,7 +1330,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "National inverter-sizing home. Confirm watt figures from Starlink documentation before publishing examples. Mini, solar and marine 24V articles stay separate. Bank angle: Provide realistic planning examples for home, office and field deployments."
+    "notes": "Stage 3 Batch 4, 9 October 2026: existing URL updated. Only the 600–1,000 VA and 15–40 minute bands already on the page. Mini, solar, and marine 24 V stay separate. No new watt figures."
   },
   {
     "id": 42,
@@ -1427,7 +1427,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Home coverage article is the winner. Estate landing is the multi-unit commercial page. Mesh-bypass article stays a how-to. Bank angle: Cover router placement, mesh and wired access points."
+    "notes": "Stage 3 Batch 4, 9 October 2026: existing URL updated. Opening is router placement, then wired AP or mesh. Estate Wi-Fi and the bypass guide stay separate."
   },
   {
     "id": 45,
@@ -1716,7 +1716,7 @@
     "CTA": "/starlink-enterprise-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Winner for office failover intent. Refresh so topics 51 and 52 are answered in the opening. Marine SD-WAN landing stays the vessel version. Bank angle: Explain dual-WAN concepts in a practical business setting."
+    "notes": "Stage 3 Batch 3, 9 October 2026: existing URL updated. Opening answers primary, backup, or both. Marine SD-WAN landing stays the vessel version."
   },
   {
     "id": 54,
@@ -2385,7 +2385,7 @@
     "CTA": "/contact",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Existing gateway article is the practical hub piece. Update it so it no longer reads as a substitute for the official Communities product. Do not redirect it. Do not create a second hub URL. Bank angle: Show the hub model, user access, power, support and sustainability questions."
+    "notes": "Stage 3 Batch 3, 9 October 2026: existing URL updated. It is a local hub, not Starlink for Communities. Do not redirect it. Do not create a second hub URL."
   },
   {
     "id": 75,
@@ -2515,7 +2515,7 @@
     "CTA": "/starlink-offshore-maritime-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "This is the VSAT comparison winner. Refresh it so hybrid architecture is the recommendation, not a rip-and-replace. No new comparison URL. Bank angle: Explain where Starlink excels, where VSAT remains valuable and why hybrid architecture is often strongest."
+    "notes": "Stage 3 Batch 3, 9 October 2026: existing URL updated. Hybrid is the recommendation. No new comparison URL. Existing cost and latency ranges kept and labelled indicative."
   },
   {
     "id": 79,
@@ -2740,7 +2740,7 @@
     "CTA": "/starlink-offshore-maritime-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Open this article with whether one terminal can serve a crew. The VLAN design is the answer. Not a new URL. Bank angle: Explain that shipboard Wi-Fi design is more than the satellite terminal."
+    "notes": "Stage 3 Batch 3, 9 October 2026: existing URL updated. Opening answers one terminal as uplink. VLAN design, including 50-plus crew, stays on this URL."
   },
   {
     "id": 86,
@@ -3162,7 +3162,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Lagos fibre article becomes the national answer in the introduction, with Lagos as the worked example. Do not merge Owerri, IPNX or Spectranet URLs without Search Console. Speed claims stay indicative. Bank angle: Use actual Nigerian speeds, economics and reliability trade-offs; answer “where,” not “always.”"
+    "notes": "Stage 3 Batch 4, 9 October 2026: existing Lagos URL updated. Opening is the national answer, Lagos is the example. Owerri, IPNX, and Spectranet stay separate. Speeds labelled indicative."
   },
   {
     "id": 99,

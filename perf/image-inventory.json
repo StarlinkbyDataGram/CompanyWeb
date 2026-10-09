@@ -1,0 +1,2600 @@
+{
+  "generatedAt": "2026-10-09T08:19:21.664Z",
+  "count": 189,
+  "totalBytes": 57006438,
+  "over200kb": 85,
+  "notModern": 184,
+  "widerThan2560": 6,
+  "images": [
+    {
+      "path": "public/images/hero-offshore-hse-compliance.jpg",
+      "ext": ".jpg",
+      "width": 5472,
+      "height": 3648,
+      "bytes": 3927459,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/copper-to-leo-transition-demise-legacy-isps-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 3718106,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/homeImg/two.jpg",
+      "ext": ".jpg",
+      "width": 5000,
+      "height": 5000,
+      "bytes": 2886616,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/hero-fleet-management-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 5659,
+      "height": 3763,
+      "bytes": 2516362,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/why-starlink-keeps-rebooting-nigeria-solutions.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 1609995,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/hero-marine-sdwan-integration.jpg",
+      "ext": ".jpg",
+      "width": 5184,
+      "height": 2920,
+      "bytes": 1583573,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/hero-enterprise-marine-hub.jpg",
+      "ext": ".jpg",
+      "width": 6016,
+      "height": 4016,
+      "bytes": 1235137,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/power-starlink-router-solar-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 699498,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/abuja-suburbs-lugbe-kubwa-starlink.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 670576,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-installation-aba-abia-business-guide.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 650254,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-installation-edo-state-benin-city.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 647427,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/install3.png",
+      "ext": ".png",
+      "width": 540,
+      "height": 1170,
+      "bytes": 631083,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/south-east-regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-roaming-global-priority-activation-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 619451,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/roaming-priority.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-unn-students-nsukka-enugu.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 603214,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-ewaste-upgrade-recycle-dishes-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 602871,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-agriculture-ebonyi-state-farms.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 601966,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-installation-anambra-onitsha-businesses.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 598584,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/landing/industry-pages.ts",
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-canopy-obstructions-niger-delta-forests.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 588076,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-calabar-cross-river-state.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 579782,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram2.jpg",
+      "ext": ".jpg",
+      "width": 2835,
+      "height": 5195,
+      "bytes": 558368,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif",
+        "wider-than-2560"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-port-harcourt-rain-fade-garden-city.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 506321,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-vs-fibre-owerri-imo-state.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 506321,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/zero-downtime-internet-escravos-forcados-oil-camps.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 497308,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b-final.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/ncc-satellite-internet-regulations-nigeria-2027.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 492208,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/satellite-hardware-import-tax-tariff-nigeria-forecast.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 474278,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/best-starlink-installers-abuja-fct-estates.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 463282,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-ngos-rural-field-operations-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 449143,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/solar-integrated-starlink-dishes-nigeria-future.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 447342,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/power-starlink-flat-hp-24v-boat-system-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 445983,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b-more.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-floating-homes-makoko-coastal-lagos.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 437264,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-expat-compounds-port-harcourt.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 432805,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/protect-starlink-cable-rats-rodents-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 431840,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/best-power-bank-inverter-starlink-mini-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 427444,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-topographical-challenges-enugu-state.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 420732,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/spectranet-vs-starlink-remote-work-nigeria-2026.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 419511,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/delta-state-starlink-performance-warri-asaba.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 406567,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/internet-alternatives-oil-gas-rivers-state.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 403322,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-ocean-mode-50gb-priority-limit-explained.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 401372,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/blog/starlink-installation-bayelsa-creeks-yenagoa.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 394283,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 384689,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/landing/industry-pages.ts",
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-speeds-uyo-akwa-ibom-remote-work.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 368364,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/best-starlink-mounts-nigerian-roofs-corrugated-concrete.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 358163,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/buy-used-starlink-dish-nigeria-buyers-guide.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 356016,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-mini-vs-standard-which-buy-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 356016,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-enterprise-activation-as-a-service-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 350594,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/enterprise-maritime-b2b-final.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/vsat-vs-starlink-roi-nigerian-offshore-operations-2026.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 339550,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/stow-starlink-dish-relocation-maintenance.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 332020,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-heavy-harmattan-dust-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 330837,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-community-gateways-nigeria-rural-villages.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 329899,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-lekki-victoria-island-fibre-cuts.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 327427,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/south-south-nigeria-starlink-coverage-map-speeds.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 326611,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/run-starlink-cable-through-walls-safely.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 326299,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/manage-starlink-multiple-branch-offices-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 316632,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/salt-spray-corrosion-marine-antennas-gulf-of-guinea.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 310097,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b-final.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-installation-lagos-high-rises-signal-obstructions.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 307825,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-v4-hardware-upgrades-expected-features.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 306665,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/best-ups-brands-nigeria-starlink-online.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 306062,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-slower-when-it-rains-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 302641,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/share-one-starlink-dish-two-flats-compound.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 291778,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/ipnx-fibre-vs-starlink-nigerian-estates.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 290543,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/amazon-kuiper-vs-starlink-2027-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 290364,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/troubleshooting-starlink-offline-searching-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 288448,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-customer-care-nigeria-how-to-reach.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 285407,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-hotels-asaba-guest-wifi-delta.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 283621,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-localized-naira-pricing-predictions-2027.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 283574,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/6g-leo-constellations-nigerian-market-merge.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 283477,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-media-broadcasting-ikeja-lagos.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 272958,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-gaming-nigeria-ping-packet-loss-stability.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 268473,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/install4.jpg",
+      "ext": ".jpg",
+      "width": 1913,
+      "height": 2550,
+      "bytes": 264055,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/south-east-regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/connect-cctv-cameras-starlink-network.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 261418,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/smart-farming-nigeria-next-gen-leo-networks.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 261219,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-account-suspended-what-to-do.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 257957,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-vat-invoicing-nigerian-businesses.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 256239,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-dish-stolen-nigeria-what-to-do.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 255648,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/maritime-starlink-gulf-guinea-piracy-tracking.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 248958,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/south-east-nigeria-internet-crisis-starlink-solution.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 244854,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-rural-nigerian-healthcare-impact-2028.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 238093,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-setup-remote-software-developers-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 233251,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/transfer-starlink-ownership-nigerian-account.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 231192,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/securely-mount-starlink-wind-damage-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 217653,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/activating-starlink-unauthorized-country-via-nigeria-risks.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 213601,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-direct-to-cell-nigeria-telecoms-replacement.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 213601,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/future-a.ts",
+        "client/data/blog/articles/september-2026-sprint.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/extend-starlink-wifi-range-large-nigerian-home.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 213004,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-vs-mtn-5g-router-speed-test-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 212575,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/factory-reset-starlink-router-guide.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 212042,
+      "flags": [
+        "over-200kb",
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-residential-vs-priority-business-nigerian-smes.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 202846,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/landing/industry-pages.ts",
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/how-much-is-starlink-nigeria-price-naira-2026.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 198997,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/blog/professional-starlink-installation-nigeria-guide.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 198997,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/phase1.ts"
+      ]
+    },
+    {
+      "path": "public/images/install.png",
+      "ext": ".png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 198264,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/can-starlink-be-hacked-security-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 192980,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-lite-plan-emerging-markets-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 190656,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/ground-starlink-dish-lightning-strikes-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 186087,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/bypass-starlink-router-third-party-mesh-deco-asus.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 184074,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/ESTATE-INSTALLATION/WhatsApp Image 2026-09-17 at 11.09.02 (1).jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 179191,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/fix-starlink-cable-disconnected-error-v3-v4.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 176662,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram-starlink-unboxing-kit-contents.jpg",
+      "ext": ".jpg",
+      "width": 1024,
+      "height": 711,
+      "bytes": 174876,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/combine-starlink-5g-failover-multi-wan.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 171005,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/august-2026-sprint.ts",
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-banks-atms-rural-anambra.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 169547,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/geo-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-high-performance-dish-worth-cost-smes.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 163804,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/configure-vlan-starlink-crew-wifi-bridge-operations.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 157122,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/enterprise-maritime-b2b-more.ts"
+      ]
+    },
+    {
+      "path": "public/images/residentalSetup.jpeg",
+      "ext": ".jpeg",
+      "width": 1500,
+      "height": 2000,
+      "bytes": 156423,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/landing/south-east-regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/how-to-pay-starlink-nigeria-virtual-dollar-cards.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 155465,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/change-starlink-wifi-name-password-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 155085,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/flat-high-performance-vs-standard-dish-maritime.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 155027,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/phase1.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-maritime-ships-boats-nigeria-setup.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 155027,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/phase1.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram-starlink-boxes-stock.jpg",
+      "ext": ".jpg",
+      "width": 798,
+      "height": 1024,
+      "bytes": 151718,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-as-a-service-leasing-dishes-nigeria-events.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 151520,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram-starlink-unboxing-hardware.jpg",
+      "ext": ".jpg",
+      "width": 1024,
+      "height": 768,
+      "bytes": 150359,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-data-usage-data-cap-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 149410,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/oneweb-vs-starlink-nigerian-enterprise-outlook.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 146154,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram-technician-dish-port.jpg",
+      "ext": ".jpg",
+      "width": 691,
+      "height": 807,
+      "bytes": 142343,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-nigerian-real-estate-value-remote-ready-homes.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 140702,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-b.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/ESTATE-INSTALLATION/WhatsApp Image 2026-09-17 at 11.09.03 (1).jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 136325,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-flat-hp/FlatHighperformanceversion.jpeg",
+      "ext": ".jpeg",
+      "width": 1280,
+      "height": 842,
+      "bytes": 132658,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Index.tsx",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/troubleshoot-starlink-red-light-router-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 132492,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/starlink-aviation-nigeria-in-flight-wifi-future.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 131502,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/future-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/datagram-starlink-unboxing-mount-bracket.jpg",
+      "ext": ".jpg",
+      "width": 768,
+      "height": 1024,
+      "bytes": 127447,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-mini/StarlinkMini11.jpeg",
+      "ext": ".jpeg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 121826,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/starlinkInstallation.jpeg",
+      "ext": ".jpeg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 117014,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/landing/RegionalLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/landing/south-east-regional-pages.ts",
+        "client/data/blog/articles-2026.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-gen3v4/StandardDish11.jpeg",
+      "ext": ".jpeg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 116361,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--residential-duplex--unknown/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 116132,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--degema/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 114864,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/installations/Starlink-Performance/Starlink Performance Boat img 2.jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 112278,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-mesh-router/StarlinkMeshRouter.jpeg",
+      "ext": ".jpeg",
+      "width": 769,
+      "height": 1024,
+      "bytes": 111466,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--residential-duplex--aruchukwu/WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (2).jpeg",
+      "ext": ".jpeg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 111326,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/starlinkEstateInstallation.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 111020,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/landing/south-east-regional-pages.ts",
+        "client/data/blog/articles-2026.ts",
+        "client/components/site/BlogTeaser.tsx"
+      ]
+    },
+    {
+      "path": "public/images/blog/average-starlink-latency-ping-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 109915,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--houseboat--warri/photo-2.jpeg",
+      "ext": ".jpeg",
+      "width": 576,
+      "height": 1280,
+      "bytes": 109698,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/products/starlink-gen3-45m-cable/StarlinkGen3Cable45m.jpeg",
+      "ext": ".jpeg",
+      "width": 901,
+      "height": 1024,
+      "bytes": 105627,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/blog/fixing-starlink-roaming-restrictions-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104769,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/trending-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--government-office--rivers/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 102525,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/blog/starlink-ethernet-adapter-setup-nigeria.jpg",
+      "ext": ".jpg",
+      "width": 1600,
+      "height": 900,
+      "bytes": 102223,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/blog/articles/evergreen-a.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--degema/photo-3.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 101609,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--degema/photo-4.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 100224,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/StarlinkRoofMount.jpeg",
+      "ext": ".jpeg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 98786,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/blog/articles-2026.ts",
+        "client/data/blog/articles/stage3-batch1.ts",
+        "client/components/site/BlogTeaser.tsx"
+      ]
+    },
+    {
+      "path": "public/images/installations/mini--outdoor-business/Starlink Mini Outdoor Business img 1.jpeg",
+      "ext": ".jpeg",
+      "width": 1536,
+      "height": 2048,
+      "bytes": 93393,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/mini--outdoor-business--unknown/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 1536,
+      "height": 2048,
+      "bytes": 93393,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/datagram-technician-rooftop-mount.jpg",
+      "ext": ".jpg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 88144,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/components/site/BlogTeaser.tsx"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--houseboat--warri/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 576,
+      "height": 1280,
+      "bytes": 87193,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/products/starlink-mini/StarlinkMini111.jpeg",
+      "ext": ".jpeg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 85978,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--naval-vessel--sagbama/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 85401,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/High-Speed.jpeg",
+      "ext": ".jpeg",
+      "width": 1000,
+      "height": 601,
+      "bytes": 85119,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-pivot-mount/StarlinkPivotMountingAccessories.jpeg",
+      "ext": ".jpeg",
+      "width": 755,
+      "height": 1024,
+      "bytes": 78532,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--degema/photo-2.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 76857,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/install2.png",
+      "ext": ".png",
+      "width": 607,
+      "height": 1080,
+      "bytes": 75982,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-mini/starlink.jpeg",
+      "ext": ".jpeg",
+      "width": 959,
+      "height": 1280,
+      "bytes": 75568,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/About.tsx",
+        "client/pages/Index.tsx",
+        "client/components/site/Header.tsx"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--houseboat--warri/photo-3.jpeg",
+      "ext": ".jpeg",
+      "width": 576,
+      "height": 1280,
+      "bytes": 73384,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/installations/HOME-INSTALLATION/WhatsApp Image 2026-09-17 at 11.08.04 (1).jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 70993,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/HOME-INSTALLATION/WhatsApp Image 2026-09-17 at 11.09.03.jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 68191,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/ESTATE-INSTALLATION/WhatsApp Image 2026-09-17 at 11.09.04.jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 66894,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/ESTATE-INSTALLATION/WhatsApp Image 2026-09-17 at 11.09.02.jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 62185,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/StarlinkCompanyInstallation.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 61440,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Index.tsx",
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/pages/landing/RegionalLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/blog/articles/stage3-batch1.ts"
+      ]
+    },
+    {
+      "path": "public/images/maritime2.jpeg",
+      "ext": ".jpeg",
+      "width": 461,
+      "height": 1000,
+      "bytes": 61252,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Index.tsx",
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/Starlink-Performance/Starlink Performance Boat img 1.jpeg",
+      "ext": ".jpeg",
+      "width": 810,
+      "height": 1080,
+      "bytes": 58670,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts",
+        "client/data/blog/articles/enterprise-maritime-b2b-final.ts"
+      ]
+    },
+    {
+      "path": "public/images/Long-Range.jpeg",
+      "ext": ".jpeg",
+      "width": 476,
+      "height": 500,
+      "bytes": 57507,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--enval/photo-2.jpeg",
+      "ext": ".jpeg",
+      "width": 540,
+      "height": 1170,
+      "bytes": 55911,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/sales.jpeg",
+      "ext": ".jpeg",
+      "width": 1080,
+      "height": 810,
+      "bytes": 53962,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--residential-duplex--unknown/photo-2.jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 53864,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/StarlinkInstallationresidential.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 53724,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Index.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/landing/south-east-regional-pages.ts",
+        "client/data/blog/articles-2026.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-mini/StarlinkMini1.jpeg",
+      "ext": ".jpeg",
+      "width": 750,
+      "height": 1349,
+      "bytes": 51464,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/starlinklogo.png",
+      "ext": ".png",
+      "width": 500,
+      "height": 500,
+      "bytes": 51201,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Blog.tsx",
+        "client/pages/BlogPost.tsx",
+        "client/pages/StarlinkGuideNigeria.tsx",
+        "client/components/Seo.tsx",
+        "client/components/site/Footer.tsx",
+        "client/components/site/Header.tsx",
+        "index.html"
+      ]
+    },
+    {
+      "path": "public/images/starlinkSetup.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 50362,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/landing/RegionalLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/maritime5.jpeg",
+      "ext": ".jpeg",
+      "width": 600,
+      "height": 600,
+      "bytes": 50275,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--residential-duplex--aruchukwu/WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05 (1).jpeg",
+      "ext": ".jpeg",
+      "width": 720,
+      "height": 1280,
+      "bytes": 48930,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/starlink-gen3v4/StandardDish1.jpeg",
+      "ext": ".jpeg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 45695,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/About.tsx",
+        "client/pages/Index.tsx",
+        "client/pages/StarlinkGuideNigeria.tsx",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/ESTATE-INSTALLATION/WhatsApp Image 2026-09-17 at 11.08.58.jpeg",
+      "ext": ".jpeg",
+      "width": 591,
+      "height": 1280,
+      "bytes": 42340,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/starlinkCompanyInstalltionImage.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 42262,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/landing/RegionalLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/standard--residential-duplex--aruchukwu/WhatsApp Unknown 2026-07-26 at 20.57.28/WhatsApp Image 2026-07-20 at 17.45.05.jpeg",
+      "ext": ".jpeg",
+      "width": 765,
+      "height": 1020,
+      "bytes": 39467,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/our-work-projects.ts"
+      ]
+    },
+    {
+      "path": "public/images/maritime4.jpeg",
+      "ext": ".jpeg",
+      "width": 765,
+      "height": 401,
+      "bytes": 37180,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Index.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts",
+        "client/data/landing/regional-pages.ts",
+        "client/data/blog/articles-2026.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise-houseboat--mixed/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 36114,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/maritime3.jpeg",
+      "ext": ".jpeg",
+      "width": 574,
+      "height": 1020,
+      "bytes": 35090,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/landing/IndustryLandingPage.tsx",
+        "client/lib/image-crop.ts",
+        "client/data/landing/industry-pages.ts"
+      ]
+    },
+    {
+      "path": "public/images/installations/hp-kit--enterprise--enval/photo-1.jpeg",
+      "ext": ".jpeg",
+      "width": 576,
+      "height": 1280,
+      "bytes": 34824,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/maritime.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 33895,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/landing/types.ts"
+      ]
+    },
+    {
+      "path": "public/images/StarlinkGloba.jpeg",
+      "ext": ".jpeg",
+      "width": 495,
+      "height": 619,
+      "bytes": 32638,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/homeImg/ten.avif",
+      "ext": ".avif",
+      "width": null,
+      "height": null,
+      "bytes": 29508,
+      "flags": [],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/products/starlink-flat-hp/FlatHighperformanceversion1.jpeg",
+      "ext": ".jpeg",
+      "width": 554,
+      "height": 554,
+      "bytes": 26645,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/BackupPower.jpeg",
+      "ext": ".jpeg",
+      "width": 678,
+      "height": 452,
+      "bytes": 25737,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/homeImg/seven.avif",
+      "ext": ".avif",
+      "width": null,
+      "height": null,
+      "bytes": 23685,
+      "flags": [],
+      "referencedBy": [
+        "client/pages/Products.tsx"
+      ]
+    },
+    {
+      "path": "public/images/StarlinkSubscription.jpeg",
+      "ext": ".jpeg",
+      "width": 478,
+      "height": 641,
+      "bytes": 22124,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/homeImg/twelve.avif",
+      "ext": ".avif",
+      "width": null,
+      "height": null,
+      "bytes": 20416,
+      "flags": [],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/WIFIWISP.jpeg",
+      "ext": ".jpeg",
+      "width": 480,
+      "height": 339,
+      "bytes": 20272,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/images/Whole-Premises.jpeg",
+      "ext": ".jpeg",
+      "width": 706,
+      "height": 435,
+      "bytes": 19269,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/pages/Gallery.tsx",
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/homeImg/nine.avif",
+      "ext": ".avif",
+      "width": null,
+      "height": null,
+      "bytes": 19184,
+      "flags": [],
+      "referencedBy": []
+    },
+    {
+      "path": "public/images/products/starlink-flat-hp/FlatHighperformanceversion11.jpeg",
+      "ext": ".jpeg",
+      "width": 413,
+      "height": 484,
+      "bytes": 18327,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/StarlinkAccessories.jpeg",
+      "ext": ".jpeg",
+      "width": 631,
+      "height": 631,
+      "bytes": 16108,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/data/services.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/wired-long-range-wifi-mesh/WiredLongRangeWifiMeshRepeaterRouter.jpeg",
+      "ext": ".jpeg",
+      "width": 471,
+      "height": 1020,
+      "bytes": 12599,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/images/products/wireless-long-range-wifi-mesh/WirelessLongRangeWifiMeshRepeaterRouter.jpeg",
+      "ext": ".jpeg",
+      "width": 540,
+      "height": 533,
+      "bytes": 11248,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/lib/image-crop.ts",
+        "client/data/products.ts"
+      ]
+    },
+    {
+      "path": "public/whatsapp.png",
+      "ext": ".png",
+      "width": 128,
+      "height": 128,
+      "bytes": 4227,
+      "flags": [
+        "not-webp-avif"
+      ],
+      "referencedBy": [
+        "client/App.tsx"
+      ]
+    },
+    {
+      "path": "public/placeholder.svg",
+      "ext": ".svg",
+      "width": null,
+      "height": null,
+      "bytes": 3253,
+      "flags": [],
+      "referencedBy": []
+    }
+  ]
+}

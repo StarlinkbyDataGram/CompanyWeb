@@ -567,11 +567,12 @@ export const evergreenBArticles: SeoArticle[] = [
     slug: "combine-starlink-5g-failover-multi-wan",
     title: "Combining Starlink with 5G as a Failover Multi-WAN Setup",
     excerpt:
-      "Policy routing, health checks, MTN and Airtel 5G CPE placement, and Nigerian estate power quirks for resilient home and office internet.",
+      "When Starlink should be the office link, when it should only be the backup, and how dual-WAN failover works with fibre or 5G.",
     metaDescription:
-      "Starlink plus 5G failover Nigeria: multi-WAN router setup, policy routing, health checks, and dual-path design for Lagos and Abuja offices.",
+      "Starlink failover for a Nigerian office: primary, backup, or both, with fibre or 5G, dual-WAN health checks, and a separate path for vessels.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "11 min read",
     category: "Evergreen",
     image: img("blog/combine-starlink-5g-failover-multi-wan.jpg"),
@@ -584,8 +585,11 @@ export const evergreenBArticles: SeoArticle[] = [
       blurb: "Policy routing, VLAN handoff, and tested failover — not two routers fighting for DHCP.",
     },
     blocks: blocks(
-      p("Combining Starlink with 5G as a failover multi-WAN setup is the resilience pattern Nigerian offices adopt after the third Monday when fibre was cut on the Lekki axis and Starlink faded in an afternoon squall at the same time. Single links lie; dual paths with automatic failover and policy routing keep payroll uploads and client calls alive when any one carrier fails."),
-      p("This guide covers architecture — not product fanboyism. Starlink primary with MTN or Airtel 5G secondary is common in [Lagos](/starlink-installation-lagos) SMEs; reverse primary makes sense where 5G is excellent indoors but rain knocks satellite. Document priorities, test monthly, and fix power before you buy a third router."),
+      p("Use fibre or a strong 5G line as the office link when it is already stable, and add Starlink as the backup that takes over when that line is cut. Use Starlink as the primary link when the address has no dependable fibre or cellular path. Use both at the same time only when a dual-WAN router can fail over, and only when the second subscription costs less than the outage it prevents."),
+      p("Starlink is not automatically the cheapest ISP. It is a second path with its own sky view, its own power, and its own subscription. This page is the land version. A vessel that needs Starlink beside VSAT or LTE belongs on [marine SD-WAN](/starlink-marine-sdwan-integration), not in an office failover diagram."),
+      h2("Primary, backup, or both"),
+      p("Primary means the office lives on Starlink and the other link is the spare. That fits a site where fibre is absent, frequently cut, or too slow for the work. Backup means fibre or 5G carries the day and Starlink appears when the first link fails. Both means policy routing: voice and VPN on one path, bulk transfers on the other, with a written order for which path wins."),
+      p("Write that choice down before you buy the second subscription. A dish on the roof with no failover rule is two internet bills and one confused router. Where the comparison is fibre against Starlink at a Lagos address, start with [Starlink versus fibre](/blog/starlink-vs-fibre-internet-lagos), then use this page for the dual-WAN design. Document the priority, test it monthly, and fix power before you buy a third router."),
       h2("Why multi-WAN in Nigeria specifically"),
       p("Fibre street cuts, oversubscribed LTE, rain fade on LEO, and generator changeovers create correlated failures if all gear shares one UPS and one careless electrician. Multi-WAN spreads risk across independent carriers. It doesn't eliminate outages — misconfigured failover still drops VPN sessions — but recovery time drops from hours to seconds when health checks work."),
       h2("Hardware: one firewall, two WAN ports"),

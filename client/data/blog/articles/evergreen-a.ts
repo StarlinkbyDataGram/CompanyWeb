@@ -11,6 +11,7 @@ export const evergreenAArticles: SeoArticle[] = [
       "Extend Starlink Wi-Fi in Nigerian homes: mesh nodes, wired APs, router placement, and estate-friendly fixes for large compounds and multi-floor flats.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "12 min read",
     category: "Evergreen",
     image: img("blog/extend-starlink-wifi-range-large-nigerian-home.jpg"),
@@ -23,7 +24,8 @@ export const evergreenAArticles: SeoArticle[] = [
       blurb: "We map dead zones, spec mesh or wired APs, and hand over with speed tests in every room you actually use.",
     },
     blocks: blocks(
-      p("Your Starlink speed test beside the router looks brilliant — 200 Mbps down, latency in the twenties — but the boys' quarter at the back of the compound gets two bars and WhatsApp voice drops. That's not a satellite problem. It's Wi-Fi physics colliding with Nigerian building materials: thick concrete, POP ceilings, long corridors, and metal security doors that eat 2.4 GHz and 5 GHz alike."),
+      p("If the test beside the router is fine and the far room is not, the dish is not the problem. Move the router to an open, central spot. If the cable will not allow that, add a wired access point, or a mesh node with a wired backhaul. A large house and a block of flats are different jobs. Estate-wide Wi-Fi is [estate Wi-Fi distribution](/starlink-estate-wifi-nigeria). Replacing the Starlink router with your own kit is the [bypass guide](/blog/bypass-starlink-router-third-party-mesh-deco-asus). The install sequence is the [professional installation guide](/blog/professional-starlink-installation-nigeria-guide)."),
+      p("A test that looks like 200 Mbps down and latency in the twenties, beside the router, is an example of that near-router test. It is not a guarantee for the boys' quarters. Thick concrete, POP ceilings, long corridors, and metal doors are what eat the signal."),
       p("Extending Starlink Wi-Fi across a large home means treating the satellite link and the indoor wireless network as two separate engineering tasks. The dish delivers bandwidth to your property. Your job — or your installer's — is to distribute that bandwidth where people sit, work, and watch Netflix during NEPA downtime on the generator."),
       h2("Why Starlink Wi-Fi struggles in Nigerian homes"),
       p("Standard Gen 3 routers ship with decent radios, but they're designed for open-plan Western layouts, not four-bedroom bungalows with a detached kitchen block or three-storey estate townhouses in Lekki. Concrete load-bearing walls attenuate signal sharply. POP ceilings with metal mesh inside them behave like Faraday cages. Harmattan dust doesn't hurt Wi-Fi directly, but it drives everyone indoors with doors shut — more walls between router and bedroom."),
