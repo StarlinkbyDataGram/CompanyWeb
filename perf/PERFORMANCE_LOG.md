@@ -86,3 +86,23 @@ Prerendered HTML for a post that uses headings and FAQs (`/blog/starlink-vs-fibr
 Before: `fonts.googleapis.com` was a second render-blocking stylesheet, about **950 ms** on the homepage (940 / 955 / 961 ms across three runs). Poppins was in the stack and was not used by any element.
 
 After: Inter Latin WOFF2 at weights 400, 600, and 700, `font-display: swap`, with only the 24 KB regular file preloaded. The Google stylesheet is gone. The only render-blocking file left is the site CSS. Homepage first paint stayed about 2.9 s, because the empty HTML still waits on JavaScript. Two valid runs: performance 31 and 31, LCP 8.7 s and 9.3 s, total blocking time 3.2 s and 4.5 s, transfer 955 KB and 1,424 KB. A third run did not paint. The three font files together are 73 KB and come from the same origin.
+
+## B4 — reviews, chat, and WhatsApp wait
+
+The Google reviews script loads when that section is near the viewport. The chat and WhatsApp buttons mount after the page has loaded and the browser is idle, or on the first tap or keypress. The reviews block already keeps 280 px of height. The buttons are fixed, so they do not move the page when they appear.
+
+Homepage lab run after this change does not request `elfsight` or `fonts.googleapis.com`. Tailwind’s CSS stayed 19 KB gzip, so the content globs were left as they are.
+
+Median of three empty-shell runs, compared with the B3 group. Homepage uses the two runs that painted. Lagos uses the one run that painted.
+
+| URL | Perf | LCP | TBT | Transfer |
+| --- | --- | --- | --- | --- |
+| `/` | 32 → 38 | 7.2 s → 6.9 s | 6.4 s → 1.6 s | 1488 KB → 890 KB |
+| Offshore | 35 → 31 | 6.0 s → 7.2 s | 2.2 s → 6.0 s | 736 KB → 676 KB |
+| Lagos (1 run) | 40 → 45 | 5.4 s → 5.1 s | 1.4 s → 1.1 s | 811 KB → 784 KB |
+| `/blog` | 31 → 32 | 9.3 s → 7.4 s | 6.4 s → 6.0 s | 938 KB → 1221 KB |
+| Price post | 26 → 37 | 7.9 s → 6.7 s | 1.1 s → 0.5 s | 873 KB → 812 KB |
+| `/our-work` | 43 → 62 | 5.5 s → 5.5 s | 0.8 s → 0.2 s | 875 KB → 1032 KB |
+| `/products` | 40 → 62 | 6.3 s → 6.0 s | 1.2 s → 0.2 s | 1178 KB → 1201 KB |
+
+Offshore’s median was pulled up by one run with 18.6 s of blocking. The other two offshore runs were 1.8 s and 6.0 s.
