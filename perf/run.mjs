@@ -86,7 +86,8 @@ function startStaticServer(spaRoot) {
         res.end();
         return;
       }
-      const candidates = rel ? [rel, path.join(rel, "index.html"), "index.html"] : ["index.html"];
+      const fallback = fs.existsSync(path.join(spaRoot, "spa.html")) ? "spa.html" : "index.html";
+      const candidates = rel ? [rel, path.join(rel, "index.html"), fallback] : ["index.html"];
       const rootWithSep = spaRoot.endsWith(path.sep) ? spaRoot : spaRoot + path.sep;
       let file = null;
       for (const candidate of candidates) {
@@ -656,10 +657,7 @@ async function main() {
     const rootHtml = html.slice(html.indexOf('<div id="root">'));
     const h1 = /<h1\b/i.test(rootHtml);
     console.log(`  preflight ${urlPath} html ${html.length}B h1-in-root ${h1}`);
-    const shellOnly = new Set([
-      "/products",
-      "/blog/how-much-is-starlink-nigeria-price-naira-2026",
-    ]);
+    const shellOnly = new Set(["/blog"]);
     if (process.env.PERF_REQUIRE_PRERENDER === "1" && !shellOnly.has(urlPath) && html.length < 20000) {
       throw new Error(`Expected prerendered HTML for ${urlPath}, got ${html.length} bytes`);
     }

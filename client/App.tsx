@@ -50,16 +50,12 @@ import BlogPost from "./pages/BlogPost";
 const queryClient = new QueryClient();
 
 function useDeferredWidget() {
-  const [ready, setReady] = useState(() => {
-    if (typeof navigator !== "undefined" && navigator.userAgent.includes("ReactSnap")) return true;
-    if (typeof document !== "undefined" && (document.getElementById("root")?.childElementCount ?? 0) > 0) {
-      return true;
-    }
-    return false;
-  });
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     if (ready) return;
+    // The snapshot is taken with this agent and must match the first hydrated render.
+    if (typeof navigator !== "undefined" && navigator.userAgent.includes("ReactSnap")) return;
     let finished = false;
     const finish = () => {
       if (finished) return;

@@ -126,3 +126,23 @@ Empty-shell medians, compared with the B4 medians above. Blog uses the two runs 
 Image bytes fell by 50 KB on every URL, which is one copy of `starlinklogo.png`. The homepage LCP file is still `StandardDish1.jpeg`, now with `fetchpriority="high"`, and its resource load delay is still 15.2 s. The file itself then arrives in 7 ms. Offshore’s delay fell to 9.1 s. `/products` LCP stayed the first product card, not the background photo. The price-post run that scored 15 had a stalled machine (LCP 13.6 s); the other two were 7.5 s and 8.3 s. Layout shift on that post was already 0.22 before this change.
 
 The markup is kept. On the empty shell the browser cannot see the hero until JavaScript runs, so priority cannot remove that wait. It is what the prerendered HTML will need.
+
+## B5 — pages are in the HTML
+
+The build snapshots every public URL in the sitemap (175 routes). `/blog` stays the empty shell, because that index still requests every card image. The Vite shell is kept as `spa.html`. `/` is the homepage snapshot. A URL with no snapshot is served `spa.html`, so it renders the 404 page instead of the homepage.
+
+Snapshots are taken after the page fade reaches full opacity. Chat and WhatsApp are absent from the snapshot and from the first hydrated render, then appear after idle. The reviews script is not in the saved HTML. Styles are not copied into each file.
+
+Empty-shell medians from B2, compared with these snapshots. `/blog` is still the shell.
+
+| URL | Perf | LCP | TBT | Transfer |
+| --- | --- | --- | --- | --- |
+| `/` | 37 → 35 | 6.7 s → 9.1 s | 1.3 s → 1.6 s | 890 KB → 1406 KB |
+| Offshore | 44 → 44 | 4.6 s → 6.4 s | 1.5 s → 0.8 s | 626 KB → 910 KB |
+| Lagos | 50 → 50 | 5.1 s → 6.0 s | 0.8 s → 0.5 s | 784 KB → 795 KB |
+| `/blog` (still the shell) | 33 → 35 | 8.6 s → 7.6 s | 9.3 s → 2.1 s | 1171 KB → 1171 KB |
+| Price post | 23 → 41 | 8.3 s → 8.1 s | 1.3 s → 1.1 s | 762 KB → 775 KB |
+| `/our-work` | 43 → 44 | 5.4 s → 6.7 s | 1.1 s → 0.7 s | 982 KB → 1193 KB |
+| `/products` | 42 → 35 | 6.5 s → 6.3 s | 1.2 s → 1.9 s | 1151 KB → 1160 KB |
+
+The hero is in the first HTML. Homepage resource load delay fell from 15.2 s to 35 ms. The file then took 4.7 s because it shares the simulated Slow 4G link with the script. One homepage run painted in 2.0 s. Checked pages (`/`, `/products`, the price post, and an unknown URL) logged no hydration mismatch. The unknown URL showed the 404 page.
