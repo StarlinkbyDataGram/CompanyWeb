@@ -80,3 +80,9 @@ Median of 3 mobile Lighthouse runs, except the baseline column which is the sing
 | `/products` | 42 → 40 | 4.4 s → 6.3 s | 1.5 s → 1.2 s | 1337 KB → 1178 KB |
 
 Prerendered HTML for a post that uses headings and FAQs (`/blog/starlink-vs-fibre-internet-lagos`) still contains the H1, those headings, the FAQ questions, a canonical link, and JSON-LD. The snapshot waits until `data-article-ready="true"`.
+
+## B4 — self-hosted Inter
+
+Before: `fonts.googleapis.com` was a second render-blocking stylesheet, about **950 ms** on the homepage (940 / 955 / 961 ms across three runs). Poppins was in the stack and was not used by any element.
+
+After: Inter Latin WOFF2 at weights 400, 600, and 700, `font-display: swap`, with only the 24 KB regular file preloaded. The Google stylesheet is gone. The only render-blocking file left is the site CSS. Homepage first paint stayed about 2.9 s, because the empty HTML still waits on JavaScript. Two valid runs: performance 31 and 31, LCP 8.7 s and 9.3 s, total blocking time 3.2 s and 4.5 s, transfer 955 KB and 1,424 KB. A third run did not paint. The three font files together are 73 KB and come from the same origin.
