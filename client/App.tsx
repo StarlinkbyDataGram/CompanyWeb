@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,38 +14,42 @@ import Footer from "@/components/site/Footer";
 import Analytics from "@/components/Analytics";
 import ChatBot from "@/components/site/ChatBot";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Support from "./pages/Support";
-import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
-import ServiceDetail from "./pages/ServiceDetail";
-import NotFound from "./pages/NotFound";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import FaqPage from "./pages/FaqPage";
-import LocationsIndex from "./pages/LocationsIndex";
-import LocationsAll from "./pages/LocationsAll";
-import LocationDetail from "./pages/LocationDetail";
-import StarlinkGuideNigeria from "./pages/StarlinkGuideNigeria";
-import Gallery from "./pages/Gallery";
-import OurWork from "./pages/OurWork";
-import AdminLogin from "./pages/admin/AdminLogin";
-import AdminDashboard from "./pages/admin/AdminDashboard";
-import AdminProducts from "./pages/admin/AdminProducts";
-import AdminTestimonials from "./pages/admin/AdminTestimonials";
-import AdminFAQ from "./pages/admin/AdminFAQ";
-import AdminBlog from "./pages/admin/AdminBlog";
 import ProtectedRoute from "./components/admin/ProtectedRoute";
-import {
-  IndustryLandingByPath,
-  RegionalLandingByPath,
-} from "./pages/landing/LandingRoutePages";
-import { industryLandingPages } from "@/data/landing/industry-pages";
-import { regionalLandingPages } from "@/data/landing/regional-pages";
-import BlogPost from "./pages/BlogPost";
+import { industryPaths, regionalPaths } from "@/data/landing/route-paths";
+import { lazyPage } from "./lazy-page";
+import { loadArticleBySlug } from "@/data/blog/load-article";
+
+const About = lazyPage(() => import("./pages/About"));
+const Services = lazyPage(() => import("./pages/Services"));
+const Blog = lazyPage(() => import("./pages/Blog"));
+const Contact = lazyPage(() => import("./pages/Contact"));
+const Support = lazyPage(() => import("./pages/Support"));
+const Products = lazyPage(() => import("./pages/Products"));
+const ProductDetail = lazyPage(() => import("./pages/ProductDetail"));
+const ServiceDetail = lazyPage(() => import("./pages/ServiceDetail"));
+const NotFound = lazyPage(() => import("./pages/NotFound"));
+const Privacy = lazyPage(() => import("./pages/Privacy"));
+const Terms = lazyPage(() => import("./pages/Terms"));
+const FaqPage = lazyPage(() => import("./pages/FaqPage"));
+const LocationsIndex = lazyPage(() => import("./pages/LocationsIndex"));
+const LocationsAll = lazyPage(() => import("./pages/LocationsAll"));
+const LocationDetail = lazyPage(() => import("./pages/LocationDetail"));
+const StarlinkGuideNigeria = lazyPage(() => import("./pages/StarlinkGuideNigeria"));
+const Gallery = lazyPage(() => import("./pages/Gallery"));
+const OurWork = lazyPage(() => import("./pages/OurWork"));
+const AdminLogin = lazyPage(() => import("./pages/admin/AdminLogin"));
+const AdminDashboard = lazyPage(() => import("./pages/admin/AdminDashboard"));
+const AdminProducts = lazyPage(() => import("./pages/admin/AdminProducts"));
+const AdminTestimonials = lazyPage(() => import("./pages/admin/AdminTestimonials"));
+const AdminFAQ = lazyPage(() => import("./pages/admin/AdminFAQ"));
+const AdminBlog = lazyPage(() => import("./pages/admin/AdminBlog"));
+const BlogPost = lazyPage(() => import("./pages/BlogPost"));
+const IndustryLandingRoute = lazyPage(() =>
+  import("./pages/landing/LandingRoutePages").then((mod) => ({ default: mod.IndustryLandingRoute })),
+);
+const RegionalLandingRoute = lazyPage(() =>
+  import("./pages/landing/LandingRoutePages").then((mod) => ({ default: mod.RegionalLandingRoute })),
+);
 
 const queryClient = new QueryClient();
 
@@ -73,6 +77,7 @@ const AppContent = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="page-animate"
           >
+            <Suspense fallback={null}>
             <Routes location={location}>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
@@ -82,19 +87,11 @@ const AppContent = () => {
               <Route path="/products/:slug" element={<ProductDetail />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
-              {industryLandingPages.map((page) => (
-                <Route
-                  key={page.path}
-                  path={page.path}
-                  element={<IndustryLandingByPath path={page.path} />}
-                />
+              {industryPaths.map((path) => (
+                <Route key={path} path={path} element={<IndustryLandingRoute />} />
               ))}
-              {regionalLandingPages.map((page) => (
-                <Route
-                  key={page.path}
-                  path={page.path}
-                  element={<RegionalLandingByPath path={page.path} />}
-                />
+              {regionalPaths.map((path) => (
+                <Route key={path} path={path} element={<RegionalLandingRoute />} />
               ))}
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
@@ -138,6 +135,7 @@ const AppContent = () => {
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>
@@ -298,9 +296,51 @@ const App = () => (
 const rootElement = document.getElementById("root")!;
 const app = <App />;
 
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(rootElement, app);
-} else {
+function preloadCurrentRoute() {
+  const path = window.location.pathname.replace(/\/$/, "") || "/";
+  if (path === "/") return Promise.resolve();
+  if ((industryPaths as readonly string[]).includes(path)) return IndustryLandingRoute.preload();
+  if ((regionalPaths as readonly string[]).includes(path)) return RegionalLandingRoute.preload();
+  if (path.startsWith("/blog/")) {
+    const slug = path.slice("/blog/".length);
+    return Promise.all([BlogPost.preload(), loadArticleBySlug(slug)]);
+  }
+  if (path.startsWith("/products/")) return ProductDetail.preload();
+  if (path.startsWith("/services/")) return ServiceDetail.preload();
+  if (path === "/locations/all") return LocationsAll.preload();
+  if (path.startsWith("/locations/")) return LocationDetail.preload();
+  const exact: Record<string, { preload: () => Promise<unknown> }> = {
+    "/about": About,
+    "/services": Services,
+    "/products": Products,
+    "/blog": Blog,
+    "/contact": Contact,
+    "/support": Support,
+    "/privacy": Privacy,
+    "/terms": Terms,
+    "/faq": FaqPage,
+    "/locations": LocationsIndex,
+    "/guide/starlink-nigeria": StarlinkGuideNigeria,
+    "/gallery": Gallery,
+    "/our-work": OurWork,
+    "/admin/login": AdminLogin,
+    "/admin/dashboard": AdminDashboard,
+    "/admin/products": AdminProducts,
+    "/admin/testimonials": AdminTestimonials,
+    "/admin/faq": AdminFAQ,
+    "/admin/blog": AdminBlog,
+  };
+  return (exact[path] ?? NotFound).preload();
+}
+
+const isSnap = typeof navigator !== "undefined" && navigator.userAgent.includes("ReactSnap");
+
+async function boot() {
+  if (isSnap) await preloadCurrentRoute();
+  if (rootElement.hasChildNodes()) {
+    hydrateRoot(rootElement, app);
+    return;
+  }
   const globalAny = window as Window & { __APP_ROOT__?: ReturnType<typeof createRoot> };
   if (!globalAny.__APP_ROOT__) {
     globalAny.__APP_ROOT__ = createRoot(rootElement);
@@ -317,3 +357,5 @@ if (rootElement.hasChildNodes()) {
   }
   globalAny.__APP_ROOT__!.render(app);
 }
+
+boot();
