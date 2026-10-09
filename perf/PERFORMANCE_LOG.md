@@ -164,3 +164,33 @@ Compared with the B5 snapshots. `/blog` in B5 was still the empty shell.
 | `/products` | 35 → 50 | 6.3 s → 3.8 s | 1.9 s → 1.3 s | 1160 KB → 559 KB | 733 KB → 138 KB |
 
 The homepage hero is `StandardDish1.w768.avif` (about 11 KB) with `fetchpriority="high"`. It is still queued behind the script on Slow 4G, so the lab LCP stays above 4 s. The price-post lab LCP rose even though that image fell from 171 KB to 19 KB: the AVIF was still in flight with the script, and Lighthouse simulated a 5.7 s download, while the old JPEG had already finished on localhost. That post’s transfer still fell by 298 KB. The first product card is still `loading="lazy"` and is the products LCP; the smaller file brought that LCP down anyway. Layout shift on the price post was 0.17, from the installer aside, the same shift seen before prerender. Titles and canonicals are unchanged. The homepage, products page, and blog index still show the same photographs.
+
+## B7 — cache headers
+
+`vercel.json` now sets `Cache-Control: public, max-age=31536000, immutable` on `/assets/*` and `/fonts/*`. Everything else stays `public, max-age=0, must-revalidate`. The lab harness forces `no-store`, so first-load Lighthouse does not measure this. After the next Vercel deploy, hashed JS/CSS and fonts should stop re-downloading on repeat visits. Confirm with `curl -sI` on a live `/assets/index-*.js` URL.
+
+## B6 — menu interaction and list DOM
+
+The mobile drawer no longer uses framer-motion. It mounts only while open. `/blog` shows 12 Nigeria guides and 9 other posts first, with Load more. `/locations/all` shows 6 cards first. Category and Load more updates use `startTransition`.
+
+Compared with B1 medians for Lighthouse. Interaction before numbers are the Stage A baseline (4× CPU).
+
+| URL | Perf | LCP | TBT | Transfer | DOM |
+| --- | --- | --- | --- | --- | --- |
+| `/` | 32 → 33 | 7.3 s → 6.6 s | 2.6 s → 2.2 s | 492 KB → 492 KB | 1067 → 1067 |
+| Offshore | 48 → 55 | 4.6 s → 4.5 s | 1.1 s → 0.5 s | 462 KB → 462 KB | 694 → 694 |
+| Lagos | 65 → 67 | 4.2 s → 3.9 s | 0.3 s → 0.3 s | 509 KB → 509 KB | 522 → 522 |
+| `/blog` | 34 → 44 | 6.6 s → 5.1 s | 2.7 s → 1.1 s | 618 KB → 558 KB | 2131 → 573 |
+| Price post | 21 → 29 | 10.5 s → 9.3 s | 1.8 s → 1.6 s | 477 KB → 477 KB | 491 → 491 |
+| `/our-work` | 48 → 49 | 3.7 s → 4.1 s | 1.8 s → 1.3 s | 528 KB → 651 KB | 663 → 663 |
+| `/products` | 50 → 61 | 3.8 s → 3.9 s | 1.3 s → 0.6 s | 559 KB → 559 KB | 547 → 547 |
+
+| Interaction | Before (baseline) | After |
+| --- | --- | --- |
+| Mobile menu | wall 4410 ms, long tasks 10295 ms, DOM 1063→1167 | wall 216 ms, long tasks 90 ms, DOM 1102→1202 |
+| Services dropdown (desktop) | wall 1091 ms, long tasks 699 ms | wall 189 ms, long tasks 0 ms |
+| Our-work filter | (timed out in baseline) | wall 111 ms, long tasks 0 ms |
+| Project lightbox | — | wall 164 ms, long tasks 66 ms |
+| Blog scroll | — | wall 145 ms, long tasks 0 ms, DOM 609 |
+
+Prerendered `/blog` HTML fell from about 392 KB to 97 KB because fewer cards are in the snapshot. Titles and canonicals are unchanged.
