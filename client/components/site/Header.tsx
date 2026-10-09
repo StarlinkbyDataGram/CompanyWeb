@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { Menu, X, Home as HomeIcon, Layers, Boxes, FileText, Mail, Phone, MessageCircle, MapPin, Info, ChevronDown, Target, ShieldCheck, Eye, Facebook, Instagram, HelpCircle, BookOpen } from "lucide-react";
 import { services } from "@/data/services";
 import { products } from "@/data/products";
-import { AnimatePresence, motion } from "framer-motion";
 
 const INDUSTRY_NAV_LINKS = [
   { to: "/starlink-offshore-maritime-installation", label: "Offshore & Maritime" },
@@ -699,20 +698,16 @@ export default function Header() {
             className="ml-auto inline-flex items-center justify-center rounded-md border border-border/60 p-1.5 text-foreground/80 lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label="Open menu"
+            aria-expanded={open}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </header>
 
-      {/* Mobile / medium menu */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+      {/* Mobile / medium menu — no framer-motion; mount only while open */}
+      {open ? (
+          <div
             className="fixed inset-x-0 bottom-0 z-40 border-t bg-background/95 backdrop-blur overflow-y-auto lg:hidden"
             style={{ top: "calc(4rem + env(safe-area-inset-top, 0px))" }}
           >
@@ -755,15 +750,8 @@ export default function Header() {
                           <ChevronDown className={cn("h-4 w-4 transition-transform", mobileOpen.services && "rotate-180")} />
                         </button>
                       </div>
-                      <AnimatePresence initial={false}>
-                        {mobileOpen.services && (
-                          <motion.div
-                            id="mobile-services"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="mt-1 overflow-hidden"
-                          >
+                      {mobileOpen.services ? (
+                          <div id="mobile-services" className="mt-1 overflow-hidden">
                             <div className="pl-6 pr-2 py-0.5 grid gap-0.5">
                               {services.map((s) => (
                                 <Link 
@@ -801,9 +789,8 @@ export default function Header() {
                                 All Services
                               </Link>
                             </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                          </div>
+                      ) : null}
                     </div>
                   );
                 }
@@ -844,15 +831,8 @@ export default function Header() {
                           <ChevronDown className={cn("h-4 w-4 transition-transform", mobileOpen.about && "rotate-180")} />
                         </button>
                       </div>
-                      <AnimatePresence initial={false}>
-                        {mobileOpen.about && (
-                          <motion.div
-                            id="mobile-about"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="mt-1 overflow-hidden"
-                          >
+                      {mobileOpen.about ? (
+                          <div id="mobile-about" className="mt-1 overflow-hidden">
                             <div className="pl-6 pr-2 py-0.5 grid gap-0.5">
                               <Link
                                 to="/about"
@@ -898,9 +878,8 @@ export default function Header() {
                                 Core Values
                               </Link>
                             </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                          </div>
+                      ) : null}
                     </div>
                   );
                 }
@@ -941,15 +920,8 @@ export default function Header() {
                           <ChevronDown className={cn("h-4 w-4 transition-transform", mobileOpen.products && "rotate-180")} />
                         </button>
                       </div>
-                      <AnimatePresence initial={false}>
-                        {mobileOpen.products && (
-                          <motion.div
-                            id="mobile-products"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="mt-1 overflow-hidden"
-                          >
+                      {mobileOpen.products ? (
+                          <div id="mobile-products" className="mt-1 overflow-hidden">
                             <div className="pl-6 pr-2 py-0.5 grid gap-0.5">
                               {primaryProducts.map((p) => (
                                 <Link 
@@ -969,9 +941,8 @@ export default function Header() {
                                 All Products
                               </Link>
                             </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                          </div>
+                      ) : null}
                     </div>
                   );
                 }
@@ -1031,9 +1002,8 @@ export default function Header() {
                 </Button>
               </div>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+      ) : null}
     </>
   );
 }

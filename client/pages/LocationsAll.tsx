@@ -1,3 +1,4 @@
+import { useMemo, useState, startTransition } from "react";
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { allLocationCards, NORTHERN_STATES_NOTICE } from "@/data/locations-all";
 import { SITE_URL } from "@/lib/site";
 
+const PAGE_SIZE = 6;
+
 export default function LocationsAll() {
+  const [visible, setVisible] = useState(PAGE_SIZE);
+  const shown = useMemo(() => allLocationCards.slice(0, visible), [visible]);
+
   const itemList = allLocationCards.map((card, idx) => ({
     "@type": "ListItem",
     position: idx + 1,
@@ -44,7 +50,7 @@ export default function LocationsAll() {
 
       <section className="py-12 md:py-16">
         <div className="container grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {allLocationCards.map((card) => (
+          {shown.map((card) => (
             <Card key={card.href} className="h-full border bg-card/80 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-xl">{card.title}</CardTitle>
@@ -62,6 +68,16 @@ export default function LocationsAll() {
             </Card>
           ))}
         </div>
+        {visible < allLocationCards.length ? (
+          <div className="container mt-8 flex justify-center">
+            <Button
+              variant="outline"
+              onClick={() => startTransition(() => setVisible((n) => n + PAGE_SIZE))}
+            >
+              Load more locations
+            </Button>
+          </div>
+        ) : null}
       </section>
 
       <section className="border-t bg-muted/30 py-10">

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, startTransition } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { blogPosts as initialBlogPosts, BlogPost } from "@/data/blog";
@@ -16,10 +16,15 @@ import { landingContainer, landingPageRoot } from "@/pages/landing/landing-class
 import BlogSearchBar from "@/components/BlogSearchBar";
 import useBlogSearch from "@/hooks/useBlogSearch";
 
+const GUIDES_PAGE_SIZE = 12;
+const POSTS_PAGE_SIZE = 9;
+
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [posts, setPosts] = useState<BlogPost[]>(initialBlogPosts);
+  const [guidesVisible, setGuidesVisible] = useState(GUIDES_PAGE_SIZE);
+  const [postsVisible, setPostsVisible] = useState(POSTS_PAGE_SIZE);
 
   useEffect(() => {
     const load = async () => {
@@ -71,11 +76,26 @@ export default function Blog() {
   const searchableArticles = useMemo(() => blogIndex.map(asSearchableArticle), []);
   const { filteredArticles, resultCount, totalCount } = useBlogSearch(searchableArticles, searchQuery);
 
-  const visibleArticles = useMemo(() => {
+  const categoryArticles = useMemo(() => {
     return selectedCategory === "All"
       ? filteredArticles
       : filteredArticles.filter((article) => article.category === selectedCategory);
   }, [selectedCategory, filteredArticles]);
+
+  const visibleArticles = useMemo(
+    () => categoryArticles.slice(0, guidesVisible),
+    [categoryArticles, guidesVisible],
+  );
+
+  const visibleRegularPosts = useMemo(
+    () => regularPosts.slice(0, postsVisible),
+    [regularPosts, postsVisible],
+  );
+
+  useEffect(() => {
+    setGuidesVisible(GUIDES_PAGE_SIZE);
+    setPostsVisible(POSTS_PAGE_SIZE);
+  }, [selectedCategory, searchQuery]);
 
   const isExpanded = (id: number) => expandedId === id;
   const toggleExpanded = (id: number) => setExpandedId((prev) => (prev === id ? null : id));
@@ -195,8 +215,10 @@ export default function Blog() {
                 key={category}
                 variant={selectedCategory === category ? "default" : "outline"}
                 onClick={() => {
-                  setSelectedCategory(category);
-                  setExpandedId(null);
+                  startTransition(() => {
+                    setSelectedCategory(category);
+                    setExpandedId(null);
+                  });
                 }}
                 className="transition-all hover:scale-105"
               >
@@ -304,15 +326,28 @@ export default function Blog() {
               </Card>
             ))}
           </div>
+          {guidesVisible < categoryArticles.length ? (
+            <div className="mt-8 flex justify-center">
+              <Button
+                variant="outline"
+                onClick={() =>
+                  startTransition(() => setGuidesVisible((n) => n + GUIDES_PAGE_SIZE))
+                }
+              >
+                Load more guides
+              </Button>
+            </div>
+          ) : null}
         </div>
       </section>
 
       <section className="py-8">
         <div className="container">
           {expandedId === null ? (
+            <>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {regularPosts.map((post, index) => (
-                <ScrollReveal key={post.id} delay={index * 0.08}>
+              {visibleRegularPosts.map((post, index) => (
+                <ScrollReveal key={post.id} delay={Math.min(index, 5) * 0.08}>
                   <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 card-hover">
                     <div className="relative overflow-hidden">
                       <Picture sizes="(max-width: 640px) 100vw, 50vw"
@@ -359,6 +394,19 @@ export default function Blog() {
                 </ScrollReveal>
               ))}
             </div>
+            {postsVisible < regularPosts.length ? (
+              <div className="mt-8 flex justify-center">
+                <Button
+                  variant="outline"
+                  onClick={() =>
+                    startTransition(() => setPostsVisible((n) => n + POSTS_PAGE_SIZE))
+                  }
+                >
+                  Load more posts
+                </Button>
+              </div>
+            ) : null}
+            </>
           ) : (
             <div className="grid gap-8 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)]">
               <div>
