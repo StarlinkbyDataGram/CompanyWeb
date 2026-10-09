@@ -61,6 +61,35 @@ function renderBlock(block: ArticleBlock, key: number) {
       </h3>
     );
   }
+  if (block.type === "table") {
+    return (
+      <div key={key} className="not-prose my-6 overflow-x-auto">
+        {block.caption ? <p className="mb-2 text-sm text-foreground/70">{block.caption}</p> : null}
+        <table className="w-full min-w-[36rem] border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b bg-primary/10">
+              {block.headers.map((header) => (
+                <th key={header} scope="col" className="px-3 py-2 font-semibold">
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row) => (
+              <tr key={row[0]} className="border-b align-top">
+                {row.map((cell, cellIndex) => (
+                  <td key={`${row[0]}-${cellIndex}`} className="px-3 py-3 leading-snug">
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
   return (
     <p key={key} className="mb-5 leading-relaxed">
       {renderParagraphWithLinks(block.text)}

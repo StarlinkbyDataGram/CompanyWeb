@@ -2,7 +2,8 @@
 export type ArticleBlock =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
-  | { type: "p"; text: string };
+  | { type: "p"; text: string }
+  | { type: "table"; caption?: string; headers: string[]; rows: string[][] };
 
 export type ArticleFaq = { question: string; answer: string };
 
@@ -18,6 +19,8 @@ export type SeoArticle = {
   date: string;
   /** Set only when the article was materially updated after publication. */
   updated?: string;
+  /** When true, the post stays out of the blog index, the public route, and the sitemap. */
+  draft?: boolean;
   readTime: string;
   category: string;
   image: string;
@@ -50,6 +53,10 @@ export function h2(text: string): ArticleBlock {
 
 export function h3(text: string): ArticleBlock {
   return { type: "h3", text };
+}
+
+export function table(headers: string[], rows: string[][], caption?: string): ArticleBlock {
+  return { type: "table", headers, rows, caption };
 }
 
 export function faqs(...items: ArticleFaq[]): ArticleFaq[] {

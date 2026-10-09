@@ -3,7 +3,7 @@ export type { SeoArticle, ArticleBlock, ArticleFaq } from "./article-types";
 export { img, blocks, p, h2, h3, faqs } from "./article-types";
 
 import type { SeoArticle } from "./article-types";
-import { blocks, faqs, h2, img, p } from "./article-types";
+import { blocks, faqs, h2, img, p, table } from "./article-types";
 import { phase1Articles } from "./articles/phase1";
 import { evergreenAArticles } from "./articles/evergreen-a";
 import { evergreenBArticles } from "./articles/evergreen-b";
@@ -255,7 +255,7 @@ const legacyArticles: SeoArticle[] = [
   },
 ];
 
-export const seoArticles2026: SeoArticle[] = [
+export const allSeoArticles2026: SeoArticle[] = [
   ...legacyArticles,
   ...phase1Articles,
   ...evergreenAArticles,
@@ -274,6 +274,9 @@ export const seoArticles2026: SeoArticle[] = [
   ...september2026SprintArticles,
   ...stage3Batch1Articles,
 ];
+
+/** Published posts only. Drafts stay in source and out of the index, the route, and the sitemap. */
+export const seoArticles2026: SeoArticle[] = allSeoArticles2026.filter((article) => !article.draft);
 
 export function getSeoArticleBySlug(slug: string) {
   return seoArticles2026.find((a) => a.slug === slug);
