@@ -38,3 +38,11 @@ Home LCP subparts (representative prerendered run): time to first byte ~0.5 s, r
 ## Not a fix
 
 No application code was changed to improve these numbers. Prerender was only run locally for measurement.
+
+## B3 — blog bodies leave the first load
+
+Before: one entry chunk, 1,863 KB raw, **566 KB gzip**.
+
+After: entry `assets/index-6O3kh_Cw.js`, 1,231 KB raw, **354 KB gzip** (286 KB Brotli). Article bodies are 18 extra chunks (4–37 KB gzip each) and load only when that post is opened. The blog index in the entry is 168 KB raw / 45 KB gzip (116 posts: title, excerpt, image, first-block search text). Homepage and `/blog` no longer download post bodies.
+
+Lighthouse for this step is recorded at the end of the B3 group, against the empty-shell baseline.

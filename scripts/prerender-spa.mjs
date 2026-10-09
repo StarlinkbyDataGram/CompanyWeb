@@ -101,6 +101,7 @@ async function prerender() {
 
   try {
     const page = await browser.newPage();
+    await page.setUserAgent("ReactSnap");
     await page.setViewport({ width: 1280, height: 800 });
     await page.setRequestInterception(true);
     page.on("request", (req) => {
@@ -117,10 +118,15 @@ async function prerender() {
       console.log(`→ Visiting ${route}`);
       try {
         await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-        await page.waitForFunction(
-          () => (document.querySelector("#root")?.innerHTML?.length ?? 0) > 200,
-          { timeout: 45000 }
-        );
+        const isArticle = route.startsWith("/blog/") && route !== "/blog";
+        if (isArticle) {
+          await page.waitForSelector('[data-article-ready="true"]', { timeout: 45000 });
+        } else {
+          await page.waitForFunction(
+            () => (document.querySelector("#root")?.innerHTML?.length ?? 0) > 200,
+            { timeout: 45000 }
+          );
+        }
         await new Promise((r) => setTimeout(r, 800));
 
         const html = await page.content();

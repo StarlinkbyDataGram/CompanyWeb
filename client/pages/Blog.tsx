@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { blogPosts as initialBlogPosts, BlogPost } from "@/data/blog";
-import { seoArticles2026 } from "@/data/blog/articles-2026";
+import { asSearchableArticle, blogIndex } from "@/data/blog/blog-index";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -39,7 +39,7 @@ export default function Blog() {
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
-    const items = [...seoArticles2026, ...posts];
+    const items = [...blogIndex, ...posts];
 
     for (const item of items) {
       if (!item?.category) continue;
@@ -67,7 +67,8 @@ export default function Blog() {
   const regularPosts = useMemo(() => filteredPosts.filter((p) => !p.featured), [filteredPosts]);
 
   const [searchQuery, setSearchQuery] = useState("");
-  const { filteredArticles, resultCount, totalCount } = useBlogSearch(seoArticles2026, searchQuery);
+  const searchableArticles = useMemo(() => blogIndex.map(asSearchableArticle), []);
+  const { filteredArticles, resultCount, totalCount } = useBlogSearch(searchableArticles, searchQuery);
 
   const visibleArticles = useMemo(() => {
     return selectedCategory === "All"

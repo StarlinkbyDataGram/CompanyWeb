@@ -1,8 +1,9 @@
-import { Fragment, useMemo } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "@/components/Seo";
 import { cropForFile } from "@/lib/image-crop";
-import { getSeoArticleBySlug } from "@/data/blog/articles-2026";
+import { getBlogIndexEntry } from "@/data/blog/blog-index";
+import { loadArticleBySlug } from "@/data/blog/load-article";
 import type { ArticleBlock } from "@/data/blog/article-types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -99,7 +100,23 @@ function renderBlock(block: ArticleBlock, key: number) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const article = slug ? getSeoArticleBySlug(slug) : undefined;
+  const entry = slug ? getBlogIndexEntry(slug) : undefined;
+  const [article, setArticle] = useState<Awaited<ReturnType<typeof loadArticleBySlug>>>(undefined);
+
+  useEffect(() => {
+    if (!slug || !entry) {
+      setArticle(undefined);
+      return;
+    }
+    let cancelled = false;
+    setArticle(undefined);
+    loadArticleBySlug(slug).then((loaded) => {
+      if (!cancelled) setArticle(loaded);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [slug, entry]);
 
   const faqSchema = useMemo(() => {
     if (!article?.faqs?.length) return null;
@@ -114,7 +131,7 @@ export default function BlogPost() {
     };
   }, [article]);
 
-  if (!article) {
+  if (!entry) {
     return (
       <div className="container py-20">
         <h1 className="text-2xl font-bold">Article not found</h1>
@@ -125,9 +142,10 @@ export default function BlogPost() {
     );
   }
 
-  const canonical = `/blog/${article.slug}`;
-  const documentTitle = article.seoTitle ?? `${article.title} | DataGram Nigeria`;
-  const dateModified = article.updated ?? article.date;
+  const view = article ?? entry;
+  const canonical = `/blog/${view.slug}`;
+  const documentTitle = view.seoTitle ?? `${view.title} | DataGram Nigeria`;
+  const dateModified = view.updated ?? view.date;
   const formatArticleDate = (iso: string) =>
     new Date(iso).toLocaleDateString("en-NG", {
       year: "numeric",
@@ -137,9 +155,9 @@ export default function BlogPost() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: article.title,
-    description: article.metaDescription,
-    datePublished: article.date,
+    headline: view.title,
+    description: view.metaDescription,
+    datePublished: view.date,
     dateModified,
     author: { "@type": "Organization", name: "DataGram Nigeria" },
     publisher: {
@@ -147,7 +165,7 @@ export default function BlogPost() {
       name: "DataGram Nigeria",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/starlinklogo.png` },
     },
-    image: article.image.startsWith("http") ? article.image : `${SITE_URL}${article.image}`,
+    image: view.image.startsWith("http") ? view.image : `${SITE_URL}${view.image}`,
     mainEntityOfPage: `${SITE_URL}${canonical}`,
     url: `${SITE_URL}${canonical}`,
   };
@@ -158,66 +176,65 @@ export default function BlogPost() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: article.title, item: `${SITE_URL}${canonical}` },
+      { "@type": "ListItem", position: 3, name: view.title, item: `${SITE_URL}${canonical}` },
     ],
   };
 
   const schema = [articleSchema, breadcrumb, ...(faqSchema ? [faqSchema] : [])];
-  const bodyBlocks: ArticleBlock[] =
-    article.blocks ??
-    (article.paragraphs?.map((text) => ({ type: "p" as const, text })) ?? []);
-  const heroImageComment =
-    article.imageComment ?? `IMAGE: ${article.imageFile} — ${article.imageAlt}`;
+  const bodyBlocks: ArticleBlock[] = article
+    ? (article.blocks ?? article.paragraphs?.map((text) => ({ type: "p" as const, text })) ?? [])
+    : [];
+  const heroImageComment = view.imageComment ?? `IMAGE: ${view.imageFile} — ${view.imageAlt}`;
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-background to-secondary/20 ${landingPageRoot}`}>
       <Seo
         title={documentTitle}
-        description={article.metaDescription}
+        description={view.metaDescription}
         canonical={canonical}
-        image={article.image.startsWith("/") ? article.image : DEFAULT_OG_IMAGE}
+        image={view.image.startsWith("/") ? view.image : DEFAULT_OG_IMAGE}
         type="article"
-        publishedTime={article.date}
-        updatedTime={article.updated}
+        publishedTime={view.date}
+        updatedTime={view.updated}
         schema={schema}
       />
       <div className={`${landingContainer} py-12 md:py-16`}>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_min(100%,280px)]">
-          <article className="min-w-0">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{article.category}</p>
-            <h1 className="mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl">{article.title}</h1>
+          <article className="min-w-0" data-article-ready={article ? "true" : "false"}>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">{view.category}</p>
+            <h1 className="mt-3 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl">{view.title}</h1>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-foreground/60">
               <span className="flex items-center gap-1">
                 <User className="h-4 w-4" />
-                {article.author}
+                {view.author}
               </span>
               <span className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
-                {formatArticleDate(article.date)}
+                {formatArticleDate(view.date)}
               </span>
-              {article.updated ? (
+              {view.updated ? (
                 <span className="flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
-                  Last updated {formatArticleDate(article.updated)}
+                  Last updated {formatArticleDate(view.updated)}
                 </span>
               ) : null}
               <span className="flex items-center gap-1">
                 <Clock className="h-4 w-4" />
-                {article.readTime}
+                {view.readTime}
               </span>
             </div>
             <div className="mt-8 aspect-[16/9] w-full overflow-hidden rounded-2xl border">
               {/* IMAGE: hero — see data-dg-placement for filename and reason */}
               <img
-                src={article.image}
-                alt={article.imageAlt}
-                data-dg-image={article.imageFile}
+                src={view.image}
+                alt={view.imageAlt}
+                data-dg-image={view.imageFile}
                 data-dg-placement={heroImageComment}
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  objectPosition: cropForFile(article.imageFile),
+                  objectPosition: cropForFile(view.imageFile),
                 }}
               />
             </div>
@@ -225,13 +242,13 @@ export default function BlogPost() {
               {bodyBlocks.map((block, i) => renderBlock(block, i))}
             </div>
 
-            {article.cta ? (
+            {article?.cta ? (
               <div className="mt-10 rounded-2xl border bg-card p-6 text-foreground/85">
                 {renderParagraphWithLinks(article.cta)}
               </div>
             ) : null}
 
-            {article.faqs && article.faqs.length > 0 ? (
+            {article?.faqs && article.faqs.length > 0 ? (
               <section className="mt-12">
                 <h2 className="text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>
                 <Accordion type="single" collapsible className="mt-6 w-full rounded-2xl border bg-card p-2 sm:p-3">
@@ -260,14 +277,14 @@ export default function BlogPost() {
             <Card className="lg:sticky lg:top-24">
               <CardHeader>
                 <CardTitle className="text-lg">Need an installer?</CardTitle>
-                <CardDescription>{article.serviceCta.blurb}</CardDescription>
+                <CardDescription>{view.serviceCta.blurb}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button
                   asChild
                   className="h-auto min-h-10 w-full whitespace-normal px-3 py-2.5 text-center text-sm leading-snug"
                 >
-                  <Link to={article.serviceCta.href}>{article.serviceCta.label}</Link>
+                  <Link to={view.serviceCta.href}>{view.serviceCta.label}</Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full">
                   <Link to="/contact">Contact DataGram</Link>

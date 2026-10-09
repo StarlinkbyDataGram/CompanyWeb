@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cropFromSrc } from "@/lib/image-crop";
-import { getSeoArticleBySlug } from "@/data/blog/articles-2026";
+import { getBlogIndexEntry } from "@/data/blog/blog-index";
 
 /** Homepage teaser: evergreen guides with strong local install photos. */
 const TEASER_SLUGS = [
@@ -36,7 +36,7 @@ export default function BlogTeaser() {
 
   const topPosts = useMemo(() => {
     return TEASER_SLUGS.map((slug) => {
-      const article = getSeoArticleBySlug(slug);
+      const article = getBlogIndexEntry(slug);
       if (!article) return null;
       const cover = TEASER_COVER[slug];
       return {
