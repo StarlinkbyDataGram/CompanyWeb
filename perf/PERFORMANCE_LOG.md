@@ -146,3 +146,21 @@ Empty-shell medians from B2, compared with these snapshots. `/blog` is still the
 | `/products` | 42 → 35 | 6.5 s → 6.3 s | 1.2 s → 1.9 s | 1151 KB → 1160 KB |
 
 The hero is in the first HTML. Homepage resource load delay fell from 15.2 s to 35 ms. The file then took 4.7 s because it shares the simulated Slow 4G link with the script. One homepage run painted in 2.0 s. Checked pages (`/`, `/products`, the price post, and an unknown URL) logged no hydration mismatch. The unknown URL showed the 404 page.
+
+## B1 — responsive images
+
+Every raster in use now has AVIF and WebP copies at 480, 768, 1280, and 1920 px, without upscaling, plus one recompressed fallback at the original URL. Originals live in `media-originals/` (188 files). The public folder is 1,086 rasters and 36.8 MB, down from 189 files and 54.4 MB, and no public raster is over 250 KB. Pages render `picture` with `srcset` and `sizes`. The lightbox image mounts only when the dialog opens. The header Services and Products previews mount on first hover. `/blog` is prerendered with the other 175 routes (176 of 176).
+
+Compared with the B5 snapshots. `/blog` in B5 was still the empty shell.
+
+| URL | Perf | LCP | TBT | Transfer | Images |
+| --- | --- | --- | --- | --- | --- |
+| `/` | 35 → 32 | 9.1 s → 7.3 s | 1.6 s → 2.6 s | 1406 KB → 492 KB | 971 KB → 63 KB |
+| Offshore | 44 → 48 | 6.4 s → 4.6 s | 0.8 s → 1.1 s | 910 KB → 462 KB | 479 KB → 37 KB |
+| Lagos | 50 → 65 | 6.0 s → 4.2 s | 0.5 s → 0.3 s | 795 KB → 509 KB | 366 KB → 87 KB |
+| `/blog` | 35 → 34 | 7.6 s → 6.6 s | 2.1 s → 2.7 s | 1171 KB → 618 KB | 751 KB → 179 KB |
+| Price post | 41 → 21 | 8.1 s → 10.5 s | 1.1 s → 1.8 s | 775 KB → 477 KB | 319 KB → 27 KB |
+| `/our-work` | 44 → 48 | 6.7 s → 3.7 s | 0.7 s → 1.8 s | 1193 KB → 528 KB | 766 KB → 108 KB |
+| `/products` | 35 → 50 | 6.3 s → 3.8 s | 1.9 s → 1.3 s | 1160 KB → 559 KB | 733 KB → 138 KB |
+
+The homepage hero is `StandardDish1.w768.avif` (about 11 KB) with `fetchpriority="high"`. It is still queued behind the script on Slow 4G, so the lab LCP stays above 4 s. The price-post lab LCP rose even though that image fell from 171 KB to 19 KB: the AVIF was still in flight with the script, and Lighthouse simulated a 5.7 s download, while the old JPEG had already finished on localhost. That post’s transfer still fell by 298 KB. The first product card is still `loading="lazy"` and is the products LCP; the smaller file brought that LCP down anyway. Layout shift on the price post was 0.17, from the installer aside, the same shift seen before prerender. Titles and canonicals are unchanged. The homepage, products page, and blog index still show the same photographs.
