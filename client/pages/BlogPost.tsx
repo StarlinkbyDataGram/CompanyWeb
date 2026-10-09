@@ -4,8 +4,13 @@ import Seo from "@/components/Seo";
 import Picture from "@/components/site/Picture";
 import { cropForFile } from "@/lib/image-crop";
 import { getBlogIndexEntry } from "@/data/blog/blog-index";
-import { loadArticleBySlug } from "@/data/blog/load-article";
-import type { ArticleBlock } from "@/data/blog/article-types";
+import {
+  loadArticleBySlug,
+  peekCachedArticle,
+  readPrerenderedArticle,
+  PRERENDER_ARTICLE_SCRIPT_ID,
+} from "@/data/blog/load-article";
+import type { ArticleBlock, SeoArticle } from "@/data/blog/article-types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -99,10 +104,15 @@ function renderBlock(block: ArticleBlock, key: number) {
   );
 }
 
+function initialArticle(slug: string | undefined): SeoArticle | undefined {
+  if (!slug) return undefined;
+  return peekCachedArticle(slug) ?? readPrerenderedArticle(slug);
+}
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const entry = slug ? getBlogIndexEntry(slug) : undefined;
-  const [article, setArticle] = useState<Awaited<ReturnType<typeof loadArticleBySlug>>>(undefined);
+  const [article, setArticle] = useState<SeoArticle | undefined>(() => initialArticle(slug));
 
   useEffect(() => {
     if (!slug || !entry) {
@@ -110,7 +120,12 @@ export default function BlogPost() {
       return;
     }
     let cancelled = false;
-    setArticle(undefined);
+    const cached = peekCachedArticle(slug) ?? readPrerenderedArticle(slug);
+    if (cached) {
+      setArticle(cached);
+    } else {
+      setArticle((prev) => (prev?.slug === slug ? prev : undefined));
+    }
     loadArticleBySlug(slug).then((loaded) => {
       if (!cancelled) setArticle(loaded);
     });
@@ -118,6 +133,20 @@ export default function BlogPost() {
       cancelled = true;
     };
   }, [slug, entry]);
+
+  // Leave the body in the prerendered HTML so the next visit hydrates without collapsing the aside.
+  useEffect(() => {
+    if (!article || typeof document === "undefined") return;
+    if (!navigator.userAgent.includes("ReactSnap")) return;
+    let el = document.getElementById(PRERENDER_ARTICLE_SCRIPT_ID) as HTMLScriptElement | null;
+    if (!el) {
+      el = document.createElement("script");
+      el.type = "application/json";
+      el.id = PRERENDER_ARTICLE_SCRIPT_ID;
+      document.body.appendChild(el);
+    }
+    el.textContent = JSON.stringify(article);
+  }, [article]);
 
   const faqSchema = useMemo(() => {
     if (!article?.faqs?.length) return null;
@@ -241,33 +270,42 @@ export default function BlogPost() {
                 }}
               />
             </div>
-            <div className="prose prose-lg mt-10 max-w-none text-foreground/85">
-              {bodyBlocks.map((block, i) => renderBlock(block, i))}
-            </div>
+            {article ? (
+              <>
+                <div className="prose prose-lg mt-10 max-w-none text-foreground/85">
+                  {bodyBlocks.map((block, i) => renderBlock(block, i))}
+                </div>
 
-            {article?.cta ? (
-              <div className="mt-10 rounded-2xl border bg-card p-6 text-foreground/85">
-                {renderParagraphWithLinks(article.cta)}
-              </div>
-            ) : null}
+                {article.cta ? (
+                  <div className="mt-10 rounded-2xl border bg-card p-6 text-foreground/85">
+                    {renderParagraphWithLinks(article.cta)}
+                  </div>
+                ) : null}
 
-            {article?.faqs && article.faqs.length > 0 ? (
-              <section className="mt-12">
-                <h2 className="text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>
-                <Accordion type="single" collapsible className="mt-6 w-full rounded-2xl border bg-card p-2 sm:p-3">
-                  {article.faqs.map((faq, idx) => (
-                    <AccordionItem key={faq.question} value={`faq-${idx}`} className="rounded-xl border-none px-1 sm:px-2">
-                      <AccordionTrigger className="py-4 text-left text-sm font-semibold hover:no-underline sm:text-base [&[data-state=open]]:text-primary">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="pb-4 text-sm leading-relaxed text-foreground/80">
-                        {renderParagraphWithLinks(faq.answer)}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </section>
-            ) : null}
+                {article.faqs && article.faqs.length > 0 ? (
+                  <section className="mt-12">
+                    <h2 className="text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>
+                    <Accordion type="single" collapsible className="mt-6 w-full rounded-2xl border bg-card p-2 sm:p-3">
+                      {article.faqs.map((faq, idx) => (
+                        <AccordionItem key={faq.question} value={`faq-${idx}`} className="rounded-xl border-none px-1 sm:px-2">
+                          <AccordionTrigger className="py-4 text-left text-sm font-semibold hover:no-underline sm:text-base [&[data-state=open]]:text-primary">
+                            {faq.question}
+                          </AccordionTrigger>
+                          <AccordionContent className="pb-4 text-sm leading-relaxed text-foreground/80">
+                            {renderParagraphWithLinks(faq.answer)}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
+                  </section>
+                ) : null}
+              </>
+            ) : (
+              <div
+                className="mt-10 min-h-[70vh] rounded-2xl border border-dashed border-border/60 bg-muted/20"
+                aria-hidden
+              />
+            )}
 
             <div className="mt-10">
               <Button asChild variant="outline">
@@ -276,25 +314,30 @@ export default function BlogPost() {
             </div>
           </article>
 
-          <aside>
-            <Card className="lg:sticky lg:top-24">
-              <CardHeader>
-                <CardTitle className="text-lg">Need an installer?</CardTitle>
-                <CardDescription>{view.serviceCta.blurb}</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <Button
-                  asChild
-                  className="h-auto min-h-10 w-full whitespace-normal px-3 py-2.5 text-center text-sm leading-snug"
-                >
-                  <Link to={view.serviceCta.href}>{view.serviceCta.label}</Link>
-                </Button>
-                <Button asChild variant="outline" className="w-full">
-                  <Link to="/contact">Contact DataGram</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </aside>
+          {/* Mount the CTA only with the body so it is not painted under the hero then pushed down. */}
+          {article ? (
+            <aside className="min-h-[260px]">
+              <Card className="lg:sticky lg:top-24">
+                <CardHeader>
+                  <CardTitle className="text-lg">Need an installer?</CardTitle>
+                  <CardDescription>{view.serviceCta.blurb}</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <Button
+                    asChild
+                    className="h-auto min-h-10 w-full whitespace-normal px-3 py-2.5 text-center text-sm leading-snug"
+                  >
+                    <Link to={view.serviceCta.href}>{view.serviceCta.label}</Link>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/contact">Contact DataGram</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </aside>
+          ) : (
+            <aside className="hidden min-h-[260px] lg:block" aria-hidden />
+          )}
         </div>
       </div>
     </div>

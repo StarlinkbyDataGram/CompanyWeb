@@ -102,7 +102,7 @@ export default function ElfsightGoogleReviews() {
 
   return (
     <div className="mx-auto flex w-full max-w-[1100px] justify-center">
-      <div ref={containerRef} className="w-full min-h-[280px]">
+      <div ref={containerRef} className="w-full min-h-[360px]">
         <div className={`elfsight-app-${widgetId}`} data-elfsight-app-lazy />
       </div>
     </div>

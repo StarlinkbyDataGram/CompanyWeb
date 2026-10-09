@@ -5,6 +5,29 @@ import { getBlogIndexEntry } from "./blog-index";
  * One chunk per phase file. The blog index stays in the first load;
  * a post body is fetched only when that post is opened.
  */
+const articleCache = new Map<string, SeoArticle>();
+
+/** Snapshot id written during prerender so hydration can reuse the body without a layout jump. */
+export const PRERENDER_ARTICLE_SCRIPT_ID = "prerender-article-data";
+
+export function peekCachedArticle(slug: string): SeoArticle | undefined {
+  return articleCache.get(slug);
+}
+
+export function readPrerenderedArticle(slug: string): SeoArticle | undefined {
+  if (typeof document === "undefined") return undefined;
+  const el = document.getElementById(PRERENDER_ARTICLE_SCRIPT_ID);
+  if (!el?.textContent) return undefined;
+  try {
+    const data = JSON.parse(el.textContent) as SeoArticle;
+    if (data?.slug !== slug) return undefined;
+    articleCache.set(slug, data);
+    return data;
+  } catch {
+    return undefined;
+  }
+}
+
 const loaders: Record<string, () => Promise<SeoArticle[]>> = {
   legacy: () => import("./articles/legacy").then((mod) => mod.legacyArticles),
   phase1: () => import("./articles/phase1").then((mod) => mod.phase1Articles),
@@ -30,10 +53,14 @@ const loaders: Record<string, () => Promise<SeoArticle[]>> = {
 };
 
 export async function loadArticleBySlug(slug: string): Promise<SeoArticle | undefined> {
+  const cached = articleCache.get(slug);
+  if (cached) return cached;
   const entry = getBlogIndexEntry(slug);
   if (!entry) return undefined;
   const load = loaders[entry.module];
   if (!load) return undefined;
   const articles = await load();
-  return articles.find((article) => article.slug === slug);
+  const article = articles.find((item) => item.slug === slug);
+  if (article) articleCache.set(slug, article);
+  return article;
 }
