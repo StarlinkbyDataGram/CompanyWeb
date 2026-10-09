@@ -4,17 +4,18 @@ import { blocks, faqs, h2, h3, img, p } from "../article-types";
 export const futureAArticles: SeoArticle[] = [
   {
     slug: "amazon-kuiper-vs-starlink-2027-nigeria",
-    title: "Amazon Kuiper vs. Starlink: What the 2027 Rivalry Means for Nigeria",
+    title: "Amazon Leo vs. Starlink: What the 2027 Rivalry Means for Nigeria",
     excerpt:
-      "Kuiper's launch cadence, confirmed service areas, and how a second LEO constellation could change pricing and redundancy for Nigerian buyers — without hype.",
+      "Amazon Leo was formerly Project Kuiper. What is confirmed, what is still open for Nigeria, and why this page does not name a launch date or a market share.",
     metaDescription:
-      "Amazon Kuiper vs Starlink Nigeria 2027: factual Kuiper status, launch timeline, and what a second LEO operator means for Nigerian internet buyers.",
+      "Amazon Leo vs Starlink for Nigeria. The constellation was formerly Project Kuiper. No Nigeria launch date or market share is stated here.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "12 min read",
     category: "Future Trend",
     image: img("blog/amazon-kuiper-vs-starlink-2027-nigeria.jpg"),
-    imageAlt: "LEO satellite constellation comparison — Starlink and Amazon Kuiper outlook for Nigeria",
+    imageAlt: "LEO satellite constellation comparison — Starlink and Amazon Leo outlook for Nigeria",
     imageFile: "blog/amazon-kuiper-vs-starlink-2027-nigeria.jpg",
     featured: true,
     serviceCta: {
@@ -23,49 +24,49 @@ export const futureAArticles: SeoArticle[] = [
       blurb: "Dual-path WAN and constellation-aware failover design for Nigerian offices and remote sites.",
     },
     blocks: blocks(
-      p("Amazon Kuiper vs Starlink is no longer a slide-deck fantasy for Nigerian procurement teams. Project Kuiper — Amazon's low-Earth-orbit broadband constellation — has confirmed prototype launches, disclosed production satellite designs, and signed launch contracts with multiple providers. Starlink, meanwhile, already serves Nigerian residential and business users with hardware checkout, local installers, and documented field performance. The 2027 question is not who wins Twitter arguments; it is whether Nigeria gets a second credible LEO option for redundancy, price pressure, and enterprise diversity."),
-      p("This article separates confirmed Kuiper milestones from speculation, maps what a two-constellation market could mean for Lagos offices and delta camps, and explains why 'wait for Kuiper' is sometimes rational and sometimes an excuse to delay a site survey. We install Starlink nationwide through [home](/starlink-home-installation) and [enterprise](/starlink-enterprise-nigeria) scopes — we track Kuiper because our clients ask about failover, not because we sell Amazon hardware today."),
-      h2("What Amazon Kuiper has confirmed as of 2026"),
+      p("Amazon Leo vs Starlink is no longer a slide-deck fantasy for Nigerian procurement teams. Amazon Leo (formerly Project Kuiper) — Amazon's low-Earth-orbit broadband constellation — has confirmed prototype launches, disclosed production satellite designs, and signed launch contracts with multiple providers. Starlink, meanwhile, already serves Nigerian residential and business users with hardware checkout, local installers, and documented field performance. This page does not name a Nigeria launch date or a share of the market. The useful question is whether a second LEO option would add redundancy, and that answer is still open."),
+      p("This article separates confirmed Amazon Leo milestones from speculation, maps what a two-constellation market could mean for Lagos offices and delta camps, and explains why 'wait for Amazon Leo' is sometimes rational and sometimes an excuse to delay a site survey. We install Starlink nationwide through [home](/starlink-home-installation) and [enterprise](/starlink-enterprise-nigeria) scopes — we track Amazon Leo because our clients ask about failover, not because we sell Amazon hardware today."),
+      h2("What Amazon Leo has confirmed as of 2026"),
       p("Amazon has publicly stated plans for a constellation of more than 3,000 satellites in LEO, with FCC authorization for a defined subset already in place. Prototype satellites have flown on Atlas V and other launch vehicles; production units are under assembly with disclosed Ka-band architecture aimed at consumer and enterprise terminals. Amazon has announced partnerships with telecom operators in several regions for backhaul and distribution — details vary by country and are not yet a Nigeria retail checkout."),
-      p("Confirmed does not mean 'available in Lagos next quarter.' Kuiper's commercial service rollouts have started in limited geographies tied to regulatory clearance, ground infrastructure, and terminal supply. Nigeria-specific retail availability, NCC licensing alignment, and local installer ecosystems remain open items — check official Amazon and regulator announcements rather than reseller rumours."),
+      p("Confirmed does not mean 'available in Lagos next quarter.' Amazon Leo's commercial service rollouts have started in limited geographies tied to regulatory clearance, ground infrastructure, and terminal supply. Nigeria-specific retail availability, NCC licensing alignment, and local installer ecosystems remain open items — check official Amazon and regulator announcements rather than reseller rumours."),
       h3("What remains unconfirmed for Nigeria"),
-      p("Localized naira pricing, official Nigerian distributor networks, maritime terminals for Gulf of Guinea vessels, and estate-grade installation standards are not yet documented for Kuiper the way they are for Starlink's active Nigerian user base. Predicting exact 2027 street prices in naira requires assumptions about FX, import duty, and competition — useful for scenario planning, not purchase orders."),
+      p("Localized naira pricing, official Nigerian distributor networks, maritime terminals for Gulf of Guinea vessels, and estate-grade installation standards are not yet documented for Amazon Leo the way they are for Starlink's active Nigerian user base. Predicting exact 2027 street prices in naira requires assumptions about FX, import duty, and competition — useful for scenario planning, not purchase orders."),
       h2("Starlink's head start in the Nigerian market"),
-      p("Starlink operates with established hardware SKUs (Standard, Mini, High Performance), mobility and maritime tiers, and a growing base of professional installers who document grounding, estate conduit, and handover tests. Nigerian users can verify plan eligibility on [Starlink's official map](https://www.starlink.com/map) before buying. Field ranges in healthy conditions commonly land around 50–1,000 Mbps download, 10–100 Mbps upload, and 20–40 ms latency — weather and Wi-Fi still dominate complaints."),
+      p("Starlink operates with established hardware SKUs (Standard, Mini, High Performance), mobility and maritime tiers, and a growing base of professional installers who document grounding, estate conduit, and handover tests. Nigerian users can verify plan eligibility on [Starlink's official map](https://www.starlink.com/map) before buying. A field range around 50–1,000 Mbps download, 10–100 Mbps upload, and 20–40 ms latency is indicative, not a guarantee. Weather and Wi-Fi still dominate complaints."),
       p("That operational maturity matters for enterprises comparing 'second operator soon' against 'primary link offline today.' [Lagos](/starlink-installation-lagos), [Abuja](/starlink-installation-abuja), and [Port Harcourt](/starlink-installation-rivers-state-port-harcourt) deployments already mix Starlink with fibre or microwave in dual-WAN configs."),
-      h2("How a 2027 Kuiper–Starlink rivalry could help Nigerian buyers"),
+      h2("How a 2027 Amazon Leo–Starlink rivalry could help Nigerian buyers"),
       p("Competition historically pressures monthly subscription bands and spurs hardware iteration — see how Starlink Mini and business tiers evolved once user density grew. A second LEO operator could offer alternate satellites when one constellation congests a beam during evening peak in dense neighbourhoods. Banks, NGOs, and oilfield camps care about path diversity: two dishes, two constellations, one policy-routed firewall."),
-      p("Redundancy is the enterprise story. Residential users may see modest price movement; enterprises see SLA design. If Kuiper launches Nigerian service with business terms, expect procurement to run pilots beside existing Starlink — not rip-and-replace on day one."),
+      p("Redundancy is the enterprise story. Residential users may see modest price movement; enterprises see SLA design. If Amazon Leo launches Nigerian service with business terms, expect procurement to run pilots beside existing Starlink — not rip-and-replace on day one."),
       h2("Technical comparison — what we know vs what we guess"),
-      p("Both systems use LEO architectures to beat geostationary latency. Starlink's phased-array consumer terminals are field-proven in Nigerian rain fade conditions. Kuiper's production terminal designs emphasize compact form factors and enterprise gateways — performance claims await independent Nigerian field tests. Do not assume identical obstruction tolerance; each dish's sky window and mount strategy must be surveyed on your roof, not on a brochure."),
+      p("Both systems use LEO architectures to beat geostationary latency. Starlink's phased-array consumer terminals are field-proven in Nigerian rain fade conditions. Amazon Leo's production terminal designs emphasize compact form factors and enterprise gateways — performance claims await independent Nigerian field tests. Do not assume identical obstruction tolerance; each dish's sky window and mount strategy must be surveyed on your roof, not on a brochure."),
       p("Interference and spectrum coordination between constellations is an ITU and operator engineering problem, not a consumer setting. For buyers, the practical test is simultaneous speed and latency under your compound's trees and harmattan dust — not theoretical peak Mbps."),
       h2("Regulatory and import reality in Nigeria"),
-      p("Any LEO operator serving Nigerian customers must align with NCC type approval, landing rights, and consumer protection frameworks evolving alongside satellite policy. Hardware imports incur duty and VAT — HS classification for satellite terminals matters for landed cost. Kuiper and Starlink kits crossing Nigerian customs will face the same macroeconomic FX environment; see our [import tax forecast guide](/blog/satellite-hardware-import-tax-tariff-nigeria-forecast) for budgeting framing, not legal advice."),
-      h2("Should you wait for Kuiper in 2026–2027?"),
+      p("Any LEO operator serving Nigerian customers must align with NCC type approval, landing rights, and consumer protection frameworks evolving alongside satellite policy. Hardware imports incur duty and VAT — HS classification for satellite terminals matters for landed cost. Amazon Leo and Starlink kits crossing Nigerian customs will face the same macroeconomic FX environment; see our [import tax forecast guide](/blog/satellite-hardware-import-tax-tariff-nigeria-forecast) for budgeting framing, not legal advice."),
+      h2("Should you wait for Amazon Leo in 2026–2027?"),
       p("Wait if your only need is secondary redundancy and you already have acceptable primary connectivity with a six-month pilot window. Do not wait if you are losing revenue, clinical uptime, or staff retention today because your link fails every generator changeover. Install what solves the outage now; architect router policies so a second constellation can plug in later via another WAN port."),
       p("Remote compounds in [Delta State](/starlink-installation-delta-state) and creek camps in Bayelsa rarely benefit from paralysis-by-competition — they benefit from clear sky, correct plan class, and documented grounding before lightning season."),
     ),
     cta: "Planning for one constellation or two? [Contact DataGram](/contact) for dual-WAN surveys and [enterprise handover](/starlink-enterprise-nigeria) that leave a port open for the next operator — without delaying today's fix.",
     faqs: faqs(
       {
-        question: "Is Amazon Kuiper available in Nigeria today?",
+        question: "Is Amazon Leo available in Nigeria today?",
         answer:
-          "As of mid-2026, Kuiper commercial service is rolling out in limited markets. Nigeria-specific retail availability and NCC-aligned service announcements should be verified on official Amazon and regulator channels — not third-party preorders.",
+          "As of mid-2026, Amazon Leo commercial service is rolling out in limited markets. Nigeria-specific retail availability and NCC-aligned service announcements should be verified on official Amazon and regulator channels — not third-party preorders.",
       },
       {
-        question: "Will Kuiper be cheaper than Starlink in Nigeria?",
+        question: "Will Amazon Leo be cheaper than Starlink in Nigeria?",
         answer:
           "Unknown until both operators publish Nigerian checkout and local landed costs. Competition may pressure pricing, but hardware import duty, FX, and beam capacity still set floors.",
       },
       {
-        question: "Can I use Starlink and Kuiper on the same network?",
+        question: "Can I use Starlink and Amazon Leo on the same network?",
         answer:
           "Enterprise firewalls with dual-WAN or SD-WAN can policy-route across two satellite paths if each has appropriate terminals and plans. Design VLANs and failover order during survey.",
       },
       {
-        question: "Does DataGram install Kuiper?",
+        question: "Does DataGram install Amazon Leo?",
         answer:
-          "We install and document Starlink today and track Kuiper for enterprise architecture clients. When Kuiper hardware and Nigerian service terms are official, installation scope will mirror our existing roof, maritime, and estate standards.",
+          "We install and document Starlink today and track Amazon Leo for enterprise architecture clients. When Amazon Leo hardware and Nigerian service terms are official, installation scope will mirror our existing roof, maritime, and estate standards.",
       },
       {
         question: "Which constellation is better for Nigerian rain fade?",

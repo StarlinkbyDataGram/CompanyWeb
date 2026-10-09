@@ -714,7 +714,7 @@
     "CTA": "/starlink-priority-plan-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Turn the data-cap article into the tier explainer. 50GB is a Global Priority block, not Ocean Mode. Do not invent naira prices for 500GB, 1TB or 2TB. Bank angle: Build a simple usage calculator for office, vessel and remote-site scenarios."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing URL updated as the tier explainer. 50 GB is a Global Priority block, not Ocean Mode. 500 GB, 1 TB and 2 TB are named as checkout options with no naira price."
   },
   {
     "id": 23,
@@ -941,7 +941,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right review URL. Refresh capacity wording already partly done in Stage 1. Do not change ₦669,000 or the slug. Bank angle: Use actual Nigerian pricing, capacity restrictions and alternatives instead of generic praise."
+    "notes": "Stage 3 Batch 5, 9 October 2026: capacity sentence added. A kit does not create a residential slot. Slug stays 669000. Historical totals were not recalculated."
   },
   {
     "id": 30,
@@ -1038,7 +1038,7 @@
     "CTA": "/starlink-installation-lagos",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Lagos placement is this article plus the Lagos landing. Do not add a third Lagos install URL. Bank angle: Discuss rooftops, compounds, water tanks, trees, neighbouring structures and safe mounting."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing Lagos high-rise URL answers placement. Lagos landing stays the booking page. No third Lagos URL. Speed range labelled indicative."
   },
   {
     "id": 33,
@@ -1071,7 +1071,7 @@
     "CTA": "/starlink-installation-abuja",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Add placement to the existing Abuja estates article. Lugbe/Kubwa stays a suburb article. Landing owns the commercial query. Bank angle: Same framework with Abuja-specific building and rooftop considerations."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing Abuja estates URL answers placement. Lugbe/Kubwa stays the suburb article. Labour band unchanged."
   },
   {
     "id": 34,
@@ -1137,7 +1137,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Roof, pole and ground belong in the existing mounts article. Bank cites about 5.4K/mo global for 'starlink mount'. That is a global benchmark, not Nigeria volume. Bank angle: Compare roof, pole and ground placement, focusing on safety and obstruction reduction."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing mounts URL opens with roof, parapet or pole, and ground. No mount prices added."
   },
   {
     "id": 36,
@@ -1362,7 +1362,7 @@
     "CTA": "/starlink-home-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right solar URL. Refresh load math only from documented wattage. Link the backup article. Bank angle: Show how solar, battery, inverter and load management fit together."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing solar URL. Watt figures already on the page are labelled planning bands. No new watts. Linked to the national backup article."
   },
   {
     "id": 43,
@@ -1620,7 +1620,7 @@
     "CTA": "/starlink-repair-relocation-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right status article. Red-light and reboot articles stay separate because the symptoms differ. Bank angle: Turn official app status messages into a concise diagnostic guide."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing URL distinguishes Searching from Offline. Red-light and reboot articles stay separate."
   },
   {
     "id": 51,
@@ -1749,7 +1749,7 @@
     "CTA": "/starlink-fleet-management-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right article. Point it at the fleet landing. Do not create a second multi-branch URL. Bank angle: Discuss fleet management, dashboard visibility and policy consistency."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing URL. One terminal per branch. Fleet landing stays the commercial page. No second URL."
   },
   {
     "id": 55,
@@ -1844,7 +1844,7 @@
     "CTA": "/starlink-enterprise-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Expand the existing security article toward business controls. A second cybersecurity URL would split the intent. Bank angle: Cover Wi-Fi security, segmentation, VPN, admin control and physical security."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing security URL opens with guest separation, cameras and tills off the staff network, and a locked router. No exploit procedure."
   },
   {
     "id": 58,
@@ -2101,7 +2101,7 @@
     "CTA": "/starlink-enterprise-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Right URL. Refresh upload, power and recording-at-the-edge. Do not promise a bitrate. Bank angle: Cover upstream capacity, VPN/security, power and edge recording."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing CCTV URL. Record locally. Upload ranges and camera-count examples labelled as illustrations, not a bitrate promise."
   },
   {
     "id": 66,
@@ -2677,7 +2677,7 @@
     "CTA": "/starlink-offshore-maritime-installation",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Marine hardware comparison already exists. Refresh durability and power. Do not publish an unverified 400 Mbps or gigabit claim. Bank angle: Cover durability, environmental ratings, power and network integration."
+    "notes": "Stage 3 Batch 5, 9 October 2026: existing maritime hardware URL. Standard for a calm berth or shore; Flat High Performance when the vessel moves. No 400 Mbps, gigabit, or Performance Kit price."
   },
   {
     "id": 84,
@@ -3095,7 +3095,7 @@
     "CTA": "/guide/starlink-nigeria",
     "currentStatus": "existing",
     "lastReviewed": "2026-10-08",
-    "notes": "Update the body to the Amazon Leo name. Keep the Kuiper slug so the URL does not change. Do not predict market share. OneWeb article stays a separate competitor. Bank angle: Use the current Amazon Leo name and discuss competition without predicting market share."
+    "notes": "Stage 3 Batch 5, 9 October 2026: visible name is Amazon Leo, formerly Project Kuiper. Slug and image filename stay amazon-kuiper. No Nigeria launch date or market share."
   },
   {
     "id": 97,

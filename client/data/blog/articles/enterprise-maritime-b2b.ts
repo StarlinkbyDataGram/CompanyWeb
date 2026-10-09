@@ -85,11 +85,12 @@ export const enterpriseMaritimeB2bArticles: SeoArticle[] = [
     slug: "manage-starlink-multiple-branch-offices-nigeria",
     title: "Managing Starlink Across Multiple Branch Offices in Nigeria",
     excerpt:
-      "How IT managers run Starlink at five or more Nigerian locations without drowning in separate apps, invoices, and fault tickets.",
+      "Each branch needs its own dish and subscription. What you can centralise is who orders, renews, and answers the fault.",
     metaDescription:
-      "Running Starlink at 5 or more locations across Nigeria? Here's how to manage accounts, billing, and faults without losing your mind.",
+      "Starlink at several Nigerian branches: one terminal per site, and how fleet management keeps the accounts in one place.",
     author: "DataGram Nigeria",
     date: "2026-07-11",
+    updated: "2026-10-09",
     readTime: "11 min read",
     category: "Enterprise",
     image: img("blog/manage-starlink-multiple-branch-offices-nigeria.jpg"),
@@ -102,7 +103,7 @@ export const enterpriseMaritimeB2bArticles: SeoArticle[] = [
       blurb: "One point of contact for multi-site procurement, billing, and fault escalation across your branch network.",
     },
     blocks: blocks(
-      p("Managing Starlink across multiple branch offices in Nigeria is not the same problem as installing one dish on a headquarters roof. SpaceX still treats each terminal as its own account. At five, eight, or fifteen sites you inherit separate logins, separate billing cycles, and separate support threads — unless someone local sits on top of that mess."),
+      p("One Starlink terminal does not cover five branches. Each site needs its own dish, its own service address, and its own subscription. What you can centralise is the person who orders, renews, and answers the fault. That service is [fleet management](/starlink-fleet-management-nigeria). This page is how the accounts actually work."),
       p("This guide is for IT managers and operations directors who already know Starlink works at a single site and now need a repeatable way to run it as a branch network. We cover how accounts actually work, what breaks at scale, when Residential is enough versus Priority, how to design VLANs and failover, and what [DataGram fleet management](/starlink-fleet-management-nigeria) takes off your desk."),
       h2("How Starlink accounts work per dish"),
       p("Each Starlink kit pairs to an account and subscription. There is no SpaceX \"enterprise estate portal\" that Nigerian IT teams can use the way they manage Microsoft 365 tenants. If you buy ten kits, you effectively get ten account relationships — even if the same person pays the cards."),

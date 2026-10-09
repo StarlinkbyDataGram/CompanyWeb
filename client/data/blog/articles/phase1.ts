@@ -185,6 +185,7 @@ export const phase1Articles: SeoArticle[] = [
       "Flat High Performance vs standard Starlink dish for maritime use: motion, power, cost, and Nigerian Gulf of Guinea vessel fit.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "12 min read",
     category: "Evergreen",
     image: img("blog/flat-high-performance-vs-standard-dish-maritime.jpg"),
@@ -197,7 +198,8 @@ export const phase1Articles: SeoArticle[] = [
       blurb: "Yachts, pilot boats, and coastal craft — correct dish class and marine mount for your motion profile.",
     },
     blocks: blocks(
-      p("Choosing between Flat High Performance and standard Starlink hardware for maritime use comes down to motion profile, sky obstruction, power budget, and how much upload your ops actually need. Nigerian operators often ask if a residential standard dish 'will do' for a supply boat in Port Harcourt — sometimes at the pier, rarely underway without compromise."),
+      p("Use a Standard dish when the terminal stays on shore or at a calm berth and the plan is a fixed land plan. Use Flat High Performance when the vessel moves, the sky is partly blocked by gear, or the deck needs a lower, tougher terminal. A residential dish on a railing is the wrong hardware once the boat is underway. This page does not quote a speed in the hundreds of megabits or a gigabit as a vessel guarantee."),
+      p("Power and corrosion decide whether that choice survives the Gulf of Guinea. Flat High Performance draws more than Standard. Salt on mild steel is a separate failure, covered in [salt spray and marine antennas](/blog/salt-spray-corrosion-marine-antennas-gulf-of-guinea). The install scope is [offshore maritime installation](/starlink-offshore-maritime-installation)."),
       p("This comparison is written for vessel owners, fleet managers, and marine IT leads evaluating hardware before procurement. We install both classes through our [maritime](/starlink-offshore-maritime-installation) and [boat](/starlink-boat-installation) services — here's how they differ in the field."),
       h2("How maritime tracking differs from land fixed installs"),
       p("Standard fixed dishes assume a stationary roof with a wide sky window. Flat High Performance uses a phased array that tracks more satellites simultaneously and tolerates more motion before dropouts. Dedicated maritime terminals extend that further for commercial underway profiles. The [Starlink specifications page](https://www.starlink.com/specifications) lists environmental and power ratings — verify before deck mounting."),

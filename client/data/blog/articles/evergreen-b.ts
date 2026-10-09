@@ -85,6 +85,7 @@ export const evergreenBArticles: SeoArticle[] = [
       "Connect CCTV to Starlink Nigeria: NVR setup, upload limits, remote viewing, VLANs, and rain-fade expectations for estate and compound security.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "11 min read",
     category: "Evergreen",
     image: img("blog/connect-cctv-cameras-starlink-network.jpg"),
@@ -97,8 +98,8 @@ export const evergreenBArticles: SeoArticle[] = [
       blurb: "CCTV backhaul, VLAN handoff, and upload-aware plan sizing for estates and remote compounds.",
     },
     blocks: blocks(
-      p("Connecting CCTV cameras to your Starlink network is straightforward on paper — plug the NVR into the router and open the app. In Nigerian compounds, the real work is upload budgeting, keeping security cameras off guest Wi-Fi, surviving rain fade without false 'camera offline' alerts, and not exposing your NVR to the entire internet because a cousin forwarded port 80 on the Starlink router."),
-      p("Starlink delivers strong download for most households but upload is the constraint for multi-camera cloud backup and remote viewing. Field ranges in Nigeria often land around 10–100 Mbps upload depending on plan and weather. Four 4 MP cameras streaming continuously to a cloud VMS can saturate that faster than owners expect. Size the design before you mount cameras on every gate pillar."),
+      p("Record CCTV on a local NVR. Use Starlink upload only when someone is watching a camera, or for short motion clips. Continuous cloud upload of every camera is how a compound fills the link and then loses the recording in the rain, which is when the picture is most useful. This page does not promise a megabit rate per camera. Size that from the plan you bought and from a test, not from a headline."),
+      p("Any upload range you have seen quoted, including a field range around 10–100 Mbps, is indicative, not a camera budget. Keep the cameras off the guest Wi-Fi. Do not open the NVR to the whole internet because a port forward looked convenient. Plan class and priority data are in the [data-usage article](/blog/starlink-data-usage-data-cap-nigeria)."),
       h2("Local NVR vs cloud-only CCTV on Starlink"),
       p("A local NVR recording to disk on LAN is the right primary for most Nigerian homes and estates. Cameras talk to the NVR over PoE switch; remote viewing uses modest upload only when you stream a channel, not 24/7. Cloud-only systems that upload every camera continuously fight Starlink's upload profile and rain fade — you'll get gaps in footage during squalls exactly when break-ins are more likely."),
       p("Hybrid is common: local recording 24/7, cloud clips on motion events only. Configure bitrate caps per camera — H.265 encoding, reasonable FPS, and motion zones reduce waste. Your installer should document expected Mbps per camera before purchase."),
@@ -110,7 +111,7 @@ export const evergreenBArticles: SeoArticle[] = [
       h2("Remote viewing without reckless port forwarding"),
       p("Do not port-forward NVR admin interfaces to the public internet. Nigerian scans hit open ports within hours. Use the NVR vendor's cloud relay with 2FA, or VPN into the site — WireGuard on a small router at the gatehouse is a pattern we deploy on remote [Delta State](/starlink-installation-delta-state) compounds. If you must expose a service, IP allowlisting and non-default ports are minimum hygiene — still inferior to VPN."),
       h2("Upload budgeting and plan class"),
-      p("Count cameras × bitrate × hours of remote viewing. A typical 4 MP H.265 stream might run 2–4 Mbps each. Six cameras at 3 Mbps is 18 Mbps continuous — fine on a healthy upload headroom day, tight during rain fade or peak beam load. Business priority plans exist where CCTV is operational, not decorative."),
+      p("The arithmetic is cameras times bitrate times hours someone is actually watching. A 4 MP H.265 stream is sometimes discussed around 2–4 Mbps, and six streams at 3 Mbps is an illustration of about 18 Mbps continuous. That illustration is not a camera budget for your compound. Test the plan you bought. A business plan is for a site where the cameras are operational."),
       p("Motion-only cloud upload keeps remote apps responsive without treating Starlink like unmetered fibre. Align expectations with guards and estate managers: 'camera offline' during a three-minute rain fade is different from 'NVR dead because PoE switch lost power during generator changeover.'"),
       h2("Power and uptime for gatehouse kit"),
       p("NEPA and generator transfers reboot cheap switches. A modest UPS on NVR, PoE switch, and router buys clean recording through flickers. Gatehouses in [Abuja](/starlink-installation-abuja) often share a circuit with floodlights — segregate loads so lighting surges don't reset the NVR."),
@@ -135,7 +136,7 @@ export const evergreenBArticles: SeoArticle[] = [
       {
         question: "How many CCTV cameras can Starlink support?",
         answer:
-          "There's no fixed count — bitrate and upload headroom decide. Six to twelve 4 MP cameras on local NVR with H.265 is common on residential upload. Continuous cloud streaming of many cameras needs higher-tier plans.",
+          "There is no fixed count. Record on a local NVR and test the plan you bought. A figure such as six to twelve 4 MP cameras is an illustration of a local-record layout, not a promise. Continuous cloud streaming of many cameras is a heavier job.",
       },
       {
         question: "Should I port-forward my NVR for remote viewing?",
@@ -236,11 +237,12 @@ export const evergreenBArticles: SeoArticle[] = [
     slug: "starlink-data-usage-data-cap-nigeria",
     title: "Managing Starlink Data Usage: Does Starlink Have a Data Cap?",
     excerpt:
-      "Priority data, deprioritization, roaming charges, and practical usage management for Nigerian households, developers, and field offices on Starlink.",
+      "Residential can be deprioritised. Priority is sold in data blocks. A 50 GB figure is a Global Priority block, not Ocean Mode.",
     metaDescription:
-      "Starlink data cap Nigeria: priority limits, fair use, roaming costs, and how to manage heavy upload/download on residential and business plans.",
+      "Starlink data tiers in Nigeria: residential deprioritisation, Priority blocks, and why 50 GB is not Ocean Mode. No naira price on 500 GB, 1 TB, or 2 TB.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "10 min read",
     category: "Evergreen",
     image: img("blog/starlink-data-usage-data-cap-nigeria.jpg"),
@@ -253,7 +255,8 @@ export const evergreenBArticles: SeoArticle[] = [
       blurb: "Plan class guidance for CCTV, cloud sync, and multi-site teams — sized from usage, not social media rumours.",
     },
     blocks: blocks(
-      p("Managing Starlink data usage starts with a question Nigerians hear conflicting answers to: does Starlink have a data cap? Policy evolves by plan class and region — residential plans in Nigeria have moved through unlimited phases, priority tiers, and fair-use style deprioritization elsewhere. The only authoritative answer is your current plan card in the Starlink app and checkout for your service address. Installers who quote 2024 forum posts are guessing; verify at purchase and each renewal."),
+      p("Whether Starlink has a data cap depends on the plan on your screen, not on one Nigeria-wide number. Residential service is often sold without a hard cutoff and can still be deprioritised when the cell is busy. Priority plans are sold in data blocks. A 50 GB figure, where the account shows it, is a Global Priority block. It is not Ocean Mode. Blocks such as 500 GB, 1 TB, or 2 TB are checkout options when that account offers them. This page does not put a naira price on those blocks."),
+      p("Read the live plan card in the app and on checkout for the service address. Ocean Mode is a separate metered path and is explained in the [Ocean Mode article](/blog/starlink-ocean-mode-50gb-priority-limit-explained). Subscription bands already published on the site stay on the [price guide](/blog/how-much-is-starlink-nigeria-price-naira-2026)."),
       p("What stays true in the field: heavy users — 4K streaming households, developers syncing large repos, NGOs uploading field media — feel policy through speed changes after priority thresholds, not always hard disconnects. Roaming adds separate charges. CCTV and backup jobs chew upload. This guide explains how to read usage, manage load, and pick plan class before surprise throttling hits your [Lagos](/starlink-installation-lagos) home office during deadline week."),
       h2("Residential vs business priority data"),
       p("Residential self-service plans target typical household mix — video, social, schooling, remote work. Business and priority tiers advertise higher throughput floors and different usage policies for sites that need operational consistency. If three adults run video calls while uploading design files and a teenager streams 4K, residential may feel tight during peak hours even before formal caps matter."),

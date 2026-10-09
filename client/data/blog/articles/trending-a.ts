@@ -772,11 +772,12 @@ export const trendingAArticles: SeoArticle[] = [
     slug: "troubleshooting-starlink-offline-searching-nigeria",
     title: 'Troubleshooting Starlink "Offline" or "Searching" Errors in Nigeria',
     excerpt:
-      "Power, obstruction, cable, account, and weather — a practical checklist when the app will not go online in Nigeria.",
+      "Searching means the dish has not locked satellites. Offline means it is not on the network. Red light and reboot loops are different faults.",
     metaDescription:
-      "Starlink offline searching Nigeria: fix power, obstruction, cable faults, payment, and app errors step by step.",
+      "Starlink Searching vs Offline in Nigeria: power, sky, cable, and payment, with separate guides for a red light and a reboot loop.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "8 min read",
     category: "Currently Trending",
     image: img("blog/troubleshooting-starlink-offline-searching-nigeria.jpg"),
@@ -789,7 +790,8 @@ export const trendingAArticles: SeoArticle[] = [
       blurb: "When checklist fails — cable, mount, and gland faults need a roof tech, not app toggles.",
     },
     blocks: blocks(
-      p('"Offline" or "Searching" on a Nigerian Starlink app usually means the dish has not locked satellites — power, obstruction, cable, account standing, or weather stacked together. Before you panic-buy a second kit, run this checklist in order. Most resolves are boring: reboot, pay bill, move dish clear of tank shadow.'),
+      p("Read the word in the app before you buy another kit. Searching means the dish is powered and has not locked satellites yet. Offline means it is not on the network: power, cable, account, or a fault. A red light on the router is a different symptom, covered in the [red-light guide](/blog/troubleshoot-starlink-red-light-router-nigeria). A dish that reboots in a loop is the [reboot guide](/blog/why-starlink-keeps-rebooting-nigeria-solutions)."),
+      p("For Searching or Offline, work in order: power, sky view, cable, payment, then weather. Most fixes are dull. Reboot, pay the bill, or move the dish clear of the tank. Slow rain is the [rain guide](/blog/starlink-slower-when-it-rains-nigeria), not this checklist."),
       p("Different from slow rain — see [rain fade guide](/blog/starlink-slower-when-it-rains-nigeria). For account region issues — [roaming restrictions](/blog/fixing-starlink-roaming-restrictions-nigeria). DataGram field techs handle mechanical faults via [home installation support](/starlink-home-installation) in [Lagos](/starlink-installation-lagos) and nationwide."),
       h2("Step 1: Power and LEDs"),
       p("Confirm mains, inverter, or UPS actually outputting — generator changeover gaps reboot mid-search. Power-cycle: dish off 30 seconds, router off, restore dish first, wait five minutes. Check LED patterns in kit guide."),

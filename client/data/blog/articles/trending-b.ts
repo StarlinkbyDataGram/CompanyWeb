@@ -11,6 +11,7 @@ export const trendingBArticles: SeoArticle[] = [
       "Power Starlink with solar in Nigeria: panel watts, battery Ah, MPPT sizing, and wiring for router and dish through NEPA outages.",
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-10-09",
     readTime: "14 min read",
     category: "Currently Trending",
     image: img("blog/power-starlink-router-solar-nigeria.jpg"),
@@ -23,7 +24,8 @@ export const trendingBArticles: SeoArticle[] = [
       blurb: "We size panels, batteries, and networking loads together — not as separate guesses.",
     },
     blocks: blocks(
-      p("Powering your Starlink router with solar in Nigeria is a load-sizing problem, not a sticker problem. The dish and Gen 3 router together draw roughly 40–75 W steady once booted, with higher peaks when the dish motors search after a reboot. NEPA cuts that last seconds or hours depending on your estate. Solar only works when panels recharge the battery faster than your outage pattern drains it — and rainy season in the south punishes undersized banks."),
+      p("Solar can keep Starlink up through a NEPA cut only when the panels recharge the battery faster than the outage drains it. A cloudy week in the south is the test, not a bright December afternoon. The watt figures on this page are planning bands already used here. They were not re-read from a Starlink datasheet on 9 October 2026. Measure your own kit. The national note, which does not copy Mini or boat watts onto a Standard home, is [power backup](/blog/power-backup-starlink-nigeria)."),
+      p("On this page the planning band for a dish and Gen 3 router together is about 40–75 W once booted, with a higher peak when the dish searches after a reboot. Mini is lower, and that lower band stays on this solar page because the bank size changes. Do not treat either band as a guarantee."),
       p("This guide covers real component specs: panel wattage, battery amp-hours, MPPT controller selection, cable gauges, and fuse placement. We're installers who've seen ₦800,000 solar kits that couldn't keep a router alive through a Tuesday afternoon because nobody counted inverter overhead and networking inrush together."),
       h2("Know your Starlink power draw before you buy panels"),
       p("Standard Gen 3 residential kits: dish plus router commonly land 40–60 W average at the wall, spiking toward 100 W briefly on cold start and satellite search. Starlink Mini draws less — often 25–40 W — which changes bank sizing if you're on a portable setup. Measure with a plug-in meter on your actual kit; estate voltage sag makes cheap meters lie less than guessing from a forum post."),

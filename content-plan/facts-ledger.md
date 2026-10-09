@@ -32,6 +32,16 @@ Business vs Enterprise: the help article "Business vs. Enterprise Accounts" did 
 
 Section A below is the Stage 1 log as it stood on 8 October 2026, before this batch. P1 and P2 were later updated only as described above.
 
+## Stage 3 Batch 5 — 9 October 2026
+
+Existing URLs only. No new prices, no new watt figures, no Performance Kit price, no 400 Mbps or gigabit vessel claim, no naira price on 500 GB, 1 TB, or 2 TB.
+
+- Data caps: `/blog/starlink-data-usage-data-cap-nigeria`. Residential can be deprioritised. Priority is sold in blocks. 50 GB, where shown, is a Global Priority block, not Ocean Mode.
+- Worth-it: slug stays `is-starlink-worth-669000-nigeria-2026-honest-review`. A kit does not create a residential slot. Historical totals were not recalculated.
+- Placement: Lagos high-rise and Abuja estate articles. Lugbe/Kubwa stays its own URL. Mounts article opens with roof, parapet or pole, and ground.
+- Solar watts already on that page are planning bands. Offline distinguishes Searching from Offline. Multi-branch is one terminal per site. Security and CCTV stay local-network advice. Maritime hardware stays qualitative.
+- Amazon Leo: public name updated on `/blog/amazon-kuiper-vs-starlink-2027-nigeria`. Slug and image filename unchanged. No Nigeria launch date or market share.
+
 ## Stage 3 Batch 4 — 9 October 2026
 
 Existing URLs only. No new prices. Labour ₦10,000–₦150,000, survey from about ₦85,000, and project ₦450,000–₦1,060,000 stay on the install guide. Power page keeps 600–1,000 VA and 15–40 minutes as planning bands. No Mini watt figure was copied onto that page.
