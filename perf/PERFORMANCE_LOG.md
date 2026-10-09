@@ -46,3 +46,15 @@ Before: one entry chunk, 1,863 KB raw, **566 KB gzip**.
 After: entry `assets/index-6O3kh_Cw.js`, 1,231 KB raw, **354 KB gzip** (286 KB Brotli). Article bodies are 18 extra chunks (4–37 KB gzip each) and load only when that post is opened. The blog index in the entry is 168 KB raw / 45 KB gzip (116 posts: title, excerpt, image, first-block search text). Homepage and `/blog` no longer download post bodies.
 
 Lighthouse for this step is recorded at the end of the B3 group, against the empty-shell baseline.
+
+## B3 — routes other than the homepage load on demand
+
+Before this step the entry was **354 KB gzip**.
+
+After: entry `assets/index-CkYKogpm.js`, 762 KB raw, **228 KB gzip** (193 KB Brotli). Landing page copy is `LandingRoutePages-D-QhllxV.js`, 53 KB gzip, and is not in the homepage chunk. The prerender browser identifies itself as `ReactSnap` and waits for the current route's chunk (and the article body on `/blog/:slug`) before it snapshots.
+
+## B3 — React and the router in their own file
+
+Before: one entry chunk, **228 KB gzip**.
+
+After: `assets/index-DMJzXxm1.js` 174 KB gzip plus `assets/vendor-Dtv7QYqu.js` 54 KB gzip. First load is **228 KB gzip** combined (194 KB Brotli). The build target is ES2020. Splitting React out did not shrink the first download; it lets the React file stay cached when page code changes. Icons were already imported one component at a time. `ogl`, `recharts`, and `pdfkit` are not in the client bundle (`ogl` and `recharts` are only imported by files nothing else loads; `pdfkit` is a script), so removing those packages would not change this number.
