@@ -1,0 +1,36 @@
+Wrote perf/seo-final.json
+OK /
+  title: Starlink by DataGram: Professional Starlink Installation Across Lagos, Abuja, Port Harcourt, Delta State, South-South &amp; South-East Nigeria
+  canonical: https://www.datagram.ng/
+  h1: Professional Starlink installation across Nigeria
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /starlink-offshore-maritime-installation
+  title: Starlink Offshore Installation Nigeria | At Sea | DataGram
+  canonical: https://www.datagram.ng/starlink-offshore-maritime-installation
+  h1: Starlink Offshore &amp; Maritime Installation Nigeria
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /starlink-installation-lagos
+  title: Starlink Installation Lagos | Island, Mainland &amp; Suburbs | DataGram
+  canonical: https://www.datagram.ng/starlink-installation-lagos
+  h1: Starlink Installation Lagos
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /blog
+  title: Starlink Nigeria Guides &amp; Tips | DataGram Blog
+  canonical: https://www.datagram.ng/blog
+  h1: Insights &amp; Resources
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /blog/how-much-is-starlink-nigeria-price-naira-2026
+  title: Starlink Price in Nigeria (2026) | DataGram
+  canonical: https://www.datagram.ng/blog/how-much-is-starlink-nigeria-price-naira-2026
+  h1: How Much is Starlink in Nigeria Today? Current Price in Naira (2026)
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /our-work
+  title: Our Work — Real Starlink Installations Across Nigeria | DataGram
+  canonical: https://www.datagram.ng/our-work
+  h1: Our Work
+  json-ld: 3 (LocalBusiness, WebSite, object)
+OK /products
+  title: Starlink Devices &amp; Accessories in Nigeria | Starlink Products
+  canonical: https://www.datagram.ng/products
+  h1: Products
+  json-ld: 3 (LocalBusiness, WebSite, object)
