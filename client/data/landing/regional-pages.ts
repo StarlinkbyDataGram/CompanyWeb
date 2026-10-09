@@ -30,29 +30,29 @@ const SPEED = {
 const roamingFaq = {
   question: "What is Starlink roaming and do I need it?",
   answer:
-    "Roaming lets you use Starlink across different land regions globally, not only where you activated the service. It helps where local coverage is limited or not fully available yet. Roaming costs extra on top of your standard subscription.",
+    "Roaming lets you use the dish in other land regions, not only where you turned it on. It helps where local cover is thin. It costs extra on top of the plan. Choose it only if you will move the dish.",
 };
 
 const regionalStandardFaqs = [
   {
     question: "How much is the monthly subscription fee?",
     answer:
-      "₦57,000 – ₦3,000,000+ depending on location, service availability, subscription type, and plan eligibility.",
+      "₦57,000 – ₦3,000,000+ depending on the address, whether a plan is offered, the plan type, and if you qualify.",
   },
   {
     question: "Do I need a technician to install Starlink?",
     answer:
-      "For simple residential setups, self-install is possible using the Starlink app. However, a certified installer is recommended if you need WiFi coverage across a large building, proper outdoor mounting, structural stability for the dish, or help avoiding signal obstructions.",
+      "A simple home can use the Starlink app. Choose a fitter if the building is large, the dish needs a strong mount, or something is in the way of the sky. An obstruction is something in the way of the sky.",
   },
   {
     question: "Do you offer ongoing support after installation?",
     answer:
-      "Post-installation support is available for enterprise, roaming, and maritime clients on active or renewed subscriptions. Indicative field ranges, not guarantees: speeds 50–1,000 Mbps, latency often discussed around 20–30 ms under normal conditions.",
+      "Support after the fit is for business, roaming, and ship clients on a live or renewed plan. Speeds of 50 to 1,000 megabits are a guide. Latency, the delay before a reply, is often about 20 to 30 milliseconds. That is not a promise.",
   },
   {
     question: "Is roof drilling required for Starlink installation?",
     answer:
-      "Not always. We use wall mounts where the structure allows. Drilling is done when necessary for proper cable routing, and all penetrations are sealed to prevent water entry.",
+      "Not always. We use a wall mount when the wall allows it. We drill only when the cable needs a hole, and we seal that hole.",
   },
   {
     question: "Can businesses request after-hours installation?",
@@ -66,7 +66,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-abuja",
     seoTitle: "Starlink Installation Abuja | FCT Coverage | DataGram",
     metaDescription:
-      "Starlink installer in Abuja FCT: Maitama, Gwarinpa, Kubwa, and industrial layouts. Surveys, mounts, and estate-approved routing.",
+      "Use a local crew if you need the dish fitted in Abuja. We cover Maitama, Gwarinpa, Kubwa, and the industrial layouts.",
     canonical: "/starlink-installation-abuja",
     ogImage: img("StarlinkCompanyInstallation.jpeg"),
     h1: "Starlink Installation Abuja",
@@ -141,7 +141,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "Is Abuja power stable enough for Starlink?",
         answer:
-          "Grid quality varies by district. We recommend modest UPS on router and dish for flickers, and document generator transfer if you run one for the house.",
+          "Power quality differs by district. A UPS is a small battery box that keeps a plug alive for a few minutes. Use one on the router and the dish for flickers. We note the generator handover if the house has one.",
       },
       {
         question: "Can NGOs get documented installs for donors?",
@@ -159,7 +159,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-lagos",
     seoTitle: "Starlink Installation Lagos | Island, Mainland & Suburbs | DataGram",
     metaDescription:
-      "Lagos Starlink installs: Lekki, Ikeja, VI, Ikoyi, Festac, and Epe. Estate mounts, high-rise routing, and mesh WiFi by DataGram.",
+      "Use a local crew if you need the dish fitted in Lagos. We cover Lekki, Ikeja, Victoria Island, Ikoyi, Festac, and Epe.",
     canonical: "/starlink-installation-lagos",
     ogImage: img("starlinkSetup.jpeg"),
     h1: "Starlink Installation Lagos",
@@ -228,7 +228,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "Is fibre still needed if I have Starlink in Lagos?",
         answer:
-          "Many clients keep fibre for bulk download and use Starlink as backup or for sites fibre never reached. We configure dual-WAN when you want automatic failover.",
+          "Many people keep fibre for big downloads and use Starlink as the spare, or where fibre never arrived. Failover means that spare path takes over when the first drops. We set that up when you want it.",
       },
       {
         question: "Do you cover mainland studios and churches?",
@@ -246,7 +246,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-rivers-state-port-harcourt",
     seoTitle: "Starlink Installation Rivers State | Port Harcourt & Environs | DataGram",
     metaDescription:
-      "Port Harcourt Starlink: Trans-Amadi, GRA, Woji, and industrial estates. Marine-aware crews, humidity-rated installs, HQ support.",
+      "Use a local crew if you need the dish fitted in Port Harcourt. We cover Trans-Amadi, GRA, Woji, and the plant estates.",
     canonical: "/starlink-installation-rivers-state-port-harcourt",
     ogImage: img("starlinkCompanyInstalltionImage.jpeg"),
     h1: "Starlink Installation Rivers State & Port Harcourt",
@@ -270,7 +270,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         icon: Zap,
         title: "Generator culture",
-        body: "We size UPS for transfer switches common in PH compounds and document neutral grounding issues early.",
+        body: "A UPS is a small battery box that keeps a plug alive for a few minutes. We size it for the generator switch common in PH compounds.",
       },
       {
         icon: Users,
@@ -309,7 +309,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "Do you install in Trans-Amadi factories?",
         answer:
-          "We schedule around production hours, route cable in trays, and separate guest WiFi from SCADA VLANs when IT teams provide requirements.",
+          "We work around plant hours and run cable in trays. A VLAN is its own network. Guest Wi-Fi stays off the plant network when your IT team asks for that split.",
       },
       {
         question: "How does rain affect Starlink in PH?",
@@ -332,7 +332,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-delta-state",
     seoTitle: "Starlink Installation Delta State | Asaba, Warri & Beyond | DataGram",
     metaDescription:
-      "Delta State Starlink: Asaba capital, Warri industrial corridor, Effurun, Sapele. Estate installs and riverine compound surveys.",
+      "Use a local crew if you need the dish fitted in Delta State. We cover Asaba, Warri, Effurun, and Sapele.",
     canonical: "/starlink-installation-delta-state",
     ogImage: img("starlinkInstallation.jpeg"),
     h1: "Starlink Installation Delta State",
@@ -387,7 +387,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     ],
     speedStat: SPEED,
     testimonial: {
-      quote: "Warri office needed VLAN separation for accounts and warehouse scanners. Handover included IP map and labelled photos.",
+      quote: "The Warri office needed accounts and scanners on separate networks. A VLAN is its own network. The handover had an address map and labelled photos.",
       attribution: "Blessing A., Effurun",
     },
     coverageParagraph:
@@ -406,7 +406,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "Can factories in Effurun get failover?",
         answer:
-          "Dual-WAN with existing microwave or fibre is common. We test failover during handover so night-shift staff know whom to call.",
+          "A second path beside microwave or fibre is common. Failover means that spare path takes over when the first drops. We test it at handover so the night shift knows who to call.",
       },
       {
         question: "How do I book a survey in Delta?",
@@ -424,7 +424,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-bayelsa-yenagoa",
     seoTitle: "Starlink Installation Bayelsa | Yenagoa & Surrounding Areas | DataGram",
     metaDescription:
-      "Bayelsa Starlink installs in Yenagoa, Kpansia, Amassoma, and waterfront communities. Humidity-rated mounts and PH logistics hub.",
+      "Use a local crew if you need the dish fitted in Yenagoa. We also cover Kpansia, Amassoma, and the waterfront.",
     canonical: "/starlink-installation-bayelsa-yenagoa",
     h1: "Starlink Installation Bayelsa & Yenagoa",
     stateName: "Bayelsa State",
@@ -517,7 +517,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-edo-state-benin",
     seoTitle: "Starlink Installation Edo State | Benin City & Surroundings | DataGram",
     metaDescription:
-      "Benin City Starlink: GRA, Sapele Road, Airport Road, Ekpoma. Royal City estates, university roads, and industrial roofs.",
+      "Use a local crew if you need the dish fitted in Benin City. We cover GRA, Sapele Road, Airport Road, and Ekpoma.",
     canonical: "/starlink-installation-edo-state-benin",
     h1: "Starlink Installation Edo State & Benin City",
     stateName: "Edo State",
@@ -576,7 +576,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       attribution: "Osas E., Airport Road estate",
     },
     coverageParagraph:
-      "We cover Benin City GRA, Ring Road, Sapele Road commercial axis, Airport Road and Royal estates, Ekpoma, AAU corridor, Ugbowo, Ikpoba Hill, Auchi polytechnic axis, and Uromi in the Esan heartland.",
+      "We cover Benin City GRA, Ring Road, the Sapele Road shops, and the Airport Road and Royal estates. We also cover Ekpoma, the AAU road, Ugbowo, Ikpoba Hill, the Auchi polytechnic road, and Uromi.",
     faqs: [
       {
         question: "Do you install in Benin GRA with large trees?",
@@ -609,12 +609,12 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-niger-delta",
     seoTitle: "Starlink Satellite Internet Niger Delta | SpaceX Installation | DataGram",
     metaDescription:
-      "DataGram installs SpaceX Starlink satellite internet across the Niger Delta — oil camps, creek communities, and remote operations in Rivers, Delta, and Bayelsa State. Not affiliated with any local energy company.",
+      "Use a local crew if the site is a camp or a creek home in the Niger Delta. We cover Rivers, Delta, and Bayelsa. We are not part of any local energy firm.",
     canonical: "/starlink-installation-niger-delta",
     ogImage: img("datagram-technician-dish-port.jpg"),
     h1: "SpaceX Starlink Satellite Internet Installation — Niger Delta, Nigeria",
     entityBadge:
-      "SpaceX Starlink authorised installations — satellite internet service for remote and offshore locations across the Niger Delta",
+      "Starlink fits for remote and shore sites across the Niger Delta. DataGram is the installer on the ground.",
     stateName: "the Niger Delta",
     heroLabel: "Rivers, Bayelsa & Delta State",
     heroSubheading:
@@ -636,7 +636,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         icon: Zap,
         title: "Generator & creek power",
-        body: "We size UPS for estate transfer switches and document solar or diesel patterns common in South-South compounds.",
+        body: "A UPS is a small battery box that keeps a plug alive for a few minutes. We size it for the generator switch, and we note if the compound uses solar or diesel.",
       },
       {
         icon: Users,
@@ -671,13 +671,13 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       attribution: "Operations admin, Yenagoa layout",
     },
     coverageParagraph:
-      "We cover Port Harcourt, Trans-Amadi, Rivers GRA corridors, Yenagoa and Bayelsa estates, Warri and Effurun in Delta State, Asaba capital, Sapele, creek-adjacent shore properties, and Bonny Island shore jobs when jetty access is confirmed. SpaceX Starlink creek access installation Niger Delta work is scheduled around tide and jetty windows so crews reach remote compounds in a single mobilisation. SpaceX Starlink satellite internet is deployed for oil camps, creek communities, and remote compounds — DataGram is a satellite installer, not affiliated with any local energy or pipeline company. We do not run install operations in Kano or northern Nigeria.",
+      "We cover Port Harcourt, Trans-Amadi, the Rivers GRA roads, Yenagoa, and the Bayelsa estates. We also cover Warri, Effurun, Asaba, Sapele, creek-side homes, and Bonny shore jobs when the jetty is open. Creek jobs are timed to the tide so the crew can finish in one trip. We fit dishes for camps and remote compounds. We are not part of any local energy or pipeline firm. We do not run a desk in Kano or the far north.",
     safetyStandards: {
       title: "Our Field Safety Standards",
       items: [
         {
           title: "Site assessment before mobilisation",
-          body: "Before any crew travels to a creek or remote camp location, DataGram conducts a remote assessment of the site — sky view, power source, canopy obstruction level, and access route — to ensure the installation can be completed safely and successfully in a single visit. Starlink HSE compliant installers Rivers State means our crews work inside your site PTW and two-man rules before mobilisation — we do not claim third-party cert numbers we do not hold.",
+          body: "Before a crew goes to a creek or a camp, we check the sky, the power, the trees, and the road. An obstruction is something in the way of the sky. The aim is one safe visit. On a plant site we follow your permit and two-person rule. We do not claim certificate numbers we do not hold.",
         },
         {
           title: "Two-man installation rule",
@@ -685,7 +685,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
         },
         {
           title: "Canopy and obstruction management",
-          body: "Heavy tree canopy is one of the biggest challenges for satellite internet in the Niger Delta. DataGram uses extended mast mounting where necessary to clear obstructions and achieve a clean sky view — this is assessed during the pre-visit site check.",
+          body: "Thick trees are a common block in the Niger Delta. We use a taller mast when the survey says the sky is not clear. That check happens before the crew travels.",
         },
         {
           title: "Verified connectivity before sign-off",
@@ -712,7 +712,7 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
       {
         question: "How does rain affect Starlink in the Niger Delta?",
         answer:
-          "Heavy rain can cause satellite internet Port Harcourt rain fade — temporary signal attenuation when water absorbs Ku/Ka-band energy. Starlink handles rain fade well in most South-South conditions; proper mast height and sky view further reduce dropouts. We baseline at handover so you can compare performance through rainy season.",
+          "Heavy rain can fade the link for a short time. A taller mast and a clear sky cut those drops. We write down a baseline at handover so you can compare the rainy season.",
       },
       {
         question: "Is DataGram the same as Starlinks Global Energy Services?",

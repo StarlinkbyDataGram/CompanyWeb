@@ -133,7 +133,7 @@ const estateWifiServiceSchema = {
     url: "https://www.datagram.ng",
   },
   description:
-    "Design and installation of Starlink-based WiFi distribution for residential estates, compounds, and multi-unit buildings across Nigeria, including mesh and VLAN configurations.",
+    "Wi-Fi from one Starlink dish for Nigerian estates, compounds, and blocks of flats.",
   url: "https://www.datagram.ng/starlink-estate-wifi-nigeria",
 };
 
@@ -341,23 +341,25 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     path: "/starlink-enterprise-nigeria",
     seoTitle: "Starlink for Enterprise Nigeria | Business Starlink | DataGram",
     metaDescription:
-      "DataGram delivers enterprise Starlink and business Starlink deployment across Nigeria — offices, NGOs, industrial sites, and multi-branch operations.",
+      "Use a business plan if the office needs a link the street cable cannot give. DataGram fits offices, NGOs, and plants across Nigeria.",
     canonical: "/starlink-enterprise-nigeria",
     ogImage: img("StarlinkCompanyInstallation.jpeg"),
     h1: "Starlink for Enterprise Nigeria",
     heroLabel: "NGOs, offices & industrial sites",
     heroSubheading:
-      "Dual-WAN failover, static IP planning, and install documentation your IT team can audit—not a consumer router dropped in a rack.",
+      "Choose it as the spare path when fibre is already there.",
     heroImageAlt: "Starlink installation at NCDMB Conference Centre Nigeria, DataGram enterprise",
     heroImage: img("StarlinkCompanyInstallation.jpeg"),
     heroImageFile: "StarlinkCompanyInstallation.jpeg",
     heroImageReason:
       "NCDMB Conference Centre clearly visible in background — named Nigerian government/institutional building gives immediate credibility to enterprise clients",
     heroObjectPosition: "center top",
-    overviewTitle: "Business-grade satellite when terrestrial SLAs slip",
+    overviewTitle: "A business link when the street cable is late",
     overviewParagraphs: [
-      "Enterprises adopt Starlink when fibre lead times stretch quarters, when backup links must be independent of street cuts, or when branch sites need day-one connectivity for ERP and voice. The hardware is only half the job for business Starlink deployment: VLAN design, UPS sizing for Nigerian generators, and written baselines matter for audit-ready networks.",
-      "DataGram maps existing firewalls, documents cable paths through trays, and tests failover triggers before sign-off. We work with facility managers in Lagos towers, Abuja campuses, and industrial estates where drilling rules and access windows are fixed in advance. DataGram's standard coverage is South-South and South-East Nigeria. Enterprise installations in northern states are handled on special request.",
+      "Use Starlink when fibre will take months, when you need a path that does not share the street trench, or when a branch must be online on day one. The dish is only half the job. A VLAN is its own network, so guests do not share the office one.",
+      "A UPS is a small battery box that keeps a plug alive for a few minutes. Size it for the generator you already run. Latency, the delay before a reply, is often talked about around 20 to 33 milliseconds. That figure is a guide, not a promise.",
+      "We map the firewall you already have, label the cable path, and test the spare path before we leave. Failover means that spare path takes over when the first drops. An obstruction is something in the way of the sky, such as a tree or a tank.",
+      "We work in Lagos towers, Abuja campuses, and plant yards where the drilling rules are fixed before we arrive. Our usual cover is the South-South and the South-East. A job in the north is by request.",
     ],
     stats: [
       { label: "Indicative latency", value: "20–33 ms", note: "LEO architecture; local routing still matters." },
@@ -370,22 +372,22 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         icon: Building2,
         title: "Independent backup path",
-        body: "Starlink gives you a second WAN that does not share the same trench as fibre—critical when construction or vandalism takes terrestrial links offline.",
+        body: "Starlink is a second path that does not share the street trench. Use it when a cut or a build takes the fibre down.",
       },
       {
         icon: Wifi,
         title: "Structured LAN integration",
-        body: "We hand off to your firewall or supply managed routers with VLANs, guest isolation, and optional RADIUS for corporate devices.",
+        body: "We hand the cable to your firewall, or we fit a router with its own network for guests. Staff devices can stay on a separate one.",
       },
       {
         icon: Zap,
         title: "Generator-aware power",
-        body: "Online UPS segments protect routers during transfer switches. We measure neutral drift common on industrial feeders.",
+        body: "The battery box keeps the router up while the generator starts. We check the power on plant sites, where the feed can be rough.",
       },
       {
         icon: Shield,
         title: "Audit-friendly documentation",
-        body: "Photos, IP plans, speed baselines, and escalation contacts—formatted for IT and procurement, not a single-page receipt.",
+        body: "You get photos, an address plan, a speed note, and who to call. That pack is for IT and for the buyer, not a one-page receipt.",
       },
     ],
     proofTitle: "Deployment proof",
@@ -446,39 +448,39 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Can Starlink replace fibre for our headquarters?",
         answer:
-          "It can carry production traffic when plans and routing are sized correctly, but most Lagos and Abuja HQs keep fibre as primary and Starlink as independent backup. We model concurrent users and upload load before recommending primary status.",
+          "It can carry the office traffic when the plan and the wiring fit the load. Most Lagos and Abuja head offices keep fibre first and Starlink as the spare. We count the users and the upload before we say it should be the only link.",
       },
       {
         question: "Do you integrate with our existing firewall?",
         answer:
-          "Yes. We provide Ethernet handoff, document VLAN tags, and test failover with your team. Static IP requirements are confirmed against your Starlink plan class before cutover.",
+          "Yes. We hand over an Ethernet cable, write down the network split, and test the spare path with your team. A fixed address, if the plan has one, is checked before the cut.",
       },
       {
         question: "How do you handle estate drilling rules?",
         answer:
-          "We prepare scope letters for facility managers listing hole count, tray path, and restoration. All work is scheduled during standard business hours.",
+          "We write a scope letter for the building manager. It lists the holes, the cable path, and how we make good. All work is in normal business hours.",
       },
       {
         question: "What documentation do you leave after install?",
         answer:
-          "Handover includes labelled photos, IP table, UPS runtime estimate, speed tests per floor, and support contacts. NGOs often attach this pack to donor reporting.",
+          "You get labelled photos, an address table, a note on how long the battery box lasts, a speed test per floor, and who to call. NGOs often attach that pack to a donor report.",
       },
       {
         question: "Is enterprise hardware different from residential kits?",
         answer:
-          "High-throughput and business plan classes exist for heavier loads. We match dish generation and router platform to your user count and upload profile instead of overspecifying consumer kits.",
+          "Yes. Heavier loads use a business plan and a dish sized for that load. We match the kit to the user count and the upload. We do not put a home kit on a busy office.",
       },
       roamingFaq,
       ...standardFaqs,
       {
         question: "What does enterprise Starlink include that a standard residential plan does not?",
         answer:
-          "Enterprise Starlink covers a Priority Business plan with guaranteed throughput allocation, meaning your speeds are protected during peak hours rather than subject to deprioritisation. It also includes a professional site survey, structured cable management, network configuration for business use (VLANs, guest WiFi, wired connections for workstations), a baseline speed test report, and access to DataGram's ongoing managed support for renewed subscribers.",
+          "It uses a business plan, plus a survey, tidy cables, a split between staff and guest Wi-Fi, and a speed note. Deprioritised means the speed drops when the cell is busy. It is not a hard cutoff. The business plan is meant to hold up better at busy times. That is still a guide, not a promise. Renewed clients can keep managed support.",
       },
       {
         question: "Can DataGram handle business Starlink deployment across multiple offices in Nigeria?",
         answer:
-          "Yes. DataGram manages multi-site business Starlink deployments — from scoping and hardware procurement to installation, activation, and account management across all locations. For companies with 5 or more sites or vessels, our fleet management service handles subscription administration centrally. See our fleet management service (/starlink-fleet-management-nigeria) for details.",
+          "Yes. We scope, buy, fit, turn on, and manage the accounts across the sites. For 5 or more sites or vessels, fleet management runs the bills from one place. See the fleet page (/starlink-fleet-management-nigeria).",
       },
     ],
     relatedLinks: [
@@ -1622,13 +1624,13 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     path: "/starlink-fleet-management-nigeria",
     seoTitle: "Starlink Fleet Nigeria | Vessels & Enterprise Starlink | DataGram",
     metaDescription:
-      "DataGram manages Starlink fleets for Nigerian enterprise and vessel operators — subscriptions, accounts, and network monitoring across multiple sites.",
+      "Use one local contact if you run five or more dishes. DataGram manages the accounts, the bills, and the faults for sites and vessels.",
     canonical: "/starlink-fleet-management-nigeria",
     ogImage: img("hero-fleet-management-nigeria.jpg"),
     h1: "Starlink Fleet Management for Nigerian Enterprises and Maritime Operators",
     heroLabel: "Multi-site & fleet operations",
     heroSubheading:
-      "Managing Starlink across 10 sites or 10 vessels is a different problem from a single installation. DataGram handles procurement, deployment, account management, and ongoing support across your entire fleet.",
+      "Choose fleet management when you have many sites or many boats, not one dish.",
     heroImageAlt: "Fleet of vessels in port — Starlink fleet management Nigeria",
     heroImage: img("hero-fleet-management-nigeria.jpg"),
     heroImageFile: "hero-fleet-management-nigeria.jpg",
@@ -1636,10 +1638,11 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       "Pexels aerial multi-vessel anchorage — conveys fleet scale and coordination, not a single-ship portrait",
     heroObjectPosition: "center top",
     heroPrimaryCta: { label: "Request a Fleet Proposal", href: "/contact" },
-    overviewTitle: "One relationship for every dish in your fleet",
+    overviewTitle: "One contact for every dish",
     overviewParagraphs: [
-      "A single Starlink install is a project. Ten enterprise Starlink installs across states — or five OSVs and other vessels with different captains and berths — is an operations problem. SpaceX still bills and supports per terminal. Without a local fleet manager, your IT desk ends up juggling separate apps, separate invoices, and separate fault tickets.",
-      "DataGram fleet management puts procurement, coordinated installation, account administration, plan upgrades, and escalations under one Nigerian point of contact. You get VAT-compliant invoicing options, quarterly per-site performance notes, and a path that scales from branch networks to maritime fleets.",
+      "One dish is a job. Ten offices, or five boats with different captains, is a running task. SpaceX still bills each terminal on its own. Without a local manager, IT ends up with many apps, many bills, and many fault tickets.",
+      "Use DataGram when you want buying, fitting, accounts, plan changes, and faults under one Nigerian contact. You can get naira invoices with VAT where we supply the kit and the fit. Each quarter you get a short note per site.",
+      "Latency, the delay before a reply, is a guide around 20 to 33 milliseconds, not a promise. An obstruction is something in the way of the sky. The figure we write down after the fit is the baseline for that site.",
     ],
     stats: [
       { label: "Indicative latency", value: "20–33 ms", note: "Indicative band only. The number recorded after install is the site baseline, and it may differ." },
@@ -1652,28 +1655,28 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         icon: Building2,
         title: "Multi-site businesses",
-        body: "Companies with offices, warehouses, or retail locations spread across Nigerian states where fibre is unavailable or unreliable. DataGram coordinates simultaneous deployments and a single billing relationship.",
+        body: "Use this if the firm has offices or shops in many states, and fibre is missing or weak. We fit them together and keep one billing talk.",
         href: "/starlink-enterprise-nigeria",
         linkLabel: "Enterprise Starlink Nigeria",
       },
       {
         icon: Ship,
         title: "Maritime fleet operators",
-        body: "OSV and vessel operators running 5 or more boats need consistent hardware standards, centralized subscription management, and a single engineer contact for any fault across the fleet.",
+        body: "Choose this if you run 5 or more boats. The kits follow one standard. One engineer takes the fault, whichever boat it is.",
         href: "/starlink-offshore-maritime-installation",
         linkLabel: "Offshore maritime installation",
       },
       {
         icon: HeartHandshake,
         title: "NGO and field networks",
-        body: "NGOs running parallel field operations across multiple states need each location active at the same time, not rolled out one site at a time. DataGram manages staged multi-site deployment to a project timeline.",
+        body: "An NGO with sites in many states can have them live to one timetable. We stage the work. You do not wait for one site to finish before the next is planned.",
         href: "/starlink-enterprise-nigeria",
         linkLabel: "Enterprise & NGO Starlink",
       },
       {
         icon: Factory,
         title: "Oil camp and remote industrial sites",
-        body: "Operators with Starlink dishes spread across camp locations in the Niger Delta need subscription tracking, plan upgrades, and fault response without having to manage multiple Starlink accounts independently.",
+        body: "Camps in the Niger Delta can keep one view of plans, upgrades, and faults. You do not have to run a separate login for every dish.",
         href: "/starlink-installation-niger-delta",
         linkLabel: "Niger Delta installation coverage",
       },
@@ -1682,44 +1685,44 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         title: "What fleet management covers",
         checklist: [
-          "Bulk hardware procurement and importation",
-          "Coordinated multi-site installation scheduling",
-          "Centralized Starlink account and subscription management",
-          "Plan upgrades and Global Priority activation across all sites",
-          "VAT-compliant invoicing per site or consolidated billing",
-          "Single point of contact for faults, replacements, and escalations",
-          "Quarterly performance reports per site (speeds, uptime, plan usage)",
+          "Buying kits in bulk, and the import papers",
+          "Fitting many sites on one timetable",
+          "One place for the accounts and the monthly plans",
+          "Plan changes, including Global Priority, on every site",
+          "Naira invoices with VAT, per site or as one bill",
+          "One person for faults, swaps, and follow-up",
+          "A short note each quarter: speed, uptime, plan use",
         ],
       },
       {
-        title: "Fleet vs standard installation",
+        title: "Fleet vs a normal fit",
         paragraphs: [
-          "A standard install ends when one dish is online. Fleet management continues after go-live — accounts, billing, upgrades, and fault response across every site or vessel in scope.",
+          "A normal fit ends when one dish is online. Fleet work goes on after that. It covers accounts, bills, upgrades, and faults for every site or boat in the job.",
         ],
         details: [
           {
             title: "Accounts",
-            body: "Standard installation: one dish, one account. DataGram fleet management: multiple dishes, one relationship — we administer the fleet instead of leaving you with ten separate Starlink logins.",
+            body: "A normal fit is one dish and one account. Fleet work is many dishes and one relationship. We run the set, so you do not keep ten logins.",
           },
           {
-            title: "Day-to-day management",
-            body: "Standard: client manages the Starlink app per site. Fleet: DataGram manages accounts across the portfolio so IT is not chasing passwords and billing cycles.",
+            title: "Day to day",
+            body: "On a normal fit, you run the app at each site. On a fleet, we run the accounts, so IT is not chasing passwords and bill dates.",
           },
           {
-            title: "Support escalations",
-            body: "Standard: client contacts Starlink support directly. Fleet: DataGram handles escalations, replacements, and truck rolls against a single contact path.",
+            title: "Faults",
+            body: "On a normal fit, you call Starlink yourself. On a fleet, we take the fault, the swap, and the site visit, through one contact.",
           },
           {
             title: "Billing",
-            body: "Standard: per-unit invoicing only. Fleet: consolidated or per-site billing available, with VAT-compliant naira invoices where DataGram supplies hardware and installation.",
+            body: "A normal fit is one invoice per kit. A fleet can be one bill, or a bill per site. Where we supply the kit and the fit, the invoice is in naira and shows VAT.",
           },
           {
-            title: "Performance reporting",
-            body: "Standard: no structured performance reporting. Fleet: quarterly per-site notes on speeds, uptime signals, and plan usage so procurement and ops can see the fleet, not just one kit.",
+            title: "Notes",
+            body: "A normal fit has no regular report. A fleet gets a short note each quarter on speed, uptime, and plan use, so you see the whole set.",
           },
           {
             title: "Plan changes",
-            body: "Standard: client handles plan changes site by site. Fleet: DataGram activates upgrades — including Roaming and Global Priority plans — across all sites in scope.",
+            body: "On a normal fit, you change each plan yourself. On a fleet, we turn on upgrades, including Roaming and Global Priority, on every site in the job.",
           },
         ],
       },
@@ -1796,8 +1799,8 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Enterprise Plans", href: "/services/enterprise-plans" },
     ],
     ctaBanner: {
-      title: "Ready to centralize your Starlink operations?",
-      body: "Tell us how many sites or vessels you run, where they sit, and whether you need consolidated billing — we reply with a scoped fleet proposal.",
+      title: "Ready to run the dishes from one place?",
+      body: "Tell us how many sites or boats you run, where they sit, and if you want one bill. We reply with a fleet proposal.",
       buttonLabel: "Request a Fleet Proposal",
       href: "/contact",
     },
@@ -1805,33 +1808,33 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "How many sites make fleet management worth it?",
         answer:
-          "Usually five or more dishes — or fewer if they sit in hard-to-reach camps or vessels where a single missed renewal is expensive. Below that, a standard enterprise install with clear documentation is often enough.",
+          "Usually five or more dishes. Fewer can still make sense if a camp or a boat is hard to reach, and a missed renewal is costly. Below that, a normal business fit with clear notes is often enough.",
       },
       {
         question: "Does SpaceX give one portal for all our Starlink accounts?",
         answer:
-          "Not in the way most Nigerian IT teams expect for multi-site estates. Each terminal still has its own account relationship. Fleet management is how DataGram sits on top of that reality with one local contact and consolidated administration.",
+          "Not in the way most IT teams hope. Each terminal still has its own account. Fleet work is how we sit on top of that, with one local contact and one admin view.",
       },
       {
         question: "Can you consolidate billing in naira with VAT?",
         answer:
-          "Where DataGram supplies hardware, installation, and managed services, we issue VAT-compliant naira invoices. Starlink's own subscription line items still follow SpaceX checkout rules — we explain the split clearly so finance knows what is claimable.",
+          "Where we supply the kit, the fit, and the managed work, the invoice is in naira and shows VAT. Starlink's own monthly line still follows the SpaceX checkout. We show finance which part is which.",
       },
       {
         question: "Do you manage Global Priority upgrades across a maritime fleet?",
         answer:
-          "Yes. When vessels need Global Priority to stay compliant outside Nigeria or for ocean use, we coordinate upgrades across the fleet instead of leaving each captain to guess through the app.",
+          "Yes. When a boat needs Global Priority for use outside Nigeria, or for the ocean, we change the plans across the fleet. Each captain does not have to guess in the app.",
       },
       roamingFaq,
       {
         question: "Can DataGram manage Starlink across a fleet of vessels in Nigerian waters?",
         answer:
-          "Yes. DataGram handles Starlink fleet management for vessel operators — covering subscription administration, plan selection (including Global Priority and maritime mobility plans), hardware procurement, and activation across multiple vessels simultaneously. We provide centralised account oversight so your operations team does not have to manage individual dish accounts. Related: Global Priority and maritime mobility plans (/starlink-roaming-global-priority-nigeria).",
+          "Yes. We run the plans, including Global Priority and the boat plans, and we buy and turn on the kits across many vessels at once. Your team does not have to run each dish account. Related: Global Priority and boat plans (/starlink-roaming-global-priority-nigeria).",
       },
       {
         question: "What is the difference between fleet management and a standard enterprise Starlink deployment?",
         answer:
-          "A standard enterprise deployment covers one site or location — survey, install, and activate. Fleet management covers multiple assets (vessels, offices, or remote sites) under centralised account oversight, with DataGram handling ongoing subscription renewals, plan changes, and troubleshooting across all of them. For businesses with 5 or more Starlink connections, fleet management reduces the administrative burden significantly.",
+          "A normal business job is one site: survey, fit, and turn on. Fleet work is many boats, offices, or camps, with one view of the accounts. We handle renewals, plan changes, and faults across all of them. It starts to pay off at 5 or more dishes.",
       },
     ],
     extraSchemas: [
@@ -1847,7 +1850,7 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         serviceType: "Satellite Internet Fleet Management",
         areaServed: { "@type": "Country", name: "Nigeria" },
         description:
-          "Centralized Starlink procurement, deployment, account management and support for enterprises and maritime operators managing multiple sites or vessels in Nigeria",
+          "One contact to buy, fit, and manage Starlink for many Nigerian sites or boats.",
         url: "https://www.datagram.ng/starlink-fleet-management-nigeria",
       },
     ],
@@ -2226,23 +2229,24 @@ export const industryLandingPages: IndustryLandingConfig[] = [
     path: "/starlink-estate-wifi-nigeria",
     seoTitle: "Starlink WiFi Distribution for Nigerian Estates & Multi-Unit Buildings | DataGram",
     metaDescription:
-      "One Starlink connection. Whole estate coverage. DataGram designs and installs mesh WiFi distribution for estates, compounds, and multi-unit buildings across Nigeria.",
+      "Use one dish for a whole estate if the Wi-Fi is designed for every flat. DataGram plans the dish and the access points.",
     canonical: "/starlink-estate-wifi-nigeria",
     ogImage: img("blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
     h1: "Starlink Internet Distribution for Nigerian Estates, Compounds, and Multi-Unit Buildings",
     heroLabel: "Estate WiFi distribution",
     heroSubheading:
-      "One Starlink dish, properly configured, can serve an entire residential estate or office complex. DataGram designs and installs the network — not just the dish.",
+      "Choose one dish for the estate, then a network that reaches every flat.",
     heroImageAlt: "Starlink estate WiFi distribution in Nigeria",
     heroImage: img("blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg"),
     heroImageFile: "blog/starlink-estates-built-in-satellite-nigeria-real-estate.jpg",
     heroImageReason:
       "Starlink estate deployment image showing multiple units and shared connectivity infrastructure.",
     heroObjectPosition: "center top",
-    overviewTitle: "Starlink distribution for estates and compounds",
+    overviewTitle: "One dish, then Wi-Fi for the whole estate",
     overviewParagraphs: [
-      "A single Starlink connection can serve a whole estate when the WiFi distribution is designed correctly. DataGram plans the dish placement, router and switch locations, and access point positions so every unit gets reliable coverage.",
-      "This is more than a dish install. It is a network design job for compounds, multi-unit buildings, estates, and commercial complexes that need usable WiFi everywhere.",
+      "One Starlink link can serve a whole estate when the Wi-Fi is planned, not guessed. We place the dish, the router, the switch, and the access points so each flat gets a usable signal.",
+      "Latency, the delay before a reply, is a guide around 20 to 33 milliseconds. It is not a promise. A VLAN is its own network, so one flat does not share traffic with the next.",
+      "This is more than a dish on the roof. It is a network job for compounds, blocks of flats, estates, and office parks that need Wi-Fi in every unit.",
     ],
     stats: [
       { label: "Indicative latency", value: "20–33 ms", note: "Site design and WiFi distribution affect the end-user experience." },
@@ -2256,25 +2260,25 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         icon: Anchor,
         title: "Estate Developers",
         body:
-          "Building a new residential estate? DataGram designs Starlink-based connectivity into the development from the ground up — dish placement, fibre backbone, access point positions, and per-unit router provision.",
+          "Building a new estate? We plan the dish, the cable spine, the access points, and a router for each unit before the walls close.",
       },
       {
         icon: Building2,
         title: "Estate Managers & Facility Teams",
         body:
-          "Managing an existing estate where internet is unreliable or overpriced? DataGram installs a centralised Starlink connection with WiFi distribution to all units or communal areas.",
+          "If the estate link is weak or too dear, we fit one Starlink and share it to the flats, or to the shared rooms.",
       },
       {
         icon: Home,
         title: "Compound Landlords",
         body:
-          "Own a compound with multiple flats? A single Starlink Priority Plan dish with proper mesh distribution can serve every unit with separate network access — no dish-sharing workarounds needed.",
+          "A compound with many flats can use one Priority dish and a mesh. Each flat can have its own network. You do not need a dish on every roof.",
       },
       {
         icon: Factory,
         title: "Commercial Complexes",
         body:
-          "Office parks, shopping plazas, and commercial buildings can centralise connectivity on Starlink with VLAN separation between tenants and management networks.",
+          "An office park or a plaza can sit on one Starlink. Tenants stay on their own network, apart from the manager's.",
       },
     ],
     proofTitle: "Estate WiFi deployment proof",
@@ -2332,17 +2336,17 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         question: "Can one Starlink dish really cover an entire estate?",
         answer:
-          "Yes, with the right distribution hardware. The dish provides the internet connection; a properly designed mesh network distributes that connection across the estate. DataGram has deployed compound and multi-unit setups in Lagos, Port Harcourt, and Delta State.",
+          "Yes, if the Wi-Fi is designed for it. The dish brings the link. A mesh then shares that link across the estate. We have done compounds and blocks of flats in Lagos, Port Harcourt, and Delta State.",
       },
       {
         question: "Which Starlink plan is recommended for an estate?",
         answer:
-          "The Priority Plan is strongly recommended for multi-unit deployments. Residential plans are deprioritised during peak hours and are currently unavailable for new activations in Lagos and Abuja. Priority ensures consistent speeds regardless of how many people are connected.",
+          "Choose the Priority plan for many units. A home plan can be deprioritised at busy times. Deprioritised means the speed drops when the cell is busy. It is not a hard cutoff. Some addresses in Lagos and Abuja are offered Priority rather than a new home plan. That is the address on the screen, not every street. Check the address. Ask us for the current price.",
       },
       {
         question: "Can tenants have separate WiFi networks from each other?",
         answer:
-          "Yes. DataGram configures VLAN separation on request, giving each tenant or unit their own private network. Alternatively, a single shared SSID can be set up with bandwidth management rules if the estate prefers a communal approach.",
+          "Yes. Each flat can have its own network. A VLAN is that split. Or the estate can share one name and set a limit on how much each unit uses.",
       },
     ],
     extraSections: [
@@ -2352,39 +2356,39 @@ export const industryLandingPages: IndustryLandingConfig[] = [
           {
             title: "Step 1: Site survey",
             body:
-              "DataGram assesses the estate layout, building count, wall materials, and floor plans to design the network correctly.",
+              "We look at the layout, the number of buildings, the walls, and the floor plans. Then we draw the network.",
           },
           {
-            title: "Step 2: Starlink dish installation",
+            title: "Step 2: Fit the dish",
             body:
-              "Priority Plan recommended for multi-unit deployments to avoid residential deprioritisation.",
+              "For many units, choose Priority. A home plan can slow down when the cell is busy.",
           },
           {
-            title: "Step 3: Central router and switch placement",
+            title: "Step 3: Router and switch",
             body:
-              "Positioned for maximum signal distribution across the estate.",
+              "Put them where the signal can reach the most of the estate.",
           },
           {
-            title: "Step 4: Access point installation",
+            title: "Step 4: Access points",
             body:
-              "DataGram installs mesh nodes or ceiling-mounted access points at calculated positions across the estate.",
+              "We fit mesh nodes, or ceiling points, at the spots the survey marked.",
           },
           {
-            title: "Step 5: Per-unit or communal WiFi",
+            title: "Step 5: Each unit, or one shared name",
             body:
-              "Each flat, office, or unit receives its own SSID or is connected to a shared SSID, depending on the estate's preference.",
+              "Each flat can have its own Wi-Fi name, or join a shared one. The estate chooses.",
           },
           {
-            title: "Step 6: Network handover and documentation",
+            title: "Step 6: Handover",
             body:
-              "We deliver the network with credentials, coverage notes, and support guidance.",
+              "You get the passwords, a note on where the signal reaches, and how to call us.",
           },
         ],
       },
       {
         title: "Note on Lagos & Abuja congestion",
         paragraphs: [
-          "In Lagos and Abuja, Starlink residential plans are currently unavailable for new activations in most areas. Estate and multi-unit deployments require the Priority Plan, which DataGram can activate and manage. Contact us for current pricing.",
+          "Some addresses in Lagos and Abuja are offered Priority, not a new home plan. That is the address, not the whole city. An estate with many units should use Priority where that is what the screen shows. We can turn it on and manage it. Ask us for the current price.",
         ],
       },
     ],
@@ -2394,9 +2398,9 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Starlink Fleet Management Nigeria", href: "/starlink-fleet-management-nigeria" },
     ],
     ctaBanner: {
-      title: "Ready to Connect Your Estate?",
+      title: "Ready to connect the estate?",
       body:
-        "DataGram surveys and installs estate-wide Starlink networks across Lagos, Abuja, Port Harcourt, and nationwide.",
+        "We survey and fit estate Wi-Fi in Lagos, Abuja, Port Harcourt, and across Nigeria.",
       buttonLabel: "Book an Estate Survey",
       href: "/contact",
     },

@@ -31,22 +31,22 @@ const SPEED_NOTE = "Actual speeds vary by subscription plan and site conditions.
 const northernFaq = {
   question: "Do you install Starlink in northern Nigeria?",
   answer:
-    "DataGram's primary coverage is South-South and South-East Nigeria. We do not operate a standard installation desk in core northern states like Kano or Kaduna. Installations in northern regions are available on special request and subject to logistics assessment. Contact us to discuss your specific location.",
+    "Our usual work is the South-South and the South-East. We do not run a normal desk in Kano or Kaduna. A job in the north is by request, after we check the travel. Contact us about the town.",
 };
 
 function southEastFaqs(stateName: string) {
   return [
     {
       question: `How much does Starlink installation cost in ${stateName}?`,
-      answer: `Installation in ${stateName} typically costs between ₦10,000 and ₦150,000 depending on your site's location, the complexity of the mount, and distance from our nearest crew. Full hardware and setup costs range from ₦450,000 to ₦1,060,000 depending on scope. Contact us for a site-specific quote.`,
+      answer: `A fit in ${stateName} is usually ₦10,000 to ₦150,000. The price depends on the site, the mount, and how far the crew must travel. A full kit and setup is ₦450,000 to ₦1,060,000, depending on the job. Ask us for a quote for your address.`,
     },
     {
       question: `How long does a Starlink installation take in ${stateName}?`,
-      answer: `Most residential installations in ${stateName} are completed in one visit once the site survey is signed off. Surveys are typically done within 1–2 days of enquiry. Complex or commercial sites may require a second visit for cable management and WiFi distribution.`,
+      answer: `Most home fits in ${stateName} finish in one visit after the survey is signed. Surveys are usually within 1 to 2 days of your enquiry. A shop or a plant may need a second visit for the cables and the Wi-Fi.`,
     },
     {
       question: `Can businesses in ${stateName} get Starlink installed?`,
-      answer: `Yes. DataGram installs Starlink for businesses, NGOs, schools, and commercial properties across ${stateName}. Enterprise installations include cable tray routing, WiFi distribution, and a baseline speed report. Contact us for a proposal.`,
+      answer: `Yes. We fit Starlink for shops, NGOs, schools, and offices across ${stateName}. A business fit includes cable trays, Wi-Fi through the building, and a speed note. That note is a guide, not a promise. Contact us for a proposal.`,
     },
     {
       question: "Can businesses request after-hours installation?",
@@ -62,7 +62,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-abia-state",
     seoTitle: "Starlink Installation Abia State | Umuahia, Aba & Beyond | DataGram",
     metaDescription:
-      "DataGram installs Starlink across Abia State including Umuahia, Aba, Aba North, and Osisioma Ngwa. Certified installers, fast deployment, full support.",
+      "Use a local crew if you need the dish fitted in Abia. We cover Umuahia, Aba, Aba North, and Osisioma Ngwa.",
     canonical: "/starlink-installation-abia-state",
     h1: "Starlink Installation Abia State",
     stateName: "Abia State",
@@ -140,7 +140,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-anambra-state",
     seoTitle: "Starlink Installation Anambra State | Awka, Onitsha & Nnewi | DataGram",
     metaDescription:
-      "DataGram provides Starlink installation across Anambra State including Awka, Onitsha, Nnewi, and Ekwulobia. Certified install and full support.",
+      "Use a local crew if you need the dish fitted in Anambra. We cover Awka, Onitsha, Nnewi, and Ekwulobia.",
     canonical: "/starlink-installation-anambra-state",
     h1: "Starlink Installation Anambra State",
     stateName: "Anambra State",
@@ -160,19 +160,19 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
         icon: MapPin,
         title: "Local knowledge",
         body:
-          "South-East field teams know generator noise, shared walls in trading districts, and estate security rules. We install regularly in Onitsha commercial corridors, Nnewi industrial layouts, and Awka government-residential zones.",
+          "Our crews know generator noise, shared shop walls, and estate rules. We fit dishes often in Onitsha, Nnewi, and Awka.",
       },
       {
         icon: Truck,
         title: "Coverage area",
         body:
-          "Our coverage in Anambra includes Awka, Awka South, Onitsha, Nnewi, Ekwulobia, Aguata, Ihiala, Ogidi, Anaocha, and Idemili North—from Onitsha trading estates to schools and offices in Awka.",
+          "We cover Awka, Awka South, Onitsha, Nnewi, Ekwulobia, Aguata, Ihiala, Ogidi, Anaocha, and Idemili North. That runs from Onitsha shops to schools and offices in Awka.",
       },
       {
         icon: Clock,
         title: "Fast deployment",
         body:
-          "Most surveys schedule within days and installs complete 1–3 days after sign-off. Mobilisation from our South-South base keeps Anambra jobs off Lagos fly-in delays.",
+          "Most surveys are within a few days. The fit is 1 to 3 days after you sign. The crew comes from the South-South, not on a flight from Lagos.",
       },
     ],
     proofTitle: "Our Work in Anambra State",
@@ -207,7 +207,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
       attribution: "Obiageli N., Awka South",
     },
     coverageParagraph:
-      "Our coverage in Anambra includes Awka, Awka South, Onitsha, Nnewi, Ekwulobia, Aguata, Ihiala, Ogidi, Anaocha, and Idemili North. We work in both commercial and residential environments — from Onitsha's trading estates to schools and offices in Awka.",
+      "We cover Awka, Awka South, Onitsha, Nnewi, Ekwulobia, Aguata, Ihiala, Ogidi, Anaocha, and Idemili North. The work is shops and homes, from Onitsha markets to schools and offices in Awka.",
     relatedLinks: [
       { label: "Starlink installation in Enugu State", href: "/starlink-installation-enugu-state" },
       { label: "How much does Starlink cost in Nigeria?", href: "/blog/how-much-does-starlink-installation-cost-nigeria-2026" },
@@ -221,7 +221,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-imo-state-owerri",
     seoTitle: "Starlink Installation Imo State | Owerri & All LGAs | DataGram",
     metaDescription:
-      "DataGram installs Starlink in Imo State including Owerri, Orlu, Okigwe, and surrounding LGAs. Certified installers, same-day survey available.",
+      "Use a local crew if you need the dish fitted in Imo. We cover Owerri, Orlu, Okigwe, and the nearby areas.",
     canonical: "/starlink-installation-imo-state-owerri",
     h1: "Starlink Installation Imo State",
     stateName: "Imo State",
@@ -299,7 +299,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-ebonyi-state",
     seoTitle: "Starlink Installation Ebonyi State | Abakaliki & Beyond | DataGram",
     metaDescription:
-      "DataGram covers Starlink installation in Ebonyi State including Abakaliki, Afikpo, Onueke, and surrounding areas. Expert install and support.",
+      "Use a local crew if you need the dish fitted in Ebonyi. We cover Abakaliki, Afikpo, Onueke, and the nearby areas.",
     canonical: "/starlink-installation-ebonyi-state",
     h1: "Starlink Installation Ebonyi State",
     stateName: "Ebonyi State",
@@ -319,19 +319,19 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
         icon: MapPin,
         title: "Local knowledge",
         body:
-          "Ebonyi mixes urban blocks and semi-rural compounds where mast height matters. Our crews plan for generator use, seasonal rain, and rooftop access in Abakaliki and Afikpo corridors.",
+          "Ebonyi mixes town blocks and quieter compounds, so mast height matters. We plan for the generator, the rain, and roof access in Abakaliki and Afikpo.",
       },
       {
         icon: Truck,
         title: "Coverage area",
         body:
-          "We cover Abakaliki and surrounding areas including Afikpo, Afikpo North, Afikpo South, Onueke, Ezza North, Ishielu, Ohaukwu, and Ebonyi LGA. Urban shops and hillside homes both get honest obstruction scores before hardware order.",
+          "We cover Abakaliki, Afikpo, Afikpo North, Afikpo South, Onueke, Ezza North, Ishielu, Ohaukwu, and Ebonyi LGA. Shops and hillside homes both get a sky check before you buy the kit. An obstruction is something in the way of the sky.",
       },
       {
         icon: Clock,
         title: "Fast deployment",
         body:
-          "Surveys book within days; installs typically complete 1–3 days after approval. Port Harcourt–based logistics reduce wait times for Ebonyi mobilisation.",
+          "Surveys are within a few days. The fit is usually 1 to 3 days after you approve it. The crew and the parts come from Port Harcourt.",
       },
     ],
     proofTitle: "Our Work in Ebonyi State",
@@ -363,7 +363,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
       attribution: "Chigozie E., Abakaliki",
     },
     coverageParagraph:
-      "We cover Abakaliki and its surrounding areas including Afikpo, Afikpo North, Afikpo South, Onueke, Ezza North, Ishielu, Ohaukwu, and Ebonyi LGA. Ebonyi's mix of urban and semi-rural sites means we plan installations carefully for sky-view clearance and power backup where generator use is common.",
+      "We cover Abakaliki, Afikpo, Afikpo North, Afikpo South, Onueke, Ezza North, Ishielu, Ohaukwu, and Ebonyi LGA. Town and village sites both need a clear sky. Where a generator is normal, we plan the power too.",
     relatedLinks: [
       { label: "Starlink installation in Enugu State", href: "/starlink-installation-enugu-state" },
       { label: "Power backup for Starlink in Nigeria", href: "/blog/power-backup-starlink-nigeria" },
@@ -377,7 +377,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     path: "/starlink-installation-enugu-state",
     seoTitle: "Starlink Installation Enugu State | Coal City Coverage | DataGram",
     metaDescription:
-      "DataGram installs Starlink across Enugu State including Enugu city, Nsukka, Agbani, and Oji River. Certified installers, fast deployment.",
+      "Use a local crew if you need the dish fitted in Enugu. We cover the city, Nsukka, Agbani, and Oji River.",
     canonical: "/starlink-installation-enugu-state",
     h1: "Starlink Installation Enugu State",
     stateName: "Enugu State",
@@ -437,7 +437,7 @@ export const southEastRegionalPages: RegionalLandingConfig[] = [
     speedStatNote: SPEED_NOTE,
     testimonial: {
       quote:
-        "Duplex needed two SSIDs for tenants. Crew documented VLAN handover and speeds at each floor.",
+        "The duplex needed two Wi-Fi names. A VLAN is its own network, so each tenant stayed separate. We noted the speed on each floor.",
       attribution: "Ngozi I., Independence Layout, Enugu",
     },
     coverageParagraph:

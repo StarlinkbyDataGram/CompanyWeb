@@ -1,0 +1,6085 @@
+{
+  "label": "b3",
+  "generatedAt": "2026-10-09T10:30:48.383Z",
+  "buildCommand": "ANALYZE=1 npm run build",
+  "lighthouse": "mobile defaults, simulated Slow 4G, 4x CPU, median of runs",
+  "runs": 3,
+  "origin": "http://127.0.0.1:4173",
+  "urls": [
+    {
+      "path": "/",
+      "runs": [
+        {
+          "performance": 32,
+          "lcpMs": 6608.072050000001,
+          "fcpMs": 3132.4193999999998,
+          "tbtMs": 3754.7942500000017,
+          "cls": 0,
+          "speedIndexMs": 11651.194893227574,
+          "ttiMs": 16195.901475,
+          "ttfbMs": 24,
+          "transferBytes": 1367753,
+          "requests": 25,
+          "jsBytes": 679623,
+          "cssBytes": 17021,
+          "imageBytes": 533350,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 570873,
+          "domNodes": 1070,
+          "lcpElement": {
+            "selector": "div.relative > div.relative > div.relative > img.absolute",
+            "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Professional installation — DataGram Starlink installation Nigeria\" class=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-70…\" loading=\"eager\" width=\"1200\" height=\"800\" style=\"object-position: center top;\">",
+            "label": "Professional installation — DataGram Starlink installation Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 73.39199996948243
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4714.280000030518
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 30.498
+            },
+            {
+              "label": "Element render delay",
+              "ms": 621.536
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Script Evaluation",
+              "ms": 6359.155999999871
+            },
+            {
+              "group": "Other",
+              "ms": 4750.635999999985
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 3437.220000000002
+            },
+            {
+              "group": "Rendering",
+              "ms": 844.0920000000554
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 518.86
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 418.0839999999999
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 208.80400000000012
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 330
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1465,
+              "wastedMs": 942
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalBytes": 469690,
+              "wastedBytes": 212596
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 41250
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 12002
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210250
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalMs": 4973.591999999891,
+              "scriptMs": 3243.667999999891
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3509.771999999989,
+              "scriptMs": 1465.667999999989
+            },
+            {
+              "url": "http://127.0.0.1:4173/",
+              "totalMs": 2918.4919999999984,
+              "scriptMs": 678.0439999999999
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 2710.0200000000114,
+              "scriptMs": 626.8760000000013
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1996.4159999999831,
+              "scriptMs": 48.7
+            },
+            {
+              "url": "https://apps.elfsight.com/p/platform.js",
+              "totalMs": 299.156,
+              "scriptMs": 284.92400000000004
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalMs": 91.17599999999999,
+              "scriptMs": 0
+            }
+          ]
+        },
+        {
+          "performance": 29,
+          "lcpMs": 10522.9295,
+          "fcpMs": 3426.7349999999997,
+          "tbtMs": 22052.92485,
+          "cls": 0,
+          "speedIndexMs": 37794.18241119012,
+          "ttiMs": 37282.431595,
+          "ttfbMs": 163,
+          "transferBytes": 1431167,
+          "requests": 28,
+          "jsBytes": 678861,
+          "cssBytes": 16673,
+          "imageBytes": 595867,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 634287,
+          "domNodes": 1775,
+          "lcpElement": {
+            "selector": "div.relative > div.relative > div.relative > img.absolute",
+            "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Professional installation — DataGram Starlink installation Nigeria\" class=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-70…\" loading=\"eager\" width=\"1200\" height=\"800\" style=\"object-position: center top;\">",
+            "label": "Professional installation — DataGram Starlink installation Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 168.51
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 13919.401
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 568.148
+            },
+            {
+              "label": "Element render delay",
+              "ms": 351.395
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 20315.535999999876
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 18568.923999999806
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 12008.975999999999
+            },
+            {
+              "group": "Rendering",
+              "ms": 2690.9559999997023
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 1332.3359999999996
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 743.7799999999982
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 59.867999999999995
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 867
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 943
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalBytes": 469690,
+              "wastedBytes": 212441
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 41250
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 12002
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210250
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalMs": 30912.26399999912,
+              "scriptMs": 13297.88399999924
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 9060.647999999977,
+              "scriptMs": 3511.415999999979
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 5777.859999999646,
+              "scriptMs": 110.69600000000001
+            },
+            {
+              "url": "http://127.0.0.1:4173/",
+              "totalMs": 5764.16,
+              "scriptMs": 152.44800000000004
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 4064.123999999993,
+              "scriptMs": 1391.5679999999952
+            },
+            {
+              "url": "https://apps.elfsight.com/p/platform.js",
+              "totalMs": 86.66000000000001,
+              "scriptMs": 71.648
+            }
+          ]
+        },
+        {
+          "performance": 33,
+          "lcpMs": 7288.807699999999,
+          "fcpMs": 2370.77475,
+          "tbtMs": 23802.427625,
+          "cls": 0,
+          "speedIndexMs": 25502.77937689804,
+          "ttiMs": 40361.3656125,
+          "ttfbMs": 27,
+          "transferBytes": 1432050,
+          "requests": 28,
+          "jsBytes": 679340,
+          "cssBytes": 16673,
+          "imageBytes": 595832,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 635170,
+          "domNodes": 1775,
+          "lcpElement": {
+            "selector": "div.relative > div.relative > div.relative > img.absolute",
+            "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Professional installation — DataGram Starlink installation Nigeria\" class=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-70…\" loading=\"eager\" width=\"1200\" height=\"800\" style=\"object-position: center top;\">",
+            "label": "Professional installation — DataGram Starlink installation Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 35.168
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 6717.261
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 35.12
+            },
+            {
+              "label": "Element render delay",
+              "ms": 387.811
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 25901.787999999946
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 16204.683999999148
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 12390.099999999986
+            },
+            {
+              "group": "Rendering",
+              "ms": 2780.1239999994714
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 743.0440000000002
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 444.1640000000001
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 23.491999999999997
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 334
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 966
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalBytes": 469690,
+              "wastedBytes": 212389
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 41250
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 12002
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210250
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+              "totalMs": 36179.90799999876,
+              "scriptMs": 12367.295999999054
+            },
+            {
+              "url": "http://127.0.0.1:4173/",
+              "totalMs": 7776.840000000002,
+              "scriptMs": 78.12800000000004
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 5928.295999999984,
+              "scriptMs": 1768.7239999999836
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 5003.391999999998,
+              "scriptMs": 1598.6079999999897
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 3357.408000000057,
+              "scriptMs": 202.332
+            },
+            {
+              "url": "https://apps.elfsight.com/p/platform.js",
+              "totalMs": 118.77199999999999,
+              "scriptMs": 87.508
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 32,
+        "lcpMs": 7288.807699999999,
+        "fcpMs": 3132.4193999999998,
+        "tbtMs": 22052.92485,
+        "cls": 0,
+        "speedIndexMs": 25502.77937689804,
+        "ttiMs": 37282.431595,
+        "ttfbMs": 27,
+        "transferBytes": 1431167,
+        "requests": 28,
+        "jsBytes": 679340,
+        "cssBytes": 16673,
+        "imageBytes": 595832,
+        "fontBytes": 48464,
+        "thirdPartyBytes": 634287,
+        "domNodes": 1775
+      },
+      "lcpElement": {
+        "selector": "div.relative > div.relative > div.relative > img.absolute",
+        "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Professional installation — DataGram Starlink installation Nigeria\" class=\"absolute inset-0 h-full w-full object-cover transition-opacity duration-70…\" loading=\"eager\" width=\"1200\" height=\"800\" style=\"object-position: center top;\">",
+        "label": "Professional installation — DataGram Starlink installation Nigeria"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 73.39199996948243
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 4714.280000030518
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 30.498
+        },
+        {
+          "label": "Element render delay",
+          "ms": 621.536
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Script Evaluation",
+          "ms": 6359.155999999871
+        },
+        {
+          "group": "Other",
+          "ms": 4750.635999999985
+        },
+        {
+          "group": "Style & Layout",
+          "ms": 3437.220000000002
+        },
+        {
+          "group": "Rendering",
+          "ms": 844.0920000000554
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 518.86
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 418.0839999999999
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 208.80400000000012
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 330
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1465,
+          "wastedMs": 942
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+          "totalBytes": 469690,
+          "wastedBytes": 212596
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 41250
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 12002
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 205 KiB",
+          "wastedBytes": 210250
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "https://universe-static.elfsightcdn.com/app-releases/google-reviews/stable/v3.53.0/7efd9184817592fe6e8cf2f859dc9365f208b966/widget/googleReviews.js",
+          "totalMs": 4973.591999999891,
+          "scriptMs": 3243.667999999891
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 3509.771999999989,
+          "scriptMs": 1465.667999999989
+        },
+        {
+          "url": "http://127.0.0.1:4173/",
+          "totalMs": 2918.4919999999984,
+          "scriptMs": 678.0439999999999
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 2710.0200000000114,
+          "scriptMs": 626.8760000000013
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 1996.4159999999831,
+          "scriptMs": 48.7
+        },
+        {
+          "url": "https://apps.elfsight.com/p/platform.js",
+          "totalMs": 299.156,
+          "scriptMs": 284.92400000000004
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalMs": 91.17599999999999,
+          "scriptMs": 0
+        }
+      ]
+    },
+    {
+      "path": "/starlink-offshore-maritime-installation",
+      "runs": [
+        {
+          "performance": 4,
+          "lcpMs": 13243.16575,
+          "fcpMs": 8368.159399999999,
+          "tbtMs": 1886.3811999999998,
+          "cls": 0.813871,
+          "speedIndexMs": 12324.12912138307,
+          "ttiMs": 13342.860275,
+          "ttfbMs": 25,
+          "transferBytes": 706314,
+          "requests": 16,
+          "jsBytes": 238682,
+          "cssBytes": 16673,
+          "imageBytes": 264194,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 674,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/maritime2.jpeg\" alt=\"Starlink dish installed on tanker deck in the open ocean, Nigeria offshore\" data-dg-image=\"maritime2.jpeg\" data-dg-placement=\"wide cinematic shot of tanker deck with Starlink dish, open ocean horizon …\" style=\"width: 100%; height: 100%; object-fit: cover;\">",
+            "label": "Starlink dish installed on tanker deck in the open ocean, Nigeria offshore"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 28.92
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 6295.145
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 29.916
+            },
+            {
+              "label": "Element render delay",
+              "ms": 251.938
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 4539.251999999996
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 2350.4119999999994
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 2191.0439999999885
+            },
+            {
+              "group": "Rendering",
+              "ms": 491.5240000000042
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 121.716
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 18.052
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 5.512
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 2949
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 947
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52364
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13503
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 120 KiB",
+              "wastedBytes": 122658
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 4566.779999999994,
+              "scriptMs": 1298.627999999993
+            },
+            {
+              "url": "http://127.0.0.1:4173/starlink-offshore-maritime-installation",
+              "totalMs": 2216.156,
+              "scriptMs": 72.50000000000006
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 2034.7079999999978,
+              "scriptMs": 770.7679999999979
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 872.0319999999859,
+              "scriptMs": 46.544
+            }
+          ]
+        },
+        {
+          "performance": 3,
+          "lcpMs": 11433.535050000002,
+          "fcpMs": 8379.08695,
+          "tbtMs": 2356.589175000001,
+          "cls": 0.813623,
+          "speedIndexMs": 16603.02294942549,
+          "ttiMs": 11516.035050000002,
+          "ttfbMs": 22,
+          "transferBytes": 706662,
+          "requests": 16,
+          "jsBytes": 238682,
+          "cssBytes": 17021,
+          "imageBytes": 264194,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 135240,
+          "domNodes": 674,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/maritime2.jpeg\" alt=\"Starlink dish installed on tanker deck in the open ocean, Nigeria offshore\" data-dg-image=\"maritime2.jpeg\" data-dg-placement=\"wide cinematic shot of tanker deck with Starlink dish, open ocean horizon …\" style=\"width: 100%; height: 100%; object-fit: cover;\">",
+            "label": "Starlink dish installed on tanker deck in the open ocean, Nigeria offshore"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 24.422
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 8935.985
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 130.775
+            },
+            {
+              "label": "Element render delay",
+              "ms": 355.093
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Script Evaluation",
+              "ms": 3272.3919999999634
+            },
+            {
+              "group": "Other",
+              "ms": 3094.2320000000186
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 2353.4079999999985
+            },
+            {
+              "group": "Rendering",
+              "ms": 252.1559999999981
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 26.652
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 17.543999999999993
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.88
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1465,
+              "wastedMs": 4239
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 1920
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52364
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13503
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "title": "Improve image delivery",
+              "display": "Est savings of 120 KiB",
+              "wastedBytes": 122658
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 4294.723999999993,
+              "scriptMs": 712.2719999999988
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3124.527999999983,
+              "scriptMs": 2464.695999999983
+            },
+            {
+              "url": "http://127.0.0.1:4173/starlink-offshore-maritime-installation",
+              "totalMs": 872.2279999999998,
+              "scriptMs": 74.62400000000005
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 699.7279999999859,
+              "scriptMs": 15.991999999999996
+            }
+          ]
+        },
+        {
+          "performance": 11,
+          "lcpMs": 7818.419199999998,
+          "fcpMs": 3907.4672,
+          "tbtMs": 1214.8361999999993,
+          "cls": 0.813623,
+          "speedIndexMs": 9615.087210110029,
+          "ttiMs": 8467.488480000002,
+          "ttfbMs": 26,
+          "transferBytes": 706314,
+          "requests": 16,
+          "jsBytes": 238682,
+          "cssBytes": 16673,
+          "imageBytes": 264194,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 674,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/maritime2.jpeg\" alt=\"Starlink dish installed on tanker deck in the open ocean, Nigeria offshore\" data-dg-image=\"maritime2.jpeg\" data-dg-placement=\"wide cinematic shot of tanker deck with Starlink dish, open ocean horizon …\" style=\"width: 100%; height: 100%; object-fit: cover;\">",
+            "label": "Starlink dish installed on tanker deck in the open ocean, Nigeria offshore"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 31.384
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4203.696
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 58.906
+            },
+            {
+              "label": "Element render delay",
+              "ms": 289.341
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 2609.7079999999996
+            },
+            {
+              "group": "Other",
+              "ms": 2210.715999999991
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1901.2119999999788
+            },
+            {
+              "group": "Rendering",
+              "ms": 308.94000000000216
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 22.70799999999999
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 16.488
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 11.124
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 1100
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 948
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52364
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13503
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 120 KiB",
+              "wastedBytes": 122658
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 3288.1959999999895,
+              "scriptMs": 653.6399999999987
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 2219.3559999999934,
+              "scriptMs": 1145.3239999999935
+            },
+            {
+              "url": "http://127.0.0.1:4173/starlink-offshore-maritime-installation",
+              "totalMs": 943.4600000000005,
+              "scriptMs": 86.44800000000009
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 601.5999999999938,
+              "scriptMs": 13.244
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 4,
+        "lcpMs": 11433.535050000002,
+        "fcpMs": 8368.159399999999,
+        "tbtMs": 1886.3811999999998,
+        "cls": 0.813623,
+        "speedIndexMs": 12324.12912138307,
+        "ttiMs": 11516.035050000002,
+        "ttfbMs": 25,
+        "transferBytes": 706314,
+        "requests": 16,
+        "jsBytes": 238682,
+        "cssBytes": 16673,
+        "imageBytes": 264194,
+        "fontBytes": 133775,
+        "thirdPartyBytes": 134892,
+        "domNodes": 674
+      },
+      "lcpElement": {
+        "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+        "snippet": "<img src=\"/images/maritime2.jpeg\" alt=\"Starlink dish installed on tanker deck in the open ocean, Nigeria offshore\" data-dg-image=\"maritime2.jpeg\" data-dg-placement=\"wide cinematic shot of tanker deck with Starlink dish, open ocean horizon …\" style=\"width: 100%; height: 100%; object-fit: cover;\">",
+        "label": "Starlink dish installed on tanker deck in the open ocean, Nigeria offshore"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 28.92
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 6295.145
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 29.916
+        },
+        {
+          "label": "Element render delay",
+          "ms": 251.938
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Other",
+          "ms": 4539.251999999996
+        },
+        {
+          "group": "Style & Layout",
+          "ms": 2350.4119999999994
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 2191.0439999999885
+        },
+        {
+          "group": "Rendering",
+          "ms": 491.5240000000042
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 121.716
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 18.052
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 5.512
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 2949
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1117,
+          "wastedMs": 947
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 52364
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13503
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 120 KiB",
+          "wastedBytes": 122658
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 4566.779999999994,
+          "scriptMs": 1298.627999999993
+        },
+        {
+          "url": "http://127.0.0.1:4173/starlink-offshore-maritime-installation",
+          "totalMs": 2216.156,
+          "scriptMs": 72.50000000000006
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 2034.7079999999978,
+          "scriptMs": 770.7679999999979
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 872.0319999999859,
+          "scriptMs": 46.544
+        }
+      ]
+    },
+    {
+      "path": "/starlink-installation-lagos",
+      "runs": [
+        {
+          "performance": 15,
+          "lcpMs": 8093.178524999999,
+          "fcpMs": 4218.33985,
+          "tbtMs": 841.6990250000003,
+          "cls": 0.813623,
+          "speedIndexMs": 10037.073058964817,
+          "ttiMs": 8371.0252225,
+          "ttfbMs": 28,
+          "transferBytes": 782928,
+          "requests": 17,
+          "jsBytes": 238682,
+          "cssBytes": 16673,
+          "imageBytes": 426119,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 505,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/starlinkSetup.jpeg\" alt=\"Starlink dish on commercial building in Lagos, DataGram installation\" width=\"1920\" height=\"1080\" data-dg-image=\"starlinkSetup.jpeg\" data-dg-placement=\"commercial building with active construction in background reads as Lagos …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink dish on commercial building in Lagos, DataGram installation"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 30.381
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4677.288
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 164.017
+            },
+            {
+              "label": "Element render delay",
+              "ms": 52.355
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 2370.0399999999954
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 1676.4640000000004
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1370.8319999999867
+            },
+            {
+              "group": "Rendering",
+              "ms": 298.9240000000022
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 20.875999999999994
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 15.984
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 5.904
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 1253
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 944
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52387
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13582
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 188 KiB",
+              "wastedBytes": 192357
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 3317.687999999999,
+              "scriptMs": 540.0120000000006
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 1017.5919999999976,
+              "scriptMs": 740.1359999999976
+            },
+            {
+              "url": "http://127.0.0.1:4173/starlink-installation-lagos",
+              "totalMs": 705.8160000000001,
+              "scriptMs": 66.26400000000001
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 689.3559999999868,
+              "scriptMs": 19.775999999999996
+            }
+          ]
+        },
+        {
+          "performance": 23,
+          "lcpMs": 9089.39825,
+          "fcpMs": 4674.82175,
+          "tbtMs": 421.6093750000009,
+          "cls": 0.813623,
+          "speedIndexMs": 9907.84306089269,
+          "ttiMs": 9149.40355,
+          "ttfbMs": 26,
+          "transferBytes": 782928,
+          "requests": 17,
+          "jsBytes": 238682,
+          "cssBytes": 16673,
+          "imageBytes": 426119,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 505,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/starlinkSetup.jpeg\" alt=\"Starlink dish on commercial building in Lagos, DataGram installation\" width=\"1920\" height=\"1080\" data-dg-image=\"starlinkSetup.jpeg\" data-dg-placement=\"commercial building with active construction in background reads as Lagos …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink dish on commercial building in Lagos, DataGram installation"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 28.604
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 5206.353
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 42.973
+            },
+            {
+              "label": "Element render delay",
+              "ms": 69.706
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 2742.2439999999997
+            },
+            {
+              "group": "Other",
+              "ms": 2411.284000000007
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1114.1879999999887
+            },
+            {
+              "group": "Rendering",
+              "ms": 248.53599999999759
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 15.047999999999998
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 5.204000000000001
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 1512
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 943
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52387
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13582
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 188 KiB",
+              "wastedBytes": 192357
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/starlink-installation-lagos",
+              "totalMs": 2842.312,
+              "scriptMs": 108.94000000000003
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 2428.5279999999866,
+              "scriptMs": 465.43200000000184
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 659.0199999999998,
+              "scriptMs": 518.1759999999997
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 586.4199999999961,
+              "scriptMs": 18.52
+            }
+          ]
+        },
+        {
+          "performance": 1,
+          "lcpMs": 32693.950049999996,
+          "fcpMs": 18221.5071,
+          "tbtMs": 14194.499999999993,
+          "cls": 0.813623,
+          "speedIndexMs": 42777.70737356449,
+          "ttiMs": 39781.43304999999,
+          "ttfbMs": 274,
+          "transferBytes": 782928,
+          "requests": 17,
+          "jsBytes": 238682,
+          "cssBytes": 16673,
+          "imageBytes": 426119,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 505,
+          "lcpElement": {
+            "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+            "snippet": "<img src=\"/images/starlinkSetup.jpeg\" alt=\"Starlink dish on commercial building in Lagos, DataGram installation\" width=\"1920\" height=\"1080\" data-dg-image=\"starlinkSetup.jpeg\" data-dg-placement=\"commercial building with active construction in background reads as Lagos …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink dish on commercial building in Lagos, DataGram installation"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 293.521
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 25071.91
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 117.978
+            },
+            {
+              "label": "Element render delay",
+              "ms": 413.36
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 20358.039999999248
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 10199.848
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 8527.792000000105
+            },
+            {
+              "group": "Rendering",
+              "ms": 3206.6599999997816
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 86.65199999999994
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 20.216
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 12.011999999999999
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 8252
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 945
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52387
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13582
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 188 KiB",
+              "wastedBytes": 192357
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 28024.15600000014,
+              "scriptMs": 5491.996000000007
+            },
+            {
+              "url": "http://127.0.0.1:4173/starlink-installation-lagos",
+              "totalMs": 7613.500000000002,
+              "scriptMs": 156.14000000000001
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3940.855999999988,
+              "scriptMs": 2834.307999999988
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 2797.9039999999377,
+              "scriptMs": 37.87599999999998
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 15,
+        "lcpMs": 9089.39825,
+        "fcpMs": 4674.82175,
+        "tbtMs": 841.6990250000003,
+        "cls": 0.813623,
+        "speedIndexMs": 10037.073058964817,
+        "ttiMs": 9149.40355,
+        "ttfbMs": 28,
+        "transferBytes": 782928,
+        "requests": 17,
+        "jsBytes": 238682,
+        "cssBytes": 16673,
+        "imageBytes": 426119,
+        "fontBytes": 48464,
+        "thirdPartyBytes": 49581,
+        "domNodes": 505
+      },
+      "lcpElement": {
+        "selector": "section.relative > div.absolute > div.aspect-[16/9] > img",
+        "snippet": "<img src=\"/images/starlinkSetup.jpeg\" alt=\"Starlink dish on commercial building in Lagos, DataGram installation\" width=\"1920\" height=\"1080\" data-dg-image=\"starlinkSetup.jpeg\" data-dg-placement=\"commercial building with active construction in background reads as Lagos …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+        "label": "Starlink dish on commercial building in Lagos, DataGram installation"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 30.381
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 4677.288
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 164.017
+        },
+        {
+          "label": "Element render delay",
+          "ms": 52.355
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Other",
+          "ms": 2370.0399999999954
+        },
+        {
+          "group": "Style & Layout",
+          "ms": 1676.4640000000004
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 1370.8319999999867
+        },
+        {
+          "group": "Rendering",
+          "ms": 298.9240000000022
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 20.875999999999994
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 15.984
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 5.904
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 1253
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1117,
+          "wastedMs": 944
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 52387
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13582
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 188 KiB",
+          "wastedBytes": 192357
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 3317.687999999999,
+          "scriptMs": 540.0120000000006
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 1017.5919999999976,
+          "scriptMs": 740.1359999999976
+        },
+        {
+          "url": "http://127.0.0.1:4173/starlink-installation-lagos",
+          "totalMs": 705.8160000000001,
+          "scriptMs": 66.26400000000001
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 689.3559999999868,
+          "scriptMs": 19.775999999999996
+        }
+      ]
+    },
+    {
+      "path": "/blog",
+      "runs": [
+        {
+          "performance": 10,
+          "lcpMs": 7495.405999999999,
+          "fcpMs": 2997.3099999999995,
+          "tbtMs": 2137.238000000001,
+          "cls": 0.813873,
+          "speedIndexMs": 9718.486896424052,
+          "ttiMs": 9782.986200000001,
+          "ttfbMs": 22,
+          "transferBytes": 2017996,
+          "requests": 26,
+          "jsBytes": 198775,
+          "cssBytes": 16673,
+          "imageBytes": 1614170,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 1775,
+          "lcpElement": {
+            "selector": "div.grid > div.rounded-lg > div.aspect-[16/9] > img.h-full",
+            "snippet": "<img src=\"/images/starlinkInstallation.jpeg\" alt=\"Starlink dish installation in Nigeria — DataGram\" loading=\"lazy\" data-dg-image=\"starlinkInstallation.jpeg\" class=\"h-full w-full transition-transform duration-300 group-hover:scale-105\" style=\"object-fit: cover; object-position: center top; width: 100%; height: 100%;\">",
+            "label": "Starlink dish installation in Nigeria — DataGram"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 36.671
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4174.338
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 21.069
+            },
+            {
+              "label": "Element render delay",
+              "ms": 245.318
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": false
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 4241.808000000001
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 3386.9639999999713
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 2646.52
+            },
+            {
+              "group": "Rendering",
+              "ms": 1858.311999999978
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 29.076
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 6.76
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 339
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 959
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 53067
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13517
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210410
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 5789.328000000002,
+              "scriptMs": 1100.131999999995
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog",
+              "totalMs": 2802.576000000001,
+              "scriptMs": 122.79200000000012
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 2292.5799999999927,
+              "scriptMs": 2146.779999999993
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1252.7639999999867,
+              "scriptMs": 10.107999999999999
+            }
+          ]
+        },
+        {
+          "performance": 6,
+          "lcpMs": 8950.9846,
+          "fcpMs": 3334.14205,
+          "tbtMs": 3868.295799999999,
+          "cls": 0.813873,
+          "speedIndexMs": 14780.655901001388,
+          "ttiMs": 12923.167219999998,
+          "ttfbMs": 32,
+          "transferBytes": 2017996,
+          "requests": 26,
+          "jsBytes": 198775,
+          "cssBytes": 16673,
+          "imageBytes": 1614170,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 1775,
+          "lcpElement": {
+            "selector": "div.grid > div.rounded-lg > div.aspect-[16/9] > img.h-full",
+            "snippet": "<img src=\"/images/starlinkInstallation.jpeg\" alt=\"Starlink dish installation in Nigeria — DataGram\" loading=\"lazy\" data-dg-image=\"starlinkInstallation.jpeg\" class=\"h-full w-full transition-transform duration-300 group-hover:scale-105\" style=\"object-fit: cover; object-position: center top; width: 100%; height: 100%;\">",
+            "label": "Starlink dish installation in Nigeria — DataGram"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 37.786
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 7504.942
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 70.391
+            },
+            {
+              "label": "Element render delay",
+              "ms": 471.721
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": false
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 5253.059999999997
+            },
+            {
+              "group": "Other",
+              "ms": 5116.311999999986
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 3029.6039999999675
+            },
+            {
+              "group": "Rendering",
+              "ms": 2374.4079999999703
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 71.97600000000003
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 17.584
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.672000000000001
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 383
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 1043
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 53067
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13517
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210410
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 7277.939999999996,
+              "scriptMs": 854.22
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog",
+              "totalMs": 4708.728000000003,
+              "scriptMs": 83.14800000000011
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 2666.42399999999,
+              "scriptMs": 2075.17599999999
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1184.4799999999705,
+              "scriptMs": 10.376
+            }
+          ]
+        },
+        {
+          "performance": 6,
+          "lcpMs": 7996.707849999998,
+          "fcpMs": 3204.12025,
+          "tbtMs": 5177.416949999999,
+          "cls": 0.813623,
+          "speedIndexMs": 14383.347643160752,
+          "ttiMs": 13810.183279999997,
+          "ttfbMs": 23,
+          "transferBytes": 2017996,
+          "requests": 26,
+          "jsBytes": 198775,
+          "cssBytes": 16673,
+          "imageBytes": 1614170,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 1775,
+          "lcpElement": {
+            "selector": "div.grid > div.rounded-lg > div.aspect-[16/9] > img.h-full",
+            "snippet": "<img src=\"/images/starlinkInstallation.jpeg\" alt=\"Starlink dish installation in Nigeria — DataGram\" loading=\"lazy\" data-dg-image=\"starlinkInstallation.jpeg\" class=\"h-full w-full transition-transform duration-300 group-hover:scale-105\" style=\"object-fit: cover; object-position: center top; width: 100%; height: 100%;\">",
+            "label": "Starlink dish installation in Nigeria — DataGram"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 25.953
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 7261.799
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 146.118
+            },
+            {
+              "label": "Element render delay",
+              "ms": 161.501
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": false
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 6014.8519999999735
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 4419.82
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 3310.0359999999696
+            },
+            {
+              "group": "Rendering",
+              "ms": 2627.803999999958
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 19.072
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.44
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 441
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 1087
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 53067
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13517
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 205 KiB",
+              "wastedBytes": 210410
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 8182.219999999983,
+              "scriptMs": 576.6399999999995
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog",
+              "totalMs": 4135.872000000004,
+              "scriptMs": 85.70400000000008
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3178.9799999999864,
+              "scriptMs": 2611.6679999999865
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 857.0279999999805,
+              "scriptMs": 27.124000000000002
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 6,
+        "lcpMs": 7996.707849999998,
+        "fcpMs": 3204.12025,
+        "tbtMs": 3868.295799999999,
+        "cls": 0.813873,
+        "speedIndexMs": 14383.347643160752,
+        "ttiMs": 12923.167219999998,
+        "ttfbMs": 23,
+        "transferBytes": 2017996,
+        "requests": 26,
+        "jsBytes": 198775,
+        "cssBytes": 16673,
+        "imageBytes": 1614170,
+        "fontBytes": 133775,
+        "thirdPartyBytes": 134892,
+        "domNodes": 1775
+      },
+      "lcpElement": {
+        "selector": "div.grid > div.rounded-lg > div.aspect-[16/9] > img.h-full",
+        "snippet": "<img src=\"/images/starlinkInstallation.jpeg\" alt=\"Starlink dish installation in Nigeria — DataGram\" loading=\"lazy\" data-dg-image=\"starlinkInstallation.jpeg\" class=\"h-full w-full transition-transform duration-300 group-hover:scale-105\" style=\"object-fit: cover; object-position: center top; width: 100%; height: 100%;\">",
+        "label": "Starlink dish installation in Nigeria — DataGram"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 37.786
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 7504.942
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 70.391
+        },
+        {
+          "label": "Element render delay",
+          "ms": 471.721
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": false
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Style & Layout",
+          "ms": 5253.059999999997
+        },
+        {
+          "group": "Other",
+          "ms": 5116.311999999986
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 3029.6039999999675
+        },
+        {
+          "group": "Rendering",
+          "ms": 2374.4079999999703
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 71.97600000000003
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 17.584
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 4.672000000000001
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 383
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1117,
+          "wastedMs": 1043
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 53067
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13517
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 205 KiB",
+          "wastedBytes": 210410
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 7277.939999999996,
+          "scriptMs": 854.22
+        },
+        {
+          "url": "http://127.0.0.1:4173/blog",
+          "totalMs": 4708.728000000003,
+          "scriptMs": 83.14800000000011
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 2666.42399999999,
+          "scriptMs": 2075.17599999999
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 1184.4799999999705,
+          "scriptMs": 10.376
+        }
+      ]
+    },
+    {
+      "path": "/blog/how-much-is-starlink-nigeria-price-naira-2026",
+      "runs": [
+        {
+          "performance": 17,
+          "lcpMs": 5574.3697,
+          "fcpMs": 3160.5565749999996,
+          "tbtMs": 1220.4999999999995,
+          "cls": 0.813623,
+          "speedIndexMs": 9457.488353748331,
+          "ttiMs": 7427.903474999999,
+          "ttfbMs": 47,
+          "transferBytes": 803793,
+          "requests": 17,
+          "jsBytes": 222536,
+          "cssBytes": 16673,
+          "imageBytes": 377819,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 480,
+          "lcpElement": {
+            "selector": "div.grid > article.min-w-0 > div.mt-8 > img",
+            "snippet": "<img src=\"/images/datagram-starlink-unboxing-kit-contents.jpg\" alt=\"Starlink kit contents unboxed, including the dish cable and router, for th…\" data-dg-image=\"datagram-starlink-unboxing-kit-contents.jpg\" data-dg-placement=\"IMAGE: datagram-starlink-unboxing-kit-contents.jpg — DataGram photo of an …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink kit contents unboxed, including the dish cable and router, for the Nig…"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 53.085
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4594.202
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 71.904
+            },
+            {
+              "label": "Element render delay",
+              "ms": 244.066
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 3688.872000000024
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 3203.1879999999974
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 2341.1879999999765
+            },
+            {
+              "group": "Rendering",
+              "ms": 789.2920000000129
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 43.03200000000001
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 17.796
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.392
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 506
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 946
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52315
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13649
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 222 KiB",
+              "wastedBytes": 227129
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 4484.111999999993,
+              "scriptMs": 1504.2319999999918
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog/how-much-is-starlink-nigeria-price-naira-2026",
+              "totalMs": 3471.351999999999,
+              "scriptMs": 88.61200000000005
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 1246.0319999999983,
+              "scriptMs": 732.2679999999983
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 843.4319999999796,
+              "scriptMs": 13.467999999999996
+            }
+          ]
+        },
+        {
+          "performance": 18,
+          "lcpMs": 5065.861,
+          "fcpMs": 3027.9024249999998,
+          "tbtMs": 1472.7302499999996,
+          "cls": 1.0305499999999999,
+          "speedIndexMs": 7600.448288087886,
+          "ttiMs": 7144.093424999999,
+          "ttfbMs": 29,
+          "transferBytes": 803793,
+          "requests": 17,
+          "jsBytes": 222536,
+          "cssBytes": 16673,
+          "imageBytes": 377819,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 480,
+          "lcpElement": {
+            "selector": "div.grid > article.min-w-0 > div.mt-8 > img",
+            "snippet": "<img src=\"/images/datagram-starlink-unboxing-kit-contents.jpg\" alt=\"Starlink kit contents unboxed, including the dish cable and router, for th…\" data-dg-image=\"datagram-starlink-unboxing-kit-contents.jpg\" data-dg-placement=\"IMAGE: datagram-starlink-unboxing-kit-contents.jpg — DataGram photo of an …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink kit contents unboxed, including the dish cable and router, for the Nig…"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 32.97500003051758
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 3254.3299999694823
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 138.83
+            },
+            {
+              "label": "Element render delay",
+              "ms": 76.098
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 3039.720000000001
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 1843.9839999999995
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1672.2679999999796
+            },
+            {
+              "group": "Rendering",
+              "ms": 209.4039999999974
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 39.535999999999994
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 23.520000000000003
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 5.043999999999999
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 370
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 943
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52315
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13649
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 222 KiB",
+              "wastedBytes": 227129
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 3981.8759999999884,
+              "scriptMs": 656.0319999999995
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 1275.8599999999956,
+              "scriptMs": 898.3999999999955
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog/how-much-is-starlink-nigeria-price-naira-2026",
+              "totalMs": 940.452,
+              "scriptMs": 91.012
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 606.9279999999957,
+              "scriptMs": 17.631999999999998
+            }
+          ]
+        },
+        {
+          "performance": 19,
+          "lcpMs": 5138.52065,
+          "fcpMs": 2813.5028,
+          "tbtMs": 1344.9914999999992,
+          "cls": 1.0303,
+          "speedIndexMs": 9029.451457745532,
+          "ttiMs": 6849.7765500000005,
+          "ttfbMs": 27,
+          "transferBytes": 803793,
+          "requests": 17,
+          "jsBytes": 222536,
+          "cssBytes": 16673,
+          "imageBytes": 377819,
+          "fontBytes": 133775,
+          "thirdPartyBytes": 134892,
+          "domNodes": 480,
+          "lcpElement": {
+            "selector": "div.grid > article.min-w-0 > div.mt-8 > img",
+            "snippet": "<img src=\"/images/datagram-starlink-unboxing-kit-contents.jpg\" alt=\"Starlink kit contents unboxed, including the dish cable and router, for th…\" data-dg-image=\"datagram-starlink-unboxing-kit-contents.jpg\" data-dg-placement=\"IMAGE: datagram-starlink-unboxing-kit-contents.jpg — DataGram photo of an …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+            "label": "Starlink kit contents unboxed, including the dish cable and router, for the Nig…"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 28.867
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4305.221
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 3.234
+            },
+            {
+              "label": "Element render delay",
+              "ms": 270.004
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 3532.9840000000554
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 2525.692000000001
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1359.6719999999839
+            },
+            {
+              "group": "Rendering",
+              "ms": 254.0839999999978
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 43.348
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 14.712
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.388
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 370
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 945
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52038
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13649
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 222 KiB",
+              "wastedBytes": 227129
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 4149.836000000001,
+              "scriptMs": 575.300000000002
+            },
+            {
+              "url": "http://127.0.0.1:4173/blog/how-much-is-starlink-nigeria-price-naira-2026",
+              "totalMs": 1491.2080000000005,
+              "scriptMs": 65.71600000000002
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1072.463999999977,
+              "scriptMs": 10.484
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 984.8839999999993,
+              "scriptMs": 705.4559999999993
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 18,
+        "lcpMs": 5138.52065,
+        "fcpMs": 3027.9024249999998,
+        "tbtMs": 1344.9914999999992,
+        "cls": 1.0303,
+        "speedIndexMs": 9029.451457745532,
+        "ttiMs": 7144.093424999999,
+        "ttfbMs": 29,
+        "transferBytes": 803793,
+        "requests": 17,
+        "jsBytes": 222536,
+        "cssBytes": 16673,
+        "imageBytes": 377819,
+        "fontBytes": 133775,
+        "thirdPartyBytes": 134892,
+        "domNodes": 480
+      },
+      "lcpElement": {
+        "selector": "div.grid > article.min-w-0 > div.mt-8 > img",
+        "snippet": "<img src=\"/images/datagram-starlink-unboxing-kit-contents.jpg\" alt=\"Starlink kit contents unboxed, including the dish cable and router, for th…\" data-dg-image=\"datagram-starlink-unboxing-kit-contents.jpg\" data-dg-placement=\"IMAGE: datagram-starlink-unboxing-kit-contents.jpg — DataGram photo of an …\" style=\"width: 100%; height: 100%; object-fit: cover; object-position: center top;\">",
+        "label": "Starlink kit contents unboxed, including the dish cable and router, for the Nig…"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 32.97500003051758
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 3254.3299999694823
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 138.83
+        },
+        {
+          "label": "Element render delay",
+          "ms": 76.098
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Other",
+          "ms": 3039.720000000001
+        },
+        {
+          "group": "Style & Layout",
+          "ms": 1843.9839999999995
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 1672.2679999999796
+        },
+        {
+          "group": "Rendering",
+          "ms": 209.4039999999974
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 39.535999999999994
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 23.520000000000003
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 5.043999999999999
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 370
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1117,
+          "wastedMs": 943
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 52315
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13649
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 222 KiB",
+          "wastedBytes": 227129
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 3981.8759999999884,
+          "scriptMs": 656.0319999999995
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 1275.8599999999956,
+          "scriptMs": 898.3999999999955
+        },
+        {
+          "url": "http://127.0.0.1:4173/blog/how-much-is-starlink-nigeria-price-naira-2026",
+          "totalMs": 940.452,
+          "scriptMs": 91.012
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 606.9279999999957,
+          "scriptMs": 17.631999999999998
+        }
+      ]
+    },
+    {
+      "path": "/our-work",
+      "runs": [
+        {
+          "performance": 3,
+          "lcpMs": 8985.19155,
+          "fcpMs": 4615.937400000001,
+          "tbtMs": 4281.0965,
+          "cls": 0.813873,
+          "speedIndexMs": 13419.554755438818,
+          "ttiMs": 11071.334735,
+          "ttfbMs": 30,
+          "transferBytes": 807778,
+          "requests": 16,
+          "jsBytes": 198896,
+          "cssBytes": 16673,
+          "imageBytes": 490755,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 619,
+          "lcpElement": {
+            "selector": "div.bg-white > section.relative > div.absolute > img.h-full",
+            "snippet": "<img src=\"/images/installations/hp-kit--naval-vessel--sagbama/photo-1.jpeg\" alt=\"DataGram Starlink installations across Nigeria\" class=\"h-full w-full object-cover opacity-30\">",
+            "label": "DataGram Starlink installations across Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 33.321
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 5402.241
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 143.409
+            },
+            {
+              "label": "Element render delay",
+              "ms": 766.127
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 4509.23199999996
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 3644.6879999999614
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 3585.4799999999987
+            },
+            {
+              "group": "Rendering",
+              "ms": 1645.2959999999478
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 75.70800000000001
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 16.18
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 9.935999999999998
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 661
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 945
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 54282
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13510
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 192 KiB",
+              "wastedBytes": 196548
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 5905.008000000002,
+              "scriptMs": 746.6959999999981
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3412.4679999999826,
+              "scriptMs": 2753.6759999999827
+            },
+            {
+              "url": "http://127.0.0.1:4173/our-work",
+              "totalMs": 2624.4119999999994,
+              "scriptMs": 129.54000000000005
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1517.6119999999896,
+              "scriptMs": 11.687999999999997
+            }
+          ]
+        },
+        {
+          "performance": 48,
+          "lcpMs": 5960.169750000001,
+          "fcpMs": 2912.16975,
+          "tbtMs": 691.5,
+          "cls": 0,
+          "speedIndexMs": 9299.231142070106,
+          "ttiMs": 6206.135800000001,
+          "ttfbMs": 28,
+          "transferBytes": 807778,
+          "requests": 16,
+          "jsBytes": 198896,
+          "cssBytes": 16673,
+          "imageBytes": 490755,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 619,
+          "lcpElement": {
+            "selector": "div.bg-white > section.relative > div.absolute > img.h-full",
+            "snippet": "<img src=\"/images/installations/hp-kit--naval-vessel--sagbama/photo-1.jpeg\" alt=\"DataGram Starlink installations across Nigeria\" class=\"h-full w-full object-cover opacity-30\">",
+            "label": "DataGram Starlink installations across Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 31.557
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4249.288
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 46.858
+            },
+            {
+              "label": "Element render delay",
+              "ms": 433.052
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 2382.6559999999995
+            },
+            {
+              "group": "Other",
+              "ms": 1391.7079999999803
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 887.9039999999966
+            },
+            {
+              "group": "Rendering",
+              "ms": 229.39199999999792
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 18.775999999999996
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 5.887999999999999
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 440
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 942
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 54282
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13510
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 192 KiB",
+              "wastedBytes": 196548
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 2220.203999999999,
+              "scriptMs": 271.164000000001
+            },
+            {
+              "url": "http://127.0.0.1:4173/our-work",
+              "totalMs": 1475.8519999999987,
+              "scriptMs": 79.06
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 615.5160000000005,
+              "scriptMs": 521.0680000000004
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 569.8919999999878,
+              "scriptMs": 14.048
+            }
+          ]
+        },
+        {
+          "performance": 12,
+          "lcpMs": 6090.6585,
+          "fcpMs": 3139.6585000000005,
+          "tbtMs": 1959,
+          "cls": 0.813623,
+          "speedIndexMs": 9242.77229006196,
+          "ttiMs": 7256.676799999999,
+          "ttfbMs": 29,
+          "transferBytes": 807755,
+          "requests": 16,
+          "jsBytes": 198896,
+          "cssBytes": 16650,
+          "imageBytes": 490755,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49558,
+          "domNodes": 619,
+          "lcpElement": {
+            "selector": "div.bg-white > section.relative > div.absolute > img.h-full",
+            "snippet": "<img src=\"/images/installations/hp-kit--naval-vessel--sagbama/photo-1.jpeg\" alt=\"DataGram Starlink installations across Nigeria\" class=\"h-full w-full object-cover opacity-30\">",
+            "label": "DataGram Starlink installations across Nigeria"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 31.727
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 3875.395
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 159.134
+            },
+            {
+              "label": "Element render delay",
+              "ms": 415.611
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 3370.6480000000015
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 1988.3399999999774
+            },
+            {
+              "group": "Other",
+              "ms": 1983.8479999999827
+            },
+            {
+              "group": "Rendering",
+              "ms": 187.83199999999687
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 52.76399999999999
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 14.563999999999998
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 4.584
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 455
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1094,
+              "wastedMs": 938
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 54282
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13510
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 192 KiB",
+              "wastedBytes": 196548
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 3062.1799999999953,
+              "scriptMs": 306.2640000000008
+            },
+            {
+              "url": "http://127.0.0.1:4173/our-work",
+              "totalMs": 2138.9239999999995,
+              "scriptMs": 66.96400000000004
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 1714.7479999999998,
+              "scriptMs": 1591.8639999999998
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 667.143999999984,
+              "scriptMs": 20.516
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 12,
+        "lcpMs": 6090.6585,
+        "fcpMs": 3139.6585000000005,
+        "tbtMs": 1959,
+        "cls": 0.813623,
+        "speedIndexMs": 9299.231142070106,
+        "ttiMs": 7256.676799999999,
+        "ttfbMs": 29,
+        "transferBytes": 807778,
+        "requests": 16,
+        "jsBytes": 198896,
+        "cssBytes": 16673,
+        "imageBytes": 490755,
+        "fontBytes": 48464,
+        "thirdPartyBytes": 49581,
+        "domNodes": 619
+      },
+      "lcpElement": {
+        "selector": "div.bg-white > section.relative > div.absolute > img.h-full",
+        "snippet": "<img src=\"/images/installations/hp-kit--naval-vessel--sagbama/photo-1.jpeg\" alt=\"DataGram Starlink installations across Nigeria\" class=\"h-full w-full object-cover opacity-30\">",
+        "label": "DataGram Starlink installations across Nigeria"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 31.727
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 3875.395
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 159.134
+        },
+        {
+          "label": "Element render delay",
+          "ms": 415.611
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Style & Layout",
+          "ms": 3370.6480000000015
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 1988.3399999999774
+        },
+        {
+          "group": "Other",
+          "ms": 1983.8479999999827
+        },
+        {
+          "group": "Rendering",
+          "ms": 187.83199999999687
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 52.76399999999999
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 14.563999999999998
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 4.584
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 455
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1094,
+          "wastedMs": 938
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 54282
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13510
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 192 KiB",
+          "wastedBytes": 196548
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 3062.1799999999953,
+          "scriptMs": 306.2640000000008
+        },
+        {
+          "url": "http://127.0.0.1:4173/our-work",
+          "totalMs": 2138.9239999999995,
+          "scriptMs": 66.96400000000004
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 1714.7479999999998,
+          "scriptMs": 1591.8639999999998
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 667.143999999984,
+          "scriptMs": 20.516
+        }
+      ]
+    },
+    {
+      "path": "/products",
+      "runs": [
+        {
+          "performance": 40,
+          "lcpMs": 5246.063700000001,
+          "fcpMs": 2692.1147,
+          "tbtMs": 240,
+          "cls": 0.813623,
+          "speedIndexMs": 7740.93408408404,
+          "ttiMs": 5380.73177,
+          "ttfbMs": 23,
+          "transferBytes": 1115871,
+          "requests": 22,
+          "jsBytes": 195918,
+          "cssBytes": 16673,
+          "imageBytes": 801826,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 512,
+          "lcpElement": {
+            "selector": "main > div.page-animate > section.relative > div.fixed",
+            "snippet": "<div class=\"fixed inset-0 -z-10\" style=\"background-image: url(&quot;/homeImg/seven.avif&quot;); background-size: cover;\">",
+            "label": "main > div.page-animate > section.relative > div.fixed"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 25.619
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 3600.851
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 28.481
+            },
+            {
+              "label": "Element render delay",
+              "ms": 175.217
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 1933.0119999999795
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 1256.863999999999
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 817.4839999999979
+            },
+            {
+              "group": "Rendering",
+              "ms": 193.2479999999943
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 160.256
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 15.732
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 3.8200000000000003
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 339
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 966
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52954
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13701
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 382 KiB",
+              "wastedBytes": 391004
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/products",
+              "totalMs": 1479.4799999999989,
+              "scriptMs": 74.07200000000007
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 1182.320000000002,
+              "scriptMs": 282.24800000000073
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 890.5999999999825,
+              "scriptMs": 6.532
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 805.356000000001,
+              "scriptMs": 450.4200000000011
+            }
+          ]
+        },
+        {
+          "performance": 7,
+          "lcpMs": 7024.270625000001,
+          "fcpMs": 3326.4304250000005,
+          "tbtMs": 3991.3109999999997,
+          "cls": 0.813873,
+          "speedIndexMs": 11589.552378321898,
+          "ttiMs": 9946.298400000001,
+          "ttfbMs": 35,
+          "transferBytes": 1115871,
+          "requests": 22,
+          "jsBytes": 195918,
+          "cssBytes": 16673,
+          "imageBytes": 801826,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 512,
+          "lcpElement": {
+            "selector": "div > article.group > div.overflow-hidden > img.h-48",
+            "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Starlink Gen3 v4 Standard Dish\" class=\"h-48 w-full object-cover transition-transform duration-500 group-hover:sca…\" style=\"object-position: center center;\">",
+            "label": "Starlink Gen3 v4 Standard Dish"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 37.71
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 4152.997
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 47.832
+            },
+            {
+              "label": "Element render delay",
+              "ms": 2288.212
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Other",
+              "ms": 3951.708000000007
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 3700.1399999999617
+            },
+            {
+              "group": "Style & Layout",
+              "ms": 2911.3040000000015
+            },
+            {
+              "group": "Rendering",
+              "ms": 303.8080000000039
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 38.288
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 32.26799999999998
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 21.496
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 343
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 947
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52980
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13701
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 382 KiB",
+              "wastedBytes": 391004
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 5221.255999999998,
+              "scriptMs": 473.73600000000084
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 3372.795999999986,
+              "scriptMs": 3116.895999999986
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1237.4559999999876,
+              "scriptMs": 17.428
+            },
+            {
+              "url": "http://127.0.0.1:4173/products",
+              "totalMs": 1032.944,
+              "scriptMs": 82.46400000000003
+            }
+          ]
+        },
+        {
+          "performance": 14,
+          "lcpMs": 5968.4912749999985,
+          "fcpMs": 2904.4347249999996,
+          "tbtMs": 1717.4668499999989,
+          "cls": 0.813623,
+          "speedIndexMs": 9787.129326877492,
+          "ttiMs": 8097.060764999998,
+          "ttfbMs": 23,
+          "transferBytes": 1115871,
+          "requests": 22,
+          "jsBytes": 195918,
+          "cssBytes": 16673,
+          "imageBytes": 801826,
+          "fontBytes": 48464,
+          "thirdPartyBytes": 49581,
+          "domNodes": 512,
+          "lcpElement": {
+            "selector": "div > article.group > div.overflow-hidden > img.h-48",
+            "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Starlink Gen3 v4 Standard Dish\" class=\"h-48 w-full object-cover transition-transform duration-500 group-hover:sca…\" style=\"object-position: center center;\">",
+            "label": "Starlink Gen3 v4 Standard Dish"
+          },
+          "lcpSubparts": [
+            {
+              "label": "Time to first byte",
+              "ms": 25.061
+            },
+            {
+              "label": "Resource load delay",
+              "ms": 3443.899
+            },
+            {
+              "label": "Resource load duration",
+              "ms": 275.266
+            },
+            {
+              "label": "Element render delay",
+              "ms": 1769.339
+            }
+          ],
+          "lcpDiscovery": {
+            "priorityHinted": {
+              "label": "fetchpriority=high should be applied",
+              "value": false
+            },
+            "requestDiscoverable": {
+              "label": "Request is discoverable in initial document",
+              "value": false
+            },
+            "eagerlyLoaded": {
+              "label": "LCP resources should not use loading=lazy",
+              "value": true
+            }
+          },
+          "mainThread": [
+            {
+              "group": "Style & Layout",
+              "ms": 2862.8960000000015
+            },
+            {
+              "group": "Other",
+              "ms": 2829.00799999999
+            },
+            {
+              "group": "Script Evaluation",
+              "ms": 2731.1239999999716
+            },
+            {
+              "group": "Rendering",
+              "ms": 367.6240000000101
+            },
+            {
+              "group": "Garbage Collection",
+              "ms": 46.36399999999999
+            },
+            {
+              "group": "Script Parsing & Compilation",
+              "ms": 28.099999999999998
+            },
+            {
+              "group": "Parse HTML & CSS",
+              "ms": 15.136
+            }
+          ],
+          "thirdParties": [],
+          "renderBlocking": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "bytes": 15556,
+              "wastedMs": 435
+            },
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+              "bytes": 1117,
+              "wastedMs": 944
+            }
+          ],
+          "unusedJs": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalBytes": 145313,
+              "wastedBytes": 52694
+            }
+          ],
+          "unusedCss": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+              "totalBytes": 15344,
+              "wastedBytes": 13701
+            }
+          ],
+          "imageAudits": [
+            {
+              "id": "image-delivery-insight",
+              "score": 0,
+              "title": "Improve image delivery",
+              "display": "Est savings of 382 KiB",
+              "wastedBytes": 391004
+            },
+            {
+              "id": "uses-optimized-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "modern-image-formats",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "uses-responsive-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "offscreen-images",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "unsized-images",
+              "score": 0.5,
+              "title": "Image elements do not have explicit `width` and `height`",
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "lcp-lazy-loaded",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            },
+            {
+              "id": "prioritize-lcp-image",
+              "score": null,
+              "title": null,
+              "display": null,
+              "wastedBytes": null
+            }
+          ],
+          "bootup": [
+            {
+              "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+              "totalMs": 5249.099999999974,
+              "scriptMs": 1788.3279999999813
+            },
+            {
+              "url": "http://127.0.0.1:4173/products",
+              "totalMs": 1338.4759999999997,
+              "scriptMs": 66.2
+            },
+            {
+              "url": "Unattributable",
+              "totalMs": 1220.2639999999822,
+              "scriptMs": 14.187999999999997
+            },
+            {
+              "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+              "totalMs": 957.2999999999986,
+              "scriptMs": 856.3039999999986
+            }
+          ]
+        }
+      ],
+      "median": {
+        "performance": 14,
+        "lcpMs": 5968.4912749999985,
+        "fcpMs": 2904.4347249999996,
+        "tbtMs": 1717.4668499999989,
+        "cls": 0.813623,
+        "speedIndexMs": 9787.129326877492,
+        "ttiMs": 8097.060764999998,
+        "ttfbMs": 23,
+        "transferBytes": 1115871,
+        "requests": 22,
+        "jsBytes": 195918,
+        "cssBytes": 16673,
+        "imageBytes": 801826,
+        "fontBytes": 48464,
+        "thirdPartyBytes": 49581,
+        "domNodes": 512
+      },
+      "lcpElement": {
+        "selector": "div > article.group > div.overflow-hidden > img.h-48",
+        "snippet": "<img src=\"/images/products/starlink-gen3v4/StandardDish1.jpeg\" alt=\"Starlink Gen3 v4 Standard Dish\" class=\"h-48 w-full object-cover transition-transform duration-500 group-hover:sca…\" style=\"object-position: center center;\">",
+        "label": "Starlink Gen3 v4 Standard Dish"
+      },
+      "lcpSubparts": [
+        {
+          "label": "Time to first byte",
+          "ms": 25.061
+        },
+        {
+          "label": "Resource load delay",
+          "ms": 3443.899
+        },
+        {
+          "label": "Resource load duration",
+          "ms": 275.266
+        },
+        {
+          "label": "Element render delay",
+          "ms": 1769.339
+        }
+      ],
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "mainThread": [
+        {
+          "group": "Style & Layout",
+          "ms": 2862.8960000000015
+        },
+        {
+          "group": "Other",
+          "ms": 2829.00799999999
+        },
+        {
+          "group": "Script Evaluation",
+          "ms": 2731.1239999999716
+        },
+        {
+          "group": "Rendering",
+          "ms": 367.6240000000101
+        },
+        {
+          "group": "Garbage Collection",
+          "ms": 46.36399999999999
+        },
+        {
+          "group": "Script Parsing & Compilation",
+          "ms": 28.099999999999998
+        },
+        {
+          "group": "Parse HTML & CSS",
+          "ms": 15.136
+        }
+      ],
+      "thirdParties": [],
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "bytes": 15556,
+          "wastedMs": 435
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap",
+          "bytes": 1117,
+          "wastedMs": 944
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalBytes": 145313,
+          "wastedBytes": 52694
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-C2d43Jiy.css",
+          "totalBytes": 15344,
+          "wastedBytes": 13701
+        }
+      ],
+      "imageAudits": [
+        {
+          "id": "image-delivery-insight",
+          "score": 0,
+          "title": "Improve image delivery",
+          "display": "Est savings of 382 KiB",
+          "wastedBytes": 391004
+        },
+        {
+          "id": "uses-optimized-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "modern-image-formats",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "uses-responsive-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "offscreen-images",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`",
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "lcp-lazy-loaded",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        },
+        {
+          "id": "prioritize-lcp-image",
+          "score": null,
+          "title": null,
+          "display": null,
+          "wastedBytes": null
+        }
+      ],
+      "bootup": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Di8oWpoY.js",
+          "totalMs": 5249.099999999974,
+          "scriptMs": 1788.3279999999813
+        },
+        {
+          "url": "http://127.0.0.1:4173/products",
+          "totalMs": 1338.4759999999997,
+          "scriptMs": 66.2
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 1220.2639999999822,
+          "scriptMs": 14.187999999999997
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/vendor-Dtv7QYqu.js",
+          "totalMs": 957.2999999999986,
+          "scriptMs": 856.3039999999986
+        }
+      ]
+    }
+  ],
+  "prerender": [
+    {
+      "path": "/",
+      "file": "dist/spa/index.html",
+      "exists": true,
+      "bytes": 5424,
+      "title": "Starlink by DataGram: Professional Starlink Installation Across Lagos, Abuja, Port Harcourt, Delta State, South-South & South-East Nigeria",
+      "description": null,
+      "canonical": null,
+      "jsonLd": 2,
+      "h1InRoot": false,
+      "rootTextChars": 0,
+      "rootHasContent": false
+    },
+    {
+      "path": "/starlink-offshore-maritime-installation",
+      "file": "dist/spa/starlink-offshore-maritime-installation/index.html",
+      "exists": false
+    },
+    {
+      "path": "/starlink-installation-lagos",
+      "file": "dist/spa/starlink-installation-lagos/index.html",
+      "exists": false
+    },
+    {
+      "path": "/blog",
+      "file": "dist/spa/blog/index.html",
+      "exists": false
+    },
+    {
+      "path": "/blog/how-much-is-starlink-nigeria-price-naira-2026",
+      "file": "dist/spa/blog/how-much-is-starlink-nigeria-price-naira-2026/index.html",
+      "exists": false
+    },
+    {
+      "path": "/our-work",
+      "file": "dist/spa/our-work/index.html",
+      "exists": false
+    },
+    {
+      "path": "/products",
+      "file": "dist/spa/products/index.html",
+      "exists": false
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/index-Di8oWpoY.js",
+      "bytes": 595596,
+      "gzip": 172845,
+      "brotli": 145559
+    },
+    {
+      "file": "assets/vendor-Dtv7QYqu.js",
+      "bytes": 165964,
+      "gzip": 54085,
+      "brotli": 47373
+    },
+    {
+      "file": "assets/LandingRoutePages-Dmdoovmr.js",
+      "bytes": 201432,
+      "gzip": 53258,
+      "brotli": 43846
+    },
+    {
+      "file": "assets/trending-b-C76QOUrA.js",
+      "bytes": 104084,
+      "gzip": 37005,
+      "brotli": 31460
+    },
+    {
+      "file": "assets/evergreen-b-BLktXqct.js",
+      "bytes": 86493,
+      "gzip": 30521,
+      "brotli": 26073
+    },
+    {
+      "file": "assets/evergreen-a-BqgL0zx-.js",
+      "bytes": 85721,
+      "gzip": 30451,
+      "brotli": 26127
+    },
+    {
+      "file": "assets/trending-a-CosGodXR.js",
+      "bytes": 90886,
+      "gzip": 30083,
+      "brotli": 25448
+    },
+    {
+      "file": "assets/august-2026-sprint-CNtyyzdU.js",
+      "bytes": 62683,
+      "gzip": 19914,
+      "brotli": 16778
+    },
+    {
+      "file": "assets/index-C2d43Jiy.css",
+      "bytes": 112912,
+      "gzip": 19024,
+      "brotli": 15344
+    },
+    {
+      "file": "assets/geo-a-BjvTIBpo.js",
+      "bytes": 58399,
+      "gzip": 18882,
+      "brotli": 16256
+    },
+    {
+      "file": "assets/geo-b-U_by-rrl.js",
+      "bytes": 59181,
+      "gzip": 18433,
+      "brotli": 15763
+    },
+    {
+      "file": "assets/future-a-DFP7vGfc.js",
+      "bytes": 50575,
+      "gzip": 16978,
+      "brotli": 14415
+    },
+    {
+      "file": "assets/future-b-BuRh59o4.js",
+      "bytes": 44542,
+      "gzip": 16085,
+      "brotli": 13623
+    },
+    {
+      "file": "assets/enterprise-maritime-b2b-final-CUbeNSyz.js",
+      "bytes": 35999,
+      "gzip": 13272,
+      "brotli": 11193
+    },
+    {
+      "file": "assets/phase1-rOF-DRhh.js",
+      "bytes": 28108,
+      "gzip": 10608,
+      "brotli": 8983
+    },
+    {
+      "file": "assets/enterprise-maritime-b2b-Ct9kzsJz.js",
+      "bytes": 27090,
+      "gzip": 10047,
+      "brotli": 8368
+    },
+    {
+      "file": "assets/legacy-B23IWtJn.js",
+      "bytes": 26397,
+      "gzip": 9799,
+      "brotli": 8290
+    },
+    {
+      "file": "assets/Terms-Dw87qV8q.js",
+      "bytes": 27759,
+      "gzip": 8660,
+      "brotli": 7103
+    },
+    {
+      "file": "assets/ServiceDetail-nP5QQlMd.js",
+      "bytes": 19317,
+      "gzip": 7698,
+      "brotli": 6367
+    },
+    {
+      "file": "assets/enterprise-maritime-b2b-more-DmvE2uT9.js",
+      "bytes": 18498,
+      "gzip": 7626,
+      "brotli": 6337
+    },
+    {
+      "file": "assets/select-BJI3eNbU.js",
+      "bytes": 21378,
+      "gzip": 7469,
+      "brotli": 6692
+    },
+    {
+      "file": "assets/Combination-CypamtaS.js",
+      "bytes": 16928,
+      "gzip": 6429,
+      "brotli": 5757
+    },
+    {
+      "file": "assets/stage3-batch1-CtXrlAmh.js",
+      "bytes": 16070,
+      "gzip": 5887,
+      "brotli": 4811
+    },
+    {
+      "file": "assets/StarlinkGuideNigeria-DnPngnZo.js",
+      "bytes": 13163,
+      "gzip": 5675,
+      "brotli": 4537
+    },
+    {
+      "file": "assets/OurWork-In4-PStX.js",
+      "bytes": 20799,
+      "gzip": 5620,
+      "brotli": 4868
+    },
+    {
+      "file": "assets/roaming-priority-H_zoXsNw.js",
+      "bytes": 15237,
+      "gzip": 5472,
+      "brotli": 4516
+    },
+    {
+      "file": "assets/FaqPage-BRKwDzVe.js",
+      "bytes": 11650,
+      "gzip": 4787,
+      "brotli": 3901
+    },
+    {
+      "file": "assets/About-BYF-ENfx.js",
+      "bytes": 18821,
+      "gzip": 4576,
+      "brotli": 3807
+    },
+    {
+      "file": "assets/Contact-DKrQoazW.js",
+      "bytes": 12846,
+      "gzip": 4452,
+      "brotli": 3811
+    },
+    {
+      "file": "assets/september-2026-sprint-VxmiiXF4.js",
+      "bytes": 11375,
+      "gzip": 4268,
+      "brotli": 3444
+    },
+    {
+      "file": "assets/Blog-BIPJkO2c.js",
+      "bytes": 13185,
+      "gzip": 3969,
+      "brotli": 3453
+    },
+    {
+      "file": "assets/Services-nkFdJsXT.js",
+      "bytes": 10090,
+      "gzip": 3698,
+      "brotli": 3061
+    },
+    {
+      "file": "assets/dialog-C-e0Y-El.js",
+      "bytes": 8153,
+      "gzip": 3005,
+      "brotli": 2632
+    },
+    {
+      "file": "assets/Privacy-DuIBexHk.js",
+      "bytes": 7056,
+      "gzip": 2684,
+      "brotli": 2101
+    },
+    {
+      "file": "assets/locations-B5jYdaWN.js",
+      "bytes": 6151,
+      "gzip": 2613,
+      "brotli": 2133
+    },
+    {
+      "file": "assets/AdminTestimonials-BxiMa-0Y.js",
+      "bytes": 6782,
+      "gzip": 2590,
+      "brotli": 2256
+    },
+    {
+      "file": "assets/AdminProducts-BB8oISgb.js",
+      "bytes": 8682,
+      "gzip": 2586,
+      "brotli": 2258
+    },
+    {
+      "file": "assets/BlogPost-B0U28Ue5.js",
+      "bytes": 6456,
+      "gzip": 2547,
+      "brotli": 2262
+    },
+    {
+      "file": "assets/AdminBlog-Drt81flh.js",
+      "bytes": 6804,
+      "gzip": 2357,
+      "brotli": 2028
+    },
+    {
+      "file": "assets/LocationDetail-BEB2diki.js",
+      "bytes": 4747,
+      "gzip": 1880,
+      "brotli": 1552
+    },
+    {
+      "file": "assets/ProductDetail-UkqHpZ6u.js",
+      "bytes": 4758,
+      "gzip": 1731,
+      "brotli": 1519
+    },
+    {
+      "file": "assets/AdminFAQ-Dt40Aasj.js",
+      "bytes": 4547,
+      "gzip": 1726,
+      "brotli": 1494
+    },
+    {
+      "file": "assets/AdminDashboard-B2HYbqQx.js",
+      "bytes": 4876,
+      "gzip": 1718,
+      "brotli": 1488
+    },
+    {
+      "file": "assets/locations-all-BXQgY9Zq.js",
+      "bytes": 3867,
+      "gzip": 1602,
+      "brotli": 1297
+    },
+    {
+      "file": "assets/Gallery-Cm1SCWZx.js",
+      "bytes": 3429,
+      "gzip": 1549,
+      "brotli": 1253
+    },
+    {
+      "file": "assets/Products-vIc85-xz.js",
+      "bytes": 3206,
+      "gzip": 1415,
+      "brotli": 1163
+    },
+    {
+      "file": "assets/LocationsIndex-DHpnEAJj.js",
+      "bytes": 2935,
+      "gzip": 1213,
+      "brotli": 1038
+    },
+    {
+      "file": "assets/AdminLogin-DTc7c5UP.js",
+      "bytes": 2530,
+      "gzip": 1187,
+      "brotli": 1006
+    },
+    {
+      "file": "assets/LocationsAll-OsVpBwsG.js",
+      "bytes": 2338,
+      "gzip": 1029,
+      "brotli": 882
+    },
+    {
+      "file": "assets/ScrollReveal-vKOxFsME.js",
+      "bytes": 1272,
+      "gzip": 717,
+      "brotli": 645
+    },
+    {
+      "file": "assets/landing-classes-CE4W1zSC.js",
+      "bytes": 1005,
+      "gzip": 489,
+      "brotli": 433
+    },
+    {
+      "file": "assets/Support-3jvyYgTL.js",
+      "bytes": 909,
+      "gzip": 487,
+      "brotli": 391
+    },
+    {
+      "file": "assets/zap-UI2cPwML.js",
+      "bytes": 865,
+      "gzip": 435,
+      "brotli": 379
+    },
+    {
+      "file": "assets/NotFound-Cm0xy26k.js",
+      "bytes": 619,
+      "gzip": 378,
+      "brotli": 306
+    },
+    {
+      "file": "assets/label-CEN8qWgg.js",
+      "bytes": 561,
+      "gzip": 376,
+      "brotli": 311
+    },
+    {
+      "file": "assets/arrow-up-BfYRwHRA.js",
+      "bytes": 624,
+      "gzip": 318,
+      "brotli": 278
+    },
+    {
+      "file": "assets/arrow-left-CImpzOCE.js",
+      "bytes": 338,
+      "gzip": 267,
+      "brotli": 222
+    },
+    {
+      "file": "assets/article-types-BsyN4mYn.js",
+      "bytes": 318,
+      "gzip": 178,
+      "brotli": 151
+    },
+    {
+      "file": "assets/storage-sHHite1Y.js",
+      "bytes": 109,
+      "gzip": 119,
+      "brotli": 88
+    },
+    {
+      "file": "assets/blog-DEAez-X0.js",
+      "bytes": 27,
+      "gzip": 47,
+      "brotli": 31
+    }
+  ],
+  "bundle": {
+    "topModules": [
+      {
+        "chunk": "assets/index-Di8oWpoY.js",
+        "name": "blog-index.json",
+        "rendered": 174101,
+        "gzip": 44443,
+        "brotli": 37236
+      },
+      {
+        "chunk": "cjs/react-dom.production.min.js",
+        "name": "cjs/react-dom.production.min.js",
+        "rendered": 133838,
+        "gzip": 42655,
+        "brotli": 37079
+      },
+      {
+        "chunk": "assets/trending-b-C76QOUrA.js",
+        "name": "client/data/blog/articles/trending-b.ts",
+        "rendered": 111644,
+        "gzip": 37483,
+        "brotli": 31780
+      },
+      {
+        "chunk": "assets/LandingRoutePages-Dmdoovmr.js",
+        "name": "industry-pages.ts",
+        "rendered": 142165,
+        "gzip": 35616,
+        "brotli": 29157
+      },
+      {
+        "chunk": "assets/evergreen-b-BLktXqct.js",
+        "name": "client/data/blog/articles/evergreen-b.ts",
+        "rendered": 92027,
+        "gzip": 30810,
+        "brotli": 26295
+      },
+      {
+        "chunk": "assets/evergreen-a-BqgL0zx-.js",
+        "name": "client/data/blog/articles/evergreen-a.ts",
+        "rendered": 91456,
+        "gzip": 30792,
+        "brotli": 26357
+      },
+      {
+        "chunk": "assets/trending-a-CosGodXR.js",
+        "name": "client/data/blog/articles/trending-a.ts",
+        "rendered": 96941,
+        "gzip": 30418,
+        "brotli": 25662
+      },
+      {
+        "chunk": "assets/august-2026-sprint-CNtyyzdU.js",
+        "name": "client/data/blog/articles/august-2026-sprint.ts",
+        "rendered": 65607,
+        "gzip": 20061,
+        "brotli": 16871
+      },
+      {
+        "chunk": "assets/geo-a-BjvTIBpo.js",
+        "name": "client/data/blog/articles/geo-a.ts",
+        "rendered": 63450,
+        "gzip": 19095,
+        "brotli": 16408
+      },
+      {
+        "chunk": "assets/geo-b-U_by-rrl.js",
+        "name": "client/data/blog/articles/geo-b.ts",
+        "rendered": 64682,
+        "gzip": 18664,
+        "brotli": 15919
+      },
+      {
+        "chunk": "assets/future-a-DFP7vGfc.js",
+        "name": "client/data/blog/articles/future-a.ts",
+        "rendered": 54943,
+        "gzip": 17155,
+        "brotli": 14574
+      },
+      {
+        "chunk": "assets/future-b-BuRh59o4.js",
+        "name": "client/data/blog/articles/future-b.ts",
+        "rendered": 48766,
+        "gzip": 16247,
+        "brotli": 13770
+      },
+      {
+        "chunk": "assets/index-Di8oWpoY.js",
+        "name": "create-projection-node.mjs",
+        "rendered": 68186,
+        "gzip": 13887,
+        "brotli": 11919
+      },
+      {
+        "chunk": "assets/enterprise-maritime-b2b-final-CUbeNSyz.js",
+        "name": "client/data/blog/articles/enterprise-maritime-b2b-final.ts",
+        "rendered": 37933,
+        "gzip": 13346,
+        "brotli": 11271
+      },
+      {
+        "chunk": "assets/index-Di8oWpoY.js",
+        "name": "tailwind-merge@2.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+        "rendered": 71991,
+        "gzip": 12420,
+        "brotli": 10539
+      }
+    ],
+    "chunks": [
+      {
+        "chunk": "assets/index-Di8oWpoY.js",
+        "rendered": 1068268,
+        "gzip": 290545,
+        "modules": 327
+      },
+      {
+        "chunk": "assets/LandingRoutePages-Dmdoovmr.js",
+        "rendered": 246350,
+        "gzip": 59181,
+        "modules": 7
+      },
+      {
+        "chunk": "cjs/react-dom.production.min.js",
+        "rendered": 133838,
+        "gzip": 42655,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/trending-b-C76QOUrA.js",
+        "rendered": 111644,
+        "gzip": 37483,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/evergreen-b-BLktXqct.js",
+        "rendered": 92027,
+        "gzip": 30810,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/evergreen-a-BqgL0zx-.js",
+        "rendered": 91456,
+        "gzip": 30792,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/trending-a-CosGodXR.js",
+        "rendered": 96941,
+        "gzip": 30418,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/august-2026-sprint-CNtyyzdU.js",
+        "rendered": 65607,
+        "gzip": 20061,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/geo-a-BjvTIBpo.js",
+        "rendered": 63450,
+        "gzip": 19095,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/geo-b-U_by-rrl.js",
+        "rendered": 64682,
+        "gzip": 18664,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/future-a-DFP7vGfc.js",
+        "rendered": 54943,
+        "gzip": 17155,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/future-b-BuRh59o4.js",
+        "rendered": 48766,
+        "gzip": 16247,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/enterprise-maritime-b2b-final-CUbeNSyz.js",
+        "rendered": 37933,
+        "gzip": 13346,
+        "modules": 1
+      },
+      {
+        "chunk": "assets/select-BJI3eNbU.js",
+        "rendered": 53824,
+        "gzip": 11208,
+        "modules": 4
+      },
+      {
+        "chunk": "assets/phase1-rOF-DRhh.js",
+        "rendered": 29686,
+        "gzip": 10659,
+        "modules": 1
+      }
+    ]
+  },
+  "qualitative": [],
+  "interactions": []
+}
