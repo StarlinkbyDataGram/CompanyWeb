@@ -101,6 +101,12 @@ export default function RegionalLandingPage({ config }: Props) {
                         config.heroObjectPosition ?? cropForFile(config.heroImageFile ?? ""),
                     }}
                   />
+                  {config.path === "/starlink-installation-niger-delta" && (
+                    <div
+                      className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(10,22,40,0.92)_0%,rgba(10,22,40,0.84)_58%,rgba(10,22,40,0.62)_100%)]"
+                      aria-hidden
+                    />
+                  )}
                 </>
               )
             )}
@@ -113,7 +119,7 @@ export default function RegionalLandingPage({ config }: Props) {
             </p>
             <h1 className={landingH1}>{config.h1}</h1>
             {config.entityBadge && (
-              <p className="mt-4 inline-flex max-w-3xl rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-sm font-medium leading-snug text-[#6ea8ff]">
+              <p className="mt-4 inline-flex max-w-3xl rounded-full border border-white/35 bg-[#0a1628]/90 px-4 py-2 text-sm font-medium leading-snug text-white shadow-sm">
                 {config.entityBadge}
               </p>
             )}
