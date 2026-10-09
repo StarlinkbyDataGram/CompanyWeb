@@ -44,15 +44,13 @@ export default function Products() {
           "Buy Starlink hardware",
         ]}
       />
-      <div
-        className="fixed inset-0 -z-10"
-        style={{
-          backgroundImage: "url('/homeImg/seven.avif')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          zIndex: -1,
-        }}
+      <img
+        src="/homeImg/seven.avif"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 -z-10 h-full w-full object-cover object-center"
+        fetchPriority="high"
+        loading="eager"
       />
       <div className="container relative z-10">
         <ScrollReveal direction="up" delay={0.1}>

@@ -610,6 +610,7 @@ function Hero() {
                 className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${i === idx ? "opacity-100" : "opacity-0"}`}
                 style={{ objectPosition: s.object }}
                 loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "low"}
                 width="1200"
                 height="800"
               />

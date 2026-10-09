@@ -109,6 +109,8 @@ export default function IndustryLandingPage({ config }: Props) {
               <img
                 src={config.heroImage}
                 alt={config.heroImageAlt}
+                fetchPriority="high"
+                loading="eager"
                 data-dg-image={config.heroImageFile}
                 data-dg-placement={config.heroImageReason}
                 style={{

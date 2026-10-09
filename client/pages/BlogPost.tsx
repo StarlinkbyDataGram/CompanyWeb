@@ -228,6 +228,8 @@ export default function BlogPost() {
               <img
                 src={view.image}
                 alt={view.imageAlt}
+                fetchPriority="high"
+                loading="eager"
                 data-dg-image={view.imageFile}
                 data-dg-placement={heroImageComment}
                 style={{

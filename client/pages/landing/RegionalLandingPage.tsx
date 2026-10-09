@@ -91,6 +91,8 @@ export default function RegionalLandingPage({ config }: Props) {
                     alt={config.heroImageAlt}
                     width={1920}
                     height={1080}
+                    fetchPriority="high"
+                    loading="eager"
                     data-dg-image={config.heroImageFile}
                     data-dg-placement={config.heroImageReason}
                     style={{

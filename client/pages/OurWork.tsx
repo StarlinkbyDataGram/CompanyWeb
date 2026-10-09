@@ -52,7 +52,7 @@ export default function OurWork() {
       <section className="relative overflow-hidden bg-[#0A0A1A] text-white">
         <div className="absolute inset-0">
           {heroImage ? (
-            <img src={heroImage} alt="DataGram Starlink installations across Nigeria" className="h-full w-full object-cover opacity-30" />
+            <img src={heroImage} alt="DataGram Starlink installations across Nigeria" className="h-full w-full object-cover opacity-30" fetchPriority="high" loading="eager" />
           ) : null}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A1A] via-[#0A0A1A]/90 to-[#0A0A1A]/70" />
         </div>

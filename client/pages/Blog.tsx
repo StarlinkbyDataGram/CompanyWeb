@@ -269,13 +269,14 @@ export default function Blog() {
         <div className={landingContainer}>
           <h2 className="mb-6 text-2xl font-bold sm:text-3xl">Nigeria guides (2026)</h2>
           <div className="grid gap-6 sm:grid-cols-2">
-            {visibleArticles.map((post) => (
+            {visibleArticles.map((post, index) => (
               <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/9] w-full overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.imageAlt}
-                    loading="lazy"
+                    loading={index === 0 ? "eager" : "lazy"}
+                    fetchPriority={index === 0 ? "high" : "auto"}
                     data-dg-image={post.imageFile}
                     className="h-full w-full transition-transform duration-300 group-hover:scale-105"
                     style={{
