@@ -1,0 +1,3228 @@
+[
+  {
+    "id": 1,
+    "title": "Starlink for Communities: What the New Shared-Internet Model Could Mean for Nigeria",
+    "slug": "starlink-for-communities-nigeria",
+    "contentType": "living-blog",
+    "action": "TRENDING BLOG",
+    "primaryKeyword": "starlink for communities nigeria",
+    "secondaryKeywords": [
+      "starlink community host",
+      "starlink community pass",
+      "starlink shared internet nigeria"
+    ],
+    "searchIntent": "News + commercial",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Community hosts, estates, rural operators, journalists",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking: official Community Host pages launched Oct 2026",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [],
+    "CTA": "/contact",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Genuinely missing. Official Community Host pages are a bank signal, not a fact already checked in the ledger. One living article. Do not invent pass prices. Do not create a DataGram Communities sales page. Bank angle: Explain the host/pass model, who it is for, what is known, what is not known, and why Nigeria should watch it."
+  },
+  {
+    "id": 2,
+    "title": "Can Nigerians Join Starlink for Communities? Availability, Beta Status and What to Watch",
+    "slug": "starlink-for-communities-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink communities nigeria",
+    "secondaryKeywords": [
+      "starlink communities availability nigeria",
+      "starlink communities beta"
+    ],
+    "searchIntent": "News + transactional",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Nigerians asking if they can join",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking + Nigeria regulatory watch",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-for-communities-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Same intent family as topic 1: availability and approvals are a dated section of the communities article, not a second URL. Bank angle: Separate confirmed rollout markets from speculation; track Nigerian availability and approvals."
+  },
+  {
+    "id": 3,
+    "title": "Starlink for Communities vs Buying Your Own Starlink: Which Model Makes More Sense?",
+    "slug": "starlink-communities-vs-own-kit-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink community vs own kit",
+    "secondaryKeywords": [
+      "starlink community or own dish",
+      "starlink shared vs residential"
+    ],
+    "searchIntent": "Commercial comparison",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "high",
+    "audience": "Households and small sites choosing a model",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking topic with strong consumer curiosity",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-for-communities-nigeria",
+      "how-much-is-starlink-nigeria-price-naira-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Distinct decision query. Publish only after topic 1 exists. Compare control and access. Do not invent unpublished Community prices. Hardware prices on the site stay frozen. Bank angle: Compare upfront cost, control, access and likely use cases without inventing unpublished Community pricing."
+  },
+  {
+    "id": 4,
+    "title": "How Starlink for Communities Could Change Rural Internet Access in Nigeria",
+    "slug": "starlink-for-communities-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink rural community internet nigeria",
+    "secondaryKeywords": [
+      "rural internet nigeria starlink",
+      "community wifi backhaul"
+    ],
+    "searchIntent": "Informational + strategic",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Rural communities, campuses, estates",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking + rural connectivity trend",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-community-gateways-nigeria-rural-villages"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Rural impact is a section of the communities article plus a link to the existing village-gateway post. A fourth communities URL would compete. Bank angle: Connect the new model to underserved communities, estates, campuses and local entrepreneurs."
+  },
+  {
+    "id": 5,
+    "title": "Starlink Business vs Enterprise: What Is Actually Different in 2026?",
+    "slug": "starlink-business-vs-enterprise-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink business vs enterprise",
+    "secondaryKeywords": [
+      "starlink business plan vs enterprise",
+      "starlink enterprise account nigeria"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "IT and procurement leads",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Official product distinction",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-enterprise-nigeria",
+      "starlink-residential-vs-priority-business-nigerian-smes",
+      "starlink-enterprise-activation-as-a-service-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Residential-vs-Priority and the enterprise landing do not answer Business vs Enterprise as product classes. New explainer, not a second enterprise landing. Confirm current Starlink labels before publish. Bank angle: Clarify self-service Business accounts vs large-scale Enterprise accounts and avoid outdated terminology."
+  },
+  {
+    "id": 6,
+    "title": "Is Starlink Ending Self-Service Enterprise Subscriptions in Nigeria? What We Can Confirm",
+    "slug": "starlink-business-vs-enterprise-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink enterprise nigeria self subscription",
+    "secondaryKeywords": [
+      "starlink enterprise self service nigeria"
+    ],
+    "searchIntent": "News + verification",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/blog/starlink-business-vs-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Companies who heard self-service Enterprise is ending",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | User-reported claim not yet verified",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-enterprise-activation-as-a-service-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "User-reported and unverified. A watch section inside topic 5. Do not state that self-service Enterprise has ended in Nigeria. Update only when a Nigeria-specific notice is verified. Bank angle: Treat the claim as a verification watch, show what Starlink currently publishes, and update when a Nigeria-specific notice appears."
+  },
+  {
+    "id": 7,
+    "title": "Starlink and the NCC: A Complete Timeline of Nigeria’s Pricing Dispute",
+    "slug": "ncc-satellite-internet-regulations-nigeria-2027",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink ncc nigeria price dispute",
+    "secondaryKeywords": [
+      "starlink ncc timeline",
+      "starlink tariff approval nigeria"
+    ],
+    "searchIntent": "News + authority",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Readers following the price dispute",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Regulatory evergreen + renewed relevance",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-localized-naira-pricing-predictions-2027",
+      "how-much-is-starlink-nigeria-price-naira-2026"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Make this the canonical NCC timeline. The slug says 2027; do not change it in this stage. Do not create a second regulatory URL. Price predictions article stays a separate forecast and should link here. Bank angle: Create the canonical regulatory timeline from 2024 through current tariff approval history."
+  },
+  {
+    "id": 8,
+    "title": "Can Starlink Increase Its Price in Nigeria Without NCC Approval?",
+    "slug": "ncc-satellite-internet-regulations-nigeria-2027",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "can starlink increase price nigeria ncc",
+    "secondaryKeywords": [
+      "starlink price increase ncc approval"
+    ],
+    "searchIntent": "News + FAQ",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/blog/ncc-satellite-internet-regulations-nigeria-2027",
+    "commercialIntent": "medium",
+    "audience": "People asking if Starlink can raise prices",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High-current regulatory intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "ncc-satellite-internet-regulations-nigeria-2027"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "FAQ section of the NCC timeline. Same regulatory intent. Do not change any live price while explaining the rule. Bank angle: Explain the legal/regulatory approval issue in plain language and distinguish old events from current rules."
+  },
+  {
+    "id": 9,
+    "title": "Why Starlink Gets “Sold Out” in Lagos and Abuja: Capacity, Not Just Stock",
+    "slug": "starlink-residential-sold-out-lagos-abuja-2026-options",
+    "contentType": "living-blog",
+    "action": "TRENDING BLOG",
+    "primaryKeyword": "starlink sold out lagos abuja",
+    "secondaryKeywords": [
+      "starlink sold out lagos",
+      "starlink only priority plans available"
+    ],
+    "searchIntent": "Commercial + explanatory",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-priority-plan-nigeria",
+    "commercialIntent": "high",
+    "audience": "Lagos and Abuja buyers who see Priority only",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Strong Nigeria commercial pain point",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-priority-plan-nigeria",
+      "how-much-is-starlink-nigeria-price-naira-2026"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Stage 1 already removed the city-wide sold-out claim. Keep this URL as the living capacity page. Next edit is the deposit/wait section from topics 26 and 27. Do not create a new sold-out URL. Prices stay frozen. Bank angle: Explain capacity constraints, waitlists and Priority alternatives rather than treating “sold out” as a retail stock problem."
+  },
+  {
+    "id": 10,
+    "title": "Starlink Nigeria Price Update: What You Actually Pay in October 2026",
+    "slug": "how-much-is-starlink-nigeria-price-naira-2026",
+    "contentType": "living-blog",
+    "action": "TRENDING BLOG",
+    "primaryKeyword": "starlink price nigeria 2026",
+    "secondaryKeywords": [
+      "starlink price nigeria",
+      "starlink monthly cost naira"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "high",
+    "audience": "Buyers comparing current naira costs",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High-intent commercial query + NCC tariff benchmark",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "how-much-does-starlink-installation-cost-nigeria-2026",
+      "is-starlink-worth-669000-nigeria-2026-honest-review"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "This is the living price URL. October 2026 in the bank is a review date, not a reason for a new URL. Do not change any published figure until a separate price approval. Bank angle: Maintain a dated price page that separates Starlink tariff, hardware, installation and reseller/service costs."
+  },
+  {
+    "id": 11,
+    "title": "Starlink Nigeria Plan Update Tracker: Prices, Availability and Major Changes",
+    "slug": "how-much-is-starlink-nigeria-price-naira-2026",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink nigeria updates",
+    "secondaryKeywords": [
+      "starlink nigeria updates",
+      "starlink plan changes"
+    ],
+    "searchIntent": "News hub",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/blog/how-much-is-starlink-nigeria-price-naira-2026",
+    "commercialIntent": "high",
+    "audience": "Readers wanting a change log",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Always-on trend topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-residential-sold-out-lagos-abuja-2026-options",
+      "ncc-satellite-internet-regulations-nigeria-2027"
+    ],
+    "CTA": "/blog/how-much-is-starlink-nigeria-price-naira-2026",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "The tracker is a dated section and link block on the price article, not a second hub. Link out to availability, NCC and ocean articles. Bank angle: Make this a living tracker linked from every pricing/plan article."
+  },
+  {
+    "id": 12,
+    "title": "What the September 2026 Starlink Ocean Mode Price Change Means for Nigerian Vessel Operators",
+    "slug": "starlink-ocean-mode-50gb-priority-limit-explained",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink ocean mode 6 per gb",
+    "secondaryKeywords": [
+      "starlink ocean mode price change",
+      "starlink ocean mode per gb"
+    ],
+    "searchIntent": "Maritime + commercial",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Vessel operators watching Ocean Mode billing",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Current maritime price change",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "September 2026 $6/GB is a bank signal, not a ledger fact. Do not publish it, and do not convert it to naira, until a primary source is checked. It would be a section of the existing Ocean Mode article, not a new URL. Bank angle: Explain the shift to $6/GB from 27 Sept 2026 and how vessel budgets are affected."
+  },
+  {
+    "id": 13,
+    "title": "Starlink Direct-to-Cell in Nigeria: What Airtel’s 2026 Plans Mean for Users",
+    "slug": "airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "contentType": "living-blog",
+    "action": "CONSOLIDATE",
+    "primaryKeyword": "starlink direct to cell nigeria airtel",
+    "secondaryKeywords": [
+      "airtel starlink direct to cell",
+      "starlink on my phone nigeria"
+    ],
+    "searchIntent": "News + technology",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/blog/airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "commercialIntent": "medium",
+    "audience": "People asking if a phone replaces a dish",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Nigeria-specific telecom trend",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "direct-to-cell-nigeria-dish-still-essential-september-2026",
+      "starlink-direct-to-cell-nigeria-telecoms-replacement"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Three D2C URLs share one intent. Winner is the August article already corrected in Stage 1: DRC launch 14 Aug 2026, no Nigerian date, no NCC approval. Losers need Search Console before any redirect. Do not redirect in Stage 2. Bank angle: Track Airtel Africa’s rollout, regulatory approvals and the difference between satellite broadband and phone-to-satellite service."
+  },
+  {
+    "id": 14,
+    "title": "Starlink Just Won Major Direct-to-Device Approval: Why Nigeria Should Care",
+    "slug": "airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink direct to device 15000 satellites",
+    "secondaryKeywords": [
+      "starlink direct to device fcc",
+      "starlink 15000 satellites"
+    ],
+    "searchIntent": "News + strategic",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/blog/airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "commercialIntent": "low",
+    "audience": "Readers of the October 2026 US approval story",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking Oct 7, 2026 global news",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-11000-satellites-nigeria-speeds-august-2026"
+    ],
+    "CTA": "/blog/airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "US direct-to-device news is an update on the D2C winner, not a Nigeria launch. The 7 Oct 2026 and 15,000-satellite lines are bank signals. Verify before publishing. Do not imply Nigerian approval. Catalogue 'over 11,000' stays the only satellite count already used. Bank angle: Translate the US FCC development into practical Africa/Nigeria implications without claiming Nigerian approval."
+  },
+  {
+    "id": 15,
+    "title": "Starlink V3 and the Next Generation Network: What the September 2026 Launch Means for Performance",
+    "slug": "starlink-v3-satellites-nigeria",
+    "contentType": "living-blog",
+    "action": "TRENDING BLOG",
+    "primaryKeyword": "starlink v3 nigeria",
+    "secondaryKeywords": [
+      "starlink v3 launch",
+      "starlink next generation nigeria"
+    ],
+    "searchIntent": "Technology + news",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/blog/starlink-11000-satellites-nigeria-speeds-august-2026",
+    "commercialIntent": "low",
+    "audience": "Readers tracking hardware and constellation news",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Recent launch / technology trend",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-v4-hardware-upgrades-expected-features",
+      "starlink-11000-satellites-nigeria-speeds-august-2026"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "V3 satellite news is not the existing V4 speculation article and not the V3/V4 cable-error article. Verify what launched before writing. Do not invent Nigerian speed changes. Do not rewrite the V4 URL into this topic. Bank angle: Cover what V3 changes, what it does not change yet, and what Nigerian users should realistically expect."
+  },
+  {
+    "id": 16,
+    "title": "Starlink Residential vs Roam in Nigeria: Which One Should You Buy?",
+    "slug": "starlink-roaming-global-priority-activation-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink residential vs roam nigeria",
+    "secondaryKeywords": [
+      "starlink residential vs roam",
+      "starlink roam unlimited nigeria"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-roaming-global-priority-nigeria",
+    "commercialIntent": "high",
+    "audience": "Buyers choosing fixed or mobile service",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-intent plan comparison",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "fixing-starlink-roaming-restrictions-nigeria",
+      "starlink-roaming-global-priority-nigeria"
+    ],
+    "CTA": "/starlink-roaming-global-priority-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Stage 1 corrected the 14-day rule here. Add a residential-vs-roam decision section. Do not open a second comparison URL. Bank angle: Country-specific comparison of fixed-location and mobile use cases."
+  },
+  {
+    "id": 17,
+    "title": "Starlink Mini vs Standard in Nigeria: Price, Speed, Portability and Best Use",
+    "slug": "starlink-mini-vs-standard-which-buy-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink mini vs standard nigeria",
+    "secondaryKeywords": [
+      "starlink mini price nigeria",
+      "starlink mini vs standard"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Hardware",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "high",
+    "audience": "Households choosing a kit",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Starlink Mini is a 165K/mo global parent trend",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "best-power-bank-inverter-starlink-mini-nigeria",
+      "how-much-is-starlink-nigeria-price-naira-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right comparison URL. The 165K/mo figure in the bank is a global parent-trend benchmark, not a Nigeria volume. Do not change Mini ₦318,000 or Standard ₦669,000. Bank angle: Use Nigerian pricing and local availability where verified; compare portability, household use and power needs."
+  },
+  {
+    "id": 18,
+    "title": "Starlink Business vs Residential in Nigeria: When Is the Higher Cost Worth It?",
+    "slug": "starlink-residential-vs-priority-business-nigerian-smes",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink business vs residential nigeria",
+    "secondaryKeywords": [
+      "starlink business vs residential nigeria",
+      "starlink priority vs residential"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "SMEs comparing home and business plans",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High commercial intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-priority-plan-nigeria",
+      "starlink-business-vs-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "This is the existing business-vs-residential URL. Refresh the decision criteria. Do not change ₦159,000 or residential prices. Do not retitle it into Business vs Enterprise. Bank angle: Use capacity, priority, multi-user and operational continuity as decision criteria."
+  },
+  {
+    "id": 19,
+    "title": "Local Priority vs Global Priority: Which Starlink Business Plan Fits Nigeria?",
+    "slug": "starlink-roaming-global-priority-activation-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "local priority vs global priority",
+    "secondaryKeywords": [
+      "local priority vs global priority",
+      "starlink priority inland vs ocean"
+    ],
+    "searchIntent": "Commercial comparison",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-roaming-global-priority-nigeria",
+    "commercialIntent": "high",
+    "audience": "Businesses choosing Local or Global Priority",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Official plan distinction",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-roaming-global-priority-nigeria",
+      "starlink-ocean-mode-50gb-priority-limit-explained"
+    ],
+    "CTA": "/starlink-roaming-global-priority-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Same article as topic 16. Local vs Global is a section, already partly covered. Finish it there. Bank angle: Explain inland vs ocean/global use, public IP, priority data and motion use."
+  },
+  {
+    "id": 20,
+    "title": "Personal Maritime vs Global Priority: Which Starlink Plan Is Better for a Vessel?",
+    "slug": "starlink-offshore-maritime-installation",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink personal maritime vs global priority",
+    "secondaryKeywords": [
+      "personal maritime vs global priority",
+      "starlink boat plan"
+    ],
+    "searchIntent": "Maritime comparison",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Vessel owners choosing a maritime plan",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-value maritime commercial query",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-roaming-global-priority-activation-nigeria",
+      "starlink-boat-installation"
+    ],
+    "CTA": "/starlink-roaming-global-priority-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Plan choice is a section on the maritime pillar and the roaming article. Confirm the current 'Personal Maritime' product name before using it. Boat landing stays for smaller moving boats. Bank angle: Target vessel owners, marine contractors and offshore operators with clear decision rules."
+  },
+  {
+    "id": 21,
+    "title": "Starlink Ocean Mode Explained: Who Needs It and What It Costs",
+    "slug": "starlink-ocean-mode-50gb-priority-limit-explained",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink ocean mode nigeria",
+    "secondaryKeywords": [
+      "starlink ocean mode explained",
+      "starlink 12 nautical miles"
+    ],
+    "searchIntent": "Maritime + commercial",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Vessel operators",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Current maritime change",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-roaming-global-priority-activation-nigeria",
+      "starlink-offshore-maritime-installation"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Stage 1 separated Ocean Mode from the 50GB Global Priority block. This URL stays the explainer. Slug stays. Add the 12-nautical-mile rule only after it is verified. Do not add $6/GB or a naira rate in the same edit unless that rate is separately approved. Bank angle: Explain 12-nautical-mile boundary, per-GB billing and when to turn it on/off."
+  },
+  {
+    "id": 22,
+    "title": "Starlink 50GB, 500GB, 1TB and 2TB: How to Choose Your Priority Data",
+    "slug": "starlink-data-usage-data-cap-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink priority data 50gb 500gb 1tb 2tb",
+    "secondaryKeywords": [
+      "starlink 50gb vs 500gb",
+      "starlink 1tb priority"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-priority-plan-nigeria",
+    "commercialIntent": "high",
+    "audience": "Offices and vessels sizing priority data",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong business-plan intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained",
+      "starlink-priority-plan-nigeria"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Turn the data-cap article into the tier explainer. 50GB is a Global Priority block, not Ocean Mode. Do not invent naira prices for 500GB, 1TB or 2TB. Bank angle: Build a simple usage calculator for office, vessel and remote-site scenarios."
+  },
+  {
+    "id": 23,
+    "title": "What Happens When Your Starlink Priority Data Runs Out?",
+    "slug": "starlink-data-usage-data-cap-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "what happens when starlink priority data runs out",
+    "secondaryKeywords": [
+      "starlink deprioritized data",
+      "starlink priority top up"
+    ],
+    "searchIntent": "FAQ + commercial",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/blog/starlink-data-usage-data-cap-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Users who exhaust priority data",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Plan FAQ trend",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-data-usage-data-cap-nigeria"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "What happens after the block is a section of the data-cap article. Confirm current deprioritisation rules before writing. Bank angle: Explain standard/deprioritized service behavior and top-up logic using current plan rules."
+  },
+  {
+    "id": 24,
+    "title": "Can You Pause, Cancel or Change Your Starlink Plan in Nigeria?",
+    "slug": "pause-cancel-change-starlink-plan-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "cancel starlink plan nigeria",
+    "secondaryKeywords": [
+      "cancel starlink nigeria",
+      "pause starlink subscription"
+    ],
+    "searchIntent": "FAQ",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Account holders changing or leaving a plan",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Evergreen transactional",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "transfer-starlink-ownership-nigerian-account",
+      "starlink-account-suspended-what-to-do"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Pause, cancel and plan-change are not covered by the suspension or ownership-transfer articles. Verify the current account flow before publish. Bank angle: Answer pausing, cancellation and plan-change questions with dated policy notes."
+  },
+  {
+    "id": 25,
+    "title": "Can You Use Starlink at Another Address in Nigeria?",
+    "slug": "fixing-starlink-roaming-restrictions-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "use starlink at another address nigeria",
+    "secondaryKeywords": [
+      "starlink service address change",
+      "use starlink at another house"
+    ],
+    "searchIntent": "FAQ",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-roaming-global-priority-nigeria",
+    "commercialIntent": "medium",
+    "audience": "People moving a dish inside Nigeria",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Common practical question",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-roaming-global-priority-activation-nigeria",
+      "starlink-repair-relocation-nigeria"
+    ],
+    "CTA": "/starlink-repair-relocation-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Service-address and in-country moves belong on the existing roaming-restrictions article. Relocation landing is the commercial CTA. Bank angle: Explain service-address rules, Roam vs fixed use and what not to assume."
+  },
+  {
+    "id": 26,
+    "title": "Starlink Waitlist in Lagos and Abuja: What the Deposit Actually Does",
+    "slug": "starlink-residential-sold-out-lagos-abuja-2026-options",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink waitlist nigeria",
+    "secondaryKeywords": [
+      "starlink waitlist deposit lagos",
+      "starlink reservation fee"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-priority-plan-nigeria",
+    "commercialIntent": "high",
+    "audience": "People asked for a deposit or wait step",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High commercial pain point",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-residential-sold-out-lagos-abuja-2026-options"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Deposit and wait behaviour is a section of the existing capacity article. Stage 1 already said some addresses see that step. Do not claim there is no waitlist. Confirm the current deposit rule before adding figures. Do not add a price. Bank angle: Explain reservation, activation uncertainty and alternatives, with clear date stamps."
+  },
+  {
+    "id": 27,
+    "title": "Can You Buy a Starlink Kit When Your Area Is Sold Out?",
+    "slug": "starlink-residential-sold-out-lagos-abuja-2026-options",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "buy starlink sold out nigeria",
+    "secondaryKeywords": [
+      "buy starlink kit sold out",
+      "starlink hardware without service"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-priority-plan-nigeria",
+    "commercialIntent": "high",
+    "audience": "People trying to buy hardware anyway",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High urgency",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "buy-used-starlink-dish-nigeria-buyers-guide"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Kit-versus-activation risk is a section of the capacity article. The used-dish guide stays separate. Do not open a third URL. Bank angle: Clarify kit ownership vs service activation and explain the risk of buying unsupported hardware."
+  },
+  {
+    "id": 28,
+    "title": "How Much Does a Complete Starlink Setup Cost in Nigeria?",
+    "slug": "how-much-is-starlink-nigeria-price-naira-2026",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink setup cost nigeria",
+    "secondaryKeywords": [
+      "starlink total cost nigeria",
+      "starlink installation plus hardware"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "high",
+    "audience": "Buyers pricing a full setup",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Very high purchase intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "how-much-does-starlink-installation-cost-nigeria-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Complete-setup intent is a stack section on the price article, linking to the installation-cost article. Do not create a third cost URL. Do not change figures. Bank angle: Break cost into kit + plan + delivery + mounting + installation + power + networking."
+  },
+  {
+    "id": 29,
+    "title": "Is Starlink Worth It for a Home in Nigeria in 2026?",
+    "slug": "is-starlink-worth-669000-nigeria-2026-honest-review",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "is starlink worth it nigeria",
+    "secondaryKeywords": [
+      "is starlink worth it nigeria",
+      "starlink review 2026"
+    ],
+    "searchIntent": "Commercial + review",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/blog/how-much-is-starlink-nigeria-price-naira-2026",
+    "commercialIntent": "high",
+    "audience": "Households deciding whether to buy",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High comparison/review intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "how-much-is-starlink-nigeria-price-naira-2026",
+      "starlink-vs-fibre-internet-lagos"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right review URL. Refresh capacity wording already partly done in Stage 1. Do not change ₦669,000 or the slug. Bank angle: Use actual Nigerian pricing, capacity restrictions and alternatives instead of generic praise."
+  },
+  {
+    "id": 30,
+    "title": "Which Starlink Plan Is Best for Remote Workers in Nigeria?",
+    "slug": "starlink-residential-vs-priority-business-nigerian-smes",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "best starlink plan nigeria remote work",
+    "secondaryKeywords": [
+      "best starlink plan remote work nigeria"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "high",
+    "audience": "Remote workers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong use-case intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "prices-frozen",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-setup-remote-software-developers-nigeria",
+      "spectranet-vs-starlink-remote-work-nigeria-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Plan choice for remote work is a section of the residential-vs-priority article. Developer and Spectranet posts stay as comparisons, not a new 'best plan' URL. Bank angle: Focus on Zoom/Teams, cloud apps, power backup and multi-device use."
+  },
+  {
+    "id": 31,
+    "title": "How to Install Starlink in Nigeria: A Professional Step-by-Step Guide",
+    "slug": "professional-starlink-installation-nigeria-guide",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink installation nigeria",
+    "secondaryKeywords": [
+      "starlink installation nigeria",
+      "starlink site survey"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "high",
+    "audience": "People comparing DIY and a professional install",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-intent service query",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-home-installation",
+      "how-much-does-starlink-installation-cost-nigeria-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "The install guide and the home landing already split education and conversion. Refresh the guide. Do not add another national install URL. Bank angle: Cover site survey, dish placement, mounting, cable routing, power and Wi-Fi."
+  },
+  {
+    "id": 32,
+    "title": "Where Is the Best Place to Install a Starlink Dish in Lagos?",
+    "slug": "starlink-installation-lagos-high-rises-signal-obstructions",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink installation lagos",
+    "secondaryKeywords": [
+      "where to mount starlink lagos",
+      "starlink rooftop lagos"
+    ],
+    "searchIntent": "Local + transactional",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-installation-lagos",
+    "commercialIntent": "high",
+    "audience": "Lagos homeowners and estates",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Local commercial intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-installation-lagos"
+    ],
+    "CTA": "/starlink-installation-lagos",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Lagos placement is this article plus the Lagos landing. Do not add a third Lagos install URL. Bank angle: Discuss rooftops, compounds, water tanks, trees, neighbouring structures and safe mounting."
+  },
+  {
+    "id": 33,
+    "title": "Where Is the Best Place to Install Starlink in Abuja?",
+    "slug": "best-starlink-installers-abuja-fct-estates",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink installation abuja",
+    "secondaryKeywords": [
+      "starlink installation abuja",
+      "starlink roof abuja"
+    ],
+    "searchIntent": "Local + transactional",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-installation-abuja",
+    "commercialIntent": "high",
+    "audience": "Abuja compounds and estates",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Local commercial intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "abuja-suburbs-lugbe-kubwa-starlink",
+      "starlink-installation-abuja"
+    ],
+    "CTA": "/starlink-installation-abuja",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Add placement to the existing Abuja estates article. Lugbe/Kubwa stays a suburb article. Landing owns the commercial query. Bank angle: Same framework with Abuja-specific building and rooftop considerations."
+  },
+  {
+    "id": 34,
+    "title": "Starlink Obstructions Explained: Why Trees and Buildings Reduce Performance",
+    "slug": "professional-starlink-installation-nigeria-guide",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink obstructions",
+    "secondaryKeywords": [
+      "starlink obstruction score",
+      "starlink app obstruction"
+    ],
+    "searchIntent": "Educational + service",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "medium",
+    "audience": "Sites with trees and buildings",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Core setup topic",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-canopy-obstructions-niger-delta-forests",
+      "starlink-installation-lagos-high-rises-signal-obstructions"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "National obstruction explainer is a section of the install guide. Delta canopy and Lagos high-rise stay local. Bank angle: Show how the obstruction tool works and what an installer can physically change."
+  },
+  {
+    "id": 35,
+    "title": "Can Starlink Go on a Roof? Roof Mount vs Ground Mount",
+    "slug": "best-starlink-mounts-nigerian-roofs-corrugated-concrete",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink roof mount",
+    "secondaryKeywords": [
+      "starlink roof mount",
+      "starlink pole mount nigeria"
+    ],
+    "searchIntent": "Installation",
+    "cluster": "Hardware",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "medium",
+    "audience": "Home and business installers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | “Starlink mount” 5.4K/mo global + related high queries",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "securely-mount-starlink-wind-damage-nigeria",
+      "professional-starlink-installation-nigeria-guide"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Roof, pole and ground belong in the existing mounts article. Bank cites about 5.4K/mo global for 'starlink mount'. That is a global benchmark, not Nigeria volume. Bank angle: Compare roof, pole and ground placement, focusing on safety and obstruction reduction."
+  },
+  {
+    "id": 36,
+    "title": "Starlink Mounting Options for Nigerian Homes and Businesses",
+    "slug": "best-starlink-mounts-nigerian-roofs-corrugated-concrete",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink mounting kit nigeria",
+    "secondaryKeywords": [
+      "starlink mounting kit nigeria"
+    ],
+    "searchIntent": "Commercial + installation",
+    "cluster": "Hardware",
+    "parentHub": "/blog/best-starlink-mounts-nigerian-roofs-corrugated-concrete",
+    "commercialIntent": "medium",
+    "audience": "Nigerian homes and offices",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Mount keyword cluster signal",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "best-starlink-mounts-nigerian-roofs-corrugated-concrete"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Same mount intent as topic 35. No second mounts URL. Bank angle: Explain wall, pole, roof and custom mounting decisions."
+  },
+  {
+    "id": 37,
+    "title": "Starlink Mini Mounting Guide: Balcony, Roof, Vehicle and Temporary Sites",
+    "slug": "starlink-mini-vs-standard-which-buy-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink mini mount",
+    "secondaryKeywords": [
+      "starlink mini mount balcony",
+      "starlink mini vehicle mount"
+    ],
+    "searchIntent": "Installation",
+    "cluster": "Hardware",
+    "parentHub": "/blog/starlink-mini-vs-standard-which-buy-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Mini owners and travellers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | 5.4K/mo global parent keyword",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-mini-vs-standard-which-buy-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Mini placement is a section of the Mini vs Standard article. Global mount volume in the bank is not a Nigeria volume. Bank angle: Use cases that make the Mini different from the Standard."
+  },
+  {
+    "id": 38,
+    "title": "Why Starlink Slows Down During Heavy Rain in Nigeria",
+    "slug": "starlink-slower-when-it-rains-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink rain nigeria",
+    "secondaryKeywords": [
+      "starlink rain fade nigeria",
+      "starlink stops when raining"
+    ],
+    "searchIntent": "Troubleshooting",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Users who drop in rain",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong recurring Nigerian pain point",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-port-harcourt-rain-fade-garden-city"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "National rain article is the winner. Port Harcourt rain article stays local. Review each rainy season. Bank angle: Explain rain fade, ground-station weather and practical steps to reduce interruptions."
+  },
+  {
+    "id": 39,
+    "title": "Starlink and Harmattan Dust: Does Dust Affect Your Dish?",
+    "slug": "starlink-heavy-harmattan-dust-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink harmattan nigeria",
+    "secondaryKeywords": [
+      "starlink dust harmattan",
+      "clean starlink dish nigeria"
+    ],
+    "searchIntent": "Seasonal FAQ",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "low",
+    "audience": "Households before harmattan",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Seasonal Nigerian topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-slower-when-it-rains-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right seasonal URL. Review before the next harmattan, not a new article. Bank angle: Address dust, cleaning, mounts, connectors and safe maintenance before harmattan peaks."
+  },
+  {
+    "id": 40,
+    "title": "Should You Use a Surge Protector With Starlink in Nigeria?",
+    "slug": "ground-starlink-dish-lightning-strikes-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink surge protector nigeria",
+    "secondaryKeywords": [
+      "starlink surge protector",
+      "starlink lightning protection"
+    ],
+    "searchIntent": "FAQ",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/blog/ground-starlink-dish-lightning-strikes-nigeria",
+    "commercialIntent": "low",
+    "audience": "Sites with storms and unstable power",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Practical installation query",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "best-ups-brands-nigeria-starlink-online"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Surge protection is a section of the grounding article, with a link to the UPS guide. Do not overpromise protection. Bank angle: Connect power quality, storms and equipment protection without overpromising."
+  },
+  {
+    "id": 41,
+    "title": "How Much Power Does Starlink Use and What Size Inverter Do You Need?",
+    "slug": "power-backup-starlink-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink power consumption inverter nigeria",
+    "secondaryKeywords": [
+      "starlink power consumption",
+      "starlink inverter size nigeria"
+    ],
+    "searchIntent": "Commercial + technical",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "high",
+    "audience": "Off-grid homes and offices",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High Nigeria off-grid intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "best-power-bank-inverter-starlink-mini-nigeria",
+      "power-starlink-router-solar-nigeria",
+      "power-starlink-flat-hp-24v-boat-system-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "National inverter-sizing home. Confirm watt figures from Starlink documentation before publishing examples. Mini, solar and marine 24V articles stay separate. Bank angle: Provide realistic planning examples for home, office and field deployments."
+  },
+  {
+    "id": 42,
+    "title": "Can Solar Power Run Starlink All Day in Nigeria?",
+    "slug": "power-starlink-router-solar-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "solar starlink nigeria",
+    "secondaryKeywords": [
+      "solar power starlink nigeria",
+      "starlink battery runtime"
+    ],
+    "searchIntent": "Commercial + educational",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/blog/power-backup-starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Solar households",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong off-grid use case",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "power-backup-starlink-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right solar URL. Refresh load math only from documented wattage. Link the backup article. Bank angle: Show how solar, battery, inverter and load management fit together."
+  },
+  {
+    "id": 43,
+    "title": "Starlink and Generator Power: Fuel Costs vs Solar and Inverter Backup",
+    "slug": "power-backup-starlink-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink generator vs inverter nigeria",
+    "secondaryKeywords": [
+      "starlink generator vs inverter",
+      "starlink fuel cost backup"
+    ],
+    "searchIntent": "Commercial comparison",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/blog/power-backup-starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Generator households",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Cost comparison",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "power-starlink-router-solar-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Generator comparison is a section of the power-backup article. Do not add a fuel-price URL. Bank angle: Frame internet uptime as a full power-system problem."
+  },
+  {
+    "id": 44,
+    "title": "How to Improve Starlink Wi-Fi Coverage Across a Large House or Office",
+    "slug": "extend-starlink-wifi-range-large-nigerian-home",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink wifi coverage mesh nigeria",
+    "secondaryKeywords": [
+      "starlink mesh wifi nigeria",
+      "starlink wifi coverage"
+    ],
+    "searchIntent": "Service + educational",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "high",
+    "audience": "Large homes and small offices",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High support/search intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "bypass-starlink-router-third-party-mesh-deco-asus",
+      "starlink-estate-wifi-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Home coverage article is the winner. Estate landing is the multi-unit commercial page. Mesh-bypass article stays a how-to. Bank angle: Cover router placement, mesh and wired access points."
+  },
+  {
+    "id": 45,
+    "title": "Starlink Router 2.4GHz vs 5GHz: Which Should Nigerian Users Use?",
+    "slug": "extend-starlink-wifi-range-large-nigerian-home",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink 2.4ghz 5ghz",
+    "secondaryKeywords": [
+      "starlink 2.4 ghz vs 5 ghz"
+    ],
+    "searchIntent": "Educational",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/blog/extend-starlink-wifi-range-large-nigerian-home",
+    "commercialIntent": "low",
+    "audience": "Users choosing a Wi-Fi band",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Practical technical search",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "extend-starlink-wifi-range-large-nigerian-home"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Band choice is a section of the coverage article. Bank angle: Explain range vs speed and device compatibility without needless networking jargon."
+  },
+  {
+    "id": 46,
+    "title": "How to Run a Starlink Speed Test Correctly",
+    "slug": "average-starlink-latency-ping-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink speed test",
+    "secondaryKeywords": [
+      "starlink speed test app",
+      "router speed test vs phone"
+    ],
+    "searchIntent": "Educational + support",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "low",
+    "audience": "People running speed tests",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Official support topic",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "average-starlink-latency-ping-nigeria"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "How to test is a section of the latency article. Keep the Stage 1 rule: 20–33 ms and 100–350 Mbps stay indicative, not guarantees. Bank angle: Explain router-to-internet vs device-to-internet testing and how to interpret latency."
+  },
+  {
+    "id": 47,
+    "title": "Why Your Starlink Speed Changes Throughout the Day",
+    "slug": "average-starlink-latency-ping-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "why starlink speed drops at night",
+    "secondaryKeywords": [
+      "starlink slow at night nigeria",
+      "starlink congestion"
+    ],
+    "searchIntent": "Troubleshooting",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Users whose speed falls in the evening",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Common pain point",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-residential-sold-out-lagos-abuja-2026-options"
+    ],
+    "CTA": "/starlink-priority-plan-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Evening slowdown is congestion and Wi-Fi, explained on the latency article, with a link to the capacity article. Not a new URL. Bank angle: Explain congestion, network demand, obstructions and local Wi-Fi bottlenecks."
+  },
+  {
+    "id": 48,
+    "title": "Starlink for Gaming in Nigeria: What Ping and Latency Should You Expect?",
+    "slug": "starlink-gaming-nigeria-ping-packet-loss-stability",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink gaming nigeria ping",
+    "secondaryKeywords": [
+      "starlink ping nigeria",
+      "starlink gaming latency"
+    ],
+    "searchIntent": "Review + educational",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/blog/average-starlink-latency-ping-nigeria",
+    "commercialIntent": "low",
+    "audience": "Gamers",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong consumer intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "average-starlink-latency-ping-nigeria"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right gaming URL. Refresh so latency stays indicative. Do not invent a ping guarantee. Bank angle: Discuss latency, jitter, congestion and how to test real gameplay."
+  },
+  {
+    "id": 49,
+    "title": "Starlink for Zoom, Teams and Video Calls: How Reliable Is It?",
+    "slug": "starlink-setup-remote-software-developers-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink zoom teams nigeria",
+    "secondaryKeywords": [
+      "starlink zoom nigeria",
+      "starlink teams upload"
+    ],
+    "searchIntent": "Use case",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/starlink-home-installation",
+    "commercialIntent": "medium",
+    "audience": "Remote workers on video calls",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong remote-work intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-residential-vs-priority-business-nigerian-smes"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Video-call reliability is a section of the remote-work setup article. Do not create a Zoom-only URL. Bank angle: Focus on upload, latency, Wi-Fi and backup power rather than headline download speed."
+  },
+  {
+    "id": 50,
+    "title": "Starlink Offline, Booting or Searching: What Each Status Means and What to Do",
+    "slug": "troubleshooting-starlink-offline-searching-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink offline booting searching fix",
+    "secondaryKeywords": [
+      "starlink offline",
+      "starlink booting",
+      "starlink searching"
+    ],
+    "searchIntent": "Support",
+    "cluster": "Installation & Troubleshooting",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Users with app status errors",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High troubleshooting intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "troubleshoot-starlink-red-light-router-nigeria",
+      "why-starlink-keeps-rebooting-nigeria-solutions"
+    ],
+    "CTA": "/starlink-repair-relocation-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right status article. Red-light and reboot articles stay separate because the symptoms differ. Bank angle: Turn official app status messages into a concise diagnostic guide."
+  },
+  {
+    "id": 51,
+    "title": "Starlink for Nigerian Offices: Primary Internet, Backup or Both?",
+    "slug": "combine-starlink-5g-failover-multi-wan",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink for business nigeria",
+    "secondaryKeywords": [
+      "starlink primary or backup office"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Offices deciding primary vs backup",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Business-intent cluster",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-enterprise-nigeria",
+      "starlink-vs-fibre-internet-lagos"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "The decision belongs at the top of the existing failover article and on the enterprise landing. A new 'offices' URL would compete with both. Bank angle: Position Starlink as resilient connectivity rather than automatically the cheapest ISP."
+  },
+  {
+    "id": 52,
+    "title": "How to Use Starlink as Backup Internet for a Nigerian Business",
+    "slug": "combine-starlink-5g-failover-multi-wan",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink backup internet nigeria",
+    "secondaryKeywords": [
+      "backup internet starlink fibre"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Businesses adding a second WAN",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High B2B intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "combine-starlink-5g-failover-multi-wan"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Same intent as the failover article. Section and internal links, not a new URL. Bank angle: Show failover design with fibre/5G plus Starlink."
+  },
+  {
+    "id": 53,
+    "title": "Starlink Failover: How Businesses Can Stay Online When Fibre Goes Down",
+    "slug": "combine-starlink-5g-failover-multi-wan",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink failover nigeria",
+    "secondaryKeywords": [
+      "starlink dual wan nigeria",
+      "starlink failover fibre"
+    ],
+    "searchIntent": "Technical + commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "IT teams designing failover",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong B2B pain point",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-marine-sdwan-integration",
+      "starlink-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Winner for office failover intent. Refresh so topics 51 and 52 are answered in the opening. Marine SD-WAN landing stays the vessel version. Bank angle: Explain dual-WAN concepts in a practical business setting."
+  },
+  {
+    "id": 54,
+    "title": "Starlink for Multi-Branch Businesses: Managing Multiple Locations",
+    "slug": "manage-starlink-multiple-branch-offices-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink multiple locations business",
+    "secondaryKeywords": [
+      "starlink multi site nigeria",
+      "starlink fleet dashboard"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-fleet-management-nigeria",
+    "commercialIntent": "high",
+    "audience": "Multi-site businesses",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Enterprise/B2B intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-fleet-management-nigeria",
+      "starlink-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-fleet-management-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right article. Point it at the fleet landing. Do not create a second multi-branch URL. Bank angle: Discuss fleet management, dashboard visibility and policy consistency."
+  },
+  {
+    "id": 55,
+    "title": "Does Starlink Give Businesses a Public IP? What Nigerian IT Teams Need to Know",
+    "slug": "starlink-residential-vs-priority-business-nigerian-smes",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink public ip business",
+    "secondaryKeywords": [
+      "starlink public ip nigeria",
+      "starlink static ip"
+    ],
+    "searchIntent": "Technical + commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "medium",
+    "audience": "IT teams asking about public IP",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | B2B technical intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-residential-vs-priority-business-nigerian-smes"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Plan-feature question. Answer inside the business-vs-residential article after the current plan rule is verified. Split later only if Search Console shows a distinct query with impressions. Bank angle: Clarify public IP, remote access and security architecture based on plan."
+  },
+  {
+    "id": 56,
+    "title": "Starlink and VPNs: What Works for Nigerian Businesses?",
+    "slug": "can-starlink-be-hacked-security-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink vpn business nigeria",
+    "secondaryKeywords": [
+      "starlink vpn latency nigeria"
+    ],
+    "searchIntent": "Technical",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "low",
+    "audience": "Businesses using VPN",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Technical niche",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "can-starlink-be-hacked-security-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Too narrow for its own URL. A VPN section on the security article. Do not claim vendor compatibility that has not been tested. Bank angle: Discuss VPN, latency and corporate network policies without claiming unsupported compatibility."
+  },
+  {
+    "id": 57,
+    "title": "Starlink Cybersecurity for Businesses: Risks, Controls and Best Practices",
+    "slug": "can-starlink-be-hacked-security-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink cybersecurity business",
+    "secondaryKeywords": [
+      "starlink wifi security business",
+      "starlink network segmentation"
+    ],
+    "searchIntent": "Educational + B2B",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Business and household admins",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Business authority topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "configure-vlan-starlink-crew-wifi-bridge-operations"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Expand the existing security article toward business controls. A second cybersecurity URL would split the intent. Bank angle: Cover Wi-Fi security, segmentation, VPN, admin control and physical security."
+  },
+  {
+    "id": 58,
+    "title": "Starlink for Construction Sites and Temporary Project Offices",
+    "slug": "starlink-construction-sites-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink construction site internet",
+    "secondaryKeywords": [
+      "temporary internet construction site nigeria"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Project and site managers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong niche B2B intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-as-a-service-leasing-dishes-nigeria-events"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "No construction-site article. Blog, not a landing page. The enterprise landing should link to it. Events article stays separate. Bank angle: Target project managers needing fast temporary connectivity where fibre is impractical."
+  },
+  {
+    "id": 59,
+    "title": "Starlink for Farms and Remote Agricultural Operations in Nigeria",
+    "slug": "starlink-farms-agriculture-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink farm internet nigeria",
+    "secondaryKeywords": [
+      "starlink farm internet nigeria",
+      "agriculture satellite internet"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Farms and agribusiness",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Rural commercial niche",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-agriculture-ebonyi-state-farms",
+      "smart-farming-nigeria-next-gen-leo-networks"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Ebonyi farm article is a state page. A national farm article is a later support piece and must link to Ebonyi rather than replace it. Bank angle: Cover remote monitoring, cloud tools, CCTV and staff communications."
+  },
+  {
+    "id": 60,
+    "title": "Starlink for Hotels, Lodges and Remote Hospitality Sites",
+    "slug": "starlink-hotels-lodges-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink hotel internet nigeria",
+    "secondaryKeywords": [
+      "hotel wifi starlink nigeria",
+      "lodge internet remote nigeria"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Hotels and lodges outside strong fibre",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Commercial hospitality intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "search-console-before-writing",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-hotels-asaba-guest-wifi-delta"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Asaba hotel article is local. A national hotel article may cannibalise it. Check Search Console for 'hotel' queries on the Asaba URL before writing. If that URL already ranks, update it instead of publishing this slug. Bank angle: Target locations where terrestrial fibre is weak or unavailable."
+  },
+  {
+    "id": 61,
+    "title": "Can You Resell Starlink Internet in Nigeria? Terms, Licensing and Community Models",
+    "slug": "starlink-for-communities-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "resell starlink nigeria",
+    "secondaryKeywords": [
+      "resell starlink internet nigeria",
+      "starlink authorization nigeria"
+    ],
+    "searchIntent": "Commercial + regulatory",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "high",
+    "audience": "People asking about resale or hotspots",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | New Communities model + regulatory sensitivity",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "activating-starlink-unauthorized-country-via-nigeria-risks"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Resale, licensing and Communities belong in the communities article. Do not recommend unauthorized resale. The grey-import article stays a separate risk page. Bank angle: Distinguish ordinary resale, authorized models and the new Communities model; verify Nigerian authorization before recommending."
+  },
+  {
+    "id": 62,
+    "title": "Starlink-Powered Wi-Fi Hotspots in Nigeria: What the New Communities Model Changes",
+    "slug": "starlink-for-communities-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink hotspot nigeria",
+    "secondaryKeywords": [
+      "starlink wifi hotspot nigeria"
+    ],
+    "searchIntent": "Business opportunity",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "high",
+    "audience": "Hotspot and estate operators",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Breaking commercial opportunity",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-estate-wifi-nigeria"
+    ],
+    "CTA": "/starlink-estate-wifi-nigeria",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Hotspot economics are a section of topic 1. Do not invent pass prices. Estate Wi-Fi landing already covers shared buildings DataGram actually installs. Bank angle: Explore hotspot economics conceptually without inventing unpublished pass prices."
+  },
+  {
+    "id": 63,
+    "title": "Starlink for Estates and Apartment Complexes: One Connectivity Strategy, Many Users",
+    "slug": "starlink-estate-wifi-nigeria",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink estate wifi nigeria",
+    "secondaryKeywords": [
+      "estate wifi starlink nigeria",
+      "compound starlink"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-estate-wifi-nigeria",
+    "commercialIntent": "high",
+    "audience": "Estates and apartment complexes",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Community/estate commercial intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "share-one-starlink-dish-two-flats-compound",
+      "ipnx-fibre-vs-starlink-nigerian-estates",
+      "starlink-estates-built-in-satellite-nigeria-real-estate"
+    ],
+    "CTA": "/starlink-estate-wifi-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Commercial intent is already the estate Wi-Fi landing. Do not add a competing estate blog or a second landing. Bank angle: Design considerations for shared Wi-Fi, access control, backhaul and support."
+  },
+  {
+    "id": 64,
+    "title": "Starlink for Events and Temporary Venues: Pop-Up Internet That Can Deploy Fast",
+    "slug": "starlink-as-a-service-leasing-dishes-nigeria-events",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink event internet nigeria",
+    "secondaryKeywords": [
+      "starlink event internet nigeria",
+      "temporary starlink hire"
+    ],
+    "searchIntent": "Commercial",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Event and temporary-venue organisers",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Niche commercial intent",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-construction-sites-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Events intent already has a URL. Refresh it. Do not imply a rental price that is not published. Bank angle: Use cases for events, exhibitions, outdoor activations and remote venues."
+  },
+  {
+    "id": 65,
+    "title": "Starlink for CCTV and Remote Monitoring at Unconnected Sites",
+    "slug": "connect-cctv-cameras-starlink-network",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink cctv remote site",
+    "secondaryKeywords": [
+      "starlink cctv upload",
+      "remote monitoring starlink"
+    ],
+    "searchIntent": "Commercial + technical",
+    "cluster": "Business & Enterprise",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "high",
+    "audience": "Sites with cameras and no fibre",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong business use case",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right URL. Refresh upload, power and recording-at-the-edge. Do not promise a bitrate. Bank angle: Cover upstream capacity, VPN/security, power and edge recording."
+  },
+  {
+    "id": 66,
+    "title": "Nigeria’s New Starlink Rural 4G Backhaul Pilot: What It Means for Remote Communities",
+    "slug": "starlink-rural-4g-backhaul-nigeria",
+    "contentType": "living-blog",
+    "action": "TRENDING BLOG",
+    "primaryKeyword": "starlink rural 4g backhaul nigeria",
+    "secondaryKeywords": [
+      "nuran starlink backhaul",
+      "infratel rural backhaul nigeria"
+    ],
+    "searchIntent": "News + strategic",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Tower operators, rural ISPs, policy readers",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Sept 2026 Nigeria pilot",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-community-gateways-nigeria-rural-villages"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "The NuRAN/Infratel September 2026 pilot is a bank signal. Verify the pilot before any sentence is published. Different intent from Communities host/pass. Bank angle: Explain the NuRAN/Infratel pilot and why satellite backhaul matters for rural towers."
+  },
+  {
+    "id": 67,
+    "title": "Can Starlink Make Rural 4G Towers Viable Where Fibre Cannot?",
+    "slug": "starlink-rural-4g-backhaul-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink 4g tower backhaul",
+    "secondaryKeywords": [
+      "satellite backhaul vs fibre tower"
+    ],
+    "searchIntent": "B2B + educational",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-rural-4g-backhaul-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Infrastructure planners",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong infrastructure topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-rural-4g-backhaul-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Tower-viability is the analysis section of the backhaul article, not a second news URL. Bank angle: Explain backhaul economics, deployment speed and where satellite makes sense."
+  },
+  {
+    "id": 68,
+    "title": "Starlink for Rural ISPs and WISPs in Nigeria: Opportunities and Limitations",
+    "slug": "starlink-wisp-backhaul-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink wisp nigeria",
+    "secondaryKeywords": [
+      "wisp satellite backhaul nigeria"
+    ],
+    "searchIntent": "Commercial + technical",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-rural-4g-backhaul-nigeria",
+    "commercialIntent": "high",
+    "audience": "Rural ISPs and WISPs",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-value niche",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-rural-4g-backhaul-nigeria",
+      "starlink-for-communities-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Operator audience differs from the news pilot. Write after topic 66. Regulatory limits and Communities terms must be checked. Do not advise unauthorized resale. Bank angle: Cover backhaul, community distribution, terms and regulatory considerations."
+  },
+  {
+    "id": 69,
+    "title": "Starlink for Schools in Rural Nigeria: Practical Deployment Guide",
+    "slug": "starlink-schools-rural-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink for schools nigeria",
+    "secondaryKeywords": [
+      "school internet rural nigeria",
+      "starlink for education"
+    ],
+    "searchIntent": "Commercial + impact",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Schools and education projects",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Education connectivity trend",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-unn-students-nsukka-enugu"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "UNN/Nsukka post is a student geo article, not a school-deployment guide. National school guide is missing. Do not fold it into the Nsukka URL. Bank angle: Cover school size, power, Wi-Fi distribution, maintenance and content access."
+  },
+  {
+    "id": 70,
+    "title": "How Satellite Internet Can Support AI Labs in Nigerian Schools",
+    "slug": "starlink-schools-rural-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink ai schools nigeria",
+    "secondaryKeywords": [
+      "starlink school ai lab lagos"
+    ],
+    "searchIntent": "Strategic + education",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-schools-rural-nigeria",
+    "commercialIntent": "low",
+    "audience": "Education and AI-lab readers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Current Nigeria case-study signal",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-schools-rural-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "The September 2026 Lagos school deployment is a bank signal. Use it inside the schools guide only after the deployment is verified. Not its own URL. Bank angle: Use the Sept 2026 Lagos school deployment as a local proof point."
+  },
+  {
+    "id": 71,
+    "title": "Starlink for Rural Clinics: Could Better Internet Improve Telemedicine?",
+    "slug": "starlink-rural-nigerian-healthcare-impact-2028",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink healthcare nigeria",
+    "secondaryKeywords": [
+      "telemedicine satellite internet nigeria"
+    ],
+    "searchIntent": "Strategic",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "low",
+    "audience": "Clinics and health NGOs",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Public-sector niche",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ngos-rural-field-operations-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Existing URL is speculative and dated 2028 in the slug. Refresh the body into a present-tense clinic checklist. Do not change the URL. Do not promise clinical outcomes. Bank angle: Explore telemedicine, records, diagnostics and communications while flagging power/reliability constraints."
+  },
+  {
+    "id": 72,
+    "title": "Starlink for NGOs and Development Projects Working in Remote Nigeria",
+    "slug": "starlink-ngos-rural-field-operations-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink ngo nigeria",
+    "secondaryKeywords": [
+      "starlink field deployment ngo"
+    ],
+    "searchIntent": "Commercial + impact",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "NGOs and field programmes",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Niche B2B/NGO intent",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-rural-nigerian-healthcare-impact-2028"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Right URL for NGO deployments. Refresh the checklist and link the communities article once it exists. Not a new page. Bank angle: Build a deployment checklist for field programmes."
+  },
+  {
+    "id": 73,
+    "title": "Starlink for Disaster Response in Nigeria: When Infrastructure Is Down",
+    "slug": "starlink-disaster-response-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink emergency connectivity nigeria",
+    "secondaryKeywords": [
+      "emergency satellite internet nigeria"
+    ],
+    "searchIntent": "Strategic",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-ngos-rural-field-operations-nigeria",
+    "commercialIntent": "low",
+    "audience": "Emergency and resilience planners",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong resilience topic",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ngos-rural-field-operations-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "No current article treats rapid deploy for outages and disasters. Low commercial urgency. Must not be written as a certified emergency system. Bank angle: Frame rapid deployability, redundancy, power and field networking."
+  },
+  {
+    "id": 74,
+    "title": "How Community Internet Hubs Could Work in Rural Nigerian Towns",
+    "slug": "starlink-community-gateways-nigeria-rural-villages",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "community internet hub nigeria starlink",
+    "secondaryKeywords": [
+      "community internet hub nigeria",
+      "village starlink gateway"
+    ],
+    "searchIntent": "Strategic + business",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/blog/starlink-for-communities-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Towns planning a shared access point",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | New Communities + rural demand",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-for-communities-nigeria",
+      "starlink-estate-wifi-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Existing gateway article is the practical hub piece. Update it so it no longer reads as a substitute for the official Communities product. Do not redirect it. Do not create a second hub URL. Bank angle: Show the hub model, user access, power, support and sustainability questions."
+  },
+  {
+    "id": 75,
+    "title": "Starlink for Local Government Connectivity: Offices, Health Centres and Remote Sites",
+    "slug": "starlink-local-government-connectivity-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink local government nigeria",
+    "secondaryKeywords": [
+      "starlink government office nigeria"
+    ],
+    "searchIntent": "Strategic",
+    "cluster": "Communities & Rural Connectivity",
+    "parentHub": "/starlink-enterprise-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Local government and public facilities",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Public-sector niche",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "No public-sector facilities article. Low priority. A landing page would cannibalise the enterprise page. Bank angle: Map use cases across dispersed facilities with procurement and compliance considerations."
+  },
+  {
+    "id": 76,
+    "title": "Starlink for Vessels in Nigeria and the Gulf of Guinea: What Operators Need to Know",
+    "slug": "starlink-offshore-maritime-installation",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink vessel internet nigeria",
+    "secondaryKeywords": [
+      "starlink vessel nigeria",
+      "starlink gulf of guinea"
+    ],
+    "searchIntent": "Maritime commercial",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Gulf of Guinea vessel operators",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High-value maritime niche",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-maritime-ships-boats-nigeria-setup",
+      "starlink-boat-installation"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "The maritime installation page is the hub. The ships-and-boats blog supports it. Do not create a second vessel pillar. Boat landing remains the smaller-craft commercial page. Bank angle: Make DataGram’s maritime hub the authority page for vessel connectivity."
+  },
+  {
+    "id": 77,
+    "title": "Starlink for Offshore Oil & Gas Operations: Connectivity From Shore to Rig",
+    "slug": "starlink-offshore-maritime-installation",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink offshore oil gas nigeria",
+    "secondaryKeywords": [
+      "starlink offshore oil gas nigeria",
+      "starlink fpso osv"
+    ],
+    "searchIntent": "B2B + maritime",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Oil and gas operators",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High-value target sector",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-offshore-niger-delta-specs",
+      "zero-downtime-internet-escravos-forcados-oil-camps",
+      "internet-alternatives-oil-gas-rivers-state"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Oil and gas is a sector section of the maritime pillar, with the Niger Delta, Escravos/Forcados and Rivers articles as proof. A new oil-and-gas landing would compete with the pillar. Bank angle: Target drilling, support vessels, FPSOs, offshore bases and service contractors."
+  },
+  {
+    "id": 78,
+    "title": "Starlink for Offshore Vessels vs VSAT: What Should Operators Actually Choose?",
+    "slug": "vsat-vs-starlink-roi-nigerian-offshore-operations-2026",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink vs vsat offshore",
+    "secondaryKeywords": [
+      "starlink vs vsat",
+      "vsat replacement offshore nigeria"
+    ],
+    "searchIntent": "B2B comparison",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Offshore buyers comparing VSAT",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Strong comparison for high-ticket buyers",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-marine-sdwan-integration"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "This is the VSAT comparison winner. Refresh it so hybrid architecture is the recommendation, not a rip-and-replace. No new comparison URL. Bank angle: Explain where Starlink excels, where VSAT remains valuable and why hybrid architecture is often strongest."
+  },
+  {
+    "id": 79,
+    "title": "Why Many Serious Vessels Use Starlink and VSAT Together",
+    "slug": "vsat-vs-starlink-roi-nigerian-offshore-operations-2026",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink vsat hybrid vessel",
+    "secondaryKeywords": [
+      "starlink and vsat together",
+      "hybrid vessel connectivity"
+    ],
+    "searchIntent": "B2B + technical",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-marine-sdwan-integration",
+    "commercialIntent": "high",
+    "audience": "Vessel IT leads",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Strong B2B authority topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-marine-sdwan-integration"
+    ],
+    "CTA": "/starlink-marine-sdwan-integration",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Why both links stay is a section of the VSAT article and the point of the marine SD-WAN landing. Not a new URL. Bank angle: Sell the architecture, not the gadget: primary broadband plus resilient backup/legacy links."
+  },
+  {
+    "id": 80,
+    "title": "Starlink Global Priority for Vessels: How the Maritime Plans Work",
+    "slug": "starlink-roaming-global-priority-activation-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink global priority maritime",
+    "secondaryKeywords": [
+      "starlink global priority maritime",
+      "starlink ocean coverage plan"
+    ],
+    "searchIntent": "Transactional",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-roaming-global-priority-nigeria",
+    "commercialIntent": "high",
+    "audience": "Vessel operators choosing Global Priority",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Official maritime plan signal",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained",
+      "starlink-offshore-maritime-installation"
+    ],
+    "CTA": "/starlink-roaming-global-priority-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Global Priority for vessels is the existing roaming article plus the roaming landing. Do not create a maritime-only duplicate. Bank angle: Explain data tiers, priority, ocean coverage and vessel use."
+  },
+  {
+    "id": 81,
+    "title": "Starlink Ocean Mode for Vessels: The 12-Nautical-Mile Rule Explained",
+    "slug": "starlink-ocean-mode-50gb-priority-limit-explained",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink ocean mode vessel",
+    "secondaryKeywords": [
+      "starlink 12 nautical mile rule",
+      "when ocean mode starts"
+    ],
+    "searchIntent": "Maritime + FAQ",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/blog/starlink-ocean-mode-50gb-priority-limit-explained",
+    "commercialIntent": "high",
+    "audience": "Crews crossing coastal limits",
+    "priority": "P0",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Current plan rule",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "The 12-nautical-mile rule is a section of the Ocean Mode article. Verify the current boundary text before publishing. Do not guess a replacement rule. Bank angle: Explain when ocean billing begins and why crews need to understand the switch."
+  },
+  {
+    "id": 82,
+    "title": "What Does Starlink Ocean Mode at $6/GB Mean for a Vessel’s Monthly Budget?",
+    "slug": "starlink-ocean-mode-50gb-priority-limit-explained",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink ocean mode cost vessel",
+    "secondaryKeywords": [
+      "starlink ocean mode monthly budget",
+      "ocean mode 6 dollars per gb"
+    ],
+    "searchIntent": "Commercial + cost planning",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/blog/starlink-ocean-mode-50gb-priority-limit-explained",
+    "commercialIntent": "high",
+    "audience": "Vessel finance and ops",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Current price change",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Budget scenarios stay inside the Ocean Mode article. The $6/GB bank figure is not approved for the site. Do not convert it to naira. Bank angle: Turn the price into scenario-based vessel data budgets."
+  },
+  {
+    "id": 83,
+    "title": "Starlink Performance on Ships: Why Hardware Matters Offshore",
+    "slug": "flat-high-performance-vs-standard-dish-maritime",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink performance maritime",
+    "secondaryKeywords": [
+      "starlink performance kit maritime",
+      "flat high performance vs standard"
+    ],
+    "searchIntent": "B2B product",
+    "cluster": "Hardware",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Vessel and offshore buyers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Official Performance kit positioning",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-high-performance-dish-worth-cost-smes",
+      "salt-spray-corrosion-marine-antennas-gulf-of-guinea"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Marine hardware comparison already exists. Refresh durability and power. Do not publish an unverified 400 Mbps or gigabit claim. Bank angle: Cover durability, environmental ratings, power and network integration."
+  },
+  {
+    "id": 84,
+    "title": "Starlink Performance vs Standard for Marine Deployments",
+    "slug": "flat-high-performance-vs-standard-dish-maritime",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink performance vs standard maritime",
+    "secondaryKeywords": [
+      "starlink performance vs standard boat"
+    ],
+    "searchIntent": "B2B comparison",
+    "cluster": "Hardware",
+    "parentHub": "/blog/flat-high-performance-vs-standard-dish-maritime",
+    "commercialIntent": "high",
+    "audience": "Marine buyers comparing kits",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Product comparison",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "flat-high-performance-vs-standard-dish-maritime"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Same comparison as topic 83. The SME high-performance article stays a land-office piece and should cross-link, not merge. Bank angle: Compare durability, connectors, power, mounting and expected use cases."
+  },
+  {
+    "id": 85,
+    "title": "Can One Starlink Terminal Serve a Large Vessel Crew?",
+    "slug": "configure-vlan-starlink-crew-wifi-bridge-operations",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink crew wifi vessel",
+    "secondaryKeywords": [
+      "one starlink for a crew",
+      "starlink crew wifi"
+    ],
+    "searchIntent": "Maritime technical",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Vessel IT and radio officers",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-use-case intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-offshore-maritime-installation"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Open this article with whether one terminal can serve a crew. The VLAN design is the answer. Not a new URL. Bank angle: Explain that shipboard Wi-Fi design is more than the satellite terminal."
+  },
+  {
+    "id": 86,
+    "title": "Crew Wi-Fi on a Vessel: Designing Fair, Fast Internet for 50+ Crew",
+    "slug": "configure-vlan-starlink-crew-wifi-bridge-operations",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "crew wifi vessel starlink",
+    "secondaryKeywords": [
+      "crew wifi quotas",
+      "vessel captive portal"
+    ],
+    "searchIntent": "Maritime technical",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/blog/configure-vlan-starlink-crew-wifi-bridge-operations",
+    "commercialIntent": "high",
+    "audience": "Vessels with large crews",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Niche but high commercial value",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "configure-vlan-starlink-crew-wifi-bridge-operations"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "50-plus crew design is the same article as topic 85. Bank angle: Discuss VLANs, captive portals, quotas, traffic shaping and welfare needs."
+  },
+  {
+    "id": 87,
+    "title": "How to Integrate Starlink Into an Existing Shipboard Network",
+    "slug": "starlink-marine-sdwan-integration",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink shipboard network integration",
+    "secondaryKeywords": [
+      "starlink ship network integration",
+      "starlink ethernet handoff vessel"
+    ],
+    "searchIntent": "Maritime technical",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-marine-sdwan-integration",
+    "commercialIntent": "high",
+    "audience": "Ship network engineers",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High B2B technical intent",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "configure-vlan-starlink-crew-wifi-bridge-operations"
+    ],
+    "CTA": "/starlink-marine-sdwan-integration",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Shipboard integration is the marine SD-WAN landing. A blog would cannibalise it. The VLAN article remains the configuration support piece. Bank angle: Cover Ethernet handoff, firewall/router integration and monitoring."
+  },
+  {
+    "id": 88,
+    "title": "Starlink and Vessel Cybersecurity: What Offshore IT Teams Should Configure",
+    "slug": "starlink-vessel-cybersecurity-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink maritime cybersecurity",
+    "secondaryKeywords": [
+      "vessel network segmentation starlink",
+      "maritime wifi security"
+    ],
+    "searchIntent": "Maritime + security",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "medium",
+    "audience": "Offshore IT and security",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-value authority topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "configure-vlan-starlink-crew-wifi-bridge-operations",
+      "can-starlink-be-hacked-security-nigeria"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Land security article does not serve ship IT. One maritime security support article under the maritime pillar. Not a new service page. Bank angle: Target ship IT/security teams with network segmentation, access control and monitoring."
+  },
+  {
+    "id": 89,
+    "title": "Starlink for Oil & Gas Service Vessels: Crew, Operations and Client Connectivity",
+    "slug": "starlink-offshore-maritime-installation",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink oil gas vessel connectivity",
+    "secondaryKeywords": [
+      "starlink osv nigeria",
+      "starlink crew boat internet"
+    ],
+    "searchIntent": "B2B + maritime",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "OSV, crew boat and survey support operators",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Direct target-market intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "zero-downtime-internet-escravos-forcados-oil-camps",
+      "starlink-offshore-niger-delta-specs"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Service-vessel intent is covered by the maritime pillar and the oil-camp article. No OSV-only URL. Bank angle: Speak directly to OSVs, crew boats, survey vessels and support craft."
+  },
+  {
+    "id": 90,
+    "title": "Starlink for Survey and Inspection Vessels: Moving Large Data Offshore",
+    "slug": "starlink-offshore-niger-delta-specs",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink survey vessel internet",
+    "secondaryKeywords": [
+      "starlink survey vessel data",
+      "offshore file transfer starlink"
+    ],
+    "searchIntent": "Maritime technical",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "medium",
+    "audience": "Survey and inspection vessels",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-value niche",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-offshore-niger-delta-specs"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Large-file survey use is a section of the Niger Delta specs article. Revisit only if Search Console shows a distinct query. Bank angle: Focus on imagery, sensor data, reports and cloud workflows."
+  },
+  {
+    "id": 91,
+    "title": "Starlink for Commercial Fishing in West Africa",
+    "slug": "starlink-fishing-vessels-gulf-of-guinea",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink fishing vessel internet",
+    "secondaryKeywords": [
+      "starlink fishing boat west africa"
+    ],
+    "searchIntent": "Commercial + maritime",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "low",
+    "audience": "Commercial fishing operators",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Global maritime use case",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-boat-installation"
+    ],
+    "CTA": "/starlink-boat-installation",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "No fishing article. Low priority. Boat landing is the CTA. Do not mix it into the oil-and-gas section. Bank angle: Translate Starlink’s fishing use case into Gulf of Guinea operations."
+  },
+  {
+    "id": 92,
+    "title": "Starlink for Maritime Safety: Weather, Route Planning and Emergency Communication",
+    "slug": "starlink-offshore-maritime-installation",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink maritime safety",
+    "secondaryKeywords": [
+      "starlink weather routing",
+      "starlink not a gmdss replacement"
+    ],
+    "searchIntent": "Maritime educational",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "low",
+    "audience": "Masters and shoreside safety leads",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-use-case value",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-offshore-hse-compliance"
+    ],
+    "CTA": "/starlink-offshore-hse-compliance",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "A short section on the maritime pillar. Must say connectivity is not a certified safety or GMDSS system. HSE landing stays the compliance page. Bank angle: Show how connectivity supports operational awareness without confusing it with a certified safety system."
+  },
+  {
+    "id": 93,
+    "title": "Starlink for Port Operations and Coastal Facilities in Nigeria",
+    "slug": "starlink-port-coastal-facilities-nigeria",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink port internet nigeria",
+    "secondaryKeywords": [
+      "starlink port terminal nigeria",
+      "coastal yard internet"
+    ],
+    "searchIntent": "B2B",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "Ports, yards and coastal bases",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Maritime infrastructure topic",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-offshore-maritime-installation",
+      "starlink-enterprise-nigeria"
+    ],
+    "CTA": "/starlink-enterprise-nigeria",
+    "currentStatus": "proposed",
+    "lastReviewed": "2026-10-08",
+    "notes": "Ports and yards are shore facilities, not the offshore install page. A support article, not a new landing, so it does not compete with the maritime pillar. Bank angle: Target terminals, yards, workshops, coastal bases and port-adjacent operations."
+  },
+  {
+    "id": 94,
+    "title": "Can Multiple Starlink Terminals Be Used on One Vessel?",
+    "slug": "starlink-fleet-management-nigeria",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "multiple starlink terminals vessel",
+    "secondaryKeywords": [
+      "two starlink dishes one vessel",
+      "multiple service lines vessel"
+    ],
+    "searchIntent": "Technical + commercial",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-fleet-management-nigeria",
+    "commercialIntent": "high",
+    "audience": "Operators considering two terminals",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Current official plan capability",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-fleet-management-nigeria"
+    ],
+    "CTA": "/starlink-fleet-management-nigeria",
+    "currentStatus": "existing-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Multi-terminal architecture belongs on the fleet landing. Verify current service-line rules before stating a limit. Bank angle: Explain service-line limits and practical reasons for multiple-terminal architecture."
+  },
+  {
+    "id": 95,
+    "title": "How to Build a Resilient Offshore Internet System: Starlink + VSAT + LTE",
+    "slug": "starlink-marine-sdwan-integration",
+    "contentType": "landing-section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "offshore connectivity hybrid starlink vsat lte",
+    "secondaryKeywords": [
+      "starlink vsat lte failover",
+      "offshore hybrid connectivity"
+    ],
+    "searchIntent": "B2B architecture",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-marine-sdwan-integration",
+    "commercialIntent": "high",
+    "audience": "Mission-critical offshore IT",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | High-value enterprise authority topic",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "vsat-vs-starlink-roi-nigerian-offshore-operations-2026",
+      "combine-starlink-5g-failover-multi-wan"
+    ],
+    "CTA": "/starlink-marine-sdwan-integration",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Layered Starlink + VSAT + LTE is the marine SD-WAN landing. Office failover article stays the land version. No third architecture URL. Bank angle: Present a layered connectivity architecture for mission-critical operations."
+  },
+  {
+    "id": 96,
+    "title": "Starlink vs Amazon Leo: What the Rebrand and Competition Mean for African Connectivity",
+    "slug": "amazon-kuiper-vs-starlink-2027-nigeria",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink vs amazon leo africa",
+    "secondaryKeywords": [
+      "amazon leo vs starlink",
+      "project kuiper rebrand"
+    ],
+    "searchIntent": "Comparison + thought leadership",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "low",
+    "audience": "Readers comparing LEO competitors",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Competitive technology trend",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "oneweb-vs-starlink-nigerian-enterprise-outlook"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Update the body to the Amazon Leo name. Keep the Kuiper slug so the URL does not change. Do not predict market share. OneWeb article stays a separate competitor. Bank angle: Use the current Amazon Leo name and discuss competition without predicting market share."
+  },
+  {
+    "id": 97,
+    "title": "Starlink Direct-to-Cell vs Traditional Mobile Networks: What Changes in Africa?",
+    "slug": "airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "contentType": "section",
+    "action": "CONSOLIDATE",
+    "primaryKeyword": "starlink direct to cell vs mobile networks",
+    "secondaryKeywords": [
+      "direct to cell vs mtn airtel",
+      "will starlink replace mobile"
+    ],
+    "searchIntent": "Thought leadership",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/blog/airtel-starlink-direct-to-cell-nigeria-dish-still-needed",
+    "commercialIntent": "medium",
+    "audience": "Readers asking if satellite replaces mobile networks",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | Fast-moving 2026 technology story",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-direct-to-cell-nigeria-telecoms-replacement",
+      "starlink-vs-mtn-5g-nigeria-remote-work-business-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "The telecoms-replacement article is the same intent as the D2C winner. Fold the comparison into the winner later. Redirect only after Search Console. MTN 5G articles are a different comparison and are not part of this merge. Bank angle: Explain satellite-assisted mobile coverage and where terrestrial networks still win."
+  },
+  {
+    "id": 98,
+    "title": "Will Starlink Replace Fibre in Nigeria? The Honest Answer for 2026",
+    "slug": "starlink-vs-fibre-internet-lagos",
+    "contentType": "blog",
+    "action": "UPDATE EXISTING BLOG",
+    "primaryKeyword": "starlink vs fibre nigeria",
+    "secondaryKeywords": [
+      "starlink vs fibre nigeria",
+      "will starlink replace fibre"
+    ],
+    "searchIntent": "Comparison + authority",
+    "cluster": "Starlink Nigeria",
+    "parentHub": "/guide/starlink-nigeria",
+    "commercialIntent": "high",
+    "audience": "Homes and offices that can get fibre",
+    "priority": "P1",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 5/5 | High comparison intent",
+      "bank priority letter: A"
+    ],
+    "verificationStatus": "stage1-corrected",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "ipnx-fibre-vs-starlink-nigerian-estates",
+      "starlink-vs-fibre-owerri-imo-state",
+      "spectranet-vs-starlink-remote-work-nigeria-2026"
+    ],
+    "CTA": "/starlink-home-installation",
+    "currentStatus": "existing",
+    "lastReviewed": "2026-10-08",
+    "notes": "Lagos fibre article becomes the national answer in the introduction, with Lagos as the worked example. Do not merge Owerri, IPNX or Spectranet URLs without Search Console. Speed claims stay indicative. Bank angle: Use actual Nigerian speeds, economics and reliability trade-offs; answer “where,” not “always.”"
+  },
+  {
+    "id": 99,
+    "title": "Can Starlink Really Deliver Gigabit Internet? What the 2026 Roadmap Actually Says",
+    "slug": "starlink-v3-satellites-nigeria",
+    "contentType": "section",
+    "action": "PILLAR SUPPORT",
+    "primaryKeyword": "starlink gigabit speeds 2026",
+    "secondaryKeywords": [
+      "starlink gigabit 2026",
+      "starlink performance 400 mbps"
+    ],
+    "searchIntent": "Technology + news",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "/blog/starlink-v3-satellites-nigeria",
+    "commercialIntent": "low",
+    "audience": "Readers of gigabit headlines",
+    "priority": "P2",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 4/5 | Current performance roadmap",
+      "bank priority letter: B"
+    ],
+    "verificationStatus": "needs-source-check",
+    "imageStatus": "not-started",
+    "relatedSlugs": [
+      "starlink-11000-satellites-nigeria-speeds-august-2026"
+    ],
+    "CTA": "/guide/starlink-nigeria",
+    "currentStatus": "proposed-section",
+    "lastReviewed": "2026-10-08",
+    "notes": "Gigabit roadmap is a section of the V3 article. The bank's 400+ Mbps line is not a DataGram result and is not approved to publish. Do not replace the indicative 100–350 Mbps wording with a new number. Bank angle: Separate current 400+ Mbps Performance capability from future gigabit service targets."
+  },
+  {
+    "id": 100,
+    "title": "100 Starlink Topics Are Not the Strategy: How DataGram Should Turn Search Demand Into Authority",
+    "slug": "",
+    "contentType": "internal",
+    "action": "DROP",
+    "primaryKeyword": "starlink content strategy nigeria",
+    "secondaryKeywords": [
+      "content strategy"
+    ],
+    "searchIntent": "Strategy",
+    "cluster": "Starlink News & Technology",
+    "parentHub": "",
+    "commercialIntent": "low",
+    "audience": "DataGram editorial planning",
+    "priority": "P3",
+    "sources": [
+      "content-plan/topic-bank.csv",
+      "bank signal (not a Nigeria volume): 3/5 | Internal thought leadership",
+      "bank priority letter: C"
+    ],
+    "verificationStatus": "ok-to-plan",
+    "imageStatus": "not-started",
+    "relatedSlugs": [],
+    "CTA": "",
+    "currentStatus": "not-a-url",
+    "lastReviewed": "2026-10-08",
+    "notes": "Internal method, not a public article. The registry and this Stage 2 plan are the deliverable. Do not publish a strategy post. Bank angle: Explain the hub-and-cluster model, content refresh cycle, Search Console feedback and maritime moat."
+  }
+]
