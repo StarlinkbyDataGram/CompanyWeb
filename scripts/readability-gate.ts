@@ -20,7 +20,6 @@
 import { seoArticles2026, allSeoArticles2026 } from "../client/data/blog/articles-2026";
 import { industryLandingPages } from "../client/data/landing/industry-pages";
 import { regionalLandingPages } from "../client/data/landing/regional-pages";
-import { southEastRegionalPages } from "../client/data/landing/south-east-regional-pages";
 import type { SeoArticle } from "../client/data/blog/article-types";
 
 const FILLER = [
@@ -189,7 +188,8 @@ function score(url: string, chunks: string[], opening: string[], technical: bool
   const blob = prose.join("\n");
   const undefinedTerms = TERMS.filter((term) => term.find.test(blob) && !term.defined.test(blob)).map((term) => term.name);
   const filler = FILLER.filter((phrase) => new RegExp(`\\b${phrase}\\b`, "i").test(blob));
-  const openingAnswers = opening.length >= 3 && /\b(use|choose|choice|if|when|need|hours?|minutes?|\d)/i.test(opening.join(" "));
+  const openingAnswers =
+    opening.length >= 3 && /\b(use|choose|choice|if you|when you|right choice)\b/i.test(opening.join(" "));
   const gradeCap = technical ? 10 : 9;
   const failReasons: string[] = [];
   if (grade != null && grade > gradeCap) failReasons.push(`grade ${grade} is above ${gradeCap}`);
@@ -268,7 +268,6 @@ const rows = [
   ...allSeoArticles2026.map((article) => articleRow(article, published.has(article.slug))),
   ...industryLandingPages.map((page) => landingRow(page, true)),
   ...regionalLandingPages.map((page) => landingRow(page, false)),
-  ...southEastRegionalPages.map((page) => landingRow(page, false)),
 ].sort((a, b) => (b.grade ?? 0) - (a.grade ?? 0) || b.longest - a.longest);
 
 console.log("URL | words | grade | ease | avg sentence | longest | undefined terms | filler");

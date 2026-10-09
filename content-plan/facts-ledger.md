@@ -2,6 +2,21 @@
 
 Status: INTERNAL ONLY. Not linked from the site. Not in `public/`.
 
+## Readability gate — 9 October 2026
+
+`scripts/readability-gate.ts` is the pre-publish check. Run `pnpm exec tsx scripts/readability-gate.ts --gate <slug>` before a post goes live.
+
+A post fails, and is not published, when any of these is true:
+
+- Flesch-Kincaid grade is above 9, or above 10 when the category is Enterprise
+- any prose sentence is over 30 words
+- a listed technical term appears with no plain definition on the page
+- the first 3 sentences do not name the choice (`use`, `choose`, `choice`, `if you`, `when you`, or `right choice`)
+
+On failure, set `draft: true` on that article and report the script output. Drafts stay in source. They are left out of the blog index, the public route, and the sitemap.
+
+The same script with no `--gate` flag audits every blog post and landing page and exits 0. That audit is a report, not a block on the existing site.
+
 ## Scope hold — 9 October 2026
 
 `/our-work` is out of the remaining content programme. No Our Work task is in `content-registry.json` or the Stage 2 topic list. None is to be added.
