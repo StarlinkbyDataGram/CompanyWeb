@@ -4,6 +4,7 @@ import { Camera, MapPin } from 'lucide-react';
 import Seo from '@/components/Seo';
 import ProjectCard from '@/components/ProjectCard';
 import ProjectLightbox from '@/components/ProjectLightbox';
+import Picture from '@/components/site/Picture';
 import { ourWorkProjects, type Project } from '@/data/our-work-projects';
 import { WHATSAPP_URL } from '@/lib/site';
 
@@ -52,7 +53,7 @@ export default function OurWork() {
       <section className="relative overflow-hidden bg-[#0A0A1A] text-white">
         <div className="absolute inset-0">
           {heroImage ? (
-            <img src={heroImage} alt="DataGram Starlink installations across Nigeria" className="h-full w-full object-cover opacity-30" fetchPriority="high" loading="eager" />
+            <Picture src={heroImage} alt="DataGram Starlink installations across Nigeria" className="h-full w-full object-cover opacity-30" fetchPriority="high" loading="eager" sizes="100vw" />
           ) : null}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A1A] via-[#0A0A1A]/90 to-[#0A0A1A]/70" />
         </div>

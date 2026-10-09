@@ -5,6 +5,7 @@ import useInView from "@/hooks/use-inview";
 import { useState, useEffect } from "react";
 import { Wifi } from "lucide-react";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 
 export default function Services() {
   const [expandedService, setExpandedService] = useState<string | null>(null);
@@ -232,7 +233,7 @@ function ServiceSection({
           <div className="relative aspect-[16/9] overflow-hidden rounded-lg bg-muted/30 flex items-center justify-center">
             {service.image ? (
               <>
-                <img 
+                <Picture sizes="(max-width: 1024px) 100vw, 50vw" 
                   src={service.image} 
                   alt={`${service.title} — Starlink installation Nigeria example by DataGram`} 
                   className="w-full h-full object-cover"

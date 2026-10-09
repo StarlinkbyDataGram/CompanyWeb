@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import Picture from '@/components/site/Picture';
 import { ArrowLeft, ArrowRight, Camera, X } from 'lucide-react';
 import type { Project } from '@/data/our-work-projects';
 
@@ -69,7 +70,7 @@ export default function ProjectLightbox({ project, onClose }: ProjectLightboxPro
         <div className="rounded-[12px] border border-white/10 bg-white/5 p-3 sm:p-5">
           <div className="relative flex items-center justify-center overflow-hidden rounded-md bg-black/50">
             {hasImage ? (
-              <img
+              <Picture sizes="90vw"
                 src={encodeURI(`/images/installations/${project.folder}/${current.file}`)}
                 alt={project.displayName}
                 className="w-full max-h-[60vh] object-contain"

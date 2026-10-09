@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle2, Gauge, Signal, Zap } from "lucide-react";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -106,7 +107,7 @@ export default function IndustryLandingPage({ config }: Props) {
               </>
             )}
             {config.heroImage && config.heroImageFile && (
-              <img
+                    <Picture sizes="(max-width: 768px) 100vw, 50vw"
                 src={config.heroImage}
                 alt={config.heroImageAlt}
                 fetchPriority="high"
@@ -249,7 +250,7 @@ export default function IndustryLandingPage({ config }: Props) {
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
                 <div className="h-[280px] min-h-[240px] w-full overflow-hidden">
                   {/* deployment proof — IMAGE filename and reason on img data-dg-placement */}
-                  <img
+                  <Picture sizes="(max-width: 768px) 100vw, 33vw"
                     src={card.src}
                     alt={card.alt}
                     width={800}
@@ -316,7 +317,7 @@ export default function IndustryLandingPage({ config }: Props) {
             <div className="grid min-w-0 gap-4">
               <figure className="overflow-hidden rounded-2xl border bg-card">
                 <div className="aspect-[4/3] w-full overflow-hidden">
-                  <img
+                  <Picture sizes="(max-width: 768px) 100vw, 33vw"
                     src={config.equipmentSection.image.src}
                     alt={config.equipmentSection.image.alt}
                     width={800}
@@ -341,7 +342,7 @@ export default function IndustryLandingPage({ config }: Props) {
               {config.equipmentSection.secondaryImage && (
                 <figure className="overflow-hidden rounded-2xl border bg-card">
                   <div className="aspect-[4/3] w-full overflow-hidden">
-                    <img
+                    <Picture sizes="(max-width: 768px) 100vw, 33vw"
                       src={config.equipmentSection.secondaryImage.src}
                       alt={config.equipmentSection.secondaryImage.alt}
                       width={800}

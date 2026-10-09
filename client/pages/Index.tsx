@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Picture from "@/components/site/Picture";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
@@ -314,7 +315,7 @@ function WhatWeInstallSection() {
             <Card key={card.to} className="h-full overflow-hidden border bg-card/80 shadow-sm">
               <div className={CARD_IMAGE_HEIGHT_CLASS}>
                 {/* IMAGE ASSIGNED: homepage card — focal crop via image-crop.ts */}
-                <img
+                <Picture sizes="(max-width: 640px) 100vw, 50vw"
                   src={card.image}
                   alt={card.imageAlt}
                   width={800}
@@ -603,7 +604,7 @@ function Hero() {
           {/* Left image slider pane (65%) */}
           <div className="relative h-full w-full overflow-hidden md:h-full md:w-[65%] md:order-none order-last">
             {slides.map((s, i) => (
-              <img
+              <Picture sizes="(min-width: 768px) 65vw, 100vw"
                 key={s.src}
                 src={s.src}
                 alt={`${s.title} — DataGram Starlink installation Nigeria`}

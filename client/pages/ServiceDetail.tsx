@@ -4,6 +4,7 @@ import { services } from "@/data/services";
 import { getServiceSeoContent } from "@/data/service-seo-content";
 import { Button } from "@/components/ui/button";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 
 export default function ServiceDetail() {
@@ -179,7 +180,7 @@ export default function ServiceDetail() {
         <aside className="space-y-4">
           <div className="rounded-md border bg-card p-4">
             {service.image && (
-              <img
+              <Picture sizes="(max-width: 1024px) 100vw, 40vw"
                 src={service.image}
                 alt={`${service.title} — Starlink installation Nigeria portfolio image by DataGram`}
                 className="mb-4 w-full rounded-md object-cover"

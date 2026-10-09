@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { cropForFile, cropFromSrc } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
@@ -217,7 +218,7 @@ export default function Blog() {
               <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Picture sizes="(max-width: 640px) 100vw, 50vw"
                       src={featuredPost.image}
                       alt={featuredPost.title}
                       className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:min-h-[280px] md:h-full"
@@ -272,7 +273,7 @@ export default function Blog() {
             {visibleArticles.map((post, index) => (
               <Card key={post.slug} className="group overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-[16/9] w-full overflow-hidden">
-                  <img
+                  <Picture sizes="(max-width: 640px) 100vw, 50vw"
                     src={post.image}
                     alt={post.imageAlt}
                     loading={index === 0 ? "eager" : "lazy"}
@@ -314,7 +315,7 @@ export default function Blog() {
                 <ScrollReveal key={post.id} delay={index * 0.08}>
                   <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 card-hover">
                     <div className="relative overflow-hidden">
-                      <img
+                      <Picture sizes="(max-width: 640px) 100vw, 50vw"
                         src={post.image}
                         alt={post.title}
                         className="h-[280px] min-h-[240px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -369,7 +370,7 @@ export default function Blog() {
                     <ScrollReveal>
                       <Card className="overflow-hidden">
                         <div className="relative overflow-hidden">
-                          <img src={post.image} alt={post.title} className="w-full h-64 object-cover" />
+                          <Picture sizes="(max-width: 640px) 100vw, 50vw" src={post.image} alt={post.title} className="w-full h-64 object-cover" />
                           <div className="absolute top-4 left-4">
                             <Badge variant="secondary">{post.category}</Badge>
                           </div>
@@ -423,7 +424,7 @@ export default function Blog() {
                     <ScrollReveal key={p.id} delay={index * 0.06}>
                       <Card className="overflow-hidden hover:shadow-md transition-shadow">
                         <div className="flex gap-3">
-                          <img src={p.image} alt={p.title} className="w-24 h-24 object-cover" />
+                          <Picture sizes="(max-width: 640px) 100vw, 50vw" src={p.image} alt={p.title} className="w-24 h-24 object-cover" />
                           <div className="py-3 pr-3 flex-1">
                             <div className="text-xs text-foreground/60 mb-1">{p.category}</div>
                             <div className="font-medium line-clamp-2">{p.title}</div>

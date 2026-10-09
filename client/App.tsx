@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Phone } from "lucide-react";
 import Header from "@/components/site/Header";
+import Picture from "@/components/site/Picture";
 import Footer from "@/components/site/Footer";
 import Analytics from "@/components/Analytics";
 import ChatBot from "@/components/site/ChatBot";
@@ -229,7 +230,7 @@ const FloatingContact = () => {
                 whileTap={{ scale: 0.95 }}
                 aria-label="Chat on WhatsApp"
               >
-                <img src="/whatsapp.png" alt="WhatsApp" className="h-6 w-6" />
+                <Picture src="/whatsapp.png" alt="WhatsApp" className="h-6 w-6" sizes="24px" />
               </motion.a>
             </motion.div>
 

@@ -5,7 +5,6 @@
  * The Vite shell is kept as spa.html. Unknown routes fall back to that file,
  * not to the homepage snapshot in index.html.
  *
- * /blog is skipped until image compression: the index requests every card image.
  * Set PRERENDER_ONLY=/a,/b to snapshot a subset.
  */
 import { execSync } from "child_process";
@@ -20,7 +19,7 @@ const SITEMAP = path.resolve(__dirname, "../public/sitemap.xml");
 const PORT = 45678;
 
 /** The blog index embeds every card image. Leave it as the shell until those files are smaller. */
-const SKIP_ROUTES = new Set(["/blog"]);
+const SKIP_ROUTES = new Set();
 
 function shouldSkipPrerender() {
   return process.env.SKIP_PRERENDER === "1" || process.env.SKIP_PRERENDER === "true";
@@ -194,7 +193,7 @@ async function prerender() {
   }
 
   console.log(`\n✅ Prerendered ${routes.length - failed.length} of ${routes.length} routes in ${SPA_ROOT}`);
-  console.log("Skipped /blog (image weight). Unknown URLs fall back to spa.html.");
+  console.log("Unknown URLs fall back to spa.html.");
   if (failed.length) {
     console.error(failed.join("\n"));
     process.exit(1);

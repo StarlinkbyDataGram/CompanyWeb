@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import { cropForFile } from "@/lib/image-crop";
 import { getBlogIndexEntry } from "@/data/blog/blog-index";
 import { loadArticleBySlug } from "@/data/blog/load-article";
@@ -225,7 +226,7 @@ export default function BlogPost() {
             </div>
             <div className="mt-8 aspect-[16/9] w-full overflow-hidden rounded-2xl border">
               {/* IMAGE: hero — see data-dg-placement for filename and reason */}
-              <img
+              <Picture sizes="100vw"
                 src={view.image}
                 alt={view.imageAlt}
                 fetchPriority="high"

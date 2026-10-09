@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import Picture from "@/components/site/Picture";
 import SpotlightCard from "@/components/site/SpotlightCard";
 import { Satellite, ShieldCheck, Globe, Zap, Users, Target, Eye } from "lucide-react";
 import Seo from "@/components/Seo";
@@ -51,7 +52,7 @@ export default function About() {
           <div className="relative md:h-[520px]">
             <div className="absolute -inset-10 rounded-[40px] bg-white/10 blur-3xl" aria-hidden />
             <div className="relative h-full overflow-hidden rounded-[32px] border border-white/20 bg-white/5 shadow-[0_30px_60px_rgba(0,0,0,0.45)] backdrop-blur">
-              <img
+              <Picture sizes="(max-width: 768px) 100vw, 50vw"
                 src="/images/products/starlink-mini/starlink.jpeg"
                 alt="DataGram field engineers providing Starlink installation in Nigeria"
                 className="h-[320px] w-full object-cover md:h-full"
@@ -223,7 +224,7 @@ export default function About() {
           <div className="order-1 md:order-2 relative">
             <div className="absolute -inset-10 rounded-[36px] bg-white/15 blur-3xl" aria-hidden />
             <div className="relative overflow-hidden rounded-[32px] border border-white/20 bg-white/5 shadow-[0_40px_80px_rgba(0,0,0,0.45)] backdrop-blur">
-              <img
+              <Picture sizes="(max-width: 768px) 100vw, 50vw"
                 src="/images/products/starlink-gen3v4/StandardDish1.jpeg"
                 alt="Engineering preview"
                 className="h-full w-full object-cover"

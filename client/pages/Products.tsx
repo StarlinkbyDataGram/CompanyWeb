@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { getStored } from "@/lib/storage";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 
 export default function Products() {
   const [products, setProducts] = useState(staticProducts);
@@ -44,7 +45,7 @@ export default function Products() {
           "Buy Starlink hardware",
         ]}
       />
-      <img
+      <Picture sizes="100vw"
         src="/homeImg/seven.avif"
         alt=""
         aria-hidden="true"

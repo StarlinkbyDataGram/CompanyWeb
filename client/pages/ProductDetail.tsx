@@ -8,6 +8,7 @@ import { getStored } from "@/lib/storage";
 import Seo from "@/components/Seo";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
 import { cropFromSrc } from "@/lib/image-crop";
+import Picture from "@/components/site/Picture";
 
 export default function ProductDetail() {
   const { slug } = useParams();
@@ -132,7 +133,7 @@ export default function ProductDetail() {
 
           <aside className="rounded-md border bg-card p-4">
             <div className="mb-4">
-              <img
+              <Picture sizes="(max-width: 768px) 100vw, 40vw"
                 src={product.images?.[currentImageIdx] || product.image}
                 alt={product.name}
                 className="mb-2 w-full rounded-md object-cover"
@@ -151,7 +152,7 @@ export default function ProductDetail() {
                       onClick={() => setCurrentImageIdx(i)}
                       className={`rounded border overflow-hidden ${i === currentImageIdx ? "ring-2 ring-primary" : ""}`}
                     >
-                      <img
+                      <Picture sizes="(max-width: 768px) 100vw, 40vw"
                         src={url}
                         alt={`thumb-${i}`}
                         className="h-16 w-full object-cover"

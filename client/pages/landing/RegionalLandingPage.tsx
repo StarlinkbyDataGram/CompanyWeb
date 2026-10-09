@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Award, CheckCircle2, Clock, Headphones, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -86,7 +87,7 @@ export default function RegionalLandingPage({ config }: Props) {
               config.heroImageFile && (
                 <>
                   {/* IMAGE ASSIGNED: hero — see data-dg-placement for context */}
-                  <img
+                  <Picture sizes="(max-width: 768px) 100vw, 40vw"
                     src={config.heroImage}
                     alt={config.heroImageAlt}
                     width={1920}
@@ -189,7 +190,7 @@ export default function RegionalLandingPage({ config }: Props) {
               <figure key={card.caption} className="overflow-hidden rounded-2xl border bg-card">
                 <div className="h-[280px] min-h-[240px] w-full overflow-hidden">
                   {/* IMAGE ASSIGNED: deployment proof — see data-dg-placement */}
-                  <img
+                  <Picture sizes="(max-width: 768px) 100vw, 40vw"
                     src={card.src}
                     alt={card.alt}
                     width={800}

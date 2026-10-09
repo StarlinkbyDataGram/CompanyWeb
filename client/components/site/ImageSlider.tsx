@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Picture from "@/components/site/Picture";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ImageSlider({
@@ -77,7 +78,7 @@ export default function ImageSlider({
             key={src + i}
             className="snap-center shrink-0 w-full sm:w-[420px] md:w-[520px] lg:w-[560px] rounded-xl border bg-card p-0 shadow-md"
           >
-            <img src={src} alt={`Slide ${i + 1}`} className="h-64 w-full object-cover rounded-xl" />
+            <Picture src={src} alt={`Slide ${i + 1}`} className="h-64 w-full object-cover rounded-xl" sizes="100vw" loading={i === 0 ? "eager" : "lazy"} />
           </div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import type { Service } from "@/data/services";
+import Picture from "@/components/site/Picture";
 
 import useInView from "@/hooks/use-inview";
 
@@ -12,7 +13,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       ref={ref as any}
       className={`block w-full group rounded-2xl border bg-card p-6 shadow-sm transition hover:shadow-md reveal ${inView ? "in-view" : ""}`}
     >
-      <img src={service.image} alt={service.title} className="mb-4 h-40 w-full rounded-md object-cover" />
+      <Picture src={service.image} alt={service.title} className="mb-4 h-40 w-full rounded-md object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
       <h3 className="mb-2 text-xl font-bold">{service.title}</h3>
       <p className="mb-4 text-foreground/80">{service.short}</p>
       <ul className="mb-4 list-disc space-y-1 pl-5 text-foreground/80">

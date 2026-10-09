@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "@/components/Seo";
+import Picture from "@/components/site/Picture";
 import { SITE_URL } from "@/lib/site";
 
 type GalleryImage = {
@@ -90,7 +91,7 @@ export default function Gallery() {
         <div className="container grid gap-8 md:grid-cols-2">
           {IMAGES.map((img) => (
             <figure key={img.src} className="overflow-hidden rounded-2xl border bg-card shadow-sm">
-              <img src={img.src} alt={img.alt} className="h-64 w-full object-cover" loading="lazy" width="800" height="520" />
+              <Picture src={img.src} alt={img.alt} className="h-64 w-full object-cover" loading="lazy" width="800" height="520" sizes="(max-width: 768px) 100vw, 33vw" />
               <figcaption className="space-y-2 px-4 py-3 text-sm text-foreground/80">
                 <span className="font-semibold text-foreground">{img.caption}</span>
                 <span className="block text-xs text-foreground/60">{img.alt}</span>

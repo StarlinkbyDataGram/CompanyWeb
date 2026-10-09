@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Picture from "@/components/site/Picture";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -37,6 +38,8 @@ export default function Header() {
   const [hoveredProduct, setHoveredProduct] = useState<string | null>(null);
   const [hoveredAbout, setHoveredAbout] = useState<"about" | "mission" | "vision" | "core">("about");
   const [clickedDropdown, setClickedDropdown] = useState<"services" | "products" | "about" | null>(null);
+  const [servicesPreview, setServicesPreview] = useState(false);
+  const [productsPreview, setProductsPreview] = useState(false);
   const [mobileOpen, setMobileOpen] = useState<{ services: boolean; products: boolean; about: boolean }>({ services: false, products: false, about: false });
   const [activeAboutLink, setActiveAboutLink] = useState<string>("");
 
@@ -186,10 +189,11 @@ export default function Header() {
       <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 pt-[env(safe-area-inset-top)]" role="navigation" aria-label="Main">
         <div className="container flex h-16 items-center gap-2 lg:gap-3 xl:gap-4 px-3 sm:px-5">
           <Link to="/" className="flex items-center gap-2">
-            <img
+            <Picture
               src="/starlinklogo.png"
               alt="DataGram logo"
               className="h-10 w-auto"
+              sizes="40px"
             />
             <div className="font-extrabold leading-tight">
               <span className="tracking-tight text-[15px] sm:text-[18px] md:text-[22px] xl:text-[25px] whitespace-nowrap">
@@ -202,7 +206,7 @@ export default function Header() {
             {nav.map((n) => {
               if (!n.scrollTo && n.label == "Services") {
                 return (
-                  <div key={n.to} className="relative group/dropdown">
+                  <div key={n.to} className="relative group/dropdown" onMouseEnter={() => setServicesPreview(true)}>
                     <div className="inline-flex items-center">
                       <NavLink
                         to={n.to}
@@ -254,7 +258,11 @@ export default function Header() {
                               const active = services.find((s) => s.id === hoveredService) ?? services[0];
                               return (
                                 <div className="overflow-hidden rounded-md">
-                                  <img src={active?.image} alt={active?.title} className="h-40 w-full object-cover" />
+                                  {servicesPreview ? (
+                                    <Picture src={active?.image || ""} alt={active?.title || ""} className="h-40 w-full object-cover" sizes="220px" />
+                                  ) : (
+                                    <div className="h-40 w-full bg-muted" />
+                                  )}
                                   <div className="px-2 py-2 text-xs font-medium">{active?.title}</div>
                                 </div>
                               );
@@ -346,7 +354,7 @@ export default function Header() {
               }
               if (!n.scrollTo && n.label === "Products") {
                 return (
-                  <div key={n.to} className="relative group/dropdown">
+                  <div key={n.to} className="relative group/dropdown" onMouseEnter={() => setProductsPreview(true)}>
                     <div className="inline-flex items-center">
                       <NavLink
                         to={n.to}
@@ -397,7 +405,11 @@ export default function Header() {
                               const active = products.find((p) => p.id === hoveredProduct) ?? primaryProducts[0];
                               return active ? (
                                 <div className="overflow-hidden rounded-md">
-                                  <img src={active.images?.[0] ?? active.image ?? "/images/products/starlink-mini/starlink.jpeg"} alt={active.name} className="h-40 w-full object-cover" />
+                                  {productsPreview ? (
+                                    <Picture src={active.images?.[0] ?? active.image ?? "/images/products/starlink-mini/starlink.jpeg"} alt={active.name} className="h-40 w-full object-cover" sizes="220px" />
+                                  ) : (
+                                    <div className="h-40 w-full bg-muted" />
+                                  )}
                                   <div className="px-2 py-2 text-xs font-medium">{active.name}</div>
                                 </div>
                               ) : null;

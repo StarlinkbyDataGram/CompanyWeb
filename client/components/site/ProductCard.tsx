@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Picture from "@/components/site/Picture";
 import { Button } from "@/components/ui/button";
 import type { Product } from "@/data/products";
 import { Phone, MessageCircle, Info } from "lucide-react";
@@ -18,7 +19,7 @@ export default function ProductCard({ product, iconActions }: { product: Product
       }`}
     >
       <div className="overflow-hidden">
-        <img
+        <Picture sizes="(max-width: 768px) 100vw, 33vw"
           src={imageSrc}
           alt={product.name}
           className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110 md:h-56"

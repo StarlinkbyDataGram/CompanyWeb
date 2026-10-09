@@ -657,7 +657,7 @@ async function main() {
     const rootHtml = html.slice(html.indexOf('<div id="root">'));
     const h1 = /<h1\b/i.test(rootHtml);
     console.log(`  preflight ${urlPath} html ${html.length}B h1-in-root ${h1}`);
-    const shellOnly = new Set(["/blog"]);
+    const shellOnly = new Set();
     if (process.env.PERF_REQUIRE_PRERENDER === "1" && !shellOnly.has(urlPath) && html.length < 20000) {
       throw new Error(`Expected prerendered HTML for ${urlPath}, got ${html.length} bytes`);
     }

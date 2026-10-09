@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import Picture from '@/components/site/Picture';
 import { Camera, MapPin } from 'lucide-react';
 import type { Project } from '@/data/our-work-projects';
 
@@ -37,7 +38,7 @@ export default function ProjectCard({ project, onView }: ProjectCardProps) {
     if (imageSrc && hasImages && !imageFailed) {
       const src = loadAttempt > 0 ? `${encodeURI(imageSrc)}?retry=${loadAttempt}` : encodeURI(imageSrc);
       return (
-        <img
+        <Picture sizes="(max-width: 768px) 100vw, 33vw"
           key={loadAttempt}
           src={src}
           alt={project.displayName}

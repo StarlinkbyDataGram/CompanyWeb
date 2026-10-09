@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cropFromSrc } from "@/lib/image-crop";
+import Picture from "@/components/site/Picture";
 import { getBlogIndexEntry } from "@/data/blog/blog-index";
 
 /** Homepage teaser: evergreen guides with strong local install photos. */
@@ -106,7 +107,7 @@ export default function BlogTeaser() {
               <Card className="group overflow-hidden transition-all duration-300 hover:shadow-lg">
                 <Link to={`/blog/${post.slug}`} className="block">
                   <div className="relative overflow-hidden">
-                    <img
+                    <Picture sizes="(max-width: 768px) 100vw, 33vw"
                       src={post.image}
                       alt={post.imageAlt}
                       className="h-[280px] min-h-[240px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
