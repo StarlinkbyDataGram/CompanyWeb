@@ -212,3 +212,7 @@ Compared with B6. Price-post CLS before this group was intermittently 0.17–0.2
 | `/products` | 61 → 59 | 3.9 s → 4.0 s | 0.6 s → 0.6 s | 0.000 → 0.000 |
 
 Titles and canonicals are unchanged. The installer card still appears in the same place once the article is ready.
+
+## Stage C — final
+
+Label `final` vs Stage A `baseline`. Full tables and pass/fail: `perf/REPORT.md`. Homepage transfer 2157→492 KB (−77%). First-load JS gzip is still 353.6 KB (`index` + `vendor`); `scripts/check-js-budget.mjs` enforces 250 KB after `vite build` (bypass with `SKIP_JS_BUDGET=1` until cut). Image budget remains in `prebuild`. Live production at report time was still the empty shell.

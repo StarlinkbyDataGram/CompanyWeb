@@ -1,0 +1,121 @@
+{
+  "/": {
+    "title": "Starlink by DataGram: Professional Starlink Installation Across Lagos, Abuja, Port Harcourt, Delta State, South-South &amp; South-East Nigeria",
+    "description": "Starlink installation Nigeria &amp; Starlink installer Nigeria: DataGram covers all 36 states with surveys, mounting, mesh WiFi, and enterprise support. Get a free site survey today.",
+    "canonical": "https://www.datagram.ng/",
+    "ogTitle": "Starlink by DataGram: Professional Starlink Installation Across Lagos, Abuja, Port Harcourt, Delta State, South-South &amp; South-East Nigeria",
+    "ogDescription": "Starlink installation Nigeria &amp; Starlink installer Nigeria: DataGram covers all 36 states with surveys, mounting, mesh WiFi, and enterprise support. Get a free site survey today.",
+    "ogUrl": "https://www.datagram.ng/",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Professional Starlink installation across Nigeria",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/starlink-offshore-maritime-installation": {
+    "title": "Starlink Offshore Installation Nigeria | At Sea | DataGram",
+    "description": "DataGram installs Starlink for vessels and deep sea operations in the Niger Delta and Gulf of Guinea — at-sea and offshore internet.",
+    "canonical": "https://www.datagram.ng/starlink-offshore-maritime-installation",
+    "ogTitle": "Starlink Offshore Installation Nigeria | At Sea | DataGram",
+    "ogDescription": "DataGram installs Starlink for vessels and deep sea operations in the Niger Delta and Gulf of Guinea — at-sea and offshore internet.",
+    "ogUrl": "https://www.datagram.ng/starlink-offshore-maritime-installation",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Starlink Offshore &amp; Maritime Installation Nigeria",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/starlink-installation-lagos": {
+    "title": "Starlink Installation Lagos | Island, Mainland &amp; Suburbs | DataGram",
+    "description": "Use a local crew if you need the dish fitted in Lagos. We cover Lekki, Ikeja, Victoria Island, Ikoyi, Festac, and Epe.",
+    "canonical": "https://www.datagram.ng/starlink-installation-lagos",
+    "ogTitle": "Starlink Installation Lagos | Island, Mainland &amp; Suburbs | DataGram",
+    "ogDescription": "Use a local crew if you need the dish fitted in Lagos. We cover Lekki, Ikeja, Victoria Island, Ikoyi, Festac, and Epe.",
+    "ogUrl": "https://www.datagram.ng/starlink-installation-lagos",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Starlink Installation Lagos",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/blog": {
+    "title": "Starlink Nigeria Guides &amp; Tips | DataGram Blog",
+    "description": "Long-tail Starlink Nigeria guides: setup, WiFi extension, WISP tips, and power resilience—written by DataGram installers. Bookmark for updates.",
+    "canonical": "https://www.datagram.ng/blog",
+    "ogTitle": "Starlink Nigeria Guides &amp; Tips | DataGram Blog",
+    "ogDescription": "Long-tail Starlink Nigeria guides: setup, WiFi extension, WISP tips, and power resilience—written by DataGram installers. Bookmark for updates.",
+    "ogUrl": "https://www.datagram.ng/blog",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Insights &amp; Resources",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/blog/how-much-is-starlink-nigeria-price-naira-2026": {
+    "title": "Starlink Price in Nigeria (2026) | DataGram",
+    "description": "Starlink hardware references: Standard Kit ₦690,000 and Mini ₦400,000. Monthly plans from ₦57,000. Check the service address before you assume a city is closed.",
+    "canonical": "https://www.datagram.ng/blog/how-much-is-starlink-nigeria-price-naira-2026",
+    "ogTitle": "Starlink Price in Nigeria (2026) | DataGram",
+    "ogDescription": "Starlink hardware references: Standard Kit ₦690,000 and Mini ₦400,000. Monthly plans from ₦57,000. Check the service address before you assume a city is closed.",
+    "ogUrl": "https://www.datagram.ng/blog/how-much-is-starlink-nigeria-price-naira-2026",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "How Much is Starlink in Nigeria Today? Current Price in Naira (2026)",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/our-work": {
+    "title": "Our Work — Real Starlink Installations Across Nigeria | DataGram",
+    "description": "Browse DataGram",
+    "canonical": "https://www.datagram.ng/our-work",
+    "ogTitle": "Our Work — Real Starlink Installations Across Nigeria | DataGram",
+    "ogDescription": "Browse DataGram",
+    "ogUrl": "https://www.datagram.ng/our-work",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Our Work",
+    "h1InRoot": true,
+    "hasMainContent": true
+  },
+  "/products": {
+    "title": "Starlink Devices &amp; Accessories in Nigeria | Starlink Products",
+    "description": "Browse Starlink devices and accessories available in Nigeria, including dishes and hardware we supply and install for reliable internet connection across the country.",
+    "canonical": "https://www.datagram.ng/products",
+    "ogTitle": "Starlink Devices &amp; Accessories in Nigeria | Starlink Products",
+    "ogDescription": "Browse Starlink devices and accessories available in Nigeria, including dishes and hardware we supply and install for reliable internet connection across the country.",
+    "ogUrl": "https://www.datagram.ng/products",
+    "jsonLdCount": 3,
+    "jsonLdTypes": [
+      "LocalBusiness",
+      "WebSite",
+      "object"
+    ],
+    "h1": "Products",
+    "h1InRoot": true,
+    "hasMainContent": true
+  }
+}
