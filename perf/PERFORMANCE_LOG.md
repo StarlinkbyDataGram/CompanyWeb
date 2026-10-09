@@ -194,3 +194,21 @@ Compared with B1 medians for Lighthouse. Interaction before numbers are the Stag
 | Blog scroll | — | wall 145 ms, long tasks 0 ms, DOM 609 |
 
 Prerendered `/blog` HTML fell from about 392 KB to 97 KB because fewer cards are in the snapshot. Titles and canonicals are unchanged.
+
+## B8 — layout stability
+
+The price-post CLS came from the installer aside. The article body loads in a second chunk, so on first paint the aside sat under the hero and then jumped down when the body arrived. Prerender now writes the article JSON into `#prerender-article-data`, and the post page reads that (or the in-memory cache) for the first paint. The aside mounts only with the body. Client navigations without a cached body keep a tall placeholder and hide the aside on small screens. Elfsight’s reserved box is 360 px tall.
+
+Compared with B6. Price-post CLS before this group was intermittently 0.17–0.22 across earlier labels.
+
+| URL | Perf | LCP | TBT | CLS |
+| --- | --- | --- | --- | --- |
+| `/` | 33 → 35 | 6.6 s → 6.1 s | 2.2 s → 1.6 s | 0.000 → 0.000 |
+| Offshore | 55 → 50 | 4.5 s → 4.4 s | 0.5 s → 0.8 s | 0.000 → 0.000 |
+| Lagos | 67 → 58 | 3.9 s → 4.2 s | 0.3 s → 0.4 s | 0.000 → 0.000 |
+| `/blog` | 44 → 41 | 5.1 s → 5.4 s | 1.1 s → 1.4 s | 0.000 → 0.000 |
+| Price post | 29 → 34 | 9.3 s → 9.2 s | 1.6 s → 1.0 s | 0.217 → **0.000** (all three runs) |
+| `/our-work` | 49 → 60 | 4.1 s → 4.3 s | 1.3 s → 0.5 s | 0.000 → 0.000 |
+| `/products` | 61 → 59 | 3.9 s → 4.0 s | 0.6 s → 0.6 s | 0.000 → 0.000 |
+
+Titles and canonicals are unchanged. The installer card still appears in the same place once the article is ready.
