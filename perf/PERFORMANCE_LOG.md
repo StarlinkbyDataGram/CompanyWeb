@@ -58,3 +58,25 @@ After: entry `assets/index-CkYKogpm.js`, 762 KB raw, **228 KB gzip** (193 KB Bro
 Before: one entry chunk, **228 KB gzip**.
 
 After: `assets/index-DMJzXxm1.js` 174 KB gzip plus `assets/vendor-Dtv7QYqu.js` 54 KB gzip. First load is **228 KB gzip** combined (194 KB Brotli). The build target is ES2020. Splitting React out did not shrink the first download; it lets the React file stay cached when page code changes. Icons were already imported one component at a time. `ogl`, `recharts`, and `pdfkit` are not in the client bundle (`ogl` and `recharts` are only imported by files nothing else loads; `pdfkit` is a script), so removing those packages would not change this number.
+
+## B3 — route split reverted
+
+Loading every route except the homepage on demand made the empty-shell lab worse. The offshore page's performance score fell from 31 to a median of 4 (LCP 6.7 s to 11.4 s) because the page component arrived in a second download after the entry file. That change is reverted. Page components are in the first download again. Article bodies stay separate.
+
+## B3 group result (empty shell, same method as the baseline)
+
+First-load JavaScript: **566 KB gzip → 352 KB gzip** (`index-DFTRBLJQ.js` 298 KB + `vendor-khI0NAQz.js` 54 KB). Document HTML is still the 5.4 KB shell.
+
+Median of 3 mobile Lighthouse runs, except the baseline column which is the single Stage A shell run.
+
+| URL | Perf before → after | LCP | TBT | Transfer |
+| --- | --- | --- | --- | --- |
+| `/` | 26 → 32 | 8.9 s → 7.2 s | 4.8 s → 6.4 s | 1097 KB → 1488 KB |
+| `/starlink-offshore-maritime-installation` | 31 → 35 | 6.7 s → 6.0 s | 3.3 s → 2.2 s | 896 KB → 736 KB |
+| `/starlink-installation-lagos` | 32 → 40 | 6.2 s → 5.4 s | 2.2 s → 1.4 s | 961 KB → 811 KB |
+| `/blog` | 30 → 31 | 7.9 s → 9.3 s | 2.2 s → 6.4 s | 1097 KB → 938 KB |
+| `/blog/how-much-is-starlink-nigeria-price-naira-2026` | 40 → 26 | 5.5 s → 7.9 s | 1.1 s → 1.1 s | 1007 KB → 873 KB |
+| `/our-work` | 37 → 43 | 6.1 s → 5.5 s | 1.3 s → 0.8 s | 1034 KB → 875 KB |
+| `/products` | 42 → 40 | 4.4 s → 6.3 s | 1.5 s → 1.2 s | 1337 KB → 1178 KB |
+
+Prerendered HTML for a post that uses headings and FAQs (`/blog/starlink-vs-fibre-internet-lagos`) still contains the H1, those headings, the FAQ questions, a canonical link, and JSON-LD. The snapshot waits until `data-article-ready="true"`.
