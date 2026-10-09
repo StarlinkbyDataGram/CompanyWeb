@@ -106,3 +106,23 @@ Median of three empty-shell runs, compared with the B3 group. Homepage uses the 
 | `/products` | 40 → 62 | 6.3 s → 6.0 s | 1.2 s → 0.2 s | 1178 KB → 1201 KB |
 
 Offshore’s median was pulled up by one run with 18.6 s of blocking. The other two offshore runs were 1.8 s and 6.0 s.
+
+## B2 — hero images requested first
+
+The logo preload is gone. The only preload left in the shell is the 24 KB Inter file. The homepage hero, the offshore and Lagos heroes, the our-work hero, the blog post hero, and the first blog card are `loading="eager"` and `fetchpriority="high"`. Later slides and later cards stay lazy. On `/products`, the full-bleed photo is an `<img>` (`/homeImg/seven.avif`) with the same cover crop, instead of a CSS background. Document HTML is still the 5.0 KB shell, so none of these images are in the first HTML.
+
+Empty-shell medians, compared with the B4 medians above. Blog uses the two runs that painted. Lagos in B4 was one run.
+
+| URL | Perf | LCP | TBT | Transfer |
+| --- | --- | --- | --- | --- |
+| `/` | 41 → 37 | 7.0 s → 6.7 s | 2.2 s → 1.3 s | 890 KB → 890 KB |
+| Offshore | 31 → 44 | 7.2 s → 4.6 s | 6.0 s → 1.5 s | 676 KB → 626 KB |
+| Lagos | 45 → 50 | 5.1 s → 5.1 s | 1.1 s → 0.8 s | 784 KB → 784 KB |
+| `/blog` | 32 → 33 | 7.4 s → 8.6 s | 6.0 s → 9.3 s | 1221 KB → 1171 KB |
+| Price post | 37 → 23 | 6.7 s → 8.3 s | 0.5 s → 1.3 s | 812 KB → 762 KB |
+| `/our-work` | 62 → 43 | 5.5 s → 5.4 s | 0.2 s → 1.1 s | 1032 KB → 982 KB |
+| `/products` | 62 → 42 | 6.0 s → 6.5 s | 0.2 s → 1.2 s | 1201 KB → 1151 KB |
+
+Image bytes fell by 50 KB on every URL, which is one copy of `starlinklogo.png`. The homepage LCP file is still `StandardDish1.jpeg`, now with `fetchpriority="high"`, and its resource load delay is still 15.2 s. The file itself then arrives in 7 ms. Offshore’s delay fell to 9.1 s. `/products` LCP stayed the first product card, not the background photo. The price-post run that scored 15 had a stalled machine (LCP 13.6 s); the other two were 7.5 s and 8.3 s. Layout shift on that post was already 0.22 before this change.
+
+The markup is kept. On the empty shell the browser cannot see the hero until JavaScript runs, so priority cannot remove that wait. It is what the prerendered HTML will need.
