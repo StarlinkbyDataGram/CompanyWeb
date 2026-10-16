@@ -212,6 +212,12 @@ const AppContent = () => {
       </main>
       <Footer />
 
+      {/* Fixed footprints so FABs do not affect layout when they mount after idle. */}
+      <div
+        className="pointer-events-none fixed bottom-20 right-5 z-40 h-12 w-12 lg:bottom-5 lg:left-5 lg:right-auto"
+        aria-hidden
+      />
+      <div className="pointer-events-none fixed bottom-5 right-5 z-40 h-12 w-12" aria-hidden />
       {widgetsReady ? <FloatingContact /> : null}
       {widgetsReady ? (
         <Suspense fallback={null}>
@@ -249,7 +255,7 @@ const FloatingContact = () => {
                 href="https://wa.me/2349060976424?text=Hello%20Datagram%2C%20I%27d%20like%20to%20get%20connected."
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all hover:brightness-110 hover:scale-110"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-[transform,filter] hover:brightness-110 hover:scale-110"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Chat on WhatsApp"
@@ -270,7 +276,7 @@ const FloatingContact = () => {
               </motion.span>
               <motion.a
                 href="tel:+2349060976424"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-all hover:brightness-110 hover:scale-110"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-[transform,filter] hover:brightness-110 hover:scale-110"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Call us"
@@ -304,7 +310,7 @@ const FloatingContact = () => {
 
         <motion.button
           onClick={() => setOpen(!open)}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all hover:brightness-110"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-[transform,filter] hover:brightness-110"
           whileHover={{ scale: open ? 1.05 : 1.1 }}
           whileTap={{ scale: 0.95 }}
           aria-label={open ? "Close contact options" : "Open contact options"}

@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { memo, useCallback, useMemo, useRef, type CSSProperties, type ReactNode } from "react";
 
 type LogoNodeItem = { node: ReactNode; title?: string; href?: string; ariaLabel?: string };
 type LogoImageItem = { src: string; alt?: string; title?: string; href?: string; srcSet?: string; sizes?: string; width?: number; height?: number };
@@ -43,28 +43,8 @@ const LogoLoop = memo(function LogoLoop({
   const trackRef = useRef<HTMLDivElement | null>(null);
   const seqRef = useRef<HTMLUListElement | null>(null);
 
-  const [seqWidth, setSeqWidth] = useState(0);
-  const [hovered, setHovered] = useState(false);
-  const offsetRef = useRef(0);
-
-  // Measure one full sequence width
-  const measure = useCallback(() => {
-    const sequenceWidth = seqRef.current?.getBoundingClientRect?.().width ?? 0;
-    if (sequenceWidth > 0) {
-      setSeqWidth(Math.ceil(sequenceWidth));
-    }
-  }, []);
-
-  useEffect(() => {
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, [measure]);
-
-  // JS animation disabled – movement is handled via CSS keyframes on .logoloop-track
-  useEffect(() => {
-    return;
-  }, []);
+  // Width is driven by CSS (w-max + duplicated sequence). Avoid layout reads —
+  // getBoundingClientRect here was a forced-reflow source on first paint.
 
   const rootStyle = useMemo(
     () => ({
@@ -91,14 +71,6 @@ const LogoLoop = memo(function LogoLoop({
     scaleOnHover && "py-[calc(var(--logoloop-logoHeight)*0.1)]",
     className,
   );
-
-  const handleMouseEnter = useCallback(() => {
-    if (pauseOnHover) setHovered(true);
-  }, [pauseOnHover]);
-
-  const handleMouseLeave = useCallback(() => {
-    if (pauseOnHover) setHovered(false);
-  }, [pauseOnHover]);
 
   const renderLogoItem = useCallback(
     (item: LogoItem, key: string) => {
@@ -194,8 +166,6 @@ const LogoLoop = memo(function LogoLoop({
       style={rootStyle}
       role="region"
       aria-label={ariaLabel}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       {fadeOut && (
         <>
@@ -233,9 +203,5 @@ const LogoLoop = memo(function LogoLoop({
 });
 
 LogoLoop.displayName = "LogoLoop";
-
-function baseSpeedKey(speed: number, direction: "left" | "right") {
-  return `${speed}:${direction}`;
-}
 
 export default LogoLoop;

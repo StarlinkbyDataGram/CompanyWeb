@@ -580,25 +580,19 @@ function Hero() {
 
   const [idx, setIdx] = useState(0);
   const [textVisible, setTextVisible] = useState(true);
-  const [panelExpanded, setPanelExpanded] = useState(false);
   const [sliderReady, setSliderReady] = useState(false);
   const idxRef = useRef(0);
   idxRef.current = idx;
 
   const setSlideTo = (target: number) => {
-    // Start cover/expand animation and hide text/content
+    // Opacity/transform only — no width animation (non-composited / layout thrash).
     setTextVisible(false);
-    setPanelExpanded(true);
-
-    // After expansion, switch image and collapse, then reveal text with entrance animations
     window.setTimeout(() => {
       setIdx(((target % slides.length) + slides.length) % slides.length);
-      setPanelExpanded(false);
-      // Wait for collapse to finish before showing text
       window.setTimeout(() => {
         setTextVisible(true);
-      }, 450);
-    }, 500);
+      }, 200);
+    }, 220);
   };
 
   // Auto-advance only after window load (and never during ReactSnap snapshots).
@@ -661,21 +655,21 @@ function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/40" />
 
             <div className="absolute inset-0 md:hidden flex items-stretch">
-              <div className="relative my-0 mx-0 h-full w-full rounded-none border-none bg-sky-500/10 px-4 py-6 text-white backdrop-blur-[1px] shadow-xl transition-all flex flex-col">
+              <div className="relative my-0 mx-0 h-full w-full rounded-none border-none bg-sky-500/10 px-4 py-6 text-white backdrop-blur-[1px] shadow-xl flex flex-col">
                 <div className="mb-3 mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[11px] tracking-tight">
                   <Satellite className="h-3.5 w-3.5" /> {BRAND_NAME}
                 </div>
-                <h2 className={`font-display mt-2 text-[26px] font-extrabold leading-tight tracking-tight transition-all duration-700 ease-in-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                <h2 className={`font-display mt-2 text-[26px] font-extrabold leading-tight tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                   {slides[idx].title}
                 </h2>
-                <p className={`mt-3 max-w-xs text-sm text-white/85 transition-all duration-700 ease-in-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                <p className={`mt-3 max-w-xs text-sm text-white/85 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                   {slides[idx].text}
                 </p>
-                <div className={`mt-12 flex flex-wrap items-center gap-3 transition-all duration-700 ease-in-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <Button asChild className="h-10 px-5 text-sm transition-all hover:scale-105">
+                <div className={`mt-12 flex flex-wrap items-center gap-3 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                  <Button asChild className="h-10 px-5 text-sm transition-transform hover:scale-105">
                     <Link to="/contact">Get Connected</Link>
                   </Button>
-                  <Button asChild className="h-10 px-5 text-sm bg-white text-blue-900 hover:bg-white/90 border-none transition-all hover:scale-105">
+                  <Button asChild className="h-10 px-5 text-sm bg-white text-blue-900 hover:bg-white/90 border-none transition-transform hover:scale-105">
                     <Link to="/services">Explore Services</Link>
                   </Button>
                 </div>
@@ -711,24 +705,24 @@ function Hero() {
 
           {/* Text panel (40%). On mobile it appears above the slider */}
           <div
-            className={`relative md:absolute md:inset-y-0 md:right-0 w-full ${panelExpanded ? "md:w-full" : "md:w-[40%]"} hidden md:flex items-stretch md:order-none order-first transition-all duration-500 ease-in-out z-20`}
+            className="relative md:absolute md:inset-y-0 md:right-0 w-full md:w-[40%] hidden md:flex items-stretch md:order-none order-first z-20"
           >
-            <div className="relative my-8 md:my-0 h-full w-full rounded-none border border-white/10 bg-[#000080] p-6 md:p-10 pt-8 md:pt-12 text-white backdrop-blur-md shadow-xl transition-all flex flex-col overflow-hidden">
-              <div className={`mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs transition-all duration-300 ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'}`}
+            <div className="relative my-8 md:my-0 h-full w-full rounded-none border border-white/10 bg-[#000080] p-6 md:p-10 pt-8 md:pt-12 text-white backdrop-blur-md shadow-xl flex flex-col overflow-hidden">
+              <div className={`mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs transition-[opacity,transform] duration-300 ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'}`}
               >
                 <Satellite className="h-4 w-4" /> {BRAND_NAME}
               </div>
-              <h2 className={`font-display text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight transition-all duration-500 ease-in-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}`}>
+              <h2 className={`font-display text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}`}>
                 {slides[idx].title}
               </h2>
-              <p className={`mt-4 text-base text-white/80 transition-all duration-500 ease-in-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`}>
+              <p className={`mt-4 text-base text-white/80 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`}>
                 {slides[idx].text}
               </p>
-              <div className={`mt-auto mb-16 flex flex-wrap items-center gap-3 transition-all duration-500 ease-in-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-                <Button asChild className="h-12 px-6 text-base transition-all hover:scale-105">
+              <div className={`mt-auto mb-16 flex flex-wrap items-center gap-3 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+                <Button asChild className="h-12 px-6 text-base transition-transform hover:scale-105">
                   <Link to="/contact">Get Connected</Link>
                 </Button>
-                <Button asChild className="h-12 px-6 text-base bg-white text-blue-900 hover:bg-white/90 border-none transition-all hover:scale-105">
+                <Button asChild className="h-12 px-6 text-base bg-white text-blue-900 hover:bg-white/90 border-none transition-transform hover:scale-105">
                   <Link to="/services">Explore Services</Link>
                 </Button>
               </div>
@@ -740,7 +734,7 @@ function Hero() {
                     key={i}
                     aria-label={`Go to slide ${i + 1}`}
                     onClick={() => goTo(i)}
-                    className={`h-2 w-2 rounded-full transition-all ${i === idx ? "w-6 bg-white" : "bg-white/50 hover:bg-white/70"}`}
+                    className={`h-2 w-2 origin-left rounded-full transition-[transform,background-color] duration-300 ${i === idx ? "scale-x-[3] bg-white" : "bg-white/50 hover:bg-white/70"}`}
                   />
                 ))}
               </div>

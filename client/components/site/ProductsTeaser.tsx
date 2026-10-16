@@ -14,11 +14,10 @@ export default function ProductsTeaser() {
   useEffect(() => {
     const el = scrollerRef.current;
     if (!el) return;
+    // Slides are min-w-full on mobile — use the scroller width only (no child layout read).
     const onScroll = () => {
-      const first = el.querySelector('[data-slide]') as HTMLElement | null;
-      const cardW = first?.offsetWidth ?? 280;
-      const gap = 16; // gap-4
-      const idx = Math.round(el.scrollLeft / (cardW + gap));
+      const cardW = el.clientWidth || 1;
+      const idx = Math.round(el.scrollLeft / cardW);
       setActive(Math.max(0, Math.min(featured.length - 1, idx)));
     };
     el.addEventListener('scroll', onScroll, { passive: true });
@@ -28,10 +27,8 @@ export default function ProductsTeaser() {
   const goTo = (idx: number) => {
     const el = scrollerRef.current;
     if (!el) return;
-    const first = el.querySelector('[data-slide]') as HTMLElement | null;
-    const cardW = first?.offsetWidth ?? el.clientWidth;
-    const gap = 16;
-    el.scrollTo({ left: idx * (cardW + gap), behavior: 'smooth' });
+    const cardW = el.clientWidth || 1;
+    el.scrollTo({ left: idx * cardW, behavior: 'smooth' });
     setActive(idx);
   };
   const prev = () => goTo(Math.max(0, active - 1));
@@ -57,7 +54,7 @@ export default function ProductsTeaser() {
               key={i}
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => goTo(i)}
-              className={`h-2 w-2 min-h-0 min-w-0 p-0 rounded-full transition-all ${i === active ? 'bg-primary' : 'bg-foreground/30'}`}
+              className={`h-2 w-2 min-h-0 min-w-0 p-0 rounded-full transition-colors ${i === active ? 'bg-primary' : 'bg-foreground/30'}`}
             />
           ))}
         </div>

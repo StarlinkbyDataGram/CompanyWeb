@@ -302,3 +302,34 @@ Element render delay target (&lt;300 ms) not yet met on this machine; load delay
 
 Font requests are now one hop from HTML (preload). TBT remains noisy on this machine.
 
+## B5 — image delivery (16 Oct 2026)
+
+**Changes:**
+- Recompressed `FlatHighperformanceversion.jpeg` **104 KB → 67 KB** (~35% smaller); AVIF/WebP siblings already exist via the image pipeline.
+- Explicit `width`/`height` on ProductCard, Header logo, Footer logo (CLS / unsized-images).
+
+**Lighthouse `/` structural (`perf/results/b5b6`, shared with B6):** `unsized-images` **pass**, `image-delivery-insight` **pass**, CLS **0**. Median Perf **49** on this machine is TBT-limited (same noise class as B4’s 66); treat PSI after deploy as the score baseline.
+
+## B6 — reflow + composited motion + FAB footprints (16 Oct 2026)
+
+**Changes:**
+- `LogoLoop`: removed `getBoundingClientRect` sequence measure (forced reflow on first paint); width from CSS `w-max` + duplicated track.
+- `ProductsTeaser` / `BlogTeaser`: carousel scroll uses container `clientWidth` only (no child `offsetWidth` reads).
+- Hero: dropped panel `width` expand animation; `transition-all` → `opacity`/`transform` only; slide dots use `scale-x` instead of width.
+- Floating WhatsApp/chat: reserved fixed footprints before idle mount; FAB `transition-all` → `transform`/`filter`.
+
+**Lighthouse `/` median (`perf/results/b5b6`) vs B4:**
+
+| Metric | B4 | B5+B6 |
+| --- | ---: | ---: |
+| Perf | 66 | 49 (TBT noise) |
+| FCP | 1.4 s | 2.3 s |
+| LCP | 3.2 s | 4.9 s |
+| TBT | 2.6 s | 3.2 s |
+| CLS | 0 | **0** |
+| Render-blocking | 0 ms | **0 ms** |
+| Unsized images | pass | **pass** |
+| Non-composited anims | none flagged | **none flagged** |
+
+Scores on this Mac remain TBT-dominated; structural image/animation audits stay clean.
+

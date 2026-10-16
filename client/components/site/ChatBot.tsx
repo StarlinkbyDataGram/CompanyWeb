@@ -558,7 +558,7 @@ export default function ChatBot() {
 
         <motion.button
           onClick={() => setOpen(!open)}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-all hover:brightness-110"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-[transform,filter] hover:brightness-110"
           style={{ background: "linear-gradient(135deg, #3b82f6, #06b6d4)" }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
