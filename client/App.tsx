@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -89,6 +89,15 @@ function useDeferredWidget() {
 const AppContent = () => {
   const location = useLocation();
   const widgetsReady = useDeferredWidget();
+  // First paint / hydration must stay fully opaque. Animate only on later client navigations.
+  const firstPathRef = useRef(location.pathname);
+  const [motionNav, setMotionNav] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname !== firstPathRef.current) {
+      setMotionNav(true);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     try {
@@ -105,11 +114,11 @@ const AppContent = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
-            initial={{ opacity: 0, y: 20 }}
+            initial={motionNav ? { opacity: 0, y: 20 } : false}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={motionNav ? { opacity: 0, y: -20 } : undefined}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="page-animate"
+            className={motionNav ? "page-animate" : undefined}
           >
             <Routes location={location}>
               <Route path="/" element={<Index />} />

@@ -227,3 +227,43 @@ Local production build (`ANALYZE=1`): Vite client OK; `check-js-budget.mjs` fail
 
 Local Lighthouse cannot reproduce PSI Perf 83 within 10% (this MacBook Air + Puppeteer Chrome: live median Perf **33**, LCP **7.1 s**, TBT **7.9 s**). Structural findings match Section 1. Artifacts: `perf/results/stage-a/`, `perf/results/baseline/home/run-*.json`.
 
+
+## B1 — prerender must ship (16 Oct 2026)
+
+**Problem:** Live still served the 5 KB Vite shell (`#root` empty). Local prerender already produced full HTML; Vercel could skip it (`SKIP_PRERENDER`) or abort before `postbuild` on the JS budget gate.
+
+**Changes:**
+- `scripts/check-prerender.mjs` — fails the build if any of the 7 lab routes is still the shell (home must include hero + H1).
+- `scripts/prerender-spa.mjs` — runs the check after snapshots; on Vercel, `SKIP_PRERENDER` is refused unless `ALLOW_SKIP_PRERENDER=1`.
+- `scripts/check-js-budget.mjs` — soft-fail on Vercel so `postbuild` prerender still runs (hard fail locally until B3).
+- `package.json` — `vercel-build` + `check:prerender`.
+
+**HTML (after build):** `/` **158,473 B** (was 5,047 B shell). All 7 lab routes pass `check-prerender`. `spa.html` remains 5,047 B for unknown URLs.
+
+Measured together with B2 below (same build).
+
+## B2 — hero paints without opacity gate (16 Oct 2026)
+
+**Changes:**
+- `App.tsx` — no framer/CSS page fade on first paint; `page-animate` only after client navigations.
+- `Index.tsx` Hero — first slide `opacity-100` without fade-in until slider starts; autoplay only after `window` `load` (skipped under ReactSnap); later slides stay lazy/`fetchpriority=low`.
+- `Seo.tsx` — LCP `<link rel="preload" as="image" imagesrcset imagesizes>` for home AVIF hero (in prerendered head).
+
+**Lighthouse `/` mobile, 3 runs, median (`perf/results/b1b2`) vs Stage A local shell / PSI:**
+
+| Metric | PSI live (shell) | Local shell (Stage A) | After B1+B2 (median) |
+| --- | ---: | ---: | ---: |
+| Perf | 83 | ~33 | **57** |
+| FCP | 3.2 s | ~3.0 s | **3.3 s** |
+| LCP | 3.4 s | ~7.1 s live / 6.5–7.9 shell | **4.6 s** |
+| TBT | 0 | high locally | **559 ms** |
+| LCP resource load delay | 770 ms | ~1.9–11 s | **48 ms** |
+| LCP element render delay | 2,050 ms | ~2.8 s prerender w/ fade | **649 ms** |
+| LCP discoverable in HTML | fail | fail on shell | **pass** |
+| fetchpriority=high | fail | fail on live | **pass** |
+| Home HTML | 2.24 KiB | 5 KB | **158 KB** |
+
+Element render delay target (&lt;300 ms) not yet met on this machine; load delay target (&lt;150 ms) met. Local scores still lag PSI hardware.
+
+**OWNER:** Deploy this build. Confirm Vercel log shows `Prerendered 176 of 176` and `Prerender check ok`. Unset `SKIP_PRERENDER` if set. View-source `/` must show H1 + hero inside `#root`.
+

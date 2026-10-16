@@ -80,6 +80,19 @@ const FAQ_ENTRIES = faqs.map((faq) => ({
   },
 }));
 
+const HERO_LCP_SRC = "/images/products/starlink-gen3v4/StandardDish1.jpeg";
+const HERO_LCP_SIZES = "(min-width: 768px) 65vw, 100vw";
+const HERO_LCP_PRELOAD = {
+  href: "/images/products/starlink-gen3v4/StandardDish1.w768.avif",
+  type: "image/avif",
+  imagesizes: HERO_LCP_SIZES,
+  imagesrcset: [
+    "/images/products/starlink-gen3v4/StandardDish1.w480.avif 480w",
+    "/images/products/starlink-gen3v4/StandardDish1.w768.avif 768w",
+    "/images/products/starlink-gen3v4/StandardDish1.w1280.avif 1280w",
+  ].join(", "),
+};
+
 export default function Index() {
   const faqSchema = useMemo(
     () => [
@@ -178,6 +191,7 @@ export default function Index() {
         canonical="/"
         schema={faqSchema}
         includeLocalBusinessSchema
+        lcpPreload={HERO_LCP_PRELOAD}
         keywords={[
           "Starlink installation Nigeria",
           "Starlink installer Nigeria",
@@ -544,7 +558,7 @@ function HomeIntroSection() {
 function Hero() {
   const slides = [
     {
-      src: "/images/products/starlink-gen3v4/StandardDish1.jpeg",
+      src: HERO_LCP_SRC,
       title: "Professional installation",
       text: "Site survey, precision mounting, weatherproof cabling, and commissioning by experienced engineers.",
       object: "center top",
@@ -566,6 +580,9 @@ function Hero() {
   const [idx, setIdx] = useState(0);
   const [textVisible, setTextVisible] = useState(true);
   const [panelExpanded, setPanelExpanded] = useState(false);
+  const [sliderReady, setSliderReady] = useState(false);
+  const idxRef = useRef(0);
+  idxRef.current = idx;
 
   const setSlideTo = (target: number) => {
     // Start cover/expand animation and hide text/content
@@ -583,10 +600,26 @@ function Hero() {
     }, 500);
   };
 
+  // Auto-advance only after window load (and never during ReactSnap snapshots).
   useEffect(() => {
-    const id = setInterval(() => setSlideTo(idx + 1), 7000);
-    return () => clearInterval(id);
-  }, [idx]);
+    if (typeof navigator !== "undefined" && navigator.userAgent.includes("ReactSnap")) return;
+    let intervalId = 0;
+    const arm = () => {
+      setSliderReady(true);
+      intervalId = window.setInterval(() => {
+        setSlideTo(idxRef.current + 1);
+      }, 7000);
+    };
+    if (document.readyState === "complete") {
+      arm();
+    } else {
+      window.addEventListener("load", arm, { once: true });
+    }
+    return () => {
+      window.clearInterval(intervalId);
+      window.removeEventListener("load", arm);
+    };
+  }, []);
 
   const prev = () => setSlideTo(idx - 1);
   const next = () => setSlideTo(idx + 1);
@@ -603,19 +636,27 @@ function Hero() {
         <div className="relative h-full w-full md:flex md:items-stretch">
           {/* Left image slider pane (65%) */}
           <div className="relative h-full w-full overflow-hidden md:h-full md:w-[65%] md:order-none order-last">
-            {slides.map((s, i) => (
-              <Picture sizes="(min-width: 768px) 65vw, 100vw"
+            {slides.map((s, i) => {
+              const isActive = i === idx;
+              // First slide is visible in the initial HTML at full opacity with no fade-in.
+              // Crossfade (transition-opacity) only after the slider has started.
+              const opacityClass = isActive || (i === 0 && !sliderReady) ? "opacity-100" : "opacity-0";
+              const transitionClass =
+                i === 0 && !sliderReady ? "" : "transition-opacity duration-700 ease-out";
+              return (
+              <Picture sizes={HERO_LCP_SIZES}
                 key={s.src}
                 src={s.src}
                 alt={`${s.title} — DataGram Starlink installation Nigeria`}
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${i === idx ? "opacity-100" : "opacity-0"}`}
+                className={`absolute inset-0 h-full w-full object-cover ${transitionClass} ${opacityClass}`}
                 style={{ objectPosition: s.object }}
                 loading={i === 0 ? "eager" : "lazy"}
                 fetchPriority={i === 0 ? "high" : "low"}
                 width="1200"
                 height="800"
               />
-            ))}
+              );
+            })}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/40" />
 
             <div className="absolute inset-0 md:hidden flex items-stretch">

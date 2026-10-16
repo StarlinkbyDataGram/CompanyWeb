@@ -207,7 +207,8 @@
     }
   }
 
-  /* Page transition container */
+  /* Page transition — only applied on client-side navigations (see App.tsx).
+     Never attach this class on the first paint; it would hide prerendered LCP. */
   .page-animate {
     animation: page-in 420ms cubic-bezier(.22,.9,.33,1);
   }

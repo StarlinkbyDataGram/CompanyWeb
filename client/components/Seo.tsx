@@ -32,6 +32,14 @@ const SEARCH_SITE_NAME = "Starlink by DataGram Limited";
 
 type StructuredData = Record<string, unknown>;
 
+type LcpPreload = {
+  /** Fallback URL when imagesrcset is unsupported */
+  href: string;
+  imagesrcset: string;
+  imagesizes: string;
+  type?: string;
+};
+
 interface SeoProps {
   title: string;
   description?: string;
@@ -45,6 +53,8 @@ interface SeoProps {
   schema?: StructuredData | StructuredData[];
   /** When true, emits full LocalBusiness + offer catalog (use on homepage only). */
   includeLocalBusinessSchema?: boolean;
+  /** LCP image preload for the current route (captured into prerendered HTML). */
+  lcpPreload?: LcpPreload;
 }
 
 export default function Seo({
@@ -59,6 +69,7 @@ export default function Seo({
   noindex = false,
   schema,
   includeLocalBusinessSchema = false,
+  lcpPreload,
 }: SeoProps) {
   useEffect(() => {
     if (typeof document === "undefined") return;
@@ -76,6 +87,12 @@ export default function Seo({
       rel: "canonical",
       href: canonicalUrl,
     });
+
+    if (lcpPreload) {
+      upsertLcpPreload(head, lcpPreload);
+    } else {
+      head.querySelector('link[rel="preload"][data-seo-lcp="1"]')?.remove();
+    }
 
     const robotsContent = noindex ? "noindex, nofollow" : "index, follow";
     upsertMeta(head, { name: "description", content: desc });
@@ -127,9 +144,31 @@ export default function Seo({
     noindex,
     schema,
     includeLocalBusinessSchema,
+    lcpPreload?.href,
+    lcpPreload?.imagesrcset,
+    lcpPreload?.imagesizes,
+    lcpPreload?.type,
   ]);
 
   return null;
+}
+
+function upsertLcpPreload(head: HTMLHeadElement, preload: LcpPreload) {
+  const selector = 'link[rel="preload"][data-seo-lcp="1"]';
+  let tag = head.querySelector<HTMLLinkElement>(selector);
+  if (!tag) {
+    tag = document.createElement("link");
+    tag.setAttribute("data-seo-lcp", "1");
+    head.appendChild(tag);
+  }
+  tag.setAttribute("rel", "preload");
+  tag.setAttribute("as", "image");
+  tag.setAttribute("href", preload.href);
+  tag.setAttribute("imagesrcset", preload.imagesrcset);
+  tag.setAttribute("imagesizes", preload.imagesizes);
+  if (preload.type) tag.setAttribute("type", preload.type);
+  else tag.removeAttribute("type");
+  tag.setAttribute("fetchpriority", "high");
 }
 
 function upsertMeta(head: HTMLHeadElement, attributes: Record<string, string>) {
