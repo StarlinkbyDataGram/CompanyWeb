@@ -213,9 +213,18 @@ Compared with B6. Price-post CLS before this group was intermittently 0.17–0.2
 
 Titles and canonicals are unchanged. The installer card still appears in the same place once the article is ready.
 
-## Stage C — final
+## Stage C — final (prior pass, Oct 2026)
 
-Label `final` vs Stage A `baseline`. Full tables and pass/fail: `perf/REPORT.md`. Homepage transfer 2157→492 KB (−77%). First-load JS gzip is still 353.6 KB (`index` + `vendor`); `scripts/check-js-budget.mjs` enforces 250 KB after `vite build` (bypass with `SKIP_JS_BUDGET=1` until cut). Image budget remains in `prebuild`. Live production at report time was still the empty shell.
+Earlier pass: homepage transfer 2157→492 KB; first-load JS still ~354 KB gzip. Superseded by the 16 Oct 2026 proof below.
+
+## Stage C — final (16 Oct 2026)
+
+Label `final` vs Stage A `baseline`. Full tables and pass/fail: `perf/REPORT.md`.
+
+- Home transfer **2157→383 KB**; LCP **14.8s→3.7s**; Perf **28→54** (lab).
+- First-load JS gzip **178.4 KB** (`index`+`vendor`+`motion`) — **JS budget PASS** (250 KB).
+- SEO: all 7 lab routes have H1 + canonical in prerendered HTML (`perf/seo-final.json`).
+- Remaining: non-home CLS ~**0.814** from newsletter “Stay in the loop” section; lab TBT noisy on this Mac; OWNER deploy + PSI + cache-header curls.
 
 ## Stage A — diagnosis (16 Oct 2026), no code fixes
 
