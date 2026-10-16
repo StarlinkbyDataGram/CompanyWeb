@@ -425,9 +425,9 @@ function HomeIntroSection() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <ClipboardCheck className="h-5 w-5" aria-hidden />
                 </div>
-                <CardTitle className="text-xl font-bold tracking-tight md:text-2xl">
+                <p className="text-xl font-bold tracking-tight md:text-2xl">
                   Why book a DataGram survey first?
-                </CardTitle>
+                </p>
                 
               </CardHeader>
               <CardContent className="space-y-4 text-sm leading-relaxed text-foreground/80 md:text-[15px]">
@@ -659,9 +659,9 @@ function Hero() {
                 <div className="mb-3 mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[11px] tracking-tight">
                   <Satellite className="h-3.5 w-3.5" /> {BRAND_NAME}
                 </div>
-                <h2 className={`font-display mt-2 text-[26px] font-extrabold leading-tight tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                <p className={`font-display mt-2 text-[26px] font-extrabold leading-tight tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                   {slides[idx].title}
-                </h2>
+                </p>
                 <p className={`mt-3 max-w-xs text-sm text-white/85 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                   {slides[idx].text}
                 </p>
@@ -712,9 +712,9 @@ function Hero() {
               >
                 <Satellite className="h-4 w-4" /> {BRAND_NAME}
               </div>
-              <h2 className={`font-display text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}`}>
+              <p className={`font-display text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'}`}>
                 {slides[idx].title}
-              </h2>
+              </p>
               <p className={`mt-4 text-base text-white/80 transition-[opacity,transform] duration-500 ease-out ${textVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`}>
                 {slides[idx].text}
               </p>
@@ -861,8 +861,8 @@ function Testimonials() {
     <section className="py-20">
       <div className="container">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border bg-primary/10 px-4 py-2 text-sm text-primary">
-            <span className="inline-flex size-2 rounded-full bg-primary" />
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#000080]/35 bg-[#000080]/[0.08] px-4 py-2 text-sm font-semibold text-[#000066]">
+            <span className="inline-flex size-2 rounded-full bg-[#000080]" aria-hidden />
             Client Testimonials
           </div>
           <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl">
@@ -883,32 +883,11 @@ function Testimonials() {
  
 
 function FAQ() {
-  const [faqData, setFaqData] = useState(faqs);
+  // Static `@/data/faq` only — same source as FAQPage JSON-LD. Avoids a
+  // failed `/api/faqs` round-trip (500 on Vercel) that only polluted the console.
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await fetch("/api/faqs");
-        if (!res.ok) {
-          setFaqData(faqs);
-          return;
-        }
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
-          setFaqData(data);
-        } else {
-          setFaqData(faqs);
-        }
-      } catch {
-        setFaqData(faqs);
-      }
-    };
-
-    load();
-  }, []);
-
-  const filtered = faqData.filter((f) => {
+  const filtered = faqs.filter((f) => {
     const q = query.trim().toLowerCase();
     if (!q) return true;
     return f.question.toLowerCase().includes(q) || f.answer.toLowerCase().includes(q);
@@ -918,8 +897,8 @@ function FAQ() {
     <section className="relative py-20">
       <div className="container">
         <div className="mx-auto mb-8 max-w-2xl text-center">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full border bg-primary/10 px-4 py-2 text-sm text-primary">
-            <HelpCircle className="h-4 w-4" />
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#000080]/35 bg-[#000080]/[0.08] px-4 py-2 text-sm font-semibold text-[#000066]">
+            <HelpCircle className="h-4 w-4" aria-hidden />
             Frequently Asked Questions
           </div>
           <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">Everything you need to know</h2>
