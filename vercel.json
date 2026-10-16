@@ -11,36 +11,21 @@
       "use": "@vercel/node"
     }
   ],
-  "headers": [
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/fonts/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/((?!assets/|fonts/|api/).*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ],
   "routes": [
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
+    {
+      "src": "/fonts/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
     {
       "src": "/api/google-reviews",
       "dest": "/api/google-reviews.ts"
@@ -53,7 +38,15 @@
       "handle": "filesystem"
     },
     {
+      "src": "/(.*)\\.(json|txt|xml|js|css|map|ico|png|jpe?g|gif|webp|avif|svg|woff2?|ttf|eot|webmanifest)$",
+      "status": 404,
+      "dest": "/404.html"
+    },
+    {
       "src": "/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
       "dest": "/spa.html"
     }
   ]
