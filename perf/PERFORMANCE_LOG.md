@@ -267,3 +267,38 @@ Element render delay target (&lt;300 ms) not yet met on this machine; load delay
 
 **OWNER:** Deploy this build. Confirm Vercel log shows `Prerendered 176 of 176` and `Prerender check ok`. Unset `SKIP_PRERENDER` if set. View-source `/` must show H1 + hero inside `#root`.
 
+
+## B3 — route-level splitting + slim home data (16 Oct 2026)
+
+**Changes:**
+- Lazy-load every route except `/` (`React.lazy` + `Suspense`); landing paths are a tiny path list so `industry-pages` / `regional-pages` leave the home chunk.
+- Homepage blog teaser uses `blog-teaser-posts.ts` (3 cards) instead of `blog-index.json` (~44 KB gzip).
+- `framer-motion` → `motion-*.js` chunk; ChatBot / Elfsight lazy.
+- Prerender waits for main text; strips lazy-route `modulepreload` tags from snapshots so `/` does not preload the whole app.
+
+**First-load JS (spa.html scripts + modulepreload):**
+- Before (B1/B2): ~353 KB gzip / ~295 KB br entry era → **178 KB gzip / 154 KB br** (`index` 88 + `vendor` 53 + `motion` 37).
+- JS budget check now **passes** (limit 250 KB).
+- Unused JS audit: **empty** (was ~79 KB wasted).
+
+**Lighthouse `/` median (`perf/results/b3`, fonts already 600/700 in this build tree):** Perf **49**, FCP **2.5 s**, LCP **4.2 s**, TBT **1.7 s**, SI **7.4 s**, render-blocking CSS ~**237 ms**. Discovery still pass. All 7 lab routes prerender-check OK.
+
+## B4 — fonts + inline CSS (16 Oct 2026)
+
+**Changes:**
+- `index.html`: preload Inter **600** and **700** (ATF headings); 400 still in `@font-face` with `font-display: swap`, not preloaded.
+- Prerender inlines the main CSS into each snapshot (`<style data-inlined-css>`) and leaves a style preload; `spa.html` keeps a normal blocking `<link rel="stylesheet">`.
+
+**Lighthouse `/` median (`perf/results/b4`) vs B3:**
+
+| Metric | B3 | B4 |
+| --- | ---: | ---: |
+| Perf | 49 | **66** |
+| FCP | 2.5 s | **1.4 s** |
+| LCP | 4.2 s | **3.2 s** |
+| SI | 7.4 s | **4.7 s** |
+| Render-blocking saving | ~237 ms | **0 ms** |
+| Home HTML | ~159 KB | ~273 KB (CSS inlined) |
+
+Font requests are now one hop from HTML (preload). TBT remains noisy on this machine.
+
