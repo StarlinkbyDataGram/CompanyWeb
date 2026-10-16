@@ -26,14 +26,15 @@ import ProductsTeaser from "@/components/site/ProductsTeaser";
 import BlogTeaser from "@/components/site/BlogTeaser";
 import SpotlightCard from "@/components/site/SpotlightCard";
 import LogoLoop from "@/components/site/LogoLoop";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import useInView from "@/hooks/use-inview";
 import Seo from "@/components/Seo";
 import { faqs } from "@/data/faq";
 import { CARD_IMAGE_HEIGHT_CLASS, cropForFile } from "@/lib/image-crop";
 import { BRAND_NAME, SITE_URL } from "@/lib/site";
-import ElfsightGoogleReviews from "@/components/site/ElfsightGoogleReviews";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+const ElfsightGoogleReviews = lazy(() => import("@/components/site/ElfsightGoogleReviews"));
 
 type StatItem = {
   value: number;
@@ -877,7 +878,9 @@ function Testimonials() {
             Technical excellence and reliable delivery across regions. See what our clients say about our services.
           </p>
         </div>
-        <ElfsightGoogleReviews />
+        <Suspense fallback={<div className="mx-auto min-h-[280px] max-w-3xl" aria-hidden />}>
+          <ElfsightGoogleReviews />
+        </Suspense>
       </div>
     </section>
   );

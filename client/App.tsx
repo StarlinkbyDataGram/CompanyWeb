@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { Toaster } from "@/components/ui/toaster";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,40 +13,47 @@ import Header from "@/components/site/Header";
 import Picture from "@/components/site/Picture";
 import Footer from "@/components/site/Footer";
 import Analytics from "@/components/Analytics";
-import ChatBot from "@/components/site/ChatBot";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Support from "./pages/Support";
-import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
-import ServiceDetail from "./pages/ServiceDetail";
-import NotFound from "./pages/NotFound";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import FaqPage from "./pages/FaqPage";
-import LocationsIndex from "./pages/LocationsIndex";
-import LocationsAll from "./pages/LocationsAll";
-import LocationDetail from "./pages/LocationDetail";
-import StarlinkGuideNigeria from "./pages/StarlinkGuideNigeria";
-import Gallery from "./pages/Gallery";
-import OurWork from "./pages/OurWork";
-import AdminLogin from "./pages/admin/AdminLogin";
-import AdminDashboard from "./pages/admin/AdminDashboard";
-import AdminProducts from "./pages/admin/AdminProducts";
-import AdminTestimonials from "./pages/admin/AdminTestimonials";
-import AdminFAQ from "./pages/admin/AdminFAQ";
-import AdminBlog from "./pages/admin/AdminBlog";
-import ProtectedRoute from "./components/admin/ProtectedRoute";
-import {
-  IndustryLandingByPath,
-  RegionalLandingByPath,
-} from "./pages/landing/LandingRoutePages";
-import { industryLandingPages } from "@/data/landing/industry-pages";
-import { regionalLandingPages } from "@/data/landing/regional-pages";
-import BlogPost from "./pages/BlogPost";
+import { lazyNamed, lazyRoute } from "@/lib/lazy-route";
+import { INDUSTRY_LANDING_PATHS, REGIONAL_LANDING_PATHS } from "@/data/landing/landing-paths";
+
+const ChatBot = lazy(() => import("@/components/site/ChatBot"));
+
+const About = lazyRoute(() => import("./pages/About"));
+const Services = lazyRoute(() => import("./pages/Services"));
+const Blog = lazyRoute(() => import("./pages/Blog"));
+const Contact = lazyRoute(() => import("./pages/Contact"));
+const Support = lazyRoute(() => import("./pages/Support"));
+const Products = lazyRoute(() => import("./pages/Products"));
+const ProductDetail = lazyRoute(() => import("./pages/ProductDetail"));
+const ServiceDetail = lazyRoute(() => import("./pages/ServiceDetail"));
+const NotFound = lazyRoute(() => import("./pages/NotFound"));
+const Privacy = lazyRoute(() => import("./pages/Privacy"));
+const Terms = lazyRoute(() => import("./pages/Terms"));
+const FaqPage = lazyRoute(() => import("./pages/FaqPage"));
+const LocationsIndex = lazyRoute(() => import("./pages/LocationsIndex"));
+const LocationsAll = lazyRoute(() => import("./pages/LocationsAll"));
+const LocationDetail = lazyRoute(() => import("./pages/LocationDetail"));
+const StarlinkGuideNigeria = lazyRoute(() => import("./pages/StarlinkGuideNigeria"));
+const Gallery = lazyRoute(() => import("./pages/Gallery"));
+const OurWork = lazyRoute(() => import("./pages/OurWork"));
+const BlogPost = lazyRoute(() => import("./pages/BlogPost"));
+const AdminLogin = lazyRoute(() => import("./pages/admin/AdminLogin"));
+const AdminDashboard = lazyRoute(() => import("./pages/admin/AdminDashboard"));
+const AdminProducts = lazyRoute(() => import("./pages/admin/AdminProducts"));
+const AdminTestimonials = lazyRoute(() => import("./pages/admin/AdminTestimonials"));
+const AdminFAQ = lazyRoute(() => import("./pages/admin/AdminFAQ"));
+const AdminBlog = lazyRoute(() => import("./pages/admin/AdminBlog"));
+const ProtectedRoute = lazyRoute(() => import("./components/admin/ProtectedRoute"));
+
+const IndustryLandingByPath = lazyNamed(
+  () => import("./pages/landing/LandingRoutePages"),
+  "IndustryLandingByPath",
+);
+const RegionalLandingByPath = lazyNamed(
+  () => import("./pages/landing/LandingRoutePages"),
+  "RegionalLandingByPath",
+);
 
 const queryClient = new QueryClient();
 
@@ -120,84 +127,97 @@ const AppContent = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className={motionNav ? "page-animate" : undefined}
           >
-            <Routes location={location}>
-              <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/services/:slug" element={<ServiceDetail />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/products/:slug" element={<ProductDetail />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
-              {industryLandingPages.map((page) => (
+            <Suspense fallback={null}>
+              <Routes location={location}>
+                <Route path="/" element={<Index />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/services/:slug" element={<ServiceDetail />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:slug" element={<ProductDetail />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
+                {INDUSTRY_LANDING_PATHS.map((path) => (
+                  <Route
+                    key={path}
+                    path={path}
+                    element={<IndustryLandingByPath path={path} />}
+                  />
+                ))}
+                {REGIONAL_LANDING_PATHS.map((path) => (
+                  <Route
+                    key={path}
+                    path={path}
+                    element={<RegionalLandingByPath path={path} />}
+                  />
+                ))}
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/support" element={<Support />} />
+                <Route path="/faq" element={<FaqPage />} />
+                <Route path="/locations" element={<LocationsIndex />} />
+                <Route path="/locations/all" element={<LocationsAll />} />
+                <Route path="/locations/kano" element={<Navigate to="/locations/niger-delta" replace />} />
+                <Route path="/locations/:slug" element={<LocationDetail />} />
+                <Route path="/guide/starlink-nigeria" element={<StarlinkGuideNigeria />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/our-work" element={<OurWork />} />
+                <Route path="/admin/login" element={<AdminLogin />} />
                 <Route
-                  key={page.path}
-                  path={page.path}
-                  element={<IndustryLandingByPath path={page.path} />}
+                  path="/admin/dashboard"
+                  element={
+                    <ProtectedRoute>
+                      <AdminDashboard />
+                    </ProtectedRoute>
+                  }
                 />
-              ))}
-              {regionalLandingPages.map((page) => (
                 <Route
-                  key={page.path}
-                  path={page.path}
-                  element={<RegionalLandingByPath path={page.path} />}
+                  path="/admin/products"
+                  element={
+                    <ProtectedRoute>
+                      <AdminProducts />
+                    </ProtectedRoute>
+                  }
                 />
-              ))}
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/terms" element={<Terms />} />
-              <Route path="/support" element={<Support />} />
-              <Route path="/faq" element={<FaqPage />} />
-              <Route path="/locations" element={<LocationsIndex />} />
-              <Route path="/locations/all" element={<LocationsAll />} />
-              <Route path="/locations/kano" element={<Navigate to="/locations/niger-delta" replace />} />
-              <Route path="/locations/:slug" element={<LocationDetail />} />
-              <Route path="/guide/starlink-nigeria" element={<StarlinkGuideNigeria />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/our-work" element={<OurWork />} />
-              {/* Admin Routes */}
-              <Route path="/admin/login" element={<AdminLogin />} />
-              <Route path="/admin/dashboard" element={
-                <ProtectedRoute>
-                  <AdminDashboard />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/products" element={
-                <ProtectedRoute>
-                  <AdminProducts />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/testimonials" element={
-                <ProtectedRoute>
-                  <AdminTestimonials />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/faq" element={
-                <ProtectedRoute>
-                  <AdminFAQ />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin/blog" element={
-                <ProtectedRoute>
-                  <AdminBlog />
-                </ProtectedRoute>
-              } />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+                <Route
+                  path="/admin/testimonials"
+                  element={
+                    <ProtectedRoute>
+                      <AdminTestimonials />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/admin/faq"
+                  element={
+                    <ProtectedRoute>
+                      <AdminFAQ />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/admin/blog"
+                  element={
+                    <ProtectedRoute>
+                      <AdminBlog />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>
       <Footer />
 
-      {/*
-        Layout logic:
-        • Desktop (lg+): WhatsApp/call button on the LEFT  |  ChatBot FAB on the RIGHT
-        • Mobile: both on the RIGHT — WhatsApp/call at bottom-20, ChatBot FAB at bottom-5
-      */}
-
       {widgetsReady ? <FloatingContact /> : null}
-      {widgetsReady ? <ChatBot /> : null}
+      {widgetsReady ? (
+        <Suspense fallback={null}>
+          <ChatBot />
+        </Suspense>
+      ) : null}
     </>
   );
 };
@@ -209,16 +229,12 @@ const FloatingContact = () => {
   return (
     <div
       className={
-        // Mobile: right-5, bottom-20 (above the chatbot FAB at bottom-5)
-        // Desktop lg+: left-5, bottom-5 (on the opposite side from chatbot)
         "fixed bottom-20 right-5 lg:bottom-5 lg:left-5 lg:right-auto z-50 flex flex-col items-end lg:items-start gap-3"
       }
     >
-      {/* Expanded: WhatsApp + Call buttons */}
       <AnimatePresence>
         {open && (
           <>
-            {/* WhatsApp */}
             <motion.div
               className="group relative flex items-center gap-2"
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
@@ -226,7 +242,6 @@ const FloatingContact = () => {
               exit={{ opacity: 0, y: 20, scale: 0.8 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              {/* Tooltip — right of button on desktop (left side), left of button on mobile (right side) */}
               <motion.span className="absolute right-full mr-2 lg:right-auto lg:mr-0 lg:left-full lg:ml-2 whitespace-nowrap rounded-md bg-gray-900 px-3 py-1.5 text-sm text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
                 WhatsApp
               </motion.span>
@@ -243,7 +258,6 @@ const FloatingContact = () => {
               </motion.a>
             </motion.div>
 
-            {/* Call */}
             <motion.div
               className="group relative flex items-center gap-2"
               initial={{ opacity: 0, y: 20, scale: 0.8 }}
@@ -268,7 +282,6 @@ const FloatingContact = () => {
         )}
       </AnimatePresence>
 
-      {/* Toggle FAB */}
       <motion.div
         className="group relative flex items-center gap-2"
         initial={{ scale: 0 }}
@@ -279,7 +292,6 @@ const FloatingContact = () => {
             : { delay: 1, duration: 1.6, repeat: Infinity, ease: "easeInOut" }
         }
       >
-        {/* Tooltip label */}
         {open ? (
           <span className="absolute right-full mr-2 lg:right-auto lg:mr-0 lg:left-full lg:ml-2 whitespace-nowrap rounded-md bg-gray-900 px-3 py-1.5 text-sm text-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
             Hide

@@ -6,63 +6,13 @@ import { Calendar, Clock, User } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cropFromSrc } from "@/lib/image-crop";
 import Picture from "@/components/site/Picture";
-import { getBlogIndexEntry } from "@/data/blog/blog-index";
-
-/** Homepage teaser: evergreen guides with strong local install photos. */
-const TEASER_SLUGS = [
-  "professional-starlink-installation-nigeria-guide",
-  "best-starlink-mounts-nigerian-roofs-corrugated-concrete",
-  "extend-starlink-wifi-range-large-nigerian-home",
-] as const;
-
-/** Prefer proven field photos over weak stock covers for the homepage cards. */
-const TEASER_COVER: Record<(typeof TEASER_SLUGS)[number], { src: string; alt: string }> = {
-  "professional-starlink-installation-nigeria-guide": {
-    src: "/images/datagram-technician-rooftop-mount.jpg",
-    alt: "DataGram technician mounting a Starlink dish on a Nigerian rooftop",
-  },
-  "best-starlink-mounts-nigerian-roofs-corrugated-concrete": {
-    src: "/images/StarlinkRoofMount.jpeg",
-    alt: "Starlink dish securely mounted on a residential roof in Nigeria",
-  },
-  "extend-starlink-wifi-range-large-nigerian-home": {
-    src: "/images/starlinkEstateInstallation.jpeg",
-    alt: "Starlink installation at a Nigerian residential estate for whole-home coverage",
-  },
-};
+import { BLOG_TEASER_POSTS } from "@/data/blog/blog-teaser-posts";
 
 export default function BlogTeaser() {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState(0);
 
-  const topPosts = useMemo(() => {
-    return TEASER_SLUGS.map((slug) => {
-      const article = getBlogIndexEntry(slug);
-      if (!article) return null;
-      const cover = TEASER_COVER[slug];
-      return {
-        slug: article.slug,
-        title: article.title,
-        excerpt: article.excerpt,
-        author: article.author,
-        date: article.date,
-        readTime: article.readTime,
-        category: article.category,
-        image: cover.src,
-        imageAlt: cover.alt,
-      };
-    }).filter(Boolean) as Array<{
-      slug: string;
-      title: string;
-      excerpt: string;
-      author: string;
-      date: string;
-      readTime: string;
-      category: string;
-      image: string;
-      imageAlt: string;
-    }>;
-  }, []);
+  const topPosts = useMemo(() => [...BLOG_TEASER_POSTS], []);
 
   useEffect(() => {
     const el = scrollerRef.current;

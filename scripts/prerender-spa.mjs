@@ -103,6 +103,8 @@ async function snapshotRoute(page, route) {
       const root = document.querySelector("#root");
       if ((root?.innerHTML?.length ?? 0) < 200) return false;
       if (!(root.querySelector("h1")?.textContent || "").trim()) return false;
+      // Lazy route chunks + Suspense: wait until main has real section content.
+      if ((root.querySelector("main")?.innerText || "").trim().length < 80) return false;
       const animated = document.querySelector(".page-animate");
       if (animated && parseFloat(getComputedStyle(animated).opacity) < 0.99) return false;
       const canonical = document.querySelector('link[rel="canonical"]')?.getAttribute("href") || "";
@@ -119,6 +121,12 @@ async function snapshotRoute(page, route) {
   );
   await page.evaluate(() => {
     document.querySelectorAll('script[src*="elfsight"], script[src*="google-analytics"], script[src*="googletagmanager"]').forEach((node) => node.remove());
+    // Keep entry + vendor (+ motion) preloads; drop lazy route chunk hints left by React.lazy.
+    const keep = /\/assets\/(index-|vendor-|motion-)/;
+    document.querySelectorAll('link[rel="modulepreload"]').forEach((node) => {
+      const href = node.getAttribute("href") || "";
+      if (href.includes("/assets/") && !keep.test(href)) node.remove();
+    });
   });
   const hasHeading = await page.evaluate(() => (document.querySelector("#root h1")?.textContent || "").trim().length > 0);
   const html = await page.content();
@@ -213,12 +221,57 @@ async function prerender() {
     process.exit(1);
   }
 
+  // Break the HTML→CSS render-blocking chain on snapshots (keep spa.html linked).
+  const inlined = await inlineCssOnPrerenderedPages();
+  console.log(`Inlined CSS into ${inlined} prerendered HTML file(s).`);
+
   // Integrity gate: fail if home (and lab routes) are still the empty shell.
   const { execFileSync } = await import("child_process");
   execFileSync(process.execPath, [path.resolve(__dirname, "check-prerender.mjs")], {
     stdio: "inherit",
     env: process.env,
   });
+}
+
+/**
+ * Replace the blocking stylesheet <link> with an inline <style> so first paint
+ * does not wait on a second network hop. Leaves a preload hint for cache warmth.
+ * spa.html keeps the normal blocking link for client-only fallsbacks.
+ */
+async function inlineCssOnPrerenderedPages() {
+  const cssLinkRe = /<link\b[^>]*href="([^"]+\.css)"[^>]*>/i;
+  async function walk(dir) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    let count = 0;
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        count += await walk(full);
+        continue;
+      }
+      if (entry.name !== "index.html") continue;
+      let html = await fs.readFile(full, "utf8");
+      const match = html.match(cssLinkRe);
+      if (!match) continue;
+      if (html.includes("data-inlined-css")) continue;
+      const href = match[1];
+      const cssFile = path.join(SPA_ROOT, href.replace(/^\//, ""));
+      try {
+        await fs.access(cssFile);
+      } catch {
+        continue;
+      }
+      const css = await fs.readFile(cssFile, "utf8");
+      const replacement =
+        `<style data-inlined-css="1">${css}</style>\n` +
+        `<link rel="preload" href="${href}" as="style" />`;
+      html = html.replace(match[0], replacement);
+      await fs.writeFile(full, html, "utf8");
+      count += 1;
+    }
+    return count;
+  }
+  return walk(SPA_ROOT);
 }
 
 prerender().catch((err) => {

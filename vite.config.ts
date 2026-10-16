@@ -56,6 +56,9 @@ export default defineConfig(async ({ mode }) => {
           ) {
             return "vendor";
           }
+          if (id.includes("/node_modules/framer-motion/")) {
+            return "motion";
+          }
         },
       },
     },
