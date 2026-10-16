@@ -1,0 +1,88 @@
+{
+  "label": "local-shell",
+  "url": "http://127.0.0.1:4175/",
+  "perf": 37,
+  "fcp": 3048.0897,
+  "lcp": 4902.112125,
+  "tbt": 18769.455149999998,
+  "cls": 0,
+  "si": 36893.56504761606,
+  "ttfb": 104,
+  "transfer": 487894,
+  "lcpDiscovery": {
+    "priorityHinted": {
+      "label": "fetchpriority=high applied",
+      "value": true
+    },
+    "requestDiscoverable": {
+      "label": "Request is discoverable in initial document",
+      "value": false
+    },
+    "eagerlyLoaded": {
+      "label": "LCP resources should not use loading=lazy",
+      "value": true
+    }
+  },
+  "lcpBreakdown": [
+    {
+      "subpart": "timeToFirstByte",
+      "label": "Time to first byte",
+      "duration": 116.694
+    },
+    {
+      "subpart": "resourceLoadDelay",
+      "label": "Resource load delay",
+      "duration": 6910.868
+    },
+    {
+      "subpart": "resourceLoadDuration",
+      "label": "Resource load duration",
+      "duration": 27.766
+    },
+    {
+      "subpart": "elementRenderDelay",
+      "label": "Element render delay",
+      "duration": 5412.669
+    }
+  ],
+  "renderBlockingMs": 399,
+  "htmlBytesHint": null,
+  "auditsSample": {
+    "forced": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "source",
+          "valueType": "source-location",
+          "label": "Top function call"
+        },
+        {
+          "key": "reflowTime",
+          "valueType": "ms",
+          "granularity": 1,
+          "label": "Total reflow time"
+        }
+      ],
+      "items": [
+        {
+          "source": {
+            "type": "source-location",
+            "url": "http://127.0.0.1:4175/assets/vendor-khI0NAQz.js",
+            "urlProvider": "network",
+            "line": 25,
+            "column": 1909
+          },
+          "reflowTime": 265.348
+        }
+      ]
+    },
+    "unusedJs": [
+      {
+        "url": "http://127.0.0.1:4175/assets/index-DUJNEo5d.js",
+        "totalBytes": 245013,
+        "wastedBytes": 78887,
+        "wastedPercent": 32.19689694819204
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "label": "live-3",
+  "url": "https://www.datagram.ng/",
+  "perf": 33,
+  "fcp": 3042.4412,
+  "lcp": 7120.9412,
+  "tbt": 7851.500000000001,
+  "cls": 0.000315,
+  "si": 8746.76833477932,
+  "ttfb": 115,
+  "transfer": 935082,
+  "lcpDiscovery": {
+    "priorityHinted": {
+      "label": "fetchpriority=high should be applied",
+      "value": false
+    },
+    "requestDiscoverable": {
+      "label": "Request is discoverable in initial document",
+      "value": false
+    },
+    "eagerlyLoaded": {
+      "label": "LCP resources should not use loading=lazy",
+      "value": true
+    }
+  },
+  "lcpBreakdown": [
+    {
+      "subpart": "timeToFirstByte",
+      "label": "Time to first byte",
+      "duration": 129.163
+    },
+    {
+      "subpart": "resourceLoadDelay",
+      "label": "Resource load delay",
+      "duration": 2825.63
+    },
+    {
+      "subpart": "resourceLoadDuration",
+      "label": "Resource load duration",
+      "duration": 216.245
+    },
+    {
+      "subpart": "elementRenderDelay",
+      "label": "Element render delay",
+      "duration": 332.822
+    }
+  ],
+  "renderBlockingMs": 300,
+  "htmlBytesHint": null,
+  "auditsSample": {
+    "forced": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "source",
+          "valueType": "source-location",
+          "label": "Top function call"
+        },
+        {
+          "key": "reflowTime",
+          "valueType": "ms",
+          "granularity": 1,
+          "label": "Total reflow time"
+        }
+      ],
+      "items": [
+        {
+          "source": {
+            "type": "source-location",
+            "url": "https://www.datagram.ng/assets/vendor-khI0NAQz.js",
+            "urlProvider": "network",
+            "line": 25,
+            "column": 1909
+          },
+          "reflowTime": 1214.334
+        }
+      ]
+    },
+    "unusedJs": [
+      {
+        "url": "https://www.datagram.ng/assets/index-CvWFvkcH.js",
+        "totalBytes": 301031,
+        "wastedBytes": 105603,
+        "wastedPercent": 35.080586173928715
+      }
+    ],
+    "imageDelivery": "Est savings of 156 KiB"
+  }
+}

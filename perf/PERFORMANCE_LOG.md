@@ -216,3 +216,14 @@ Titles and canonicals are unchanged. The installer card still appears in the sam
 ## Stage C — final
 
 Label `final` vs Stage A `baseline`. Full tables and pass/fail: `perf/REPORT.md`. Homepage transfer 2157→492 KB (−77%). First-load JS gzip is still 353.6 KB (`index` + `vendor`); `scripts/check-js-budget.mjs` enforces 250 KB after `vite build` (bypass with `SKIP_JS_BUDGET=1` until cut). Image budget remains in `prebuild`. Live production at report time was still the empty shell.
+
+## Stage A — diagnosis (16 Oct 2026), no code fixes
+
+Evidence baseline is PageSpeed Insights mobile on live `/` (13 Oct 2026): Perf 83, FCP 3.2 s, LCP 3.4 s, SI 5.0 s, TBT 0, CLS 0, HTML ~2.24 KiB transferred, entry JS `index-CvWFvkcH.js` 294.77 KiB.
+
+Live origin today still serves the same hashes (`index-CvWFvkcH.js`, `index-Dmu4sGeU.css`, `vendor-khI0NAQz.js`). HTML is 5,047 B raw / **1,830 B Brotli** with empty `<div id="root"></div>`. Host: **Vercel** (`server: Vercel`, `x-vercel-id: fra1`).
+
+Local production build (`ANALYZE=1`): Vite client OK; `check-js-budget.mjs` fails at **353.6 KB gzip** first-load JS (limit 250). Server build + `scripts/prerender-spa.mjs` completed **176/176** routes. Prerendered `/` is **158,135 B** and contains hero `<img>`, H1, canonical, JSON-LD. Shell kept as `spa.html` (5,047 B).
+
+Local Lighthouse cannot reproduce PSI Perf 83 within 10% (this MacBook Air + Puppeteer Chrome: live median Perf **33**, LCP **7.1 s**, TBT **7.9 s**). Structural findings match Section 1. Artifacts: `perf/results/stage-a/`, `perf/results/baseline/home/run-*.json`.
+

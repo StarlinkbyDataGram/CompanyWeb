@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-10-16T08:03:40.207Z",
+  "label": "baseline-shell-home",
+  "runs": [
+    {
+      "perf": null,
+      "fcp": null,
+      "lcp": null,
+      "tbt": null,
+      "cls": null,
+      "si": null,
+      "ttfb": null,
+      "transfer": null,
+      "js": null,
+      "css": null,
+      "blocking": [],
+      "unusedJs": [],
+      "unusedCss": [],
+      "imageDisplay": null,
+      "imageScore": null,
+      "lcpDiscovery": "null",
+      "lcpBreak": "null",
+      "nonComp": null,
+      "forcedSummary": "Forced reflow",
+      "lcpEl": null,
+      "errors": []
+    },
+    {
+      "perf": 31,
+      "fcp": 2973.0208,
+      "lcp": 7912.776,
+      "tbt": 4978.5,
+      "cls": 0,
+      "si": 38345.459080752706,
+      "ttfb": 529,
+      "transfer": 449724,
+      "js": 293268,
+      "css": 15670,
+      "blocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Cc-q59xP.css",
+          "wastedMs": 325,
+          "bytes": 15670
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-DUJNEo5d.js",
+          "total": 245013,
+          "wasted": 78887
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Cc-q59xP.css",
+          "total": 15458,
+          "wasted": 12114
+        }
+      ],
+      "imageDisplay": null,
+      "imageScore": 1,
+      "lcpDiscovery": "[{\"type\":\"checklist\",\"items\":{\"priorityHinted\":{\"label\":\"fetchpriority=high applied\",\"value\":true},\"requestDiscoverable\":{\"label\":\"Request is discoverable in initial document\",\"value\":false},\"eagerlyLoaded\":{\"label\":\"LCP resources should not use loading=lazy\",\"value\":true}}},{\"type\":\"node\",\"lhId\":\"page-0-IMG\",\"path\":\"1,HTML,1,BODY,1,DIV,4,MAIN,0,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,0,DIV,0,PICTURE,2,IMG\",\"selector\":\"div.relative > div.relative > picture.contents > img.absolute\",\"boundingRect\":{\"top\":",
+      "lcpBreak": "[{\"type\":\"table\",\"headings\":[{\"key\":\"label\",\"valueType\":\"text\",\"label\":\"Subpart\"},{\"key\":\"duration\",\"valueType\":\"ms\",\"label\":\"Duration\"}],\"items\":[{\"subpart\":\"timeToFirstByte\",\"label\":\"Time to first byte\",\"duration\":541.907},{\"subpart\":\"resourceLoadDelay\",\"label\":\"Resource load delay\",\"duration\":23696.679},{\"subpart\":\"resourceLoadDuration\",\"label\":\"Resource load duration\",\"duration\":21.192},{\"subpart\":\"elementRenderDelay\",\"label\":\"Element render delay\",\"duration\":652.115}]},{\"type\":\"node\",\"lhId\":\"page-0-IMG\",\"path\":\"1,HTML,1,BODY,1,DIV,4,MAIN,0,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,0,DIV,0,PICTURE,2,IMG\",\"selector\":\"div.relative > div.relative > picture.contents > img.absolute\",\"boundingRect\":{\"top\":65,\"bottom\":806,\"left\":0,\"right\":412,\"width\":412,\"height\":741},\"snippet\":\"<img src=\\\"http://127.0",
+      "nonComp": 0,
+      "forcedSummary": "Forced reflow",
+      "lcpEl": "StandardDish1.w768.a…",
+      "errors": []
+    },
+    {
+      "perf": 33,
+      "fcp": 2992.5239,
+      "lcp": 6449.904875,
+      "tbt": 2727.5,
+      "cls": 0,
+      "si": 19363.869600114267,
+      "ttfb": 97,
+      "transfer": 449724,
+      "js": 293268,
+      "css": 15670,
+      "blocking": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Cc-q59xP.css",
+          "wastedMs": 571,
+          "bytes": 15670
+        }
+      ],
+      "unusedJs": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-DUJNEo5d.js",
+          "total": 245013,
+          "wasted": 78887
+        }
+      ],
+      "unusedCss": [
+        {
+          "url": "http://127.0.0.1:4173/assets/index-Cc-q59xP.css",
+          "total": 15458,
+          "wasted": 12114
+        }
+      ],
+      "imageDisplay": null,
+      "imageScore": 1,
+      "lcpDiscovery": "[{\"type\":\"checklist\",\"items\":{\"priorityHinted\":{\"label\":\"fetchpriority=high applied\",\"value\":true},\"requestDiscoverable\":{\"label\":\"Request is discoverable in initial document\",\"value\":false},\"eagerlyLoaded\":{\"label\":\"LCP resources should not use loading=lazy\",\"value\":true}}},{\"type\":\"node\",\"lhId\":\"page-0-IMG\",\"path\":\"1,HTML,1,BODY,1,DIV,4,MAIN,0,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,0,DIV,0,PICTURE,2,IMG\",\"selector\":\"div.relative > div.relative > picture.contents > img.absolute\",\"boundingRect\":{\"top\":",
+      "lcpBreak": "[{\"type\":\"table\",\"headings\":[{\"key\":\"label\",\"valueType\":\"text\",\"label\":\"Subpart\"},{\"key\":\"duration\",\"valueType\":\"ms\",\"label\":\"Duration\"}],\"items\":[{\"subpart\":\"timeToFirstByte\",\"label\":\"Time to first byte\",\"duration\":119.785},{\"subpart\":\"resourceLoadDelay\",\"label\":\"Resource load delay\",\"duration\":11034.68},{\"subpart\":\"resourceLoadDuration\",\"label\":\"Resource load duration\",\"duration\":262.967},{\"subpart\":\"elementRenderDelay\",\"label\":\"Element render delay\",\"duration\":260.436}]},{\"type\":\"node\",\"lhId\":\"page-0-IMG\",\"path\":\"1,HTML,1,BODY,1,DIV,4,MAIN,0,DIV,0,DIV,0,SECTION,0,DIV,0,DIV,0,DIV,0,PICTURE,2,IMG\",\"selector\":\"div.relative > div.relative > picture.contents > img.absolute\",\"boundingRect\":{\"top\":65,\"bottom\":806,\"left\":0,\"right\":412,\"width\":412,\"height\":741},\"snippet\":\"<img src=\\\"http://127.0",
+      "nonComp": 0,
+      "forcedSummary": "Forced reflow",
+      "lcpEl": "StandardDish1.w768.a…",
+      "errors": []
+    }
+  ],
+  "note": "Shell HTML 5KB matching live deploy. Run1 failed (null)."
+}

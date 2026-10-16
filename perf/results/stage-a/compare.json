@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-10-16T08:14:46.244Z",
+  "results": [
+    {
+      "label": "live-1",
+      "url": "https://www.datagram.ng/",
+      "perf": 30,
+      "fcp": 3262.56,
+      "lcp": 7507.0599999999995,
+      "tbt": 10393,
+      "cls": 0,
+      "si": 15118.915596987646,
+      "ttfb": 140,
+      "transfer": 935285,
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "lcpBreakdown": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 661.7849999694824
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 3404.4550000305176
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 237.656
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 1646.159
+        }
+      ],
+      "renderBlockingMs": 150,
+      "htmlBytesHint": null
+    },
+    {
+      "label": "live-2",
+      "url": "https://www.datagram.ng/",
+      "perf": 53,
+      "fcp": 1006.413,
+      "lcp": 3882.4130000000005,
+      "tbt": 4604.5,
+      "cls": 0,
+      "si": 5681.4489274164425,
+      "ttfb": 113,
+      "transfer": 1244,
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "lcpBreakdown": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 128.377
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 1912.257
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 267.034
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 204.892
+        }
+      ],
+      "renderBlockingMs": 0,
+      "htmlBytesHint": null
+    },
+    {
+      "label": "live-3",
+      "url": "https://www.datagram.ng/",
+      "perf": 33,
+      "fcp": 3042.4412,
+      "lcp": 7120.9412,
+      "tbt": 7851.500000000001,
+      "cls": 0.000315,
+      "si": 8746.76833477932,
+      "ttfb": 115,
+      "transfer": 935082,
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high should be applied",
+          "value": false
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "lcpBreakdown": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 129.163
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 2825.63
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 216.245
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 332.822
+        }
+      ],
+      "renderBlockingMs": 300,
+      "htmlBytesHint": null
+    },
+    {
+      "label": "local-prerender",
+      "url": "http://127.0.0.1:4175/",
+      "perf": 33,
+      "fcp": 3006.8857000000003,
+      "lcp": 6426.32855,
+      "tbt": 2620.585724999999,
+      "cls": 0,
+      "si": 15779.835438247383,
+      "ttfb": 554,
+      "transfer": 504110,
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high applied",
+          "value": true
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": true
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "lcpBreakdown": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 556.197
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 28.904
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 7792.731
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 2781.521
+        }
+      ],
+      "renderBlockingMs": 196,
+      "htmlBytesHint": null
+    },
+    {
+      "label": "local-shell",
+      "url": "http://127.0.0.1:4175/",
+      "perf": 37,
+      "fcp": 3048.0897,
+      "lcp": 4902.112125,
+      "tbt": 18769.455149999998,
+      "cls": 0,
+      "si": 36893.56504761606,
+      "ttfb": 104,
+      "transfer": 487894,
+      "lcpDiscovery": {
+        "priorityHinted": {
+          "label": "fetchpriority=high applied",
+          "value": true
+        },
+        "requestDiscoverable": {
+          "label": "Request is discoverable in initial document",
+          "value": false
+        },
+        "eagerlyLoaded": {
+          "label": "LCP resources should not use loading=lazy",
+          "value": true
+        }
+      },
+      "lcpBreakdown": [
+        {
+          "subpart": "timeToFirstByte",
+          "label": "Time to first byte",
+          "duration": 116.694
+        },
+        {
+          "subpart": "resourceLoadDelay",
+          "label": "Resource load delay",
+          "duration": 6910.868
+        },
+        {
+          "subpart": "resourceLoadDuration",
+          "label": "Resource load duration",
+          "duration": 27.766
+        },
+        {
+          "subpart": "elementRenderDelay",
+          "label": "Element render delay",
+          "duration": 5412.669
+        }
+      ],
+      "renderBlockingMs": 399,
+      "htmlBytesHint": null
+    }
+  ]
+}

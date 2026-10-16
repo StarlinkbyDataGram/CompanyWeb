@@ -1,0 +1,81 @@
+{
+  "label": "live-2",
+  "url": "https://www.datagram.ng/",
+  "perf": 53,
+  "fcp": 1006.413,
+  "lcp": 3882.4130000000005,
+  "tbt": 4604.5,
+  "cls": 0,
+  "si": 5681.4489274164425,
+  "ttfb": 113,
+  "transfer": 1244,
+  "lcpDiscovery": {
+    "priorityHinted": {
+      "label": "fetchpriority=high should be applied",
+      "value": false
+    },
+    "requestDiscoverable": {
+      "label": "Request is discoverable in initial document",
+      "value": false
+    },
+    "eagerlyLoaded": {
+      "label": "LCP resources should not use loading=lazy",
+      "value": true
+    }
+  },
+  "lcpBreakdown": [
+    {
+      "subpart": "timeToFirstByte",
+      "label": "Time to first byte",
+      "duration": 128.377
+    },
+    {
+      "subpart": "resourceLoadDelay",
+      "label": "Resource load delay",
+      "duration": 1912.257
+    },
+    {
+      "subpart": "resourceLoadDuration",
+      "label": "Resource load duration",
+      "duration": 267.034
+    },
+    {
+      "subpart": "elementRenderDelay",
+      "label": "Element render delay",
+      "duration": 204.892
+    }
+  ],
+  "renderBlockingMs": 0,
+  "htmlBytesHint": null,
+  "auditsSample": {
+    "forced": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "source",
+          "valueType": "source-location",
+          "label": "Top function call"
+        },
+        {
+          "key": "reflowTime",
+          "valueType": "ms",
+          "granularity": 1,
+          "label": "Total reflow time"
+        }
+      ],
+      "items": [
+        {
+          "source": {
+            "type": "source-location",
+            "url": "https://www.datagram.ng/assets/vendor-khI0NAQz.js",
+            "urlProvider": "network",
+            "line": 25,
+            "column": 1909
+          },
+          "reflowTime": 745.087
+        }
+      ]
+    },
+    "unusedJs": []
+  }
+}
