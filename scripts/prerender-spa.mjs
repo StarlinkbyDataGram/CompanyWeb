@@ -21,8 +21,22 @@ const PORT = 45678;
 /** The blog index embeds every card image. Leave it as the shell until those files are smaller. */
 const SKIP_ROUTES = new Set();
 
+function isVercel() {
+  return process.env.VERCEL === "1" || process.env.VERCEL === "true";
+}
+
 function shouldSkipPrerender() {
-  return process.env.SKIP_PRERENDER === "1" || process.env.SKIP_PRERENDER === "true";
+  const skip = process.env.SKIP_PRERENDER === "1" || process.env.SKIP_PRERENDER === "true";
+  if (!skip) return false;
+  // Never silently ship the empty Vite shell from a Vercel build.
+  if (isVercel() && process.env.ALLOW_SKIP_PRERENDER !== "1" && process.env.ALLOW_SKIP_PRERENDER !== "true") {
+    console.error(
+      "SKIP_PRERENDER is set, but this is a Vercel build. Refusing to skip — production would serve an empty #root.\n" +
+        "Unset SKIP_PRERENDER, or set ALLOW_SKIP_PRERENDER=1 only for an emergency shell deploy.",
+    );
+    process.exit(1);
+  }
+  return true;
 }
 
 function routeToFile(route) {
@@ -49,7 +63,7 @@ async function routesFromSitemap() {
 }
 
 function installChromeLibraries() {
-  if (process.env.VERCEL !== "1" && process.env.VERCEL !== "true") return;
+  if (!isVercel()) return;
   const attempts = [
     "dnf install -y nss nspr atk at-spi2-atk cups-libs libdrm libXcomposite libXdamage libXrandr mesa-libgbm pango alsa-lib gtk3",
     "apt-get update && apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libpango-1.0-0 libasound2 libgtk-3-0",
@@ -198,6 +212,13 @@ async function prerender() {
     console.error(failed.join("\n"));
     process.exit(1);
   }
+
+  // Integrity gate: fail if home (and lab routes) are still the empty shell.
+  const { execFileSync } = await import("child_process");
+  execFileSync(process.execPath, [path.resolve(__dirname, "check-prerender.mjs")], {
+    stdio: "inherit",
+    env: process.env,
+  });
 }
 
 prerender().catch((err) => {
