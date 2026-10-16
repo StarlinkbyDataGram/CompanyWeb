@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="container grid gap-8 py-12 md:grid-cols-4">
           <div>
             <div className="mb-3 flex items-center gap-2">
-              <Picture src="/starlinklogo.png" alt={`${BRAND_NAME} logo`} className="h-8 w-auto" sizes="32px" />
+              <Picture src="/starlinklogo.png" alt={`${BRAND_NAME} logo`} className="h-8 w-auto" sizes="32px" width={32} height={32} />
               <div className="font-extrabold leading-tight">
                 <span className="tracking-tight">{BRAND_NAME}</span>
               </div>

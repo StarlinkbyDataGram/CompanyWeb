@@ -193,6 +193,8 @@ export default function Header() {
               alt="DataGram logo"
               className="h-10 w-auto"
               sizes="40px"
+              width={40}
+              height={40}
             />
             <div className="font-extrabold leading-tight">
               <span className="tracking-tight text-[15px] sm:text-[18px] md:text-[22px] xl:text-[25px] whitespace-nowrap">
@@ -258,7 +260,7 @@ export default function Header() {
                               return (
                                 <div className="overflow-hidden rounded-md">
                                   {servicesPreview ? (
-                                    <Picture src={active?.image || ""} alt={active?.title || ""} className="h-40 w-full object-cover" sizes="220px" />
+                                    <Picture src={active?.image || ""} alt={active?.title || ""} className="h-40 w-full object-cover" sizes="220px" width={220} height={160} loading="lazy" />
                                   ) : (
                                     <div className="h-40 w-full bg-muted" />
                                   )}
@@ -405,7 +407,7 @@ export default function Header() {
                               return active ? (
                                 <div className="overflow-hidden rounded-md">
                                   {productsPreview ? (
-                                    <Picture src={active.images?.[0] ?? active.image ?? "/images/products/starlink-mini/starlink.jpeg"} alt={active.name} className="h-40 w-full object-cover" sizes="220px" />
+                                    <Picture src={active.images?.[0] ?? active.image ?? "/images/products/starlink-mini/starlink.jpeg"} alt={active.name} className="h-40 w-full object-cover" sizes="220px" width={220} height={160} loading="lazy" />
                                   ) : (
                                     <div className="h-40 w-full bg-muted" />
                                   )}

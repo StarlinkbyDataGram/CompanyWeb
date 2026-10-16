@@ -22,6 +22,9 @@ export default function ProductCard({ product, iconActions }: { product: Product
         <Picture sizes="(max-width: 768px) 100vw, 33vw"
           src={imageSrc}
           alt={product.name}
+          width={640}
+          height={360}
+          loading="lazy"
           className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110 md:h-56"
           style={{ objectPosition: cropFromSrc(imageSrc) }}
         />
