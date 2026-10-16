@@ -333,3 +333,29 @@ Font requests are now one hop from HTML (preload). TBT remains noisy on this mac
 
 Scores on this Mac remain TBT-dominated; structural image/animation audits stay clean.
 
+## B7 — drop `/api/faqs` on the home FAQ (16 Oct 2026)
+
+**Changes:** Home `FAQ()` uses static `@/data/faq` only (same source as FAQPage JSON-LD). Removed the `fetch("/api/faqs")` that 500’d on Vercel and only filled the console.
+
+**Lab (`perf/results/b7b9`):** `/api/faqs` request count **0**. FAQ JSON-LD still built from `FAQ_ENTRIES` / `@/data/faq`.
+
+## B8 — asset cache headers + real 404 for missing static files (16 Oct 2026)
+
+**Changes:** With legacy `builds` + `routes`, top-level `headers` were ignored on live (`max-age=0` on `/assets/*`). Cache-Control is now on the routes themselves (`continue: true`) for `/assets/*` and `/fonts/*`. After `filesystem`, missing extensioned paths (`.json`, `.txt`, images, etc.) return **404** via `public/404.html` instead of the SPA shell. HTML routes still fall through to `spa.html`.
+
+**Lab:** first-load Lighthouse does not exercise CDN cache. Confirm after deploy:
+`curl -sI https://www.datagram.ng/assets/<hashed>.js` → `cache-control: public, max-age=31536000, immutable`
+`curl -sI https://www.datagram.ng/ai-catalog.json` → **404** (not 200 HTML).
+CrUX TTFB remains an OWNER / CDN item.
+
+## B9 — a11y / agent surfaces (16 Oct 2026)
+
+**Changes:**
+- Header: `aria-label="Main"` on `<nav>`, not redundant `role="navigation"` on `<header>`.
+- Footer: Facebook/Instagram `aria-label`s; designer link contrast raised.
+- BlogTeaser: sr-only post title on “Read More”.
+- Home: hero slide titles are `<p>` (document `h1` first); survey card not an out-of-order `h3`; section pills use `#000066` on light navy wash; Next buttons `green-700`.
+- `llms.txt`: markdown with real links. No fake `ai-catalog.json` (missing file → 404 via B8).
+
+**Lighthouse `/` (`perf/results/b7b9`) a11y:** median **97** (was 92). `color-contrast`, `heading-order`, `link-name` **pass**. Perf median still TBT-noisy on this machine (scores 26–57 across runs).
+

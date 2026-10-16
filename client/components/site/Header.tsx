@@ -185,7 +185,7 @@ export default function Header() {
       </header>
 
       {/* Main navigation bar (sticky) */}
-      <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 pt-[env(safe-area-inset-top)]" role="navigation" aria-label="Main">
+      <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 pt-[env(safe-area-inset-top)]">
         <div className="container flex h-16 items-center gap-2 lg:gap-3 xl:gap-4 px-3 sm:px-5">
           <Link to="/" className="flex items-center gap-2">
             <Picture
@@ -203,7 +203,7 @@ export default function Header() {
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-6 ml-auto">
+          <nav className="hidden lg:flex items-center gap-3 lg:gap-4 xl:gap-6 ml-auto" aria-label="Main">
             {nav.map((n) => {
               if (!n.scrollTo && n.label == "Services") {
                 return (

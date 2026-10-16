@@ -1,0 +1,39 @@
+{
+  "scores": [
+    57,
+    26,
+    32
+  ],
+  "a11y": [
+    97,
+    97,
+    97
+  ],
+  "n": 3,
+  "median": {
+    "perf": 32,
+    "a11y": 97,
+    "fcp": "4.9s",
+    "lcp": "6.4s",
+    "tbt": "4255ms",
+    "cls": 0,
+    "blocking": "0ms"
+  },
+  "b7": {
+    "faqsRequestCount": 0
+  },
+  "a11yAudits": {
+    "contrast": {
+      "score": 1,
+      "count": 0,
+      "items": []
+    },
+    "headingOrder": {
+      "score": 1,
+      "items": []
+    },
+    "linkName": {
+      "score": 1
+    }
+  }
+}

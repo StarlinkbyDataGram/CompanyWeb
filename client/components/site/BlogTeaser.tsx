@@ -91,7 +91,10 @@ export default function BlogTeaser() {
                       {post.readTime}
                     </div>
                     <Button asChild variant="ghost" size="sm" className="hover:bg-blue-600 hover:text-white">
-                      <Link to={`/blog/${post.slug}`}>Read More</Link>
+                      <Link to={`/blog/${post.slug}`}>
+                        Read More
+                        <span className="sr-only">: {post.title}</span>
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>

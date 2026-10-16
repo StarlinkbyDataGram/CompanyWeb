@@ -53,17 +53,19 @@ export default function Footer() {
                 href="https://facebook.com/datagramnetwork"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors hover:bg-primary/20"
+                aria-label="DataGram on Facebook"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 text-primary transition-colors hover:bg-primary/25"
               >
-                <Facebook className="h-4 w-4" />
+                <Facebook className="h-4 w-4" aria-hidden />
               </a>
               <a
                 href="https://instagram.com/datagramnetwork"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors hover:bg-primary/20"
+                aria-label="DataGram on Instagram"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/15 text-primary transition-colors hover:bg-primary/25"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-4 w-4" aria-hidden />
               </a>
             </div>
           </div>
@@ -186,12 +188,12 @@ export default function Footer() {
                 Terms
               </Link>
             </div>
-            <p className="pt-1 text-[11px] tracking-wide text-foreground/45">
+            <p className="pt-1 text-[11px] tracking-wide text-foreground/70">
               <a
                 href="https://wa.me/2349038899400"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors hover:text-foreground/70"
+                className="underline-offset-2 transition-colors hover:text-foreground hover:underline"
               >
                 Need a website like this? Contact the designer.
               </a>
