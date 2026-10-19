@@ -8,6 +8,7 @@
  * Set PRERENDER_ONLY=/a,/b to snapshot a subset.
  */
 import { execSync } from "child_process";
+import { existsSync } from "fs";
 import http from "http";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -77,6 +78,28 @@ function installChromeLibraries() {
     }
   }
   console.warn("Could not install Chrome libraries. Puppeteer will try to launch anyway.");
+}
+
+/**
+ * pnpm 10 does not run dependency postinstall scripts, so Puppeteer's Chrome
+ * build is never downloaded. Vercel also does not keep /vercel/.cache/puppeteer
+ * between builds. Fetch the pinned Chrome only when the binary is missing.
+ */
+async function ensureChrome(puppeteer) {
+  const executable = puppeteer.executablePath();
+  if (existsSync(executable)) return executable;
+
+  console.log(`Chrome for Puppeteer is not installed (${executable}).`);
+  console.log("Downloading the Chrome build this Puppeteer version expects…");
+  process.env.PUPPETEER_CHROME_HEADLESS_SHELL_SKIP_DOWNLOAD ??= "true";
+  const { downloadBrowsers } = await import("puppeteer/internal/node/install.js");
+  await downloadBrowsers();
+
+  const installed = puppeteer.executablePath();
+  if (!existsSync(installed)) {
+    throw new Error(`Chrome is still missing after download (looked in ${installed}).`);
+  }
+  return installed;
 }
 
 function startServer(handler) {
@@ -163,6 +186,7 @@ async function prerender() {
   await fs.copyFile(path.join(SPA_ROOT, "index.html"), path.join(SPA_ROOT, "spa.html"));
 
   const { default: puppeteer } = await import("puppeteer");
+  await ensureChrome(puppeteer);
   const { default: handler } = await import("serve-handler");
   const server = await startServer(handler);
   const browser = await puppeteer.launch({
