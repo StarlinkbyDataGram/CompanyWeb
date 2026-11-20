@@ -2205,9 +2205,12 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       },
     ],
     relatedLinks: [
+      { label: "Offline / Searching troubleshooting", href: "/blog/troubleshooting-starlink-offline-searching-nigeria" },
+      { label: "Cable disconnected guide (V3/V4)", href: "/blog/fix-starlink-cable-disconnected-error-v3-v4" },
       { label: "Starlink Home Installation", href: "/starlink-home-installation" },
       { label: "Starlink for Enterprise Nigeria", href: "/starlink-enterprise-nigeria" },
       { label: "Our Work", href: "/our-work" },
+      { label: "Support", href: "/support" },
     ],
     ctaBanner: {
       title: "Need a Repair or Moving Address?",

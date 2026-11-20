@@ -263,6 +263,7 @@ export const trendingBArticles: SeoArticle[] = [
       'Fix Starlink "Cable Disconnected" on V3/V4 dishes: connector checks, bend radius, gland faults, and when to replace integrated cable.',
     author: "DataGram Nigeria",
     date: "2026-06-11",
+    updated: "2026-11-19",
     readTime: "11 min read",
     category: "Currently Trending",
     image: img("blog/fix-starlink-cable-disconnected-error-v3-v4.jpg"),
@@ -271,7 +272,7 @@ export const trendingBArticles: SeoArticle[] = [
     featured: false,
     serviceCta: {
       label: "Cable fault diagnosis",
-      href: "/starlink-home-installation",
+      href: "/starlink-repair-relocation-nigeria",
       blurb: "We trace intermittent disconnects, replace glands, and reroute chew-prone runs.",
     },
     blocks: blocks(
@@ -293,9 +294,9 @@ export const trendingBArticles: SeoArticle[] = [
       p("Update router firmware in the Starlink app. Factory reset is last resort — you'll reconfigure Wi-Fi. Note error timestamps: only during generator transfer points to UPS/sag, not cable."),
       h2("When the cable is actually failed"),
       p("Internal conductor break shows continuity failure or constant disconnect regardless of bend test. Replacement means new dish assembly or official service path — integrated cable isn't a ₦2,000 patch lead. Contact Starlink support with photos; warranty may apply for defects, not rat damage."),
-      p("DataGram reroutes and replaces runs on [home installs](/starlink-home-installation) — we document gland torque and conduit colour for estate re-entry."),
+      p("DataGram reroutes and replaces runs on [repair visits](/starlink-repair-relocation-nigeria) and [home installs](/starlink-home-installation) — we document gland torque and conduit colour for estate re-entry. If the app shows Searching or Offline without a clear cable message, start with the [offline troubleshooting checklist](/blog/troubleshooting-starlink-offline-searching-nigeria) before ordering a new dish."),
       h2("Prevention on new installs"),
-      p("Proper glands, UV conduit, rodent armour, and slack coiled indoors — not tensioned across the yard. One install day beats months of 'Cable Disconnected' WhatsApp pings."),
+      p("Proper glands, UV conduit, rodent armour, and slack coiled indoors — not tensioned across the yard. One install day beats months of 'Cable Disconnected' WhatsApp pings. See completed outdoor routing examples on [Our Work](/our-work)."),
       h2("Gen 3 vs Gen 4 connector differences"),
       p("Both generations use integrated cable — troubleshooting logic is identical even if router industrial design changed. Gen 4 may use different power supply form factor; still one logical cable path dish to power. Don't assume a Gen 2 Ethernet adapter lesson applies to V3/V4 — verify generation before buying accessories."),
       h2("Moisture and harmattan dust"),
@@ -318,7 +319,7 @@ export const trendingBArticles: SeoArticle[] = [
       p("If disconnect correlates with estate generator start, log voltage at the outlet during transfer — add UPS before replacing an innocent cable. Field teams in [Port Harcourt](/starlink-installation-rivers-state-port-harcourt) see both faults weekly."),
       p("Document outdoor cable length at install — when spare is consumed by reroute, tension on the dish port rises and disconnect returns. Leave service loop at mount per manufacturer bend guidance."),
     ),
-    cta: "Still disconnected after these checks? [Contact DataGram](/contact) — we diagnose V3/V4 integrated cable faults on [home installation](/starlink-home-installation) visits and reroute before you buy unnecessary hardware.",
+    cta: "Still disconnected after these checks? [Contact DataGram](/contact) — we diagnose V3/V4 integrated cable faults on [repair](/starlink-repair-relocation-nigeria) and [home installation](/starlink-home-installation) visits and reroute before you buy unnecessary hardware.",
     faqs: faqs(
       {
         question: "Can I replace just the Starlink V3 cable?",

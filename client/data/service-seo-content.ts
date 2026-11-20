@@ -1,6 +1,8 @@
 export type ServiceSeoBlock = {
   sections: { heading: string; paragraphs: string[] }[];
   faqs: { question: string; answer: string }[];
+  /** Contextual internal links shown on the service detail page */
+  relatedLinks?: { label: string; href: string }[];
 };
 
 export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
@@ -10,20 +12,20 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
         heading: "Why professional Starlink installation matters in Nigeria",
         paragraphs: [
           "Buying the kit is only the first step. Nigerian roofs often mix concrete, parapets, and shared walls where drilling rules apply. Our installers document cable paths, torque mounts to manufacturer guidance, and ground outdoor shields to reduce mystery disconnects after the first rains.",
-          "Voice assistants surface businesses that clearly describe surveys, timelines, and what is included. DataGram lists those steps up front so procurement teams can approve budgets faster than with vague “we install Starlink” pages.",
+          "Equipment prices on our product pages are equipment-only. Installation labour, conduit, UPS, and mesh are quoted after a site survey — not as a hidden package fee. Voice-friendly pages that name surveys, timelines, and deliverables help procurement approve budgets faster than vague “we install Starlink” claims.",
         ],
       },
       {
         heading: "Delivery, activation, and same-week installs when possible",
         paragraphs: [
           "We coordinate logistics for busy cities like Lagos and Abuja, then schedule activation once obstruction checks pass. If your estate requires security clearance, we build that time into the plan so you are not surprised by shifted dates.",
-          "Customers comparing “buy Starlink Nigeria” offers should verify kit authenticity, warranty paths, and who performs the actual roof work. We keep serials documented and walk you through app-based checks so you know the hardware is healthy before we leave site.",
+          "Customers comparing “buy Starlink Nigeria” offers should verify kit authenticity, warranty paths, and who performs the actual roof work. We keep serials documented and walk you through app-based checks so you know the hardware is healthy before we leave site. Starlink monthly subscriptions remain a separate payment through Starlink.",
         ],
       },
       {
         heading: "What you receive on handover day",
         paragraphs: [
-          "Handover includes labeled cables, photo dossier of the route, baseline speed tests from your desk locations, and quick training on power-cycle order. Businesses also receive optional PDF diagrams for IT teams. Ask about extended support retainers if you lack full-time network staff.",
+          "Handover includes labeled cables, photo dossier of the route, baseline speed tests from your desk locations, and quick training on power-cycle order. Businesses also receive optional PDF diagrams for IT teams. Ask about whole-premises WiFi or backup power if indoor coverage or NEPA flickers are already a problem — those are complementary services, not automatic inclusions.",
         ],
       },
     ],
@@ -44,26 +46,34 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
           "We prepare simple scope sheets for facility managers and can propose ballasted or non-penetrating solutions when structurally appropriate.",
       },
     ],
+    relatedLinks: [
+      { label: "Products catalogue", href: "/products" },
+      { label: "Home installation landing", href: "/starlink-home-installation" },
+      { label: "Whole-premises WiFi", href: "/services/whole-premises" },
+      { label: "Backup power", href: "/services/backup-power" },
+      { label: "Our Work", href: "/our-work" },
+      { label: "Request a quote", href: "/contact" },
+    ],
   },
   "whole-premises": {
     sections: [
       {
         heading: "Designing WiFi that actually fills every room",
         paragraphs: [
-          "Starlink brings fast WAN, but indoor WiFi is still physics. Thick concrete, mirrored glass, and microwave noise all attenuate signals. We map primary usage zones—bedrooms, home offices, TV corners—and place wired backhaul where possible before layering mesh.",
-          "For offices, VLANs isolate guests from finance traffic while keeping multicast off segments that break POS systems. We document SSIDs, passwords, and DHCP ranges so your IT vendor is not guessing later.",
+          "Starlink brings fast WAN, but indoor WiFi is still physics. Thick concrete, mirrored glass, and microwave noise all attenuate signals. We map primary usage zones—bedrooms, home offices, TV corners—and place wired backhaul where possible before layering mesh. Pair this service with professional dish installation when the roof mount is not yet done.",
+          "For offices, VLANs isolate guests from finance traffic while keeping multicast off segments that break POS systems. We document SSIDs, passwords, and DHCP ranges so your IT vendor is not guessing later. Enterprise plan selection and dual-WAN design sit on our enterprise installation path when the business need is broader than mesh alone.",
         ],
       },
       {
         heading: "Outdoor coverage for pools, cafeterias, and parking kiosks",
         paragraphs: [
-          "Outdoor access points need UV-rated cable, drip loops, and surge protection on both data and power paths. We specify grounding that survives Lagos salt air or northern dust seasons depending on your site.",
+          "Outdoor access points need UV-rated cable, drip loops, and surge protection on both data and power paths. We specify grounding that survives Lagos salt air or northern dust seasons depending on your site. Distant buildings beyond mesh range may need a long-range point-to-point link instead of more indoor nodes.",
         ],
       },
       {
         heading: "When fiber already exists on site",
         paragraphs: [
-          "Many clients want Starlink as failover while keeping fiber primary. We configure dual-WAN routers with health checks so failover is automatic and logged. That design is popular with banks, clinics, and creative studios that cannot drop calls.",
+          "Many clients want Starlink as failover while keeping fiber primary. We configure dual-WAN routers with health checks so failover is automatic and logged. That design is popular with banks, clinics, and creative studios that cannot drop calls — and it depends on clean power as much as radio placement.",
         ],
       },
     ],
@@ -84,20 +94,27 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
           "We segment cameras when possible to reduce broadcast noise and improve security isolation.",
       },
     ],
+    relatedLinks: [
+      { label: "Sales & installation", href: "/services/sales-installation" },
+      { label: "Long-range WiFi", href: "/services/long-range" },
+      { label: "Backup power", href: "/services/backup-power" },
+      { label: "Estate WiFi landing", href: "/starlink-estate-wifi-nigeria" },
+      { label: "Enterprise installation", href: "/starlink-enterprise-nigeria" },
+    ],
   },
   "long-range": {
     sections: [
       {
         heading: "Kilometer-scale links with honest throughput math",
         paragraphs: [
-          "Point-to-point radios can bridge Starlink from a main building to guard houses, warehouses, or secondary offices, but rain fade and fresnel clearance matter. We document expected Mbps under clear skies versus heavy rain so finance teams understand variability.",
+          "Point-to-point radios can bridge Starlink from a main building to guard houses, warehouses, or secondary offices, but rain fade and fresnel clearance matter. We document expected Mbps under clear skies versus heavy rain so finance teams understand variability. Use whole-premises mesh first when the problem is indoor rooms on one plot; use long-range when the second building is truly distant.",
           "Line-of-sight is not just “I can see the tower.” Trees grow, new buildings rise, and cranes swing. We photograph paths and recommend mast heights that preserve fresnel clearance where landlords allow.",
         ],
       },
       {
         heading: "Power and lightning considerations",
         paragraphs: [
-          "Long cable runs increase exposure to surges. We bond shields, use outdoor-rated POE paths, and isolate indoor switches from direct lightning strikes on distant poles. Northern sites may add extra shielding for dust ingress at cable glands.",
+          "Long cable runs increase exposure to surges. We bond shields, use outdoor-rated POE paths, and isolate indoor switches from direct lightning strikes on distant poles. Northern sites may add extra shielding for dust ingress at cable glands. Backup power on both ends keeps the radio path alive through generator transfers.",
         ],
       },
     ],
@@ -117,6 +134,12 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
         answer:
           "All wireless links fade in rain; we set expectations up front and may recommend fiber if uptime is absolute.",
       },
+    ],
+    relatedLinks: [
+      { label: "Whole-premises WiFi", href: "/services/whole-premises" },
+      { label: "Backup power", href: "/services/backup-power" },
+      { label: "Sales & installation", href: "/services/sales-installation" },
+      { label: "Our Work", href: "/our-work" },
     ],
   },
   "wisp-setup": {
@@ -158,14 +181,14 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
       {
         heading: "Keeping Starlink online when the grid flickers",
         paragraphs: [
-          "Routers rebooting during generator transfers cause the most avoidable downtime. We measure inrush currents, separate neutrals where needed, and place online UPS segments on sensitive gear. Lithium batteries sized to real loads outperform oversized lead-acid banks that never recharge fully between outages.",
+          "Routers rebooting during generator transfers cause the most avoidable downtime. We measure inrush currents, separate neutrals where needed, and place online UPS segments on sensitive gear. Lithium batteries sized to real loads outperform oversized lead-acid banks that never recharge fully between outages. Pair backup power with dish installation when the kit is new, or with repair visits when offline loops appear only at changeover.",
           "Solar assist is attractive but needs honest shading analysis. A partially shaded string overheats unless modules use optimizers. We label disconnects clearly so estate electricians can isolate satellite circuits safely.",
         ],
       },
       {
         heading: "Enterprise expectations and maintenance",
         paragraphs: [
-          "Enterprises should plan battery replacement cycles and firmware updates for inverters. We document test procedures so night staff can verify autonomy monthly without calling engineers.",
+          "Enterprises should plan battery replacement cycles and firmware updates for inverters. We document test procedures so night staff can verify autonomy monthly without calling engineers. Mesh WiFi and dual-WAN designs still need clean power — backup power is complementary to networking services, not a substitute for them.",
         ],
       },
     ],
@@ -185,6 +208,12 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
         answer:
           "We can bundle approved lithium packs and inverters with installation depending on stock and site survey results.",
       },
+    ],
+    relatedLinks: [
+      { label: "Sales & installation", href: "/services/sales-installation" },
+      { label: "Whole-premises WiFi", href: "/services/whole-premises" },
+      { label: "Enterprise installation", href: "/starlink-enterprise-nigeria" },
+      { label: "Power backup article", href: "/blog/power-backup-starlink-nigeria" },
     ],
   },
   accessories: {
@@ -260,14 +289,14 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
       {
         heading: "Throughput, SLAs, and realistic benchmarking",
         paragraphs: [
-          "Enterprise buyers want Mbps numbers, jitter, and failover drills—not marketing fluff. We run iperf-style tests where permitted, log bufferbloat observations, and capture traceroutes to your critical SaaS endpoints. SLAs start with honest baselines, not promises we cannot measure.",
-          "Hybrid WAN designs may combine fiber, MPLS, LTE, and Starlink. We document precedence, VPN pass-through needs, and VoIP DSCP markings so changes months later do not break QoS.",
+          "Enterprise buyers want Mbps numbers, jitter, and failover drills—not marketing fluff. We run iperf-style tests where permitted, log bufferbloat observations, and capture traceroutes to your critical SaaS endpoints. SLAs start with honest baselines, not promises we cannot measure. Plan selection works best alongside a surveyed install and clear networking scope.",
+          "Hybrid WAN designs may combine fiber, MPLS, LTE, and Starlink. We document precedence, VPN pass-through needs, and VoIP DSCP markings so changes months later do not break QoS. Whole-premises WiFi and backup power are complementary when staff density or generator culture would otherwise erase the plan upgrade.",
         ],
       },
       {
         heading: "Security reviews and documentation",
         paragraphs: [
-          "We deliver network diagrams, IP plans, and photo evidence of cable routes for auditors. Optional monitoring hooks export SNMP to your NOC if you operate 24/7 staff.",
+          "We deliver network diagrams, IP plans, and photo evidence of cable routes for auditors. Optional monitoring hooks export SNMP to your NOC if you operate 24/7 staff. Completed enterprise installs are listed on Our Work when the job is documented in our portfolio.",
         ],
       },
     ],
@@ -287,6 +316,13 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
         answer:
           "Signed test sheets, speed logs, and photos are packaged for your ITIL change record.",
       },
+    ],
+    relatedLinks: [
+      { label: "Enterprise installation landing", href: "/starlink-enterprise-nigeria" },
+      { label: "Sales & installation", href: "/services/sales-installation" },
+      { label: "Whole-premises WiFi", href: "/services/whole-premises" },
+      { label: "Backup power", href: "/services/backup-power" },
+      { label: "Our Work", href: "/our-work" },
     ],
   },
   "subscription-services": {

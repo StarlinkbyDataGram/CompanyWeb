@@ -194,6 +194,13 @@ export default function ServiceDetail() {
           <div className="rounded-md border bg-muted/40 p-4 text-sm text-foreground/80">
             <p className="font-semibold text-foreground">Helpful links</p>
             <ul className="mt-2 list-disc space-y-2 pl-4">
+              {seoExtra?.relatedLinks?.map((link) => (
+                <li key={link.href}>
+                  <Link className="text-primary underline-offset-4 hover:underline" to={link.href}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link className="text-primary underline-offset-4 hover:underline" to="/locations">
                   City installation pages
@@ -202,6 +209,11 @@ export default function ServiceDetail() {
               <li>
                 <Link className="text-primary underline-offset-4 hover:underline" to="/guide/starlink-nigeria">
                   Complete Nigeria guide
+                </Link>
+              </li>
+              <li>
+                <Link className="text-primary underline-offset-4 hover:underline" to="/our-work">
+                  Our Work
                 </Link>
               </li>
               <li>

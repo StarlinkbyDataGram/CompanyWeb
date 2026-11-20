@@ -99,13 +99,18 @@ export default function LocationDetail() {
               <Button asChild>
                 <Link to="/contact">Request install in {location.name}</Link>
               </Button>
-              {location.slug === "niger-delta" && (
+              {location.relatedInstallationPath && (
                 <Button asChild variant="outline">
-                  <Link to="/starlink-installation-niger-delta">Niger Delta install page</Link>
+                  <Link to={location.relatedInstallationPath}>
+                    {location.relatedInstallationLabel ?? `${location.name} installation page`}
+                  </Link>
                 </Button>
               )}
               <Button asChild variant="outline">
                 <Link to="/faq">Read Nigeria FAQ</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/our-work">Our Work</Link>
               </Button>
             </div>
           </div>

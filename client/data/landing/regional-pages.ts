@@ -127,6 +127,11 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     },
     coverageParagraph:
       "We install across Abuja FCT including Maitama, Asokoro, Wuse, Garki, Gwarinpa, Kubwa, Lugbe, Jabi, Kado, and the Nyanya–Mararaba corridor. Government layouts, diplomatic zones, and new estates along Airport Road are covered with survey-first scheduling.",
+    relatedLinks: [
+      { label: "Abuja city guide (/locations/abuja)", href: "/locations/abuja" },
+      { label: "Our Work", href: "/our-work" },
+      { label: "Home installation", href: "/starlink-home-installation" },
+    ],
     faqs: [
       {
         question: "Do you install Starlink in Abuja estates with strict drilling rules?",
@@ -214,6 +219,11 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     },
     coverageParagraph:
       "We cover Lagos Island, Victoria Island, Ikoyi, Lekki, Ajah, Ikeja, Surulere, Yaba, Festac, Amuwo-Odofin, Epe, Badagry, and surrounding corridors. High-rises, estates, and mainland studios get the same survey-first process.",
+    relatedLinks: [
+      { label: "Lagos city guide (/locations/lagos)", href: "/locations/lagos" },
+      { label: "Our Work", href: "/our-work" },
+      { label: "Home installation", href: "/starlink-home-installation" },
+    ],
     faqs: [
       {
         question: "Can you install on Lagos Island high-rises?",
@@ -300,6 +310,11 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     },
     coverageParagraph:
       "We serve Port Harcourt GRA, Old GRA, Trans-Amadi, Woji, Rumuokoro, Elelenwo, Akpajo, Oyigbo, Eleme, Mile 1, Diobu, and Bonny Island shore jobs when logistics are confirmed.",
+    relatedLinks: [
+      { label: "Port Harcourt city guide (/locations/port-harcourt)", href: "/locations/port-harcourt" },
+      { label: "Niger Delta coverage", href: "/starlink-installation-niger-delta" },
+      { label: "Our Work", href: "/our-work" },
+    ],
     faqs: [
       {
         question: "Are you based in Port Harcourt?",
@@ -672,6 +687,12 @@ export const regionalLandingPages: RegionalLandingConfig[] = [
     },
     coverageParagraph:
       "We cover Port Harcourt, Trans-Amadi, the Rivers GRA roads, Yenagoa, and the Bayelsa estates. We also cover Warri, Effurun, Asaba, Sapele, creek-side homes, and Bonny shore jobs when the jetty is open. Creek jobs are timed to the tide so the crew can finish in one trip. We fit dishes for camps and remote compounds. We are not part of any local energy or pipeline firm. We do not run a desk in Kano or the far north.",
+    relatedLinks: [
+      { label: "Niger Delta city guide (/locations/niger-delta)", href: "/locations/niger-delta" },
+      { label: "Port Harcourt & Rivers landing", href: "/starlink-installation-rivers-state-port-harcourt" },
+      { label: "Our Work", href: "/our-work" },
+      { label: "Maritime installation", href: "/starlink-offshore-maritime-installation" },
+    ],
     safetyStandards: {
       title: "Our Field Safety Standards",
       items: [

@@ -14,9 +14,9 @@ export const services: Service[] = [
     slug: "sales-installation",
     title: "Sales, Delivery, and Professional Installation",
     short:
-      "We sell Starlink equipment, deliver it, and provide professional activation and setup.",
+      "Buy Starlink hardware, schedule delivery, and book a surveyed install — equipment prices stay separate from labour.",
     description:
-      "We sell Starlink equipment and deliver it to your location. Our team of professionals will then install and set up the system to ensure you're up and running quickly and efficiently. We offer Starlink Activation service even in capacitated areas.",
+      "We sell Starlink equipment and deliver it to your location. Our team then installs and configures the system after a site survey so mounts, cable routes, and activation match your roof and estate rules. Equipment listed on our product pages is equipment-only; installation labour is quoted separately. We offer Starlink activation support even where some addresses only show Priority plans.",
     highlights: [
       "Starlink hardware sales",
       "Delivery & on-site installation",
@@ -29,9 +29,9 @@ export const services: Service[] = [
     slug: "whole-premises",
     title: "Whole-Premises WiFi Coverage",
     short:
-      "Mesh networking to extend Starlink, fiber and broadband across your entire property.",
+      "Mesh and access-point design so Starlink (or fibre) actually reaches every room, not only the hallway by the router.",
     description:
-      "We extend the Starlink, fiber and broadband WiFi signal to cover your entire premises via mesh networking, ensuring reliable internet connectivity throughout your home or office, both indoors and outdoors.",
+      "A working Starlink dish does not fix thick concrete or long corridors. We extend Starlink, fibre, and broadband WiFi across your home or office with mesh networking and, where needed, wired backhaul — indoors and outdoors — so bedrooms, offices, and outdoor zones stay usable.",
     highlights: ["Indoor & outdoor mesh", "Site survey & design", "Seamless roaming"],
     image: "/images/Whole-Premises.jpeg",
   
@@ -40,9 +40,9 @@ export const services: Service[] = [
     id: "long-range",
     slug: "long-range",
     title: "Long-Range WiFi Extension (up to 10km)",
-    short: "Extend WiFi using point-to-point links for large properties and multi-building sites.",
+    short: "Point-to-point links that carry Starlink or fibre WiFi to distant buildings when mesh alone is not enough.",
     description:
-      "Our team can extend the Starlink or Fiber WiFi signal to reach distant locations, up to 10km away, making it ideal for large properties or multiple buildings.",
+      "When a gatehouse, warehouse, or second building sits beyond mesh range, we design point-to-point WiFi links — up to about 10 km with clear line of sight — so the same Starlink or fibre backhaul can serve multiple structures without a second dish on every roof.",
     highlights: ["Point-to-point links", "Line-of-sight planning", "High-throughput radios"],
     image: "/images/Long-Range.jpeg",
   },
@@ -62,9 +62,9 @@ export const services: Service[] = [
     slug: "backup-power",
     title: "24/7 Backup Power",
     short:
-      "Backup power systems to keep your Starlink connectivity online during outages.",
+      "UPS and backup power sized so Starlink survives NEPA flickers and generator changeovers without mysterious offline loops.",
     description:
-      "We provide backup power solutions to ensure your Starlink system remains operational even during power outages, minimizing downtime and keeping you connected.",
+      "Most “Starlink is down” tickets after a grid blink are power problems, not dish faults. We design UPS and backup power so the dish and router ride through brief outages and generator transfers, with honest runtime targets instead of oversized banks you never recharge.",
     highlights: ["UPS & batteries", "Automatic failover", "Maintenance plans"],
     image: "/images/BackupPower.jpeg",
   },
@@ -93,9 +93,9 @@ export const services: Service[] = [
     id: "enterprise-plans",
     slug: "enterprise-plans",
     title: "High-Speed Enterprise Plans (up to 1000Mbps)",
-    short: "Enterprise-grade plans with SLA-focused performance up to 1000Mbps.",
+    short: "Business and organisation plan selection with install, networking, and failover scoped after survey.",
     description:
-      "We offer high-speed internet plans for businesses and organizations, with speeds up to 400Mbps, to support demanding applications and operations.",
+      "Offices and organisations need the right Starlink plan class, clean mounting, and often dual-WAN or VLAN handoff — not only a residential kit on the roof. We help select high-throughput business plans (field performance varies by plan and site; up to the order of 1000 Mbps where the service class allows) and pair them with professional installation and networking design.",
     highlights: ["SLA & monitoring", "High throughput", "Failover options"],
     image: "/images/High-Speed.jpeg",
   },

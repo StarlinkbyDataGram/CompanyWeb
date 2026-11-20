@@ -9,6 +9,12 @@ export type ServiceLocation = {
   intro: string;
   sections: { heading: string; paragraphs: string[] }[];
   relatedServiceSlugs: string[];
+  /**
+   * Paired commercial installation landing (self-canonical on its own URL).
+   * Location pages stay distinct and self-canonical; this link clarifies intent.
+   */
+  relatedInstallationPath?: string;
+  relatedInstallationLabel?: string;
 };
 
 export const serviceLocations: ServiceLocation[] = [
@@ -22,6 +28,8 @@ export const serviceLocations: ServiceLocation[] = [
     headline: "Starlink installation in Abuja by certified DataGram installers",
     intro:
       "Abuja homes, embassies, schools, and remote offices need dependable internet for video calls, cloud apps, and security systems. DataGram provides Starlink installation across the FCT, from Maitama and Wuse to Gwarinpa and airport logistics zones. We speak clearly about sky view, cable routes, and power resilience so you know what to expect before we climb the roof.",
+    relatedInstallationPath: "/starlink-installation-abuja",
+    relatedInstallationLabel: "Abuja installation landing (surveys, FAQs, booking)",
     sections: [
       {
         heading: "Where we install in Abuja",
@@ -49,6 +57,8 @@ export const serviceLocations: ServiceLocation[] = [
     headline: "Starlink installation across Lagos with same-week surveys on request",
     intro:
       "Lagos customers ask for quiet cable runs, surge-safe power, and WiFi that survives generator cycles. DataGram installs Starlink for apartments with landlord coordination, duplexes, factories on the mainland, and creative studios on the island. We plan for salt air near the coast and tight cable trays in commercial risers.",
+    relatedInstallationPath: "/starlink-installation-lagos",
+    relatedInstallationLabel: "Lagos installation landing (surveys, FAQs, booking)",
     sections: [
       {
         heading: "Neighborhoods we serve",
@@ -76,6 +86,8 @@ export const serviceLocations: ServiceLocation[] = [
     headline: "Starlink installation Port Harcourt customers trust for clean cable work",
     intro:
       "Port Harcourt’s mix of industrial plants, residential estates, and riverside properties demands flexible mounting and honest rain-season expectations. Our local crews understand estate security protocols and work with facility managers to keep installs tidy and well documented.",
+    relatedInstallationPath: "/starlink-installation-rivers-state-port-harcourt",
+    relatedInstallationLabel: "Port Harcourt & Rivers installation landing",
     sections: [
       {
         heading: "Industrial and residential coverage",
@@ -96,6 +108,8 @@ export const serviceLocations: ServiceLocation[] = [
     headline: "Starlink installation in the Niger Delta from our Port Harcourt operations base",
     intro:
       "DataGram is headquartered in Port Harcourt and serves the Niger Delta daily—Trans-Amadi plants, PH GRA estates, Yenagoa layouts, Warri–Effurun industrial roofs, Asaba capital installs, and shore-access creek compounds. We do not operate an install desk in Kano or northern Nigeria; our field strength is South-South logistics, humidity-rated outdoor cable, and marine-adjacent sites.",
+    relatedInstallationPath: "/starlink-installation-niger-delta",
+    relatedInstallationLabel: "Niger Delta installation landing (PH, Yenagoa, Warri)",
     sections: [
       {
         heading: "Where we work in the Niger Delta",
