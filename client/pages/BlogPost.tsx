@@ -282,6 +282,21 @@ export default function BlogPost() {
                   </div>
                 ) : null}
 
+                {article.related && article.related.length > 0 ? (
+                  <section className="mt-12">
+                    <h2 className="text-xl font-bold tracking-tight sm:text-2xl">Related reading</h2>
+                    <ul className="mt-4 space-y-2 text-sm leading-relaxed">
+                      {article.related.map((item) => (
+                        <li key={item.href}>
+                          <Link to={item.href} className="text-primary underline-offset-4 hover:underline">
+                            {item.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ) : null}
+
                 {article.faqs && article.faqs.length > 0 ? (
                   <section className="mt-12">
                     <h2 className="text-xl font-bold tracking-tight sm:text-2xl">Frequently asked questions</h2>

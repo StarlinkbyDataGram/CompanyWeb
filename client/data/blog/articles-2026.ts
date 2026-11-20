@@ -19,6 +19,7 @@ import { enterpriseMaritimeB2bFinalArticles } from "./articles/enterprise-mariti
 import { august2026SprintArticles } from "./articles/august-2026-sprint";
 import { september2026SprintArticles } from "./articles/september-2026-sprint";
 import { stage3Batch1Articles } from "./articles/stage3-batch1";
+import { november2026Articles } from "./articles/november-2026";
 
 import { legacyArticles } from "./articles/legacy";
 
@@ -40,6 +41,7 @@ export const allSeoArticles2026: SeoArticle[] = [
   ...august2026SprintArticles,
   ...september2026SprintArticles,
   ...stage3Batch1Articles,
+  ...november2026Articles,
 ];
 
 /** Published posts only. Drafts stay in source and out of the index, the route, and the sitemap. */

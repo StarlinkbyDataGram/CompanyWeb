@@ -283,6 +283,14 @@ export const serviceSeoContent: Record<string, ServiceSeoBlock> = {
           "We schedule updates when vessels are in port with stable power, documenting rollback plans if needed.",
       },
     ],
+    relatedLinks: [
+      { label: "Roaming and Global Priority", href: "/starlink-roaming-global-priority-nigeria" },
+      {
+        label: "Coastal vessel plan choice",
+        href: "/blog/starlink-nigerian-coastal-vessels-plan-territorial-international-waters",
+      },
+      { label: "Boat installation", href: "/starlink-boat-installation" },
+    ],
   },
   "enterprise-plans": {
     sections: [

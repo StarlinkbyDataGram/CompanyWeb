@@ -24,6 +24,7 @@ const modules = await Promise.all([
   import("../client/data/blog/articles/august-2026-sprint").then((mod) => ["august-2026-sprint", mod.august2026SprintArticles] as const),
   import("../client/data/blog/articles/september-2026-sprint").then((mod) => ["september-2026-sprint", mod.september2026SprintArticles] as const),
   import("../client/data/blog/articles/stage3-batch1").then((mod) => ["stage3-batch1", mod.stage3Batch1Articles] as const),
+  import("../client/data/blog/articles/november-2026").then((mod) => ["november-2026", mod.november2026Articles] as const),
 ]);
 
 const byModule = new Map<string, string>();

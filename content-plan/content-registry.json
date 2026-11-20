@@ -2575,7 +2575,8 @@
     "imageStatus": "not-started",
     "relatedSlugs": [
       "starlink-ocean-mode-50gb-priority-limit-explained",
-      "starlink-offshore-maritime-installation"
+      "starlink-offshore-maritime-installation",
+      "starlink-nigerian-coastal-vessels-plan-territorial-international-waters"
     ],
     "CTA": "/starlink-roaming-global-priority-nigeria",
     "currentStatus": "existing",
@@ -2607,12 +2608,13 @@
     "verificationStatus": "needs-source-check",
     "imageStatus": "not-started",
     "relatedSlugs": [
-      "starlink-ocean-mode-50gb-priority-limit-explained"
+      "starlink-ocean-mode-50gb-priority-limit-explained",
+      "starlink-nigerian-coastal-vessels-plan-territorial-international-waters"
     ],
     "CTA": "/starlink-offshore-maritime-installation",
     "currentStatus": "existing-section",
-    "lastReviewed": "2026-10-08",
-    "notes": "The 12-nautical-mile rule is a section of the Ocean Mode article. Verify the current boundary text before publishing. Do not guess a replacement rule. Bank angle: Explain when ocean billing begins and why crews need to understand the switch."
+    "lastReviewed": "2026-11-20",
+    "notes": "Product names stay on the Ocean Mode URL. The 12-mile legal line versus Starlink's coastal line is the 20 November 2026 coastal plan article, because that is a route question, not a second copy of the 50GB comparison. The Ocean Mode help page still did not return body text. No naira rate was added."
   },
   {
     "id": 82,
@@ -2735,12 +2737,13 @@
     "verificationStatus": "ok-to-plan",
     "imageStatus": "not-started",
     "relatedSlugs": [
-      "starlink-offshore-maritime-installation"
+      "starlink-offshore-maritime-installation",
+      "planning-starlink-data-ship-operations-crew-wifi"
     ],
     "CTA": "/starlink-offshore-maritime-installation",
     "currentStatus": "existing",
-    "lastReviewed": "2026-10-08",
-    "notes": "Stage 3 Batch 3, 9 October 2026: existing URL updated. Opening answers one terminal as uplink. VLAN design, including 50-plus crew, stays on this URL."
+    "lastReviewed": "2026-11-20",
+    "notes": "VLAN design, including 50-plus crew, stays on this URL. Data allocation for operations versus crew is the 20 November 2026 ship data article."
   },
   {
     "id": 86,
@@ -3224,5 +3227,142 @@
     "currentStatus": "not-a-url",
     "lastReviewed": "2026-10-08",
     "notes": "Internal method, not a public article. The registry and this Stage 2 plan are the deliverable. Do not publish a strategy post. Bank angle: Explain the hub-and-cluster model, content refresh cycle, Search Console feedback and maritime moat."
+  },
+  {
+    "id": 101,
+    "title": "Starlink on Nigerian Coastal Vessels: Choosing a Plan for Territorial and International Waters",
+    "slug": "starlink-nigerian-coastal-vessels-plan-territorial-international-waters",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink plan nigerian coastal vessel",
+    "secondaryKeywords": [
+      "starlink territorial waters nigeria",
+      "starlink international waters vessel",
+      "starlink ocean mode or global priority"
+    ],
+    "searchIntent": "Commercial investigation",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/blog/starlink-ocean-mode-50gb-priority-limit-explained",
+    "commercialIntent": "high",
+    "audience": "Coastal and offshore vessel operators choosing a plan",
+    "priority": "P0",
+    "sources": [
+      "November 2026 SEO plan section 3",
+      "Territorial Waters Act as amended 1998 (UN DOALOS / FAOLEX)",
+      "Exclusive Economic Zone Decree 1978 (UN DOALOS)",
+      "Starlink Roam and Maritime public pages, 20 November 2026"
+    ],
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-vessel",
+    "relatedSlugs": [
+      "starlink-ocean-mode-50gb-priority-limit-explained",
+      "starlink-roaming-global-priority-activation-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "published-2026-11-20",
+    "lastReviewed": "2026-11-20",
+    "notes": "Distinct from the Ocean Mode URL. That URL keeps the 50GB comparison. This URL is the route choice: Nigeria's 12-mile territorial sea and 200-mile EEZ versus Starlink's coastal product line. Ocean Mode help body was not readable. No dollar or naira rate published."
+  },
+  {
+    "id": 102,
+    "title": "Maritime Starlink Handover and Commissioning Checklist for Offshore Support Vessels",
+    "slug": "maritime-starlink-handover-commissioning-checklist-osv",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink commissioning checklist vessel",
+    "secondaryKeywords": [
+      "starlink handover offshore support vessel",
+      "starlink osv installation checklist nigeria"
+    ],
+    "searchIntent": "Practical / commercial",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/starlink-offshore-maritime-installation",
+    "commercialIntent": "high",
+    "audience": "OSV superintendents and vessel IT",
+    "priority": "P0",
+    "sources": [
+      "November 2026 SEO plan section 3",
+      "Existing DataGram maritime and boat installation pages"
+    ],
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-vessel",
+    "relatedSlugs": [
+      "starlink-maritime-ships-boats-nigeria-setup",
+      "starlink-boat-installation",
+      "starlink-offshore-maritime-installation"
+    ],
+    "CTA": "/starlink-offshore-maritime-installation",
+    "currentStatus": "published-2026-11-20",
+    "lastReviewed": "2026-11-20",
+    "notes": "Handover checklist. Not a class, SOLAS, or NIMASA certificate. The ships-and-boats setup URL stays the overview."
+  },
+  {
+    "id": 103,
+    "title": "Planning Starlink Data for Ship Operations and Crew Wi-Fi",
+    "slug": "planning-starlink-data-ship-operations-crew-wifi",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink data plan ship crew wifi",
+    "secondaryKeywords": [
+      "starlink crew data allowance vessel",
+      "starlink operations vs crew wifi"
+    ],
+    "searchIntent": "Planning",
+    "cluster": "Maritime & Offshore",
+    "parentHub": "/blog/configure-vlan-starlink-crew-wifi-bridge-operations",
+    "commercialIntent": "high",
+    "audience": "Vessel IT and operations leads",
+    "priority": "P0",
+    "sources": [
+      "November 2026 SEO plan section 3",
+      "Existing VLAN and Ocean Mode articles"
+    ],
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-vessel",
+    "relatedSlugs": [
+      "configure-vlan-starlink-crew-wifi-bridge-operations",
+      "starlink-ocean-mode-50gb-priority-limit-explained",
+      "starlink-marine-sdwan-integration"
+    ],
+    "CTA": "/starlink-marine-sdwan-integration",
+    "currentStatus": "published-2026-11-20",
+    "lastReviewed": "2026-11-20",
+    "notes": "Usage plan. VLAN build stays on the crew Wi-Fi URL. 3 GB/hour HD figure is labelled a planning guess. No new naira price."
+  },
+  {
+    "id": 104,
+    "title": "Why Starlink Will Not Activate at a Nigerian Address: A Verification Checklist",
+    "slug": "why-starlink-will-not-activate-nigerian-address",
+    "contentType": "blog",
+    "action": "NEW BLOG",
+    "primaryKeyword": "starlink will not activate nigeria",
+    "secondaryKeywords": [
+      "starlink activation failed nigerian address",
+      "starlink service address unavailable nigeria",
+      "starlink kit will not transfer nigeria"
+    ],
+    "searchIntent": "Troubleshooting",
+    "cluster": "Activation & Support",
+    "parentHub": "/blog/how-to-activate-starlink-nigeria",
+    "commercialIntent": "medium",
+    "audience": "Customers whose address will not activate",
+    "priority": "P0",
+    "sources": [
+      "November 2026 SEO plan section 3",
+      "Starlink activate, map, and hardware-transfer help",
+      "Existing activation, sold-out, transfer, and offline articles"
+    ],
+    "verificationStatus": "published-with-limits",
+    "imageStatus": "datagram-technician",
+    "relatedSlugs": [
+      "how-to-activate-starlink-nigeria",
+      "starlink-residential-sold-out-lagos-abuja-2026-options",
+      "transfer-starlink-ownership-nigerian-account",
+      "troubleshooting-starlink-offline-searching-nigeria"
+    ],
+    "CTA": "/contact",
+    "currentStatus": "published-2026-11-20",
+    "lastReviewed": "2026-11-20",
+    "notes": "Diagnostic checklist. Does not repeat the how-to, and does not offer a way around a location restriction. Transfer waiting-period detail is left on Starlink's help article."
   }
 ]

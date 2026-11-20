@@ -86,7 +86,7 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
       "Can one Starlink terminal serve a vessel crew? Yes as the uplink. Fair crew Wi-Fi needs VLANs, rate limits, and a separate bridge network.",
     author: "DataGram Nigeria",
     date: "2026-07-11",
-    updated: "2026-10-09",
+    updated: "2026-11-20",
     readTime: "14 min read",
     category: "Maritime",
     image: img("blog/configure-vlan-starlink-crew-wifi-bridge-operations.jpg"),
@@ -101,6 +101,7 @@ export const enterpriseMaritimeB2bMoreArticles: SeoArticle[] = [
     blocks: blocks(
       p("One Starlink terminal can feed a crew. It cannot, on its own, share that link fairly. The terminal is an uplink. It does not know a bridge laptop from a phone in the mess, and it will not stop one cabin from taking the pipe. The design that does is on your router: VLANs, a rate limit or a quota, and a rule for which traffic wins."),
       p("A small crew can live on two networks, operations and everyone else. A crew of 50 or more uses the same design with stricter welfare rules, not a different satellite. Fifty is a planning size for the LAN, not a rating printed on the dish. This page does not promise a speed per person."),
+      p("How much data to buy, and how to split operations from crew, is the [ship data guide](/blog/planning-starlink-data-ship-operations-crew-wifi)."),
       h2("What one terminal can and cannot do"),
       p("It can be the WAN for the ship, on the plan and hardware a survey confirms. It cannot create a captive portal, a voucher, or a separate crew password by itself. Those live on a managed router after the Ethernet handoff. If the ship already has VSAT or LTE, the order of those paths is a [marine SD-WAN](/starlink-marine-sdwan-integration) decision. This article is the LAN that sits on whichever WAN is up. The physical terminal is [offshore maritime installation](/starlink-offshore-maritime-installation)."),
       h2("Why segregation matters on a vessel"),

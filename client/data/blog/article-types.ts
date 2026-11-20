@@ -34,6 +34,8 @@ export type SeoArticle = {
   blocks?: ArticleBlock[];
   cta?: string;
   faqs?: ArticleFaq[];
+  /** Reader-facing related links. Rendered on the article page. */
+  related?: { label: string; href: string }[];
   serviceCta: { label: string; href: string; blurb: string };
 };
 

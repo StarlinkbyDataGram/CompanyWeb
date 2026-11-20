@@ -50,6 +50,7 @@ const loaders: Record<string, () => Promise<SeoArticle[]>> = {
   "september-2026-sprint": () =>
     import("./articles/september-2026-sprint").then((mod) => mod.september2026SprintArticles),
   "stage3-batch1": () => import("./articles/stage3-batch1").then((mod) => mod.stage3Batch1Articles),
+  "november-2026": () => import("./articles/november-2026").then((mod) => mod.november2026Articles),
 };
 
 export async function loadArticleBySlug(slug: string): Promise<SeoArticle | undefined> {

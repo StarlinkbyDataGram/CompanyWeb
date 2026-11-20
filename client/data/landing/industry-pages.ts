@@ -281,6 +281,14 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         label: "Starlink Roaming and Global Priority activation for vessels",
         href: "/starlink-roaming-global-priority-nigeria",
       },
+      {
+        label: "Choosing a plan for coastal and offshore water",
+        href: "/blog/starlink-nigerian-coastal-vessels-plan-territorial-international-waters",
+      },
+      {
+        label: "OSV handover and commissioning checklist",
+        href: "/blog/maritime-starlink-handover-commissioning-checklist-osv",
+      },
     ],
     faqs: [
       {
@@ -820,6 +828,14 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       {
         label: "Global Priority or Roaming plan for marine connectivity",
         href: "/starlink-roaming-global-priority-nigeria",
+      },
+      {
+        label: "Coastal vessel plan choice",
+        href: "/blog/starlink-nigerian-coastal-vessels-plan-territorial-international-waters",
+      },
+      {
+        label: "OSV commissioning checklist",
+        href: "/blog/maritime-starlink-handover-commissioning-checklist-osv",
       },
     ],
     faqs: [
@@ -1542,6 +1558,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Offshore HSE Compliance", href: "/starlink-offshore-hse-compliance" },
       { label: "Boat Installation", href: "/starlink-boat-installation" },
       { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
+      {
+        label: "Planning data for ship operations and crew Wi-Fi",
+        href: "/blog/planning-starlink-data-ship-operations-crew-wifi",
+      },
     ],
     ctaBanner: {
       title: "Request a Network Integration Proposal",
@@ -1797,6 +1817,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
         href: "/starlink-roaming-global-priority-nigeria",
       },
       { label: "Enterprise Plans", href: "/services/enterprise-plans" },
+      {
+        label: "Planning data for ship operations and crew Wi-Fi",
+        href: "/blog/planning-starlink-data-ship-operations-crew-wifi",
+      },
     ],
     ctaBanner: {
       title: "Ready to run the dishes from one place?",
@@ -2614,6 +2638,10 @@ export const industryLandingPages: IndustryLandingConfig[] = [
       { label: "Fleet Management Nigeria", href: "/starlink-fleet-management-nigeria" },
       { label: "Enterprise & Marine Hub", href: "/starlink-enterprise-marine-hub" },
       { label: "Global Roaming service overview", href: "/services/global-roaming" },
+      {
+        label: "Choosing a plan for coastal and offshore water",
+        href: "/blog/starlink-nigerian-coastal-vessels-plan-territorial-international-waters",
+      },
     ],
     ctaBanner: {
       title: "Not sure which plan fits your operation?",
